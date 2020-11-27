@@ -5,7 +5,13 @@ Write a function that:
 - removes any forward slashes (/) in the strings
 - makes the string all lowercase
 */
-function tidyUpString(strArr) {}
+function tidyUpString(strArr) {
+	let result = strArr;
+	for (var i=0; i<result.length; i++) {
+		result[i] = result[i].trim().replace(/\//g, '').toLowerCase();
+	}
+	return result;
+}
 
 /*
 Complete the function to check if the variable `num` satisfies the following requirements:
@@ -15,7 +21,9 @@ Complete the function to check if the variable `num` satisfies the following req
 Tip: use logical operators
 */
 
-function validate(num) {}
+function validate(num) {
+	return !isNaN(num) && num % 2 === 0 && num <= 100;
+}
 
 /* 
 Write a function that returns a copy of the given array arr, but with the element at the given index, index removed.
@@ -23,9 +31,8 @@ The function must NOT change the original array, arr.
 */
 
 function remove(arr, index) {
-  return; // complete this statement
+  return arr.slice(0, index).concat(arr.slice(index + 1, arr.length));
 }
-
 /*
 Write a function that:
 - takes an array of numbers as input
@@ -35,7 +42,15 @@ Write a function that:
 */
 
 function formatPercentage(arr) {
-  
+  var arr1 = arr;
+  for (var i = 0; i < arr1.length; i++) {
+	  if (arr1[i] <= 100) {
+		arr1[i] = `${Math.round(arr1[i] * 100) / 100}%`;
+	  } else {
+		arr1[i] = "100%";
+	  }
+  }
+  return arr1;
 }
 
 /* ======= TESTS - DO NOT MODIFY ===== */
