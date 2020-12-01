@@ -34,13 +34,11 @@ Write a function that:
 - numbers greater 100 must be replaced with 100
 */
 
-function formatPercentage(arr) {
-  
-}
+function formatPercentage(arr) {}
 
 /* ======= TESTS - DO NOT MODIFY ===== */
 
-const util = require('util');
+const util = require("util");
 
 function test(test_name, actual, expected) {
   let status;
@@ -55,7 +53,9 @@ function test(test_name, actual, expected) {
   if (isEqual) {
     status = "PASSED";
   } else {
-    status = `FAILED: expected: ${util.inspect(expected)} but your function returned: ${util.inspect(actual)}`;
+    status = `FAILED: expected: ${util.inspect(
+      expected
+    )} but your function returned: ${util.inspect(actual)}`;
   }
 
   console.log(`${test_name}: ${status}`);
@@ -75,12 +75,8 @@ function arraysEqual(a, b) {
 
 test(
   "tidyUpString function works - case 1",
-  tidyUpString(["/Daniel ", "irina ", " Gordon", "ashleigh "]), [
-    "daniel",
-    "irina",
-    "gordon",
-    "ashleigh"
-  ]
+  tidyUpString(["/Daniel ", "irina ", " Gordon", "ashleigh "]),
+  ["daniel", "irina", "gordon", "ashleigh"]
 );
 test(
   "tidyUpString function works - case 2",
@@ -94,28 +90,20 @@ test("validate function works - case 3", validate(17), false);
 test("validate function works - case 4", validate("Ten"), false);
 test("validate function works - case 5", validate(108), false);
 
-test(
-  "remove function works - case 1",
-  remove([10, 293, 292, 176, 29], 3), [10, 293, 292, 29]
-);
+test("remove function works - case 1", remove([10, 293, 292, 176, 29], 3), [
+  10,
+  293,
+  292,
+  29,
+]);
 test(
   "remove function works - case 2",
-  remove(["a", "b", "c", "d", "e", "f", "g"], 6), [
-    "a",
-    "b",
-    "c",
-    "d",
-    "e",
-    "f"
-  ]
+  remove(["a", "b", "c", "d", "e", "f", "g"], 6),
+  ["a", "b", "c", "d", "e", "f"]
 );
 
 test(
   "formatPercentage function works - case 1",
-  formatPercentage([23, 18.103, 187.2, 0.372]), [
-    "23%",
-    "18.1%",
-    "100%",
-    "0.37%"
-  ]
+  formatPercentage([23, 18.103, 187.2, 0.372]),
+  ["23%", "18.1%", "100%", "0.37%"]
 );
