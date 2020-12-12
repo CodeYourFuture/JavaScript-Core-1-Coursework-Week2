@@ -54,7 +54,7 @@ undefined
 hello
 undefined
 > .exit
-$
+
 ```
 
 > Notice how when we execute an expression the value it produces is printed below it. When we execute a statement, we see `undefined` printed below. This is because statements don't produce values like expressions, they _do something_.
