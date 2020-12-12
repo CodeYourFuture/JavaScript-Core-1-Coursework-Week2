@@ -1,19 +1,12 @@
 /* Fix Functions
-
   Aim: to understand the change code inside functions 
-
   See the below functions. They are syntactically correct but are not outputting the right results.
-
   Run the tests and see how you can fix them.
-
   NOTE:Only make edits inside the function
-
 */
-
-function mood() {
+function mood(feeling) {
   let isHappy = true;
-
-  if (isHappy) {
+  if (feeling === isHappy) {
     return "I am happy";
   } else {
     return "I am not happy";
@@ -21,9 +14,8 @@ function mood() {
 }
 
 function greaterThan10(num) {
-  let isBigEnough;
-
-  if (isBigEnough) {
+  let isBigEnough = 10;
+  if (num > isBigEnough) {
     return "num is greater than 10";
   } else {
     return "num is not big enough";
