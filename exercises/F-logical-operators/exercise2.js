@@ -5,10 +5,55 @@
   Update the code so that you get the expected result.
 */
 
-function isNegative() {}
 
-/* 
-  DO NOT EDIT BELOW THIS LINE
+var num = -10;
+
+function isNegative(num) {
+  if (num < 0) {
+  return true;
+
+  }
+  else {
+    return false;
+  }
+}
+
+var number = 5;
+
+function isNegative(number) {
+  if (number < 0) {
+    return true;
+  }
+  else {
+    return false;
+  }
+}
+
+var num2 = 10;
+
+function isBetween5and10(num2) {
+  if (num2 >= 5 && num2 <= 10) {
+    return true;
+  }
+
+}
+
+var name = "Daniel";
+
+function isShortName(name) {
+  if (name.length < 10) {
+    return true;
+  }
+}
+
+function startsWithD(name) {
+  if (name.charAt[0] = "D") {
+    return true;
+  }
+}
+
+
+  /* DO NOT EDIT BELOW THIS LINE
   --------------------------- */
 
 console.log("Is -10 is a negative number?", isNegative(-10));
