@@ -40,23 +40,21 @@ The function must NOT change the original array, arr.
 // If I understand it well at one time in ram we have arr, arr.lice(0, index and slice(index + 1, arr.length))
 
 
-function remove(arr, index) {
-  arrDone = arr.slice(0, index).concat(arr.slice(index + 1, arr.length));
-  return arrDone; // complete this statement
-}
+// function remove(arr, index) {
+//   arrDone = arr.slice(0, index).concat(arr.slice(index + 1, arr.length));
+//   return arrDone; // complete this statement
+// }
 
 // Iteration though one array, with a goal to creat another. less ram?
 function remove(arr, index) {
   arrReturned = [];
   for ( i in arr){
-    if(i !== index){ 
+    if(i != index){ 
       arrReturned.push(arr[i]);
-    } else {
-      continue;
-    }
+      // console.log(i);
+    } 
   }
-  arrDone = arr.slice(0, index).concat(arr.slice(index + 1, arr.length));
-  return arrDone; // complete this statement
+  return arrReturned; // complete this statement
 }
 
 
