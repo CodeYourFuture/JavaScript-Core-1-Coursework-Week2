@@ -24,20 +24,22 @@ function greaterThan10(num) {
 
 function sortArray(letters) {
   let sortedLetters = letters;
-
+  sortedLetters.sort();
   return sortedLetters;
 }
 
 function first5(numbers) {
   let sliced;
-
+  sliced = numbers.slice(0,5);
   return sliced;
 }
 
 function get3rdIndex(arr) {
   let index = 3;
   let element;
-
+  let array;
+  array.push(arr);
+  element = array.indexOf(index);
   return element;
 }
 

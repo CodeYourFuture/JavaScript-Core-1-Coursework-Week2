@@ -5,7 +5,16 @@ Write a function that:
 - removes any forward slashes (/) in the strings
 - makes the string all lowercase
 */
-function tidyUpString(strArr) {}
+function tidyUpString(strArr) {
+  let inputProcess;
+  for (let i = 0; i < strArr.length; i++) {
+  inputProcess = strArr[i].trim(); //remove spaces from both sides of the string
+  inputProcess = inputProcess.replace("/", ""); //remove forward slash in the strings
+  inputProcess = inputProcess.toLowerCase(); //change string into lowercase
+  strArr[i] = inputProcess; 
+  }
+  return strArr;
+}
 
 /*
 Complete the function to check if the variable `num` satisfies the following requirements:
@@ -15,7 +24,9 @@ Complete the function to check if the variable `num` satisfies the following req
 Tip: use logical operators
 */
 
-function validate(num) {}
+function validate(num) {
+  if ()
+}
 
 /* 
 Write a function that returns a copy of the given array arr, but with the element at the given index, index removed.
