@@ -5,7 +5,30 @@ Write a function that:
 - removes any forward slashes (/) in the strings
 - makes the string all lowercase
 */
-function tidyUpString(strArr) {}
+function tidyUpString(strArr) {
+    for (let i = 0; i < strArr.length; i++){
+        let str = strArr[i];
+        str=str.trim();
+        while (str.includes("/")) {
+            // console.log("I'm in");
+            let index = str.indexOf("/");
+            if (index === 0) {
+                str = str.substring(1);
+            }
+            if (index === str.length - 1) {
+                str = str.substring(0, index - 1);
+            }
+            if (index > 0 && index < str.length - 1) {
+                let firstSlice = str.slice(0, index);
+                let secondSlice = str.slice(index + 1);
+                str = firstSlice.concat(secondSlice);
+            }
+        }
+        str = str.toLowerCase();
+        strArr[i] = str;
+    }
+    return strArr;
+}
 
 /*
 Complete the function to check if the variable `num` satisfies the following requirements:
@@ -15,7 +38,9 @@ Complete the function to check if the variable `num` satisfies the following req
 Tip: use logical operators
 */
 
-function validate(num) {}
+function validate(num) {
+    return (typeof num === "number" && num % 2 === 0 && num <= 100);
+}
 
 /* 
 Write a function that returns a copy of the given array arr, but with the element at the given index, index removed.
@@ -23,7 +48,18 @@ The function must NOT change the original array, arr.
 */
 
 function remove(arr, index) {
-  return; // complete this statement
+    let newArray = arr;
+    if (index === 0) {
+        newArray.shift();
+    } else if (index === newArray.length - 1) {
+        newArray.pop();
+    } else {
+        let firstSlice = arr.slice(0,index);
+        let secondeSlice = arr.slice(index + 1);
+        newArray = firstSlice.concat(secondeSlice);
+    }
+    
+    return newArray;
 }
 
 /*
@@ -34,7 +70,20 @@ Write a function that:
 - numbers greater 100 must be replaced with 100
 */
 
-function formatPercentage(arr) {}
+function formatPercentage(arr) {
+    let formattedArray = [];
+    for (let i = 0; i < arr.length; i++){
+        const val = arr[i];
+        if (val > 100) {
+            val = 100;
+        }
+        val = Math.round(val * 100) / 100;  // round to two decimal places
+        val = val + "%";    // format value
+        // console.log(val);
+        formattedArray.push(val); // build array
+    }
+    return formattedArray;
+}
 
 /* ======= TESTS - DO NOT MODIFY ===== */
 
