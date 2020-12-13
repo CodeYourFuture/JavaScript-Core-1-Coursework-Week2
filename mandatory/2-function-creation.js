@@ -6,7 +6,14 @@ Write a function that:
 - makes the string all lowercase
 */
 function tidyUpString(strArr) {
-  
+  let strArrModificated = [];
+  for (i in strArr){
+    // console.log(strArr[i]);
+    strArrModificated[i] = strArr[i].replace("/", "").trim().toLowerCase();
+    // console.log(strArrModificated[i]);
+  }
+  return strArrModificated;
+
 }
 
 /*
@@ -17,16 +24,42 @@ Complete the function to check if the variable `num` satisfies the following req
 Tip: use logical operators
 */
 
-function validate(num) {}
+function validate(num) {
+  return num % 2 === 0 && num <= 100 && typeof num === "number";
+}
 
 /* 
 Write a function that returns a copy of the given array arr, but with the element at the given index, index removed.
 The function must NOT change the original array, arr.
 */
 
+
+// slice array is creating new object so we would run out of ram if the arrays would be big ^^ lets try something different
+
+
+// If I understand it well at one time in ram we have arr, arr.lice(0, index and slice(index + 1, arr.length))
+
+
 function remove(arr, index) {
-  return; // complete this statement
+  arrDone = arr.slice(0, index).concat(arr.slice(index + 1, arr.length));
+  return arrDone; // complete this statement
 }
+
+// Iteration though one array, with a goal to creat another. less ram?
+function remove(arr, index) {
+  arrReturned = [];
+  for ( i in arr){
+    if(i !== index){ 
+      arrReturned.push(arr[i]);
+    } else {
+      continue;
+    }
+  }
+  arrDone = arr.slice(0, index).concat(arr.slice(index + 1, arr.length));
+  return arrDone; // complete this statement
+}
+
+
 
 /*
 Write a function that:
@@ -36,7 +69,50 @@ Write a function that:
 - numbers greater 100 must be replaced with 100
 */
 
-function formatPercentage(arr) {}
+function formatPercentage(arr) {
+  returnedArray = []
+  // console.log("array before" + arr);
+  for (i in arr) {
+    if (arr[i] <= 100) {
+      // console.log(entry);
+      returnedArray[i] = (`${Math.round((arr[i] *100))/100}%`);
+      // console.log(entry);
+    } else if (arr[i] > 100) {
+      returnedArray[i] = "100%"
+    }
+
+
+  }
+  // console.log("array before" + arr);
+  return returnedArray;
+
+}
+
+function formatPercentage2(arr) {
+  returnedArray = []
+  // console.log("array before" + arr);
+  for (i in arr) {
+    if (arr[i] <= 100) {
+      // console.log(entry);
+      returnedArray[i] = (`${Math.round((arr[i] *100))/100}%`);
+      // console.log(entry);
+    } else if (arr[i] > 100) {
+        let whole = 0;
+        while (arr[i] > 100) {
+          arr[i] = arr[i] - 100;
+          whole++
+        }
+        if (arr[i] <= 100) {
+          returnedArray[i] = (`Whole: ${whole} and ${Math.round((arr[i] *100))/100}%`); // place to improve repetitive
+        }
+    }
+
+
+  }
+  
+  return returnedArray;
+
+}
 
 /* ======= TESTS - DO NOT MODIFY ===== */
 
@@ -108,4 +184,10 @@ test(
   "formatPercentage function works - case 1",
   formatPercentage([23, 18.103, 187.2, 0.372]),
   ["23%", "18.1%", "100%", "0.37%"]
+);
+
+test(
+  "formatPercentage function works - case 2",
+  formatPercentage2([23, 18.103, 187.2, 0.372]),
+  ["23%", "18.1%", "Whole: 1 and 87.2%", "0.37%"]
 );
