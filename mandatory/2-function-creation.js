@@ -10,19 +10,8 @@ function tidyUpString(strArr) {
         let str = strArr[i];
         str=str.trim();
         while (str.includes("/")) {
-            // console.log("I'm in");
             let index = str.indexOf("/");
-            if (index === 0) {
-                str = str.substring(1);
-            }
-            if (index === str.length - 1) {
-                str = str.substring(0, index - 1);
-            }
-            if (index > 0 && index < str.length - 1) {
-                let firstSlice = str.slice(0, index);
-                let secondSlice = str.slice(index + 1);
-                str = firstSlice.concat(secondSlice);
-            }
+            str = str.substring(0, index) + str.substring(index + 1);
         }
         str = str.toLowerCase();
         strArr[i] = str;
@@ -49,15 +38,9 @@ The function must NOT change the original array, arr.
 
 function remove(arr, index) {
     let newArray = arr;
-    if (index === 0) {
-        newArray.shift();
-    } else if (index === newArray.length - 1) {
-        newArray.pop();
-    } else {
-        let firstSlice = arr.slice(0,index);
-        let secondeSlice = arr.slice(index + 1);
-        newArray = firstSlice.concat(secondeSlice);
-    }
+    let firstSlice = newArray.slice(0,index);
+    let secondeSlice = newArray.slice(index + 1);
+    newArray = firstSlice.concat(secondeSlice);   
     
     return newArray;
 }
@@ -73,7 +56,7 @@ Write a function that:
 function formatPercentage(arr) {
     let formattedArray = [];
     for (let i = 0; i < arr.length; i++){
-        const val = arr[i];
+        let val = arr[i];
         if (val > 100) {
             val = 100;
         }
