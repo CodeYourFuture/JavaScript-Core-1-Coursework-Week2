@@ -13,6 +13,18 @@ var cssLevel = 4;
 // (hint: use the comparison operator from before)
 var htmlLevelAbove5;
 var cssLevelAbove5;
+if (htmlLevel > 5) {
+  htmlLevelAbove5 = true;
+}
+if (htmlLevel < 5) {
+  htmlLevelAbove5 = false;
+}
+if (cssLevel > 5) {
+  cssLevelAbove5 = true;
+}
+if (cssLevel < 5) {
+  cssLevelAbove5 = false;
+}
 
 // Finish the next two statement
 // Use the previous variables and logical operators
@@ -20,6 +32,16 @@ var cssLevelAbove5;
 var cssAndHtmlAbove5;
 var cssOrHtmlAbove5;
 
+if (htmlLevel === true && cssLevel === true) {
+  cssAndHtmlAbove5 = true;
+} else {
+  cssAndHtmlAbove5 = false;
+}
+if (htmlLevelAbove5 === true || cssLevelAbove5 === true) {
+  cssOrHtmlAbove5 = true;
+} else {
+  cssOrHtmlAbove5 = false;
+}
 /* 
   DO NOT EDIT BELOW THIS LINE
   --------------------------- */
