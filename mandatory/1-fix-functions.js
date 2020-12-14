@@ -1,6 +1,6 @@
 /* Fix Functions
 
-  Aim: to understand the change code inside functions 
+  Aim: to understand the change code inside functions
 
   See the below functions. They are syntactically correct but are not outputting the right results.
 
@@ -10,43 +10,43 @@
 
 */
 
-function mood() {
-  let isHappy = true;
-
-  if (isHappy) {
+function mood(isHappy)
+{
+  if (isHappy)
+  {
     return "I am happy";
-  } else {
+  }
+  else
+  {
     return "I am not happy";
   }
 }
 
-function greaterThan10(num) {
-  let isBigEnough;
-
-  if (isBigEnough) {
+function greaterThan10(num)
+{
+  if (num > 10)
+  {
     return "num is greater than 10";
-  } else {
+  }
+  else
+  {
     return "num is not big enough";
   }
 }
 
-function sortArray(letters) {
-  let sortedLetters = letters;
-
-  return sortedLetters;
+function sortArray(letters)
+{
+  return letters.sort();
 }
 
-function first5(numbers) {
-  let sliced;
-
-  return sliced;
+function first5(numbers)
+{
+  return numbers.slice(0, 5);
 }
 
-function get3rdIndex(arr) {
-  let index = 3;
-  let element;
-
-  return element;
+function get3rdIndex(arr)
+{
+  return arr[3];
 }
 
 /* ======= TESTS - DO NOT MODIFY ===== */
