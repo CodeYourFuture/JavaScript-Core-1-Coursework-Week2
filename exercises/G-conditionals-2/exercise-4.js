@@ -16,7 +16,7 @@ function containsCode(sentence)
     return true;
 }
 
-/* 
+/*
 DO NOT EDIT BELOW THIS LINE
 --------------------------- */
 var sentence1 = "code your future";
@@ -27,7 +27,7 @@ console.log("'" + sentence1 + "': " + containsCode(sentence1));
 console.log("'" + sentence2 + "': " + containsCode(sentence2));
 console.log("'" + sentence3 + "': " + containsCode(sentence3));
 
-/* 
+/*
     EXPECTED RESULT
     ---------------
     'code your future': true
