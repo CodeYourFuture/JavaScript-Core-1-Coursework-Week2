@@ -14,6 +14,13 @@
  */
 
 // `getAllFrequencies` goes here
+function getAllFrequencies() {
+    let frequencies = [];   
+    for (let f = 87; f <= 108; f += 1){ // f= frequency. Scan only whole number values
+        frequencies.push(f)   
+    }
+    return frequencies;
+}
 
 /**
  * Next, let's write a function that gives us only the frequencies that are radio stations.
@@ -21,10 +28,22 @@
  *
  * This function should:
  * - Get the available frequencies from `getAllFrequencies`
- * - There is a helper function called isRadioFrequency that takes an integer as an argument and returns a boolean.
+ * - There is a helper function called isRadioStation that takes an integer as an argument and returns a boolean.
  * - Return only the frequencies that are radio stations.
  */
 // `getStations` goes here
+function getStations() {
+    let radioStations = [];
+    let allFrequencies = getAllFrequencies();
+    for (let i = 0; i < allFrequencies.length; i++){
+        const f = allFrequencies[i];
+        if (isRadioStation(f)) {
+            radioStations.push(f);
+        }
+    }
+    
+    return radioStations;    
+}
 
 /* ======= TESTS - DO NOT MODIFY ======= */
 
