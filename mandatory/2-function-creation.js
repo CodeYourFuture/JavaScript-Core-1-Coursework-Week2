@@ -48,11 +48,16 @@ Write a function that:
 */
 
 function formatPercentage(arr) {
+  /*this will loop through every element in the array , check if that number is greater than 100, round the number to 2 decimal places and at the end it 
+  will remove any trailing zeros */
   for (var i = 0; i < arr.length; i++) {
+    if (arr[i] > 100) {
+      arr[i] = 100;
+    }
     arr[i] = arr[i].toFixed(2);
+    arr[i] = parseFloat(arr[i]); //removes any trailing zeros fro a number
   }
   var newArr = arr.map((arr) => arr + "%");
-
   return newArr;
 }
 
