@@ -10,18 +10,20 @@
 
 */
 
-function mood() {
-  let isHappy = true;
-
+function mood(isHappy) {
+  
   if (isHappy) {
+    //isHappy = true;
     return "I am happy";
   } else {
+    //isHappy = false;
     return "I am not happy";
   }
 }
 
 function greaterThan10(num) {
-  let isBigEnough;
+  let isBigEnough = num > 10;
+  //var num = [10, 11];
 
   if (isBigEnough) {
     return "num is greater than 10";
@@ -31,20 +33,22 @@ function greaterThan10(num) {
 }
 
 function sortArray(letters) {
-  let sortedLetters = letters;
+  let sortedLetters = letters.sort();
 
   return sortedLetters;
+  
 }
 
 function first5(numbers) {
-  let sliced;
+  //let numbers = [1, 2, 3, 4, 5, 6, 7, 8];
+  let sliced = numbers.slice(0, 5);
 
   return sliced;
 }
 
 function get3rdIndex(arr) {
-  let index = 3;
-  let element;
+  
+  let element = arr[3];
 
   return element;
 }
