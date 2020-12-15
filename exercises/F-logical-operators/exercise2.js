@@ -5,9 +5,26 @@
   Update the code so that you get the expected result.
 */
 
-function isNegative() {}
+function isNegative(number) {
+  return number = true;
+}
 
-/* 
+function isNegative(number) {
+  return number = false;
+}
+
+
+function isBetween5and10(x) {
+  return 5 <= x <= 10;
+}
+ function isShortName(name) {
+   return name = true;
+ }
+
+ function startsWithD(names) {
+   return names = true;
+ }
+/* s
   DO NOT EDIT BELOW THIS LINE
   --------------------------- */
 
