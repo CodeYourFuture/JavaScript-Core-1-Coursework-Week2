@@ -9,6 +9,12 @@
 var name = "Daniel";
 var danielsRole = "mentor";
 
+if (danielsRole = "mentor") {
+  statement = "Hi, I'm Daniel,im a mentor";
+}
+
+console.log(statement);
+
 /* 
 EXPECTED RESULT
 ---------------
