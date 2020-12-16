@@ -6,13 +6,27 @@
 
   Answer the following questions:
 
-  1. This program throws an error. Why? (If you can't find it, try executing it).
+  1. This program throws an error. Why? (If you can't find it, try executing it)
+       The statement "console.log(b);" will give an error, because b is a parameter of the functions f1 and f2. It does not exist outside these functions.
   2. Remove the line that throws the error.
   3. What is printed to the console?
+      ``` output on console
+      2
+      6
+      4
+      9
+      6
+      13
+      8
+      ```
   4. How many times is "f1" called?
+      f1 is called twice, once when i is 1 and when i is 3.
   5. How many times is "f2" called?
+      f2 is called three times, when i is 0, 2 and 4.
   6. What value does the "a" parameter take in the first "f1" call?
+      During the first call of function f1, the parameter a takes the value of 1.
   7. What is the value of the "a" outer variable when "f1" is called for the first time?
+      During the first call of function f1, the global variable a takes the value of 8.
 */
 
 let x = 2;
@@ -28,7 +42,7 @@ const f2 = function (a, b) {
 
 console.log(x);
 console.log(a);
-console.log(b);
+// console.log(b);
 
 for (let i = 0; i < 5; ++i) {
   a = a + 1;
