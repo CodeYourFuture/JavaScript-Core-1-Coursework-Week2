@@ -14,6 +14,15 @@
  */
 
 // `getAllFrequencies` goes here
+function getAllFrequencies()
+{
+  let freqArr = [];
+  for(let i=0; i < 22; i++)
+  {
+    freqArr.push(i+87);
+  }
+  return freqArr;
+}
 
 /**
  * Next, let's write a function that gives us only the frequencies that are radio stations.
@@ -24,7 +33,21 @@
  * - There is a helper function called isRadioFrequency that takes an integer as an argument and returns a boolean.
  * - Return only the frequencies that are radio stations.
  */
+
 // `getStations` goes here
+function getStations()
+{
+  let allFreq = getAllFrequencies();
+  let radioStations = allFreq.filter(findStation);
+
+  function findStation(value)
+  {
+    return isRadioStation(value);
+  }
+
+  // console.log(radioStations);
+  return radioStations;
+}
 
 /* ======= TESTS - DO NOT MODIFY ======= */
 
