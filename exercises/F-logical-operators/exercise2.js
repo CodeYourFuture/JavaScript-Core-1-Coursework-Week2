@@ -5,7 +5,45 @@
   Update the code so that you get the expected result.
 */
 
-function isNegative() {}
+ var num = -10;
+
+function isNegative(num) {
+  if (num > -11 && num < 3) {
+    return true;
+  }
+  return false;
+}
+
+var number = 10;
+
+function isBetween5and10(number) {
+  if (number < 10 || number === 10){
+    return true;
+  }
+  return false;
+}
+
+var name = "Daniel"
+
+function isShortName(name) {
+  if (name !== name) {
+    return true;
+  }
+  return false;
+}
+
+var name1 = "D"
+
+function startsWithD(name1) {
+  if (name1) {
+    console.log("D");
+  } else {
+    console.log("Daniel");
+  }
+}
+
+
+
 
 /* 
   DO NOT EDIT BELOW THIS LINE

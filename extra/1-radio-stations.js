@@ -3,6 +3,15 @@
  * Let's use some code to help us build a program that helps us scan
  * the radio waves for some good music.
  */
+function getAllFrequencies() {
+  const frequencies =[];
+  let x = 87;
+  while (x>= 87 && x <=108) {
+    frequencies.push(x); 
+    x++;
+  }
+  return frequencies;
+}
 
 /**
  * First, let's create a function that creates a list of all the frequencies.
@@ -25,6 +34,21 @@
  * - Return only the frequencies that are radio stations.
  */
 // `getStations` goes here
+
+function getStations(){
+  const  stations = [];
+  const frequencies = getAllFrequencies();
+
+  for (var i=0; i < frequencies.length; i++) {
+    const isStation = isRadioStation(frequencies[i]);
+    if (isStation){
+      stations.push(frequencies[i]);
+    }
+    
+  }
+ return stations;
+}
+
 
 /* ======= TESTS - DO NOT MODIFY ======= */
 
