@@ -26,13 +26,13 @@ mandatory/3-playing-computer.js:42
 8
 
   4. How many times is "f1" called?
-  I think 10 times
-  5. How many times is "f2" called?
   I think 2 times
+  5. How many times is "f2" called?
+  I think 3 times
   6. What value does the "a" parameter take in the first "f1" call?
   value a takes is 9, found by using console.log before a
   7. What is the value of the "a" outer variable when "f1" is called for the first time?
-  value is 10 just used console.log after a
+  value is 6 just 
 
 */
 
@@ -52,15 +52,15 @@ console.log(a);
 
 
 for (let i = 0; i < 5; ++i) {
-  //console.log("before", a)
+  
   a = a + 1;
-  //console.log("after", a)
+  
   if (i % 2 === 0) {
     const d = f2(i, x);
     console.log(d);
   } else {
     const e = f1(i, a);
-    //console.log("find", a)
+    
     console.log(e);
   }
 }
