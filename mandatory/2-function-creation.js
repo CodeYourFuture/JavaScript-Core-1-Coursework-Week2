@@ -5,7 +5,21 @@ Write a function that:
 - removes any forward slashes (/) in the strings
 - makes the string all lowercase
 */
-function tidyUpString(strArr) {}
+function tidyUpString(strArr)
+{
+  var tempArr = strArr.map(tidyStr);
+
+  function tidyStr(value)
+  {
+    var tempStr = value.trim();
+    tempStr = tempStr.toLowerCase();
+    tempStr = tempStr.replace(/\//g, ""); //REGEX
+    return tempStr;
+  }
+  console.log(tempArr);
+
+  return tempArr;
+}
 
 /*
 Complete the function to check if the variable `num` satisfies the following requirements:
@@ -15,15 +29,33 @@ Complete the function to check if the variable `num` satisfies the following req
 Tip: use logical operators
 */
 
-function validate(num) {}
+function validate(num)
+{
+  var testStatus = (typeof num === "number") && (num%2 === 0) && (num <= 100);
+  return testStatus;
+}
 
-/* 
+/*
 Write a function that returns a copy of the given array arr, but with the element at the given index, index removed.
 The function must NOT change the original array, arr.
 */
 
-function remove(arr, index) {
-  return; // complete this statement
+function remove(arr, index)
+{
+  var tempArr = [];
+  for(let i=0; i < arr.length; i++)
+  {
+    if(i < index)
+    {
+      tempArr[i] = arr[i];
+    }
+    else
+      if(i > index)
+      {
+        tempArr[i-1] = arr[i];
+      }
+  }
+  return tempArr;
 }
 
 /*
@@ -34,7 +66,25 @@ Write a function that:
 - numbers greater 100 must be replaced with 100
 */
 
-function formatPercentage(arr) {}
+function formatPercentage(arr)
+{
+  var returnArr = arr.map(formatPercentage);
+
+  function formatPercentage(value)
+  {
+    let cappedValue;
+
+    if(value > 100)
+      cappedValue = 100;
+    else
+      cappedValue = value;
+
+    let returnStr = +cappedValue.toFixed(2);
+    returnStr = returnStr + "%";
+    return returnStr;
+  }
+  return returnArr;
+}
 
 /* ======= TESTS - DO NOT MODIFY ===== */
 
