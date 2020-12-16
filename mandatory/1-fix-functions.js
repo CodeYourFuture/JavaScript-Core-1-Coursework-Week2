@@ -27,20 +27,20 @@ function greaterThan10(num) {
 }
 
 function sortArray(letters) {
-  let sortedLetters = letters;
+  let sortedLetters = letters.sort();
 
   return sortedLetters;
 }
 
 function first5(numbers) {
-  let sliced;
+  let sliced = numbers.slice();
 
   return sliced;
 }
 
 function get3rdIndex(arr) {
   let index = 3;
-  let element;
+  let element = arr[3];
 
   return element;
 }
