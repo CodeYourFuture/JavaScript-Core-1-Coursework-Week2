@@ -35,8 +35,9 @@ The function must NOT change the original array, arr.
 */
 
 function remove(arr, index) {
-  arr.pop();
-  return (arrCopy = arr.slice()); // complete this statement
+  var a = arr.slice(0, index);
+  var b = arr.slice(index + 1);
+  return a.concat(b); // complete this statement
 }
 
 /*
