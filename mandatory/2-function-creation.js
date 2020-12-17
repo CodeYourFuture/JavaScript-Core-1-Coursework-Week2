@@ -9,16 +9,18 @@ function tidyUpString(strArr) {
   var removeSpaces;
   var removeSlashes;
   var stringToLowerCase;
-  let index = 0;
-  while(index < strArr.length) {
-    removeSpaces = strArr[index].trim();
-    removeSlashes = strArr.replace(/\//g);
-  stringToLowerCase = strArr[index].toLowerCase();
-  index++;
+  
+  for(i = 0; i < strArr.length; i++) {
+    removeSpaces = strArr[i].trim();
+    removeSlashes = removeSpaces.replace("/", "");
+  stringToLowerCase = removeSlashes.toLowerCase();
+  strArr[i] = stringToLowerCase
+  }
+
   
   return strArr;
   }
-}
+
 
 /*
 Complete the function to check if the variable `num` satisfies the following requirements:
@@ -29,14 +31,14 @@ Tip: use logical operators
 */
 
 function validate(num) {
-  if(typeof num === number && num % 2 === 0 && num < 100) {
+  if(typeof num === "number" && num % 2 === 0 && num < 100) {
     return true;
   }
   else {
     return false;
   }
 }
-
+console.log(validate(60));
 /* 
 Write a function that returns a copy of the given array arr, but with the element at the given index, index removed.
 The function must NOT change the original array, arr.
@@ -61,7 +63,7 @@ function formatPercentage(arr) {
        arr[i] = "100%";
     }
     else {
-      arr[i] = arr[i].toFixed(2) + "%";
+      arr[i] = Math.round((arr[i] + Number.EPSILON) * 100) / 100 + "%";
     }
   }
   return arr;
