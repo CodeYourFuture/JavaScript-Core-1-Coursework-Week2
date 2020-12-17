@@ -4,8 +4,10 @@
   This program calls some functions that are either missing or incomplete.
   Update the code so that you get the expected result.
 */
-
-function isNegative() {}
+var checkNegative = -10;
+function isNegative() {
+  return 
+}
 
 /* 
   DO NOT EDIT BELOW THIS LINE

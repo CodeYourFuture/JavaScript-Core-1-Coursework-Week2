@@ -6,8 +6,15 @@
   - if number is more or equal to zero, return the word "positive"
 */
 
-function negativeOrPositive(number) {}
-
+var number = 0; 
+function negativeOrPositive(number) {
+  if (number < 0 ) {
+    return "negative";
+  } if (number >= 0 ) {
+    return "positive";
+  }
+}
+console.log(negativeOrPositive(number));
 /* 
   DO NOT EDIT BELOW THIS LINE
   --------------------------- */
