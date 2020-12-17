@@ -20,8 +20,7 @@ var cssLevelAbove5 = cssLevel > 5;
 // Use the previous variables and logical operators
 // Do not "hardcode" the answers
 
-var cssAndHtmlAbove5;
-var cssOrHtmlAbove5;
+
 var cssAndHtmlAbove5 = htmlLevelAbove5 && cssLevelAbove5;
 var cssOrHtmlAbove5 = htmlLevelAbove5 || cssLevelAbove5;
 /* 
