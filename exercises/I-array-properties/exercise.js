@@ -10,7 +10,7 @@ var name= [];
 function isEmpty(arr) {
   if (arr === numbers) {
     return "false";
-  } else {
+  } else ; {
     return "true";
   } // complete this statement
 }

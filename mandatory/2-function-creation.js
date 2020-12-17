@@ -5,7 +5,14 @@ Write a function that:
 - removes any forward slashes (/) in the strings
 - makes the string all lowercase
 */
-function tidyUpString(strArr) {}
+
+var name = ["daniel ", "irina ", " gordon", "ashleigh "];
+
+function tidyUpString(strArr) {
+  if 
+
+
+}
 
 /*
 Complete the function to check if the variable `num` satisfies the following requirements:

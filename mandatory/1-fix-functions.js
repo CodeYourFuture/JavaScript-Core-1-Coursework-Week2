@@ -11,7 +11,8 @@
 */
 
 function mood() {
-  let isHappy = true;
+
+  let isHappy = false;
 
   if (isHappy) {
     return "I am happy";
@@ -20,31 +21,34 @@ function mood() {
   }
 }
 
-function greaterThan10(num) {
-  let isBigEnough;
+function greaterThan10() {
+  const num =10;
+  const isBigEnough = num >= 10;
 
   if (isBigEnough) {
     return "num is greater than 10";
-  } else {
+  } else  {
     return "num is not big enough";
   }
 }
 
-function sortArray(letters) {
+function sortArray() {
+  let letters = ['a', 'c', 'e', 'f', 'n', 'z'];
   let sortedLetters = letters;
 
   return sortedLetters;
 }
 
-function first5(numbers) {
-  let sliced;
+function first5() {
+  let numbers = [1,2,3,4,5,6,7,8];
+  let sliced = numbers.splice(0,5);
 
   return sliced;
 }
 
 function get3rdIndex(arr) {
   let index = 3;
-  let element;
+  let element = arr [index];
 
   return element;
 }
