@@ -4,8 +4,19 @@
   This program calls some functions that are either missing or incomplete.
   Update the code so that you get the expected result.
 */
+var number = 10; 
+function isNegative(number) {
+  if("number >  && number > -10"){
+    return true;
+  }
+  return false;
+   };
+   function isBetween5and10(number){
+     if(number <5 && number <10 ){
+       return true; 
+     }
+   }
 
-function isNegative() {}
 
 /* 
   DO NOT EDIT BELOW THIS LINE
