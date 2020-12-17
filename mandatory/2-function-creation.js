@@ -5,7 +5,22 @@ Write a function that:
 - removes any forward slashes (/) in the strings
 - makes the string all lowercase
 */
-function tidyUpString(strArr) {}
+function tidyUpString(strArr) {
+  let newValue1;
+  let newValue2;
+  let newValue3;
+
+  // var newArr = strArr.map(value => value.substr(1));
+  for(let i = 0; i < strArr.length; i++){
+     
+    newValue1 = strArr[i].trim();
+    newValue2 = newValue1.toLowerCase();
+    newValue3 = newValue2.replace("/", "");
+    
+    strArr[i] = newValue3;
+  }
+  return strArr;
+}
 
 /*
 Complete the function to check if the variable `num` satisfies the following requirements:
@@ -15,7 +30,13 @@ Complete the function to check if the variable `num` satisfies the following req
 Tip: use logical operators
 */
 
-function validate(num) {}
+function validate(num) {
+
+  if (typeof num === "number" && num % 2 === 0 && num <= 100){
+    return true;
+  }
+  return false;
+}
 
 /* 
 Write a function that returns a copy of the given array arr, but with the element at the given index, index removed.
@@ -23,7 +44,10 @@ The function must NOT change the original array, arr.
 */
 
 function remove(arr, index) {
-  return; // complete this statement
+
+  arr.splice(index, 1)
+ 
+  return arr; // complete this statement
 }
 
 /*
@@ -34,7 +58,19 @@ Write a function that:
 - numbers greater 100 must be replaced with 100
 */
 
-function formatPercentage(arr) {}
+function formatPercentage(arr) {
+  for( let i = 0; arr.length; i++){
+    if(arr[i] > 100){
+      arr[i] = 100;
+    }
+    
+    arr[i] = Math.round((arr[i] + Number.EPSILON) * 100) / 100;
+    arr[i] = arr[i] + "%";
+
+  }
+  
+  return arr;
+}
 
 /* ======= TESTS - DO NOT MODIFY ===== */
 
