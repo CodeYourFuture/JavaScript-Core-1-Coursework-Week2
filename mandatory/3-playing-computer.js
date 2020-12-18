@@ -14,12 +14,16 @@
   6. What value does the "a" parameter take in the first "f1" call?
   7. What is the value of the "a" outer variable when "f1" is called for the first time?
 */
-/*This program throws an error because b is not declared or defined  */
-/*f1 is called 2 times */
-/*f2 is called 3 times */
-/*f1 is called 2 times */
-/*8*/
-/* the value of the outer "a" is  8 on the first f1 function call*/
+//Answers
+/*
+1. This program throws an error because b is not declared or defined
+2. I have fixed the line that throws an error line 32
+3. 2 6 4 9 6 13 8
+4. f1 is called 2 times
+5. f2 is called 3 times 
+6. 8 
+7. 6
+ */
 
 let x = 2;
 let a = 6;
