@@ -5,13 +5,13 @@
 */
 
 function first(arr) {
-  arr = numbers;
-  return numbers[0]; // complete this statement
+  let numbers = arr;
+  return numbers.shift(); // complete this statement
 }
 
 function last(arr) {
-  arr = names;
-  return names[3]; // complete this statement
+  let names = arr;
+  return names.pop(); // complete this statement
 } 
 
 /* 

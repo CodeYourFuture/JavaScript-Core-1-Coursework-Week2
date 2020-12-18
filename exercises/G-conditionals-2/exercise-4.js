@@ -9,12 +9,13 @@
 */
 var sentence = "code"; 
 function containsCode(sentence) {
-  if (sentence === "code") {
+
+  if (sentence.includes("code")){
     return   "true";
-  } else 
+  } else {
    return  "false";
 }
-console.log(containsCode(sentence));
+}
 /* 
 DO NOT EDIT BELOW THIS LINE
 --------------------------- */
