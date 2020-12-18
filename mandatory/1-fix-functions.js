@@ -10,24 +10,22 @@
 
 */
 
-function mood() {
+function mood() {}
   let isHappy = true;
   
   function mood(isHappy) { 
   
-    if (isHappy) {
+    if(isHappy) {
     return "I am happy";
   } 
   else {
     return "I am not happy";
   }
 }
-}
+
 
 function greaterThan10(num) {
-  let isBigEnough;
-
-  if (isBigEnough) {
+  
     if(num > 10) {
     return "num is greater than 10";
   } 
@@ -35,7 +33,8 @@ function greaterThan10(num) {
     return "num is not big enough";
   }
 }
-}
+
+
 
 function sortArray(letters) {
   let sortedLetters = letters.sort();
