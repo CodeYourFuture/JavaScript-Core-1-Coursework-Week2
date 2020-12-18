@@ -35,9 +35,9 @@ The function must NOT change the original array, arr.
 */
 
 function remove(arr, index) {
-  var a = arr.slice(0, index);
-  var b = arr.slice(index + 1);
-  return a.concat(b); // complete this statement
+  var firstPart = arr.slice(0, index);
+  var secondPart = arr.slice(index + 1);
+  return firstPart.concat(secondPart); // complete this statement
 }
 
 /*
@@ -56,7 +56,7 @@ function formatPercentage(arr) {
       arr[i] = 100;
     }
     arr[i] = arr[i].toFixed(2);
-    arr[i] = parseFloat(arr[i]); //removes any trailing zeros fro a number
+    arr[i] = parseFloat(arr[i]); //removes any trailing zeros from a number
   }
   var newArr = arr.map((arr) => arr + "%");
   return newArr;
