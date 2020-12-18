@@ -5,7 +5,8 @@ Write a function that:
 - removes any forward slashes (/) in the strings
 - makes the string all lowercase
 */
-function tidyUpString(strArr) {}
+function tidyUpString(strArr)
+
 
 /*
 Complete the function to check if the variable `num` satisfies the following requirements:
@@ -15,7 +16,12 @@ Complete the function to check if the variable `num` satisfies the following req
 Tip: use logical operators
 */
 
-function validate(num) {}
+function validate(num) {
+  if (num <= 100) {
+    return true;
+  }
+  return false;
+}
 
 /* 
 Write a function that returns a copy of the given array arr, but with the element at the given index, index removed.
