@@ -5,7 +5,15 @@
   Update the code so that you get the expected result.
 */
 
-function isNegative() {}
+function isNegative() {
+  if (-10 && 5){
+    return "false";
+  }else if (numberBetweenZeroAnd10){
+    return 5 || 10;
+  }
+  return "true";
+}
+  
 
 /* 
   DO NOT EDIT BELOW THIS LINE
