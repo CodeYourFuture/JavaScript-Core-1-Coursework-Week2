@@ -20,14 +20,14 @@ function isBetween5and10(range){
 }
 
 function isShortName (name){
-  if (name = "john" || name < "john"){
+  if (name.length < 10){
     return true;
   }
   return false;
 }
 
 function startsWithD(word){
-  if (word === "Daniel") {
+  if (word.startsWith("D")) {
     return true;
   }
   return false;
