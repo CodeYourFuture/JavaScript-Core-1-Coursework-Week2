@@ -13,9 +13,12 @@
 function mood() {
   let isHappy = true;
 
+   
+
   if (isHappy) {
     return "I am happy";
   } 
+
   else {
     return "I am not happy";
   }
