@@ -5,7 +5,50 @@
   Update the code so that you get the expected result.
 */
 
-function isNegative() {}
+function isNegative(number) {
+  if (number <0) {
+  return true;  
+  } else {
+  return false;
+  }
+} 
+// option one 
+/*function isBetween5and10(number) {
+  if (5<number<=10){
+  return true;
+  } else {
+  return false;
+  }
+}*/
+
+// option two 
+function isBetween5and10(number) {
+ if (number>5 && number<=10){
+   return true;
+ } else {
+   return false;
+ }
+
+}
+function isShortName(name) {
+  if (name.length>5){
+    return true;
+  } else {
+    return false;
+  }  
+}
+
+function startsWithD(firstName) {
+ if (firstName.charAt(0)==="D"||"d"){
+   return true 
+ } else {
+   return false;
+ }
+}
+
+// Test  
+//console.log(startsWithD("Daniel"))
+//console.log(startsWithD("daniel"))
 
 /* 
   DO NOT EDIT BELOW THIS LINE

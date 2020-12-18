@@ -1,17 +1,19 @@
 /*
   Array getters
   -------------------------
-  Complete the functions below to get the first and last values from the array
+  Complete the functions below to
+  get the first and last values 
+  from the array
 */
-
 function first(arr) {
-  return; // complete this statement
+  return arr[0]; // complete this statement
 }
 
 function last(arr) {
-  return; // complete this statement
+  return arr[arr.length-1]; // complete this statement
 }
 
+//const lastItem = colors[colors.length - 1]
 /* 
   DO NOT EDIT BELOW THIS LINE
   --------------------------- */

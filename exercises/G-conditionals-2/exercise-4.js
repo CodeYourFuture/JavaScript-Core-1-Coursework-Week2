@@ -1,14 +1,36 @@
 /*
   Conditionals
   ---------------------------------
-  Write a function that checks if a sentence contains the word "code"
-  - if the sentence contains the word "code" then return true
+  Write a function that checks if a sentence 
+  contains the word "code"
+  
+  - if the sentence contains the word 
+  "code" then return true
+  
   - otherwise return false
 
-  Hint: Google how to check if a string contains a word
+  Hint: Google how to check if a 
+  string contains a word
 */
 
-function containsCode(sentence) {}
+function containsCode(sentence) {
+  if (sentence==="code") {
+    return "true";
+  } else {
+    return "false";
+  }
+}
+
+function containsCode(sentence) {
+  if (sentence.includes('code')) {
+    return "true";
+  } else {
+    return "false";
+  }
+}
+
+//'a nice string'.includes('nice') //true
+
 
 /* 
 DO NOT EDIT BELOW THIS LINE

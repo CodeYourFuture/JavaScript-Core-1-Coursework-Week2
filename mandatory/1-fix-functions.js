@@ -10,9 +10,9 @@
 
 */
 
-function mood() {
-  let isHappy = true;
 
+function mood(isHappy) {
+  console.log(isHappy);
   if (isHappy) {
     return "I am happy";
   } else {
@@ -20,34 +20,49 @@ function mood() {
   }
 }
 
+// call functions and test the values being passed into it
+//console.log(mood(false))
+
+
+
 function greaterThan10(num) {
   let isBigEnough;
 
-  if (isBigEnough) {
+  if (num>10) {
     return "num is greater than 10";
   } else {
     return "num is not big enough";
   }
 }
 
-function sortArray(letters) {
-  let sortedLetters = letters;
+//console.log(greaterThan10(-10))
 
+//let ranArr = ["r","a","n","e"];
+
+function sortArray(letters) {
+  let sortedLetters = letters.sort();
   return sortedLetters;
 }
 
-function first5(numbers) {
-  let sliced;
+// console.log(sortArray(ranArr))
 
-  return sliced;
+//let spliceNum= [5, 6, 35, 0, 8, 99, 101, 11, 7];
+//let ranArr =[88,929, 9, 22, 312, 32, 8, 30]
+function first5(numbers) {
+  return numbers.slice(0, 5);  
 }
+
+
+//console.log(first5(ranArr))
+
+
+//let ranArr = ["j","o","e","s","p","h"];
 
 function get3rdIndex(arr) {
-  let index = 3;
-  let element;
-
-  return element;
+  return arr[3];
 }
+
+//console.log(get3rdIndex(ranArr))
 
 /* ======= TESTS - DO NOT MODIFY ===== */
 

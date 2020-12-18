@@ -5,8 +5,41 @@ Write a function that:
 - removes any forward slashes (/) in the strings
 - makes the string all lowercase
 */
-function tidyUpString(strArr) {}
 
+// splice and substring + for loop + low case built in method  + indexing 
+
+// function tidyUpString(strArr){
+// for (let x = 0; x <strArr.length; x++){
+//   console.log(strArr[x])
+//   let editString = strArr[x];
+//   editString = editString.toUpperCase() 
+// //  console.log(editString)
+// }
+// }
+
+
+
+function tidyUpString(strArr){
+  let strCopy = []
+  for (let x = 0; x <strArr.length; x++){     
+      strArr[x] = strArr[x].toLowerCase()
+      strArr[x] = strArr[x].trim(); 
+      if (strArr[x][0] == "/"){ 
+          strArr[x] = strArr[x].slice(1);    
+      }
+      strCopy.push(strArr[x])
+  }
+return strCopy
+}
+
+
+
+/*
+
+for (let i = 0; i < 5; i++) {
+    console.log(i)
+}
+*/
 /*
 Complete the function to check if the variable `num` satisfies the following requirements:
 - is a number
@@ -15,15 +48,25 @@ Complete the function to check if the variable `num` satisfies the following req
 Tip: use logical operators
 */
 
-function validate(num) {}
+function validate(num) {
+ return (num%2 === 0 ) && (num<=100) 
+
+}
 
 /* 
-Write a function that returns a copy of the given array arr, but with the element at the given index, index removed.
+Write a function that returns a copy of the given array arr, 
+but with the element at the given index, index removed.
 The function must NOT change the original array, arr.
 */
 
 function remove(arr, index) {
-  return; // complete this statement
+  let secondArray = []
+  for (let i = 0; i< arr.length; i++){
+    if (i!=index) 
+    secondArray.push(arr[i])
+ }
+  
+  return secondArray; // complete this statement
 }
 
 /*
@@ -34,7 +77,26 @@ Write a function that:
 - numbers greater 100 must be replaced with 100
 */
 
-function formatPercentage(arr) {}
+/* 
+-
+return price return "%" 
+Use Math.round(num * 100) / 1000
+
+
+*/
+
+function formatPercentage(arr) {
+  let arrOutput  = new Array ()
+    for (x = 0; x<arr.length; x++){
+    let number = arr[x]
+      if (number>100){
+      number = 100
+      } 
+    number = Math.round(number * 100)/ 100
+    arrOutput.push(number + "%") 
+  }
+  return arrOutput 
+}
 
 /* ======= TESTS - DO NOT MODIFY ===== */
 
