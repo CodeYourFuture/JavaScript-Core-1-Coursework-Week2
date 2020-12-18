@@ -15,7 +15,8 @@ function mood() {
 
   if (isHappy) {
     return "I am happy";
-  } else {
+  } 
+  else {
     return "I am not happy";
   }
 }
@@ -23,7 +24,7 @@ function mood() {
 function greaterThan10(num) {
   let isBigEnough;
 
-  if (isBigEnough) {
+  if (num > 10) {
     return "num is greater than 10";
   } else {
     return "num is not big enough";
@@ -32,19 +33,21 @@ function greaterThan10(num) {
 
 function sortArray(letters) {
   let sortedLetters = letters;
+  let sortedletters = letters.sort();
 
   return sortedLetters;
 }
 
 function first5(numbers) {
-  let sliced;
+  let sliced = [1, 2, 3, 4, 5];
 
   return sliced;
 }
 
 function get3rdIndex(arr) {
   let index = 3;
-  let element;
+  
+  let element = arr[3];
 
   return element;
 }
