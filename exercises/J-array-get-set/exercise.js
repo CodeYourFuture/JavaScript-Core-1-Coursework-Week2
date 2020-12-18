@@ -5,12 +5,14 @@
 */
 
 function first(arr) {
-  return; // complete this statement
+  arr = numbers;
+  return numbers[0]; // complete this statement
 }
 
 function last(arr) {
-  return; // complete this statement
-}
+  arr = names;
+  return names[3]; // complete this statement
+} 
 
 /* 
   DO NOT EDIT BELOW THIS LINE

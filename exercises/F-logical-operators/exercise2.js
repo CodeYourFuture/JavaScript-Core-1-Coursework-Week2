@@ -4,10 +4,19 @@
   This program calls some functions that are either missing or incomplete.
   Update the code so that you get the expected result.
 */
-var checkNegative = -10;
-function isNegative() {
-  return 
+function isNegative(num) {
+  return num < 0;
 }
+function isBetween5and10(num){
+  return num > 5 && num == 10;
+}
+//  function isShortName(name){
+//    let name = name.shortName;
+//    return isShortName;
+//  }
+
+  
+
 
 /* 
   DO NOT EDIT BELOW THIS LINE

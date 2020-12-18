@@ -12,7 +12,7 @@ function containsCode(sentence) {
   if (sentence === "code") {
     return   "true";
   } else 
-  return  "false";
+   return  "false";
 }
 console.log(containsCode(sentence));
 /* 
