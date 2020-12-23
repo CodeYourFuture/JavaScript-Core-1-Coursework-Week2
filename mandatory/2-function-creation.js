@@ -25,7 +25,11 @@ Tip: use logical operators
 */
 
 function validate(num) {
-  if ()
+  if (typeof num === 'number' && num%2 === 0 && num <= 100){
+    return true;
+  } else {
+    return false;
+  }
 }
 
 /* 
@@ -34,7 +38,8 @@ The function must NOT change the original array, arr.
 */
 
 function remove(arr, index) {
-  return; // complete this statement
+  arr.splice(index, 1);
+  return arr; // complete this statement
 }
 
 /*
@@ -45,7 +50,17 @@ Write a function that:
 - numbers greater 100 must be replaced with 100
 */
 
-function formatPercentage(arr) {}
+function formatPercentage(arr) {
+  let checkArr = arr;
+  for (let i = 0; i < checkArr.length; i++){
+    if (checkArr[i] < 100){
+      checkArr[i] = Math.round((checkArr[i] + Number.EPSILON) * 100) / 100 + "%";
+    } else{
+      checkArr[i] = "100%";
+    }
+  }
+  return checkArr;
+}
 
 /* ======= TESTS - DO NOT MODIFY ===== */
 
