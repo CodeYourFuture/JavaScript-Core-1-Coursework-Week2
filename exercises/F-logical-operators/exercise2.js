@@ -10,13 +10,12 @@ function isNegative(num) {
 function isBetween5and10(num){
   return num > 5 && num == 10;
 }
-//  function isShortName(name){
-//    let name = name.shortName;
-//    return isShortName;
-//  }
+ function isShortName(name){
+    return name.length;
+  
+ }
 
   
-
 
 /* 
   DO NOT EDIT BELOW THIS LINE
