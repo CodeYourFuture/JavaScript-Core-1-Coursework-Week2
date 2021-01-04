@@ -27,7 +27,7 @@ function isShortName(name){
 }
 
 function startsWithD(name){
-  if(name[0] === "D"){
+  if(name.charAt(0) === "D"){
     return true;
   }
   return false;
