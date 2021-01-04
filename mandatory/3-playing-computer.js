@@ -13,13 +13,13 @@
   3. What is printed to the console?
     [2, 6, 6, 4, 7, 9, 8, 6, 9, 13, 10, 8]
   4. How many times is "f1" called?
-    [10 times, used console.log("find", a)]
+    [2 times (itirations 1 and 3)]
   5. How many times is "f2" called?
-    [2 times, used console.log("search", x)]
+    [3 times (itirations 0, 2 and 4) ]
   6. What value does the "a" parameter take in the first "f1" call?
-    [value a = 9, used console.log("before", a)]
+    [value a = 1, at itirations 1, a = 1]
   7. What is the value of the "a" outer variable when "f1" is called for the first time?
-    [value a = 10, used console.log("after", a)]
+    [value a = 8, used console.log("after", a)]
 */
 
 let x = 2;
@@ -46,8 +46,8 @@ for (let i = 0; i < 5; ++i) {
     //console.log("search", x); 
     console.log(d);
   } else {
+    // console.log("find", a);
     const e = f1(i, a);
-    //console.log("find", a); 
     console.log(e);
   }
 }
