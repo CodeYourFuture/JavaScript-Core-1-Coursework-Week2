@@ -7,10 +7,12 @@
 */
 
 var name = "Daniel";
-var danielsRole = "Student";
+var danielsRole = "student";
 
-if(danielsRole === danielsRole){
-  console.log(`Hi, I'm ${name}, I'm a ${danielsRole}.`);
+if(danielsRole === "mentor"){
+  console.log(`Hi, I'm ${name}, I'm a mentor.`);
+}else{
+  console.log(`Hi, I'm ${name}, I'm a student.`);
 }
 
 /* 
