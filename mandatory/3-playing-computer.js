@@ -14,6 +14,22 @@
   6. What value does the "a" parameter take in the first "f1" call?
   7. What is the value of the "a" outer variable when "f1" is called for the first time?
 */
+  
+
+  // 1 - B was not defined 
+  // 2 - done
+  // 3 - 2,6,4,9,6,13,8
+  // 4 - twice
+  // 5 - 3 times
+  // 6 - 8
+  // 7 - 6
+
+
+
+
+
+
+
 
 let x = 2;
 let a = 6;

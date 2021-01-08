@@ -5,8 +5,24 @@ Write a function that:
 - removes any forward slashes (/) in the strings
 - makes the string all lowercase
 */
-function tidyUpString(strArr)
+function tidyUpString(strArr){
+  let basketball1;
+  let basketball2;
+  let basketball3;
+for(var i=0; i<strArr.length; i++){
 
+basketball1= strArr[i].trim();
+basketball2= basketball1.replace("/","");
+basketball3= basketball2.toLowerCase();
+
+strArr[i] = basketball3;
+
+}
+return strArr
+}
+  
+
+ 
 
 /*
 Complete the function to check if the variable `num` satisfies the following requirements:
@@ -17,7 +33,7 @@ Tip: use logical operators
 */
 
 function validate(num) {
-  if (num <= 100) {
+  if (typeof num === "number" && num % 2 === 0 && num <= 100) {
     return true;
   }
   return false;
@@ -29,7 +45,8 @@ The function must NOT change the original array, arr.
 */
 
 function remove(arr, index) {
-  return; // complete this statement
+  arr.splice(index, 1);
+  return arr; // complete this statement
 }
 
 /*
@@ -40,7 +57,18 @@ Write a function that:
 - numbers greater 100 must be replaced with 100
 */
 
-function formatPercentage(arr) {}
+function formatPercentage(arr) {
+  for(var i=0; i<arr.length; i++) {
+    if(arr[i]> 100) {
+       arr[i] = "100%";
+    } 
+    else {
+      arr[i] = Math.round(arr[i]*100)/ 100 + "%";
+ }
+ }
+  return arr;
+}
+ 
 
 /* ======= TESTS - DO NOT MODIFY ===== */
 
