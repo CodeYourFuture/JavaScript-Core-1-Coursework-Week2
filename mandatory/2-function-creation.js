@@ -7,9 +7,9 @@ Write a function that:
 */
 function tidyUpString(strArr) {
   for (let i = 0; i < strArr.length; i++) {
-    let newString = strArr[i].split(" ").join("").toLowerCase();
-    return newString;
+    strArr[i] = `${strArr[i].toLowerCase().replace("/", "").trim()}`;
   }
+  return strArr;
 }
 
 /*
@@ -20,7 +20,15 @@ Complete the function to check if the variable `num` satisfies the following req
 Tip: use logical operators
 */
 
-function validate(num) {}
+function validate(num) {
+  let answer;
+  if (num <= 100 && num % 2 === 0) {
+    answer = true;
+  } else {
+    answer = false;
+  }
+  return answer;
+}
 
 /* 
 Write a function that returns a copy of the given array arr, but with the element at the given index, index removed.
@@ -28,7 +36,9 @@ The function must NOT change the original array, arr.
 */
 
 function remove(arr, index) {
-  return; // complete this statement
+  let arrCopy = arr;
+  arrCopy.splice(index, 1);
+  return arrCopy; // complete this statement
 }
 
 /*
@@ -39,7 +49,16 @@ Write a function that:
 - numbers greater 100 must be replaced with 100
 */
 
-function formatPercentage(arr) {}
+function formatPercentage(arr) {
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] > 100) {
+      arr[i] = `100.00%`;
+    } else {
+      arr[i] = `${arr[i].toFixed(2)}%`;
+    }
+  }
+  return arr;
+}
 
 /* ======= TESTS - DO NOT MODIFY ===== */
 
