@@ -13,7 +13,27 @@
  * - Should return this array to use in other functions
  */
 
-// `getAllFrequencies` goes here
+
+// let arr2 = Array.from({ length: 20 }, function (_, i) {
+// i = 20++
+
+// })
+
+
+function getAllFrequencies() {
+  let startVal = 87;
+  let endVal = 108 + 1;
+  let arr = Array.from({ length: endVal - startVal }, function (_, i) {
+    return i = startVal++
+
+  })
+  console.log(arr)
+  return arr
+}
+getAllFrequencies()
+
+
+
 
 /**
  * Next, let's write a function that gives us only the frequencies that are radio stations.
@@ -24,7 +44,15 @@
  * - There is a helper function called isRadioFrequency that takes an integer as an argument and returns a boolean.
  * - Return only the frequencies that are radio stations.
  */
-// `getStations` goes here
+
+function getStations() {
+  let arr = getAllFrequencies();
+  return arr
+}
+
+function isRadioFrequency(int) {
+  console.log("?")
+}
 
 /* ======= TESTS - DO NOT MODIFY ======= */
 
