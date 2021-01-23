@@ -4,8 +4,39 @@
   This program calls some functions that are either missing or incomplete.
   Update the code so that you get the expected result.
 */
+//if it is less than 0 function
+function isNegative(number) {
+  if(number < 0){
+    return true;
+  }else{
+    return false;
+  }
+}
+ // number between 5-10 function
+ function isBetween5and10(number) {
+  if(number > 5 || number < 10){
+    return true;
+  }else{
+    return false;
+  }
+}
+//Daniel is a short name
+function isShortName(name) {
+  if(name ==="Daniel"){
+    return true;
+  }else{
+    return false;
+  }
+}
+//if Daniel start with D
+function startsWithD(name) {
+  if(name.charAt(0)=='D'){     // I use the charAt function to get the first character in the string
+    return true;
+  }else{
+    return false;
+  }
+}
 
-function isNegative() {}
 
 /* 
   DO NOT EDIT BELOW THIS LINE
