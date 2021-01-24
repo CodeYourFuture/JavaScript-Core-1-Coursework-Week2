@@ -7,7 +7,15 @@
 
 */
 
-function studentPassed(grade) {}
+// function studentPassed(grade) {
+//   if(grade >= 50) {
+//     return "passed"
+//   } else {
+//     return "failed"
+//   }
+// }
+
+const studentPassed = grade => (grade >= 50) ? "passed" : "failed";
 
 /* 
 DO NOT EDIT BELOW THIS LINE
@@ -20,7 +28,7 @@ console.log("'" + grade1 + "': " + studentPassed(grade1));
 console.log("'" + grade2 + "': " + studentPassed(grade2));
 console.log("'" + grade3 + "': " + studentPassed(grade3));
 
-/* 
+/*
 EXPECTED RESULT
 ---------------
 '49': failed

@@ -8,7 +8,23 @@
   - Otherwise the grade is "F"
 */
 
-function calculateGrade(mark) {}
+// function calculateGrade(mark) {
+//   if(mark >= 80) {
+//     return "A";
+//   } else if(mark >= 60 && mark < 80) {
+//     return "B";
+//   } else if(mark >= 50 && mark < 60) {
+//     return "C";
+//   } else {
+//     return "F";
+//   }
+// }
+
+const calculateGrade = (mark) => (mark >= 80) ? "A"
+  : (mark >= 60 && mark < 80) ? "B"
+    : (mark >= 50 && mark < 60) ? "C"
+      : "F";
+
 
 /* 
 DO NOT EDIT BELOW THIS LINE
@@ -23,7 +39,7 @@ console.log("'" + grade2 + "': " + calculateGrade(grade2));
 console.log("'" + grade3 + "': " + calculateGrade(grade3));
 console.log("'" + grade4 + "': " + calculateGrade(grade4));
 
-/* 
+/*
   EXPECTED RESULT
   ---------------
   '49': F
