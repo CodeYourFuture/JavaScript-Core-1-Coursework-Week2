@@ -5,7 +5,15 @@ Write a function that:
 - removes any forward slashes (/) in the strings
 - makes the string all lowercase
 */
-function tidyUpString(strArr) {}
+function tidyUpString(strArr) {
+  for (let b=0; b < strArr.length; b++){
+    let removeSpace= strArr[b].trim(); // the Trim() method will remove whitespace from both ends of the string.
+    let removeForwardSlash=removeSpace.replace("/",''); // it will remove by replacing any forward slashes by new string
+    let lowercaseString=removeForwardSlash.toLowerCase();
+    strArr[b]=lowercaseString;
+  }
+  return strArr;
+}
 
 /*
 Complete the function to check if the variable `num` satisfies the following requirements:
@@ -15,7 +23,14 @@ Complete the function to check if the variable `num` satisfies the following req
 Tip: use logical operators
 */
 
-function validate(num) {}
+function validate(num) {
+  if(typeof num=="number" && num %2==0 && num <=100){
+    return true;
+  }
+  else{
+    return false;
+  }
+}
 
 /* 
 Write a function that returns a copy of the given array arr, but with the element at the given index, index removed.
@@ -23,7 +38,8 @@ The function must NOT change the original array, arr.
 */
 
 function remove(arr, index) {
-  return; // complete this statement
+  arr.splice(index,1); //The splice() method adds/removes items to/from an array, and returns the removed item(s).
+  return arr; // complete this statement
 }
 
 /*
@@ -34,7 +50,23 @@ Write a function that:
 - numbers greater 100 must be replaced with 100
 */
 
-function formatPercentage(arr) {}
+function formatPercentage(arr) {
+  for (let r=0;r < arr.length;r++){
+    // checking if the numbers greater 100 so that it must be replaced with 100
+    let elementGreaterThan100=arr[r];
+    if ( elementGreaterThan100 > 100){
+      elementGreaterThan100=100;
+      // else round to two decimals places
+    }else {
+      elementGreaterThan100=Math.round(arr[r]*100)/100;
+    }
+    //strings formatted as percentages
+    let roundedTwoDecimal= elementGreaterThan100;
+    let percentages=roundedTwoDecimal + "%";
+    arr[r]=percentages; 
+  }
+  return arr;
+}
 
 /* ======= TESTS - DO NOT MODIFY ===== */
 
