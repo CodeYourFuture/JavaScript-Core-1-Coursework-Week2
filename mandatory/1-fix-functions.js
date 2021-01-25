@@ -32,11 +32,11 @@ function greaterThan10(num) {
    }
 }
 
-// function sortArray(letters) {
-//   let sortedLetters = letters;
-
-//   return sortedLetters;
-// }
+function sortArray(letters) {
+    let sortedLetters = letters;
+    sortedLetters.sort();
+  return sortedLetters;
+}
 
 // function first5(numbers) {
 //   let sliced;
@@ -105,14 +105,14 @@ test(
   greaterThan10(9),
   "num is not big enough"
 );
-// test("sortArray function works", sortArray(["a", "n", "c", "e", "z", "f"]), [
-//   "a",
-//   "c",
-//   "e",
-//   "f",
-//   "n",
-//   "z",
-// ]);
+test("sortArray function works", sortArray(["a", "n", "c", "e", "z", "f"]), [
+  "a",
+  "c",
+  "e",
+  "f",
+  "n",
+  "z",
+]);
 
 // let numbers = [1, 2, 3, 4, 5, 6, 7, 8];
 // test("first5 function works", first5(numbers), [1, 2, 3, 4, 5]);
