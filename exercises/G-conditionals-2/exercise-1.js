@@ -5,20 +5,16 @@
   - if number is less than zero, return the word "negative"
   - if number is more or equal to zero, return the word "positive"
 */
-
 let negativeOrPositive = number => number < 0 ? `${number} is negative` : `${number} is positive`;
-
 /* 
   DO NOT EDIT BELOW THIS LINE
   --------------------------- */
 var number1 = 5;
 var number2 = -1;
 var number3 = 0;
-
 console.log(number1 + " is " + negativeOrPositive(number1));
 console.log(number2 + " is " + negativeOrPositive(number2));
 console.log(number3 + " is " + negativeOrPositive(number3));
-
 /* 
   EXPECTED RESULT
   ---------------

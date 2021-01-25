@@ -18,11 +18,10 @@ let validate = num => typeof num === 'number' && num % 2 === 0 && num <= 100;
 Write a function that returns a copy of the given array arr, but with the element at the given index, index removed.
 The function must NOT change the original array, arr.
 */
-
 function remove(arr, index){
   arr.splice(index, 1);
   return arr;
-} 
+}
 /*
 Write a function that:
 - takes an array of numbers as input
@@ -34,7 +33,6 @@ function formatPercentage(arr) {
   let newArray = arr.map(x => x > 100 ? x = 100 : x);
   return newArray.map(x => (Math.round(x*100))/100 + '%');
 }
-
 /* ======= TESTS - DO NOT MODIFY ===== */
 
 const util = require("util");

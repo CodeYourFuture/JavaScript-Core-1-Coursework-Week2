@@ -7,9 +7,7 @@
   - if the mark is 60 or lower but no lower than 50 then the grade is "C"
   - Otherwise the grade is "F"
 */
-
 let calculateGrade = mark => mark < 50 ? 'F' : mark <= 60 ? 'C' : mark < 80 ? 'B': 'A';
-
 /* 
 DO NOT EDIT BELOW THIS LINE
 --------------------------- */

@@ -7,20 +7,16 @@
 
   Hint: Google how to check if a string contains a word
 */
-
 let containsCode = sentence => sentence.includes('code');
-
 /* 
 DO NOT EDIT BELOW THIS LINE
 --------------------------- */
 var sentence1 = "code your future";
 var sentence2 = "draw your future";
 var sentence3 = "design your future";
-
 console.log("'" + sentence1 + "': " + containsCode(sentence1));
 console.log("'" + sentence2 + "': " + containsCode(sentence2));
 console.log("'" + sentence3 + "': " + containsCode(sentence3));
-
 /* 
     EXPECTED RESULT
     ---------------

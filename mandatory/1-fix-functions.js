@@ -9,41 +9,15 @@
   NOTE:Only make edits inside the function
 
 */
+let mood = a => a === true ? "I am happy" : "I am not happy";
 
-function mood(a) {
-  let isHappy = a;
-  if (isHappy === true) {
-    return "I am happy";
-  } else {
-    return "I am not happy";
-  }
-}
+let greaterThan10 = num => num > 10 ? "num is greater than 10" : "num is not big enough";
 
-function greaterThan10(num) {
-  let isBigEnough = num > 10;
-  if (isBigEnough) {
-    return "num is greater than 10";
-  } else {
-    return "num is not big enough";
-  }
-}
+let sortArray = letters => letters.sort();
 
-function sortArray(letters) {
-  let sortedLetters = letters.sort();
-  return sortedLetters;
-}
+let first5 = numbers => numbers.slice(0, 5);
 
-function first5(numbers) {
-  let sliced = numbers.slice(0, 5);
-  return sliced;
-}
-
-function get3rdIndex(arr) {
-  let index = 3;
-  let element = arr[index];
-  return element;
-}
-
+let get3rdIndex = arr => arr[3];
 /* ======= TESTS - DO NOT MODIFY ===== */
 
 const util = require("util");
