@@ -5,7 +5,16 @@ Write a function that:
 - removes any forward slashes (/) in the strings
 - makes the string all lowercase
 */
-function tidyUpString(strArr) {}
+
+function tidyUpString(strArr) {
+  let tidyUp = strArr.map((item) => {
+    let trimmed = item.trim();
+    let removedSlash = trimmed.replace("/", "")
+    let lowerCase = removedSlash.toLowerCase();
+    return lowerCase;
+  });
+  return tidyUp;
+}
 
 /*
 Complete the function to check if the variable `num` satisfies the following requirements:
@@ -15,7 +24,14 @@ Complete the function to check if the variable `num` satisfies the following req
 Tip: use logical operators
 */
 
-function validate(num) {}
+function validate(num) {
+  let isNumber = typeof num === "number";
+  let evenNumber = num % 2 === 0;
+  let lessThanOrEqual100 = num <= 100;
+  if (isNumber && evenNumber && lessThanOrEqual100) {
+    return true;
+  } else return false;
+}
 
 /* 
 Write a function that returns a copy of the given array arr, but with the element at the given index, index removed.
@@ -23,7 +39,9 @@ The function must NOT change the original array, arr.
 */
 
 function remove(arr, index) {
-  return; // complete this statement
+  let cloneArray = [...arr];
+  cloneArray.splice(index, 1);
+  return cloneArray;
 }
 
 /*
@@ -34,7 +52,14 @@ Write a function that:
 - numbers greater 100 must be replaced with 100
 */
 
-function formatPercentage(arr) {}
+function formatPercentage(arr) {
+  let percentage = arr.map((item) => {
+    if (item > 100) {
+      return `100%`;
+    } else return `${parseFloat(item.toFixed(2))}%`;
+  })
+  return percentage;
+}
 
 /* ======= TESTS - DO NOT MODIFY ===== */
 
