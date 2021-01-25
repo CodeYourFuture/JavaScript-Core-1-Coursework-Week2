@@ -5,7 +5,25 @@
   Update the code so that you get the expected result.
 */
 
-function isNegative() {}
+function isNegative(number) {
+  return number < 0;
+}
+function isBetween5and10(number) {
+  return number >= 5 && number <= 10;
+}
+function isShortName(name) {
+  let nameLength = name.length;
+  if (nameLength < 10) {
+    return true;
+  } else return false;
+}
+function startsWithD(name) {
+  let firstLetterOfName = name[0];
+  console.log(firstLetterOfName);
+  if (firstLetterOfName === name[0].toUpperCase()) {
+    return true;
+  } else return false;
+}
 
 /* 
   DO NOT EDIT BELOW THIS LINE

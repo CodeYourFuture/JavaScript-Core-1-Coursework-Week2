@@ -5,16 +5,16 @@
   The variables should have values that match the expected results.
 */
 
-var studentCount = 16;
-var mentorCount = 9;
-var moreStudentsThanMentors; // finish this statement
+let studentCount = 16;
+let mentorCount = 9;
+let moreStudentsThanMentors = studentCount > mentorCount;
 
-var roomMaxCapacity = 25;
-var enoughSpaceInRoom; // finish this statement
+let roomMaxCapacity = 25;
+let enoughSpaceInRoom = roomMaxCapacity >= studentCount + mentorCount;
 
-var personA = "Daniel";
-var personB = "Irina";
-var sameName; // finish this statement
+let personA = "Daniel";
+let personB = "Irina";
+let sameName = personA === personB;
 
 /* 
   DO NOT EDIT BELOW THIS LINE
