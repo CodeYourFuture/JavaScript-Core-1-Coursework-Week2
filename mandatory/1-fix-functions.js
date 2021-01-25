@@ -38,11 +38,10 @@ function sortArray(letters) {
   return sortedLetters;
 }
 
-// function first5(numbers) {
-//   let sliced;
-
-//   return sliced;
-// }
+function first5(numbers) {
+    let sliced = numbers.slice(0,5);
+    return sliced;
+}
 
 // function get3rdIndex(arr) {
 //   let index = 3;
@@ -114,11 +113,11 @@ test("sortArray function works", sortArray(["a", "n", "c", "e", "z", "f"]), [
   "z",
 ]);
 
-// let numbers = [1, 2, 3, 4, 5, 6, 7, 8];
-// test("first5 function works", first5(numbers), [1, 2, 3, 4, 5]);
-// if (!arraysEqual(numbers, [1, 2, 3, 4, 5, 6, 7, 8])) {
-//   console.log("PROBLEM: first5 changed its input array - it shouldn't!");
-// }
+let numbers = [1, 2, 3, 4, 5, 6, 7, 8];
+test("first5 function works", first5(numbers), [1, 2, 3, 4, 5]);
+if (!arraysEqual(numbers, [1, 2, 3, 4, 5, 6, 7, 8])) {
+  console.log("PROBLEM: first5 changed its input array - it shouldn't!");
+}
 
 // test(
 //   "get3rdIndex function works - case 1",
