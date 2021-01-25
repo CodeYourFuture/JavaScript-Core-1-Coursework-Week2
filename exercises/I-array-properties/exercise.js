@@ -5,10 +5,7 @@
 
 */
 
-function isEmpty(arr) {
-  return; // complete this statement
-}
-
+let isEmpty = arr => arr.length === 0;
 /* 
   DO NOT EDIT BELOW THIS LINE
   --------------------------- */

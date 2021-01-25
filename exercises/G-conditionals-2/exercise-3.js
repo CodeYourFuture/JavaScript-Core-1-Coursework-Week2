@@ -8,7 +8,7 @@
   - Otherwise the grade is "F"
 */
 
-function calculateGrade(mark) {}
+let calculateGrade = mark => mark < 50 ? 'F' : mark <= 60 ? 'C' : mark < 80 ? 'B': 'A';
 
 /* 
 DO NOT EDIT BELOW THIS LINE

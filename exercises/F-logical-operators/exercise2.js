@@ -5,8 +5,10 @@
   Update the code so that you get the expected result.
 */
 
-function isNegative() {}
-
+let isNegative = number => number < 0;
+let isBetween5and10 = number => number >= 5 && number <= 10;
+let isShortName = name => name.length < 8;
+let startsWithD = name => name[0] === 'D';
 /* 
   DO NOT EDIT BELOW THIS LINE
   --------------------------- */

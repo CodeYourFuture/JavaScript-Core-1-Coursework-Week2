@@ -7,7 +7,7 @@
 
 */
 
-function studentPassed(grade) {}
+let studentPassed = grade => grade < 50 ? 'failed' : 'passed';
 
 /* 
 DO NOT EDIT BELOW THIS LINE

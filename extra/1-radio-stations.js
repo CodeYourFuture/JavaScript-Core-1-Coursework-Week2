@@ -12,9 +12,11 @@
  * - Create an array  starting at 87 and ending in 108
  * - Should return this array to use in other functions
  */
-
-// `getAllFrequencies` goes here
-
+function getAllFrequencies() {
+  let frequencies = [];
+  for(let i = 87; i <= 108; i++) frequencies.push(i);
+  return frequencies;
+}
 /**
  * Next, let's write a function that gives us only the frequencies that are radio stations.
  * Call this function `getStations`.
@@ -24,8 +26,10 @@
  * - There is a helper function called isRadioFrequency that takes an integer as an argument and returns a boolean.
  * - Return only the frequencies that are radio stations.
  */
-// `getStations` goes here
-
+function getStations() {
+  let radioStations = getAllFrequencies();
+  return radioStations.filter(x => isRadioStation(x));
+}
 /* ======= TESTS - DO NOT MODIFY ======= */
 
 function getAvailableStations() {

@@ -4,13 +4,9 @@
   Complete the functions below to get the first and last values from the array
 */
 
-function first(arr) {
-  return; // complete this statement
-}
+let first = arr => arr[0];
 
-function last(arr) {
-  return; // complete this statement
-}
+let last = arr => arr.pop();
 
 /* 
   DO NOT EDIT BELOW THIS LINE

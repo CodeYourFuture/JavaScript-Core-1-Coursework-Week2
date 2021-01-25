@@ -5,8 +5,7 @@ Write a function that:
 - removes any forward slashes (/) in the strings
 - makes the string all lowercase
 */
-function tidyUpString(strArr) {}
-
+let tidyUpString = strArr => strArr.map(x => x.trim().replace('/', '').toLowerCase());
 /*
 Complete the function to check if the variable `num` satisfies the following requirements:
 - is a number
@@ -14,18 +13,16 @@ Complete the function to check if the variable `num` satisfies the following req
 - is less than or equal to 100
 Tip: use logical operators
 */
-
-function validate(num) {}
-
+let validate = num => typeof num === 'number' && num % 2 === 0 && num <= 100;
 /* 
 Write a function that returns a copy of the given array arr, but with the element at the given index, index removed.
 The function must NOT change the original array, arr.
 */
 
-function remove(arr, index) {
-  return; // complete this statement
-}
-
+function remove(arr, index){
+  arr.splice(index, 1);
+  return arr;
+} 
 /*
 Write a function that:
 - takes an array of numbers as input
@@ -33,8 +30,10 @@ Write a function that:
 - the numbers must be rounded to 2 decimal places
 - numbers greater 100 must be replaced with 100
 */
-
-function formatPercentage(arr) {}
+function formatPercentage(arr) {
+  let newArray = arr.map(x => x > 100 ? x = 100 : x);
+  return newArray.map(x => (Math.round(x*100))/100 + '%');
+}
 
 /* ======= TESTS - DO NOT MODIFY ===== */
 

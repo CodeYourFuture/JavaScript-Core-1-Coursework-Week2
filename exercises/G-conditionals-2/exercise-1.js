@@ -6,7 +6,7 @@
   - if number is more or equal to zero, return the word "positive"
 */
 
-function negativeOrPositive(number) {}
+let negativeOrPositive = number => number < 0 ? `${number} is negative` : `${number} is positive`;
 
 /* 
   DO NOT EDIT BELOW THIS LINE

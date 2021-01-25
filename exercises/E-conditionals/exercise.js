@@ -9,6 +9,8 @@
 var name = "Daniel";
 var danielsRole = "mentor";
 
+let checkRole = role => role === 'mentor' ? `Hi, I'm ${name}, I'm a ${danielsRole}` : `Hi, I'm ${name}, I'm a student`;
+
 /* 
 EXPECTED RESULT
 ---------------

@@ -5,8 +5,8 @@
 */
 
 var numbers = []; // add numbers from 1 to 10 into this array
-var mentors; // Create an array with the names of the mentors: Daniel, Irina and Rares
-
+var mentors = ['Daniel', 'Irina', 'Rares']; // Create an array with the names of the mentors: Daniel, Irina and Rares
+for(let i = 1; i <= 10; i++) numbers.push(i);
 /* 
   DO NOT EDIT BELOW THIS LINE
   --------------------------- */
