@@ -10,25 +10,27 @@
 
 */
 // 
- let isHappy = true;
+ 
 
-function mood(isHappy) {
-    if (isHappy) {
-      return "I am happy";
-    } else if(!isHappy) {
-      return "I am not happy";
-    }
+function mood(yes) {
+  let isHappy = true;   
+   
+     if (isHappy == yes) {
+          return "I am happy";
+        } else if(!isHappy == yes) {
+          return "I am not happy";
+      }
 }
 
-// function greaterThan10(num) {
-//   let isBigEnough;
-
-//   if (isBigEnough) {
-//     return "num is greater than 10";
-//   } else {
-//     return "num is not big enough";
-//   }
-// }
+function greaterThan10(num) {
+   let isBigEnough = 11;
+    
+  if (num >= isBigEnough ) {
+        return "num is greater than 10";
+      } else if(isBigEnough > num ){
+        return "num is not big enough";
+   }
+}
 
 // function sortArray(letters) {
 //   let sortedLetters = letters;
@@ -88,21 +90,21 @@ function arraysEqual(a, b) {
 
 test("mood function works for true", mood(true), "I am happy");
 test("mood function works for false", mood(false), "I am not happy");
-// test(
-//   "greaterThanTen function works for 11",
-//   greaterThan10(11),
-//   "num is greater than 10"
-// );
-// test(
-//   "greaterThanTen function works for 10",
-//   greaterThan10(10),
-//   "num is not big enough"
-// );
-// test(
-//   "greaterThanTen function works for 9",
-//   greaterThan10(9),
-//   "num is not big enough"
-// );
+test(
+  "greaterThanTen function works for 11",
+  greaterThan10(11),
+  "num is greater than 10"
+);
+test(
+  "greaterThanTen function works for 10",
+  greaterThan10(10),
+  "num is not big enough"
+);
+test(
+  "greaterThanTen function works for 9",
+  greaterThan10(9),
+  "num is not big enough"
+);
 // test("sortArray function works", sortArray(["a", "n", "c", "e", "z", "f"]), [
 //   "a",
 //   "c",
