@@ -8,7 +8,35 @@
   - Otherwise the grade is "F"
 */
 
-function calculateGrade(mark) {}
+// Declaring Variables for the different grades
+const is80OrMore = "A";
+const lower80Higher60 = "B"
+const lower60HigherEqual50 = "C"
+const lessThan50 = "F"
+
+function calculateGrade(mark) {
+
+  // checking if the grade is 80 or more
+  if (mark >= 80) {
+    return is80OrMore;
+  }
+
+  // checking if the grade is less than 80 but no lower than 60
+  else if (mark < 80 && mark > 60) {
+    return lower80Higher60; {
+    }
+  }
+
+  // checking if the grade is less than 60 but not lower than 50
+  else if (mark == 60 || mark > 50) {
+    return lower60HigherEqual50;
+  }
+
+  // checking if the grade is less than 50
+  else {
+    return lessThan50; 
+  }
+}
 
 /* 
 DO NOT EDIT BELOW THIS LINE

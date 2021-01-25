@@ -5,8 +5,17 @@
   - if number is less than zero, return the word "negative"
   - if number is more or equal to zero, return the word "positive"
 */
+const isPositive = "positive";
+const isNegative = "negative";
 
-function negativeOrPositive(number) {}
+function negativeOrPositive(number) {
+  if (number >= 0) {
+    return isPositive
+  }
+  else if (number < 0) {
+    return isNegative
+  }
+}
 
 /* 
   DO NOT EDIT BELOW THIS LINE

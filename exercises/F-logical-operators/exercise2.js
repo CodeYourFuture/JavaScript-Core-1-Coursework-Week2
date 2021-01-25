@@ -5,7 +5,42 @@
   Update the code so that you get the expected result.
 */
 
-function isNegative() {}
+// To check if the number is negative
+function isNegative(number1) {
+    if (number1 < 0){
+      return true;
+    }
+    else
+      return false;
+}
+
+// To check if the number is between 5 and 10
+function isBetween5and10(number2) {
+    if (number2 >= 5 && number2 <= 10) {
+      return true;
+    }
+    else
+      return false;
+}
+
+// To check if the name is 6 or less characters
+function isShortName(name1) {
+    if (name1.length <= 6) {
+      return true;
+    }
+    else
+      return false;
+}
+
+// To check if the name starts with the letter 'D'
+function startsWithD(name2) {
+    if (name2[0] === "D") {
+      return true;
+    }
+    else
+      return false;
+}
+
 
 /* 
   DO NOT EDIT BELOW THIS LINE

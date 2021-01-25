@@ -7,7 +7,17 @@
 
 */
 
-function studentPassed(grade) {}
+const studentFailed = "failed";
+const studentPass = "passed";
+
+function studentPassed(grade) {
+  if (grade < 50) {
+    return studentFailed;
+  }
+  else {
+    return studentPass;
+  }
+}
 
 /* 
 DO NOT EDIT BELOW THIS LINE
