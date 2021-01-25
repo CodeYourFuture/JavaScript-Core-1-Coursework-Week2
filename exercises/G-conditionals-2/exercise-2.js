@@ -7,7 +7,15 @@
 
 */
 
-function studentPassed(grade) {}
+function studentPassed(grade) {
+  let answer;
+  if (grade < 50) {
+    answer = "failed";
+  } else if (grade >= 50) {
+    answer = "passed";
+  }
+  return answer;
+}
 
 /* 
 DO NOT EDIT BELOW THIS LINE
