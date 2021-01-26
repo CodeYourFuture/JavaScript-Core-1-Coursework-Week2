@@ -15,7 +15,13 @@ Complete the function to check if the variable `num` satisfies the following req
 Tip: use logical operators
 */
 
-function validate(num) {}
+function validate(num) {
+  if (num === "number" || num % 2 === 0 && num <= 100) {
+    return true;
+  } else {
+    return false;
+  }
+}
 
 /* 
 Write a function that returns a copy of the given array arr, but with the element at the given index, index removed.
@@ -23,7 +29,7 @@ The function must NOT change the original array, arr.
 */
 
 function remove(arr, index) {
-  return; // complete this statement
+  return arr.slice(0, index).concat(arr.slice(index + 1)); // complete this statement
 }
 
 /*
