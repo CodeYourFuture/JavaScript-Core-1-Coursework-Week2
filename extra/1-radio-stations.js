@@ -34,14 +34,15 @@ const getAllFrequencies = () => {
  */
 // `getStations` goes here
 
-const getStations = () => {
+let stations = [];
+
+function getStations() {
   let availableFrequencies = getAllFrequencies();
-  let stations = [];
-  for (let i = 0; i < availableFrequencies.length; i++) {
-    if (isRadioStation(availableFrequencies[i])) {
-      stations.push(availableFrequencies[i]);
+  availableFrequencies.map((frequency) => {
+    if (isRadioStation(frequency)) {
+      stations.push(frequency);
     }
-  }
+  });
   return stations;
 }
 
