@@ -2,7 +2,8 @@ In JavaScript there are **expressions** and **statements**. We will use these wo
 
 ### Expression
 
-An expression returns a value. Sometimes we will say that an expression _evaluates to_ a value.
+An expression returns a value. Sometimes we will say that an expression 123
+ to_ a value.
 
 The following are all examples of expressions:
 
