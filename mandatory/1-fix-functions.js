@@ -10,43 +10,24 @@
 
 */
 
-function mood() {
-  let isHappy = true;
-
-  if (isHappy) {
-    return "I am happy";
-  } else {
-    return "I am not happy";
-  }
+function mood(isHappy) {
+  return isHappy == true ? "I am happy" : "I am not happy"
 }
 
 function greaterThan10(num) {
-  let isBigEnough;
-
-  if (isBigEnough) {
-    return "num is greater than 10";
-  } else {
-    return "num is not big enough";
-  }
+  return num > 10 ? "num is greater than 10" : "num is not big enough";
 }
 
 function sortArray(letters) {
-  let sortedLetters = letters;
-
-  return sortedLetters;
+  return letters.sort();
 }
 
 function first5(numbers) {
-  let sliced;
-
-  return sliced;
+  return numbers.slice(0, 5);
 }
 
 function get3rdIndex(arr) {
-  let index = 3;
-  let element;
-
-  return element;
+  return arr[3];
 }
 
 /* ======= TESTS - DO NOT MODIFY ===== */
