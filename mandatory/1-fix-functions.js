@@ -11,7 +11,7 @@
 */
 
 function mood(isHappy) {
-  return isHappy == true ? "I am happy" : "I am not happy"
+  return isHappy == true ? "I am happy" : "I am not happy";
 }
 
 function greaterThan10(num) {
