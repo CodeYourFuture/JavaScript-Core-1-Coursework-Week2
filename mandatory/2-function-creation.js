@@ -52,14 +52,18 @@ Write a function that:
 - numbers greater 100 must be replaced with 100
 */
 
-function formatPercentage(arr) {
-  let percentage = arr.map((item) => {
-    if (item > 100) {
-      return `100%`;
-    } else return `${parseFloat(item.toFixed(2))}%`;
-  })
-  return percentage;
-}
+// Solution -1
+// function formatPercentage(arr) {
+//   let percentage = arr.map((item) => {
+//     if (item > 100) {
+//       return `100%`;
+//     } else return `${parseFloat(item.toFixed(2))}%`;
+//   })
+//   return percentage;
+// }
+
+// Solution -2
+const formatPercentage = (arr) => arr.map((item) => (item > 100) ? `100%` : `${parseFloat(item.toFixed(2))}%`);
 
 /* ======= TESTS - DO NOT MODIFY ===== */
 
