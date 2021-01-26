@@ -19,8 +19,9 @@ Write a function that returns a copy of the given array arr, but with the elemen
 The function must NOT change the original array, arr.
 */
 function remove(arr, index){
-  arr.splice(index, 1);
-  return arr;
+  let newArray = arr;
+  newArray.splice(index, 1);
+  return newArray;
 }
 /*
 Write a function that:
