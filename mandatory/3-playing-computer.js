@@ -7,28 +7,46 @@
   Answer the following questions:
 
   1. This program throws an error. Why? (If you can't find it, try executing it).
+  Ans: Because variable b is not defined.
+
   2. Remove the line that throws the error.
+  Ans: Line 33
+
   3. What is printed to the console?
+  Ans: 2 6 4 9 6 13 8
+  
   4. How many times is "f1" called?
+  Ans: By adding a counter f1Counter - f1 is called two times
+
   5. How many times is "f2" called?
+  Ans: By adding a counter f2Counter - f2 is called three times
+
   6. What value does the "a" parameter take in the first "f1" call?
+  Ans: 1 - is the first odd number
+
   7. What is the value of the "a" outer variable when "f1" is called for the first time?
+  Ans: 8 - because every time the loop is run it adds 1 to a before executing any other code
 */
 
 let x = 2;
 let a = 6;
 
+//let f1Counter = 0;
+//let f2Counter = 0;
+
 const f1 = function (a, b) {
+  f1Counter++;
   return a + b;
 };
 
 const f2 = function (a, b) {
+  f2Counter++;
   return a + b + x;
 };
 
 console.log(x);
 console.log(a);
-console.log(b);
+//console.log(b);
 
 for (let i = 0; i < 5; ++i) {
   a = a + 1;
@@ -40,3 +58,6 @@ for (let i = 0; i < 5; ++i) {
     console.log(e);
   }
 }
+
+//console.log(`f1 was called ${f1Counter} times`);
+//console.log(`f2 was called ${f2Counter} times`);
