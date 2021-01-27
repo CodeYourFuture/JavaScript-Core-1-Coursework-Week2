@@ -5,20 +5,44 @@
   The variables should have values that match the expected results.
 */
 
-// Do not change these two statement
+// Do not change these two statements
 var htmlLevel = 8;
+
 var cssLevel = 4;
 
 // Finish the statement to check whether HTML, CSS knowledge are above 5
 // (hint: use the comparison operator from before)
 var htmlLevelAbove5;
+
+if (htmlLevel > 5) {
+  return htmlLevelAbove5;
+}
+
 var cssLevelAbove5;
+
+if (cssLevel > 5) {
+  console.log(cssLevelAbove5);}
+// else {
+//   console.log(false);
+// }
 
 // Finish the next two statement
 // Use the previous variables and logical operators
 // Do not "hardcode" the answers
+
 var cssAndHtmlAbove5;
+
+if (htmlLevelAbove5 && cssLevelAbove5 > 5) {
+  console.log(true);
+} else {
+  console.log(false);
+}
+
 var cssOrHtmlAbove5;
+
+if (htmlLevel || cssLevel > 5) {
+  console.log(true);
+}
 
 /* 
   DO NOT EDIT BELOW THIS LINE
