@@ -1,11 +1,19 @@
 /*
 Write a function that:
 - takes an array of strings as input
-- removes any spaces in the beginning or end of the strings
+- removes any spaces in the beginning or end of the strings .trim()
 - removes any forward slashes (/) in the strings
-- makes the string all lowercase
+- makes the string all lowercase .toLowerCase()
 */
-function tidyUpString(strArr) {}
+function tidyUpString(strArr) {
+  // let strArr = remove;
+  let remove = strArr.replace("/", "");
+  let remove = neat;
+  let neat = strArr.trim();
+  let neat = format;
+  let format = strArr.toLowerCase();
+  return format;
+}
 
 /*
 Complete the function to check if the variable `num` satisfies the following requirements:
