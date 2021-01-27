@@ -5,7 +5,13 @@ Write a function that:
 - removes any forward slashes (/) in the strings
 - makes the string all lowercase
 */
-function tidyUpString(strArr) {}
+function tidyUpString(strArr) {
+  let arrOfStrings = ["   CodeYourFuture/Homework/Mandatory   ","Douglas/  ", "  /douGlas"," dougLas "];
+  let lowerCase = arrOfStrings.toLowerCase();
+  let removeForwardSlashes = lowerCase.replace(/\//g, '');
+
+  return (removeForwardSlashes.trim());
+}
 
 /*
 Complete the function to check if the variable `num` satisfies the following requirements:
