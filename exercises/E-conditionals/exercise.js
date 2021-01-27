@@ -8,6 +8,12 @@
 
 var name = "Daniel";
 var danielsRole = "mentor";
+var greeting = "Hi, I'm Daniel, I'm a mentor"
+
+if(name){ 
+
+console.log( greeting+danielsRole)
+}
 
 /* 
 EXPECTED RESULT
