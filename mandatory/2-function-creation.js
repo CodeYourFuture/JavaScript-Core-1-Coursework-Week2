@@ -5,7 +5,13 @@ Write a function that:
 - removes any forward slashes (/) in the strings
 - makes the string all lowercase
 */
-function tidyUpString(strArr) {}
+function tidyUpString(strArr) {
+    for(let i = 0; i < strArr.length; i++){
+        strArr[i] = strArr[i].replace("/","").trim().toLowerCase();
+    }
+
+ return strArr;
+}
 
 /*
 Complete the function to check if the variable `num` satisfies the following requirements:
@@ -15,7 +21,15 @@ Complete the function to check if the variable `num` satisfies the following req
 Tip: use logical operators
 */
 
-function validate(num) {}
+function validate(num) {
+      // Check if  remain num is 0
+      // Then typeof input is number then if is smaller or equal to 100
+      if (num % 2 == 0 && typeof num === 'number' && num <= 100){
+        return true;   
+      }else{
+        return false;
+      }
+}
 
 /* 
 Write a function that returns a copy of the given array arr, but with the element at the given index, index removed.
@@ -86,24 +100,24 @@ test(
 
 test("validate function works - case 1", validate(10), true);
 test("validate function works - case 2", validate(18), true);
-test("validate function works - case 3", validate(17), false);
-test("validate function works - case 4", validate("Ten"), false);
-test("validate function works - case 5", validate(108), false);
+ test("validate function works - case 3", validate(17), false);
+ test("validate function works - case 4", validate("Ten"), false);
+ test("validate function works - case 5", validate(108), false);
 
-test("remove function works - case 1", remove([10, 293, 292, 176, 29], 3), [
-  10,
-  293,
-  292,
-  29,
-]);
-test(
-  "remove function works - case 2",
-  remove(["a", "b", "c", "d", "e", "f", "g"], 6),
-  ["a", "b", "c", "d", "e", "f"]
-);
+// test("remove function works - case 1", remove([10, 293, 292, 176, 29], 3), [
+//   10,
+//   293,
+//   292,
+//   29,
+// ]);
+// test(
+//   "remove function works - case 2",
+//   remove(["a", "b", "c", "d", "e", "f", "g"], 6),
+//   ["a", "b", "c", "d", "e", "f"]
+// );
 
-test(
-  "formatPercentage function works - case 1",
-  formatPercentage([23, 18.103, 187.2, 0.372]),
-  ["23%", "18.1%", "100%", "0.37%"]
-);
+// test(
+//   "formatPercentage function works - case 1",
+//   formatPercentage([23, 18.103, 187.2, 0.372]),
+//   ["23%", "18.1%", "100%", "0.37%"]
+// );
