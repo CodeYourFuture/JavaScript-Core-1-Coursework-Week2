@@ -15,40 +15,39 @@
 function mood(yes) {
   let isHappy = true;   
    
-     if (isHappy == yes) {
+     if (isHappy == yes) { // if isHappy true return true
           return "I am happy";
-        } else if(!isHappy == yes) {
+        } else if(!isHappy == yes) { // if isHappy false return false 
           return "I am not happy";
       }
 }
 
 function greaterThan10(num) {
    let isBigEnough = 11;
-    
-  if (num >= isBigEnough ) {
+       if (num >= isBigEnough ) { // if our variable is greater or equal to parameter then return greater than 
         return "num is greater than 10";
-      } else if(isBigEnough > num ){
+        
+       } else if(isBigEnough > num ){  // otherwise return not big enough
         return "num is not big enough";
    }
 }
 
 function sortArray(letters) {
-    let sortedLetters = letters;
-    sortedLetters.sort();
-  return sortedLetters;
+    let sortedLetters = letters.sort(); // assigned variable to parameter then call sort function
+    return sortedLetters;
 }
 
 function first5(numbers) {
-    let sliced = numbers.slice(0,5);
+    let sliced = numbers.slice(0,5); // assigned variable to parameter then call slice function
     return sliced;
 }
 
-// function get3rdIndex(arr) {
-//   let index = 3;
-//   let element;
 
-//   return element;
-// }
+function get3rdIndex(arr) {
+    let index = 3;
+    let element = arr[index]; //assigned element to our parameter then returned index
+  return element;
+}
 
 /* ======= TESTS - DO NOT MODIFY ===== */
 
@@ -119,13 +118,13 @@ if (!arraysEqual(numbers, [1, 2, 3, 4, 5, 6, 7, 8])) {
   console.log("PROBLEM: first5 changed its input array - it shouldn't!");
 }
 
-// test(
-//   "get3rdIndex function works - case 1",
-//   get3rdIndex(["fruit", "banana", "apple", "strawberry", "raspberry"]),
-//   "strawberry"
-// );
-// test(
-//   "get3rdIndex function works - case 2",
-//   get3rdIndex([11, 37, 62, 18, 19, 3, 30]),
-//   18
-// );
+test(
+  "get3rdIndex function works - case 1",
+  get3rdIndex(["fruit", "banana", "apple", "strawberry", "raspberry"]),
+  "strawberry"
+);
+test(
+  "get3rdIndex function works - case 2",
+  get3rdIndex([11, 37, 62, 18, 19, 3, 30]),
+  18
+);
