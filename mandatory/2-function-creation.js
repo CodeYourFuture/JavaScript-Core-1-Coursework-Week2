@@ -7,6 +7,13 @@ Write a function that:
 */
 function tidyUpString(strArr) {
   
+  for (let i = 0; i < strArr.length; i++) {
+    const trimmed = strArr[i].trim();
+    // const removedSlashes = trimmed[i].replace('/','');
+    // const lowerCase = removedSlashes[i].toLowerCase();
+    return trimmed;
+  }
+  
 }
 
 /*
@@ -17,7 +24,14 @@ Complete the function to check if the variable `num` satisfies the following req
 Tip: use logical operators
 */
 
-function validate(num) {}
+function validate(num) {
+  const number = typeof num === "number";
+  const evenNumber = num % 2 === 0;
+  const lessThanEqualTo100 = num <= 100;
+  if (number && evenNumber && lessThanEqualTo100) {
+    return true;
+  }
+}
 
 /* 
 Write a function that returns a copy of the given array arr, but with the element at the given index, index removed.
@@ -25,8 +39,16 @@ The function must NOT change the original array, arr.
 */
 
 function remove(arr, index) {
+  /*const newArray = [];
+  for (let index in arr) {
+    newArray[index] = 
+
+  }*/
   return; // complete this statement
 }
+
+
+
 
 /*
 Write a function that:
@@ -36,7 +58,21 @@ Write a function that:
 - numbers greater 100 must be replaced with 100
 */
 
-function formatPercentage(arr) {}
+function formatPercentage(arr) {
+  const newArray = [];
+  for (let index in arr) {
+    consolepercentage[index] = 
+
+
+  }
+
+
+
+}
+
+
+
+
 
 /* ======= TESTS - DO NOT MODIFY ===== */
 
