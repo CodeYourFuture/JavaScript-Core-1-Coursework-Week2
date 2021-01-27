@@ -7,6 +7,7 @@
 /**
  * First, let's create a function that creates a list of all the frequencies.
  * Call this function `getAllFrequencies`.
+ 
  *
  * This function should:
  * - Create an array  starting at 87 and ending in 108
@@ -25,6 +26,13 @@
  * - Return only the frequencies that are radio stations.
  */
 // `getStations` goes here
+
+function getAllFrequencies (array) {
+  for (i = 87; i <= 108; i++) {
+    
+  }
+
+} 
 
 /* ======= TESTS - DO NOT MODIFY ======= */
 
