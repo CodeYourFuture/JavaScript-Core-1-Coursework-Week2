@@ -28,7 +28,6 @@ const f2 = function (a, b) {
 
 console.log(x);
 console.log(a);
-console.log(b);
 
 for (let i = 0; i < 5; ++i) {
   a = a + 1;
@@ -40,3 +39,28 @@ for (let i = 0; i < 5; ++i) {
     console.log(e);
   }
 }
+
+/*
+Answers
+
+1. There is no value for (b) declared
+
+2. I removed console.log(b) on line 31
+
+3. 2 - console.log(x) 
+   6 - console.log(a)
+   4 - f2 - first round
+   9 - f1 - first round
+   6 - f2 - 2nd round
+   13 - f1 - 2nd round
+   8 - f2 -3rd round
+
+4. 2 times
+
+5. 3 times
+
+6. 8
+
+7. 6
+ 
+*/
