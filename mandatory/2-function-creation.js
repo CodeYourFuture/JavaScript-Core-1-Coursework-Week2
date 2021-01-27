@@ -8,12 +8,11 @@ Write a function that:
 function tidyUpString(strArr) {
   
   for (let i = 0; i < strArr.length; i++) {
-    const trimmed = strArr[i].trim();
-    // const removedSlashes = trimmed[i].replace('/','');
-    // const lowerCase = removedSlashes[i].toLowerCase();
-    return trimmed;
+    strArr[i] = strArr[i].trim();
+    strArr[i] = strArr[i].replace('/','');
+    strArr[i] = strArr[i].toLowerCase();
   }
-  
+  return strArr;
 }
 
 /*
@@ -30,7 +29,10 @@ function validate(num) {
   const lessThanEqualTo100 = num <= 100;
   if (number && evenNumber && lessThanEqualTo100) {
     return true;
+  } else {
+    return false;
   }
+
 }
 
 /* 
@@ -39,12 +41,12 @@ The function must NOT change the original array, arr.
 */
 
 function remove(arr, index) {
-  /*const newArray = [];
-  for (let index in arr) {
-    newArray[index] = 
-
-  }*/
-  return; // complete this statement
+  let newArray = [];
+  for (element of arr) {
+    newArray.push(element);
+    }
+  newArray.splice(index, 1);
+  return newArray; // complete this statement
 }
 
 
@@ -59,16 +61,26 @@ Write a function that:
 */
 
 function formatPercentage(arr) {
-  const newArray = [];
-  for (let index in arr) {
-    consolepercentage[index] = 
+  for (i = 0; i < arr.length; i++){
+    if (arr[i] > 100) {
+      arr[i] = 100;
+    } else { 
+      arr[i] = +arr[i].toFixed(2);
 
-
+    }
+    
+    arr[i] = arr[i] +"%";
   }
-
-
-
+  return arr;
 }
+  
+
+
+  
+
+
+
+
 
 
 
