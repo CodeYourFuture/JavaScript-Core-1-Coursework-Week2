@@ -13,6 +13,15 @@
   5. How many times is "f2" called?
   6. What value does the "a" parameter take in the first "f1" call?
   7. What is the value of the "a" outer variable when "f1" is called for the first time?
+
+  Answers:
+  1- b is not defined
+  2- done. - console.log(b)- removed
+  3-  2, 6, 4, 9, 6, 13, 8
+  4- Three times
+  5- Two times
+  6- 1
+  7- 8
 */
 
 let x = 2;
@@ -28,7 +37,6 @@ const f2 = function (a, b) {
 
 console.log(x);
 console.log(a);
-console.log(b);
 
 for (let i = 0; i < 5; ++i) {
   a = a + 1;

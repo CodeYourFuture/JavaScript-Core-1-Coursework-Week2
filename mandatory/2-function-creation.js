@@ -5,9 +5,15 @@ Write a function that:
 - removes any forward slashes (/) in the strings
 - makes the string all lowercase
 */
-function tidyUpString(strArr) {}
+function tidyUpString(strArr) {
+  let lowercaseArr = strArr.map((x) => x.toLowerCase());
+  let trimArr = lowercaseArr.map((x) => x.trim());
+  let tidiedArr = trimArr.map((x) => x.replace("/", ""));
 
-/*
+  return tidiedArr;
+}
+
+/*x.re
 Complete the function to check if the variable `num` satisfies the following requirements:
 - is a number
 - is even
@@ -15,7 +21,9 @@ Complete the function to check if the variable `num` satisfies the following req
 Tip: use logical operators
 */
 
-function validate(num) {}
+function validate(num) {
+  return num <= 100 && typeof num === "number" && num % 2 === 0;
+}
 
 /* 
 Write a function that returns a copy of the given array arr, but with the element at the given index, index removed.
@@ -23,9 +31,11 @@ The function must NOT change the original array, arr.
 */
 
 function remove(arr, index) {
-  return; // complete this statement
+  const arr1 = arr.slice(0, index); // complete this statement
+  const arr2 = arr.slice(index + 1);
+  const arr3 = arr1.concat(arr2);
+  return arr3;
 }
-
 /*
 Write a function that:
 - takes an array of numbers as input
@@ -34,8 +44,16 @@ Write a function that:
 - numbers greater 100 must be replaced with 100
 */
 
-function formatPercentage(arr) {}
+function formatPercentage(arr) {
+  const greaterThan100 = arr.findIndex((x) => x > 100);
+  arr[greaterThan100] = 100;
 
+  const decimal = arr.map((x) => parseFloat(x.toFixed(2.0)));
+
+  const percentArr = decimal.map((x) => `${x}%`);
+
+  return percentArr;
+}
 /* ======= TESTS - DO NOT MODIFY ===== */
 
 const util = require("util");
