@@ -4,16 +4,15 @@ Write a function that:
 - removes any spaces in the beginning or end of the strings .trim()
 - removes any forward slashes (/) in the strings
 - makes the string all lowercase .toLowerCase()
+
 */
+
 function tidyUpString(strArr) {
-  // let strArr = remove;
-  let remove = strArr.replace("/", "");
-  let remove = neat;
-  let neat = strArr.trim();
-  let neat = format;
-  let format = strArr.toLowerCase();
-  return format;
+    strArr.replaceAll(/\//g, '');
+    strArr.trim(); //loop through each element in array - ?.join() function to convert to strings.
+   return strArr.toLowerCase();
 }
+
 
 /*
 Complete the function to check if the variable `num` satisfies the following requirements:
@@ -23,26 +22,39 @@ Complete the function to check if the variable `num` satisfies the following req
 Tip: use logical operators
 */
 
-function validate(num) {}
+function validate(num) {
+  if (typeof(num) === "number" && num % 2 === 0 && num <= 100){
+    return true;
+  }
+  else{
+    return false;
+  }
+}
 
 /* 
 Write a function that returns a copy of the given array arr, but with the element at the given index, index removed.
 The function must NOT change the original array, arr.
+douglas - unction remove(arr, index) {
+  return arr.splice(index); // complete this statement
+}
 */
 
-function remove(arr, index) {
-  return; // complete this statement
+function remove(arr, index) {  //?.splice()
+    // arrEdited = arr.filter(remove(index)); // complete this statement
+    // return arrEdited;
 }
 
 /*
 Write a function that:
 - takes an array of numbers as input
-- returns an array of strings formatted as percentages (e.g. 10 => "10%")
-- the numbers must be rounded to 2 decimal places
+- returns an array of strings formatted as percentages (e.g. 10 => "10%") ? map()
+- the numbers must be rounded to 2 decimal places  toFixed(2)
 - numbers greater 100 must be replaced with 100
 */
 
-function formatPercentage(arr) {}
+function formatPercentage(arr) {
+
+}
 
 /* ======= TESTS - DO NOT MODIFY ===== */
 
