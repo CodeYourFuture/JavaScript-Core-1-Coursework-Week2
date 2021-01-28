@@ -6,10 +6,14 @@ Write a function that:
 - makes the string all lowercase
 */
 function tidyUpString(strArr) {
-  let noForwardSlaSh = strArr.replace("/", "");
-  let noSpace = noForwardSlaSh.trim();
-  let lowerCase = noSpace.lowerCase();
-  return lowerCase;
+  for (let i = 0; i < strArr.length; i++) {
+
+    strArr[i] = strArr[i].trim();
+    strArr[i] = strArr[i].replace("/", "");
+    strArr[i] = strArr[i].toLowerCase();
+  }
+
+  return strArr;
 }
 
 /*
@@ -21,7 +25,7 @@ Tip: use logical operators
 */
 
 function validate(num) {
-  if ((num === "num" && num % 2 === 0) && (num <= 100)) {
+  if ((typeof num === "number" && num % 2 === 0) && (num <= 100)) {
     return true;
   } else {
     return false;
@@ -36,7 +40,7 @@ The function must NOT change the original array, arr.
 
 function remove(arr, index) {
   let newArr = arr;
-  delete newArr[index];
+  newArr.splice(index, 1);
   return newArr; // complete this statement
 }
 
@@ -49,8 +53,17 @@ Write a function that:
 */
 
 function formatPercentage(arr) {
-  
- }
+  let percentage = arr.map((item) => {
+    if (item > 100) {
+      return `100%`;
+    }
+    else {
+      return `${(Math.round(item.toFixed(2)*100))/100}%`;
+    }
+  } )
+  return percentage;
+
+}
 
 /* ======= TESTS - DO NOT MODIFY ===== */
 

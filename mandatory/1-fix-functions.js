@@ -10,10 +10,9 @@
 
 */
 
-function mood() {
-  let isHappy = true;
+function mood(isHappy) {
 
-  if (isHappy) {
+  if (isHappy === true) {
     return "I am happy";
   } else {
     return "I am not happy";
@@ -37,7 +36,7 @@ function sortArray(letters) {
 }
 
 function first5(numbers) {
-  let sliced = numbers.slice(0,5);
+  let sliced = numbers.slice(0, 5);
 
   return sliced;
 }
