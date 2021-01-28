@@ -1,15 +1,19 @@
 /*
   Predicates
   ---------------------------------
-  Write a predicate to predicates
+  Write a predicate to predicate
   The variables should have values that match the expected results.
 */
 
-// Finish the predicate function to test if the passed number is negative (less than zero)
-function isNegative(number) {}
+// Completed the predicate function to test if the passed number is negative (less than zero - assumed not equal)
+function isNegative(number) {
+  return number < 0;
+}
 
-// Finish the predicate function to test if the passed number is between 0 and 10
-function isBetweenZeroAnd10(number) {}
+// Completed the predicate function to test if the passed number is between 0 and 10 (assumed not equal)
+function isBetweenZeroAnd10(number) {
+  return number > 0 && number < 10;
+}
 
 /* 
   DO NOT EDIT BELOW THIS LINE

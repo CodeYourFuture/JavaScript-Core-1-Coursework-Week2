@@ -5,7 +5,14 @@ Write a function that:
 - removes any forward slashes (/) in the strings
 - makes the string all lowercase
 */
-function tidyUpString(strArr) {}
+
+// I had help with this function
+function tidyUpString(strArr) {
+  for (let i = 0; i < strArr.length; i++) {
+    strArr[i] = strArr[i].trim().replace("/", "").toLowerCase();
+  }
+  return strArr;
+}
 
 /*
 Complete the function to check if the variable `num` satisfies the following requirements:
@@ -15,15 +22,20 @@ Complete the function to check if the variable `num` satisfies the following req
 Tip: use logical operators
 */
 
-function validate(num) {}
+function validate(num) {
+  return Number.isInteger(num) && num % 2 == 0 && num <= 100;
+}
 
 /* 
 Write a function that returns a copy of the given array arr, but with the element at the given index, index removed.
 The function must NOT change the original array, arr.
 */
 
+// I had help with this function
 function remove(arr, index) {
-  return; // complete this statement
+  let newArr = arr.concat();
+  newArr.splice(index, 1);
+  return newArr;
 }
 
 /*
@@ -34,7 +46,19 @@ Write a function that:
 - numbers greater 100 must be replaced with 100
 */
 
-function formatPercentage(arr) {}
+// I had help with this function
+function formatPercentage(arr) {
+  for (let i = 0; i < arr.length; i++) {
+    let number = arr[i];
+    number = Math.round(number.toFixed(2) * 100) / 100;
+    if (number > 100) {
+      number = 100;
+    }
+    number = number.toString() + "%";
+    arr[i] = number;
+  }
+  return arr;
+}
 
 /* ======= TESTS - DO NOT MODIFY ===== */
 

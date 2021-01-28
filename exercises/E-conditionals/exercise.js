@@ -9,6 +9,14 @@
 var name = "Daniel";
 var danielsRole = "mentor";
 
+// if-else statement added
+
+if (danielsRole == "mentor") {
+  console.log("Hi, I'm " + name + ", I'm a mentor.");
+} else {
+  console.log("Hi, I'm " + name + ", I'm a student.");
+}
+
 /* 
 EXPECTED RESULT
 ---------------

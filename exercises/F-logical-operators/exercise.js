@@ -5,20 +5,20 @@
   The variables should have values that match the expected results.
 */
 
-// Do not change these two statement
+// Do not change these two statements
 var htmlLevel = 8;
 var cssLevel = 4;
 
-// Finish the statement to check whether HTML, CSS knowledge are above 5
-// (hint: use the comparison operator from before)
-var htmlLevelAbove5;
-var cssLevelAbove5;
+// Completed the statement to check whether HTML, CSS knowledge are above 5
+// (Hint: use the comparison operator from before)
+var htmlLevelAbove5 = htmlLevel > 5;
+var cssLevelAbove5 = cssLevel > 5;
 
-// Finish the next two statement
+// Completed the next two statements
 // Use the previous variables and logical operators
 // Do not "hardcode" the answers
-var cssAndHtmlAbove5;
-var cssOrHtmlAbove5;
+var cssAndHtmlAbove5 = htmlLevelAbove5 && cssLevelAbove5;
+var cssOrHtmlAbove5 = htmlLevelAbove5 || cssLevelAbove5;
 
 /* 
   DO NOT EDIT BELOW THIS LINE
