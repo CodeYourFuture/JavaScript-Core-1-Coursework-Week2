@@ -2,12 +2,12 @@ Like humans, computer programs make decisions based on information given to them
 
 For example:
 
-* In a game, if the player has 0 lives, then the game is over
-* In a weather app, if rain is forecast, a picture of rain clouds is shown
+- In a game, if the player has 0 lives, then the game is over
+- In a weather app, if rain is forecast, a picture of rain clouds is shown
 
 The most common type of conditional is the **if statement**.
 
-An if statment runs some code if a condition is met. If the condition is not met, then the code will skipped.
+An if statement runs some code if a condition is met. If the condition is not met, then the code will skipped.
 
 ```js
 var isHappy = true;
