@@ -34,14 +34,18 @@ Complete the function to check if the variable `num` satisfies the following req
 Tip: use logical operators
 */
 
-function validate(num) {
-  let isNumber = typeof num === "number";
-  let evenNumber = num % 2 === 0;
-  let lessThanOrEqual100 = num <= 100;
-  if (isNumber && evenNumber && lessThanOrEqual100) {
-    return true;
-  } else return false;
-}
+// Solution - 1
+// function validate(num) {
+//   let isNumber = typeof num === "number";
+//   let evenNumber = num % 2 === 0;
+//   let lessThanOrEqual100 = num <= 100;
+//   if (isNumber && evenNumber && lessThanOrEqual100) {
+//     return true;
+//   } else return false;
+// }
+
+// Solution -2 
+const validate = (num) => (typeof num === "number") && (num % 2 === 0) && (num <= 100) ? true : false;
 
 /* 
 Write a function that returns a copy of the given array arr, but with the element at the given index, index removed.
