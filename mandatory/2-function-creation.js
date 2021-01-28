@@ -37,7 +37,7 @@ The function must NOT change the original array, arr.
 */
 
 function remove(arr, index) {
-  for(i=0; i < arr.length; i++){
+  for(let i=0; i < arr.length; i++){
      arr.splice(index, 1);
      return arr;
   }
@@ -52,9 +52,18 @@ Write a function that:
 - the numbers must be rounded to 2 decimal places
 - numbers greater 100 must be replaced with 100
 */
-
+// formatPercentage([23, 18.103, 187.2, 0.372]),
 function formatPercentage(arr) {
-  
+    for(let i =0; i < arr.length; i++){
+        
+        if (arr[i] > 100){
+          arr[i] = 100 + '%';
+        }else {       
+          arr[i] = parseFloat(arr[i].toFixed(2))  + '%';
+          
+        }     
+    }
+    return arr;
   }
   
 
@@ -119,14 +128,14 @@ test("remove function works - case 1", remove([10, 293, 292, 176, 29], 3), [
   292,
   29,
 ]);
-// test(
-//   "remove function works - case 2",
-//   remove(["a", "b", "c", "d", "e", "f", "g"], 6),
-//   ["a", "b", "c", "d", "e", "f"]
-// );
+test(
+  "remove function works - case 2",
+  remove(["a", "b", "c", "d", "e", "f", "g"], 6),
+  ["a", "b", "c", "d", "e", "f"]
+);
 
-// test(
-//   "formatPercentage function works - case 1",
-//   formatPercentage([23, 18.103, 187.2, 0.372]),
-//   ["23%", "18.1%", "100%", "0.37%"]
-// );
+test(
+  "formatPercentage function works - case 1",
+  formatPercentage([23, 18.103, 187.2, 0.372]),
+  ["23%", "18.1%", "100%", "0.37%"]
+);
