@@ -6,8 +6,10 @@ Write a function that:
 - makes the string all lowercase
 */
 function tidyUpString(strArr) {
-  let arrOfStrings = ["   CodeYourFuture/Homework/Mandatory   ","Douglas/  ", "  /douGlas"," dougLas "];
-  let lowerCase = arrOfStrings.toLowerCase();
+  // let removeSpaces = strArr.trim();
+  let removeSlashes = removeSpaces.replace(/\//g, '');
+  let lowerCase = removeSpaces.toLowerCase();
+  // let lowerCase = arrOfStrings.toLowerCase();
   let removeForwardSlashes = lowerCase.replace(/\//g, '');
 
   return (removeForwardSlashes.trim());
@@ -21,7 +23,19 @@ Complete the function to check if the variable `num` satisfies the following req
 Tip: use logical operators
 */
 
-function validate(num) {}
+function validate(num) {
+  if (num === Number || num % 2 == 0 && num <= 100) {
+    return true;
+  } else {
+    return false;
+  } 
+}
+
+//  tests whether all the array elements are the even numbers
+// let numbers = [1, 3, 5];
+// let isEven = numbers.every(function (e) {
+//     return e % 2 == 0;
+// });
 
 /* 
 Write a function that returns a copy of the given array arr, but with the element at the given index, index removed.
@@ -29,7 +43,7 @@ The function must NOT change the original array, arr.
 */
 
 function remove(arr, index) {
-  return; // complete this statement
+  return arr.splice(index); // complete this statement
 }
 
 /*
@@ -40,7 +54,16 @@ Write a function that:
 - numbers greater 100 must be replaced with 100
 */
 
-function formatPercentage(arr) {}
+function formatPercentage(arr) {
+  
+  if (Number === Number) {
+    return `${Number}%`;
+  } else if (Number > 100) {
+    return 100;
+  } else {
+    return Number.toFixed(2);
+  }
+}
 
 /* ======= TESTS - DO NOT MODIFY ===== */
 
