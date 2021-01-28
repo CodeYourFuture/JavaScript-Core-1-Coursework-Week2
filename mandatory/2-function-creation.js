@@ -6,6 +6,16 @@ Write a function that:
 - makes the string all lowercase
 */
 
+// Solution - 1
+// function tidyUpString(strArr) { 
+//   let tidyUp = [];
+//   for (let i = 0; i < strArr.length; i++) {
+//       tidyUp.push(strArr[i].trim().replace("/", "").toLowerCase());
+//   }
+//   return tidyUp;
+// }
+
+// Solution - 2
 function tidyUpString(strArr) {
   let tidyUp = strArr.map((item) => {
     let trimmed = item.trim();
