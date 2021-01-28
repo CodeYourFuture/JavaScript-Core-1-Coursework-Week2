@@ -6,13 +6,20 @@ Write a function that:
 - makes the string all lowercase
 */
 function tidyUpString(strArr) {
-  // let removeSpaces = strArr.trim();
-  let removeSlashes = removeSpaces.replace(/\//g, '');
-  let lowerCase = removeSpaces.toLowerCase();
-  // let lowerCase = arrOfStrings.toLowerCase();
-  let removeForwardSlashes = lowerCase.replace(/\//g, '');
+  
+  let removeSpaces = (strArr) => strArr.trim();
+  
+  let removeForwardSlashes = function () {
+    return strArr.replace(/\//gi, '');
+  };
 
-  return (removeForwardSlashes.trim());
+  let allLowerCase = function () {
+    return strArr.toLowerCase();
+  };
+  if (newStrArr = removeSpaces || removeForwardSlashes || allLowerCase) {
+  // if (removeSpaces === strArr || removeForwardSlashes === strArr || allLowerCase === strArr) {
+  return (newStrArr);  
+  }  
 }
 
 /*
@@ -43,7 +50,7 @@ The function must NOT change the original array, arr.
 */
 
 function remove(arr, index) {
-  return arr.splice(index); // complete this statement
+  return arr.splice(arr, index); // complete this statement
 }
 
 /*
