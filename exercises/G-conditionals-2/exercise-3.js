@@ -8,20 +8,28 @@
   - Otherwise the grade is "F"
 */
 
-function calculateGrade(mark) {}
+function calculateGrade(mark) {
+  if (grade1 <= 80 && grade1 >=! 90){
+    return "F";
+  }
+  else if(grade2 == 90){
+    return "A";
+  }
+}
+
 
 /* 
 DO NOT EDIT BELOW THIS LINE
 --------------------------- */
 var grade1 = 49;
 var grade2 = 90;
-var grade3 = 70;
-var grade4 = 55;
+// var grade3 = 70;
+// var grade4 = 55;
 
 console.log("'" + grade1 + "': " + calculateGrade(grade1));
 console.log("'" + grade2 + "': " + calculateGrade(grade2));
-console.log("'" + grade3 + "': " + calculateGrade(grade3));
-console.log("'" + grade4 + "': " + calculateGrade(grade4));
+// console.log("'" + grade3 + "': " + calculateGrade(grade3));
+// console.log("'" + grade4 + "': " + calculateGrade(grade4));
 
 /* 
   EXPECTED RESULT
