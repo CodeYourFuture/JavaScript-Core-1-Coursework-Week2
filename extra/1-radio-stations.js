@@ -28,7 +28,7 @@ function getAllFrequencies() {
  */
 function getStations() {
   let radioStations = getAllFrequencies();
-  return radioStations.filter(x => isRadioStation(x));
+  return getAvailableStations(radioStations);
 }
 /* ======= TESTS - DO NOT MODIFY ======= */
 
