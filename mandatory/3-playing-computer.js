@@ -15,6 +15,18 @@
   7. What is the value of the "a" outer variable when "f1" is called for the first time?
 */
 
+//*ANSWERS*//
+/*
+1. b was causing error because we were consoling it while we did not assign value to it.
+2. console.log(b);
+3. It print 4, 9, 6, 13, 8 AND 2,6 before for loop
+4. It called two times which result printing 9, 13.
+5. It called three times which result printing 4, 6, 8.
+6. value of a is 8 and plus i which is one result nine.
+7.Result of a = a + 1 is 7  
+
+*/ 
+
 let x = 2;
 let a = 6;
 
@@ -26,16 +38,19 @@ const f2 = function (a, b) {
   return a + b + x;
 };
 
-console.log(x);
-console.log(a);
-console.log(b);
+ console.log(x);
+ console.log(a);
+//console.log(b);
 
-for (let i = 0; i < 5; ++i) {
-  a = a + 1;
-  if (i % 2 === 0) {
+for (let i = 0; i < 5; ++i) {  
+   a = a + 1;
+  //If result is zero then console log even numbers
+ if (i % 2 === 0) {
     const d = f2(i, x);
     console.log(d);
+    // otherwise console log odd number
   } else {
+    
     const e = f1(i, a);
     console.log(e);
   }
