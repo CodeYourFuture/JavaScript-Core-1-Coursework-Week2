@@ -11,7 +11,7 @@ var danielsRole = "mentor";
 
 
 if(danielsRole === "mentor"){
-   result = `Hi, I'm ${name} I'm a mentor`;
+  let  result = `Hi, I'm ${name} I'm a mentor`;
    console.log(result);
 }
 
