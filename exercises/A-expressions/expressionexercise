@@ -1,0 +1,28 @@
+Windows PowerShell
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Try the new cross-platform PowerShell https://aka.ms/pscore6
+
+PS C:\Users\ali\Desktop\CourseWork\JavaScript\JavaScript-Core-1-Coursework-Week2> node
+Welcome to Node.js v14.15.1.
+Type ".help" for more information.
+> 1 + 2
+3
+> 1 +6
+7
+> 11 * 2
+22
+> 8 / 2
+4
+> 8 % 2
+0
+> let sum = 1 + 3
+undefined
+> sum
+4
+> let result = 4 * 2 /8
+undefined
+> result
+1
+> .exit
+PS C:\Users\ali\Desktop\CourseWork\JavaScript\JavaScript-Core-1-Coursework-Week2> 
