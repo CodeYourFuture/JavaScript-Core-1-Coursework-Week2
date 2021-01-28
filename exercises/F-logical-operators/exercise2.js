@@ -5,8 +5,21 @@
   Update the code so that you get the expected result.
 */
 
-function isNegative() {}
+function isNegative(negOrPosNumber) {
+  return negOrPosNumber < 0;
+}
 
+function isBetween5and10(checkRangeNum) {
+  return checkRangeNum > 5 && checkRangeNum < 10;
+}
+
+function isShortName(shortOrLongName) {
+  return shortOrLongName.length < 7;
+}
+
+function startsWithD(checkFirstLetter) {
+  return checkFirstLetter.charAt(0) === `D`;
+}
 /* 
   DO NOT EDIT BELOW THIS LINE
   --------------------------- */
