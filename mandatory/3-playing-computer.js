@@ -28,7 +28,7 @@ const f2 = function (a, b) {
 
 console.log(x);
 console.log(a);
-console.log(b);
+// console.log(b);
 
 for (let i = 0; i < 5; ++i) {
   a = a + 1;
@@ -39,4 +39,16 @@ for (let i = 0; i < 5; ++i) {
     const e = f1(i, a);
     console.log(e);
   }
+  i;
 }
+
+/**
+  * Answers
+  
+  * 1. Ln31 --> b is not defined hence program throws an error
+  * 3. The value of x, a, d and e is printed
+  * 4. f1 is called once
+  * 5. f2 is called once
+  * 6. value is zero
+  * 7. Value is one
+**/
