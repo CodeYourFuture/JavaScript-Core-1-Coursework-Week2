@@ -8,9 +8,12 @@ Write a function that:
 */
 
 function tidyUpString(strArr) {
-    strArr.replaceAll(/\//g, '');
-    strArr.trim(); //loop through each element in array - ?.join() function to convert to strings.
-   return strArr.toLowerCase();
+  var newArr = strArr.toString();
+  var strEdit = newArr.replace("/",'');
+  var stringTrim = strEdit.trim();
+  var lowerCase = stringTrim.toLowerCase();
+  var splitStr = lowerCase.split(",");
+   return splitStr;
 }
 
 
@@ -34,14 +37,27 @@ function validate(num) {
 /* 
 Write a function that returns a copy of the given array arr, but with the element at the given index, index removed.
 The function must NOT change the original array, arr.
-douglas - unction remove(arr, index) {
-  return arr.splice(index); // complete this statement
+function removeItemFromArray(array, n) {
+    const newArray = [];
+    for ( let i = 0; i < array.length; i++) {
+        if(array[i] !== n) {
+            newArray.push(array[i]);
+        }
+    }
+    return newArray;
 }
+const result = removeItemFromArray([1, 2, 3 , 4 , 5], 2);
 */
 
 function remove(arr, index) {  //?.splice()
-    // arrEdited = arr.filter(remove(index)); // complete this statement
-    // return arrEdited;
+    arrEdited = []; // complete this statement
+    n = index;
+    for (i = 0; i< arr.length; i++) {
+        if(arr[i] !== n) {
+          arrEdited.push(arr[i]);
+        }
+    }
+    return arrEdited;
 }
 
 /*
@@ -53,7 +69,15 @@ Write a function that:
 */
 
 function formatPercentage(arr) {
+  var percentArr = [];
 
+  for (let i = 0; i< arr.length; i++) {
+    if (arr[i] > 100) {
+      percentArr.push("100%");
+    }
+    else percentArr.push(`${parseFloat(arr[i].toFixed(2))}%`);
+  }
+  return percentArr; //Brett solution.
 }
 
 /* ======= TESTS - DO NOT MODIFY ===== */
