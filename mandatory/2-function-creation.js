@@ -22,11 +22,15 @@ Tip: use logical operators
 */
 
 function validate(num) {
-  
+  if (num % 2 == 0 && typeof num == "number" && num <= 100) {
+    return true;
+  } else {
+    return false;
+  }
 }
 
 /* 
-Write a function that returns a copy of the given array arr, but with the element at the given index, index removed.
+Write a function that return s a copy of the given array arr, but with the element at the given index, index removed.
 The function must NOT change the original array, arr.
 */
 
@@ -43,81 +47,76 @@ Write a function that:
 */
 
 function formatPercentage(arr) {
-  for (let j = 0; j < arr.length; j++) {
-    
-  
 }
 
-/* ======= TESTS - DO NOT MODIFY ===== */
+  /* ======= TESTS - DO NOT MODIFY ===== */
 
-const util = require("util");
+  const util = require("util");
 
-function test(test_name, actual, expected) {
-  let status;
+  function test(test_name, actual, expected) {
+    let status;
 
-  let isEqual;
-  if (Array.isArray(expected)) {
-    isEqual = arraysEqual(actual, expected);
-  } else {
-    isEqual = actual === expected;
+    let isEqual;
+    if (Array.isArray(expected)) {
+      isEqual = arraysEqual(actual, expected);
+    } else {
+      isEqual = actual === expected;
+    }
+
+    if (isEqual) {
+      status = "PASSED";
+    } else {
+      status = `FAILED: expected: ${util.inspect(
+        expected
+      )} but your function returned: ${util.inspect(actual)}`;
+    }
+
+    console.log(`${test_name}: ${status}`);
   }
 
-  if (isEqual) {
-    status = "PASSED";
-  } else {
-    status = `FAILED: expected: ${util.inspect(
-      expected
-    )} but your function returned: ${util.inspect(actual)}`;
+  function arraysEqual(a, b) {
+    if (a === b) return true;
+    if (a == null || b == null) return false;
+    if (a.length != b.length) return false;
+
+    for (let i = 0; i < a.length; ++i) {
+      if (a[i] !== b[i]) return false;
+    }
+
+    return true;
   }
 
-  console.log(`${test_name}: ${status}`);
-}
+  test(
+    "tidyUpString function works - case 1",
+    tidyUpString(["/Daniel ", "irina ", " Gordon", "ashleigh "]),
+    ["daniel", "irina", "gordon", "ashleigh"]
+  );
+  test(
+    "tidyUpString function works - case 2",
+    tidyUpString([" /Sanyia ", " Michael ", "AnTHonY ", "   Tim   "]),
+    ["sanyia", "michael", "anthony", "tim"]
+  );
 
-function arraysEqual(a, b) {
-  if (a === b) return true;
-  if (a == null || b == null) return false;
-  if (a.length != b.length) return false;
+  test("validate function works - case 1", validate(10), true);
+  test("validate function works - case 2", validate(18), true);
+  test("validate function works - case 3", validate(17), false);
+  test("validate function works - case 4", validate("Ten"), false);
+  test("validate function works - case 5", validate(108), false);
 
-  for (let i = 0; i < a.length; ++i) {
-    if (a[i] !== b[i]) return false;
-  }
+  test("remove function works - case 1", remove([10, 293, 292, 176, 29], 3), [
+    10,
+    293,
+    292,
+    29,
+  ]);
+  test(
+    "remove function works - case 2",
+    remove(["a", "b", "c", "d", "e", "f", "g"], 6),
+    ["a", "b", "c", "d", "e", "f"]
+  );
 
-  return true;
-}
-
-test(
-  "tidyUpString function works - case 1",
-  tidyUpString(["/Daniel ", "irina ", " Gordon", "ashleigh "]),
-  ["daniel", "irina", "gordon", "ashleigh"]
-);
-test(
-  "tidyUpString function works - case 2",
-  tidyUpString([" /Sanyia ", " Michael ", "AnTHonY ", "   Tim   "]),
-  ["sanyia", "michael", "anthony", "tim"]
-);
-
-test("validate function works - case 1", validate(10), true);
-test("validate function works - case 2", validate(18), true);
-test("validate function works - case 3", validate(17), false);
-test("validate function works - case 4", validate("Ten"), false);
-test("validate function works - case 5", validate(108), false);
-
-test("remove function works - case 1", remove([10, 293, 292, 176, 29], 3), [
-  10,
-  293,
-  292,
-  29,
-]);
-test(
-  "remove function works - case 2",
-  remove(["a", "b", "c", "d", "e", "f", "g"], 6),
-  ["a", "b", "c", "d", "e", "f"]
-);
-
-test(
-  "formatPercentage function works - case 1",
-  formatPercentage([23, 18.103, 187.2, 0.372]),
-  ["23%", "18.1%", "100%", "0.37%"]
-);
-
-
+  test(
+    "formatPercentage function works - case 1",
+    formatPercentage([23, 18.103, 187.2, 0.372]),
+    ["23%", "18.1%", "100%", "0.37%"]
+  );
