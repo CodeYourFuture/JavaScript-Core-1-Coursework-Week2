@@ -10,29 +10,27 @@ var y = 5;
 var z = 10;
 var name = "Daniel";
 
-function isNegative() {
-  if (x < 0 && y < 0) {
+function isNegative(num) {
+  return num < 0;
+}
+
+
+function isBetween5and10 (num) {
+  if (num > 5 && num <= 10) {
     return true;
   }
   return false;
 }
 
-function isBetween5and10 () {
-  if (z > 5 && z < 10) {
+function isShortName (num) {
+  if (num.length < 10) {
     return true;
   }
   return false;
 }
 
-function isShortName () {
-  if (name.length() < 10) {
-    return true;
-  }
-  return false;
-}
-
-function startsWithD() {
-  if (name ) {
+function startsWithD(string) {
+  if (string.charAt(0) === 'D') {
     return true;
   }
   return false

@@ -50,10 +50,15 @@ Write a function that:
 */
 
 function formatPercentage(arr) {
-  let newArr = ;
+  let percentArr = [];
 
-  return newArr;
-}
+  for (let x = 0; x < arr.length; x++) {
+    if (arr[x] > 100) {
+      percentArr.push(`100%`);
+    } else percentArr.push(`${parseFloat(arr[x].toFixed(2))}%`);
+    }
+  return percentArr;
+} //used guidance from mid-week session by Brett
 
 /* ======= TESTS - DO NOT MODIFY ===== */
 
