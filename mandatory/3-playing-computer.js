@@ -18,17 +18,16 @@
 let x = 2;
 let a = 6;
 
-const f1 = function (a, b) {
-  return a + b;
+const f1 = function (a, x) {
+  return a + x;
 };
 
-const f2 = function (a, b) {
-  return a + b + x;
+const f2 = function (a, x) {
+  return a + x;
 };
 
 console.log(x);
 console.log(a);
-console.log(b);
 
 for (let i = 0; i < 5; ++i) {
   a = a + 1;
