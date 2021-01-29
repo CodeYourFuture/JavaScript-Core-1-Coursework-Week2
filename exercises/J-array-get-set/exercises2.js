@@ -6,14 +6,20 @@
   - change the first value in the array to the number 1
 */
 
+/*
 var numbers = [1, 2, 3]; // Don't change this array literal declaration
+numbers[3] = 4;
+*/
+
+var numbers = [1, 2, 3]; // Don't change this array literal declaration
+numbers[numbers.length] = 4;
 
 /* 
   DO NOT EDIT BELOW THIS LINE
   --------------------------- */
 console.log(numbers);
 
-/* 
+/* numbers[3] = 4;
   EXPECTED RESULT
   ---------------
   [1, 2, 3, 4]
