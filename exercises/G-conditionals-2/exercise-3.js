@@ -8,7 +8,9 @@
   - Otherwise the grade is "F"
 */
 
-function calculateGrade(mark) {}
+function calculateGrade(mark) {
+  
+}
 
 /* 
 DO NOT EDIT BELOW THIS LINE

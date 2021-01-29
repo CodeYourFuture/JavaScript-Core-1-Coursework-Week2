@@ -5,17 +5,45 @@
   Update the code so that you get the expected result.
 */
 
+// checks to see if num is negative
 function isNegative(num) {
 if ( num < 0 ) {
   return true;
-} else if  (num  >= 5 && num <= 10)
-  return true; 
+}
   else {
   return false;
 }
 }
 
+// checks to see if num is between 5 & 10
+function isBetween5and10(num) {
+  if ( num>= 5 && num <= 10) {
+    return true;
+  }
+    else {
+    return false;
+  }
+  }
 
+  //Checks to see if the name is short
+  function isShortName(name) {
+    if ( name.length <= 7 ) {
+      return true;
+    }
+      else {
+      return false;
+    }
+    }
+  
+//checks to see if the name starts with D
+    function startsWithD(name) {
+      if ( name[0] ==="D" ) {
+        return true;
+      }
+        else {
+        return false;
+      }
+      }
 
 /* 
   DO NOT EDIT BELOW THIS LINE
