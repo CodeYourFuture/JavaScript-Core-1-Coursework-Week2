@@ -8,9 +8,7 @@ Write a function that:
 function tidyUpString(strArr) {
 
   for (let i=0; i<strArr.length; i++){
-    strArr[i] = strArr[i].trim();
-    strArr[i] = strArr[i].replaceAll("/", "");
-    strArr[i] = strArr[i].toLowerCase();
+    strArr[i] = strArr[i].trim().replaceAll("/", "").toLowerCase();
   };
   
   return strArr;
