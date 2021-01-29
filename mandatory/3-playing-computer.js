@@ -28,7 +28,7 @@ const f2 = function (a, b) {
 
 console.log(x);
 console.log(a);
-console.log(b);
+//b throws the error therefore it was removed, it is being called before the variable is declared
 
 for (let i = 0; i < 5; ++i) {
   a = a + 1;

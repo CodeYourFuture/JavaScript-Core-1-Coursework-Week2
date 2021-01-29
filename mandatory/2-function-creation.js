@@ -5,7 +5,17 @@ Write a function that:
 - removes any forward slashes (/) in the strings
 - makes the string all lowercase
 */
-function tidyUpString(strArr) {}
+function tidyUpString(strArr) {
+  for (let x = 0; 
+    x < strArr.length;
+    x++ ){
+      var noSpaces = strArr[x].trim()
+      var noSlash = noSpaces.replace("/", "")
+      var allLowerCase = noSlash.toLowerCase()
+      strArr[x]=allLowerCase;
+    }
+    return strArr
+}
 
 /*
 Complete the function to check if the variable `num` satisfies the following requirements:
@@ -15,7 +25,17 @@ Complete the function to check if the variable `num` satisfies the following req
 Tip: use logical operators
 */
 
-function validate(num) {}
+var evenAndEqual = true
+var notEvenAndEqual = false
+
+function validate(num) {
+  if (typeof num === "number" && num % 2 === 0 && num <= 100) {
+    return evenAndEqual}
+    else {
+      return notEvenAndEqual
+    }
+  }
+
 
 /* 
 Write a function that returns a copy of the given array arr, but with the element at the given index, index removed.
@@ -23,7 +43,8 @@ The function must NOT change the original array, arr.
 */
 
 function remove(arr, index) {
-  return; // complete this statement
+  arr.splice(index, 1)
+  return arr; // complete this statement
 }
 
 /*
@@ -34,7 +55,21 @@ Write a function that:
 - numbers greater 100 must be replaced with 100
 */
 
-function formatPercentage(arr) {}
+
+function formatPercentage(arr) {
+  for (let z = 0; z < arr.length; z++){
+    var moreThan100 = arr[z]
+    if (moreThan100 > 100) {
+      moreThan100 = 100
+    } else {
+      moreThan100 = Math.round(arr[z] * 100) / 100;
+      }
+      var decimal = moreThan100;
+      var percentages = decimal + "%";
+      arr[z] = percentages;  
+    }
+    return arr;
+}
 
 /* ======= TESTS - DO NOT MODIFY ===== */
 
