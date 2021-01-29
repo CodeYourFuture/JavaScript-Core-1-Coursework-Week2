@@ -5,8 +5,38 @@
   Update the code so that you get the expected result.
 */
 
-function isNegative() {}
+function isNegative(myNum) {
+  if (myNum < 0) {
+    return true
+  }else{
+    return false
+  }
+}
 
+function isBetween5and10(myNum) {
+  if (myNum <=10 && myNum >= 5){
+    return true
+  }else{
+    return false
+  }
+}
+
+function isShortName(name){
+  if(name = "Daniel"){
+    return true
+  }else{
+    return false
+  }
+}
+
+function startsWithD(name){
+  var firstLetter = name.charAt(0);
+  if (firstLetter === "D"){
+    return true
+  }else{
+    return false
+  }
+}
 /* 
   DO NOT EDIT BELOW THIS LINE
   --------------------------- */
