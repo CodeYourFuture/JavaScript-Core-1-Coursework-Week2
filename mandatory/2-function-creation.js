@@ -55,21 +55,12 @@ Write a function that:
 function formatPercentage(arr) {
  for(let i =0; i < arr.length; i++) {
    if(arr[i] >100){arr[i] =100;} 
-   arr[i] = +arr[i].toFixed(2);
-   arr[i] = arr[i] +'%';
+   arr[i] = (arr[i].toFixed(2));
+   arr[i] = `${arr[i]}%`;
     }
    return arr
    }
 
-//  function formatPercentage(arr) {
-//   for (i=0;i<arr.length;i++){
-//     if (arr[i]>100) {arr[i]=100;}
-//     arr[i] = +arr[i].toFixed(2);
-//     arr[i] = `${arr[i]}%`;
-//   }
-
-//     return arr;
-// }
 
 /* ======= TESTS - DO NOT MODIFY ===== */
 
