@@ -8,12 +8,31 @@
   - Otherwise the grade is "F"
 */
 
+const is80More = "A";
+const lower80Higher60 = "B"
+const lower60HigherEqual50 = "C"
+const lessThan50 = "F"
 function calculateGrade(mark) {
-  if (grade1 <= 80 && grade1 >=! 90){
-    return "F";
+
+  // if statement checking if the grade is 80 or more
+  if (mark >= 80) {
+    return is80More;
   }
-  else if(grade2 == 90){
-    return "A";
+
+  // else if statement checking if the grade is less than 80 but no lower than 60
+  else if (mark < 80 && mark > 60) {
+    return lower80Higher60; {
+    }
+  }
+
+  // else if statement checking if the grade is less than 60 but not lower than 50
+  else if (mark == 60 || mark > 50) {
+    return lower60HigherEqual50;
+  }
+
+  // else if statement checking if the grade is less than 50
+  else {
+    return lessThan50; 
   }
 }
 
@@ -23,13 +42,13 @@ DO NOT EDIT BELOW THIS LINE
 --------------------------- */
 var grade1 = 49;
 var grade2 = 90;
-// var grade3 = 70;
-// var grade4 = 55;
+var grade3 = 70;
+var grade4 = 55;
 
 console.log("'" + grade1 + "': " + calculateGrade(grade1));
 console.log("'" + grade2 + "': " + calculateGrade(grade2));
-// console.log("'" + grade3 + "': " + calculateGrade(grade3));
-// console.log("'" + grade4 + "': " + calculateGrade(grade4));
+console.log("'" + grade3 + "': " + calculateGrade(grade3));
+console.log("'" + grade4 + "': " + calculateGrade(grade4));
 
 /* 
   EXPECTED RESULT
