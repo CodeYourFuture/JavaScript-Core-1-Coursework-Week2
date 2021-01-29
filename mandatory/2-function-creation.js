@@ -5,7 +5,14 @@ Write a function that:
 - removes any forward slashes (/) in the strings
 - makes the string all lowercase
 */
-function tidyUpString(strArr) {}
+function tidyUpString(strArr) {
+  let newArr = strArr.join(); //I joined the array to make it easier to edit the strings.
+  let noSpaceArr = newArr.replace("/", ""); // replaced the / with an empty string,
+  let lowerCase = noSpaceArr.toLowerCase(); // lower cased all the letters
+  let lastArr = lowerCase.replace(/\s/g, ""); //used this from stackoverflow because replace only removed whitespace from the front and trim() did not work.
+
+  return lastArr.split(","); //returned the strings into an array
+} 
 
 /*
 Complete the function to check if the variable `num` satisfies the following requirements:
@@ -15,7 +22,11 @@ Complete the function to check if the variable `num` satisfies the following req
 Tip: use logical operators
 */
 
-function validate(num) {}
+function validate(num) {
+  if (num === 'number' || num % 2 === 0 && num <= 100) { //simply packed all 3 requirements into 1. i used or because if num is not a number, it will fail the ther two as well?
+  return true;
+} return false;
+}
 
 /* 
 Write a function that returns a copy of the given array arr, but with the element at the given index, index removed.
@@ -23,7 +34,11 @@ The function must NOT change the original array, arr.
 */
 
 function remove(arr, index) {
-  return; // complete this statement
+  let newArr = arr.indexOf(index); //I am not completely sure how this works yet, from stackoverflow
+  if (index > -1) {
+    arr.splice(index, 1);  
+  }
+  return arr; // complete this statement
 }
 
 /*
@@ -34,7 +49,11 @@ Write a function that:
 - numbers greater 100 must be replaced with 100
 */
 
-function formatPercentage(arr) {}
+function formatPercentage(arr) {
+  let newArr = ;
+
+  return newArr;
+}
 
 /* ======= TESTS - DO NOT MODIFY ===== */
 

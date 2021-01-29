@@ -8,7 +8,7 @@
 
   1. This program throws an error. Why? (If you can't find it, try executing it).
   2. Remove the line that throws the error.
-  3. What is printed to the console?
+  3. What is printed to the console? 
   4. How many times is "f1" called?
   5. How many times is "f2" called?
   6. What value does the "a" parameter take in the first "f1" call?
@@ -19,7 +19,7 @@ let x = 2;
 let a = 6;
 
 const f1 = function (a, b) {
-  return a + b;
+  return a + b; //b is not defined?
 };
 
 const f2 = function (a, b) {
