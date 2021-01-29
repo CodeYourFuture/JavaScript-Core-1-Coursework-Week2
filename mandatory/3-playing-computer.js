@@ -8,11 +8,11 @@
 
   1. This program throws an error. Why? (If you can't find it, try executing it).
   2. Remove the line that throws the error.
-  3. What is printed to the console? -"b is not defined"
+  3. What is printed to the console? -"a list of numbers based on the console.log commands"
   4. How many times is "f1" called? -"2 times"
   5. How many times is "f2" called? -"3 times"
   6. What value does the "a" parameter take in the first "f1" call? - " it takes the value if "i" which will be 1 in the first iteration.
-  7. What is the value of the "a" outer variable when "f1" is called for the first time? " a + 1 = 7"
+  7. What is the value of the "a" outer variable when "f1" is called for the first time? " a + 1 = 8"
 */
 
 let x = 2;
