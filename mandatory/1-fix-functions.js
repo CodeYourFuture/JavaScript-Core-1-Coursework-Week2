@@ -10,12 +10,12 @@
 
 */
 
-function mood() {
-  let isHappy = true;
+function mood(isHappy) {
+  // let isHappy = true || false;
 
-  if (isHappy) {
+  if (isHappy == true) {
     return "I am happy";
-  } else {
+  } else if (isHappy != true) {
     return "I am not happy";
   }
 }
