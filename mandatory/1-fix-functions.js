@@ -11,7 +11,7 @@
 */
 
 function mood() {
-  let isHappy = true;
+  let isHappy = false;
 
   if (isHappy) {
     return "I am happy";
@@ -21,7 +21,7 @@ function mood() {
 }
 
 function greaterThan10(num) {
-  let isBigEnough;
+  let isBigEnough = 11;
 
   if (isBigEnough) {
     return "num is greater than 10";
