@@ -15,31 +15,15 @@
 
 // `getAllFrequencies` goes here
 function getAllFrequencies() {
-  let array = [
-    87,
-    88,
-    89,
-    90,
-    91,
-    92,
-    93,
-    94,
-    95,
-    96,
-    97,
-    98,
-    99,
-    100,
-    101,
-    102,
-    103,
-    104,
-    105,
-    106,
-    107,
-    108,
-  ];
-  return array;
+  let startValue = 87;
+  let endValue = 108;
+  let count = 0;
+  let arr = [];
+  for (let i = startValue; i <= endValue; i++) {
+    arr[count] = i;
+    count++;
+  }
+  return arr;
 }
 
 /**
@@ -54,15 +38,8 @@ function getAllFrequencies() {
  */
 // `getStations` goes here
 function getStations() {
-  function isRadioFrequency(num) {
-    let result = getAllFrequencies().indexOf(num);
-    if (result === -1) {
-      return false;
-    } else {
-      return true;
-    }
-  }
-  return isRadioFrequency();
+  let arr = getAllFrequencies();
+  return arr.filter(isRadioStation);
 }
 
 /* ======= TESTS - DO NOT MODIFY ======= */
