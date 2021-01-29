@@ -8,9 +8,23 @@
   - Otherwise the grade is "F"
 */
 
+var is80orMore = "A";
+var is60to80 = "B"
+var is50to60 = "C"
+var isLessThan50 = "F"
+
+
 function calculateGrade(mark) {
+  if (mark >= 80){                     //checks if mark is 80 or more
+    return is80orMore         
+  } else if (mark >= 60){              // checks if mark is 60 or more
+    return is60to80
+  } else if ( mark === 60 || mark >= 50){  // checks if mark is 50 or more
+    return is50to60
+  } else return isLessThan50           // returns last value
+  }
   
-}
+
 
 /* 
 DO NOT EDIT BELOW THIS LINE
