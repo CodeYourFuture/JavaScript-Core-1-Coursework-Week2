@@ -35,11 +35,11 @@ for (let i = 0; i < 5; ++i) {
   a = a + 1;
   //a becomes 7
   if (i % 2 === 0) {
-    //this is going to call the function f2, two times, when i === 2 && i ===4
+    //this is going to call the function f2, 3 times, when i === 0 && i === 2 && i ===4 
     const d = f2(i, x);
     console.log(d);
   } else {
-    // this is going to call the function f1, 3 times, when i === 0 && i === 1 && i ===3
+    // this is going to call the function f1, 2 times, when i === 1 && i ===3
     const e = f1(i, a);
     console.log(e);
   }
