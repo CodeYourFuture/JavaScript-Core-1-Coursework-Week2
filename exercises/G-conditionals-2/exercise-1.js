@@ -9,7 +9,7 @@ var Positive = "positive"
 var Negative = "negative"
 
   function negativeOrPositive(number) {
-     if (number >+ 0){
+     if (number >= 0){
      return Positive
     } else 
       return Negative
