@@ -8,8 +8,20 @@
   Hint: Google how to check if a string contains a word
 */
 
-function containsCode(sentence) {}
+    const hasWordCode= "true"
+    
+    const noWordCode = "false"
 
+
+    function containsCode(sentence) {
+  
+      if (sentence.includes("code")) {
+         return hasWordCode;
+    }
+     else {
+       return noWordCode;
+    }
+}
 /* 
 DO NOT EDIT BELOW THIS LINE
 --------------------------- */
