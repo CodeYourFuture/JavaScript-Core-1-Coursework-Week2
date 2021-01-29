@@ -5,7 +5,28 @@
   Update the code so that you get the expected result.
 */
 
-function isNegative() {}
+function isNegative(num1) {
+  return num1 < 0;
+}
+
+function isBetween5and10(num1) {
+  return num1 > 5 && num1 <= 10;
+}
+
+function isShortName(num1) {
+  if (num1.length == 6) {
+    return true;
+  }
+  return false;
+}
+
+function startsWithD(num1) {
+  if (num1 = num1.includes("D")) {
+    return true;
+  }
+  return false
+}
+
 
 /* 
   DO NOT EDIT BELOW THIS LINE
