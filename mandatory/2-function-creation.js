@@ -5,8 +5,12 @@ Write a function that:
 - removes any forward slashes (/) in the strings
 - makes the string all lowercase
 */
-function tidyUpString(strArr) {}
-
+function tidyUpString(strArr) {
+  for (let i = 0; i < strArr.length; i++){
+    strArr[i] = strArr[i].trim().replace("/", "").toLowerCase();
+  }
+    return strArr;
+}
 /*
 Complete the function to check if the variable `num` satisfies the following requirements:
 - is a number
@@ -15,7 +19,14 @@ Complete the function to check if the variable `num` satisfies the following req
 Tip: use logical operators
 */
 
-function validate(num) {}
+/*  function validate(num) {
+  if (typeof num === "number" && num % 2 === 0 && num <= 100){
+    return true; 
+  } else return false;
+}
+*/
+
+const validate = num => (typeof num === "number") && (num % 2 === 0) && (num <= 100) ? true : false;
 
 /* 
 Write a function that returns a copy of the given array arr, but with the element at the given index, index removed.
@@ -23,7 +34,9 @@ The function must NOT change the original array, arr.
 */
 
 function remove(arr, index) {
-  return; // complete this statement
+  let = copyItem = [...arr]
+  copyItem.splice(index, 1)
+  return copyItem;
 }
 
 /*
@@ -34,8 +47,27 @@ Write a function that:
 - numbers greater 100 must be replaced with 100
 */
 
-function formatPercentage(arr) {}
+/*
+function formatPercentage(arr) {
+  let percentage = arr.map((element) => {
+    if (element > 100) {
+      return 100+ "%";
+    } else return (Math.round(element.toFixed(2)*100))/100+"%" 
+})
+return percentage;
+}
+*/
 
+function formatPercentage(arr) {
+  let percentage = arr.map((element) => {
+    if (element > 100) {
+      return 100+ "%";
+    } else return parseFloat(element.toFixed(2))+"%" 
+})
+return percentage;
+}
+
+const { timeStamp } = require("console");
 /* ======= TESTS - DO NOT MODIFY ===== */
 
 const util = require("util");
