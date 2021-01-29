@@ -16,15 +16,23 @@ Write a function that:
 // }
 
 // Solution - 2
-function tidyUpString(strArr) {
-  let tidyUp = strArr.map((item) => {
-    let trimmed = item.trim();
-    let removedSlash = trimmed.replace("/", "")
-    let lowerCase = removedSlash.toLowerCase();
-    return lowerCase;
-  });
-  return tidyUp;
+function tidyUpString(strArr) { 
+  for (let i = 0; i < strArr.length; i++) {
+      strArr[i] = strArr[i].trim().replace("/", "").toLowerCase();
+  }
+  return strArr;
 }
+
+// Solution - 3
+// function tidyUpString(strArr) {
+//   let tidyUp = strArr.map((item) => {
+//     let trimmed = item.trim();
+//     let removedSlash = trimmed.replace("/", "")
+//     let lowerCase = removedSlash.toLowerCase();
+//     return lowerCase;
+//   });
+//   return tidyUp;
+// }
 
 /*
 Complete the function to check if the variable `num` satisfies the following requirements:
