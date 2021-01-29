@@ -4,10 +4,21 @@
   Complete the function to test if an array is empty (has no values in it)
 
 */
+const emptyArr = "true"
+const filledArr = "false"
 
 function isEmpty(arr) {
-  return; // complete this statement
+  if (arr.length === 0) {
+    return emptyArr;
+  }
+
+  
+  else {
+  return filledArr;
+  } 
+  
 }
+
 
 /* 
   DO NOT EDIT BELOW THIS LINE
