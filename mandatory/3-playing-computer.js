@@ -31,12 +31,12 @@ console.log(a);
 // console.log(b); removed
 
 for (let i = 0; i < 5; ++i) {
-  a = a + 1; //7
+  a = a + 1; //7, 8, 9, 10, 11
   if (i % 2 === 0) {
     const d = f2(i, x); // i=0,2,4 i+x+x
     console.log(d); //4,9,6
   } else {
-    const e = f1(i, a);
-    console.log(e); //8,9
+    const e = f1(i, a); // i = 1,3
+    console.log(e); //9, 13
   }
 }
