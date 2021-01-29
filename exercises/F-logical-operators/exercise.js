@@ -14,11 +14,39 @@ var cssLevel = 4;
 var htmlLevelAbove5;
 var cssLevelAbove5;
 
+function htmlLevelAbove5(htmlLevel) {
+  if (htmlLevel > 5) {
+    return true;
+  }
+
+  return false;
+}
+function htmlLevelAbove5(cssLevel) {
+  if (cssLevel > 5) {
+    return true;
+  }
+
+  return false;
+}
+
+
+
+
+
+
 // Finish the next two statement
 // Use the previous variables and logical operators
 // Do not "hardcode" the answers
 var cssAndHtmlAbove5;
 var cssOrHtmlAbove5;
+
+if (cssAndHtmlAbove5 > 5 && cssOrHtmlAbove5 > 5) {
+  return true;
+}
+
+if (cssAndHtmlAbove5 > 5 && cssOrHtmlAbove5 > 5) {
+  return true;
+}
 
 /* 
   DO NOT EDIT BELOW THIS LINE
