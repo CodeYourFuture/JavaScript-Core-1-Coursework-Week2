@@ -44,7 +44,7 @@ if (cssAndHtmlAbove5 > 5 && cssOrHtmlAbove5 > 5) {
   return true;
 }
 
-if (cssAndHtmlAbove5 > 5 && cssOrHtmlAbove5 > 5) {
+if (cssAndHtmlAbove5 > 5 || cssOrHtmlAbove5 > 5) {
   return true;
 }
 
