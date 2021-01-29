@@ -15,7 +15,7 @@ function isBetween5and10(number) {
 }
 
 function isShortName(name) {
-  return name.length < 6;
+  return name.length < 7;
 }
 
 function startsWithD(name) {
