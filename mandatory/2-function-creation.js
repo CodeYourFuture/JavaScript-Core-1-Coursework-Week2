@@ -9,7 +9,7 @@ function tidyUpString(strArr) {
   for(let i=0; i<strArr.length; i++){
     strArr[i] = strArr[i].trim();
     strArr[i] = strArr[i].toLowerCase();
-    strArr[i] = strArr[i].replace(/\//g, "");
+    strArr[i] = strArr[i].replace(/\//g, "");  // to remove forward SLASH
   }
 
   return strArr;
