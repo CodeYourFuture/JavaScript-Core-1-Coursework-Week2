@@ -10,41 +10,46 @@
 
 */
 
-function mood() {
-  let isHappy = true;
+function mood(isHappy) {
+  
 
   if (isHappy) {
     return "I am happy";
-  } else {
+  } 
+  else {
     return "I am not happy";
   }
 }
 
 function greaterThan10(num) {
-  let isBigEnough;
+  let isBigEnough = (num > 10);
 
   if (isBigEnough) {
     return "num is greater than 10";
-  } else {
+  } 
+  else {
     return "num is not big enough";
   }
 }
 
 function sortArray(letters) {
-  let sortedLetters = letters;
+  let sortedLetters = letters.sort();
 
   return sortedLetters;
 }
 
 function first5(numbers) {
-  let sliced;
-
-  return sliced;
+  let sliced = new Array;
+  
+  for(let i=0; i<5;i++){
+    sliced[i] = numbers[i];
+  }
+  return sliced; 
 }
 
 function get3rdIndex(arr) {
   let index = 3;
-  let element;
+  let element = arr[index];
 
   return element;
 }

@@ -26,6 +26,30 @@
  */
 // `getStations` goes here
 
+
+function getAllFrequencies(){
+  let frequencies =  new Array;
+  for (let i=87; i<=108; i++){
+    frequencies[i-87] = i;
+  }
+  
+  return frequencies;
+}
+
+function getStations(){
+  let freq = getAllFrequencies();
+  let radioFreq = new Array;
+  let j=0;
+  for (let i=0; i<freq.length; i++){
+    if (isRadioStation(freq[i])){
+      radioFreq[j++] = freq[i];
+    }
+  }
+  return radioFreq;
+}
+
+console.log(getStations());
+
 /* ======= TESTS - DO NOT MODIFY ======= */
 
 function getAvailableStations() {
