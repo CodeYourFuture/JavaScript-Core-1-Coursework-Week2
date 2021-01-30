@@ -42,7 +42,7 @@ The function must NOT change the original array, arr.
 
 function remove(arr, index) {
   let newArray = [];
-  for (element of arr) {
+  for (let element of arr) {
     newArray.push(element);
     }
   newArray.splice(index, 1);
