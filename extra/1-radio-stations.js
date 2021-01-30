@@ -25,7 +25,46 @@
  * - Return only the frequencies that are radio stations.
  */
 // `getStations` goes here
+function getAllFrequencies(){
+  let frequenciesArray =[];
+  for (let i = 87; i < 109; i++){
+   frequenciesArray.push(i);
+  }
+return frequenciesArray ;
+}
 
+
+function getStations(){
+ let availableFrequencies = getAllFrequencies;
+  function isRadioFrequency(){
+    for(let i = 0; i <availableFrequencies.length; i++){
+       if (typeof availableFrequencies === "number"){
+           return true;
+           }
+          else {
+         return false;
+         }
+   }
+
+  // return xxxxsRadioFrequency
+ }
+
+ return isRadioFrequency();
+}
+
+ 
+
+  // function isRadioFrequency (getAllFrequencies){
+  //   if (typeof getAllFrequencies === "number"){
+  //     return true;
+  //   }
+  //   else {
+  //    return false;
+  // }
+  // }
+  // return isRadioFrequency
+ 
+ 
 /* ======= TESTS - DO NOT MODIFY ======= */
 
 function getAvailableStations() {

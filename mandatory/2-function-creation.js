@@ -55,7 +55,7 @@ Write a function that:
 function formatPercentage(arr) {
  for(let i =0; i < arr.length; i++) {
    if(arr[i] >100){arr[i] =100;} 
-   arr[i] = (arr[i].toFixed(2));
+   arr[i] = parseFloat(arr[i].toFixed(2));
    arr[i] = `${arr[i]}%`;
     }
    return arr
