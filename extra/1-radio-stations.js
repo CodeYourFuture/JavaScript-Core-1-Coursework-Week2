@@ -26,7 +26,7 @@
  */
 // `getStations` goes here
 function getAllFrequencies(){
-  let frequenciesArray =[];
+  let frequenciesArray = [];
   for (let i = 87; i < 109; i++){
    frequenciesArray.push(i);
   }
@@ -36,9 +36,10 @@ return frequenciesArray ;
 
 function getStations(){
  let availableFrequencies = getAllFrequencies;
-  function isRadioFrequency(){
-    for(let i = 0; i <availableFrequencies.length; i++){
-       if (typeof availableFrequencies === "number"){
+  function isRadioFrequency(number){
+    for(let i = 0; i < availableFrequencies.length; i++){
+      
+       if (typeof number === "number"){
            return true;
            }
           else {
@@ -46,10 +47,10 @@ function getStations(){
          }
    }
 
-  // return xxxxsRadioFrequency
+  // return availableFrequencies;
  }
 
- return isRadioFrequency();
+ return isRadioFrequency;
 }
 
  

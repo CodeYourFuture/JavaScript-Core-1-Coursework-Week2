@@ -7,7 +7,7 @@
   Answer the following questions:
 
   1. This program throws an error. Why? (If you can't find it, try executing it).//Because b is not defined.
-  2. Remove the line that throws the error.//console.log(b) is removed.
+  2. Remove the line that throws the error.//console.log(b) was removed.
   3. What is printed to the console?
   //
   2
@@ -20,7 +20,7 @@
   4. How many times is "f1" called? //2 Times
   5. How many times is "f2" called? //3 Times
   6. What value does the "a" parameter take in the first "f1" call? //8
-  7. What is the value of the "a" outer variable when "f1" is called for the first time? //6
+  7. What is the value of the "a" outer variable when "f1" is called for the first time? //8
 */
 
 let x = 2;
