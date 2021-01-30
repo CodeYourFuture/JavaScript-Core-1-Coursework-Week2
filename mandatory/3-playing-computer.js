@@ -19,24 +19,29 @@ let x = 2;
 let a = 6;
 
 const f1 = function (a, b) {
+  console.log(`f1 ${a + b}`);
   return a + b;
 };
 
 const f2 = function (a, b) {
+  console.log(a + b + x);
   return a + b + x;
 };
 
-console.log(x);
-console.log(a);
-console.log(b);
+// console.log(x);
+// console.log(a);
+// console.log(b);
 
 for (let i = 0; i < 5; ++i) {
-  a = a + 1;
+  a = a + 1; // a = 7 now
+  console.log(a);
   if (i % 2 === 0) {
-    const d = f2(i, x);
-    console.log(d);
+    const d = f2(i, x); // f2 is called three times - when i = 1/3/5
+    console.log(`this is f2 ${d}`);
   } else {
+    // f1 is called twice - when i = 2 and when 1 = 4
+    // first time a = 7, second time
     const e = f1(i, a);
-    console.log(e);
+    console.log(`this is f1 ${e}`);
   }
 }

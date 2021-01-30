@@ -14,6 +14,16 @@ if (danielsRole === "mentor") {
 } else {
   console.log(`Hi, I'm Daniel, I'm a ${danielsRole}`);
 }
+
+if (danielsRole === "mentor") {
+  console.log(`Hi, I'm Daniel, I'm a mentor`);
+} ;
+
+if (danielsRole === "student"){
+  console.log(`Hi, I'm Daniel, I'm a student`);
+}
+
+
 /* 
 EXPECTED RESULT
 ---------------

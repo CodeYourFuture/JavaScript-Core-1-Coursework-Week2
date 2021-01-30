@@ -8,6 +8,15 @@ Write a function that:
 const tidyUpString = (strArr) =>
   strArr.map((string) => string.trim().toLowerCase().replaceAll("/", ""));
 
+// const tidyUpString = strArr => {
+//   let newArr = [];
+//   for(let i = 0; i < strArr.length; i++) {
+//     let newStr = strArr[i].trim().toLowerCase().replaceAll("/", "");
+//     newArr.push(newStr);
+//   }
+//   return newArr
+// }
+
 /*
 Complete the function to check if the variable `num` satisfies the following requirements:
 - is a number

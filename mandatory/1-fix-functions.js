@@ -40,9 +40,9 @@ function first5(numbers) {
   return sliced;
 }
 
-function get3rdIndex(arr) {
+function get3rdIndex(array) {
   let index = 3;
-  let element = arr[index];
+  let element = array[index];
 
   return element;
 }
