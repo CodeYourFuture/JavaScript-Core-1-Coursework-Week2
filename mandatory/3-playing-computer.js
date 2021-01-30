@@ -28,20 +28,16 @@ const f2 = function (a, b) {
   return a + b + x;
 };
 
-// console.log(x);
-// console.log(a);
+console.log(x);
+console.log(a);
 // console.log(b);
 
 for (let i = 0; i < 5; ++i) {
   a = a + 1; // a = 7 now
-  console.log(a);
   if (i % 2 === 0) {
-    const d = f2(i, x); // f2 is called three times - when i = 1/3/5
-    console.log(`this is f2 ${d}`);
+    const d = f2(i, x); // f2 is called three times - when i = 0/2/4
   } else {
-    // f1 is called twice - when i = 2 and when 1 = 4
-    // first time a = 7, second time
+    // f1 is called twice - when i = 1 and when i = 3
     const e = f1(i, a);
-    console.log(`this is f1 ${e}`);
   }
 }
