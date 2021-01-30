@@ -34,8 +34,7 @@ function sortArray(letters) {
 }
 
 function first5(numbers) {
-  let sliced;
-  sliced = numbers.slice(0, 5);
+  let sliced = numbers.slice(0, 5);
   return sliced;
 }
 
