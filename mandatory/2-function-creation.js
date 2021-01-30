@@ -6,7 +6,7 @@ Write a function that:
 - makes the string all lowercase
 */
 function tidyUpString(strArr) {
-  var tidy = []
+  var tidy = [];
   for(let index = 0; index< strArr.length; index++) {
     var trimmed = strArr[index].trim().toLowerCase().replace("/", "");
     tidy.push(trimmed);
@@ -34,7 +34,7 @@ The function must NOT change the original array, arr.
 
 function remove(arr, index) {
   const clonedArr = [].concat(arr);
-  clonedArr.splice(index, 1) 
+  clonedArr.splice(index, 1);
   return clonedArr; // complete this statement
 }
 

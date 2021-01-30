@@ -10,16 +10,16 @@
 
 function calculateGrade(mark) {
   if (mark >= 80) {
-  return "A"
+  return "A";
   }
   else if (mark < 80 && mark > 60) {
-  return "B"
+  return "B";
   } 
   else if (mark <= 60 && mark > 50) {
-  return "C"
+  return "C";
   } 
   else  {
-  return "F"
+  return "F";
   } 
 }
 
