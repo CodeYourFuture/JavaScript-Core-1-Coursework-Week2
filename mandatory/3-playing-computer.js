@@ -15,14 +15,13 @@
   7. What is the value of the "a" outer variable when "f1" is called for the first time?
 
   Answers:
- 1. Parameter "b" in lines 29 & 33, is not defined, so console on line 39 will result in error
- 2. Line 39 "console.log(b)"" removed
- 3. Removing parameter "b" from lines 26 & 27 and 31 & 32,  prints 2 6 4 9 6 13 8 
+ 1. Parameter "b" is not defined, so console b will create the error
+ 2. Console.log b removed
+ 3. Removing parameter "b" results in 2 6 4 9 6 13 8 being printed
  4. "f1" is called twice
  5. "f2" is called twice
- 6. 
- 7.
-
+ 6. First "f1" call is 6
+ 7. First time of the "a" outer variable is 7
 */
 
 let x = 2;
