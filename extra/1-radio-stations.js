@@ -14,6 +14,13 @@
  */
 
 // `getAllFrequencies` goes here
+const getAllFrequencies = () => {
+  var arr = [];
+  for (var i = 87; i <= 108; i++) {
+    arr.push(i);
+  }
+  return arr;
+}
 
 /**
  * Next, let's write a function that gives us only the frequencies that are radio stations.
@@ -21,10 +28,15 @@
  *
  * This function should:
  * - Get the available frequencies from `getAllFrequencies`
- * - There is a helper function called isRadioFrequency that takes an integer as an argument and returns a boolean.
+ * - There is a helper function called isRadioStation that takes an integer as an argument and returns a boolean.
  * - Return only the frequencies that are radio stations.
  */
 // `getStations` goes here
+
+//ToDo: TestBug; every isRadioStation function call check different random array So sometimes failed
+const getStations = ()=>{
+  return getAllFrequencies().filter((value) => isRadioStation(value) === true);
+}
 
 /* ======= TESTS - DO NOT MODIFY ======= */
 
