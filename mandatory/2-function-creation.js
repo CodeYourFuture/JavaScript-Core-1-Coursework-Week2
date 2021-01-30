@@ -5,7 +5,13 @@ Write a function that:
 - removes any forward slashes (/) in the strings
 - makes the string all lowercase
 */
-function tidyUpString(strArr) {}
+function tidyUpString(strArr) {
+  var myArr = [];
+  for(var i=0; i<strArr.length; i++){
+    myArr[i] = strArr[i].split(" ").join('').split('/').join('').toLowerCase();
+  }
+  return myArr
+}
 
 /*
 Complete the function to check if the variable `num` satisfies the following requirements:
@@ -15,7 +21,22 @@ Complete the function to check if the variable `num` satisfies the following req
 Tip: use logical operators
 */
 
-function validate(num) {}
+function validate(num) {
+
+  var isAnumber=false;
+  var isAeven =false;
+  var isLessOrEqual100=false;
+  if(Number(num) === num){
+    isAnumber = true;
+    if(num%2 === 0){
+      isAeven = true;
+    }
+    if(num<=100){
+      isLessOrEqual100 = true;
+    }
+  }
+  return isAnumber && isAeven && isLessOrEqual100;
+}
 
 /* 
 Write a function that returns a copy of the given array arr, but with the element at the given index, index removed.
@@ -23,7 +44,7 @@ The function must NOT change the original array, arr.
 */
 
 function remove(arr, index) {
-  return; // complete this statement
+  return arr.filter(value => value !== arr[index]); // complete this statement
 }
 
 /*
@@ -34,7 +55,14 @@ Write a function that:
 - numbers greater 100 must be replaced with 100
 */
 
-function formatPercentage(arr) {}
+function formatPercentage(arr) {
+  var myArr =[]
+  for(var i=0; i<arr.length;i++){
+    myArr[i] = Math.round(arr[i]*100)/100;
+    myArr[i] = myArr[i]>100 ? '100%' : `${myArr[i]}%`
+  }
+  return myArr;
+}
 
 /* ======= TESTS - DO NOT MODIFY ===== */
 
