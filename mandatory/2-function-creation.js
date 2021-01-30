@@ -22,11 +22,13 @@ Tip: use logical operators
 
 function validate(num) {
   let conditions = typeof num === "number" && num % 2 === 0 && num <= 100;
-  if (conditions) {
-    return true;
-  } else {
-    return false;
-  }
+  // The below code is the longer solution
+  //if (conditions) {
+  //   return true;
+  // } else {
+  //   return false;
+  // }
+  return conditions;
 }
 
 /* 

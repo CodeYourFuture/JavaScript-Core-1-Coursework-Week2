@@ -32,18 +32,12 @@ function getAllFrequencies() {
  * - Return only the frequencies that are radio stations.
  */
 // `getStations` goes here
-function isRadioFrequency(frequencies) {
-  // if (getAllFrequencies().includes(frequencies)) {
-  //   return true;
-  // }
-  return getAllFrequencies().includes(frequencies);
-}
-function getStations() {
-  
-  
-  }
 
-  
+function getStations() {
+  //
+  return getAllFrequencies().filter(isRadioStation);
+  // another way would be getAllFrequencies().filter((station) => isRadioStation(station));
+}
 
 /* ======= TESTS - DO NOT MODIFY ======= */
 
