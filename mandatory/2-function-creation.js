@@ -5,7 +5,16 @@ Write a function that:
 - removes any forward slashes (/) in the strings
 - makes the string all lowercase
 */
-function tidyUpString(strArr) {}
+
+let tidyUpString = strArr => strArr.map(elem => elem.trim().replace('/', '').toLowerCase());
+// function tidyUpString(strArr) {
+//    let tidyArr = [];
+//    for(let i = 0; i < strArr.length; i++) {
+//       strArr[i].trim().replace('/', '').toLowerCase();
+//       tidyArr.push();
+//   }
+//    return tidyArr
+//   }
 
 /*
 Complete the function to check if the variable `num` satisfies the following requirements:
@@ -14,8 +23,10 @@ Complete the function to check if the variable `num` satisfies the following req
 - is less than or equal to 100
 Tip: use logical operators
 */
-
-function validate(num) {}
+// let validate = num => typeof num === 'number' && num % 2 === 0 && num <= 100;
+function validate(num) {
+  return typeof num === 'number' && num % 2 === 0 && num <= 100;
+}
 
 /* 
 Write a function that returns a copy of the given array arr, but with the element at the given index, index removed.
@@ -23,7 +34,9 @@ The function must NOT change the original array, arr.
 */
 
 function remove(arr, index) {
-  return; // complete this statement
+  let removedElement = arr.splice(index, 1);
+  return arr;
+ // complete this statement
 }
 
 /*
@@ -34,7 +47,17 @@ Write a function that:
 - numbers greater 100 must be replaced with 100
 */
 
-function formatPercentage(arr) {}
+function formatPercentage(arr) {
+  let newArr = [];
+  for (let i = 0; i < arr.length; i++) {
+  let = numChange = Number(arr[i].toFixed(2));  
+  if (numChange > 100) {
+    numChange = 100;
+  }
+  newArr.push(numChange + "%");
+  }
+  return newArr;
+}
 
 /* ======= TESTS - DO NOT MODIFY ===== */
 
