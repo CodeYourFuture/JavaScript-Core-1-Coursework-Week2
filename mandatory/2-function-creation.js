@@ -8,6 +8,7 @@ Write a function that:
 const tidyUpString = (strArr) =>
   strArr.map((string) => string.trim().toLowerCase().replaceAll("/", ""));
 
+// using for loop
 // const tidyUpString = strArr => {
 //   let newArr = [];
 //   for(let i = 0; i < strArr.length; i++) {
