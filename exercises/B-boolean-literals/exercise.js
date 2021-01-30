@@ -4,8 +4,25 @@
   This program needs some variables to log the expected result.
   Add the required variables with the correct boolean values assigned.
 */
+let codeYourFutureIsGreat = true; 
+  if(codeYourFutureIsGreat) {
+    console.log("Is Code Your Future great?");
+} 
 
-var codeYourFutureIsGreat = true;
+let mozafarIsCool = false;
+  if(mozafarIsCool) {
+   console.log("Is Mozafar cool?"); 
+  }
+
+let calculationCorrect = true;
+  if(calculationCorrect) {
+    console.log("Does 1 + 1 = 2?");
+  } 
+
+let moreThan10Students = false;
+  if(moreThan10Students) {
+   console.log("Are there more than 10 students?"); 
+  }
 
 /* 
   DO NOT EDIT BELOW THIS LINE

@@ -5,9 +5,12 @@
 
 */
 
-function isEmpty(arr) {
-  return; // complete this statement
-}
+ function isEmpty(arr) {
+ return arr.length === 0; 
+ 
+} 
+
+
 
 /* 
   DO NOT EDIT BELOW THIS LINE

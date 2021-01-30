@@ -13,6 +13,16 @@
   5. How many times is "f2" called?
   6. What value does the "a" parameter take in the first "f1" call?
   7. What is the value of the "a" outer variable when "f1" is called for the first time?
+
+  Answers:
+ 1. Parameter "b" in lines 29 & 33, is not defined, so console on line 39 will result in error
+ 2. Line 39 "console.log(b)"" removed
+ 3. Removing parameter "b" from lines 26 & 27 and 31 & 32,  prints 2 6 4 9 6 13 8 
+ 4. "f1" is called twice
+ 5. "f2" is called twice
+ 6. 
+ 7.
+
 */
 
 let x = 2;
@@ -28,7 +38,7 @@ const f2 = function (a, b) {
 
 console.log(x);
 console.log(a);
-console.log(b);
+// console.log(b);
 
 for (let i = 0; i < 5; ++i) {
   a = a + 1;
@@ -40,3 +50,4 @@ for (let i = 0; i < 5; ++i) {
     console.log(e);
   }
 }
+

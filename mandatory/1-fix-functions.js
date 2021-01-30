@@ -10,45 +10,40 @@
 
 */
 
-function mood() {
-  let isHappy = true;
-
-  if (isHappy) {
+function mood(isHappy) {
+   if (isHappy) {
     return "I am happy";
   } else {
     return "I am not happy";
   }
 }
 
-function greaterThan10(num) {
-  let isBigEnough;
 
-  if (isBigEnough) {
+function greaterThan10(num) {
+  if (num >10) {
     return "num is greater than 10";
-  } else {
+  } else if (num <=10) {
     return "num is not big enough";
-  }
+  }  
 }
 
-function sortArray(letters) {
-  let sortedLetters = letters;
 
+function sortArray(letters) {
+  let sortedLetters = letters.sort();
   return sortedLetters;
 }
 
 function first5(numbers) {
-  let sliced;
-
+  let sliced = numbers.slice(0, 5);
   return sliced;
 }
 
+
 function get3rdIndex(arr) {
-  let index = 3;
-  let element;
-
-  return element;
+ let index = 3;
+ let element = arr[index];
+ return element;
 }
-
 /* ======= TESTS - DO NOT MODIFY ===== */
 
 const util = require("util");
