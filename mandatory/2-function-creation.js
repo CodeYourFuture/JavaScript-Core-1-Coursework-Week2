@@ -50,7 +50,7 @@ Write a function that:
 
 function formatPercentage(arr) {
   let newArr = arr.map((num) => {
-    let twoDecimal = Math.round(num * 100) / 100;
+    let twoDecimal = Number(array[i].toFixed(2));
     if (twoDecimal > 100) {
       return "100%";
     }
@@ -59,6 +59,21 @@ function formatPercentage(arr) {
 
   return newArr;
 }
+
+// another solution:
+
+// function formatPercentage(array) {
+//   let newArray = [];
+//   for (let i = 0; i < array.length; i++) {
+//     let twoDecimal = Number(array[i].toFixed(2));
+//     if (twoDecimal > 100) {
+//       twoDecimal = 100
+//     }
+
+//     newArray.push(twoDecimal + "%");
+//   }
+//   return newArray;
+// }
 
 /* ======= TESTS - DO NOT MODIFY ===== */
 
