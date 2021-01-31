@@ -5,7 +5,18 @@
   Update the code so that you get the expected result.
 */
 
-function isNegative() {}
+function isNegative(number) {
+  return Math.sign(number) === -1;  
+}
+function isBetween5and10(number) {
+  return number > 5 && number < 10;
+}
+function isShortName(name) {
+  return name.length < 7;
+}
+function startsWithD(name) {
+  return name.startWith("D");
+}
 
 /* 
   DO NOT EDIT BELOW THIS LINE

@@ -7,12 +7,25 @@
   Answer the following questions:
 
   1. This program throws an error. Why? (If you can't find it, try executing it).
+  The error occurs when the programme returns 'console.log(b)'. Since 'b' is not defined as a variable, the code should return a 'not defined error'.
   2. Remove the line that throws the error.
+  Removed.
   3. What is printed to the console?
+  2
+  6
+  4
+  9
+  6
+  13
+  8
   4. How many times is "f1" called?
+  Twice - when 'i = 1' and 'i = 3'
   5. How many times is "f2" called?
+  Thrice - when 'i = 0'; 'i = 2'; 'i = 4'.
   6. What value does the "a" parameter take in the first "f1" call?
+  A value of 8
   7. What is the value of the "a" outer variable when "f1" is called for the first time?
+  The value of a would be 6
 */
 
 let x = 2;
@@ -28,7 +41,6 @@ const f2 = function (a, b) {
 
 console.log(x);
 console.log(a);
-console.log(b);
 
 for (let i = 0; i < 5; ++i) {
   a = a + 1;
