@@ -6,22 +6,13 @@ Write a function that:
 - makes the string all lowercase
 */
 function tidyUpString(strArr) {
-  
-  let removeSpaces = (strArr) => strArr.trim();
-  
-  let removeForwardSlashes = function () {
-    return strArr.replace(/\//gi, '');
-  };
-
-  let allLowerCase = function () {
-    return strArr.toLowerCase();
-  };
-  if (newStrArr = removeSpaces || removeForwardSlashes || allLowerCase) {
-  // if (removeSpaces === strArr || removeForwardSlashes === strArr || allLowerCase === strArr) {
-  return (newStrArr);  
-  }  
-}
-
+  for (let i = 0; i < strArr.length; i++) {
+    strArr[i] = strArr[i].trim();
+    strArr[i] = strArr[i].toLowerCase();
+    strArr[i] = strArr[i].replace(/\//g, "");
+  }
+  return strArr;
+}   //this for loop changes the strArr with the 3 methods and returns the new string.
 /*
 Complete the function to check if the variable `num` satisfies the following requirements:
 - is a number
@@ -44,8 +35,10 @@ The function must NOT change the original array, arr.
 */
 
 function remove(arr, index) {
-  return arr.splice(arr, index); // complete this statement
-}
+  let removedElement = arr.splice(index, 1);
+  return arr; // complete this statement
+  }
+
 
 /*
 Write a function that:
@@ -56,16 +49,16 @@ Write a function that:
 */
 
 function formatPercentage(arr) {
-  
-  if (Number === Number) {
-    return `${Number}%`;
-  } else if (Number > 100) {
-    return 100;
-  } else if (Number) {
-    return Number.toFixed(2);
+  let newArr = [];
+  for (let i = 0; i < arr.length; i++) {
+    let newNumber = Number(arr[i].toFixed(2));
+    if (newNumber > 100) {
+      newNumber = 100;
+    }
+    newArr.push(`${newNumber}%`);
   }
-  return arr;
-}
+  return newArr;
+  }
 
 /* ======= TESTS - DO NOT MODIFY ===== */
 
