@@ -38,12 +38,6 @@ function validate(num) {
   } 
 }
 
-//  tests whether all the array elements are the even numbers
-// let numbers = [1, 3, 5];
-// let isEven = numbers.every(function (e) {
-//     return e % 2 == 0;
-// });
-
 /* 
 Write a function that returns a copy of the given array arr, but with the element at the given index, index removed.
 The function must NOT change the original array, arr.
@@ -67,9 +61,10 @@ function formatPercentage(arr) {
     return `${Number}%`;
   } else if (Number > 100) {
     return 100;
-  } else {
+  } else if (Number) {
     return Number.toFixed(2);
   }
+  return arr;
 }
 
 /* ======= TESTS - DO NOT MODIFY ===== */
