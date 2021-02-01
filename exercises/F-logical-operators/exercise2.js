@@ -6,25 +6,27 @@
 */
 
 function isNegative(number1) {
-  let result = number1 < 0;
-  return result;
+  return number1 < 0;
 }
 
 function isBetween5and10(number1) {
-  let result = number1 <= 10 && number1 > 5;
-  return result;
+  return number1 <= 10 && number1 >= 5;
 }
 
 function isShortName(name1) {
-  let result = name1.length;
-  if (result < 10) return true;
-  else return false;
+  if (name1.length < 10) {
+    return true;
+  } else {
+    return false;
+  }
 }
 
 function startsWithD(name1) {
   if (name1.charAt(0) === "D") {
     return true;
-  } else return false;
+  } else {
+    return false;
+  }
 }
 
 /* 
