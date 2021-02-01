@@ -5,10 +5,12 @@
 */
 
 function first(arr) {
-  return; // complete this statement
+  return arr[0]; // complete this statement
 }
 
 function last(arr) {
+  return [arr.length - 1];
+  
   return; // complete this statement
 }
 
