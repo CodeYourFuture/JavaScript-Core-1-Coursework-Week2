@@ -5,7 +5,14 @@ Write a function that:
 - removes any forward slashes (/) in the strings
 - makes the string all lowercase
 */
-function tidyUpString(strArr) {}
+function tidyUpString(strArr) {
+  let cleanedUpArray = [];
+
+  for (str of strArr) {
+    cleanedUpArray.push(str.replace(/\//, "").toLowerCase().trim());
+  }
+  return cleanedUpArray;
+}
 
 /*
 Complete the function to check if the variable `num` satisfies the following requirements:
@@ -15,7 +22,12 @@ Complete the function to check if the variable `num` satisfies the following req
 Tip: use logical operators
 */
 
-function validate(num) {}
+function validate(num) {
+  if (typeof num === "number" && num % 2 === 0 && num <= 100) {
+    return true;
+  }
+    return false;
+}
 
 /* 
 Write a function that returns a copy of the given array arr, but with the element at the given index, index removed.
@@ -23,7 +35,7 @@ The function must NOT change the original array, arr.
 */
 
 function remove(arr, index) {
-  return; // complete this statement
+  return arr.slice(0, index).concat(arr.slice(index + 1)); // complete this statement
 }
 
 /*
@@ -34,7 +46,16 @@ Write a function that:
 - numbers greater 100 must be replaced with 100
 */
 
-function formatPercentage(arr) {}
+function formatPercentage(arr) {
+  let percentArr = [];
+
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] > 100) {
+      percentArr.push(`100%`);
+    } else percentArr.push(`${parseFloat(arr[i].toFixed(2))}%`);
+    }
+  return percentArr;
+}
 
 /* ======= TESTS - DO NOT MODIFY ===== */
 
