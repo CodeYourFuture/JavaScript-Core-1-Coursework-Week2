@@ -5,7 +5,13 @@ Write a function that:
 - removes any forward slashes (/) in the strings
 - makes the string all lowercase
 */
-function tidyUpString(strArr) {}
+function tidyUpString(strArr) {
+ //var strArr = ["daniel ", "irina ", " Gordon", "ashleigh "];
+ var strArr = ["sanyia", "michael", "anthony", "tim"];
+
+ /*return strArr.toLowerCase();
+return strArr.trim();
+}*/
 
 /*
 Complete the function to check if the variable `num` satisfies the following requirements:
@@ -15,7 +21,11 @@ Complete the function to check if the variable `num` satisfies the following req
 Tip: use logical operators
 */
 
-function validate(num) {}
+function validate(num) {
+numb > 0;
+numb / 2;
+numb <= 100;
+return true}
 
 /* 
 Write a function that returns a copy of the given array arr, but with the element at the given index, index removed.
@@ -23,7 +33,11 @@ The function must NOT change the original array, arr.
 */
 
 function remove(arr, index) {
-  return; // complete this statement
+  arr = [[10, 293, 292, 176, 29],3];
+  arr.pop();
+  arr.splice([0][3]);
+  return// complete this statement
+  
 }
 
 /*
