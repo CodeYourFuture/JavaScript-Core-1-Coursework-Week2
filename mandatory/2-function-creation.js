@@ -37,13 +37,16 @@ The function must NOT change the original array, arr.
 */
 
 function remove(arr, index) {
-  let newArray = [];
-  for (let i = 0; i < arr.length; i++) {
-    if (i !== index) {
-      newArray.push(arr[i]);
-    }
-  }
-  return newArray;
+  // let newArray = [];
+  // for (let i = 0; i < arr.length; i++) {
+  //   if (i !== index) {
+  //     newArray.push(arr[i]);
+  //   }
+  // }
+  // return newArray;
+  newArray = [...arr];
+  newArray.splice(index, 1);
+  return newArray; //newArray.slice(0, index).concat(newArray.slice(index + 1));
 }
 /*
 Write a function that:
