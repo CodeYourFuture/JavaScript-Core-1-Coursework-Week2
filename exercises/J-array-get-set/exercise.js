@@ -1,15 +1,15 @@
-/*
+  /*
   Array getters
   -------------------------
   Complete the functions below to get the first and last values from the array
 */
 
 function first(arr) {
-  return; // complete this statement
+  return arr.shift(); // complete this statement
 }
 
 function last(arr) {
-  return; // complete this statement
+  return arr.pop(); // complete this statement
 }
 
 /* 
