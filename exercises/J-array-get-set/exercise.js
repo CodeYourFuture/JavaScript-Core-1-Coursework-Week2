@@ -4,14 +4,24 @@
   Complete the functions below to get the first and last values from the array
 */
 
-function first(arr) {
-  return; // complete this statement
+function isEmpty(arr) {
+    if (arr.length === 0) {
+        return true;
+    }
+    return false; // complete this statement
 }
 
 function last(arr) {
-  return; // complete this statement
+    return arr[arr.length - 1]; // complete this statement
 }
 
+function first(arr) {
+    return arr[0]; // complete this statement
+}
+
+function last(arr) {
+    return arr[arr.length - 1]; // complete this statement
+}
 /* 
   DO NOT EDIT BELOW THIS LINE
   --------------------------- */
