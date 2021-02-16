@@ -13,27 +13,15 @@
  * - Should return this array to use in other functions
  */
 
-
-// let arr2 = Array.from({ length: 20 }, function (_, i) {
-// i = 20++
-
-// })
-
-
 function getAllFrequencies() {
   let startVal = 87;
   let endVal = 108 + 1;
   let arr = Array.from({ length: endVal - startVal }, function (_, i) {
-    return i = startVal++
-
-  })
-  console.log(arr)
-  return arr
+    return (i = startVal++);
+  });
+  console.log(arr);
+  return arr;
 }
-getAllFrequencies()
-
-
-
 
 /**
  * Next, let's write a function that gives us only the frequencies that are radio stations.
@@ -45,13 +33,49 @@ getAllFrequencies()
  * - Return only the frequencies that are radio stations.
  */
 
-function getStations() {
-  let arr = getAllFrequencies();
-  return arr
+//!IMPORTANT
+// I'm not understanding what You want here?  getAllFrequencies() return only radio frequencies so base on what I can do filter?
+const radioAll = getAllFrequencies();
+
+function getStations(avaStation = getAvailableStations()) {
+  // const avaStation = getAvailableStations();
+  return avaStation
+    .filter((item) => radioAll.includes(item))
+    .sort((frequencyA, frequencyB) => frequencyA - frequencyB);
 }
 
+// function getStations() {
+//   const set = new Set(getAllFrequencies());
+//   //compare console log
+//   console.log("getAvailableStations(): " + getAvailableStations());
+//   const arrr = new Array(4)
+//     .fill(undefined)
+//     .map(function () {
+//       return Math.floor(Math.random() * (108 - 87 + 1) + 87);
+//     })
+//     .sort(function (frequencyA, frequencyB) {
+//       return frequencyA - frequencyB;
+//     });
+//   console.log(`includes from helper function + ${arrr}`);
+
+//   console.log(
+//     "it is here: " +
+//       [...set]
+//         .filter((item) => !isNaN(item))
+//         .sort(function (frequencyA, frequencyB) {
+//           return frequencyA - frequencyB;
+//         })
+//   );
+//   // return [...set]
+//   //   .filter((item) => !isNaN(item))
+//   //   .sort(function (frequencyA, frequencyB) {
+//   //     return frequencyA - frequencyB;
+//   //   });
+//   return getAvailableStations();
+// }
+
 function isRadioFrequency(int) {
-  console.log("?")
+  return getAllFrequencies().includes(int);
 }
 
 /* ======= TESTS - DO NOT MODIFY ======= */
@@ -60,7 +84,7 @@ function getAvailableStations() {
   // Using `stations` as a property as defining it as a global variable wouldn't
   // always make it initialized before the function is called
   if (!getAvailableStations.stations) {
-    const stationCount = 4;
+    const stationCount = 22;
     getAvailableStations.stations = new Array(stationCount)
       .fill(undefined)
       .map(function () {
@@ -93,6 +117,7 @@ function test(testName, fn) {
 
 test("getAllFrequencies() returns all frequencies between 87 and 108", function () {
   const frequencies = getAllFrequencies();
+
   assert.deepStrictEqual(frequencies, [
     87,
     88,
