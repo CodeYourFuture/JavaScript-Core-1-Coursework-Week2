@@ -38,7 +38,6 @@ function getAllFrequencies() {
 const radioAll = getAllFrequencies();
 
 function getStations(avaStation = getAvailableStations()) {
-  // const avaStation = getAvailableStations();
   return avaStation
     .filter((item) => radioAll.includes(item))
     .sort((frequencyA, frequencyB) => frequencyA - frequencyB);
