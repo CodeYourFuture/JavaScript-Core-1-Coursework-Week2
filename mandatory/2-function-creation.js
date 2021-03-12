@@ -10,10 +10,10 @@ Write a function that:
 function tidyUpString(strArr) {
   var newArr = strArr.toString();
   var strEdit = newArr.replace("/",'');
-  var stringTrim = strEdit.trim();
-  var lowerCase = stringTrim.toLowerCase();
+  var lowerCase = strEdit.toLowerCase();
   var splitStr = lowerCase.split(",");
-   return splitStr;
+  let strTrim = splitStr.map(el=> el.trim());
+   return strTrim;
 }
 
 
@@ -53,7 +53,7 @@ function remove(arr, index) {  //?.splice()
     arrEdited = []; // complete this statement
     n = index;
     for (i = 0; i< arr.length; i++) {
-        if(arr[i] !== n) {
+        if(arr[i] !== arr[n]) {
           arrEdited.push(arr[i]);
         }
     }
