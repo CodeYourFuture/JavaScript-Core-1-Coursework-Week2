@@ -6,9 +6,9 @@
   If Daniel is a student, print out "Hi, I'm Daniel, I'm a student."
 */
 
-var name = "Daniel";
-var danielsRole = "mentor";
-var greeting = "Hi, I'm Daniel, I'm a mentor"
+let name = "Daniel";
+let danielsRole = "mentor";
+let greeting = "Hi, I'm Daniel, I'm a mentor"
 
 if(name){ 
 

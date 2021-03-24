@@ -5,16 +5,16 @@
   The variables should have values that match the expected results.
 */
 
-var studentCount = 16;
-var mentorCount = 9;
-var moreStudentsThanMentors = true;; // finish this statement
+let studentCount = 16;
+let mentorCount = 9;
+let moreStudentsThanMentors = true;; // finish this statement
 
-var roomMaxCapacity = 25;
-var enoughSpaceInRoom = true; // finish this statement
+let roomMaxCapacity = 25;
+let enoughSpaceInRoom = true; // finish this statement
 
-var personA = "Daniel";
-var personB = "Irina";
-var sameName = false; // finish this statement
+let personA = "Daniel";
+let personB = "Irina";
+let sameName = false; // finish this statement
 
 /* 
   DO NOT EDIT BELOW THIS LINE

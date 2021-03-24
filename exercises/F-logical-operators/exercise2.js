@@ -4,11 +4,11 @@
   This program calls some functions that are either missing or incomplete.
   Update the code so that you get the expected result.
 */
-var isNegative = -10;
+
 // var isBetween5and10 = false;
 // var isShortName = true;
 // var  startsWithD = false;
-
+var isNegative = -10;
 function isNegative(isNegative) {
 
   if (isNegative > 0 && isNegative < -10){
