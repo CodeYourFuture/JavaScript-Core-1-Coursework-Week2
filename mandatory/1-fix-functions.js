@@ -21,7 +21,7 @@ function mood(isHappy) {
 }
 
 function greaterThan10(num) {
-  let isBigEnough =num;    //isBigEnough will inherit whatever values num would be getting
+  let isBigEnough =num;   
 
   if (isBigEnough > 10) {
     return "num is greater than 10";

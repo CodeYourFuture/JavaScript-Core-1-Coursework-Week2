@@ -8,7 +8,24 @@
   - Otherwise the grade is "F"
 */
 
-function calculateGrade(mark) {}
+function calculateGrade(mark) {
+  //if the marks is 80 or higher
+  if (mark >= 80){
+    return "A";
+  }
+  //if the mark is lower than 80 and greater than 60
+  else if (mark < 80 && mark > 60){
+    return "B";
+  }
+  // if the mark is 60 or no lower than 50
+  else if (mark == 60 || mark > 50){
+    return "C"
+  }
+  // default return statement
+  else{
+    return "F"
+  }
+}
 
 /* 
 DO NOT EDIT BELOW THIS LINE
