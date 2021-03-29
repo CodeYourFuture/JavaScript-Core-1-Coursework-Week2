@@ -7,8 +7,8 @@ Write a function that:
 */
 function tidyUpString(strArr) {
   for (let b=0; b < strArr.length; b++){
-    let removeSpace= strArr[b].trim(); // the Trim() method will remove whitespace from both ends of the string.
-    let removeForwardSlash=removeSpace.replace("/",''); // it will remove by replacing any forward slashes by new string
+    let removeSpace= strArr[b].trim(); 
+    let removeForwardSlash=removeSpace.replace("/",''); 
     let lowercaseString=removeForwardSlash.toLowerCase();
     strArr[b]=lowercaseString;
   }
@@ -58,7 +58,7 @@ function formatPercentage(arr) {
     }else {
       elementGreaterThan100=Math.round(arr[r]*100)/100;
     }
-    //strings formatted as percentages
+    //formulate the string as percentage
     let roundedTwoDecimal= elementGreaterThan100;
     let percentages=roundedTwoDecimal + "%";
     arr[r]=percentages; 
