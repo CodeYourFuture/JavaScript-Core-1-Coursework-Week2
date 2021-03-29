@@ -9,6 +9,10 @@
 var name = "Daniel";
 var danielsRole = "mentor";
 
+if (danielsRole) {
+  console.log(`Hi, I'm ${name}, I'm a ${danielsRole}`)
+}
+
 /* 
 EXPECTED RESULT
 ---------------
