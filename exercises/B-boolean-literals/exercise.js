@@ -6,6 +6,9 @@
 */
 
 var codeYourFutureIsGreat = true;
+var mozafarIsCool = false;
+var calculationCorrect = true;
+var moreThan10Students = false;
 
 /* 
   DO NOT EDIT BELOW THIS LINE
@@ -24,3 +27,4 @@ console.log("Are there more than 10 students?", moreThan10Students);
   Does 1 + 1 = 2? true
   Are there more than 10 students? false
 */
+
