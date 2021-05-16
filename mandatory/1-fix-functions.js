@@ -30,18 +30,6 @@ function greaterThan10(num) {
   }
 }
 
-function sortArray(letters) {
-  let sortedLetters = letters;
-
-  return sortedLetters;
-}
-
-function first5(numbers) {
-  let sliced;
-
-  return sliced;
-}
-
 function get3rdIndex(arr) {
   let index = 3;
   let element;
@@ -51,80 +39,45 @@ function get3rdIndex(arr) {
 
 /* ======= TESTS - DO NOT MODIFY ===== */
 
-const util = require("util");
+const {expect, test} = require("@jest/globals");
 
-function test(test_name, actual, expected) {
-  let status;
+test("mood function works for true", () => {
+    expect(mood(true)).toEqual("I am happy");
+});
 
-  let isEqual;
-  if (Array.isArray(expected)) {
-    isEqual = arraysEqual(actual, expected);
-  } else {
-    isEqual = actual === expected;
-  }
+test("mood function works for false", () => {
+    expect(mood(false)).toEqual("I am not happy");
+});
 
-  if (isEqual) {
-    status = "PASSED";
-  } else {
-    status = `FAILED: expected: ${util.inspect(
-      expected
-    )} but your function returned: ${util.inspect(actual)}`;
-  }
+test("greaterThanTen function works for value greater than 10", () => {
+    expect(greaterThan10(11)).toEqual("num is greater than 10");
+});
 
-  console.log(`${test_name}: ${status}`);
-}
+test("greaterThanTen function works for value less than 10", () => {
+    expect(greaterThan10(9)).toEqual("num is not big enough");
+});
 
-function arraysEqual(a, b) {
-  if (a === b) return true;
-  if (a == null || b == null) return false;
-  if (a.length != b.length) return false;
+test("greaterThanTen function works for value equal to 10", () => {
+    expect(greaterThan10(10)).toEqual("num is not big enough");
+});
 
-  for (let i = 0; i < a.length; ++i) {
-    if (a[i] !== b[i]) return false;
-  }
+test("get3rdIndex function works with strings", () => {
+    const strings = ["fruit", "banana", "apple", "strawberry", "raspberry"];
+    const copyOfOriginal = strings.slice();
+    expect(get3rdIndex(strings)).toEqual("strawberry");
+    // Make sure get3rdIndex didn't change its input array.
+    expect(strings).toEqual(copyOfOriginal);
+});
 
-  return true;
-}
+test("get3rdIndex function works with numbers", () => {
+    const numbers = [11, 37, 62, 18, 19, 3, 30];
+    const copyOfOriginal = numbers.slice();
+    expect(get3rdIndex(numbers)).toEqual(18);
+    // Make sure get3rdIndex didn't change its input array.
+    expect(numbers).toEqual(copyOfOriginal);
+});
 
-test("mood function works for true", mood(true), "I am happy");
-test("mood function works for false", mood(false), "I am not happy");
-test(
-  "greaterThanTen function works for 11",
-  greaterThan10(11),
-  "num is greater than 10"
-);
-test(
-  "greaterThanTen function works for 10",
-  greaterThan10(10),
-  "num is not big enough"
-);
-test(
-  "greaterThanTen function works for 9",
-  greaterThan10(9),
-  "num is not big enough"
-);
-test("sortArray function works", sortArray(["a", "n", "c", "e", "z", "f"]), [
-  "a",
-  "c",
-  "e",
-  "f",
-  "n",
-  "z",
-]);
-
-let numbers = [1, 2, 3, 4, 5, 6, 7, 8];
-test("first5 function works", first5(numbers), [1, 2, 3, 4, 5]);
-if (!arraysEqual(numbers, [1, 2, 3, 4, 5, 6, 7, 8])) {
-  console.log("PROBLEM: first5 changed its input array - it shouldn't!");
-}
-
-test(
-  "get3rdIndex function works - case 1",
-  get3rdIndex(["fruit", "banana", "apple", "strawberry", "raspberry"]),
-  "strawberry"
-);
-test(
-  "get3rdIndex function works - case 2",
-  get3rdIndex([11, 37, 62, 18, 19, 3, 30]),
-  18
-);
+test("get3rdIndex returns undefined if not enough elements", () => {
+    const numbers = [5, 10];
+    expect(get3rdIndex(numbers)).toBeUndefined();
+})
