@@ -58,7 +58,7 @@ test("validate function rejects odd number", () => {
   expect(validate(17)).toEqual(false);
 });
 
-test("validate function works rejects string", () => {
+test("validate function rejects string", () => {
   expect(validate("Ten")).toEqual(false);
 });
 
