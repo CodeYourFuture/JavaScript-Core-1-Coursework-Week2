@@ -51,6 +51,10 @@ test("greaterThanTen function works for value greater than 10", () => {
   expect(greaterThan10(11)).toEqual("num is greater than 10");
 });
 
+test("greaterThanTen function works for value much greater than 10", () => {
+  expect(greaterThan10(96)).toEqual("num is greater than 10");
+});
+
 test("greaterThanTen function works for value less than 10", () => {
   expect(greaterThan10(9)).toEqual("num is not big enough");
 });
