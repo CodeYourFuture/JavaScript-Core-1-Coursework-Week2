@@ -39,42 +39,42 @@ test.each([
   ["  Alastair  ", "alastair"],
   [" anne marie  ", "anne marie"],
 ])("tidyUpString function works for %s", (input, expected) => {
-    expect(tidyUpString(input)).toEqual(expected);
+  expect(tidyUpString(input)).toEqual(expected);
 });
 
 test("validate function accepts valid even number", () => {
-    expect(validate(10)).toEqual(true);
+  expect(validate(10)).toEqual(true);
 });
 
 test("validate function accepts other valid even number", () => {
-    expect(validate(18)).toEqual(true);
+  expect(validate(18)).toEqual(true);
 });
 
 test("validate function accepts exactly 100", () => {
-    expect(validate(100)).toEqual(true);
+  expect(validate(100)).toEqual(true);
 });
 
 test("validate function works rejects odd number", () => {
-    expect(validate(17)).toEqual(false);
+  expect(validate(17)).toEqual(false);
 });
 
 test("validate function works rejects string", () => {
-    expect(validate("Ten")).toEqual(false);
+  expect(validate("Ten")).toEqual(false);
 });
 
 test("validate function works rejects stringified number", () => {
-    expect(validate("10")).toEqual(false);
+  expect(validate("10")).toEqual(false);
 });
 
 test("validate function works rejects too large number", () => {
-    expect(validate(108)).toEqual(false);
+  expect(validate(108)).toEqual(false);
 });
 
 test.each([
-    [23, "23%"],
-    [18.103, "18.1%"],
-    [187.2, "100%"],
-    [0.372, "0.37%"],
+  [23, "23%"],
+  [18.103, "18.1%"],
+  [187.2, "100%"],
+  [0.372, "0.37%"],
 ])("formatPercentage function works for %s", (input, expected) => {
-    expect(formatPercentage(input)).toEqual(expected);
+  expect(formatPercentage(input)).toEqual(expected);
 });

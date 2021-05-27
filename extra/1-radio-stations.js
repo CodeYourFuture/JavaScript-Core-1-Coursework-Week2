@@ -40,11 +40,11 @@ function getAvailableStations() {
     while (getAvailableStations.stations.length < stationCount) {
       let randomFrequency = Math.floor(Math.random() * (108 - 87 + 1) + 87);
       if (!getAvailableStations.stations.includes(randomFrequency)) {
-          getAvailableStations.stations.push(randomFrequency);
+        getAvailableStations.stations.push(randomFrequency);
       }
-    };
-    getAvailableStations.stations.sort(function(frequencyA, frequencyB) {
-        return frequencyA - frequencyB
+    }
+    getAvailableStations.stations.sort(function (frequencyA, frequencyB) {
+      return frequencyA - frequencyB;
     });
   }
 
@@ -57,28 +57,8 @@ function isRadioStation(frequency) {
 
 test("getAllFrequencies() returns all frequencies between 87 and 108", () => {
   expect(getAllFrequencies()).toEqual([
-    87,
-    88,
-    89,
-    90,
-    91,
-    92,
-    93,
-    94,
-    95,
-    96,
-    97,
-    98,
-    99,
-    100,
-    101,
-    102,
-    103,
-    104,
-    105,
-    106,
-    107,
-    108,
+    87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104,
+    105, 106, 107, 108,
   ]);
 });
 
