@@ -66,7 +66,7 @@ test("validate function rejects stringified number", () => {
   expect(validate("10")).toEqual(false);
 });
 
-test("validate function works rejects too large number", () => {
+test("validate function rejects too large number", () => {
   expect(validate(108)).toEqual(false);
 });
 
