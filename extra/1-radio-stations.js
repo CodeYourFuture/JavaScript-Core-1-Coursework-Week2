@@ -28,8 +28,6 @@
 
 /* ======= TESTS - DO NOT MODIFY ======= */
 
-const {expect, test} = require("@jest/globals");
-
 function getAvailableStations() {
   // Using `stations` as a property as defining it as a global variable wouldn't
   // always make it initialized before the function is called

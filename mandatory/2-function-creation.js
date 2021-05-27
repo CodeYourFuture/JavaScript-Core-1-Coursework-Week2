@@ -29,8 +29,6 @@ function formatPercentage(num) {}
 
 /* ======= TESTS - DO NOT MODIFY ===== */
 
-const {expect, test} = require("@jest/globals");
-
 test.each([
   ["/Daniel", "daniel"],
   [" Sanyia/", "sanyia"],

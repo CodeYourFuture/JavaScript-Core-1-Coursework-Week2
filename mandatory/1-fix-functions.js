@@ -39,8 +39,6 @@ function get3rdIndex(arr) {
 
 /* ======= TESTS - DO NOT MODIFY ===== */
 
-const {expect, test} = require("@jest/globals");
-
 test("mood function works for true", () => {
     expect(mood(true)).toEqual("I am happy");
 });
