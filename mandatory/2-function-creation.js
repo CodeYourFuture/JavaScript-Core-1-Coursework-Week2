@@ -54,7 +54,7 @@ test("validate function accepts exactly 100", () => {
   expect(validate(100)).toEqual(true);
 });
 
-test("validate function works rejects odd number", () => {
+test("validate function rejects odd number", () => {
   expect(validate(17)).toEqual(false);
 });
 
