@@ -26,7 +26,10 @@
  */
 // `getStations` goes here
 
-/* ======= TESTS - DO NOT MODIFY ======= */
+/*
+ * ======= TESTS - DO NOT MODIFY =======
+ * Note: You are not expected to understand everything below this comment!
+ */
 
 function getAvailableStations() {
   // Using `stations` as a property as defining it as a global variable wouldn't
