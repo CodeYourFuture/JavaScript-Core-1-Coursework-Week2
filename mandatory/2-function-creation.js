@@ -62,7 +62,7 @@ test("validate function rejects string", () => {
   expect(validate("Ten")).toEqual(false);
 });
 
-test("validate function works rejects stringified number", () => {
+test("validate function rejects stringified number", () => {
   expect(validate("10")).toEqual(false);
 });
 
