@@ -26,21 +26,26 @@
  */
 // `getStations` goes here
 
-/* ======= TESTS - DO NOT MODIFY ======= */
+/*
+ * ======= TESTS - DO NOT MODIFY =======
+ * Note: You are not expected to understand everything below this comment!
+ */
 
 function getAvailableStations() {
   // Using `stations` as a property as defining it as a global variable wouldn't
   // always make it initialized before the function is called
   if (!getAvailableStations.stations) {
     const stationCount = 4;
-    getAvailableStations.stations = new Array(stationCount)
-      .fill(undefined)
-      .map(function () {
-        return Math.floor(Math.random() * (108 - 87 + 1) + 87);
-      })
-      .sort(function (frequencyA, frequencyB) {
-        return frequencyA - frequencyB;
-      });
+    getAvailableStations.stations = [];
+    while (getAvailableStations.stations.length < stationCount) {
+      let randomFrequency = Math.floor(Math.random() * (108 - 87 + 1) + 87);
+      if (!getAvailableStations.stations.includes(randomFrequency)) {
+        getAvailableStations.stations.push(randomFrequency);
+      }
+    }
+    getAvailableStations.stations.sort(function (frequencyA, frequencyB) {
+      return frequencyA - frequencyB;
+    });
   }
 
   return getAvailableStations.stations;
@@ -50,48 +55,13 @@ function isRadioStation(frequency) {
   return getAvailableStations().includes(frequency);
 }
 
-const assert = require("assert");
-
-function test(testName, fn) {
-  try {
-    fn();
-    console.log(`\n✅ ${testName}: PASS`);
-  } catch (error) {
-    console.log(
-      `\n❌ ${testName}: FAIL (see details below)\n\n${error.message}`
-    );
-  }
-}
-
-test("getAllFrequencies() returns all frequencies between 87 and 108", function () {
-  const frequencies = getAllFrequencies();
-  assert.deepStrictEqual(frequencies, [
-    87,
-    88,
-    89,
-    90,
-    91,
-    92,
-    93,
-    94,
-    95,
-    96,
-    97,
-    98,
-    99,
-    100,
-    101,
-    102,
-    103,
-    104,
-    105,
-    106,
-    107,
-    108,
+test("getAllFrequencies() returns all frequencies between 87 and 108", () => {
+  expect(getAllFrequencies()).toEqual([
+    87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104,
+    105, 106, 107, 108,
   ]);
 });
 
 test("getStations() returns all the available stations", () => {
-  const stations = getStations();
-  assert.deepStrictEqual(stations, getAvailableStations());
+  expect(getStations()).toEqual(getAvailableStations());
 });
