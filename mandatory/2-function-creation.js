@@ -1,13 +1,4 @@
 /*
-Write a function that:
-- takes a string as input
-- removes any spaces in the beginning or end of the string
-- removes any forward slashes (/) in the string
-- makes the string all lowercase
-*/
-function tidyUpString(str) {}
-
-/*
 Complete the function to check if the variable `num` satisfies the following requirements:
 - is a number
 - is even
@@ -27,20 +18,16 @@ Write a function that:
 
 function formatPercentage(num) {}
 
-/* ======= TESTS - DO NOT MODIFY ===== */
+/*
+Write a function that:
+- takes an array of strings as input
+- removes any spaces in the beginning or end of each string
+- removes any forward slashes (/) in each string
+- makes all strings all lowercase
+*/
+function tidyUpStrings(arrayOfStrings) {}
 
-test.each([
-  ["/Daniel", "daniel"],
-  [" Sanyia/", "sanyia"],
-  ["AnTHonY", "anthony"],
-  ["irina", "irina"],
-  [" Gordon", "gordon"],
-  ["ashleigh  ", "ashleigh"],
-  ["  Alastair  ", "alastair"],
-  [" anne marie  ", "anne marie"],
-])("tidyUpString function works for %s", (input, expected) => {
-  expect(tidyUpString(input)).toEqual(expected);
-});
+/* ======= TESTS - DO NOT MODIFY ===== */
 
 test("validate function accepts valid even number", () => {
   expect(validate(10)).toEqual(true);
@@ -77,4 +64,28 @@ test.each([
   [0.372, "0.37%"],
 ])("formatPercentage function works for %s", (input, expected) => {
   expect(formatPercentage(input)).toEqual(expected);
+});
+
+test("tidyUpString function works", () => {
+  expect(
+    tidyUpStrings([
+      "/Daniel",
+      " /Sanyia",
+      "AnTHonY",
+      "irina",
+      " Gordon",
+      "ashleigh   ",
+      "   Alastair  ",
+      " anne marie  ",
+    ])  
+  ).toEqual([
+    "daniel",
+    "sanyia",
+    "anthony",
+    "irina",
+    "gordon",
+    "ashleigh",
+    "alastair",
+    "anne marie",
+  ]); 
 });
