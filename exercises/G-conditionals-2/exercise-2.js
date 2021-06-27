@@ -7,7 +7,7 @@
 
 */
 
-function studentPassed(grade) {}
+function studentPassed(grade) {};
 
 /* 
 DO NOT EDIT BELOW THIS LINE
