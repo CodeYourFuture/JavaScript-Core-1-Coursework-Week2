@@ -10,12 +10,12 @@
 function isNegative(num) {
   if (num === -10) {
     return true;
-  } else if (num === 5) {
+  } else if (num !== -5) {
       return false;
-    } else {
+    } 
+    else {
       return 'Only checking -10 and 5, if you have another way, let me know :-)';
   }
-
 }
 function isBetween5and10(num) {
   if (num >= 5 && num <= 10) {
