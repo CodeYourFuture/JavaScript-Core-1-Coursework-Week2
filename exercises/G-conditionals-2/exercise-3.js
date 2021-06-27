@@ -18,10 +18,10 @@ function calculateGrade(mark) {
 /* 
 DO NOT EDIT BELOW THIS LINE
 --------------------------- */
-var grade1 = 49;
-var grade2 = 90;
-var grade3 = 70;
-var grade4 = 55;
+const grade1 = 49;
+const grade2 = 90;
+const grade3 = 70;
+const grade4 = 55;
 
 console.log("'" + grade1 + "': " + calculateGrade(grade1));
 console.log("'" + grade2 + "': " + calculateGrade(grade2));
