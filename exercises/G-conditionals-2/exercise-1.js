@@ -1,12 +1,18 @@
-/*
-  Conditionals
-  ---------------------------------
-  Write a function to test if a provided number is negative or positive
-  - if number is less than zero, return the word "negative"
-  - if number is more or equal to zero, return the word "positive"
-*/
+/**
+ * /*
+ *   Conditionals
+ *   ---------------------------------
+ *   Write a function to test if a provided number is negative or positive
+ *   - if number is less than zero, return the word "negative"
+ *   - if number is more or equal to zero, return the word "positive"
+ *
+ * @format
+ */
 
-function negativeOrPositive(number) {}
+function negativeOrPositive(number) {
+	if (number < 0) return "negative";
+	else return "positive";
+}
 
 /* 
   DO NOT EDIT BELOW THIS LINE
