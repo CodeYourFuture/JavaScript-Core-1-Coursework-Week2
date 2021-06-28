@@ -15,7 +15,7 @@ function validate(num) {
   else return false;
 
   }
-console.log(validate(18));
+
 
 
 
