@@ -32,13 +32,15 @@ function getAllFrequencies() {
 function getStations() {
 
  let stations = getAllFrequencies();
- let stationAvailable = getAvailableStations();
+ 
  let availableStations = [];
- for (let i = 0; i <3 ; i++) {
-   availableStations.push(stations[Math.floor(Math.random() * stations.length)])
+ for (let i = 0; i < stations.length; i++) {
+   if (isRadioStation(stations[i])){
+     availableStations.push(stations[i]);
+   }
    
  }
-  return stationAvailable; 
+  return availableStations; 
  
 }
 
