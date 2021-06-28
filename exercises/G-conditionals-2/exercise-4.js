@@ -9,7 +9,7 @@
 */
 
 function containsCode(sentence) {
-  if (sentence.startsWith("code")){
+  if (sentence.includes("code")){
     return true;
   } else {
     return false;
