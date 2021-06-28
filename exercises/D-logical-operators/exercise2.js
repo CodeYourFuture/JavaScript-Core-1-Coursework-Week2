@@ -5,7 +5,35 @@
   Update the code so that you get the expected result.
 */
 
-function isNegative() {}
+//Checks if number is below 0, and returns boolean value accordingly
+function isNegative(num) {
+   return num < 0 ? true : false; 
+}
+
+//Checks if number between 5 & 10, inclusive, and returns boolean value accordingly
+function isBetween5and10(num) {
+   return num >= 5 && num <= 10 ? true : false;
+}
+
+// Assigns boolean value TRUE to any name argument
+function isShortName(name) {
+   name = true;
+    return name;
+}
+
+// Checks if 1st character of parameter 'name' is strictly equal to string 'D'
+function startsWithD(name) {
+  if (name.charAt(0) === 'D'){;
+  return true;
+  }
+  return false;
+}
+
+// Could also write above function to return simple boolean value (same as isShortName function)
+// function startsWithD(name) {
+//   name = true;
+//   return name;
+// }
 
 /* 
   DO NOT EDIT BELOW THIS LINE
