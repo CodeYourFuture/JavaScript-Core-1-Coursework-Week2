@@ -10,8 +10,7 @@
 
 */
 
-function mood(evalMood) {
-  let isHappy = evalMood;
+function mood(isHappy) {
 
   if (isHappy === true) {
     return "I am happy";
