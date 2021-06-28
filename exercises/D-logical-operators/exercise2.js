@@ -5,8 +5,31 @@
   Update the code so that you get the expected result.
 */
 
-function isNegative() {}
+function isNegative(num) {
+  if (Math.sign(num)==-1){
+  console.log(true);
+}else {
+  console.log(false);
+}
+}
 
+function isBetween5and10(num){
+  if (num >= 5 && num <=10){
+    console.log(true);
+  }
+}
+
+function isShortName (nameLength){
+  if (nameLength.length <7){
+  console.log(true);
+  }
+}
+
+function startsWithD (name){
+  if(name.charAt(0) === name.charAt(0).toUpperCase()){
+    console.log(true, "yes")
+  }
+}
 /* 
   DO NOT EDIT BELOW THIS LINE
   --------------------------- */
