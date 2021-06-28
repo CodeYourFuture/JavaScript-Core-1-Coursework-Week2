@@ -7,23 +7,18 @@
 // need to put a name in the function
 // name num
 
+
 function isNegative(num) {
-  if (num === -10) {
-    return true;
-  } else if (num !== -5) {
-      return false;
-    } 
-    else {
-      return 'Only checking -10 and 5, if you have another way, let me know :-)';
-  }
+  return num < 0;
 }
+
+
 function isBetween5and10(num) {
   if (num >= 5 && num <= 10) {
       return true;
-  } else {
-     return false;
-  }
+  } 
 }
+
 function isShortName(name) {
   if (name.length === 6) {
     return true;
