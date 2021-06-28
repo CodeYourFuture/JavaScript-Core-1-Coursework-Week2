@@ -8,7 +8,7 @@
 var codeYourFutureIsGreat = true;
 var mozafarIsCool = false;
 var calculationCorrect = true;
-moreThan10Students = false;
+var moreThan10Students = false;
 
 /* 
   DO NOT EDIT BELOW THIS LINE
