@@ -10,10 +10,10 @@ var name = "Daniel";
 var danielsRole = "mentor";
 
 function createGreetingForDaniel(role) {
-  if (role === danielsRole ) {
+  if (role === "mentor" ) {
     return `Hi, I'm ${name}, I'm a ${danielsRole}`;
   } else {
-    return `Hi, I'm ${name}, I'm a student`;
+    return `Hi, I'm ${name}, I'm a ${danielsRole}`;
   }
 }
 
