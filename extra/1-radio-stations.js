@@ -30,16 +30,23 @@ function getAllFrequencies() {
  */
 // `getStations` goes here
 function getStations() {
+
  let stations = getAllFrequencies();
- let availableStations = stations[Math.floor(Math.random() * stations.length)];
- return availableStations;
+ let stationAvailable = getAvailableStations();
+ let availableStations = [];
+ for (let i = 0; i <3 ; i++) {
+   availableStations.push(stations[Math.floor(Math.random() * stations.length)])
+   
+ }
+  return stationAvailable; 
+ 
 }
 
-let frequency = getStations();
+// let frequency = getStations();
 
-function isRadioStation(frequency) {
-  return typeof frequency === "number";
-}
+// function isRadioStation(frequency) {
+//   return frequency;
+// }
 
 /*
  * ======= TESTS - DO NOT MODIFY =======
