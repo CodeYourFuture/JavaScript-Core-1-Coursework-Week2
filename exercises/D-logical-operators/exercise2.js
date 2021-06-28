@@ -5,7 +5,34 @@
   Update the code so that you get the expected result.
 */
 
-function isNegative() {}
+function isNegative(number) {
+  if (number < 0) {
+    return true;
+  }
+  return false;
+}
+
+function isBetween5and10(number) {
+  if (number >= 5 && number <= 10) {
+    return true;
+  }
+  return false;
+}
+
+function isShortName(firstName) {
+  if (firstName.length <= 10) {
+    return true;
+  }
+  return false;
+}
+const nameString = "Daniel";
+
+function startsWithD(str) {
+  if (str.substring(0, 1) === "D") {
+    return true;
+  }
+  return false;
+}
 
 /* 
   DO NOT EDIT BELOW THIS LINE
