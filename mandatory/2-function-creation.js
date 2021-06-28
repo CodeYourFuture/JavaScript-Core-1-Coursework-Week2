@@ -6,7 +6,18 @@ Complete the function to check if the variable `num` satisfies the following req
 Tip: use logical operators
 */
 
-function validate(num) {}
+function validate(num) {
+  let number = num;
+  if (typeof number === 'number' && number <= 100 && (number%2 === 0)) {
+    return true;
+  }
+  
+  else return false;
+
+  }
+console.log(validate(18));
+
+
 
 /*
 Write a function that:
@@ -16,7 +27,20 @@ Write a function that:
 - numbers greater 100 must be replaced with 100
 */
 
-function formatPercentage(num) {}
+function formatPercentage(num) {
+  if (num > 100) { num = 100; }
+  if (Number.isInteger(num)) {
+    num = num;
+  }
+  else { num = num.toFixed(2); }
+      num = `${num}%`;
+  if (num.includes("0") && num.indexOf("0") === 4) {
+    num = num.slice(0, 4);
+    num = `${num}%`;
+
+  } 
+  return `${num}`;
+}
 
 /*
 Write a function that:
@@ -25,7 +49,22 @@ Write a function that:
 - removes any forward slashes (/) in each string
 - makes all strings all lowercase
 */
-function tidyUpStrings(arrayOfStrings) {}
+function tidyUpStrings(arrayOfStrings) {
+  let array = arrayOfStrings;
+  for (let i = 0; i < array.length; i++) {
+    array[i] = array[i].trim();
+    array[i] = array[i].toLowerCase();
+
+    if (array[i].includes('/')) {
+
+      index = array[i].indexOf('/');
+      array[i] = array[i].slice(index + 1, array[i].length);
+
+    }
+    
+  }
+ return array;
+}
 
 /* ======= TESTS - DO NOT MODIFY ===== */
 
