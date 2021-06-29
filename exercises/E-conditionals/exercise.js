@@ -9,6 +9,15 @@
 var name = "Daniel";
 var danielsRole = "mentor";
 
+function isDanielStudentOrMentor(names){
+  if(name.toLowerCase() + "sRole" === "mentor"){
+    return "Hi, I'm Daniel, I'm a mentor";
+  } else {
+    return "Hi, I'm Daniel, I'm a student";
+  }
+}
+
+console.log(isDanielStudentOrMentor(name));
 /* 
 EXPECTED RESULT
 ---------------
