@@ -11,9 +11,7 @@
 
 function validate(num) {
 	let number = num;
-	if (typeof number === "number" && number <= 100 && number % 2 === 0) {
-		return true;
-	} else return false;
+	return (typeof number === "number" && number <= 100 && number % 2 === 0);
 }
 
 /*
@@ -31,13 +29,10 @@ function formatPercentage(num) {
 	if (Number.isInteger(num)) {
 		num = num;
 	} else {
-		num = num.toFixed(2);
+		num = parseFloat(num.toFixed(2));
 	}
 	num = `${num}%`;
-	if (num.includes("0") && num.indexOf("0") === 4) {
-		num = num.slice(0, 4);
-		num = `${num}%`;
-	}
+	
 	return `${num}`;
 }
 
@@ -53,11 +48,8 @@ function tidyUpStrings(arrayOfStrings) {
 	for (let i = 0; i < array.length; i++) {
 		array[i] = array[i].trim();
 		array[i] = array[i].toLowerCase();
-
-		if (array[i].includes("/")) {
-			index = array[i].indexOf("/");
-			array[i] = array[i].slice(index + 1, array[i].length);
-		}
+		array[i]=array[i].replace('/', '');
+		
 	}
 	return array;
 }
