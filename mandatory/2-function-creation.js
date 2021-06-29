@@ -25,12 +25,19 @@ Write a function that:
 */
 
 function formatPercentage(num) {
-  const strPercent = num + '%';
-  return num.toFixed(2);
-  const keep100 =  num > 100? '100%': strPercent;
-  // return keep100.toFixed(2); 
-  
+  const twoDecimal = Math.round(num * 100) / 100;  // Rounds off num to upto 2 decimals if floats, leaves integers as is
+  const strPercent = twoDecimal + "%";              // twoDecimal changes into string value after concatenate with '%'
+  const keep100 = num >= 100 ? "100%" : strPercent;  // If num >= 100, output will say '100%'; else outputs expected strPercent values (i.e formatted and rounded)
+
+  return keep100;
+
+  //Could also be written like this:
+  //function formatPercentage(num) {
+  //   const strPercent = Math.round(num*100)/100 + "%";
+//     return keep100;}
+
 }
+
 
 /*
 Write a function that:
