@@ -16,7 +16,12 @@
 
   ********** ANSWERS **********
   1. b has not been defined
-  2)
+  2. Commented out line 39
+  3. The numbers 2, 6, 4, 9, 6, 13, 8
+  4. "f1" was called 2 times
+  5. "f2" was called 3 times
+  6. It takes in 0 as "i" is in the first iteration of the for loop
+  7. The value of "a" in the outer variable is 1 as it was reassigned on line 22
 */
 
 let x = 2;
