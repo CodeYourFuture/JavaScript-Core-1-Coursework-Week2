@@ -7,12 +7,13 @@
 
 //Checks if number is below 0, and returns boolean value accordingly
 function isNegative(num) {
-   return num < 0 ? true : false; 
+  //  return num < 0 ? true : false;
+   return num < 0;
 }
 
 //Checks if number between 5 & 10, inclusive, and returns boolean value accordingly
 function isBetween5and10(num) {
-   return num >= 5 && num <= 10 ? true : false;
+   return num >= 5 && num <= 10;
 }
 
 // Assigns boolean value TRUE to any name argument
@@ -23,10 +24,7 @@ function isShortName(name) {
 
 // Checks if 1st character of parameter 'name' is strictly equal to string 'D'
 function startsWithD(name) {
-  if (name.charAt(0) === 'D'){;
-  return true;
-  }
-  return false;
+  return name.charAt(0) === 'D';
 }
 
 // Could also write above function to return simple boolean value (same as isShortName function)
