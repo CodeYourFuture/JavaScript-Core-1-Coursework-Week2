@@ -6,7 +6,15 @@ Complete the function to check if the variable `num` satisfies the following req
 Tip: use logical operators
 */
 
-function validate(num) {}
+function validate(num) {
+
+    const isNumber = typeof num === "number"; 
+    const isEven = num % 2 === 0;
+    const lessOrEqual100 = num <= 100;
+    const valid = isNumber && isEven && lessOrEqual100;
+
+    return (valid);         
+}
 
 /*
 Write a function that:
@@ -16,7 +24,13 @@ Write a function that:
 - numbers greater 100 must be replaced with 100
 */
 
-function formatPercentage(num) {}
+function formatPercentage(num) {
+  const strPercent = num + '%';
+  return num.toFixed(2);
+  const keep100 =  num > 100? '100%': strPercent;
+  // return keep100.toFixed(2); 
+  
+}
 
 /*
 Write a function that:
