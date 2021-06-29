@@ -6,7 +6,12 @@ Complete the function to check if the variable `num` satisfies the following req
 Tip: use logical operators
 */
 
-function validate(num) {}
+function validate(num) {
+  isNumber = typeof num === "number";
+  isEven = num % 2 === 0;
+  isLess100 = num <= 100;
+  return isNumber && isEven && isLess100;
+}
 
 /*
 Write a function that:
@@ -16,7 +21,14 @@ Write a function that:
 - numbers greater 100 must be replaced with 100
 */
 
-function formatPercentage(num) {}
+function formatPercentage(num) {
+  if(num >=100){
+    return `100%`;
+
+  } else {
+    return `${Math.trunc(num*100)/100}%`;
+  }
+}
 
 /*
 Write a function that:
@@ -25,8 +37,17 @@ Write a function that:
 - removes any forward slashes (/) in each string
 - makes all strings all lowercase
 */
-function tidyUpStrings(arrayOfStrings) {}
-
+function tidyUpStrings(arrayOfStrings) {
+  for(let i = 0; i < arrayOfStrings.length; i++){
+    let stringInside = arrayOfStrings[i];
+    stringInside = stringInside.toLowerCase();
+    stringInside = stringInside.replace(/\//g,""); //global modifier "/g" for special charecter "/"
+    stringInside= (stringInside.trim());
+    arrayOfStrings[i] = stringInside;
+  }
+  return arrayOfStrings;
+}
+/////npm test -- --testPathPattern 2-function-creation.js 
 /* ======= TESTS - DO NOT MODIFY ===== */
 
 test("validate function accepts valid even number", () => {
