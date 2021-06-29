@@ -21,7 +21,8 @@ Write a function that:
 function formatPercentage(num) {
   const percentage = num;
   if (num <= 100) {
-    return `${percentage.toFixed(2)}%`;
+    const stringToNumber = Number(percentage.toFixed(2));
+    return `${stringToNumber}%`;
   } else {
     return `100%`;
   }
@@ -35,8 +36,11 @@ Write a function that:
 - makes all strings all lowercase
 */
 function tidyUpStrings(arrayOfStrings) {
-  const editedString = arrayOfStrings;
-  return editedString.trim().replace("/", "");
+  const stringArray = [];
+  for (let i = 0; i < arrayOfStrings.length; i++) {
+    stringArray.push(arrayOfStrings[i].trim().replace("/", "").toLowerCase());
+  }
+  return stringArray;
 }
 
 /* ======= TESTS - DO NOT MODIFY ===== */
