@@ -11,7 +11,7 @@
 */
 
 function mood(isHappy) {
-  if (isHappy === true) {
+  if (isHappy) {
     return "I am happy";
   } else {
     return "I am not happy";
@@ -28,9 +28,9 @@ function greaterThan10(num) {
 
 function get3rdIndex(arr) {
   let index = arr.slice(3, 4);
-  let element = index;
+ 
 
-  return element[0];
+  return arr[index];
 }
 
 /* ======= TESTS - DO NOT MODIFY ===== */
