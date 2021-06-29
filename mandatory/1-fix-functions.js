@@ -27,7 +27,7 @@ function greaterThan10(num) {
 }
 
 function get3rdIndex(arr) {
-  let index = arr.slice(3, 4);
+  let index = 3;
  
 
   return arr[index];
