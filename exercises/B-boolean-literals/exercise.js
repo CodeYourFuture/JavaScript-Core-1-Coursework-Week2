@@ -28,4 +28,6 @@ console.log("Are there more than 10 students?", moreThan10Students);
   Are there more than 10 students? false
 */
 
-// test command (npm run extra-tests -- --testPathPattern 3-magic-8-ball)
+/* test command 'npm run extra-tests -- --testPathPattern 1-radio-stations'
+`npm test -- --testPathPattern 1-fix-functions`
+*/
