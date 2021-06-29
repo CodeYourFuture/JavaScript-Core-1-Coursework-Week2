@@ -18,9 +18,9 @@ function studentPassed(grade) {
 /* 
 DO NOT EDIT BELOW THIS LINE
 --------------------------- */
-var grade1 = 49;
-var grade2 = 50;
-var grade3 = 100;
+const grade1 = 49;
+const grade2 = 50;
+const grade3 = 100;
 
 console.log("'" + grade1 + "': " + studentPassed(grade1));
 console.log("'" + grade2 + "': " + studentPassed(grade2));

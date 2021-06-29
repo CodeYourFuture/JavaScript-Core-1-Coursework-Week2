@@ -17,8 +17,8 @@ const cssLevelAbove5 = cssLevel > 5;
 // Finish the next two statement
 // Use the previous variables and logical operators
 // Do not "hardcode" the answers
-var cssAndHtmlAbove5 = htmlLevel > 5 && cssLevel > 5;
-var cssOrHtmlAbove5 = htmlLevel > 5 || cssLevel > 5;
+const cssAndHtmlAbove5 = htmlLevel > 5 && cssLevel > 5;
+const cssOrHtmlAbove5 = htmlLevel > 5 || cssLevel > 5;
 
 /* 
   DO NOT EDIT BELOW THIS LINE
