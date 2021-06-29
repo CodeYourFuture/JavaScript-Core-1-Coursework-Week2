@@ -5,7 +5,27 @@
   Update the code so that you get the expected result.
 */
 
-function isNegative() {}
+function isNegative(num) {
+  var isNegative;
+  if (num < 0){
+    return  isNegative = true;
+  }
+  else{ return false;}
+}
+
+function isBetween5and10( num){
+   var isBetween5and10;
+   if (num>= 5 || num <=10){
+     return true;
+   }
+   else {
+     return false;
+   }
+
+}
+
+
+
 
 /* 
   DO NOT EDIT BELOW THIS LINE
