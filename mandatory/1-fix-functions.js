@@ -10,10 +10,10 @@
 
 */
 
-function mood(happy) {
+function mood(moods) {
   let isHappy = true;
 
-  if (happy === isHappy) {
+  if (moods === isHappy) {
     return "I am happy";
   }else {
     return "I am not happy"
