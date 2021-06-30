@@ -6,12 +6,14 @@
 */
 
 function isNegative(num) {
-  if (Math.sign(num)==-1){
-  console.log(true);
-}else {
-  console.log(false);
-}
-}
+  return num <0;
+  }
+//   if (Math.sign(num)==-1){
+//   console.log(true);
+// }else {
+//   console.log(false);
+// }
+
 
 function isBetween5and10(num){
   if (num >= 5 && num <=10){
@@ -20,16 +22,19 @@ function isBetween5and10(num){
 }
 
 function isShortName (nameLength){
-  if (nameLength.length <7){
-  console.log(true);
-  }
+    return nameLength.length <=7;
+  // if (nameLength.length <= 7){
+  // console.log(true);
+  // }
 }
 
 function startsWithD (name){
-  if(name.charAt(0) === name.charAt(0).toUpperCase()){
-    console.log(true, "yes")
+  // if
+  return (name.charAt(0) === "D")
+  // {
+    // console.log(true)
   }
-}
+
 /* 
   DO NOT EDIT BELOW THIS LINE
   --------------------------- */
