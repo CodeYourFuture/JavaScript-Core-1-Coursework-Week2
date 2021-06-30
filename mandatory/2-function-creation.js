@@ -10,6 +10,14 @@ function validate(num) {
   return typeof num === "number" && num % 2 === 0 && num <= 100;
 }
 
+/*
+Write a function that:
+- takes a number as input
+- return a string formatted as percentages (e.g. 10 => "10%")
+- the number must be rounded to 2 decimal places
+- numbers greater 100 must be replaced with 100
+*/
+
 function formatPercentage(num) {
   if (num <= 100) {
     if (Number.isInteger(num)) {
@@ -20,12 +28,6 @@ function formatPercentage(num) {
   } else {
     return `100%`;
   }
-  /*if (typeof num === "number" && num <= 100) {
-    const roundedTwoDecimalPoints = parseFloat(num.toFixed(2));
-    return `${roundedTwoDecimalPoints}%`;
-  } else if (num > 100) {
-    return `100%`;
-  }*/
 }
 /*
 Write a function that:
