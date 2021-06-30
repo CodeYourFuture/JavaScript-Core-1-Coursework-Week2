@@ -23,9 +23,7 @@ function isBetween5and10(num){
 
 function isShortName (nameLength){
     return nameLength.length <=7;
-  // if (nameLength.length <= 7){
-  // console.log(true);
-  // }
+
 }
 
 function startsWithD (name){
