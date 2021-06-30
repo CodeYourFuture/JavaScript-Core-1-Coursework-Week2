@@ -50,25 +50,13 @@ function tidyUpStrings(arrayOfStrings) {
   const strArr = arrayOfStrings;
 // return strArr;
    
- const allItems = strArr.map((word) => word.toLowerCase()); //console.log(map2);
- return allItems;
-
-  //  const smlCap = strArr.map(word => word.toLowerCase());
-  //   console.log(smlCap);
-
-
-
-//  //Trim
-//   arrayOfStrings.map((strArr) => strArr.trim());
-//   console.log(arrayOfStrings());
+ const smlCap = strArr.map((word) => word.toLowerCase()); // .map() iterates through all items and turns into lowercase
+ const trimName = smlCap.map((word) => word.trim());     //  Iterates smlCap, & trims spaces with .trim() 
+ const noSlash = trimName.map((word) => word.replace('/', ''));  // Iterates through trimName & removes forward slash using replace .map() and .replace() methods
+ 
+ return noSlash;
 }
 
-// function TrimsGreet() {
-//   for (var i = 0; i < strArr.length; i++) {
-//     console.log(strArr[i].trim());
-//   }
-// }
-// console.log(TrimsGreet());
 
 /* ======= TESTS - DO NOT MODIFY ===== */
 
