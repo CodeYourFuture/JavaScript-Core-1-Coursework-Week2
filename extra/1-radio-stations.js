@@ -18,8 +18,8 @@
 function getAllFrequencies() {
 	let frequencies = [];
 	for (let i = 87; i < 109; i++) {
-		frequencies[i - 87] = i;
-	}
+		frequencies.push(i);
+		}
 	return frequencies;
 }
 
