@@ -13,6 +13,15 @@
   5. How many times is "f2" called?
   6. What value does the "a" parameter take in the first "f1" call?
   7. What is the value of the "a" outer variable when "f1" is called for the first time?
+
+  ********** ANSWERS **********
+  1. b has not been defined
+  2. Commented out line 39
+  3. The numbers 2, 6, 4, 9, 6, 13, 8
+  4. "f1" was called 2 times
+  5. "f2" was called 3 times
+  6. It takes in 0 as "i" is in the first iteration of the for loop
+  7. The value of "a" in the outer variable is 1 as it was reassigned on line 22
 */
 
 let x = 2;
@@ -28,7 +37,7 @@ const f2 = function (a, b) {
 
 console.log(x);
 console.log(a);
-console.log(b);
+// console.log(b);
 
 for (let i = 0; i < 5; ++i) {
   a = a + 1;
