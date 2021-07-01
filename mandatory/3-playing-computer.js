@@ -17,7 +17,7 @@
 
 let x = 2;
 let a = 6;
-
+//  variable a and x are printed to the console.
 const f1 = function (a, b) {
   return a + b;
 };
@@ -28,7 +28,7 @@ const f2 = function (a, b) {
 
 console.log(x);
 console.log(a);
-console.log(b);
+// console.log(b); throws an error because variable b is not declaired.
 
 for (let i = 0; i < 5; ++i) {
   a = a + 1;
@@ -40,3 +40,5 @@ for (let i = 0; i < 5; ++i) {
     console.log(e);
   }
 }
+// f1 one is called once when 'i' is 1 , once when 'i' is 3 and once when i is 5.
+// f2 is called once when 'i' is 2 and once when 'i' is 4.
