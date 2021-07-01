@@ -17,9 +17,12 @@
 
 function getAllFrequencies() {
 	let frequencies = [];
-	for (let i = 87; i < 109; i++) {
+	let frequencyStart = 87;
+	let frequencyEnd = 109;
+
+	for (let i = frequencyStart; i < frequencyEnd; i++) {
 		frequencies.push(i);
-		}
+	}
 	return frequencies;
 }
 
@@ -37,14 +40,12 @@ function getAllFrequencies() {
 // `getStations` goes here
 
 function getStations() {
-
-  
-  let station = [];
-
-	let frequency= getAllFrequencies();
+	let station = [];
+	let frequency = getAllFrequencies();
 	for (let i = 0; i < frequency.length; i++) {
-		if (isRadioStation(frequency[i])) {
-			station.push(frequency[i]);
+		validFrequency = frequency[i];
+		if (isRadioStation(validFrequency)) {
+			station.push(validFrequency);
 		}
 	}
 	return station;
