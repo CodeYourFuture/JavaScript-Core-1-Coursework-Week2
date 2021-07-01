@@ -16,7 +16,7 @@
   5. How many times is "f2" called?
   // f2 function will be called two times: explained in for loop inside else 
   6. What value does the "a" parameter take in the first "f1" call?
-  // 8
+  // f1 will be called 2 times with 1 and 3 i values, f1(1, 8) and f1(3, 10) will be called, a will take 8 in the first call
   7. What is the value of the "a" outer variable when "f1" is called for the first time?
   // 8
 */
@@ -24,7 +24,7 @@
 let x = 2;
 let a = 6;
 
-const f1 = function (a, b) /* (1, 8)*/{
+const f1 = function (a, b) {
   return a + b; 
 };
 
