@@ -32,7 +32,7 @@ function get3rdIndex(arr) {
   let index = arr[3];
 
 
-  return element;
+  return index;
 }
 
 /* ======= TESTS - DO NOT MODIFY ===== */
