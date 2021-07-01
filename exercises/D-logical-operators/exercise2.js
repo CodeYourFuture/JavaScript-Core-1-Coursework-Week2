@@ -7,25 +7,37 @@
 
 function isNegative(num) {
   var isNegative;
-  if (num < 0){
-    return  isNegative = true;
+  if (num < 0) {
+    return (isNegative = true);
+  } else {
+    return false;
   }
-  else{ return false;}
 }
 
-function isBetween5and10( num){
-   var isBetween5and10;
-   if (num>= 5 || num <=10){
-     return true;
-   }
-   else {
-     return false;
-   }
-
+function isBetween5and10(num) {
+  var isBetween5and10;
+  if (num >= 5 || num <= 10) {
+    return true;
+  } else {
+    return false;
+  }
 }
-
-
-
+function isShortName(name) {
+  var nameLength = name.length;
+  if (nameLength > 7) {
+    return false;
+  } else {
+    return true;
+  }
+}
+function startsWithD(name) {
+  var nameFirstLetter = name.charAt(0);
+  if ((nameFirstLetter = "D")) {
+    return true;
+  } else {
+    return false;
+  }
+}
 
 /* 
   DO NOT EDIT BELOW THIS LINE
