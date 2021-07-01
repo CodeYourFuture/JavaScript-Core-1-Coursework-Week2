@@ -9,7 +9,7 @@
 function negativeOrPositive(number) {
   if (number < 0) {
     return "negative";
-  } else if (number >= 0) {
+  } else {
     return "positive";
   }
 }

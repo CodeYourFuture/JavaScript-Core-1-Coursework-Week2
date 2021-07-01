@@ -10,7 +10,7 @@ const mentorCount = 9;
 const moreStudentsThanMentors = studentCount > mentorCount; // finish this statement
 
 const roomMaxCapacity = 25;
-const enoughSpaceInRoom = studentCount + mentorCount < 25; // finish this statement
+const enoughSpaceInRoom = studentCount + mentorCount <= 25; // finish this statement
 
 const personA = "Daniel";
 const personB = "Irina";
