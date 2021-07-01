@@ -7,8 +7,14 @@
 
 */
 
-function studentPassed(grade) {}
+function studentPassed(grade) {
+  if (grade >= 80) {
+    return "studentPassed";
+  } else {
 
+    return "studentFailed";
+  }
+}
 /* 
 DO NOT EDIT BELOW THIS LINE
 --------------------------- */
