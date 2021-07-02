@@ -15,7 +15,11 @@
 
 // `getAllFrequencies` goes here
 function getAllFrequencies() {
-  const frequencies = [87,88,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108]
+   let frequencies=[];
+  for (let i = 87; i < 109; i++) {
+    frequencies.push(i);
+    
+  }
   return frequencies ;
 }
 // console.log(getAllFrequencies());
@@ -35,8 +39,9 @@ function getStations() {
  
  let availableStations = [];
  for (let i = 0; i < stations.length; i++) {
-   if (isRadioStation(stations[i])){
-     availableStations.push(stations[i]);
+   let currentStation = stations[i];
+   if (isRadioStation(currentStation)){
+     availableStations.push(currentStation);
    }
    
  }
