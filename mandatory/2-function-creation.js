@@ -6,7 +6,13 @@ Complete the function to check if the variable `num` satisfies the following req
 Tip: use logical operators
 */
 
-function validate(num) {}
+function validate(num) {
+  if (num % 2 == 0 && num <= 100 && typeof(num) === "number"){
+    return true;
+  } else {
+    return false;
+  }
+}
 
 /*
 Write a function that:
@@ -15,8 +21,14 @@ Write a function that:
 - the number must be rounded to 2 decimal places
 - numbers greater 100 must be replaced with 100
 */
-
-function formatPercentage(num) {}
+function formatPercentage(num) {
+  if (typeof num === "number" && num <= 100) {
+    const twoDecimals = Math.round(num * 100) / 100;
+    return `${twoDecimals}%`;
+  } else if (num > 100) {
+    return `100%`;
+  }
+}
 
 /*
 Write a function that:
@@ -25,8 +37,15 @@ Write a function that:
 - removes any forward slashes (/) in each string
 - makes all strings all lowercase
 */
-function tidyUpStrings(arrayOfStrings) {}
-
+function tidyUpStrings(arrayOfStrings) {
+  let array = arrayOfStrings;
+  for(let i = 0; i < arrayOfStrings.length; i++) {
+    array[i] = array[i].toLowerCase();
+    array[i] = array[i].replace("/", "");
+    array[i] = array[i].trim();
+  }
+  return array;
+}
 /* ======= TESTS - DO NOT MODIFY ===== */
 
 test("validate function accepts valid even number", () => {
