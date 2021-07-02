@@ -21,7 +21,6 @@ var names = ["Irina", "Ashleigh", "Mozafar", "Joe"];
 console.log(first(numbers));
 console.log(last(numbers));
 console.log(last(names));
-
 /* 
   EXPECTED RESULT
   ---------------
