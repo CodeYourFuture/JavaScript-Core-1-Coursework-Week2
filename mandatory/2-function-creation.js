@@ -23,11 +23,11 @@ Write a function that:
 */
 
 function formatPercentage(num) {
-  if(num > 100) {
-    return 100 + "%"
-  } else if (typeof num === "number" && num <= 100) {
+  if(typeof num === "number" && num <= 100) {
     return Math.round(num * 100) / 100 + "%";
-  }
+  } else if(num > 100) {
+     return 100 + "%"
+   }
 }
 
 /*

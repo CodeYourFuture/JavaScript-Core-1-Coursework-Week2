@@ -6,12 +6,12 @@
 
   Answer the following questions:
 
-  1. This program throws an error. Why? (If you can't find it, try executing it).
-  2. Remove the line that throws the error.
-  3. What is printed to the console?
-  4. How many times is "f1" called?
-  5. How many times is "f2" called?
-  6. What value does the "a" parameter take in the first "f1" call?
+  1. This program throws an error. Why? (If you can't find it, try executing it). // b is not defined
+  2. Remove the line that throws the error. 
+  3. What is printed to the console? // 2 6 4 9 6 13 8
+  4. How many times is "f1" called? // twice
+  5. How many times is "f2" called? // 3 times
+  6. What value does the "a" parameter take in the first "f1" call? //  takes the value of 1 as "a" takes value of i
   7. What is the value of the "a" outer variable when "f1" is called for the first time?
 */
 
