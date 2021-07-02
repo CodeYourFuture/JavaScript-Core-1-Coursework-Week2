@@ -6,8 +6,21 @@
   If Daniel is a student, print out "Hi, I'm Daniel, I'm a student."
 */
 
-var name = "Daniel";
-var danielsRole = "mentor";
+const name = "Daniel";
+const danielsRole = "mentor";
+const alisRole = "student";
+
+function rolesStatus(role){
+  if(role === "mentor"){
+    return "I'm a mentor."
+  }
+  else{
+    return "I'm a student.";
+  }
+}
+
+console.log("Hi, I'm Daniel, " + rolesStatus(danielsRole));
+console.log("Hi, I'm Ali, " + rolesStatus(alisRole));
 
 /* 
 EXPECTED RESULT
