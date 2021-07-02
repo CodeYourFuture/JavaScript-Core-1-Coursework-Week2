@@ -15,7 +15,6 @@ const enoughSpaceInRoom = roomMaxCapacity >= studentCount + mentorCount; // fini
 const personA = "Daniel";
 const personB = "Irina";
 const sameName = personA === personB; // finish this statement
-const studentCount = 16;
 
 /* 
   DO NOT EDIT BELOW THIS LINE
