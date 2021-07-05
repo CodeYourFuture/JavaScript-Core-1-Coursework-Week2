@@ -16,18 +16,18 @@ Please complete the details below this message
 
 # Your Details
 
-- Your Name:
-- Your City:
-- Your Slack Name:
+- Your Name: Gulnihal Naldoken
+- Your City: Manchester
+- Your Slack Name: Gulnihal
 
 # Homework Details
 
-- Module:
-- Week:
+- Module: JS Core 1
+- Week: 2
 
 # Notes
 
-- What did you find easy?
+- What did you find easy? 
 
 - What did you find hard?
 

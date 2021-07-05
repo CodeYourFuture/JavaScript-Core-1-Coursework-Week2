@@ -5,7 +5,33 @@
   Update the code so that you get the expected result.
 */
 
-function isNegative() {}
+function isNegative(num) {
+  return num <0;
+  }
+//   if (Math.sign(num)==-1){
+//   console.log(true);
+// }else {
+//   console.log(false);
+// }
+
+
+function isBetween5and10(num){
+  if (num >= 5 && num <=10){
+    console.log(true);
+  }
+}
+
+function isShortName (nameLength){
+    return nameLength.length <=7;
+
+}
+
+function startsWithD (name){
+  // if
+  return (name.charAt(0) === "D")
+  // {
+    // console.log(true)
+  }
 
 /* 
   DO NOT EDIT BELOW THIS LINE
