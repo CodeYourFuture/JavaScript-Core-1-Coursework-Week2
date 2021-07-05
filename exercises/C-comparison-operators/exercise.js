@@ -7,14 +7,15 @@
 
 var studentCount = 16;
 var mentorCount = 9;
-var moreStudentsThanMentors; // finish this statement
+var res1 = studentCount > mentorCount;
+var moreStudentsThanMentors = res1; // finish this statement
 
 var roomMaxCapacity = 25;
-var enoughSpaceInRoom; // finish this statement
+var enoughSpaceInRoom = roomMaxCapacity === 25; // finish this statement
 
 var personA = "Daniel";
 var personB = "Irina";
-var sameName; // finish this statement
+var sameName = personA === personB; // finish this statement
 
 /* 
   DO NOT EDIT BELOW THIS LINE
@@ -26,7 +27,7 @@ console.log(
 );
 console.log("Do person A and person B have the the same name?", sameName);
 
-/* 
+/*
   EXPECTED RESULT
   ---------------
   Are there more students than mentors? true
