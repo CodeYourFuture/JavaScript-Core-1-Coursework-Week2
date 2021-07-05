@@ -6,8 +6,9 @@ Complete the function to check if the variable `num` satisfies the following req
 Tip: use logical operators
 */
 
-function validate(num) {}
-
+function validate(num) {
+    return typeof num === "number" && num % 2 === 0 && num <= 100 ;
+  }
 /*
 Write a function that:
 - takes a number as input
@@ -15,8 +16,18 @@ Write a function that:
 - the number must be rounded to 2 decimal places
 - numbers greater 100 must be replaced with 100
 */
-
-function formatPercentage(num) {}
+function formatPercentage(num) {
+  let convertToPercentage = `${num}%`;
+  if (num % 1 === 0 && num <= 100) {
+    return convertToPercentage;
+  } else if (num > 100) {
+    return (convertToPercentage = `${Math.max(100)}%`);
+  } else if (num % 1 !== 0 && num > 1) {
+    return (convertToPercentage = `${num.toFixed(1)}%`);
+  } else if (num % 1 !== 0 && num < 1) {
+    return (convertToPercentage = `${num.toFixed(2)}%`);
+  }
+}
 
 /*
 Write a function that:
@@ -25,8 +36,18 @@ Write a function that:
 - removes any forward slashes (/) in each string
 - makes all strings all lowercase
 */
-function tidyUpStrings(arrayOfStrings) {}
 
+function tidyUpStrings(arrayOfStrings) {
+  const regex = /^.+\s$/g;
+  let tidyArray = [];
+  for (let i = 0; i < arrayOfStrings.length; i++) {
+    let lowerCaseStr = arrayOfStrings[i].toLowerCase();
+    let removeSpace = lowerCaseStr.trim();
+    let removeForwardSlash = removeSpace.replace("/", "");
+    tidyArray.push(removeForwardSlash);
+  }
+  return tidyArray;
+}
 /* ======= TESTS - DO NOT MODIFY ===== */
 
 test("validate function accepts valid even number", () => {
@@ -51,7 +72,7 @@ test("validate function rejects string", () => {
 
 test("validate function rejects stringified number", () => {
   expect(validate("10")).toEqual(false);
-});
+ });
 
 test("validate function rejects too large number", () => {
   expect(validate(108)).toEqual(false);

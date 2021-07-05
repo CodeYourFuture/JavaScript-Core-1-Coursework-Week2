@@ -8,8 +8,16 @@
   - Otherwise the grade is "F"
 */
 
-function calculateGrade(mark) {}
-
+function calculateGrade(mark) {
+  if (grade >= 80){
+    return "A";
+}   else if (grade >= 60 && grade < 80){
+      return "B";
+}
+    else if (grade <= 60 && grade > 50){
+      return "C";
+}
+}
 /* 
 DO NOT EDIT BELOW THIS LINE
 --------------------------- */
@@ -23,11 +31,10 @@ console.log("'" + grade2 + "': " + calculateGrade(grade2));
 console.log("'" + grade3 + "': " + calculateGrade(grade3));
 console.log("'" + grade4 + "': " + calculateGrade(grade4));
 
-/* 
-  EXPECTED RESULT
-  ---------------
-  '49': F
-  '90': A
-  '70': B
-  '55': C
-  */
+
+  // EXPECTED RESULT
+  // ---------------
+  // '49': F
+  // '90': A
+  // '70': B
+  // '55': C

@@ -5,7 +5,14 @@
   Update the code so that you get the expected result.
 */
 
-function isNegative() {}
+function isNegative() {
+  isNegative(-10)= true;
+  isNegative(5) = false;
+  isBetween5and10(10) = true;
+  isShortName("Daniel") = true;
+  startsWithD("Daniel") = true;
+
+}
 
 /* 
   DO NOT EDIT BELOW THIS LINE
