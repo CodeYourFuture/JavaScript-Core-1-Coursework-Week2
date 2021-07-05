@@ -10,30 +10,23 @@
 
 */
 
-function mood() {
-  let isHappy = true;
-
-  if (isHappy) {
+function mood(feeling) {
+  const isHappy = true;
+  if (feeling === isHappy) {
     return "I am happy";
-  } else {
-    return "I am not happy";
-  }
+  } else return "I am not happy";
 }
 
 function greaterThan10(num) {
-  let isBigEnough;
-
+  const isBigEnough = num > 10;
   if (isBigEnough) {
     return "num is greater than 10";
-  } else {
-    return "num is not big enough";
-  }
+  } else return "num is not big enough";
 }
 
-function get3rdIndex(arr) {
-  let index = 3;
-  let element;
-
+function get3rdIndex(myArray) {
+  const index = 3;
+  const element = myArray[index];
   return element;
 }
 

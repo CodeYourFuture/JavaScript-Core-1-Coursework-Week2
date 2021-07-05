@@ -5,9 +5,10 @@
 
 */
 
-function isEmpty(arr) {
-  return; // complete this statement
-}
+function isEmpty(maybeEmptyArray) {
+  return maybeEmptyArray.length === 0 
+  }
+  
 
 /* 
   DO NOT EDIT BELOW THIS LINE

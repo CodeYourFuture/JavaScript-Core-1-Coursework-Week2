@@ -4,8 +4,36 @@
   This program calls some functions that are either missing or incomplete.
   Update the code so that you get the expected result.
 */
+// need to put a name in the function
+// name num
 
-function isNegative() {}
+
+function isNegative(num) {
+  return num < 0;
+}
+
+
+function isBetween5and10(num) {
+  if (num >= 5 && num <= 10) {
+      return true;
+  } 
+}
+
+function isShortName(name) {
+  if (name.length === 6) {
+    return true;
+  } else {
+      return false;
+  }
+}
+function startsWithD(firstLetter) {
+  if (firstLetter.match('D') ) {
+    return true;
+  } else {
+     return false;
+  }
+}
+
 
 /* 
   DO NOT EDIT BELOW THIS LINE

@@ -6,18 +6,25 @@
 
   Answer the following questions:
 
-  1. This program throws an error. Why? (If you can't find it, try executing it).
-  2. Remove the line that throws the error.
-  3. What is printed to the console?
-  4. How many times is "f1" called?
-  5. How many times is "f2" called?
-  6. What value does the "a" parameter take in the first "f1" call?
-  7. What is the value of the "a" outer variable when "f1" is called for the first time?
+  1. This program throws an error. Why? (If you can't find it, try executing it).  *** b has not been defined 
+
+  2. Remove the line that throws the error. *** commented out line 31
+
+  3. What is printed to the console?  *** 2, 6, 4, 9, 6, 13, 8
+
+  4. How many times is "f1" called? *** 2 times
+
+  5. How many times is "f2" called? *** 3 times
+
+  6. What value does the "a" parameter take in the first "f1" call? *** It takes in 0 as “i” is in the first iteration of the for loop
+
+
+  7. What is the value of the "a" outer variable when "f1" is called for the first time? *** The value of “a” in the outer variable is 1 as it was reassigned on line 32
 */
 
 let x = 2;
 let a = 6;
-
+debugger;
 const f1 = function (a, b) {
   return a + b;
 };
@@ -28,7 +35,7 @@ const f2 = function (a, b) {
 
 console.log(x);
 console.log(a);
-console.log(b);
+// console.log(b);
 
 for (let i = 0; i < 5; ++i) {
   a = a + 1;
