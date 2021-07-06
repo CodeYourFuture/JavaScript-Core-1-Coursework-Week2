@@ -22,17 +22,17 @@ function mood(myMood) {
 
 function greaterThan10(num) {
   const isBigEnough = num > 10;
-
-  if (isBigEnough) {
-    return "num is greater than 10";
-  } else {
-    return "num is not big enough";
-  }
+  return num > 10 ?"num is greater than 10" : "num is not big enough"; //very practice
+//   if (isBigEnough) {
+//     return "num is greater than 10";
+//   } else {
+//     return "num is not big enough";
+//   }
 }
 
 function get3rdIndex(arr) {
-  const index = 3;
-  const element = arr[index];
+  // const index = 3;
+  const element = arr[3];
 
   return element;
 }
