@@ -9,7 +9,13 @@
 */
 
 function containsCode(sentence) {}
-
+function getGrade(score) {
+  if (sentence1 >= containsCode) {
+    return true;
+  } else {
+    return false;
+  }
+}
 /* 
 DO NOT EDIT BELOW THIS LINE
 --------------------------- */
