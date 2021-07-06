@@ -24,6 +24,8 @@ var sum = 1 + 1; // action: assigns result of `1 + 1` to variable `sum`
 var greeting = "hello"; // action: assigns result of the expression "hello" to variable `greeting`
 console.log(2 * 4); // action: logs the result of `2 * 4` to the console
 sayGreeting(greeting); // action: calls the function `sayGreeting` with the parameter `greeting`
+var num1 = 1000 ;
+var num2 = 333 ; 
 ```
 
 There are some other different types of statements that we will learn in the coming weeks.
