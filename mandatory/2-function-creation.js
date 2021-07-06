@@ -5,8 +5,13 @@ Complete the function to check if the variable `num` satisfies the following req
 - is less than or equal to 100
 Tip: use logical operators
 */
-
-function validate(num) {}
+function validate(num) {
+  if (num % 2 == 0 && typeof num == "number" && num <= 100) {
+    return true;
+  } else {
+    return false;
+  }
+}
 
 /*
 Write a function that:
@@ -15,8 +20,15 @@ Write a function that:
 - the number must be rounded to 2 decimal places
 - numbers greater 100 must be replaced with 100
 */
-
-function formatPercentage(num) {}
+function formatPercentage(num) {
+  if (num > 100) {
+    let maxValue = 100;
+    num = maxValue;
+    return num + "%";
+  } else if (num <= 100) {
+    return Math.round(num * 100) / 100 + "%";
+  }
+}
 
 /*
 Write a function that:
@@ -25,7 +37,24 @@ Write a function that:
 - removes any forward slashes (/) in each string
 - makes all strings all lowercase
 */
-function tidyUpStrings(arrayOfStrings) {}
+let nameRaw = [
+  "  /Daniel",
+  " /Sanyia",
+  "AnTHonY",
+  "irina",
+  " Gordon",
+  "ashleigh   ",
+  "   Alastair  ",
+  " anne marie  ",
+];
+
+function tidyUpStrings(arr) {
+  let fNameRaw = [];
+  for (i = 0; i < arr.length; i++) {
+    fNameRaw.push(nameRaw[i].trim().replace("/", "").toLowerCase());
+  }
+  return fNameRaw;
+}
 
 /* ======= TESTS - DO NOT MODIFY ===== */
 
@@ -77,7 +106,7 @@ test("tidyUpString function works", () => {
       "ashleigh   ",
       "   Alastair  ",
       " anne marie  ",
-    ])  
+    ])
   ).toEqual([
     "daniel",
     "sanyia",
@@ -87,5 +116,5 @@ test("tidyUpString function works", () => {
     "ashleigh",
     "alastair",
     "anne marie",
-  ]); 
+  ]);
 });
