@@ -43,7 +43,25 @@ Write a function that:
 - removes any forward slashes (/) in each string
 - makes all strings all lowercase
 */
-function tidyUpStrings(arrayOfStrings) {}
+let nameRaw = [
+  "  /Daniel",
+  " /Sanyia",
+  "AnTHonY",
+  "irina",
+  " Gordon",
+  "ashleigh   ",
+  "   Alastair  ",
+  " anne marie  ",
+];
+
+function tidyUpString(arr) {
+  for (i = 0; i < arr.length; i++) {
+    let fNameRaw = nameRaw[i].trim().replace("/", "").toLowerCase();
+    console.log(fNameRaw);
+  }
+}
+
+tidyUpString(nameRaw); //! Debug
 
 /* ======= TESTS - DO NOT MODIFY ===== */
 
