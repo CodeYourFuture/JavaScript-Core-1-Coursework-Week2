@@ -9,6 +9,14 @@
 var name = "Daniel";
 var danielsRole = "mentor";
 
+function checkStatus(value1, value2) {
+  if (value2 === "mentor") {
+    console.log(`Hi, I'm ${value1}, I'm a ${value2}.`);
+  } else {
+    console.log(`Hi, I'm ${value1}, I'm a ${value2}.`);
+  }
+}
+checkStatus(name, danielsRole);
 /* 
 EXPECTED RESULT
 ---------------
