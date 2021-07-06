@@ -6,9 +6,17 @@
   If Daniel is a student, print out "Hi, I'm Daniel, I'm a student."
 */
 
-var name = "Daniel";
-var danielsRole = "mentor";
+const danielsRole = "mentor";
 
+function roleAtCYF(danielsRole) {
+  const name = "Daniel";
+  if (danielsRole === "mentor") {
+    return `Hi, I'm ${name}, I'm a mentor.`;
+  } else {
+    return `Hi, I'm ${name}, I'm a student`;
+  }
+}
+console.log(roleAtCYF("student"));
 /* 
 EXPECTED RESULT
 ---------------
