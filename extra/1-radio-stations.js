@@ -32,7 +32,15 @@ console.log(getAllFrequencies()); //! Debug
  * - Return only the frequencies that are radio stations.
  */
 // `getStations` goes here
+function isRadioStation(val1) {
+  return typeof val1 === "number";
+}
+console.log(isRadioStation(107));
 
+function getStations(getAllFrequencies) {
+  frequencies = [];
+  return frequencies;
+}
 /*
  * ======= TESTS - DO NOT MODIFY =======
  * Note: You are not expected to understand everything below this comment!
