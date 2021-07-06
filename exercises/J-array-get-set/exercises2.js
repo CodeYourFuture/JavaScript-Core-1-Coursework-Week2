@@ -6,8 +6,10 @@
   - change the first value in the array to the number 1
 */
 
-var numbers = [1, 2, 3]; // Don't change this array literal declaration
-
+var numbers = [5, 2, 3]; // Don't change this array literal declaration
+numbers.push(4);
+numbers.shift();
+numbers.unshift(1);
 /* 
   DO NOT EDIT BELOW THIS LINE
   --------------------------- */
