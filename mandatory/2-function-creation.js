@@ -12,10 +12,7 @@ function validate(num) {
     return false;
   }
 }
-console.log(validate("Ten")); //! Debug
-console.log(validate(155));
-console.log(validate(13));
-console.log(validate(10));
+
 /*
 Write a function that:
 - takes a number as input
@@ -27,15 +24,12 @@ function formatPercentage(num) {
   if (num > 100) {
     let maxValue = 100;
     num = maxValue;
-    console.log(num + "%");
-  } else if (num < 100) {
-    console.log(Math.round(num * 100) / 100 + "%");
+    return num + "%";
+  } else if (num <= 100) {
+    return Math.round(num * 100) / 100 + "%";
   }
 }
-formatPercentage(0.1118); //! DEBUG
-formatPercentage(25);
-formatPercentage(300);
-formatPercentage(-20);
+
 /*
 Write a function that:
 - takes an array of strings as input
@@ -54,14 +48,13 @@ let nameRaw = [
   " anne marie  ",
 ];
 
-function tidyUpString(arr) {
+function tidyUpStrings(arr) {
+  let fNameRaw = [];
   for (i = 0; i < arr.length; i++) {
-    let fNameRaw = nameRaw[i].trim().replace("/", "").toLowerCase();
-    console.log(fNameRaw);
+    fNameRaw.push(nameRaw[i].trim().replace("/", "").toLowerCase());
   }
+  return fNameRaw;
 }
-
-tidyUpString(nameRaw); //! Debug
 
 /* ======= TESTS - DO NOT MODIFY ===== */
 
