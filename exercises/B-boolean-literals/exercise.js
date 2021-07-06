@@ -5,7 +5,10 @@
   Add the required variables with the correct boolean values assigned.
 */
 
-var codeYourFutureIsGreat = true;
+const codeYourFutureIsGreat = true;
+const mozafarIsCool = false;
+const calculationCorrect = true;
+const moreThan10Students = false;
 
 /* 
   DO NOT EDIT BELOW THIS LINE
@@ -23,4 +26,8 @@ console.log("Are there more than 10 students?", moreThan10Students);
   Is Mozafar cool? false
   Does 1 + 1 = 2? true
   Are there more than 10 students? false
+*/
+
+/* test command 'npm run extra-tests -- --testPathPattern 1-radio-stations'
+`npm test -- --testPathPattern 1-fix-functions`
 */
