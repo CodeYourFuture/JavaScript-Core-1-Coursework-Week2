@@ -5,7 +5,6 @@ Complete the function to check if the variable `num` satisfies the following req
 - is less than or equal to 100
 Tip: use logical operators
 */
-
 function validate(num) {
   if (num % 2 == 0 && typeof num == "number" && num <= 100) {
     return true;
@@ -17,7 +16,6 @@ console.log(validate("Ten")); //! Debug
 console.log(validate(155));
 console.log(validate(13));
 console.log(validate(10));
-
 /*
 Write a function that:
 - takes a number as input
@@ -25,9 +23,19 @@ Write a function that:
 - the number must be rounded to 2 decimal places
 - numbers greater 100 must be replaced with 100
 */
-
-function formatPercentage(num) {}
-
+function formatPercentage(num) {
+  if (num > 100) {
+    let maxValue = 100;
+    num = maxValue;
+    console.log(num + "%");
+  } else if (num < 100) {
+    console.log(Math.round(num * 100) / 100 + "%");
+  }
+}
+formatPercentage(0.1118); //! DEBUG
+formatPercentage(25);
+formatPercentage(300);
+formatPercentage(-20);
 /*
 Write a function that:
 - takes an array of strings as input
