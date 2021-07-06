@@ -5,8 +5,9 @@
 
 */
 
-function isEmpty(arr) {
-  return; // complete this statement
+// Will check if arr length is less than 1 i.e empty, and return boolean
+function isEmpty(arr) {  
+  return arr.length < 1; // complete this statement
 }
 
 /* 

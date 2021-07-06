@@ -5,11 +5,13 @@
 */
 
 function first(arr) {
-  return; // complete this statement
+  return arr[0]; // complete this statement
 }
 
+//function checks last item by finding arr length; then -1 to get last value as index starts from 0.
 function last(arr) {
-  return; // complete this statement
+  const lastItem = arr[arr.length - 1];
+  return lastItem; // complete this statement
 }
 
 /* 

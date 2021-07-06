@@ -6,7 +6,15 @@ Complete the function to check if the variable `num` satisfies the following req
 Tip: use logical operators
 */
 
-function validate(num) {}
+function validate(num) {
+
+    const isNumber = typeof num === "number"; 
+    const isEven = num % 2 === 0;
+    const lessOrEqual100 = num <= 100;
+    const valid = isNumber && isEven && lessOrEqual100;
+
+    return (valid);         
+}
 
 /*
 Write a function that:
@@ -16,7 +24,20 @@ Write a function that:
 - numbers greater 100 must be replaced with 100
 */
 
-function formatPercentage(num) {}
+function formatPercentage(num) {
+  const twoDecimal = Math.round(num * 100) / 100;  // Rounds off num to upto 2 decimals if floats, leaves integers as is
+  const strPercent = twoDecimal + "%";              // twoDecimal changes into string value after concatenate with '%'
+  const keep100 = num >= 100 ? "100%" : strPercent;  // If num >= 100, output will say '100%'; else outputs expected strPercent values (i.e formatted and rounded)
+
+  return keep100;
+
+  //Could also be written like this:
+  //function formatPercentage(num) {
+  //   const strPercent = Math.round(num*100)/100 + "%";
+//     return keep100;}
+
+}
+
 
 /*
 Write a function that:
@@ -25,7 +46,17 @@ Write a function that:
 - removes any forward slashes (/) in each string
 - makes all strings all lowercase
 */
-function tidyUpStrings(arrayOfStrings) {}
+function tidyUpStrings(arrayOfStrings) {
+  const strArr = arrayOfStrings;
+// return strArr;
+   
+ const smlCap = strArr.map((word) => word.toLowerCase()); // .map() iterates through all items and turns into lowercase
+ const trimName = smlCap.map((word) => word.trim());     //  Iterates smlCap, & trims spaces with .trim() 
+ const noSlash = trimName.map((word) => word.replace('/', ''));  // Iterates through trimName & removes forward slash using replace .map() and .replace() methods
+ 
+ return noSlash;
+}
+
 
 /* ======= TESTS - DO NOT MODIFY ===== */
 
