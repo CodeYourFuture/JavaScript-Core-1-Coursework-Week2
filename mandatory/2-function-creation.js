@@ -6,7 +6,17 @@ Complete the function to check if the variable `num` satisfies the following req
 Tip: use logical operators
 */
 
-function validate(num) {}
+function validate(num) {
+  if (num % 2 == 0 && typeof num == "number" && num <= 100) {
+    return true;
+  } else {
+    return false;
+  }
+}
+console.log(validate("Ten")); //! Debug
+console.log(validate(155));
+console.log(validate(13));
+console.log(validate(10));
 
 /*
 Write a function that:
@@ -77,7 +87,7 @@ test("tidyUpString function works", () => {
       "ashleigh   ",
       "   Alastair  ",
       " anne marie  ",
-    ])  
+    ])
   ).toEqual([
     "daniel",
     "sanyia",
@@ -87,5 +97,5 @@ test("tidyUpString function works", () => {
     "ashleigh",
     "alastair",
     "anne marie",
-  ]); 
+  ]);
 });
