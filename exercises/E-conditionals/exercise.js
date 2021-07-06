@@ -9,6 +9,9 @@
 var name = "Daniel";
 var danielsRole = "mentor";
 
+var result = (danielsRole === 'mentor') ? "Hi, I'm Daniel, I'm a mentor." : "Hi, I'm Daniel, I'm a student.";
+console.log(result);
+
 /* 
 EXPECTED RESULT
 ---------------
