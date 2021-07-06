@@ -6,8 +6,10 @@
   If Daniel is a student, print out "Hi, I'm Daniel, I'm a student."
 */
 
-var name = "Daniel";
-var danielsRole = "mentor";
+const name = "Daniel";
+const danielsRole = "mentor";
+const result = (danielsRole === "mentor") ? "Hi, I'm Daniel, I'm a mentor." : "Hi, I'm Daniel, I'm a student.";
+console.log(result);
 
 /* 
 EXPECTED RESULT

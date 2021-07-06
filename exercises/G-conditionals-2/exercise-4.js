@@ -8,14 +8,16 @@
   Hint: Google how to check if a string contains a word
 */
 
-function containsCode(sentence) {}
+function containsCode(sentence) {
+  return sentence.includes("code");
+}
 
 /* 
 DO NOT EDIT BELOW THIS LINE
 --------------------------- */
-var sentence1 = "code your future";
-var sentence2 = "draw your future";
-var sentence3 = "design your future";
+const sentence1 = "code your future";
+const sentence2 = "draw your future";
+const sentence3 = "design your future";
 
 console.log("'" + sentence1 + "': " + containsCode(sentence1));
 console.log("'" + sentence2 + "': " + containsCode(sentence2));
