@@ -5,7 +5,30 @@
   Update the code so that you get the expected result.
 */
 
-function isNegative() {}
+function isNegative(num) {
+  if (num < 0) {
+    return true;
+  } else {
+    return false;
+  }
+}
+function isBetween5and10(numb) {
+  if (5 <= numb <= 10) {
+    return true;
+  } else {
+    return false;
+  }
+}
+function isShortName(str) {
+  if (str.length <= 6) {
+    return true;
+  } else {
+    return false;
+  }
+}
+function startsWithD(stri) {
+  return stri.startsWith("D");
+}
 
 /* 
   DO NOT EDIT BELOW THIS LINE
