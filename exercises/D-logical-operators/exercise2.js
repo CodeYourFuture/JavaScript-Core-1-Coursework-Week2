@@ -1,11 +1,31 @@
-/*
-  Logical Operators
-  ---------------------------------
-  This program calls some functions that are either missing or incomplete.
-  Update the code so that you get the expected result.
-*/
+/**
+ * /*
+ *   Logical Operators
+ *   ---------------------------------
+ *   This program calls some functions that are either missing or incomplete.
+ *   Update the code so that you get the expected result.
+ *
+ * @format
+ */
 
-function isNegative() {}
+function isNegative(number) {
+	if (number < 0) return true;
+	else return false;
+}
+function isBetween5and10(number) {
+	if (number >= 5 && number <= 10) return true;
+	else return false;
+}
+
+function isShortName(name) {
+	if (name.length <= 6) return true;
+	else return false;
+}
+
+function startsWithD(name) {
+	if (name[0] === "D" || name[0]==="d") return true;
+	else return false;
+}
 
 /* 
   DO NOT EDIT BELOW THIS LINE
