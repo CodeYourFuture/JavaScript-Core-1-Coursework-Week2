@@ -10,9 +10,8 @@
 
 */
 
-function mood() {
-  let isHappy = true;
-
+function mood( isHappy) {
+ 
   if (isHappy) {
     return "I am happy";
   } else {
@@ -21,7 +20,7 @@ function mood() {
 }
 
 function greaterThan10(num) {
-  let isBigEnough;
+  let isBigEnough = num > 10;
 
   if (isBigEnough) {
     return "num is greater than 10";
@@ -32,10 +31,26 @@ function greaterThan10(num) {
 
 function get3rdIndex(arr) {
   let index = 3;
-  let element;
+  let element = arr[index];
 
   return element;
 }
+/* --------- test--------*/
+
+console.log(mood(true));
+console.log(mood(false));
+console.log(greaterThan10(11));
+console.log(greaterThan10(96));
+console.log(greaterThan10(9));
+console.log(greaterThan10(10));
+const strings = ["fruit", "banana", "apple", "strawberry", "raspberry"];
+console.log(get3rdIndex(strings));
+const number = [11, 37, 62, 18, 19, 3, 30];
+console.log(get3rdIndex(number));
+ const numbers = [5, 10];
+  console.log(get3rdIndex(numbers));
+
+
 
 /* ======= TESTS - DO NOT MODIFY ===== */
 
