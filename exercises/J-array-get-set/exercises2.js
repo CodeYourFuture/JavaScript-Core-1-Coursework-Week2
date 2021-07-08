@@ -8,6 +8,9 @@
 
 var numbers = [1, 2, 3]; // Don't change this array literal declaration
 
+let addNumber = numbers.push(4);
+let i = numbers.indexOf(1);
+numbers[i] = 1;
 /* 
   DO NOT EDIT BELOW THIS LINE
   --------------------------- */

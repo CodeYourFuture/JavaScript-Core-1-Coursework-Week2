@@ -9,6 +9,16 @@
 var name = "Daniel";
 var danielsRole = "mentor";
 
+function createGreetingForDaniel(role) {
+  if (role === "mentor" ) {
+    return `Hi, I'm ${name}, I'm a ${danielsRole}`;
+  } else {
+    return `Hi, I'm ${name}, I'm a ${danielsRole}`;
+  }
+}
+
+console.log(createGreetingForDaniel(danielsRole));
+
 /* 
 EXPECTED RESULT
 ---------------
