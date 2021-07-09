@@ -14,17 +14,17 @@ var cssLevel = 4;
 var htmlLevelAbove5;
 
 if (htmlLevel > 5) {
-	return htmlLevelAbove5 = true;
+	htmlLevelAbove5 = true;
 } else {
-	return htmlLevelAbove5 = false;
+	 htmlLevelAbove5 = false;
 }
 
 var cssLevelAbove5;
 
 if (cssLevel > 5) {
-	return cssLevelAbove5 = true;
+	 cssLevelAbove5 = true;
 } else {
-	return cssLevelAbove5 = false;
+	 cssLevelAbove5 = false;
 }
 
 // Finish the next two statement
@@ -33,17 +33,17 @@ if (cssLevel > 5) {
 var cssAndHtmlAbove5;
 
 if (htmlLevelAbove5 && cssLevelAbove5) {
-	return cssAndHtmlAbove5 = true;
+	 cssAndHtmlAbove5 = true;
 } else {
-	return cssAndHtmlAbove5 = false;
+	 cssAndHtmlAbove5 = false;
 }
 
 var cssOrHtmlAbove5;
 
 if (htmlLevelAbove5 || cssLevelAbove5) {
-	return cssOrHtmlAbove5 = true;
+	 cssOrHtmlAbove5 = true;
 } else {
-	return cssOrHtmlAbove5 = false;
+	 cssOrHtmlAbove5 = false;
 }
 
 
