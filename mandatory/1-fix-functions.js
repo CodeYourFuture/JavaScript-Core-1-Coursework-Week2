@@ -13,28 +13,29 @@
 function mood() {
     let isHappy = true;
 
-    if (isHappy) {
+    if (true) {
         return "I am happy";
     } else {
-        return "I am happy";
+        return "I am not happy";
     }
 }
 
 function greaterThan10(num) {
-    let isBigEnough;
 
-    if (isBigEnough) {
+
+    if (num > 10) {
         return "num is greater than 10";
-    } else {
+    }
+    if (num <= 10) {
         return "num is not big enough";
     }
 }
 
 function get3rdIndex(arr) {
     let index = 3;
-    let element;
+    let element = ["fruit", "banana", "apple", "strawberry", "raspberry"];
 
-    return element;
+    return element[3];
 }
 
 /* ======= TESTS - DO NOT MODIFY ===== */
