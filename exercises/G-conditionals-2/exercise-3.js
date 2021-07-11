@@ -7,8 +7,24 @@
   - if the mark is 60 or lower but no lower than 50 then the grade is "C"
   - Otherwise the grade is "F"
 */
+// 80+ A
+//60-80 B
+//50-60 C
 
-function calculateGrade(mark) {}
+
+function calculateGrade(mark) {
+    if (mark >= 80) {
+        return "A";
+    }
+    if (mark > 60 && mark < 80) {
+        return "B";
+    }
+
+    if (mark > 50 && mark <= 60) {
+        return "C";
+    }
+    return "F";
+}
 
 /* 
 DO NOT EDIT BELOW THIS LINE
