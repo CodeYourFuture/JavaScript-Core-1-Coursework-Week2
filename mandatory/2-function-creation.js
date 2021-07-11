@@ -42,6 +42,7 @@ Write a function that:
 - removes any forward slashes (/) in each string
 - makes all strings all lowercase
 */
+
 var array = [
     "/Daniel",
     " /Sanyia",
@@ -51,12 +52,18 @@ var array = [
     "ashleigh   ",
     "   Alastair  ",
     " anne marie  ",
-];
+]
 
-function tidyUpStrings(arrayOfStrings) {
-    return array.trim();
+function tidyUpStrings(arrayOfStrings) {;
+    var withOutSpace = array;
+    return withOutSpace.replace("\",");
+
 
 }
+
+console.log(tidyUpStrings(array));
+
+
 
 /* ======= TESTS - DO NOT MODIFY ===== */
 
