@@ -10,8 +10,9 @@ function validate(num) {
     if (num <= 100 && num % 2 === 0) {
         return true;
     }
+
     return false;
-}
+};
 
 
 /*
@@ -26,15 +27,20 @@ function formatPercentage(num) {
     if (num > 100) {
         return 100 + "%";
     }
+    if (Number.isInteger(num)) {
+        return num + "%";
+    }
+
 
     var rounding = Math.round(num);
-    var numberPlusePrecentage = rounding + '%';
-    //var twodicemalpalce = numberPlusePrecentage.toFixed(2);
-    return numberPlusePrecentage.toString();
+    var n = num.toFixed(2);
+    var numberPlusePrecentage = n + '%';
+    var twodicemalpalce = numberPlusePrecentage;
+    return numberPlusePrecentage;
 
 }
 
-console.log(formatPercentage(10.99876));
+formatPercentage(10.99876);
 /*
 Write a function that:
 - takes an array of strings as input
@@ -55,9 +61,9 @@ var array = [
 ]
 
 function tidyUpStrings(arrayOfStrings) {;
-    var withOutSpace = array;
-    return withOutSpace.replace("\",");
+    //var withOutSpace = array;
 
+    return arrayOfStrings.trim().split(/\s+/);
 
 }
 

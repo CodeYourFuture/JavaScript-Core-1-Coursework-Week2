@@ -10,10 +10,9 @@
 
 */
 
-function mood() {
-    let isHappy = true;
+function mood(isHappy) {
 
-    if (true) {
+    if (isHappy) {
         return "I am happy";
     } else {
         return "I am not happy";
@@ -32,10 +31,10 @@ function greaterThan10(num) {
 }
 
 function get3rdIndex(arr) {
-    let index = 3;
+
     let element = ["fruit", "banana", "apple", "strawberry", "raspberry"];
 
-    return element[3];
+    return arr[3];
 }
 
 /* ======= TESTS - DO NOT MODIFY ===== */
