@@ -8,11 +8,11 @@
 
   1. This program throws an error. Why? (If you can't find it, try executing it).
   2. Remove the line that throws the error.
-  3. What is printed to the console?
-  4. How many times is "f1" called?
-  5. How many times is "f2" called?
-  6. What value does the "a" parameter take in the first "f1" call?
-  7. What is the value of the "a" outer variable when "f1" is called for the first time?
+  3. What is printed to the console? 2, 6, b, 
+  4. How many times is "f1" called? 1
+  5. How many times is "f2" called? 1
+  6. What value does the "a" parameter take in the first "f1" call? 7
+  7. What is the value of the "a" outer variable when "f1" is called for the first time? 6
 */
 
 let x = 2;
