@@ -8,6 +8,13 @@
 
 var name = "Daniel";
 var danielsRole = "mentor";
+function hisRole(danielsRole){
+if (danielsRole ==="mentor"){
+  return "i'm a mentor "
+}else {
+  return " i'm a student"
+}}
+console.log ("hi i,m"+ "Daniel ," +hisRole(danielsRole)  )
 
 /* 
 EXPECTED RESULT

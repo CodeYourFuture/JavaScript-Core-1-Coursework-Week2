@@ -28,7 +28,8 @@ const f2 = function (a, b) {
 
 console.log(x);
 console.log(a);
-console.log(b);
+// 2 
+//6
 
 for (let i = 0; i < 5; ++i) {
   a = a + 1;
@@ -40,3 +41,7 @@ for (let i = 0; i < 5; ++i) {
     console.log(e);
   }
 }
+// i=0
+//a=7
+//d= 0+2+2 =4
+//e=0+7 =7
