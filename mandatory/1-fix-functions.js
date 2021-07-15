@@ -27,7 +27,7 @@ function greaterThan10(num) {
 }
 
 function get3rdIndex(arr) {
-  return arr[2]
+  return arr[3]
 }
 
 /* ======= TESTS - DO NOT MODIFY ===== */

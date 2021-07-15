@@ -9,7 +9,7 @@ Tip: use logical operators
 function validate(num) {
 	if (typeof num === 'number' && num % 2 === 0 && num <= 100) {
 		return true;
-	}
+	} return false;
 }
 
 /*

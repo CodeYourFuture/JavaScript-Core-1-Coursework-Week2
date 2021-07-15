@@ -15,6 +15,19 @@
   7. What is the value of the "a" outer variable when "f1" is called for the first time?
 */
 
+/* Answers:
+
+1. Var b exists in local scope. 
+2.
+3. 2, 6, 4, 9, 6, 13, 8
+4. 2
+5. 3
+6. 8
+7. 8
+
+*/ 
+
+
 let x = 2;
 let a = 6;
 
@@ -28,7 +41,7 @@ const f2 = function (a, b) {
 
 console.log(x);
 console.log(a);
-console.log(b);
+// console.log(b);
 
 for (let i = 0; i < 5; ++i) {
   a = a + 1;
