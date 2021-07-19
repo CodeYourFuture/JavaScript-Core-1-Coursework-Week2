@@ -6,7 +6,16 @@ Complete the function to check if the variable `num` satisfies the following req
 Tip: use logical operators
 */
 
-function validate(num) {}
+function validate(num) {
+  mod = num%2;
+  numType = typeof(num);
+  if (mod === 0 && num<=100 && numType!== "string"){
+    return true;
+  }else{
+    return false;
+  }
+}
+
 
 /*
 Write a function that:
@@ -16,18 +25,24 @@ Write a function that:
 - numbers greater 100 must be replaced with 100
 */
 
-function formatPercentage(num) {}
+function formatPercentage(num) {
+  return num>100? 100+"%" : Math.round(num*100)/100+"%";
+}
 
-/*
-Write a function that:
-- takes an array of strings as input
-- removes any spaces in the beginning or end of each string
-- removes any forward slashes (/) in each string
-- makes all strings all lowercase
-*/
-function tidyUpStrings(arrayOfStrings) {}
 
-/* ======= TESTS - DO NOT MODIFY ===== */
+// /*
+// Write a function that:
+// - takes an array of strings as input
+// - removes any spaces in the beginning or end of each string
+// - removes any forward slashes (/) in each string
+// - makes all strings all lowercase
+// */
+function tidyUpStrings(arrayOfStrings) {
+  return arrayOfStrings.toLowerCase().trim().replace(/\//g, '');
+}
+console.log(tidyUpStrings("    Hello world!/      "));
+
+// /* ======= TESTS - DO NOT MODIFY ===== */
 
 test("validate function accepts valid even number", () => {
   expect(validate(10)).toEqual(true);

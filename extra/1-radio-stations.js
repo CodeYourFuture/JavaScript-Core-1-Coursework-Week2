@@ -14,6 +14,13 @@
  */
 
 // `getAllFrequencies` goes here
+function getAllFrequencies(){
+  var newArray = [];
+  for (var i = 87; i < 109; i++){
+    newArray.push(i);
+  }
+  return newArray;
+}
 
 /**
  * Next, let's write a function that gives us only the frequencies that are radio stations.
@@ -25,7 +32,11 @@
  * - Return only the frequencies that are radio stations.
  */
 // `getStations` goes here
-
+function getStations(){
+  availableFrequencies = getAllFrequencies();
+  }
+}
+console.log(getStations())
 /*
  * ======= TESTS - DO NOT MODIFY =======
  * Note: You are not expected to understand everything below this comment!
