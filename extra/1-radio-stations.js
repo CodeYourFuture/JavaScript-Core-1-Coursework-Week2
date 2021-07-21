@@ -21,7 +21,7 @@ function getAllFrequencies(){
   }
   return newArray;
 }
-
+console.log(getAllFrequencies());
 /**
  * Next, let's write a function that gives us only the frequencies that are radio stations.
  * Call this function `getStations`.
@@ -32,11 +32,20 @@ function getAllFrequencies(){
  * - Return only the frequencies that are radio stations.
  */
 // `getStations` goes here
-function getStations(){
-  availableFrequencies = getAllFrequencies();
+
+function getStations(getAllFrequencies){
+  function isRadioStation(n){
+    for (var i = 0; i<getAllFrequencies.length; i++){
+      if(n=== getAllFrequencies[i]){
+        return true;
+      }else{
+        return false;
+      }
+    }
   }
+  var radioStations = getAllFrequencies.map(isRadioStation);
 }
-console.log(getStations())
+
 /*
  * ======= TESTS - DO NOT MODIFY =======
  * Note: You are not expected to understand everything below this comment!

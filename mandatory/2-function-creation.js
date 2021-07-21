@@ -37,10 +37,22 @@ function formatPercentage(num) {
 // - removes any forward slashes (/) in each string
 // - makes all strings all lowercase
 // */
+
+//working function 1
+// function tidyUpStrings(arrayOfStrings) {
+//   var newArray = [];
+//   for (var i =0; i< arrayOfStrings.length; i++){
+//     newArray.push(arrayOfStrings[i].toLowerCase().trim().replace(/\//g, ''));
+//   }
+//   return newArray;
+// }
+
+//attempt 2
 function tidyUpStrings(arrayOfStrings) {
-  return arrayOfStrings.toLowerCase().trim().replace(/\//g, '');
+  var newArray = arrayOfStrings.map(name => name.toLowerCase().trim().replace(/\//g, ''))
+  return newArray;
 }
-console.log(tidyUpStrings("    Hello world!/      "));
+
 
 // /* ======= TESTS - DO NOT MODIFY ===== */
 
