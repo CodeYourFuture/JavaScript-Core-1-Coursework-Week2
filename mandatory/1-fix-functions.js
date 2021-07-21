@@ -10,10 +10,10 @@
 
 */
 
-function mood(boolen1) {
-  let isHappy;
+function mood(boolean1) {
+  // let isHappy;
 
-  if (boolen1 === true) {
+  if (boolean1 === true) {
     return "I am happy";
   } else {
     return "I am not happy";

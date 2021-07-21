@@ -7,8 +7,7 @@ Tip: use logical operators
 */
 
 function validate(num) {
-  if (!isNaN(num) == True && num % 2 === 0 && num <= 100) {
-    return true;
+  return typeof num == "number" && num % 2 === 0 && num <= 100;
 }
 
 /*
@@ -24,7 +23,7 @@ function formatPercentage(num) {
     num = 100;
   }
 
-  return num.toFixed(1) + "%";
+  return Math.round(num * 100) / 100 + "%";
 }
 
 /*
@@ -34,14 +33,13 @@ Write a function that:
 - removes any forward slashes (/) in each string
 - makes all strings all lowercase
 */
-function tidyUpStrings(arrayOfStrings) {
-  for (var x = 0; (x = arrayOfStrings.length); x++) {
-    arrayOfStrings[x] = arrayOfStrings.trim;
-    arrayOfStrings[x] = arrayOfStrings.toUpperCase;
-    arrayOfStrings[x] = arrayOfStrings.replace(/\//g, "");
-    return arrayOfStrings;
-  }
-}
+/*function tidyUpStrings(arrayOfStrings) {*/
+
+const arrayOfStrings = (arrayOfStrings) => {
+  return arrayOfStrings.map((string) => {
+    return string.trim().toUpperCase().replace("/", "");
+  });
+};
 
 /* ======= TESTS - DO NOT MODIFY ===== */
 
