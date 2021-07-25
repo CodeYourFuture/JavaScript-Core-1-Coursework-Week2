@@ -33,7 +33,7 @@ function getAllFrequencies (){
 // `getStations` goes here
 function getStations(){
 let allFrequencies = getAllFrequencies();
-let availableFrequencies = isRadioStation(allFrequencies);
+let availableFrequencies = allFrequencies.filter(isRadioStation);
 return availableFrequencies;
 }
 /*
@@ -62,8 +62,9 @@ function getAvailableStations() {
 }
 
 function isRadioStation(frequency) {
-  return getAvailableStations().includes(frequency);
-}
+  if (getAvailableStations().includes(frequency)) {
+  return frequency
+  };
 
 test("getAllFrequencies() returns all frequencies between 87 and 108", () => {
   expect(getAllFrequencies()).toEqual([

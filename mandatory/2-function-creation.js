@@ -23,11 +23,11 @@ Write a function that:
 */
 
 function formatPercentage(num) {
-  let num2Decimal = num.toFixed(2)
+  let num2Decimal = Math.round (num *100)/100
   if (num2Decimal > 100){
     num2Decimal = 100;
   }
-  return num2Decimal.toString();
+  return num2Decimal.toString() + "%";
 }
 
 /*
@@ -38,7 +38,13 @@ Write a function that:
 - makes all strings all lowercase
 */
 function tidyUpStrings(arrayOfStrings) {
-  return arrayOfStrings.trim().replace(/\\/g,'').toLowerCase();
+
+  let newArr=[];
+  for (let i = 0; i < arrayOfStrings.length; i++){
+    let arr = arrayOfStrings[i].trim().toLowerCase().replace(/\//g,'');
+    newArr.push(arr)
+  }
+  return newArr
 }
 
 /* ======= TESTS - DO NOT MODIFY ===== */
