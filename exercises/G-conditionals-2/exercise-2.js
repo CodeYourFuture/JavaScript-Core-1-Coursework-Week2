@@ -7,7 +7,16 @@
 
 */
 
-function studentPassed(grade) {}
+function studentPassed(grade) {
+  if (grade < 50) {
+    return "failed";
+  } else if (grade >= 50) {
+    return "passed";
+  }
+}
+// console.log(studentPassed(50)); // logs passed
+// console.log(studentPassed(55)); // logs passed
+// console.log(studentPassed(49)); // logs failed
 
 /* 
 DO NOT EDIT BELOW THIS LINE

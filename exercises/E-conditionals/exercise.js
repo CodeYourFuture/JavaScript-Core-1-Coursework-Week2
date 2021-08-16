@@ -8,6 +8,14 @@
 
 var name = "Daniel";
 var danielsRole = "mentor";
+function roleInCYF(name, danielsRole) {
+  if (danielsRole === "mentor") {
+    return `Hi,  I'm ${name}, I'm a ${danielsRole}.`;
+  } else {
+    return `Hi, I'm ${name}, I'm a student.`;
+  }
+}
+//console.log(roleInCYF(name, danielsRole)); // logs "Hi, I'm Daniel, I'm a mentor."
 
 /* 
 EXPECTED RESULT
