@@ -7,6 +7,9 @@
 */
 
 var numbers = [1, 2, 3]; // Don't change this array literal declaration
+numbers.push(4);
+
+// The first value if already 1, if it wasn't I would have used: shift() and unshift()
 
 /* 
   DO NOT EDIT BELOW THIS LINE
