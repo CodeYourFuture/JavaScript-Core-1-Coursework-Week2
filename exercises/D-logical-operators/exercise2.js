@@ -5,8 +5,39 @@
   Update the code so that you get the expected result.
 */
 
-function isNegative() {}
+// Check negative
+function isNegative(num) {
+if(num <0) {
+  return true;
+}
+return false;
+}
 
+// Check range
+function isBetween5and10(range) {
+if(range > 5 && range <10) {
+  return true;
+}
+return false;
+}
+
+// Check for short name 
+let nam;
+function isShortName(nam) {
+  if (nam.length < 7){
+    return true;
+  }
+  return false;
+}
+
+// Check if name starts with D
+let firstLetter;
+function startsWithD(firstLetter) {
+  if (firstLetter.chartAt(0) == 'D'){
+    return true;
+  }
+  return false;
+}
 /* 
   DO NOT EDIT BELOW THIS LINE
   --------------------------- */
