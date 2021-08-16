@@ -28,9 +28,9 @@ const f2 = function (a, b) {
 
 console.log(x);
 console.log(a);
-console.log(b);
+// console.log(b); //this is a LOCAL VAR
 
-for (let i = 0; i < 5; ++i) {
+for (let i = 0; i < 5; i++) {
   a = a + 1;
   if (i % 2 === 0) {
     const d = f2(i, x);

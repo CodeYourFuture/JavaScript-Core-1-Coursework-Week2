@@ -11,9 +11,9 @@
 */
 
 function mood() {
-  let isHappy = true;
+  let isHappy;
 
-  if (isHappy) {
+  if (isHappy = true) {
     return "I am happy";
   } else {
     return "I am not happy";
@@ -23,16 +23,16 @@ function mood() {
 function greaterThan10(num) {
   let isBigEnough;
 
-  if (isBigEnough) {
+  if (isBigEnough > 10) {
     return "num is greater than 10";
   } else {
     return "num is not big enough";
   }
 }
-
+const strings = ["fruit", "banana", "apple", "strawberry", "raspberry"];
 function get3rdIndex(arr) {
-  let index = 3;
-  let element;
+  let index = 2;
+  let element = arr[index];
 
   return element;
 }
