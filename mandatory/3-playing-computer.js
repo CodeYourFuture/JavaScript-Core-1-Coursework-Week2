@@ -7,12 +7,19 @@
   Answer the following questions:
 
   1. This program throws an error. Why? (If you can't find it, try executing it).
+      "b" is not a global variable, it is a parameter that it is recognized only inside the "f1" and "f2" functions so we can't print it to the console outside these 2 functions.
   2. Remove the line that throws the error.
+      console.log(b) removed.
   3. What is printed to the console?
+      2, 6, 4, 9, 6, 13, 8
   4. How many times is "f1" called?
+      "f1" is called 2 times
   5. How many times is "f2" called?
+      "f2" is called 3 times;
   6. What value does the "a" parameter take in the first "f1" call?
+      "a" parameters takes in the first "f1" call the value of 8;
   7. What is the value of the "a" outer variable when "f1" is called for the first time?
+      The value of the "a" outer variable when "f1" is called for the first time is 8.
 */
 
 let x = 2;
@@ -28,7 +35,6 @@ const f2 = function (a, b) {
 
 console.log(x);
 console.log(a);
-console.log(b);
 
 for (let i = 0; i < 5; ++i) {
   a = a + 1;
