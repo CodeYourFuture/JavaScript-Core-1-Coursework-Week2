@@ -14,11 +14,11 @@ function isNegative(number) {
   }
 }
 
-isNumber(10); // returns true
-isNumber("hello"); // returns false
+// isNumber(10); // returns true
+// isNumber("hello"); // returns false
 // Finish the predicate function to test if the passed number is between 0 and 10
 function isBetweenZeroAnd10(number) {
-  if (number >= 0 && <= 10) {
+  if (number >= 0 && number <=10) {
     return true;
   } else {
     return false;
