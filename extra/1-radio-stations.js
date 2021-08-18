@@ -15,6 +15,16 @@
 
 // `getAllFrequencies` goes here
 
+  function getAllFrequencies() {
+    const firstFrequency = 87;
+    const lastFrequency = 108;
+    const allFrequencies = [];
+    const length = lastFrequency - firstFrequency;
+    for(let i = 0; i <= length; i++)
+      allFrequencies[i] = i + firstFrequency;
+  
+  return allFrequencies;
+  }
 /**
  * Next, let's write a function that gives us only the frequencies that are radio stations.
  * Call this function `getStations`.
@@ -25,7 +35,13 @@
  * - Return only the frequencies that are radio stations.
  */
 // `getStations` goes here
-
+function getStations(){
+  const allFrequencies = getAllFrequencies(); 
+  function radioStation(frequency){
+    return isRadioStation(frequency);
+  }
+  return allFrequencies.filter(radioStation); 
+}
 /*
  * ======= TESTS - DO NOT MODIFY =======
  * Note: You are not expected to understand everything below this comment!

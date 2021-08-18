@@ -38,16 +38,12 @@ Write a function that:
 - makes all strings all lowercase
 */
 function tidyUpStrings(arrayOfStrings) {
-  let array = arrayOfStrings;
-  for(let i = 0; i < arrayOfStrings.length; i++) {
-    array[i] = array[i].toLowerCase();
-    array[i] = array[i].replace("/", "");
-    array[i] = array[i].trim();
-  }
-  return array;
+  return arrayOfStrings.map((aString) =>
+  aString.trim().replace("/", "").toLowerCase()); 
+
 
 }
-
+//array.map to iterate over every item return the new array with the transformed items higher order functions ; they can take functions as inputs 
 /* ======= TESTS - DO NOT MODIFY ===== */
 
 test("validate function accepts valid even number", () => {
