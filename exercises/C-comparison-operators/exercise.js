@@ -14,7 +14,7 @@ var enoughSpaceInRoom = (roomMaxCapacity = true); // finish this statement
 
 var personA = "Daniel";
 var personB = "Irina";
-var sameName = (personA = personB = false); // finish this statement
+var sameName = personA == personB; // finish this statement
 
 /* 
   DO NOT EDIT BELOW THIS LINE

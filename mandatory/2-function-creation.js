@@ -25,7 +25,7 @@ Write a function that:
 
 function formatPercentage(num) {
   if (num <= 100) {
-    let fixedPercentage = num.toFixed(2); // showing only two decimal places
+    let fixedPercentage = parseFloat(num.toFixed(2)); // showing only two decimal places
     return `${fixedPercentage}%`; // adding % sign and returning as string
   } else if (num > 100) {
     return `100%`;
@@ -42,14 +42,22 @@ Write a function that:
 - removes any spaces in the beginning or end of each string
 - removes any forward slashes (/) in each string
 - makes all strings all lowercase
+[
+      "/Daniel",
+      " /Sanyia",
+      "   Alastair  ",
+      " anne marie  ",
+    ]
 */
 function tidyUpStrings(arrayOfStrings) {
   for (var i = 0; i < arrayOfStrings.length; i++) {
-    let trimmedString = arrayOfStrings.trim();
+    let trimmedString = arrayOfStrings[i].trim();
     let smallString = trimmedString.toLowerCase();
-    if (smallString[i] === "/") {
-      return smallString.splice("/");
-    }
+    arrayOfStrings[i] = smallString.split("/").join("");
+
+    // if (smallString[i] === "/") {
+    //   return smallString.splice("/");
+    // }
     // // let string = "HASEEB is a big// name";
     // let trimmedString = string.trim();
     // let smallString = trimmedString.toLowerCase();
@@ -57,6 +65,7 @@ function tidyUpStrings(arrayOfStrings) {
     // if (arrayOfStrings[i] === "/") {
     //   return arrayOfStrings.splice("/");
   }
+  return arrayOfStrings;
 }
 // console.log(
 //   tidyUpStrings(["My name is Haseeb//   ", "HASEEB is a big// name   "])

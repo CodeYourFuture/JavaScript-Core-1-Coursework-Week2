@@ -32,6 +32,7 @@ console.log(a);
 
 for (let i = 0; i < 5; ++i) {
   a = a + 1;
+  // console.log("a, i= ", a, i);
   if (i % 2 === 0) {
     const d = f2(i, x);
     console.log(d);
