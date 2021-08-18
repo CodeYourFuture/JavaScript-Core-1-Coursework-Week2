@@ -6,7 +6,14 @@ Complete the function to check if the variable `num` satisfies the following req
 Tip: use logical operators
 */
 
-function validate(num) {}
+function validate(num) {
+  if (typeof num === "number" && num % 2 === 0 && num <= 100) {
+    return true;
+  } else return false;
+}
+
+// console.log(validate("18")); // logs false
+// console.log(validate(18)); // logs true
 
 /*
 Write a function that:
@@ -16,7 +23,18 @@ Write a function that:
 - numbers greater 100 must be replaced with 100
 */
 
-function formatPercentage(num) {}
+function formatPercentage(num) {
+  if (num <= 100) {
+    let fixedPercentage = num.toFixed(2); // showing only two decimal places
+    return `${fixedPercentage}%`; // adding % sign and returning as string
+  } else if (num > 100) {
+    return `100%`;
+  }
+}
+
+// console.log(formatPercentage(180)); // logs "100%"
+// console.log(formatPercentage(18)); // logs "18.00%"
+// console.log(formatPercentage(70)); // logs "70.00%"
 
 /*
 Write a function that:
@@ -25,7 +43,24 @@ Write a function that:
 - removes any forward slashes (/) in each string
 - makes all strings all lowercase
 */
-function tidyUpStrings(arrayOfStrings) {}
+function tidyUpStrings(arrayOfStrings) {
+  for (var i = 0; i < arrayOfStrings.length; i++) {
+    let trimmedString = arrayOfStrings.trim();
+    let smallString = trimmedString.toLowerCase();
+    if (smallString[i] === "/") {
+      return smallString.splice("/");
+    }
+    // // let string = "HASEEB is a big// name";
+    // let trimmedString = string.trim();
+    // let smallString = trimmedString.toLowerCase();
+    // // delete arrayOfStrings["/"];
+    // if (arrayOfStrings[i] === "/") {
+    //   return arrayOfStrings.splice("/");
+  }
+}
+// console.log(
+//   tidyUpStrings(["My name is Haseeb//   ", "HASEEB is a big// name   "])
+// );
 
 /* ======= TESTS - DO NOT MODIFY ===== */
 
@@ -77,7 +112,7 @@ test("tidyUpString function works", () => {
       "ashleigh   ",
       "   Alastair  ",
       " anne marie  ",
-    ])  
+    ])
   ).toEqual([
     "daniel",
     "sanyia",
@@ -87,5 +122,5 @@ test("tidyUpString function works", () => {
     "ashleigh",
     "alastair",
     "anne marie",
-  ]); 
+  ]);
 });
