@@ -16,21 +16,22 @@ Please complete the details below this message
 
 # Your Details
 
-- Your Name:
-- Your City:
-- Your Slack Name:
+- Your Name: Maria Chira
+- Your City: Birmingham
+- Your Slack Name: Maria Georgiana Chira
 
 # Homework Details
 
-- Module:
-- Week:
+- Module: JavaScript Core1
+- Week: 2
 
 # Notes
 
 - What did you find easy?
-
+All the exercises in the "Exercises" folder.
 - What did you find hard?
-
+Nothing comes to my mind right now. Nothing seems to be too hard so far. It is all about practice right now.
 - What do you still not understand?
-
+I think I have understood most of the concepts we learned so far.
 - Any other notes?
+Even if my solutions are passing the tests, I always realise later, after doing some more research, that I could do the same thing in a much easier way using different JavaScript build-in methods. I definitely need more practice using these methods, in order to understand how they work and what they do. 
