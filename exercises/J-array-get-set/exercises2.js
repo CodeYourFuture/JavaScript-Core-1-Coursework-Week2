@@ -6,7 +6,15 @@
   - change the first value in the array to the number 1
 */
 
-var numbers = [1, 2, 3]; // Don't change this array literal declaration
+var numbers = [ 1, 2, 3];// Don't change this array literal declaration
+ numbers.push(4);
+//  numbers.shift(0);
+//  numbers.unshift(0);
+ numbers[0] = 1;
+
+
+//var liftedFour = number.push(4); 
+
 
 /* 
   DO NOT EDIT BELOW THIS LINE

@@ -6,6 +6,18 @@
 */
 
 var codeYourFutureIsGreat = true;
+console.log(codeYourFutureIsGreat);
+ 
+var mozafarIsCool = false;
+console.log(mozafarIsCool);
+
+var calculationCorrect = true;
+console.log(calculationCorrect);
+
+var moreThan10Students = false;
+console.log(moreThan10Students);
+
+
 
 /* 
   DO NOT EDIT BELOW THIS LINE

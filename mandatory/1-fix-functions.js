@@ -83,3 +83,4 @@ test("get3rdIndex returns undefined if not enough elements", () => {
   const numbers = [5, 10];
   expect(get3rdIndex(numbers)).toBeUndefined();
 });
+
