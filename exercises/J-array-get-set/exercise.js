@@ -11,7 +11,6 @@ function first(arr) {
 function last(arr) {
   return arr[arr.length - 1]; // complete this statement
 }
-
 /* 
   DO NOT EDIT BELOW THIS LINE
   --------------------------- */

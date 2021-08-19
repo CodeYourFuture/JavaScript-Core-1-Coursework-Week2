@@ -5,7 +5,6 @@
   - if number is less than zero, return the word "negative"
   - if number is more or equal to zero, return the word "positive"
 */
-
 function negativeOrPositive(number) {
   if (number < 0) {
     return "negative";
@@ -13,7 +12,6 @@ function negativeOrPositive(number) {
     return "positive";
   }
 }
-
 // console.log(negativeOrPositive(8)); // logs positive
 // console.log(negativeOrPositive(-5)); // logs negative
 // console.log(negativeOrPositive(0)); // logs positive

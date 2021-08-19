@@ -7,7 +7,6 @@
   - if the mark is 60 or lower but no lower than 50 then the grade is "C"
   - Otherwise the grade is "F"
 */
-
 function calculateGrade(mark) {
   if (mark >= 80) {
     return "A";
@@ -17,7 +16,6 @@ function calculateGrade(mark) {
     return "C";
   } else return "F";
 }
-
 // console.log(calculateGrade(60)); // logs C
 // console.log(calculateGrade(80)); // logs A
 // console.log(calculateGrade(70)); // logs B

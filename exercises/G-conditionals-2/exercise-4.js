@@ -13,9 +13,9 @@ function containsCode(sentence) {
     return true;
   } else return false;
 }
-console.log(containsCode("code your future")); // logs true
-console.log(containsCode("draw your future")); // logs false
-console.log(containsCode("secure your future")); // logs false
+// console.log(containsCode("code your future")); // logs true
+// console.log(containsCode("draw your future")); // logs false
+// console.log(containsCode("secure your future")); // logs false
 /* 
 DO NOT EDIT BELOW THIS LINE
 --------------------------- */

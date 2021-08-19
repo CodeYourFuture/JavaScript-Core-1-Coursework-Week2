@@ -5,7 +5,6 @@
   - assign the number 4 to the end of this array
   - change the first value in the array to the number 1
 */
-
 var numbers = [1, 2, 3];
 numbers.push(4);
 numbers[0] = 1;

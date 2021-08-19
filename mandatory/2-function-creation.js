@@ -42,28 +42,12 @@ Write a function that:
 - removes any spaces in the beginning or end of each string
 - removes any forward slashes (/) in each string
 - makes all strings all lowercase
-[
-      "/Daniel",
-      " /Sanyia",
-      "   Alastair  ",
-      " anne marie  ",
-    ]
 */
 function tidyUpStrings(arrayOfStrings) {
   for (var i = 0; i < arrayOfStrings.length; i++) {
     let trimmedString = arrayOfStrings[i].trim();
     let smallString = trimmedString.toLowerCase();
     arrayOfStrings[i] = smallString.split("/").join("");
-
-    // if (smallString[i] === "/") {
-    //   return smallString.splice("/");
-    // }
-    // // let string = "HASEEB is a big// name";
-    // let trimmedString = string.trim();
-    // let smallString = trimmedString.toLowerCase();
-    // // delete arrayOfStrings["/"];
-    // if (arrayOfStrings[i] === "/") {
-    //   return arrayOfStrings.splice("/");
   }
   return arrayOfStrings;
 }

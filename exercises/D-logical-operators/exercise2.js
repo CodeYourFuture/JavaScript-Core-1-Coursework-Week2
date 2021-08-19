@@ -11,8 +11,8 @@ function isNegative(n) {
   }
   return false;
 }
-console.log(isNegative(-10)); // logs true
-console.log(isNegative(5)); // logs false
+//console.log(isNegative(-10)); // logs true
+//console.log(isNegative(5)); // logs false
 
 /*Function if range is Between 5 and 10 */
 
@@ -23,7 +23,7 @@ function isBetween5and10(n) {
   }
   return false;
 }
-console.log(isBetween5and10(7)); // logs true
+//console.log(isBetween5and10(7)); // logs true
 // console.log(isBetween5and10(4)); // logs false
 
 /*Function for short name */
@@ -34,7 +34,7 @@ function isShortName(name) {
   }
   return false;
 }
-console.log(isShortName("Daniel")); //logs true
+//console.log(isShortName("Daniel")); //logs true
 // console.log(isShortName("Haseeb Khalil")); //logs false
 
 /*Function to find the the first letter of a name */
@@ -44,7 +44,7 @@ function startsWithD(name) {
   }
   return "Does not start with 'D'";
 }
-console.log(startsWithD("Daniel")); // logs true
+//console.log(startsWithD("Daniel")); // logs true
 //console.log(startsWithD("Haseeb")); // logs "Does not start with 'D'".
 
 /* 

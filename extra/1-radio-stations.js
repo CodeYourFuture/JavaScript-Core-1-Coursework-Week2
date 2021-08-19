@@ -12,15 +12,15 @@
  * - Create an array  starting at 87 and ending in 108
  * - Should return this array to use in other functions
  */
+
+// `getAllFrequencies` goes here
 function getAllFrequencies() {
-  const arrayOfFrequencies = [];
+  const arrayOfFrequencies = []; // Created an empty array of frequencies.
   for (let i = 87; i <= 108; i++) {
-    arrayOfFrequencies.push(i);
+    arrayOfFrequencies.push(i); // Pushing frequencies between 87-108 in our empty array.
   }
   return arrayOfFrequencies;
 }
-
-// `getAllFrequencies` goes here
 
 /**
  * Next, let's write a function that gives us only the frequencies that are radio stations.
@@ -33,11 +33,10 @@ function getAllFrequencies() {
  */
 // `getStations` goes here
 function getStations() {
-  let availableFrequencies = getAllFrequencies();
-  const stationsArray = [];
-  //let takeFrequencies = isRadioStation();
+  let availableFrequencies = getAllFrequencies(); // Calling the above function and referring it to a variable.
+  const stationsArray = []; // created an empty array so we can push only available channels to it.
   for (let j = 0; j < availableFrequencies.length; j++) {
-    let isStation = isRadioStation(availableFrequencies[j]);
+    let isStation = isRadioStation(availableFrequencies[j]); //Calling helper function with the parameter of our function(variable inside)using a variable to find the boolean value later.
     if (isStation == true) {
       stationsArray.push(availableFrequencies[j]);
     }
