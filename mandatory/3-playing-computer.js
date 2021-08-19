@@ -6,7 +6,7 @@
 
   Answer the following questions:
 
-  1. This program throws an error. Why? (If you can't find it, try executing it).
+  1. This program throws an error. Why? (If you can't find it, try executing it). 
   2. Remove the line that throws the error.
   3. What is printed to the console?
   4. How many times is "f1" called?
@@ -40,3 +40,12 @@ for (let i = 0; i < 5; ++i) {
     console.log(e);
   }
 }
+
+// Answers
+// 1) b is not defined.
+// 2) line 31.
+// 3) 2, 6, 4, 9 , 6, 13, 8
+// 4) Twice.
+// 5) Three times.
+// 6) 8
+// 7) 8
