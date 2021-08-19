@@ -12,6 +12,13 @@
  * - Create an array  starting at 87 and ending in 108
  * - Should return this array to use in other functions
  */
+function getAllFrequencies() {
+  const arrayForChannels = [];
+  for (let i = 87; i <= 108; i++) {
+    arrayForChannels.push(i);
+  }
+  return arrayForChannels;
+}
 
 // `getAllFrequencies` goes here
 
@@ -25,6 +32,17 @@
  * - Return only the frequencies that are radio stations.
  */
 // `getStations` goes here
+function getStations() {
+  let availableFrequencies = getAllFrequencies();
+  let availableStations = [];
+  for (let i = 0; i < availableFrequencies.length; i++) {
+    let stations = isRadioStation(availableFrequencies[i]);
+    if (stations == true) {
+      availableStations.push(availableFrequencies[i]);
+    }
+  }
+  return availableStations;
+}
 
 /*
  * ======= TESTS - DO NOT MODIFY =======

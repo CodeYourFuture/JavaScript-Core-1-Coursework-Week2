@@ -8,7 +8,14 @@
   Hint: Google how to check if a string contains a word
 */
 
-function containsCode(sentence) {}
+function containsCode(sentence) {
+  if (sentence.includes("code")) {
+    return true;
+  } else return false;
+}
+console.log(containsCode("code your future"));
+console.log(containsCode("draw your future"));
+console.log(containsCode("design your future"));
 
 /* 
 DO NOT EDIT BELOW THIS LINE

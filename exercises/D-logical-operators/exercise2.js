@@ -5,7 +5,43 @@
   Update the code so that you get the expected result.
 */
 
-function isNegative() {}
+function isNegative(num) {
+  if(num < 0){
+    return true;
+  }
+    return false; 
+}
+console.log(isNegative(-10));
+console.log(isNegative(5));
+
+//another function
+function isBetween5and10(num) {
+  if (num >= 5 && num <= 10){
+    return true;
+  }
+  return false;
+}
+console.log(isBetween5and10(7));
+
+//third function
+function isShortName(name){
+  cont shortName = "Daniel";
+  if(name.length <= shortName){
+    return true;
+  }
+  return false;
+}
+console.log(isShortName("Daniel"));
+
+//function for letter of name
+function startsWithD(name){
+  if(name.charAt(0)==="D"){
+    return true;
+  }
+  return "Does not start with 'D'";
+}
+console.log(startsWithD("Daniel"));
+
 
 /* 
   DO NOT EDIT BELOW THIS LINE

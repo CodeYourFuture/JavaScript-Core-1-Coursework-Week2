@@ -8,6 +8,15 @@
 
 var name = "Daniel";
 var danielsRole = "mentor";
+function roleInCyf(name, role){
+  if(role === "mentor"){
+    return "Hi, I'm" + (name) + ", I'm a " + role.;
+  }else{
+    return `Hi, I'm ${name}, I,m a student.`;
+  }
+
+}
+console.log(roleInCyf(name, role));
 
 /* 
 EXPECTED RESULT
