@@ -64,3 +64,4 @@ $
 - Check the value of the variables
 
 Further reading on using the node console: https://hackernoon.com/know-node-repl-better-dbd15bca0af6
+
