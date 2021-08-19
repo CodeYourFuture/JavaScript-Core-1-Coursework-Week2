@@ -8,6 +8,15 @@
 
 var name = "Daniel";
 var danielsRole = "mentor";
+function roleInClass(classRole) {
+  if(classRole === "mentor") {
+    return `Hi, I'm ${name}, I'm a mentor.`;
+  } else {
+    return `Hi, I'm ${name}, I'm a student`;
+  }
+}
+
+console.log(roleInClass(danielsRole));
 
 /* 
 EXPECTED RESULT
