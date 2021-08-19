@@ -28,6 +28,7 @@ function formatPercentage(num) {
     num = num.toFixed(2);
   }
 }
+return num
 }         
  
 /*
