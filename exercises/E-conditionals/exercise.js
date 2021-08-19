@@ -6,8 +6,14 @@
   If Daniel is a student, print out "Hi, I'm Daniel, I'm a student."
 */
 
-var name = "Daniel";
+var firstName = "Daniel";
 var danielsRole = "mentor";
+
+console.log(
+  danielsRole == "mentor"
+    ? "Hi, I'm " + firstName + ", I'm a " + danielsRole + "."
+    : "Hi, I'm " + firstName + ", I'm a student."
+);
 
 /* 
 EXPECTED RESULT
