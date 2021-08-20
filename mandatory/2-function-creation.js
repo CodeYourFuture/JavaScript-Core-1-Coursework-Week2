@@ -10,8 +10,6 @@ function validate(num) {
 return typeof num === Number && num % 2 === 0 && num <= 100;
 }
   
-
-
 /*
 Write a function that:
 - takes a number as input   Number 
