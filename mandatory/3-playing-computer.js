@@ -26,17 +26,23 @@ const f2 = function (a, b) {
   return a + b + x;
 };
 
-console.log(x);
-console.log(a);
-console.log(b);
+console.log(x); // prints 2
+console.log(a); // prints 6
+//console.log(b); // variable b is not defined
 
+// runs 5 times
 for (let i = 0; i < 5; ++i) {
-  a = a + 1;
+  a = a + 1; // add one to a
   if (i % 2 === 0) {
-    const d = f2(i, x);
-    console.log(d);
+    //runs thrice
+    // if a is even
+    const d = f2(i, x); // call f2 with the for loop variable and x then capture it within d
+    console.log(d); // if the number is even, return the passed variables a + b + the global variable x
+    // prints : 4 , 6 , 8
   } else {
-    const e = f1(i, a);
-    console.log(e);
+    // runs twice
+    const e = f1(i, a); // pass in the for loop variable and the global variable a which is being mutated by this for loop
+    console.log(e); // log the captured output
+    // prints 9 , 13
   }
 }
