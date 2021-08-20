@@ -12,11 +12,15 @@
  * - Create an array  starting at 87 and ending in 108
  * - Should return this array to use in other functions
  */
-
 // `getAllFrequencies` goes here
+
 function getAllFrequencies() {
-    var numbers = [87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98,99,100, 101, 102, 103, 104, 105, 107,108];
-    return numbers
+    let radioArray=[];
+    for (let i=87; i<=108; i++); {
+      radioArray.push(i);
+    }
+  //var numbers = [87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98,99,100, 101, 102, 103, 104, 105, 107,108];
+    return radioArray;
 }
 /**
  * Next, let's write a function that gives us only the frequencies that are radio stations.
@@ -29,7 +33,13 @@ function getAllFrequencies() {
  */
 // `getStations` goes here
 function getStations () {
-  
+ let radioStFreq =[]; 
+let activeFrequency  = getAllFrequencies();
+for (i=0; i<=activeFrequency.length; i++);
+  if (isRadioStation(activeFrequency[i]=== true)) {
+     radioStFreq.push(activeFrequency[i]);
+  }
+  return radioStFreq;
 }
 /*
  * ======= TESTS - DO NOT MODIFY =======

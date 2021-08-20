@@ -28,7 +28,7 @@ const f2 = function (a, b) {
 
 console.log(x);
 console.log(a);
-console.log(b);
+console.log(b); // not a variable but a parameter 
 
 for (let i = 0; i < 5; ++i) {
   a = a + 1;

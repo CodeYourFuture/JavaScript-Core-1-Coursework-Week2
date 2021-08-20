@@ -7,9 +7,12 @@ Tip: use logical operators
 */
 
 function validate(num) {
-return typeof num === Number && num % 2 === 0 && num <= 100;
+if((typeof(num) === "number") && (num % 2 === 0) && (num <= 100)) { 
+  return true;
+} else {
+  return false;
 }
-  
+}
 /*
 Write a function that:
 - takes a number as input   Number 
@@ -18,16 +21,18 @@ Write a function that:
 - numbers greater 100 must be replaced with 100   if num >= 100 return 100
 */
 
+
 function formatPercentage(num) {
-  for  (let i =0; i < num.length; ++i) {
+  //for  (let i =0; i < num.length; ++i) {
     if (num >= 100) {
       return "100%";
   } else {
     num = num.toFixed(2);
   }
+  return num
 }
-return num
-}         
+
+ 
  
 /*
 Write a function that:
