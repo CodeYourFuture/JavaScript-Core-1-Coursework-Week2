@@ -5,11 +5,12 @@
 */
 
 function first(arr) {
-  return; // complete this statement
+  return arr[0]; // complete this statement
 }
 
 function last(arr) {
-  return; // complete this statement
+  // .length is 1 based while arrays are 0 based, so we need to take away one, otherwise it would be undefined
+  return arr[arr.length - 1]; // complete this statement
 }
 
 /* 
