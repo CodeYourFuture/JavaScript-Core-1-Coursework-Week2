@@ -7,7 +7,11 @@ Tip: use logical operators
 */
 
 function validate(num) {
-  return num === "number";
+  if (num % 2 == 0 && num <= 100 && typeof num === "number") {
+    return true;
+  } else {
+    return false;
+  }
 }
 
 /*
@@ -18,17 +22,18 @@ Write a function that:
 - numbers greater 100 must be replaced with 100
 */
 
+//Could also use math.round(num *100)/100 below
+
 function formatPercentage(num) {
   if (num > 100) {
     num = 100;
   }
-  let numRounded = num.toFixed[2];
+  let numRounded = Math.round(num * 100) / 100;
   let formatNum = numRounded + `%`;
   return formatNum;
 }
 
-/*
-Write a function that:
+/*Write a function that:
 - takes an array of strings as input
 - removes any spaces in the beginning or end of each string
 - removes any forward slashes (/) in each string
@@ -36,11 +41,23 @@ Write a function that:
 */
 
 function tidyUpStrings(arrayOfStrings) {
-  let trimStrings = arrayOfStrings.trim();
-  let removeAllSlashes = trimStrings.replace(/\//g, "");
-  let lowerCaseFormat = removeAllSlashes.toLowerCase();
-  return lowerCaseFormat;
+  let newStringArray = [];
+  for (let i = 0; i < arrayOfStrings.length; i++) {
+    let trimStrings = arrayOfStrings[i].trim();
+    let lowerCase = trimStrings.toLowerCase();
+    let removeAllSlashes = lowerCase.replace("/", "");
+    newStringArray.push(removeAllSlashes);
+  }
+
+  return newStringArray;
 }
+
+/* Steps for above -  "looping through an array": 
+1) Created a new array as an update the old one.
+2) Created a for-loop because we want to loop through and update all the values in the old array using .length method and increments of one.
+3) Applied various methods to the array to make the required amendments, whilst storing the updated values in new variables. 
+4) Pushed the end result into the new array using .push method
+5) Returned the new array. */
 
 /* ======= TESTS - DO NOT MODIFY ===== */
 
