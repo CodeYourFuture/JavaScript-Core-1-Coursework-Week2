@@ -36,15 +36,29 @@ Write a function that:
 - makes all strings all lowercase
 */
 
+function tidyUpStrings(arrayOfStrings) {}
 function tidyUpStrings(arrayOfStrings) {
-//Trim off the white spaces
-  let removespaces = arrayOfStrings.map(i=>i.trim());
-//Loop through array and replace “/” with empty.
-for(let i = 0; i < removespaces.length; i++)
-{
-    removespaces[i] = removespaces[i].replace("/", "");
-}
-  return removespaces;
+  for( let i = 0; i < arrayOfStrings.length; i++){
+    arrayOfStrings[i] = arrayOfStrings[i].trim();
+    arrayOfStrings[i] = arrayOfStrings[i].replace(/\//g, "");
+    arrayOfStrings[i] = arrayOfStrings[i].toLowerCase();
+  }
+  return arrayOfStrings;
+
+
+
+function tidyUpStrings(arrayOfStrings) {
+
+    for(let i = 0; i < arrayofStrings.length; i++){
+      //Trim off the white spaces
+      arrayOfStrings[i] = arrayOfStrings[i].trim();
+      //Remove the forward slashes
+      arrayOfStrings[i] = arrayOfStrings[i].replace(/\//g, "");
+      //Make all string lowercase
+      arrayOfStrings[i] = arrayOfStrings[i].toLowerCase();
+    }
+    return arrayOfStrings;
+
 }
 tidyUpStrings([
       “/Daniel”,
