@@ -9,11 +9,6 @@ Tip: use logical operators
 function validate(num) {
   return (typeof(num) === "number") && (num %2 === 0) && (num <= 100) ? true : false;
 }
-//my own tests
-console.log(`I should come up true - ${validate(100)}`);
-console.log(`I should come up true - ${validate(60)}`);
-console.log(`I should come up false - ${validate(91)}`);
-console.log(`I should come up false - ${validate(3)}`);
 
 /*
 Write a function that:
@@ -31,10 +26,6 @@ function formatPercentage(num) {
   }
   return `${Math.round(num * 100) / 100}%`;
 }
-console.log(`I should come up 32% - ${formatPercentage(32)}`)
-console.log(`I should come up 40% - ${formatPercentage(40)}`)
-console.log(`I should come up 100% - ${formatPercentage(300)}`)
-console.log(`I should come up 10.1% - ${formatPercentage(10.1334677)}`)
 
 /*
 Write a function that:
