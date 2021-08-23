@@ -7,10 +7,17 @@ Tip: use logical operators
 */
 
 function validate(num) {
-  return isNaN(num) == false && num >= 0 && num % 2 === 0 && num <= 100;
+
+  if (typeof num === "number"){
+    return (
+      num >= 0 && num % 2 === 0 && num <= 100
+    );
+  }else {
+    return false;
+  }
 }
 
-console.log(validate(17));
+console.log(validate(101));
 
 /*
 Write a function that:
