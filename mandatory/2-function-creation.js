@@ -7,10 +7,10 @@ Tip: use logical operators
 */
 
 function validate(num) {
-  if (isNaN(num)=false && num % 2 === 0 && num <= 100){
-    return true;
-  };
+  return isNaN(num) == false && num >= 0 && num % 2 === 0 && num <= 100;
 }
+
+console.log(validate(17));
 
 /*
 Write a function that:
@@ -20,12 +20,20 @@ Write a function that:
 - numbers greater 100 must be replaced with 100
 */
 
+// Self Note: Or to be more specific and to ensure things like 1.005 round correctly,
+//  use Number.EPSILON :
+//  Math.round((num + Number.EPSILON) * 100) / 100
+// Alternatively: Math.round(num * 100) / 100
+
 function formatPercentage(num) {
-  if (num > 100){
+  num = Math.round((num + Number.EPSILON) * 100) / 100;
+  if (num > 100) {
     num = 100;
   }
-  return `${num.toFixed(2)}%`
+  return `${num}%`;
 }
+
+console.log(formatPercentage(2.54342));
 
 /*
 Write a function that:
@@ -35,11 +43,32 @@ Write a function that:
 - makes all strings all lowercase
 */
 function tidyUpStrings(arrayOfStrings) {
-  arrayOfStrings.trim();
-  arrayOfStrings.replace("///g","");
-  arrayOfStrings.toLowerCase();
+  // var arrayOfStrings = incomingStrings.slice(1);
+
+  for (i in arrayOfStrings) {
+    arrayOfStrings[i] = arrayOfStrings[i]
+      .replace(/\\|\//g, "")
+      .trim()
+      .toLowerCase();
+  }
   return arrayOfStrings;
 }
+
+strArr = ["// Daniel", "   / wI/aM     "];
+console.log(tidyUpStrings(strArr));
+
+console.log(
+  tidyUpStrings([
+    "/Daniel",
+    " /Sanyia",
+    "AnTHonY",
+    "irina",
+    " Gordon",
+    "ashleigh   ",
+    "   Alastair  ",
+    " anne marie  ",
+  ])
+);
 
 /* ======= TESTS - DO NOT MODIFY ===== */
 
@@ -91,7 +120,7 @@ test("tidyUpString function works", () => {
       "ashleigh   ",
       "   Alastair  ",
       " anne marie  ",
-    ])  
+    ])
   ).toEqual([
     "daniel",
     "sanyia",
@@ -101,5 +130,5 @@ test("tidyUpString function works", () => {
     "ashleigh",
     "alastair",
     "anne marie",
-  ]); 
+  ]);
 });

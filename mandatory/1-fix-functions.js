@@ -10,32 +10,32 @@
 
 */
 
-function mood() {
-  let isHappy;
-
-  if (isHappy = true) {
+function mood(isHappy) {
+  if (isHappy) {
     return "I am happy";
   } else {
     return "I am not happy";
   }
 }
 
-function greaterThan10(num) {
-  let isBigEnough;
+console.log(mood(false));
 
-  if (isBigEnough > 10) {
+function greaterThan10(num) {
+  if (num > 10) {
     return "num is greater than 10";
   } else {
     return "num is not big enough";
   }
 }
+
+console.log(greaterThan10(11));
+
 const strings = ["fruit", "banana", "apple", "strawberry", "raspberry"];
 function get3rdIndex(arr) {
-  let index = 2;
-  let element = arr[index];
-
-  return element;
+  return arr[3];
 }
+
+console.log(get3rdIndex(strings));
 
 /* ======= TESTS - DO NOT MODIFY ===== */
 
