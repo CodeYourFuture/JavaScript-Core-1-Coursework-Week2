@@ -29,8 +29,8 @@ const f2 = function (a, b) {
 console.log(x);
 console.log(a);
 console.log(b);
-
-for (let i = 0; i < 5; ++i) {
+//at first glance without running the code I can only spot this one error:
+for (let i = 0; i < 5; ++i) { //shouldn't it be i++ ??
   a = a + 1;
   if (i % 2 === 0) {
     const d = f2(i, x);
