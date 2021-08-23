@@ -6,7 +6,14 @@ Complete the function to check if the variable `num` satisfies the following req
 Tip: use logical operators
 */
 
-function validate(num) {}
+function validate(num) {
+  return (typeof(num) === "number") && (num %2 === 0) && (num <= 100) ? true : false;
+}
+//my own tests
+console.log(`I should come up true - ${validate(100)}`);
+console.log(`I should come up true - ${validate(60)}`);
+console.log(`I should come up false - ${validate(91)}`);
+console.log(`I should come up false - ${validate(3)}`);
 
 /*
 Write a function that:
@@ -16,7 +23,18 @@ Write a function that:
 - numbers greater 100 must be replaced with 100
 */
 
-function formatPercentage(num) {}
+function formatPercentage(num) {
+  // return num <= 100 ? `${num.toFixed(2)}%`
+  //       :num  > 100 ? `100%` : null;
+  if(num >= 100){
+    num = 100;
+  }
+  return `${Math.round(num * 100) / 100}%`;
+}
+console.log(`I should come up 32% - ${formatPercentage(32)}`)
+console.log(`I should come up 40% - ${formatPercentage(40)}`)
+console.log(`I should come up 100% - ${formatPercentage(300)}`)
+console.log(`I should come up 10.1% - ${formatPercentage(10.1334677)}`)
 
 /*
 Write a function that:
@@ -25,7 +43,16 @@ Write a function that:
 - removes any forward slashes (/) in each string
 - makes all strings all lowercase
 */
-function tidyUpStrings(arrayOfStrings) {}
+function tidyUpStrings(arrayOfStrings) {
+  for(let i = 0; i < arrayOfStrings.length; i++){
+    arrayOfStrings[i] = arrayOfStrings[i].trim();
+    arrayOfStrings[i] = arrayOfStrings[i].replace(/\//gi, "");
+    arrayOfStrings[i] = arrayOfStrings[i].toLowerCase();
+  }
+  return arrayOfStrings;
+}
+let arrayNo1 = ["hello", " ", "/", "World"]
+console.log(`I should return ["hello", "World"] - ${tidyUpStrings(arrayNo1)}`)
 
 /* ======= TESTS - DO NOT MODIFY ===== */
 
