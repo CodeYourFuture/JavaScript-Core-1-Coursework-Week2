@@ -15,13 +15,17 @@
 
 // `getAllFrequencies` goes here
 function getAllFrequencies(){
-  return [
-          87, 88, 89, 90, 91, 
-          92, 93, 94, 95, 96, 
-          97, 98, 99, 100, 101, 
-          102, 103, 104, 105, 
-          106, 107, 108,
-        ];
+  //this may be an unnecessary amount of
+  //variables, but it helped me read what I was doing as I went
+  let endNum = 108;
+  let startNum = 87;
+  let allFrequencies = [startNum];
+  let lastNum = allFrequencies[allFrequencies.length - 1];
+
+  while (lastNum < endNum - 1) {
+    lastNum = allFrequencies[allFrequencies.length - 1];
+    allFrequencies.push(lastNum + 1);
+  }
 }
 
 /**
@@ -35,10 +39,11 @@ function getAllFrequencies(){
  */
 // `getStations` goes here
 function getStations(){
+  let allFrequencies = getAllFrequencies();
   let newArray = [];
-  for(let i = 0; i < getAllFrequencies.length - 1; i++){
-    if (isRadioStation(getAllFrequencies[i])){
-      newArray[i] = getAllFrequencies[i];
+  for(let i = 0; i < allFrequencies.length - 1; i++){
+    if (isRadioStation(allFrequencies[i])){
+      newArray.push(allFrequencies[i])
     }
   }
   return newArray;
