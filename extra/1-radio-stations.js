@@ -19,13 +19,12 @@ function getAllFrequencies(){
   //variables, but it helped me read what I was doing as I went
   let endNum = 108;
   let startNum = 87;
-  let allFrequencies = [startNum];
-  let lastNum = allFrequencies[allFrequencies.length - 1];
+  let allFrequencies = [];
 
-  while (lastNum < endNum - 1) {
-    lastNum = allFrequencies[allFrequencies.length - 1];
-    allFrequencies.push(lastNum + 1);
+  for(let i = startNum; i <= endNum; i++){
+    allFrequencies.push(i);
   }
+  return allFrequencies;
 }
 
 /**
