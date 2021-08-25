@@ -23,7 +23,7 @@ const f1 = function (a, b) {
 };
 
 const f2 = function (a, b) {
-  return a + b + x;
+  return a + b + x; //0+2+2
 };
 
 console.log(x);
@@ -32,6 +32,8 @@ console.log(a);
 
 for (let i = 0; i < 5; ++i) {
   a = a + 1;
+  console.log("a, i= ", a, i); 
+
   if (i % 2 === 0) {
     const d = f2(i, x);
     console.log(d);
@@ -41,3 +43,7 @@ for (let i = 0; i < 5; ++i) {
   }
 }
 
+// function add(a,b){
+//   ksjdf
+// }
+//  add (i,x)
