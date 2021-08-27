@@ -18,7 +18,14 @@ Write a function that:
 - numbers greater 100 must be replaced with 100
 */
 
-function formatPercentage(num) {}
+function formatPercentage(num1) {
+  typeof num1 === "number";
+  if (num1 > 100){
+    num1 = 100;
+  }
+  let num2 = num1.toFixed(2);
+  return `${num2}%`;
+}
 
 /*
 Write a function that:
@@ -27,8 +34,20 @@ Write a function that:
 - removes any forward slashes (/) in each string
 - makes all strings all lowercase
 */
-function tidyUpStrings(arrayOfStrings) {}
+ function check(arrayOfStrings) {
+    return arrayOfStrings.every(i => (typeof i === "string"));
+}
+function tidyUpStrings(arrayOfStrings) {
+ if ( Array.isArray(arrayOfStrings) &&
+  check(arrayOfStrings) ){
+   const trimmedArray = arrayOfStrings.map(trim());
+   const removedSlash = trimmedArray.map(replace(/\//g, ""));
+   const lowerCaseArray = removedSlash.toLowerCase();
+   return lowerCaseArray;
+  }
+  }
 
+// test -- --testPathPattern 2-function-creation
 /* ======= TESTS - DO NOT MODIFY ===== */
 
 test("validate function accepts valid even number", () => {

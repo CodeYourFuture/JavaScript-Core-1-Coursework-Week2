@@ -33,6 +33,7 @@ function get3rdIndex(arr) {
   return element;
 }
 
+
 /* ======= TESTS - DO NOT MODIFY ===== */
 
 test("mood function works for true", () => {
