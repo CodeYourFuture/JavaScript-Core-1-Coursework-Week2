@@ -15,6 +15,16 @@
 
 // `getAllFrequencies` goes here
 
+function getAllFrequencies() {
+  let frequency = 87;
+  let freqArry = [];
+  do {
+    freqArry.push(frequency);
+    frequency++;
+  } while (frequency <= 108);
+  return freqArry;
+}
+
 /**
  * Next, let's write a function that gives us only the frequencies that are radio stations.
  * Call this function `getStations`.
@@ -24,7 +34,35 @@
  * - There is a helper function called isRadioStation that takes an integer as an argument and returns a boolean.
  * - Return only the frequencies that are radio stations.
  */
+
+ function isRadioStation(num) {
+  if (num >= 87 && num <= 108) {
+    return "true";
+  } else {
+    ("false");
+  }
+}
+
 // `getStations` goes here
+
+function getStations(number) {
+  let result = isRadioStation(number);
+  if (console.log(result) === "true") {
+    return " it is a radio station";
+  } else {
+    return " it is not a radio station";
+  }
+}
+console.log(getAllFrequencies());
+console.log(getStations(40));
+console.log(getStations(90));
+console.log(getStations(180));
+
+/*if (number >= 87 && number <= 108) {
+    return " is a radio station";
+  } else {
+    return " is not a radio station";
+  }*/
 
 /*
  * ======= TESTS - DO NOT MODIFY =======

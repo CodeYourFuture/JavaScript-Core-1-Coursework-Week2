@@ -17,6 +17,7 @@
 
 let x = 2;
 let a = 6;
+// i added this line//
 
 const f1 = function (a, b) {
   return a + b;
@@ -28,15 +29,16 @@ const f2 = function (a, b) {
 
 console.log(x);
 console.log(a);
-console.log(b);
+
+//console.log(b);  // b is not defined
 
 for (let i = 0; i < 5; ++i) {
   a = a + 1;
   if (i % 2 === 0) {
-    const d = f2(i, x);
+    const d = f2(i, x); //f2 called once
     console.log(d);
   } else {
-    const e = f1(i, a);
+    const e = f1(i, a); //f1 called once, a takes a value of i
     console.log(e);
   }
 }
