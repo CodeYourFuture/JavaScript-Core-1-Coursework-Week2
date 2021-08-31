@@ -19,7 +19,7 @@ Write a function that:
 
 function formatPercentage(num) {
   if (typeof num === "number") {
-    num = Math.round(num * 100) / 100;
+    num = Math.round((num + Number.EPSILON)* 100) / 100;
     if (num > 100) {
       num = 100;
     }
