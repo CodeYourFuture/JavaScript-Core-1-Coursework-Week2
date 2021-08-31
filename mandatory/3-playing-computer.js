@@ -7,12 +7,19 @@
   Answer the following questions:
 
   1. This program throws an error. Why? (If you can't find it, try executing it).
+  ANSWER: b is not defined.
   2. Remove the line that throws the error.
+  ANSWER: Line 33
   3. What is printed to the console?
+  ANSWER: The returned values from calling functions f1 and f2
   4. How many times is "f1" called?
+  ANSWER: 2 times
   5. How many times is "f2" called?
+  ANSWER: 3 times
   6. What value does the "a" parameter take in the first "f1" call?
+  ANSWER: 1
   7. What is the value of the "a" outer variable when "f1" is called for the first time?
+  ANSWER: 7
 */
 
 let x = 2;
@@ -28,7 +35,7 @@ const f2 = function (a, b) {
 
 console.log(x);
 console.log(a);
-console.log(b);
+//console.log(b);
 
 for (let i = 0; i < 5; ++i) {
   a = a + 1;
