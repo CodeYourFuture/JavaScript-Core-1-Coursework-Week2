@@ -6,19 +6,32 @@
 */
 
 function isNegative(number) {
-  return number < 0;
+  if (number < 0) return true;
+  else return false;
 }
 
 function isBetween5and10(number) {
-  return number >= 5 && number <= 10;
+  if (number >= 5 && number <= 10) {
+    return true;
+  } else {
+    return false;
+  }
 }
 
 function isShortName(name) {
-  return name.length <= 6;
+  if (name.length <= 6) {
+    return true;
+  } else {
+    return false;
+  }
 }
 
 function startsWithD(name) {
-  return name[0] === 'd';
+  if (name[0].toLowerCase() === "d") {
+    return true;
+  } else {
+    return false;
+  }
 }
 
 /* 
