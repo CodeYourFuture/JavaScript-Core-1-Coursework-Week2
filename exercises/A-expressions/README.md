@@ -31,7 +31,7 @@ There are some other different types of statements that we will learn in the com
 ## Exercise
 
 You quickly find out the result of an expression by running node in a terminal window.
-
+node
 - Open a terminal window
 - Run the command `node`
 - _You have now opened a node console (also called a REPL)_
