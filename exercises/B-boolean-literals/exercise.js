@@ -6,7 +6,6 @@
 */
 
 var codeYourFutureIsGreat = true;
-
 var mozafarIsCool = false;
 
 var calculationCorrect = true;

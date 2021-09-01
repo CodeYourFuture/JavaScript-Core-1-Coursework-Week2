@@ -6,7 +6,6 @@
   - if 50 or higher then return "passed"
 
 */
-
 function studentPassed(grade) {
   
   if (grade < 50) {

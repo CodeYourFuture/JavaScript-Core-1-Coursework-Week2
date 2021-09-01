@@ -11,7 +11,6 @@ var moreStudentsThanMentors = true; // finish this statement
 
 var roomMaxCapacity = 25;
 var enoughSpaceInRoom = true; // finish this statement
-
 var personA = "Daniel";
 var personB = "Irina";
 

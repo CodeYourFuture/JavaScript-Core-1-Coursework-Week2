@@ -11,6 +11,7 @@ var cssLevel = 4;
 
 // Finish the statement to check whether HTML, CSS knowledge are above 5
 // (hint: use the comparison operator from before)
+
 var htmlLevelAbove5 = htmlLevel > 5;
 var cssLevelAbove5 = cssLevel > 5;
 

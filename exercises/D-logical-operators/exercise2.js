@@ -4,7 +4,6 @@
   This program calls some functions that are either missing or incomplete.
   Update the code so that you get the expected result.
 */
-
 function isNegative() {}
 function isNegative() {}
 

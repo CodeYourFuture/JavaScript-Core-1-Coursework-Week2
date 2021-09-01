@@ -16,7 +16,6 @@ function roleInClass(classRole) {
     return `Hi, I'm ${name}, I'm a student`;
   }
 }
-
 console.log(roleInClass(danielsRole));
 
 /* 

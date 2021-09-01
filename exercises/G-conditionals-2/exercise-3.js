@@ -9,7 +9,6 @@
 */
 
 function calculateGrade(mark) {
-  
   if (mark >=  80) {
     return "A";
    } else if (mark < 80 && mark > 60) {
