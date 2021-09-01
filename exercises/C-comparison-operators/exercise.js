@@ -14,6 +14,7 @@ var enoughSpaceInRoom = true; // finish this statement
 
 var personA = "Daniel";
 var personB = "Irina";
+
 var sameName = false; // finish this statement
 
 /* 

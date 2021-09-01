@@ -7,7 +7,8 @@
 */
 
 var numbers = [1, 2, 3]; // Don't change this array literal declaration
-
+numbers.push(4);
+numbers[0] = 1;// The first value in the array is already 1, so I simply declared it.
 /* 
   DO NOT EDIT BELOW THIS LINE
   --------------------------- */

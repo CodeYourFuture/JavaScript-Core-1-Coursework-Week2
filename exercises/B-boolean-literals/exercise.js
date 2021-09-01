@@ -6,8 +6,11 @@
 */
 
 var codeYourFutureIsGreat = true;
+
 var mozafarIsCool = false;
+
 var calculationCorrect = true;
+
 var moreThan10Students = false;
 
 /* 
