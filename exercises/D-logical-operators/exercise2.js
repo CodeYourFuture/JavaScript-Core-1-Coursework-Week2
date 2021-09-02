@@ -5,7 +5,37 @@
   Update the code so that you get the expected result.
 */
 
-function isNegative() {}
+function isNegative(num) {
+  if (num < 0) {
+    return 1 === 1;
+  } else {
+    return 1 === 2;
+  }
+}
+
+function isBetween5and10(num) {
+  if (num >= 5 && num <= 10) {
+    return 1 === 1;
+  } else {
+    return 1 === 2;
+  }
+}
+
+function isShortName(word) {
+  if (word.length <= 6) {
+    return 1 === 1;
+  } else {
+    return 1 === 2;
+  }
+}
+
+function startsWithD(myName) {
+  if (myName[0] === "D") {
+    return "Daniel starts with D";
+  } else {
+    return "Doesn't start with 'D'";
+  }
+}
 
 /* 
   DO NOT EDIT BELOW THIS LINE

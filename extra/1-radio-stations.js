@@ -15,6 +15,15 @@
 
 // `getAllFrequencies` goes here
 
+function getAllFrequencies() {
+  var frequenciesForRadio = [];
+  if (frequenciesForRadio >= 87 && frequenciesForRadio <= 108) {
+    return frequenciesForRadio;
+  } else {
+    return null;
+  }
+}
+
 /**
  * Next, let's write a function that gives us only the frequencies that are radio stations.
  * Call this function `getStations`.
@@ -25,6 +34,14 @@
  * - Return only the frequencies that are radio stations.
  */
 // `getStations` goes here
+
+function getStations() {
+  if (typeof getAllFrequencies() === "number") {
+    return 1 === 1;
+  } else {
+    return "Is not a radio station";
+  }
+}
 
 /*
  * ======= TESTS - DO NOT MODIFY =======
