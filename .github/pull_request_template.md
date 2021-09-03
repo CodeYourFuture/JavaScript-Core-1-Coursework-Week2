@@ -16,20 +16,22 @@ Please complete the details below this message
 
 # Your Details
 
-- Your Name:
-- Your City:
-- Your Slack Name:
+- Your Name: Timur
+- Your City: WM3
+- Your Slack Name: Timur Abdullaev
 
 # Homework Details
 
-- Module:
-- Week:
+- Module: JS
+- Week: 2
 
 # Notes
 
 - What did you find easy?
+  Exercise B-G
 
 - What did you find hard?
+  Mandatory exercise-2
 
 - What do you still not understand?
 
