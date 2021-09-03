@@ -34,20 +34,21 @@ Write a function that:
 - removes any forward slashes (/) in each string
 - makes all strings all lowercase
 */
- function check(arrayOfStrings) {
-    return arrayOfStrings.every(i => (typeof i === "string"));
+function check(arrayOfStrings){
+  return arrayOfStrings.every(i => (typeof i === "string"));
 }
-function tidyUpStrings(arrayOfStrings) {
- if ( Array.isArray(arrayOfStrings) &&
-  check(arrayOfStrings) ){
-   const trimmedArray = arrayOfStrings.map(trim());
-   const removedSlash = trimmedArray.map(replace(/\//g, ""));
-   const lowerCaseArray = removedSlash.toLowerCase();
-   return lowerCaseArray;
+function tidyUpStrings(arrayOfStrings){
+  if (Array.isArray(arrayOfStrings) && check(arrayOfStrings)){
+    for (j = 0; j < arrayOfStrings.length; j++){
+      arrayOfStrings[j] = arrayOfStrings[j].trim();
+      arrayOfStrings[j] = arrayOfStrings[j].replace(/\//g, "");
+      arrayOfStrings[j] = arrayOfStrings[j].toLowerCase();
+    }
   }
-  }
+  return arrayOfStrings;
+}
 
-// test -- --testPathPattern 2-function-creation
+// npm test -- --testPathPattern 2-function-creation
 /* ======= TESTS - DO NOT MODIFY ===== */
 
 test("validate function accepts valid even number", () => {
