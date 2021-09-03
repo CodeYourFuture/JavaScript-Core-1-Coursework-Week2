@@ -24,6 +24,7 @@ function formatPercentage(num1) {
     num1 = 100;
   }
   let num2 = num1.toFixed(2);
+  num2 = parseFloat(num2);
   return `${num2}%`;
 }
 
