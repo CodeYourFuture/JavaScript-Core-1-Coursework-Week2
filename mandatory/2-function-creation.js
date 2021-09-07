@@ -5,8 +5,13 @@ Complete the function to check if the variable `num` satisfies the following req
 - is less than or equal to 100
 Tip: use logical operators
 */
+let num = 60;
 
-function validate(num) {}
+function validate(num) {
+  if (num % 2 == 0 || num <= 100)
+  return true
+  else return false
+}
 
 /*
 Write a function that:

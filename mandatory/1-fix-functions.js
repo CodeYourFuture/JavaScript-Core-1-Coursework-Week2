@@ -15,10 +15,10 @@ function mood() {
 
   if (isHappy) {
     return "I am happy";
-  } else {
+  } else 
     return "I am not happy";
   }
-}
+
 
 function greaterThan10(num) {
   let isBigEnough;
