@@ -28,7 +28,7 @@ const f2 = function (a, b) {
 
 console.log(x);
 console.log(a);
-console.log(b);
+//console.log(b);
 
 for (let i = 0; i < 5; ++i) {
   a = a + 1;
@@ -40,3 +40,22 @@ for (let i = 0; i < 5; ++i) {
     console.log(e);
   }
 }
+
+
+/*
+
+  1. We are trying log the value of a variable (b) that doesn't exist within it's scope.
+  2. I commented out line 31.
+  3. the console should look as follows:
+  2
+  6
+  4
+  9
+  6
+  13
+  8
+  4. f1 is called twice.
+  5. f2 is called 3 times.
+  6. the a parameter the first time f1 is called will have the value 1.
+  7. the a variable when f1 is called the first time will have the value 8.
+*/
