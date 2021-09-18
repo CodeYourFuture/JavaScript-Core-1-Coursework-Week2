@@ -11,6 +11,7 @@ function first(arr) {
 function last(arr) {
   return numbers[numbers.length-1];
 }
+
 function last(arr) {
   return names[3]; // complete this statement
 }

@@ -8,9 +8,7 @@ Tip: use logical operators
 let num = 60;
 
 function validate(num) {
-  if (num % 2 == 0 || num <= 100)
-  return true
-  else return false
+  return num % 2 === 0 && num <= 100;
 }
 
 /*
@@ -21,7 +19,9 @@ Write a function that:
 - numbers greater 100 must be replaced with 100
 */
 
-function formatPercentage(num) {}
+function formatPercentage(num) {
+
+}
 
 /*
 Write a function that:
