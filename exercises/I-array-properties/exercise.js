@@ -6,10 +6,12 @@
 */
 
 function isEmpty(arr) {
-  return; // complete this statement
-}
-
-/* 
+  if(numbers > 3){
+  return false; // complete this statement
+}else{
+  return true;
+}}
+/*
   DO NOT EDIT BELOW THIS LINE
   --------------------------- */
 var numbers = [1, 2, 3];

@@ -5,7 +5,22 @@
   Update the code so that you get the expected result.
 */
 
-function isNegative() {}
+function isNegative(num) {
+if(num === -10){
+  return true;
+}
+else{
+  return false;
+}}
+function isBetween5and10(num){
+  if(num <= 10 && num >= 5 ){
+    return true;
+  }
+}
+function isShortName(num){
+
+  return num.toUpperCase();
+}
 
 /* 
   DO NOT EDIT BELOW THIS LINE

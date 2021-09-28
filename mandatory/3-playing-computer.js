@@ -18,25 +18,23 @@
 let x = 2;
 let a = 6;
 
-const f1 = function (a, b) {
-  return a + b;
-};
+ function f1(a, x) {
+  return a + x;
+}
+ function f2(a, x) {
+  return a + x;
+}
 
-const f2 = function (a, b) {
-  return a + b + x;
-};
-
-console.log(x);
-console.log(a);
-console.log(b);
+console.log(f1(x, a));
+console.log(f2(x, a));
+//console.log(b);
 
 for (let i = 0; i < 5; ++i) {
   a = a + 1;
   if (i % 2 === 0) {
     const d = f2(i, x);
     console.log(d);
-  } else {
+  }else{
     const e = f1(i, a);
     console.log(e);
-  }
-}
+  }}
