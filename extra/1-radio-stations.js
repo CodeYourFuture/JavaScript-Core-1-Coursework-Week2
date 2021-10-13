@@ -17,10 +17,12 @@
 function getAllFrequencies() {
   const frequencies = [];
   for (let i = 87; i <= 108; i++) {
-    frequencies.push[i];
+    frequencies.push(i);
   }
   return frequencies;
 }
+
+console.log(getAllFrequencies());
 
 /**
  * Next, let's write a function that gives us only the frequencies that are radio stations.
