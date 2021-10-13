@@ -8,7 +8,10 @@
   - Otherwise the grade is "F"
 */
 
-function calculateGrade(mark) {}
+function calculateGrade(mark) {
+  // I would like this to be on multiple lines, separate each condition with a new line, but prettier is not playing nice
+  return mark >= 80 ? "A" : mark >= 60 ? "B" : mark >= 50 ? "C" : "F";
+}
 
 /* 
 DO NOT EDIT BELOW THIS LINE
