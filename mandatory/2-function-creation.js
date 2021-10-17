@@ -7,11 +7,13 @@ Tip: use logical operators
 */
 
 function validate(num) {
-  if (typeof num === "number" && num % 2 === 0 && num <= 100)
-  return true;
+  if (typeof num === "number" && num % 2 === 0 && num <= 100) {
+    return true;
+  }
+  return false;
 }
-return false;
-}
+
+
 /*
 Write a function that:
 - takes a number as input
@@ -46,7 +48,9 @@ Write a function that:
       let lowerCased = trimmedString.toLowerCase();
       arrayOfStrings[i] = lowerCased.split("/").join("");
     }
-    return 
+  
+  return arrayOfStrings;
+}
 
 /* ======= TESTS - DO NOT MODIFY ===== */
 
