@@ -20,7 +20,18 @@ Write a function that:
 - numbers greater 100 must be replaced with 100
 */
 
-function formatPercentage(num) {}
+function formatPercentage(num) {
+  const percentages = [];
+
+  for (let i = 0; i < arr.length; i++) {
+    let num = arr[i];
+    if (num > 100) num = 100;
+    const roundedNum = Math.round(num * 100) / 100;
+    percentages.push(`${roundedNum}%`);
+  }
+  return percentages;
+}
+
 
 /*
 Write a function that:
@@ -29,7 +40,13 @@ Write a function that:
 - removes any forward slashes (/) in each string
 - makes all strings all lowercase
 */
-function tidyUpStrings(arrayOfStrings) {}
+  function tidyUpStrings(arrayOfStrings) {
+    for (let i = 0; i < arrayOfStrings.length; i++) {
+      let trimmedString = arrayOfStrings[i].trim();
+      let lowerCased = trimmedString.toLowerCase();
+      arrayOfStrings[i] = lowerCased.split("/").join("");
+    }
+    return 
 
 /* ======= TESTS - DO NOT MODIFY ===== */
 
