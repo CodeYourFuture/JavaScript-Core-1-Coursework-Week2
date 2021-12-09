@@ -8,7 +8,13 @@
 
 var name = "Daniel";
 var danielsRole = "mentor";
-
+function cyfClass() {
+  if (danielsRole === "mentor") {
+    return "Hi, I'm Daniel, I'm a mentor.";
+  }
+  return "Hi, I'm Daniel, I'm a student";
+}
+console.log(cyfClass());
 /* 
 EXPECTED RESULT
 ---------------
