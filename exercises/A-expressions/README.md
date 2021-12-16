@@ -20,8 +20,8 @@ We can take the value produced by an expression and assign it to a variable. Tha
 A statement is some code that performs an action. Here are some examples:
 
 ```js
-var sum = 1 + 1; // action: assigns result of `1 + 1` to variable `sum`
-var greeting = "hello"; // action: assigns result of the expression "hello" to variable `greeting`
+let sum = 1 + 1; // action: assigns result of `1 + 1` to variable `sum`
+let greeting = "hello"; // action: assigns result of the expression "hello" to variable `greeting`
 console.log(2 * 4); // action: logs the result of `2 * 4` to the console
 sayGreeting(greeting); // action: calls the function `sayGreeting` with the parameter `greeting`
 ```
@@ -46,7 +46,7 @@ $ node
 3
 > "hello"
 'hello'
-> var greeting = "hello"
+> let greeting = "hello"
 undefined
 > greeting
 'hello'
