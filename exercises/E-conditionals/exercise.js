@@ -9,6 +9,7 @@
 let name = "Daniel";
 let danielsRole = "mentor";
 
+console.log(`Hi, I'm ${name}, I'm a ${danielsRole === "mentor" ? "mentor" : "student"}`)
 /* 
 EXPECTED RESULT
 ---------------
