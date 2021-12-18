@@ -7,8 +7,10 @@
 */
 
 let name = "Daniel";
-let danielsRole = "mentor";
-
+let danielsRole = "mentor" ;
+if (danielsRole === "mentor" || danielsRole === "student" ) {
+  console.log(`Hi, I'm ${name}, I'm a ${danielsRole}.`);
+}
 /* 
 EXPECTED RESULT
 ---------------

@@ -8,7 +8,15 @@
   - Otherwise the grade is "F"
 */
 
-function calculateGrade(mark) {}
+function calculateGrade(mark) {
+  return mark <= 60 && mark > 50
+    ? "C"
+    : mark >= 80
+    ? "A"
+    : mark < 80 && mark > 60
+    ? "B"
+    : "F";
+}
 
 /* 
 DO NOT EDIT BELOW THIS LINE
