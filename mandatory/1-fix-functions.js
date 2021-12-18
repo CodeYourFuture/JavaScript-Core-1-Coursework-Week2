@@ -10,9 +10,7 @@
 
 */
 
-function mood() {
-  let isHappy = true;
-
+function mood(isHappy) {
   if (isHappy) {
     return "I am happy";
   } else {

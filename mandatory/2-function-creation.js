@@ -24,9 +24,10 @@ Write a function that:
 
 function formatPercentage(num) {
   if (num > 100) {
-    num = 100;
+    return `100%`;
+  } else {
+    return `${num.toPrecision(3)}%`;
   }
-  return `${num.toFixed(2)}%`;
 }
 
 /*
@@ -36,7 +37,9 @@ Write a function that:
 - removes any forward slashes (/) in each string
 - makes all strings all lowercase
 */
-function tidyUpStrings(arrayOfStrings) {}
+function tidyUpStrings(arrayOfStrings) {
+  arrayOfStrings.forEach((element) => console.log(element).toLowerCase());
+}
 
 /* ======= TESTS - DO NOT MODIFY ===== */
 
