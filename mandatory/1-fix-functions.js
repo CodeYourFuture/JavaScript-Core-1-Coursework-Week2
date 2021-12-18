@@ -10,20 +10,29 @@
 
 */
 
-function mood() {
-  let isHappy = true;
-
-  if (isHappy) {
+function mood(isHappy) {
+  
+  if (isHappy === true) {
     return "I am happy";
   } else {
     return "I am not happy";
   }
 }
 
-function greaterThan10(num) {
-  let isBigEnough;
+// function testNum(a) {
+//   let result;
+//   if (a > 0) {
+//     result = 'positive';
+//   } else {
+//     result = 'NOT positive';
+//   }
+//   return result;
+// }
 
-  if (isBigEnough) {
+function greaterThan10(num) {
+  let isBigEnough = num;
+
+  if (isBigEnough > 10) {
     return "num is greater than 10";
   } else {
     return "num is not big enough";
