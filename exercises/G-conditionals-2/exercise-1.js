@@ -6,18 +6,21 @@
   - if number is more or equal to zero, return the word "positive"
 */
 
-function negativeOrPositive(number) {}
+function negativeOrPositive(number) {
+  if (Math.sign(number) == -1) return 'negative'
+  else return 'positive'
+}
 
 /* 
   DO NOT EDIT BELOW THIS LINE
   --------------------------- */
-let number1 = 5;
-let number2 = -1;
-let number3 = 0;
+let number1 = 5
+let number2 = -1
+let number3 = 0
 
-console.log(number1 + " is " + negativeOrPositive(number1));
-console.log(number2 + " is " + negativeOrPositive(number2));
-console.log(number3 + " is " + negativeOrPositive(number3));
+console.log(number1 + ' is ' + negativeOrPositive(number1))
+console.log(number2 + ' is ' + negativeOrPositive(number2))
+console.log(number3 + ' is ' + negativeOrPositive(number3))
 
 /* 
   EXPECTED RESULT

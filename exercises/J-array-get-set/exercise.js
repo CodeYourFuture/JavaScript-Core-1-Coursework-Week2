@@ -5,22 +5,22 @@
 */
 
 function first(arr) {
-  return; // complete this statement
+  return arr[0] // complete this statement
 }
 
 function last(arr) {
-  return; // complete this statement
+  return arr[arr.length - 1] // complete this statement
 }
 
 /* 
   DO NOT EDIT BELOW THIS LINE
   --------------------------- */
-let numbers = [1, 2, 3];
-let names = ["Irina", "Ashleigh", "Mozafar", "Joe"];
+let numbers = [1, 2, 3]
+let names = ['Irina', 'Ashleigh', 'Mozafar', 'Joe']
 
-console.log(first(numbers));
-console.log(last(numbers));
-console.log(last(names));
+console.log(first(numbers))
+console.log(last(numbers))
+console.log(last(names))
 
 /* 
   EXPECTED RESULT

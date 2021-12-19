@@ -16,14 +16,14 @@ Please complete the details below this message
 
 # Your Details
 
-- Your Name:
-- Your City:
-- Your Slack Name:
+- Your Name: Davood Khoshnood
+- Your City: London
+- Your Slack Name: davood
 
 # Homework Details
 
-- Module:
-- Week:
+- Module: Javascript
+- Week: 2
 
 # Notes
 
