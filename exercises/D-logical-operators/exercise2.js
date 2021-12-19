@@ -5,8 +5,16 @@
   Update the code so that you get the expected result.
 */
 
-function isNegative() {}
-
+function isNegative(inp) {
+  if (inp < 0) {
+    return true;
+  } else if (inp > 0) {
+    return false;
+  }
+}
+const isBetween5and10 = (inp) => 5 && inp <= 10;
+const isShortName = (inp) => inp.length < 10;
+const startsWithD = (inp) => inp[0] === "D";
 /* 
   DO NOT EDIT BELOW THIS LINE
   --------------------------- */

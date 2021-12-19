@@ -13,8 +13,9 @@
  * - Should return this array to use in other functions
  */
 
-// `getAllFrequencies` goes here
-
+const getAllFrequencies = () =>
+  Array.from({ length: 108 - 87 + 1 }, (_, i) => 87 + i);
+//console.log(getAllFrequencies());
 /**
  * Next, let's write a function that gives us only the frequencies that are radio stations.
  * Call this function `getStations`.
@@ -24,7 +25,7 @@
  * - There is a helper function called isRadioStation that takes an integer as an argument and returns a boolean.
  * - Return only the frequencies that are radio stations.
  */
-// `getStations` goes here
+let getStations = () => getAllFrequencies().filter((x) => isRadioStation(x));
 
 /*
  * ======= TESTS - DO NOT MODIFY =======
