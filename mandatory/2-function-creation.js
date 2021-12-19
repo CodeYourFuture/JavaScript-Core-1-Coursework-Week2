@@ -6,7 +6,9 @@ Complete the function to check if the variable `num` satisfies the following req
 Tip: use logical operators
 */
 
-function validate(num) {}
+function validate(num) {
+    return typeof num === "number" && num % 2 == 0 && num <= 100;
+}
 
 /*
 Write a function that:
@@ -16,7 +18,19 @@ Write a function that:
 - numbers greater 100 must be replaced with 100
 */
 
-function formatPercentage(num) {}
+function formatPercentage(num) {
+      if (num >= 100)
+          return "100%";
+      let str = num.toFixed(2);
+
+      if (str.slice(-2) === "00") 
+              str = str.slice(0,-3) // integer, so ignore '.00'
+      else
+      if (str.slice(-1) === "0")  
+              str = str.slice(0,-1) // e.g. 4.10, so ignore last '0'
+
+      return str + '%'
+}
 
 /*
 Write a function that:
@@ -25,7 +39,35 @@ Write a function that:
 - removes any forward slashes (/) in each string
 - makes all strings all lowercase
 */
-function tidyUpStrings(arrayOfStrings) {}
+function tidyUpStrings(arrayOfStrings) {
+  let pos;
+  for (let i = 0; i < arrayOfStrings.length; i++) {
+        let aString = arrayOfStrings[i].trim(); // removes any spaces in the beginning or end of each string
+        while ((pos = aString.indexOf("/")) >= 0) {
+                if (pos === 0) // Keep all but the first character
+                        aString = aString.substr(1) 
+                else
+                if (pos === aString.length-1) // Keep all but the last character
+                        aString = aString.substr(0,aString.length-1)
+                else
+                // Everything but that character
+                        aString = aString.substr(0,aString.length-1)+aString.substr(aString.length+1);
+        }
+
+        arrayOfStrings[i] = aString.toLowerCase(); // makes all strings all lowercase
+  }
+  return arrayOfStrings;  
+}
+
+/* TEST DATA
+    console.log(tidyUpStrings(["///", "/", "!a/", "/b", "//aBc//", "Zyh"])); 
+    s="hello"
+    console.log(s.slice(-2),s.slice(-1),s.slice(0,-2),s.slice(1,-1));
+
+     console.log
+    lo o hel ell
+*/
+
 
 /* ======= TESTS - DO NOT MODIFY ===== */
 

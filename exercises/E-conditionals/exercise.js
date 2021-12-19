@@ -8,6 +8,12 @@
 
 let name = "Daniel";
 let danielsRole = "mentor";
+let message = "Hi, I'm Daniel, I'm a "
+if (danielsRole === "mentor")
+    message+= "mentor."
+else
+    message+= "student.";
+console.log(message);
 
 /* 
 EXPECTED RESULT
