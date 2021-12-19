@@ -41,7 +41,7 @@ function getStations() {
   }
   return availableStations
 }
-getStations()
+
 /*
  * ======= TESTS - DO NOT MODIFY =======
  * Note: You are not expected to understand everything below this comment!
