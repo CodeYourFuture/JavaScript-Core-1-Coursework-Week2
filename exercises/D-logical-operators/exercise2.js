@@ -5,7 +5,21 @@
   Update the code so that you get the expected result.
 */
 
-function isNegative() {}
+const isNegative = (number) => {
+  return number < 0;
+}
+
+const isBetween5and10 = (number) => {
+  return number >= 5 && number <= 10;
+}
+
+const isShortName = (nameOfPerson) => {
+  return nameOfPerson.length < 7;
+}
+
+const startsWithD = (nameOfPerson) => {
+  return nameOfPerson.charAt(0) === 'D';
+}
 
 /* 
   DO NOT EDIT BELOW THIS LINE
