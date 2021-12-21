@@ -6,7 +6,13 @@
   - if number is more or equal to zero, return the word "positive"
 */
 
-function negativeOrPositive(number) {}
+const negativeOrPositive = (number) => {
+  if (number < 0) {
+    return `negative`;
+  } else {
+    return `positive`;
+  }
+};
 
 /* 
   DO NOT EDIT BELOW THIS LINE
