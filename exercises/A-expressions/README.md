@@ -60,7 +60,25 @@ $
 > Notice how when we execute an expression the value it produces is printed below it. When we execute a statement, we see `undefined` printed below. This is because statements don't produce values like expressions, they _do something_.
 
 - Write some more expressions in the node console
+
+> 5 + 7
+12
+> `Hello I'm Selchuk`
+"Hell I'm Selchuk"
+> `Hello my name is Selchuk` + " I love rock music".concat(" I hate pop.")
+'Hello my name is Selchuk I love rock music I hate pop.'
+
 - Assign some expressions to variables
+
+> let myFavRockBand = "Led Zeppelin";
+undefined
+> let myFavArtist = "Cem Karaca";
+undefined
+
 - Check the value of the variables
+> myFavArtist
+'Cem Karaca'
+> myFavRockBand
+'Led Zeppelin'
 
 Further reading on using the node console: https://hackernoon.com/know-node-repl-better-dbd15bca0af6
