@@ -58,63 +58,63 @@ console.log(
 
 /* ======= TESTS - DO NOT MODIFY ===== */
 
-// test("validate function accepts valid even number", () => {
-//   expect(validate(10)).toEqual(true);
-// });
+test("validate function accepts valid even number", () => {
+  expect(validate(10)).toEqual(true);
+});
 
-// test("validate function accepts other valid even number", () => {
-//   expect(validate(18)).toEqual(true);
-// });
+test("validate function accepts other valid even number", () => {
+  expect(validate(18)).toEqual(true);
+});
 
-// test("validate function accepts exactly 100", () => {
-//   expect(validate(100)).toEqual(true);
-// });
+test("validate function accepts exactly 100", () => {
+  expect(validate(100)).toEqual(true);
+});
 
-// test("validate function rejects odd number", () => {
-//   expect(validate(17)).toEqual(false);
-// });
+test("validate function rejects odd number", () => {
+  expect(validate(17)).toEqual(false);
+});
 
-// test("validate function rejects string", () => {
-//   expect(validate("Ten")).toEqual(false);
-// });
+test("validate function rejects string", () => {
+  expect(validate("Ten")).toEqual(false);
+});
 
-// test("validate function rejects stringified number", () => {
-//   expect(validate("10")).toEqual(false);
-// });
+test("validate function rejects stringified number", () => {
+  expect(validate("10")).toEqual(false);
+});
 
-// test("validate function rejects too large number", () => {
-//   expect(validate(108)).toEqual(false);
-// });
+test("validate function rejects too large number", () => {
+  expect(validate(108)).toEqual(false);
+});
 
-// test.each([
-//   [23, "23%"],
-//   [18.103, "18.1%"],
-//   [187.2, "100%"],
-//   [0.372, "0.37%"],
-// ])("formatPercentage function works for %s", (input, expected) => {
-//   expect(formatPercentage(input)).toEqual(expected);
-// });
+test.each([
+  [23, "23%"],
+  [18.103, "18.1%"],
+  [187.2, "100%"],
+  [0.372, "0.37%"],
+])("formatPercentage function works for %s", (input, expected) => {
+  expect(formatPercentage(input)).toEqual(expected);
+});
 
-// test("tidyUpString function works", () => {
-//   expect(
-//     tidyUpStrings([
-//       "/Daniel",
-//       " /Sanyia",
-//       "AnTHonY",
-//       "irina",
-//       " Gordon",
-//       "ashleigh   ",
-//       "   Alastair  ",
-//       " anne marie  ",
-//     ])
-//   ).toEqual([
-//     "daniel",
-//     "sanyia",
-//     "anthony",
-//     "irina",
-//     "gordon",
-//     "ashleigh",
-//     "alastair",
-//     "anne marie",
-//   ]);
-// });
+test("tidyUpString function works", () => {
+  expect(
+    tidyUpStrings([
+      "/Daniel",
+      " /Sanyia",
+      "AnTHonY",
+      "irina",
+      " Gordon",
+      "ashleigh   ",
+      "   Alastair  ",
+      " anne marie  ",
+    ])
+  ).toEqual([
+    "daniel",
+    "sanyia",
+    "anthony",
+    "irina",
+    "gordon",
+    "ashleigh",
+    "alastair",
+    "anne marie",
+  ]);
+});
