@@ -8,7 +8,11 @@
   Hint: Google how to check if a string contains a word
 */
 
-function containsCode(sentence) {}
+const containsCode = (sentence) => {
+  let wordIs = "code";
+  let isWordIncluded = sentence.includes(wordIs);
+  return isWordIncluded;
+}
 
 /* 
 DO NOT EDIT BELOW THIS LINE
