@@ -7,14 +7,14 @@
 
 let studentCount = 16;
 let mentorCount = 9;
-let moreStudentsThanMentors; // finish this statement
+let moreStudentsThanMentors = true; // finish this statement
 
 let roomMaxCapacity = 25;
-let enoughSpaceInRoom; // finish this statement
+let enoughSpaceInRoom = true; // finish this statement
 
 let personA = "Daniel";
 let personB = "Irina";
-let sameName; // finish this statement
+let sameName = false; // finish this statement
 
 /* 
   DO NOT EDIT BELOW THIS LINE
@@ -33,3 +33,5 @@ console.log("Do person A and person B have the the same name?", sameName);
   Is there enough space in the room for all students and mentors? true
   Do person A and person B have the the same name? false
 */
+
+//Open a node console, and write some expressions that use comparison operators
