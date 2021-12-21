@@ -8,7 +8,17 @@
   - Otherwise the grade is "F"
 */
 
-function calculateGrade(mark) {}
+const calculateGrade = (mark) => {
+  if (mark >= 80) {
+    return `A`;
+  } else if (mark > 60 && mark < 80) {
+    return `B`;
+  } else if (mark <= 60 && mark >= 50) {
+    return `C`;
+  } else {
+    return `F`;
+  }
+};
 
 /* 
 DO NOT EDIT BELOW THIS LINE
