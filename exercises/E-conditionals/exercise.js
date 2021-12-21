@@ -9,6 +9,16 @@
 let name = "Daniel";
 let danielsRole = "mentor";
 
+function danielsRoleInCYF(danielsRole) {
+  if (danielsRole === "mentor") {
+    console.log("Hi, I'm Daniel, I'm a mentor.");
+  } else {
+    console.log("Hi, I'm Daniel, I'm a student.");
+  }
+}
+
+console.log(danielsRoleInCYF(danielsRole));
+
 /* 
 EXPECTED RESULT
 ---------------

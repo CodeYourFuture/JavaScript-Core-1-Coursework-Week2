@@ -5,7 +5,13 @@
   Update the code so that you get the expected result.
 */
 
-function isNegative() {}
+const isNegative = (num) => (num < 0 ? true : false);
+
+const isBetween5and10 = (num) => num >= 5 && num <= 10;
+
+const isShortName = (str) => str.length < 7;
+
+const startsWithD = (str) => str[0] === "D";
 
 /* 
   DO NOT EDIT BELOW THIS LINE
