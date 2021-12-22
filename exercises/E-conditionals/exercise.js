@@ -6,8 +6,18 @@
   If Daniel is a student, print out "Hi, I'm Daniel, I'm a student."
 */
 
-let name = "Daniel";
-let danielsRole = "mentor";
+function Role(name, danielsRole) {
+ 
+  if (name == "Daniel" && danielsRole == "mentor"){
+    return "Hi, I'm Daniel, I'm a mentor.";
+  }if (danielsRole == "student"){
+    return "Hi, I'm Daniel, I'm a student.";
+  }
+}
+
+console.log(Role("Daniel", "mentor"));
+console.log(Role("Daniel", "student"));
+
 
 /* 
 EXPECTED RESULT
