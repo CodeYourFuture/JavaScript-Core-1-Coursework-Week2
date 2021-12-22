@@ -6,10 +6,15 @@
 */
 
 function isEmpty(arr) {
-  return; // complete this statement
-}
-
-/* 
+  // return arr.length === 0;//(This works) // complete this statement
+  if (arr.length > 0) {
+    return false;
+  }else{
+    return true;
+      }
+    }
+  
+   /* 
   DO NOT EDIT BELOW THIS LINE
   --------------------------- */
 let numbers = [1, 2, 3];
