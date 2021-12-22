@@ -19,16 +19,6 @@ function mood(isHappy) {
   }
 }
 
-// function testNum(a) {
-//   let result;
-//   if (a > 0) {
-//     result = 'positive';
-//   } else {
-//     result = 'NOT positive';
-//   }
-//   return result;
-// }
-
 function greaterThan10(num) {
   let isBigEnough = num;
 
@@ -40,10 +30,7 @@ function greaterThan10(num) {
 }
 
 function get3rdIndex(arr) {
-  let index = 3;
-  let element;
-
-  return element;
+  return arr[3];
 }
 
 /* ======= TESTS - DO NOT MODIFY ===== */
