@@ -30,8 +30,29 @@
  * ======= TESTS - DO NOT MODIFY =======
  * Note: You are not expected to understand everything below this comment!
  */
+ function getAllFrequencies(){
+   let frequencyA = [];
+  for (let i = 87; i < 109; i++) {
+    frequencyA.push(i);
+  }
+  return frequencyA;
+}
 
-function getAvailableStations() {
+
+function getStations(){
+  let radioStation = [];
+  let  allFrequencies = getAllFrequencies();
+ for (let i = 0; i < allFrequencies.length - 1; i++) {
+    if (isRadioStation(allFrequencies[i])) {
+    radioStation.push(allFrequencies[i]);
+    }
+  }
+    return radioStation;
+}
+ 
+
+ function getAvailableStations() {
+
   // Using `stations` as a property as defining it as a global variable wouldn't
   // always make it initialized before the function is called
   if (!getAvailableStations.stations) {
