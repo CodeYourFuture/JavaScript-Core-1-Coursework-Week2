@@ -17,8 +17,8 @@ function isEmpty(arr) { // complete this statement
 /* 
   DO NOT EDIT BELOW THIS LINE
   --------------------------- */
-var numbers = [1, 2, 3];
-var names = [];
+let numbers = [1, 2, 3];
+let names = [];
 
 console.log(isEmpty(numbers));
 console.log(isEmpty(names));

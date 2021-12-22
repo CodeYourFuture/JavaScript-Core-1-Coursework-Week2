@@ -7,6 +7,7 @@
 
 let studentCount = 16;
 let mentorCount = 9;
+Mandeep-JavaScript-Core-1-Coursework-Week2
 let moreStudentsThanMentors = studentCount > mentorCount; // finish this statement
 
 let roomMaxCapacity = 25;
@@ -15,6 +16,16 @@ let enoughSpaceInRoom = roomMaxCapacity >= studentCount + mentorCount ; // finis
 let personA = "Daniel";
 let personB = "Irina";
 let sameName = personA === personB; // finish this statement
+=======
+let moreStudentsThanMentors; // finish this statement
+
+let roomMaxCapacity = 25;
+let enoughSpaceInRoom; // finish this statement
+
+let personA = "Daniel";
+let personB = "Irina";
+let sameName; // finish this statement
+main
 
 /* 
   DO NOT EDIT BELOW THIS LINE

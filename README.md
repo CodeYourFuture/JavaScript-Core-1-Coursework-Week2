@@ -12,6 +12,12 @@ https://github.com/CodeYourFuture/JavaScript-Core-1-Coursework-Week2-Solution
 
 This is a **private** repository. Please request access from your Teachers, Buddy or City Coordinator after the start of your next lesson.
 
+## Testing your work
+
+- Each of the *.js files in the `exercises` folder can be run from the terminal using the `node` command with the path to the file. For example, `node exercises/B-boolean-literals/exercise.js` can be run from the root of the project.
+- To run the tests in the `mandatory` folder, run `npm run test` from the root of the project (after having run `npm install` once before).
+- To run the tests in the `extra` folder, run `npm run extra-tests` from the root of the project (after having run `npm install` once before).
+
 ## Instructions for submission
 
 For your homework, we'll be using [**test driven development**](https://medium.com/@adityaalifnugraha/test-driven-development-tdd-in-a-nutshell-b9e05dfe8adb) to check your answers. Test driven development (or TDD) is the practice of writing tests for your code first, and then write your code to pass those tests. This is a very useful way of writing good quality code and is used in a lot of industries. You don't have to worry about knowing how this works, but if you're curious, engage with a volunteer to find out more! :)

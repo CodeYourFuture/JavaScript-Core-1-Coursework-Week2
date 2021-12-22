@@ -6,9 +6,12 @@
 */
 
 let codeYourFutureIsGreat = true;
+Mandeep-JavaScript-Core-1-Coursework-Week2
 let mozafarIsCool = false;
 let calculationCorrect = true;
 let moreThan10Students = false;
+
+main
 
 /* 
   DO NOT EDIT BELOW THIS LINE

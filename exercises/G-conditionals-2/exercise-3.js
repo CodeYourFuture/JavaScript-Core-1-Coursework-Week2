@@ -24,10 +24,10 @@ function calculateGrade(mark) {
 /* 
 DO NOT EDIT BELOW THIS LINE
 --------------------------- */
-var grade1 = 49;
-var grade2 = 90;
-var grade3 = 70;
-var grade4 = 55;
+let grade1 = 49;
+let grade2 = 90;
+let grade3 = 70;
+let grade4 = 55;
 
 console.log("'" + grade1 + "': " + calculateGrade(grade1));
 console.log("'" + grade2 + "': " + calculateGrade(grade2));

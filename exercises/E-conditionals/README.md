@@ -10,7 +10,7 @@ The most common type of conditional is the **if statement**.
 An if statment runs some code if a condition is met. If the condition is not met, then the code will skipped.
 
 ```js
-var isHappy = true;
+let isHappy = true;
 
 if (isHappy) {
   console.log("I am happy");
@@ -51,7 +51,7 @@ An if statement runs code when a condition is met. What if the condition is not 
 An **if...else statement** also runs code when the condition is _not_ met.
 
 ```js
-var isHappy = true;
+let isHappy = true;
 
 if (isHappy) {
   console.log("I am happy 😄");
