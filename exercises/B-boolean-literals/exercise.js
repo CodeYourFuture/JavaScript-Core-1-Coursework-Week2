@@ -5,8 +5,7 @@
   Add the required variables with the correct boolean values assigned.
 */
 
-let codeYourFutureIsGreat = true;
-
+let codeYourFutureIsGreat = true, mozafarIsCool = false, calculationCorrect = true, moreThan10Students = false;
 /* 
   DO NOT EDIT BELOW THIS LINE
   --------------------------- */

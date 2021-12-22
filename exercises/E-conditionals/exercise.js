@@ -9,6 +9,17 @@
 let name = "Daniel";
 let danielsRole = "mentor";
 
+if (danielsRole === "mentor") {
+  console.log(`Hi, I'm Daniel, I'm a mentor.`);
+} else if (danielsRole === `student`) {
+  console.log(`Hi, I'm Daniel, I'm a student.`);
+}
+
+// let str1 = 'string';
+// let str2 = "string";
+
+// let str3 = `string ${str1}`;
+
 /* 
 EXPECTED RESULT
 ---------------
