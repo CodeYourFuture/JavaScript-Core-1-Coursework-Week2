@@ -37,8 +37,16 @@ Write a function that:
 */
 function tidyUpStrings(arrayOfStrings) {
   typeof arrayOfStrings === "array";
-  return arrayOfStrings.trim().toLowerCase;
-}
+  
+
+
+    let myArray = [];
+    for (var i = 0; i < arrayOfStrings.length; i++) {
+        let arr = arrayOfStrings[i].trim().toLowerCase().replace("/", "");
+        myArray.push(arr);
+    }
+    return myArray;
+   } //(This works)
 
 /* ======= TESTS - DO NOT MODIFY ===== */
 
