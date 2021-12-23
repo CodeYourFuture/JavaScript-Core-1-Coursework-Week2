@@ -15,10 +15,8 @@
 
 // `getAllFrequencies` goes here
 const getAllFrequencies = () => {
-  let frequencyList = [
-    87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104,
-    105, 106, 107, 108,
-  ];
+  let frequencyList = [...Array(108 - 87 + 1).keys()].map(element => element + 87);
+
   return frequencyList;
 };
 
@@ -31,6 +29,7 @@ const getAllFrequencies = () => {
  * - There is a helper function called isRadioStation that takes an integer as an argument and returns a boolean.
  * - Return only the frequencies that are radio stations.
  */
+
 // `getStations` goes here
 const getStations = () => {
   let availableFrequencies = getAllFrequencies();
