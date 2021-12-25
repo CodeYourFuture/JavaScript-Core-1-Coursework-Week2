@@ -11,6 +11,8 @@ function negativeOrPositive(number) {
     return "negative";
   } else if (number >= 0) {
     return "positive";
+  } else {
+    return "it is not a number!";
   }
 }
 

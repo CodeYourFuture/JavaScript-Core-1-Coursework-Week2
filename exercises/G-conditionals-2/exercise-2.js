@@ -12,6 +12,8 @@ function studentPassed(grade) {
     return " failed";
   } else if (grade >= 50) {
     return " passed";
+  } else {
+    return " not a valid grade";
   }
 }
 
