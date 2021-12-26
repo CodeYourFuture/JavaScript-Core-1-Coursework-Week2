@@ -7,7 +7,22 @@
 */
 
 let name = "Daniel";
-let danielsRole = "mentor";
+let role = "mentor";
+
+
+function checkRole(name, role){
+  if (name === "Daniel" && role=== "mentor") {
+    return `Hi I'm ${name}, I'm a ${role}`
+  }
+
+  else {
+    return `Hi I'm ${name}, I'm a student`
+  }
+
+}
+
+console.log(checkRole("Daniel", "mentor"));
+console.log(checkRole("Rose", "mentor"));
 
 /* 
 EXPECTED RESULT
