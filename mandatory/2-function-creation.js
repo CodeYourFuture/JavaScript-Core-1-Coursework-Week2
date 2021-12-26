@@ -26,7 +26,7 @@ function formatPercentage(num) {
   if (num > 100) {
     num = 100
   }
-  return `${num.toFixed()}%`
+  return `${Number(num.toFixed(2))}%`
 }
 
 /*
