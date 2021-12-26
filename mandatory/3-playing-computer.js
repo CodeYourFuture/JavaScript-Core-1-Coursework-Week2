@@ -7,12 +7,32 @@
   Answer the following questions:
 
   1. This program throws an error. Why? (If you can't find it, try executing it).
+Answer: Because 'b' is defined inside a function, it can't be logged outside of the function.
+
   2. Remove the line that throws the error.
+Answer: removed line 34 and line 30
+
   3. What is printed to the console?
+Answer: 2
+        6
+        undefined
+        9
+        undefined
+        13
+        undefined
+
+
   4. How many times is "f1" called?
+Answer: 2 times, when i = 1 and3
+
   5. How many times is "f2" called?
+Answer: 2 times, when i = 2 and 4
+
   6. What value does the "a" parameter take in the first "f1" call?
+Answer: 6
+
   7. What is the value of the "a" outer variable when "f1" is called for the first time?
+Answer: 13
 */
 
 let x = 2;
@@ -23,12 +43,12 @@ const f1 = function (a, b) {
 };
 
 const f2 = function (a, b) {
-  return a + b + x;
+  // return a + b + x;
 };
 
 console.log(x);
 console.log(a);
-console.log(b);
+// console.log(b);
 
 for (let i = 0; i < 5; ++i) {
   a = a + 1;
@@ -37,6 +57,7 @@ for (let i = 0; i < 5; ++i) {
     console.log(d);
   } else {
     const e = f1(i, a);
+    
     console.log(e);
   }
 }
