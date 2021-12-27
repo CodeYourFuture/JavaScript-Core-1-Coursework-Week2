@@ -28,9 +28,7 @@ function greaterThan10(num) {
   }
 }
 
-function get3rdIndex(arr) {
-  // let index = 3;
-  // let element;
+function get3rdIndex(arr){
 
 return arr[3];
 }
