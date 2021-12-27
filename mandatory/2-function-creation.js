@@ -6,7 +6,13 @@ Complete the function to check if the variable `num` satisfies the following req
 Tip: use logical operators
 */
 
-function validate(num) {}
+function validate(num) {
+  if (typeof num === "number" && num % 2 === 0 && num <= 100) {
+    return true;
+  } else {
+    return false;
+  } 
+}
 
 /*
 Write a function that:
@@ -16,7 +22,14 @@ Write a function that:
 - numbers greater 100 must be replaced with 100
 */
 
-function formatPercentage(num) {}
+function formatPercentage(num) {
+  if (num >= 100) {
+    return 100 + "%";
+  } else {
+    return Number(num.toFixed(2)) + "%";  
+  }
+     
+}
 
 /*
 Write a function that:
@@ -25,8 +38,41 @@ Write a function that:
 - removes any forward slashes (/) in each string
 - makes all strings all lowercase
 */
-function tidyUpStrings(arrayOfStrings) {}
+// function tidyUpStrings(arrayOfStrings) {
+//   return.trim().toLowerCase().replace(/\//g, "");
+// }
 
+// const tidyUpStrings =[
+//   "/Daniel",
+//   " /Sanyia",
+//   "AnTHonY",
+//   "irina",
+//   " Gordon",
+//   "ashleigh   ",
+//   "   Alastair  ",
+//   " anne marie  ",
+// ];  
+// function tidyUpStrings(arrayOfStrings) {
+//   return (arrayOfStrings.trim().toLowerCase().replace(/\//g, ""));
+// }
+
+  // const arrayOfStrings = [
+  //   "/Daniel",
+  //   " /Sanyia",
+  //   "AnTHonY",
+  //   "irina",
+  //   " Gordon",
+  //   "ashleigh   ",
+  //   "   Alastair  ",
+  //   " anne marie  ",
+  // ];
+  //const newStrings = arrayOfStrings.map(tidyUpStrings);
+
+function tidyUpStrings(arrayOfStrings) {
+  console.log(arrayOfStrings);
+  return arrayOfStrings.map((x)=> x.trim().toLowerCase().replace(/\//g, ""));
+ // return arrayOfStrings.trim().toLowerCase().replace(/\//g, "");
+}
 /* ======= TESTS - DO NOT MODIFY ===== */
 
 test("validate function accepts valid even number", () => {

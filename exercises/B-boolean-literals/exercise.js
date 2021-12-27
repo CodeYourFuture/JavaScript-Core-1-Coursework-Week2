@@ -6,6 +6,16 @@
 */
 
 let codeYourFutureIsGreat = true;
+// console.log(codeYourFutureIsGreat);
+
+let mozafarIsCool = false;
+// console.log(mozafarIsCool);
+
+let calculationCorrect = true;
+// console.log(calculationCorrect);
+
+let moreThan10Students = false;
+// console.log(moreThan10Students);
 
 /* 
   DO NOT EDIT BELOW THIS LINE
