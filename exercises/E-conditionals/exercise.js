@@ -8,6 +8,9 @@
 
 let name = "Daniel";
 let danielsRole = "mentor";
+if ("mentor"){
+  console.log (`Hi I'm ${name}, I'm a ${danielsRole}` )
+}
 
 /* 
 EXPECTED RESULT
