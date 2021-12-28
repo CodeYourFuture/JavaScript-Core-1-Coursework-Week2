@@ -9,11 +9,29 @@
   NOTE:Only make edits inside the function
 
 */
+// origin
+function mood(x) {
+  let isHappy = true; // the variable is only being used onece - so I hard coded it.
+  if (isHappy === x) {
+    return "I am happy";
+  } else {
+    return "I am not happy";
+  }
+}
 
-function mood() {
-  let isHappy = true;
-
-  if (isHappy) {
+// option 1
+function mood(x) {
+  if (x === true) {
+    return "I am happy";
+  } else {
+    return "I am not happy";
+  }
+}
+// option 2
+function mood(x) {
+  /* x is a booleon refere to test */
+  if (x) {
+    // here x is hard coded as `true` in the test
     return "I am happy";
   } else {
     return "I am not happy";
@@ -21,21 +39,40 @@ function mood() {
 }
 
 function greaterThan10(num) {
-  let isBigEnough;
+  // 11
+  let isBigEnough = 10 >= num; // isBigEnough must evaluate to a boolean  10 >= 11
 
   if (isBigEnough) {
-    return "num is greater than 10";
+    return "num is greater than 10"; // true - "num is greater than 10"
   } else {
     return "num is not big enough";
   }
 }
 
-function get3rdIndex(arr) {
-  let index = 3;
-  let element;
+// option 2
+function greaterThan10(num) {
+  // 11
+  //let isBigEnough = 10 >= num; // isBigEnough must evaluate to a boolean  10 >= 11
 
-  return element;
+  if (num > 10) {
+    //depends which is said first
+    return "num is greater than 10"; // true - "num is greater than 10"
+  } else {
+    return "num is not big enough";
+  }
 }
+console.log(greaterThan10(11));
+
+const strings = ["fruit", "banana", "apple", "strawberry", "raspberry"]; //declare anything before its used
+function get3rdIndex(arr) {
+  // let index = 3;
+  // let element ;
+  return arr[3];
+}
+console.log(get3rdIndex(strings));
+
+// third element `apple`
+// index of value `3` is `strawberry`
 
 /* ======= TESTS - DO NOT MODIFY ===== */
 

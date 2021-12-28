@@ -5,7 +5,20 @@
   Update the code so that you get the expected result.
 */
 
-function isNegative() {}
+function isNegative(x) {
+  return x < 0;
+}
+
+function isBetween5and10(x) {
+  return x >= 5 && x <= 10; // the upper band of the range
+}
+
+function isShortName(x) {
+  return x.length <= 10; //if the length is less than or = 10 is a short name
+}
+function startsWithD(x) {
+  return x.charAt(0) === "D";
+}
 
 /* 
   DO NOT EDIT BELOW THIS LINE

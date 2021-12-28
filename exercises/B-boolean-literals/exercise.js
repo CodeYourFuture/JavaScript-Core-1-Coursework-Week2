@@ -5,7 +5,22 @@
   Add the required variables with the correct boolean values assigned.
 */
 
+//exercise 1
+
 let codeYourFutureIsGreat = true;
+//expected - Is Code Your Future great? true
+
+//exercise 2
+let mozafarIsCool = false; //functions are yellow & variables are light blue
+//expected - Is Mozafar cool? false
+
+//exercise 3
+let calculationCorrect = 1 + 1 === 2;
+//expected -Does 1 + 1 = 2? true
+
+//exercise 4
+let moreThan10Students = false;
+//expected -  Are there more than 10 students? false
 
 /* 
   DO NOT EDIT BELOW THIS LINE
