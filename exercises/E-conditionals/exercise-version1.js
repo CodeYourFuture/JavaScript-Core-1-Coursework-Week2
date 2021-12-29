@@ -6,17 +6,13 @@
   If Daniel is a student, print out "Hi, I'm Daniel, I'm a student."
 */
 
-
-function checkRole(name,role) {
-  if (role === "mentor")
-      console.log("Hi, I'm " + name + ", I'm a mentor.")
-  else
-      console.log("Hi, I'm " + name + ", I'm a student.");
-}
-
-let name = "Daniel";
 let danielsRole = "mentor";
-checkRole(name,danielsRole);
+let message = "Hi, I'm Daniel, I'm a "
+if (danielsRole === "mentor")
+    message+= "mentor."
+else
+    message+= "student.";
+console.log(message);
 
 /* 
 EXPECTED RESULT
