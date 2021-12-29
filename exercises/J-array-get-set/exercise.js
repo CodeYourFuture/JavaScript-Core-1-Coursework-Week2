@@ -5,11 +5,15 @@
 */
 
 function first(arr) {
-  return; // complete this statement
+  return arr[0]; // complete this statement
 }
 
+// function last(arr) {
+//   return arr.slice(-1); // complete this statement https://flexiple.com/get-last-array-element-javascript/
+// }
+
 function last(arr) {
-  return; // complete this statement
+  return arr[arr.length - 1];
 }
 
 /* 
