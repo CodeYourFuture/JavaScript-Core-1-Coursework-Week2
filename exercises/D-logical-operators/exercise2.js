@@ -5,9 +5,26 @@
   Update the code so that you get the expected result.
 */
 
-function isNegative() {}
-
-/* 
+function isNegative(num) {
+  if (num > 0) {
+    return false;
+  } else if (num < 0) {
+    return true;
+  }
+  return 0;
+}
+const isBetween5and10 = (num) => {
+  if (num >= 5 && num <= 10) {
+    return true;
+  }
+  return false;
+};
+const isShortName = (name) => (name.length < 7 ? true : false);
+const startsWithD = (name) => {
+  let firstLetter = name[0];
+  return firstLetter === "D" ? "Yes" : "No";
+};
+/*
   DO NOT EDIT BELOW THIS LINE
   --------------------------- */
 
