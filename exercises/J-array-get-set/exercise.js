@@ -29,5 +29,3 @@ console.log(last(names));
   3
   Joe
 */
-
-console.log(5);

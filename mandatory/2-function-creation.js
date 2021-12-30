@@ -52,15 +52,6 @@ Write a function that:
 - makes all strings all lowercase
 */
 function tidyUpStrings(arrayOfStrings) {
-  let a = [];
-
-  for (let i = 0; i < arrayOfStrings.length; i++) {
-    console.log(arrayOfStrings[i]);
-    
-
-//  arrayOfStrings.replace(/[/]/).trim().toLowerCase();
-    }
-  }
 }
 
 /* ======= TESTS - DO NOT MODIFY ===== */
