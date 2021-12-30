@@ -30,7 +30,14 @@
  * ======= TESTS - DO NOT MODIFY =======
  * Note: You are not expected to understand everything below this comment!
  */
-
+const getAllFrequencies = () => {
+  let frequencies = [];
+  for (var i = 87; i < 109; i++) {
+    [...frequencies, i];
+  }
+  console.log(frequencies);
+  return frequencies;
+};
 function getAvailableStations() {
   // Using `stations` as a property as defining it as a global variable wouldn't
   // always make it initialized before the function is called

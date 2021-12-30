@@ -37,22 +37,12 @@ Write a function that:
 - removes any forward slashes (/) in each string
 - makes all strings all lowercase
 */
-function tidyUpStrings(aray) {
-  return aray.map(
+function tidyUpStrings(arraysOfStrings) {
+  return arraysOfStrings.map(
     (item) => (item = item.trim().replace("/", "").toLowerCase())
   );
 }
-let aray = [
-  "/Daniel",
-  " /Sanyia",
-  "AnTHonY",
-  "irina",
-  " Gordon",
-  "ashleigh   ",
-  "   Alastair  ",
-  " anne marie  ",
-];
-console.log(tidyUpStrings(aray));
+
 /* ======= TESTS - DO NOT MODIFY ===== */
 
 test("validate function accepts valid even number", () => {
