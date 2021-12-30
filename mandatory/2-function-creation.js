@@ -6,7 +6,24 @@ Complete the function to check if the variable `num` satisfies the following req
 Tip: use logical operators
 */
 
-function validate(num) {}
+function validate(num) {
+  // if (num <= 100) {
+  //   return true;
+  // }
+
+  // if (num > 100) {
+  //   return false;
+  // }
+
+  // if (typeof num === 'string') {
+  //   return false;
+  // }
+if (typeof num === 'number' && num <= 100 && num % 2 === 0) {
+  return true;
+}
+
+  return false;
+}
 
 /*
 Write a function that:
@@ -16,7 +33,16 @@ Write a function that:
 - numbers greater 100 must be replaced with 100
 */
 
-function formatPercentage(num) {}
+function formatPercentage(num) {
+  if (typeof num === 'number' && num > 100) {
+    return 100 + "%";
+  } else if (num < 100 && num % 1 === 0) {
+    return num + "%"
+  } else if (num % 1 !== 0) {
+    return +num.toFixed(2) + "%";
+  }
+} 
+// Why does +num.toFixed() remove the extra "0" for 18.1? Without the "+" the result would be 18.10 ???
 
 /*
 Write a function that:
@@ -25,7 +51,8 @@ Write a function that:
 - removes any forward slashes (/) in each string
 - makes all strings all lowercase
 */
-function tidyUpStrings(arrayOfStrings) {}
+function tidyUpStrings(arrayOfStrings) {
+}
 
 /* ======= TESTS - DO NOT MODIFY ===== */
 
