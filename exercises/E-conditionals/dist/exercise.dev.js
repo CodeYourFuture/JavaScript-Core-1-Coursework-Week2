@@ -1,3 +1,5 @@
+"use strict";
+
 /*
   Conditionals
   ---------------------------------
@@ -5,10 +7,10 @@
   If Daniel is a mentor, print out "Hi, I'm Daniel, I'm a mentor."
   If Daniel is a student, print out "Hi, I'm Daniel, I'm a student."
 */
+var myName = "Daniel";
+var danielsRole = "mentor";
+var message = "";
 
-let myName = "Daniel";
-let danielsRole = "mentor";
-let message = "";
 if (myName === "Daniel" && danielsRole === "mentor") {
   message = "Hi, I'm Daniel, I'm a mentor.";
 } else {
@@ -16,7 +18,6 @@ if (myName === "Daniel" && danielsRole === "mentor") {
 }
 
 console.log(message);
-
 /* 
 EXPECTED RESULT
 ---------------

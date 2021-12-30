@@ -1,29 +1,29 @@
+"use strict";
+
 /*
   Predicates
   ---------------------------------
   Write two predicate functions
   The variables should have values that match the expected results.
 */
-
 // Finish the predicate function to test if the passed number is negative (less than zero)
 function isNegative(number) {
   return number < 0;
-}
+} // Finish the predicate function to test if the passed number is between 0 and 10
 
-// Finish the predicate function to test if the passed number is between 0 and 10
+
 function isBetweenZeroAnd10(number) {
   return 0 < number && number <= 10;
 }
-
 /* 
   DO NOT EDIT BELOW THIS LINE
   --------------------------- */
 
-console.log(`Is 5 negative? ${isNegative(5)}`);
-console.log(`Is -5 negative? ${isNegative(-5)}`);
-console.log(`Is 5 between 0 and 10? ${isBetweenZeroAnd10(5)}`);
-console.log(`Is -5 between 0 and 10? ${isBetweenZeroAnd10(-5)}`);
 
+console.log("Is 5 negative? ".concat(isNegative(5)));
+console.log("Is -5 negative? ".concat(isNegative(-5)));
+console.log("Is 5 between 0 and 10? ".concat(isBetweenZeroAnd10(5)));
+console.log("Is -5 between 0 and 10? ".concat(isBetweenZeroAnd10(-5)));
 /* 
   EXPECTED RESULT
   ---------------

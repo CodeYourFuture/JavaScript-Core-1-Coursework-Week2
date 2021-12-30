@@ -1,3 +1,5 @@
+"use strict";
+
 /*
   You have to predict the output of this program WITHOUT EXECUTING IT.
 
@@ -14,28 +16,29 @@
   6. What value does the "a" parameter take in the first "f1" call? The first value f1 takes is 6+1 = 7.
   7. What is the value of the "a" outer variable when "f1" is called for the first time? Its 6.
 */
+var x = 2;
+var a = 6;
 
-let x = 2;
-let a = 6;
-
-const f1 = function (a, b) {
+var f1 = function f1(a, b) {
   return a + b;
 };
 
-const f2 = function (a, b) {
+var f2 = function f2(a, b) {
   return a + b + x;
 };
 
 console.log(x); //2
+
 console.log(a); //6
 
-for (let i = 0; i < 5; ++i) {
+for (var i = 0; i < 5; ++i) {
   a = a + 1;
+
   if (i % 2 === 0) {
-    const d = f2(i, x);
+    var d = f2(i, x);
     console.log(d);
   } else {
-    const e = f1(i, a);
+    var e = f1(i, a);
     console.log(e);
   }
 }
