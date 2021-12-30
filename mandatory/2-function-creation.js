@@ -51,7 +51,18 @@ Write a function that:
 - removes any forward slashes (/) in each string
 - makes all strings all lowercase
 */
-function tidyUpStrings(arrayOfStrings) {
+function tidyUpStrings(array) {
+  array = array.map(function (el) {
+    return el.trim();
+  })
+  array = array.map(function (el) {
+    return el.toLowerCase();
+  })
+  array = array.map(function (el) {
+    return el.replace(/\//g, '');
+  })
+
+  return array;
 }
 
 /* ======= TESTS - DO NOT MODIFY ===== */
