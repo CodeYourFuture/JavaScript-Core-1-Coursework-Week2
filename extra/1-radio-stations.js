@@ -30,7 +30,9 @@ function getAllFrequencies() {
  * - There is a helper function called isRadioStation that takes an integer as an argument and returns a boolean.
  * - Return only the frequencies that are radio stations.
  */
-function getStations() {}
+function getStations() {
+  return getAllFrequencies().filter((freq) => isRadioStation(freq));
+}
 
 /*
  * ======= TESTS - DO NOT MODIFY =======
