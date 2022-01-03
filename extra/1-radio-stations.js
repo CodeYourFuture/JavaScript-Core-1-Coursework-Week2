@@ -13,7 +13,13 @@
  * - Should return this array to use in other functions
  */
 
-// `getAllFrequencies` goes here
+function getAllFrequencies() {
+  let frequencyArray = [];
+  for (let i = 87; i <= 108; i++) {
+    frequencyArray.push(i);
+  }
+  return frequencyArray;
+}
 
 /**
  * Next, let's write a function that gives us only the frequencies that are radio stations.
@@ -24,7 +30,7 @@
  * - There is a helper function called isRadioStation that takes an integer as an argument and returns a boolean.
  * - Return only the frequencies that are radio stations.
  */
-// `getStations` goes here
+function getStations() {}
 
 /*
  * ======= TESTS - DO NOT MODIFY =======
