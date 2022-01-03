@@ -69,7 +69,7 @@ Write a function that:
   //const newStrings = arrayOfStrings.map(tidyUpStrings);
 
 function tidyUpStrings(arrayOfStrings) {
-  console.log(arrayOfStrings);
+ // console.log(arrayOfStrings);
   return arrayOfStrings.map((x)=> x.trim().toLowerCase().replace(/\//g, ""));
  // return arrayOfStrings.trim().toLowerCase().replace(/\//g, "");
 }
