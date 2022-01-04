@@ -6,9 +6,15 @@
   If Daniel is a student, print out "Hi, I'm Daniel, I'm a student."
 */
 
-let name = "Daniel";
+let myName = "Daniel";
 let danielsRole = "mentor";
-
+let message = ""
+if(myName === "Daniel" && danielsRole === "mentor"){
+  message = "Hi, I'm Daniel, I'm a mentor."
+} else{
+  message = "Hi, I'm Daniel, I'm a student."
+}
+console.log(message);
 /* 
 EXPECTED RESULT
 ---------------
