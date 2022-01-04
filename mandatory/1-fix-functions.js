@@ -18,8 +18,9 @@ function mood() {
   } else {
     return "I am not happy";
   }
-}
-
+  }
+  
+  
 function greaterThan10(num) {
   let isBigEnough;
 

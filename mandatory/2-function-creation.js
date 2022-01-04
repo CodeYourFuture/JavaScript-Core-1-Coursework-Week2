@@ -6,7 +6,17 @@ Complete the function to check if the variable `num` satisfies the following req
 Tip: use logical operators
 */
 
-function validate(num) {}
+function validate(num) {
+  let num = 100;
+
+  if (typeOf num == 'number'); {
+    return "is a number"
+  } else if (num % 2 === 0); {
+    return num + "is even"
+  } else (num < 100); {
+    return num + "is less than or equal to 100"
+  }
+}
 
 /*
 Write a function that:
