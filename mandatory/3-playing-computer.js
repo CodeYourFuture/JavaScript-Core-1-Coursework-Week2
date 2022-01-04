@@ -29,7 +29,7 @@ const f2 = function (a, b) {
 console.log(x);
 console.log(a);
 
-//console.log(b);   //  as b is not defined
+//console.log(b);   //  as b is not defined 
 
 for (let i = 0; i < 5; ++i) {
   a = a + 1;
