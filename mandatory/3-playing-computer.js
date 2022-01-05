@@ -18,12 +18,12 @@
 let x = 2;
 let a = 6;
 
-const f1 = function (a) {
-  return a ;
+const f1 = function (a, b) {
+  return a + b ;
 };
 
-const f2 = function (a) {
-  return a + x;
+const f2 = function (a, b) {
+  return a + b + x;
 };
 
 console.log(x);

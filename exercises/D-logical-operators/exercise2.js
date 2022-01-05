@@ -8,13 +8,13 @@
 function isNegative(number) {
   if (number < 0) {
     return "true"
-  }
-
-  else if (number >  4 && 10) {
+  } else if (number >  4 && 10) {
     return "false"
   }
 }
-  function  isBetween5and10(number) {
+  
+
+function  isBetween5and10(number) {
     if (number >=5 && number ===10){
     return "true"
   }
