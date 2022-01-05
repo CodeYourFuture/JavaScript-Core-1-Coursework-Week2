@@ -9,7 +9,7 @@ let mentor3 = "Rares";
 ...then it's probably time to use an **array**!
 
 Arrays are data structures that hold a list of values.
-
+ 
 ```js
 let mentors = ["Daniel", "Irina", "Rares"];
 ```
@@ -21,3 +21,9 @@ let testScores = [16, 49, 85];
 let grades = ["F", "D", "A"];
 let greetings = ["Hello, how are you?", "Hi! Nice to meet you!"];
 ```
+
+
+let name="Rana";
+let age=12;
+
+console.log(`the user ${name},${age}`);

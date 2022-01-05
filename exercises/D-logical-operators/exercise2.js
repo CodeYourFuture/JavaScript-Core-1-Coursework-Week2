@@ -5,7 +5,15 @@
   Update the code so that you get the expected result.
 */
 
-function isNegative() {}
+function isNegative(){
+  if(isNegative=-10){
+    return true;
+  }
+    return false;
+}
+
+   
+
 
 /* 
   DO NOT EDIT BELOW THIS LINE
