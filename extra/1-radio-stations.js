@@ -27,19 +27,11 @@ function getAllFrequencies(numbers) {
  * - There is a helper function called isRadioStation that takes an integer as an argument and returns a boolean.
  * - Return only the frequencies that are radio stations.
  */
+
 function getStations() {
-    const allStations = getAllFrequencies();
-    const availStations = [];
-    for(let i = 0; i < allStations.length; i++) {
-      if(isRadioStation(allStations[i])) {
-        return availStations.push(allStations[i]);
-      }
-
-    }
-    
+  const allStations = getAllFrequencies();
+  return allStations.filter(isRadioStation);
 }
- 
-
 /*
  * ======= TESTS - DO NOT MODIFY =======
  * Note: You are not expected to understand everything below this comment!
