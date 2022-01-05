@@ -9,6 +9,8 @@ Tip: use logical operators
 function validate(num) {
   if (typeof num === "number" && num % 2 === 0 && num <= 100){
     return true;
+  } else {
+    return false;
   }
 }
 
@@ -21,10 +23,11 @@ Write a function that:
 */
 
 function formatPercentage(num) {
-   if (num > 100) {
-     return 100 
+   if (num >= 100) {
+     return "100%"
    } else {
-     return `${num.toFixed(2)} %`
+    //  return `${num.toFixed(2)} %`
+     return Number(num.toFixed(2) ) + "%"
    }
 
 
@@ -41,7 +44,7 @@ https://blog.logrocket.com/javascript-array-methods/
 */
 
 function tidyUpStrings(arrayOfStrings) {
-  let newArr = arrayOfStrings.map(items) 
+  let newArr = arrayOfStrings.map( items) 
      return (newArr.trim() ) 
             (newArr.toLowerCase() )
             (newArr.replace("/", "") )
