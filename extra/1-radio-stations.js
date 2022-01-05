@@ -32,15 +32,18 @@ console.log(getAllFrequencies())
  * - There is a helper function called isRadioStation that takes an integer as an argument and returns a boolean.
  * - Return only the frequencies that are radio stations.
  */
-// `getStations` goes here
-    const getStations = (frequency)=>{
-     if(frequency>86 && frequency<109){
-       return getAllFrequencies(frequency)
-     }
-      return getAllFrequencies(frequency)
-    }
-    // const isRadioStation =(num)=>(num >= 87 && num <= 108)?true:false
+
+   // const isRadioStation =(num)=>(num >= 87 && num <= 108)?true:false
     //   console.log(isRadioStation(9))
+
+// `getStations` goes here
+
+const getStations = () => {
+  // let allFrequencies = getAllFrequencies()
+  return getAllFrequencies().filter((element)=>isRadioStation(element))
+}
+console.log(getStations())
+ 
 /*
 
  * ======= TESTS - DO NOT MODIFY =======
