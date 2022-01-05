@@ -15,6 +15,14 @@
 
 // `getAllFrequencies` goes here
 
+const getAllFrequencies = () =>{
+  let frequency =[]
+    for (let i = 87; i < 109; i++) {
+      frequency.push(i)
+    }
+    return frequency
+  }
+console.log(getAllFrequencies())
 /**
  * Next, let's write a function that gives us only the frequencies that are radio stations.
  * Call this function `getStations`.
@@ -25,11 +33,20 @@
  * - Return only the frequencies that are radio stations.
  */
 // `getStations` goes here
-
+    const getStations = (frequency)=>{
+     if(frequency>86 && frequency<109){
+       return getAllFrequencies(frequency)
+     }
+      return getAllFrequencies(frequency)
+    }
+    // const isRadioStation =(num)=>(num >= 87 && num <= 108)?true:false
+    //   console.log(isRadioStation(9))
 /*
+
  * ======= TESTS - DO NOT MODIFY =======
  * Note: You are not expected to understand everything below this comment!
  */
+
 
 function getAvailableStations() {
   // Using `stations` as a property as defining it as a global variable wouldn't
@@ -54,6 +71,7 @@ function getAvailableStations() {
 function isRadioStation(frequency) {
   return getAvailableStations().includes(frequency);
 }
+
 
 test("getAllFrequencies() returns all frequencies between 87 and 108", () => {
   expect(getAllFrequencies()).toEqual([
