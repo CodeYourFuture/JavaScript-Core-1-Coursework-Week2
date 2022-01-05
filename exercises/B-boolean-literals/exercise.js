@@ -6,12 +6,15 @@
 */
 
 let codeYourFutureIsGreat = true;
-
+let mozafarIsCool = false
+let calculationCorrect = false
+let student = 10
+let moreThan10Students = student>10
 /* 
   DO NOT EDIT BELOW THIS LINE
   --------------------------- */
 
-console.log("Is Code Your Future great?", codeYourFutureIsGreat);
+console.log("Is Code Your Future great?" , codeYourFutureIsGreat);
 console.log("Is Mozafar cool?", mozafarIsCool);
 console.log("Does 1 + 1 = 2?", calculationCorrect);
 console.log("Are there more than 10 students?", moreThan10Students);

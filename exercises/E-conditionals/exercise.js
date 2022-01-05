@@ -7,8 +7,16 @@
 */
 
 let name = "Daniel";
-let danielsRole = "mentor";
+let danielsRole = "MeNtor";
 
+function role(position){
+  //This funtion ignores Case sensivity - 
+  if(position.toLowerCase().includes('mentor'.toLowerCase())){
+    return `Hi I'm ${name}, I'm a Mentor.`
+  } else { return `Hi I'm ${name}, I'm a just a Student.`}
+}
+
+console.log(role(danielsRole))
 /* 
 EXPECTED RESULT
 ---------------

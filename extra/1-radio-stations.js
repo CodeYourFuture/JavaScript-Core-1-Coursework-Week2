@@ -15,6 +15,17 @@
 
 // `getAllFrequencies` goes here
 
+const getAllFrequencies = () => {
+  let list =[]
+  for(let i = 87; i <109; i++ ){
+  list.push(i)
+}
+return list
+}
+getAllFrequencies()
+
+// console.log(list)
+
 /**
  * Next, let's write a function that gives us only the frequencies that are radio stations.
  * Call this function `getStations`.
@@ -24,8 +35,15 @@
  * - There is a helper function called isRadioStation that takes an integer as an argument and returns a boolean.
  * - Return only the frequencies that are radio stations.
  */
-// `getStations` goes here
 
+// They want a fucntion with an integer to check if that available - 
+const getStations = () => {
+  let stations = getAllFrequencies()
+  return stations.filter(function(e){
+    return isRadioStation(e)
+  })
+}
+console.log(getStations())
 /*
  * ======= TESTS - DO NOT MODIFY =======
  * Note: You are not expected to understand everything below this comment!

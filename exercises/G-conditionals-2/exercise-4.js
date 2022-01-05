@@ -8,7 +8,12 @@
   Hint: Google how to check if a string contains a word
 */
 
-function containsCode(sentence) {}
+function containsCode(sentence) {
+  // This function ignores case sentivity
+  if(sentence.toLowerCase().includes('code'.toLowerCase())){
+    return true
+  } else {return false}
+}
 
 /* 
 DO NOT EDIT BELOW THIS LINE
