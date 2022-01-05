@@ -7,12 +7,14 @@ Tip: use logical operators
 */
 
 function validate(num) {
-  if(typeof num=='num' && num%2==0 && num<=100){
+  if(typeof(num)!=='string' && num%2==0 && num<=100){
   return true;
 }else{
  return false;
 }
 }
+
+
 
 /*
 Write a function that:
@@ -40,16 +42,12 @@ Write a function that:
 - removes any forward slashes (/) in each string
 - makes all strings all lowercase
 */
-  function tidyUpStrings(arrayOfStrings) {
-    for(i=0; i<arrayOfStrings.length; i++){
-      arrayOfStrings.trim("/").toLowerCase();
-    
-    }
-
-return arrayOfStrings;
- 
-}
-
+function tidyUpStrings(arrayOfStrings){
+  for(let i =0; i<arrayOfStrings.length; i++){
+     arrayOfStrings[i] = arrayOfStrings[i].trim().replace(/\//g, '').toLowerCase()
+   }
+   return arrayOfStrings
+ }
 
 
 /* ======= TESTS - DO NOT MODIFY ===== */

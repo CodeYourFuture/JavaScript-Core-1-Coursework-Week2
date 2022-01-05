@@ -36,10 +36,10 @@ console.log(getAllFrequencies())
    // const isRadioStation =(num)=>(num >= 87 && num <= 108)?true:false
     //   console.log(isRadioStation(9))
 
-// `getStations` goes here
+// `getStations` goes here 
+// 
 
 const getStations = () => {
-  // let allFrequencies = getAllFrequencies()
   return getAllFrequencies().filter((element)=>isRadioStation(element))
 }
 console.log(getStations())
