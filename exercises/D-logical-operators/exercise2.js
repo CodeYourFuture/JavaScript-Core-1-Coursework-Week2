@@ -22,9 +22,9 @@ function isBetween5and10(num) {
 function isShortName(name) {
  if (name.lenth < 5){
    return false;
- } else{
+ } 
    return true;
- }
+ 
 }
 
 function startsWithD(word) {
