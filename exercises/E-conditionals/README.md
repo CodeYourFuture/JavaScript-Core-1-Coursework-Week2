@@ -1,3 +1,4 @@
+
 Like humans, computer programs make decisions based on information given to them. **Conditionals** are a way of representing these decisions in code.
 
 For example:
