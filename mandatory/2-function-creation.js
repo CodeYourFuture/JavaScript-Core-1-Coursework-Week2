@@ -26,7 +26,7 @@ function formatPercentage(num) {
   if (num > 100) {
     return `100%`;
   } else {
-    return `${num.toPrecision(3)}%`;
+    return `${Math.round(num * 100) / 100}%`;
   }
 }
 
@@ -38,7 +38,9 @@ Write a function that:
 - makes all strings all lowercase
 */
 function tidyUpStrings(arrayOfStrings) {
-  arrayOfStrings.forEach((element) => console.log(element).toLowerCase());
+  return arrayOfStrings.map((element) =>
+    element.toLowerCase().replace("/", "").trim()
+  );
 }
 
 /* ======= TESTS - DO NOT MODIFY ===== */
