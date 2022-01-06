@@ -41,15 +41,24 @@ Write a function that:
 - makes all strings all lowercase
 
 https://blog.logrocket.com/javascript-array-methods/
+
+let arr2 = array2string.map(function (item) {
+  return item.tirm();
+})
 */
 
 function tidyUpStrings(arrayOfStrings) {
-  let newArr = arrayOfStrings.map( items) 
-     return (newArr.trim() ) 
-            (newArr.toLowerCase() )
-            (newArr.replace("/", "") )
+  
+  let newArr = arrayOfStrings.map(function(item) {
+    return item.trim()
+               .toLowerCase() 
+               .replace("/", "");
+
+  })
+  return newArr;
+}  
            
-  }
+ // return arayOfStrings.map(function(item)) 
   
 
 
