@@ -5,7 +5,36 @@
   Update the code so that you get the expected result.
 */
 
-function isNegative() {}
+function isNegative(number) {
+  if (number < 0) {
+    return true;
+  }
+  return false;
+}
+
+
+function isBetween5and10 (number) {
+  if (number >= 5 && number <= 10) {
+    return true;
+  }
+  return false;
+}
+
+
+function isShortName(name) {
+  if (name.length <= 6) {
+    return true;
+  }
+  return false;
+}
+
+
+function startsWithD(name) {
+  if(name[0] === "D") {
+    return true;
+  }
+  return false;
+}
 
 /* 
   DO NOT EDIT BELOW THIS LINE
@@ -26,3 +55,4 @@ console.log("Does Daniel start with 'D'?", startsWithD("Daniel"));
   Is Daniel a short name? true
   Does Daniel start with 'D'?
 */
+ 
