@@ -8,7 +8,7 @@
 
   1. This program throws an error. Why? (If you can't find it, try executing it).
   2. Remove the line that throws the error. removed console.log(b)
-  3. What is printed to the console?
+  3. What is printed to the console?  2 6 4 9 6 13 8
   4. How many times is "f1" called?   it is called 2 times
   5. How many times is "f2" called?  it is called 3 times
   6. What value does the "a" parameter take in the first "f1" call?  a is 7 in the first call  
