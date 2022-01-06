@@ -9,8 +9,11 @@ function first(arr) {
 }
 
 function last(arr) {
-  return last [ numbers[2], names [3] ];
+ 
+  
 }
+
+  
 
     // complete this statement
 

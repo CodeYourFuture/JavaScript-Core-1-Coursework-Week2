@@ -22,13 +22,18 @@ Write a function that:
 */
 
 function formatPercentage(num) {
- 
-if (num >= 10){
+if (num <=100 && num >=100 ){
   return num + "%";
 }
-else{
-  return num.toFixed(2) + "%"}
+else if (num >=100){
+return 100 + "%";
 }
+
+else {
+  return parseFloat(num.toFixed(2)) + "%";
+}
+}
+
 
 /*
 Write a function that:
@@ -38,14 +43,16 @@ Write a function that:
 - makes all strings all lowercase
 */
 function tidyUpStrings(arrayOfStrings) {
-  var strings;
-arrayOfStrings[strings].trim();
-arrayOfStrings[strings].replace(/\//g, "");
-arrayOfStrings[strings].toLowerCase();
+  
+  let newStrings = arrayOfStrings.map;
+
+
+arrayOfStrings[newStrings].trim();
+arrayOfStrings[newStrings].replace(/\//g, "");
+arrayOfStrings[newStrings].toLowerCase();
 
 return arrayOfStrings;
-
-//for (var strings= arrayOfStrings.length; strings ++; arrayOfStrings[strings].trim().replace(/\//g, "").toLowerCase()); 
+ 
 
 }
 
