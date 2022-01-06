@@ -7,7 +7,10 @@ Tip: use logical operators
 */
 
 function validate(num) {
-  return num === Number && num % 2 === 0 && num <= 100 ? true : false;
+  if (typeof num === Number && num % 2 === 0 && num <= 100) {
+    return true;
+  }
+  return false;
 }
 
 /*
