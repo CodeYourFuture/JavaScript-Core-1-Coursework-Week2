@@ -7,10 +7,11 @@ Tip: use logical operators
 */
 
 function validate(num) {
-  if (typeof num === Number && num % 2 === 0 && num <= 100) {
+  if (typeof num === "number" && num % 2 === 0 && num <= 100) {
     return true;
+  } else {
+    return false;
   }
-  return false;
 }
 
 /*
@@ -22,18 +23,17 @@ Write a function that:
 */
 
 function formatPercentage(num) {
-  let number = Math.round(num * 100) / 100;
-  if (number > 100) {
-    return 100 + "%";
+  let myNumber = num;
+  if (typeof myNumber === "number") {
+    if (myNumber > 100) {
+      myNumber = 100;
+    }
+    let rounded = Math.round(myNumber * 100) / 100;
+    return `${rounded}%`;
   } else {
-    return `${number}%`;
+    return false;
   }
 }
-
-console.log(formatPercentage(23));
-console.log(formatPercentage(18.103));
-console.log(formatPercentage(0.372));
-console.log(formatPercentage(187.2));
 
 /*
 Write a function that:
@@ -43,7 +43,7 @@ Write a function that:
 - makes all strings all lowercase
 */
 function tidyUpStrings(arrayOfStrings) {
-  return arrayOfStrings.map((e) => e.toLowerCase().trim().replace(/\//g, ""));
+  return arrayOfStrings.map((e) => e.toLowerCase().trim().replace("/", ""));
 }
 
 console.log(
