@@ -1,4 +1,5 @@
-/*
+//node exercises/G-conditionals-2/exercise-1.js
+/*vbg
   Conditionals
   ---------------------------------
   Write a function to test if a provided number is negative or positive
@@ -6,7 +7,13 @@
   - if number is more or equal to zero, return the word "positive"
 */
 
-function negativeOrPositive(number) {}
+function negativeOrPositive(number) {
+  if (number < 0) {
+    return "negative";
+  } else if (number >= 0) {
+    return "positive";
+  }
+}
 
 /* 
   DO NOT EDIT BELOW THIS LINE
