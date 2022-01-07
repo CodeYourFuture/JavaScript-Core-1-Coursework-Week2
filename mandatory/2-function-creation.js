@@ -19,7 +19,7 @@ Write a function that:
 */
 
 function formatPercentage(num) {
-  let output = num > 100;
+  let output = num > 100 ? 100 :num;
   return Math.round(output * 100) /100 + "%";
 }
 
@@ -32,7 +32,10 @@ Write a function that:
 */
 function tidyUpStrings(arrayOfStrings) {
   str = [];
-  str.push(arrayOfStrings.trim().replace().toLowerCase());
+  for (i=0;i<arrayOfStrings.length;i++){
+    str.push(arrayOfStrings[i].trim().replace("/","").toLowerCase());
+  }
+  return str;
 }
 
 /* ======= TESTS - DO NOT MODIFY ===== */
