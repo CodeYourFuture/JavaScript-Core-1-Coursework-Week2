@@ -32,14 +32,18 @@ function getAllFrequencies() {
  * - Return only the frequencies that are radio stations.
  */
 // `getStations` goes here
-function getStations(allFrequencies) {
+function getStations() {
+  let allFrequencies = getAllFrequencies();
   let radioStations = [];
   for (let i = 0; let < allFrequencies.length - 1; i++) {
     if (isRadioStation(allFrequencies[i])) {
-      radioStations.push(frequencies[i]);
+      radioStations.push(allFrequencies[i]);
     }
   }
+  return radioStations;
 }
+
+console.log(getStations());
 
 /*
  * ======= TESTS - DO NOT MODIFY =======
