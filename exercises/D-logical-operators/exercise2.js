@@ -6,30 +6,20 @@
 */
 
 function isNegative(num) {
-  if (num < 0){
-   return true;
-  }
-  return false;
+  return num < 0;
 }
 
 function isBetween5and10(num) {
-  if (num >= 5 && num <= 10) {
-    return true;
-  }
-    return false;
+  return num >= 5 && num <= 10;
 }
 
 function isShortName(name) {
-if ( name.length <= 6) {
-  return true;
-}
-return false;
+  const maxShortNameLength = 6;
+  return name.length <= maxShortNameLength;
 }
 
 function startsWithD(name) {
- if (name.charAt(0)) {
-   return "D";
- }
+  return name.charAt(0) === "D";
 }
 /* 
   DO NOT EDIT BELOW THIS LINE

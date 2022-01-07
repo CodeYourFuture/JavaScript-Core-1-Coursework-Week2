@@ -9,10 +9,8 @@
 */
 
 function containsCode(sentence) {
-  if (sentence.includes("code")) {
-    return true;
-  }
-  return false;
+  const searchedWord = "code";
+  return sentence.includes(searchedWord);
 }
 
 /* 

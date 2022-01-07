@@ -7,10 +7,7 @@ Tip: use logical operators
 */
 
 function validate(num) {
-  if (typeof num === "number" && num % 2 == 0 && num <= 100) {
-    return true;
-  }
-  return false;
+  return typeof num === "number" && num % 2 == 0 && num <= 100;
 }
 
 /*
@@ -38,15 +35,10 @@ Write a function that:
 - makes all strings all lowercase
 */
 function tidyUpStrings(arrayOfStrings) {
-  // for (let i = 0; i < arrayOfStrings.length; i++) {
-  //   arrayOfStrings[i] = arrayOfStrings[i].trim().toLowerCase().replace("/", "");
-  // }
-  // return arrayOfStrings;
-  let newArray = arrayOfStrings.map(myFunction);
-  return newArray;
+  return arrayOfStrings.map(tidyUpArrayElement);
 }
 
-function myFunction(value, index, array) {
+function tidyUpArrayElement(value, index, array) {
   return value.trim().toLowerCase().replace("/", "");
 }
 
