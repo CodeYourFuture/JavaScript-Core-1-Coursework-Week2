@@ -18,6 +18,11 @@ function containsCode(sentence) {
   }
 }
 
+// function containsCode(sentence) {}
+// function containsCode(sentence) {
+//     return ( sentence.search("code") >= 0)
+// } //another way that works
+
 /* 
 DO NOT EDIT BELOW THIS LINE
 --------------------------- */

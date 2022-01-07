@@ -11,7 +11,6 @@ function satisfiesRequirements(num) {
   if (num > 3 && num < 10) {
     return true;
   }
-
   return false;
 }
 ```

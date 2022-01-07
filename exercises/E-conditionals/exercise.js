@@ -6,17 +6,18 @@
   If Daniel is a student, print out "Hi, I'm Daniel, I'm a student."
 */
 
-function Role(name, danielsRole) {
+function Role(danielsRole) {
  
-  if (name == "Daniel" && danielsRole == "mentor"){
+  if (danielsRole == "mentor"){
     return "Hi, I'm Daniel, I'm a mentor.";
   }if (danielsRole == "student"){
     return "Hi, I'm Daniel, I'm a student.";
   }
 }
 
-console.log(Role("Daniel", "mentor"));
-console.log(Role("Daniel", "student"));
+
+console.log(Role("mentor"));
+console.log(Role( "student"));
 
 
 /* 

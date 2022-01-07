@@ -13,6 +13,11 @@ function isEmpty(arr) {
     return true;
       }
     }
+
+//     function isEmpty(arr) {
+ 
+//   return !arr.length;// complete this statement
+// } another way
   
    /* 
   DO NOT EDIT BELOW THIS LINE
