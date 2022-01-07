@@ -31,12 +31,15 @@ console.log(a);
 console.log(b);
 
 for (let i = 0; i < 5; ++i) {
+  console.log (i, "i");
   a = a + 1;
   if (i % 2 === 0) {
     const d = f2(i, x);
     console.log(d);
+    console.log(d, "d");
   } else {
     const e = f1(i, a);
     console.log(e);
+    console.log(e, "e")
   }
 }

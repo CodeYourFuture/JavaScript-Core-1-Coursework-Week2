@@ -9,6 +9,20 @@
 let name = "Daniel";
 let danielsRole = "mentor";
 
+function role (danielsRole) {
+  if (danielsRole === "mentor") {
+    console.log(" Hi, I'm " + name + "," + " " + "I'm " + "a" + " " + danielsRole + ".")
+  }
+  else if (danielsRole === "student"){
+    console.log(" Hi, I'm" + name + "," +  " " + "I'm a" + "student" + ".")
+  }
+
+}
+
+role("mentor");
+
+
+
 /* 
 EXPECTED RESULT
 ---------------

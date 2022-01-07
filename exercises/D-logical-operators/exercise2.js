@@ -6,6 +6,32 @@
 */
 
 function isNegative() {}
+function isNegative(number) {
+  if ( number < 0) {
+    return true;
+  }
+  return false;
+}
+
+function isBetween5and10(number) {
+  if (number >=5 && number <= 10){
+    return true;
+  }
+    return false;
+}
+
+function isShortName(name) {
+  if ( name.length <= 6) {
+    return true;
+  } 
+    return false;
+}
+
+function startsWithD(name) {
+  if (name.charAt(0)) {
+    return "D";
+  }
+}
 
 /* 
   DO NOT EDIT BELOW THIS LINE
