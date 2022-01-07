@@ -20,6 +20,7 @@ function getAllFrequencies() {
     frequencies.push(i);
   }
   return frequencies;
+}
 
 /**
  * Next, let's write a function that gives us only the frequencies that are radio stations.
@@ -39,10 +40,6 @@ function getStations(allFrequencies) {
     }
   }
 }
-
-
-/*let frequencies = getAllFrequencies();
-getStations(frequencies);*/
 
 /*
  * ======= TESTS - DO NOT MODIFY =======
