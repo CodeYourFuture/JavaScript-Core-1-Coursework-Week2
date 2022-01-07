@@ -14,11 +14,17 @@ let cssLevel = 4;
 let htmlLevelAbove5;
 let cssLevelAbove5;
 
+htmlLevelAbove5 > 5;
+cssLevelAbove5 > 5;
+
 // Finish the next two statement
 // Use the previous variables and logical operators
 // Do not "hardcode" the answers
 let cssAndHtmlAbove5;
 let cssOrHtmlAbove5;
+
+cssAndHtmlAbove5 = htmlLevelAbove5 && cssLevelAbove5;
+cssOrHtmlAbove5 = htmlLevelAbove5 || cssLevelAbove5;
 
 /* 
   DO NOT EDIT BELOW THIS LINE
