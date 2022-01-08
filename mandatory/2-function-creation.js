@@ -52,16 +52,20 @@ Write a function that:
 - makes all strings all lowercase
 */
 function tidyUpStrings(array) {
-  array = array.map(function (el) {
-    return el.trim();
-  })
-  array = array.map(function (el) {
-    return el.toLowerCase();
-  })
-  array = array.map(function (el) {
-    return el.replace(/\//g, '');
-  })
+  // array = array.map(function (el) {
+  //   return el.trim();
+  // })
+  // array = array.map(function (el) {
+  //   return el.toLowerCase();
+  // })
+  // array = array.map(function (el) {
+  //   return el.replace(/\//g, '');
+  // })
 
+  // return array;
+  for (let i = 0; i < array.length; i++) {
+    array[i] = array[i].trim().toLowerCase().replace(/\//g, '');
+  }
   return array;
 }
 

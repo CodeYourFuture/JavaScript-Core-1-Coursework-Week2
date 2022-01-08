@@ -1,1 +1,0 @@
-Code(sentence1));
