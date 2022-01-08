@@ -14,6 +14,11 @@
  */
 
 // `getAllFrequencies` goes here
+function getAllFrequencies(){
+  // const Array = [87,...108]
+  const Array = range(87, 108)
+  return Array
+}
 
 /**
  * Next, let's write a function that gives us only the frequencies that are radio stations.
@@ -26,6 +31,9 @@
  */
 // `getStations` goes here
 
+function getStations(){
+  isRadioStation(integer)
+}
 /*
  * ======= TESTS - DO NOT MODIFY =======
  * Note: You are not expected to understand everything below this comment!
