@@ -39,12 +39,13 @@ const getAllFrequencies = function (){
 // `getStations` goes here
 
 const getStations = function (){
-
+  let allFrequencies = getAllFrequencies();
   let fullStations = [];
   
-  for (let i=0; i < getAllFrequencies().length; i++ ){
-    if (isRadioStation(getAllFrequencies()[i])){
-      fullStations.push(getAllFrequencies()[i]);
+  for (let i=0; i < allFrequencies.length; i++ ){
+
+    if (isRadioStation(allFrequencies[i])){
+      fullStations.push(allFrequencies[i]);
     };
   } 
   return fullStations;
