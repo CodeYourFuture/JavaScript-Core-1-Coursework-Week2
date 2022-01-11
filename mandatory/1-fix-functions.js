@@ -41,6 +41,14 @@ function get3rdIndex(arr) {
   return element;
 }
 
+/*
+function first5(numbers) {
+  let sliced = numbers.slice(0, 5);
+
+  return sliced;
+}
+*/
+
 /* ======= TESTS - DO NOT MODIFY ===== */
 
 test("mood function works for true", () => {

@@ -24,11 +24,11 @@
 
   5. How many times is "f2" called?
 
-  Ans: 2 times
+  Correct answer is 3 times
 
   6. What value does the "a" parameter take in the first "f1" call?
 
-  Ans: 8
+   Correct answer is 1
 
   7. What is the value of the "a" outer variable when "f1" is called for the first time?
 

@@ -18,6 +18,7 @@ Write a function that:
 - numbers greater 100 must be replaced with 100
 */
 
+/*
 function formatPercentage(num) {
       if (num >= 100)
           return "100%";
@@ -32,6 +33,17 @@ function formatPercentage(num) {
       return str + '%'
 }
 
+THE ABOVE BECAUSE I DO NOT ACTUALLY 'ROUND' ANY NUMBER - NO round FUNCTION!
+
+SOLUTION:
+*/
+
+function formatPercentage(num) {
+  if (num > 100) num = 100;
+  const roundedNum = Math.round(num * 100) / 100;
+  return `${roundedNum}%`;
+}
+
 /*
 Write a function that:
 - takes an array of strings as input
@@ -39,6 +51,8 @@ Write a function that:
 - removes any forward slashes (/) in each string
 - makes all strings all lowercase
 */
+
+/*
 function tidyUpStrings(arrayOfStrings) {
   let pos;
   for (let i = 0; i < arrayOfStrings.length; i++) {
@@ -58,6 +72,23 @@ function tidyUpStrings(arrayOfStrings) {
   }
   return arrayOfStrings;  
 }
+
+THE ABOVE LOOP COULD HAVE BEEN REPLACED BY THE USAGE OF THE replace FUNCTION
+
+SOLUTION:
+*/
+
+function tidyUpStrings(arrayOfStrings) {
+  const tidiedStrings = [];
+
+  for (let i = 0; i < arrayOfStrings.length; i++) {
+    const item = arrayOfStrings[i];
+    const formattedItem = item.trim().replace('/', '').toLowerCase();
+    tidiedStrings.push(formattedItem);
+  }
+  return tidiedStrings;
+}
+
 
 /* TEST DATA
     console.log(tidyUpStrings(["///", "/", "!a/", "/b", "//aBc//", "Zyh"])); 
