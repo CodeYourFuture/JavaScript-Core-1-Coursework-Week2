@@ -17,7 +17,7 @@
   5. How many times is "f2" called?
   Answer: 3 times
   6. What value does the "a" parameter take in the first "f1" call?
-  Answer: 7
+  Answer: 1
   7. What is the value of the "a" outer variable when "f1" is called for the first time?
   Answer: 8
 */
@@ -44,7 +44,7 @@ for (let i = 0; i < 5; ++i) {
     console.log(d);
   } else {
     const e = f1(i, a);
-    console.log(e);
+    console.log(a);
   }
 }
 

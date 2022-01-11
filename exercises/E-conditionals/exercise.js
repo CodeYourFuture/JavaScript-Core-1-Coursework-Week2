@@ -16,7 +16,7 @@ function checkRole(name,danielsRole) {
   return `Hi, I'm ${name}, I'm a ${danielsRole}.`;
 
 }
-console.log(checkRole("Daniel","mentor"));
+console.log(checkRole(name, danielsRole));
 
 /* 
 EXPECTED RESULT
