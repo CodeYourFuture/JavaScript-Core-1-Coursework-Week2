@@ -19,7 +19,8 @@ function isShortName(name) {
 }
 
 function startsWithD(name) {
-  return name[0] == "D";
+  return name[0] === "D";
+  //this method is right as well return name.indexOf("D") === 0;
 }
 /* 
   DO NOT EDIT BELOW THIS LINE

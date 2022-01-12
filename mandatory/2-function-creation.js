@@ -24,9 +24,7 @@ Write a function that:
 
 function formatPercentage(num) {
   num = Math.round(num * 100) / 100;
-  if (num > 100) {
-    num = 100;
-  }
+  if (num > 100) num = 100;
   return num + "%";
 }
 

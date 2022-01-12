@@ -8,7 +8,7 @@
 */
 
 function checkRole(name, role) {
-  if (role == "mentor") {
+  if (role === "mentor") {
     console.log(`Hi,I'm ${name}, I'm a mentor.`);
   } else {
     console.log(`Hi,I'm ${name}, I'm student`);
