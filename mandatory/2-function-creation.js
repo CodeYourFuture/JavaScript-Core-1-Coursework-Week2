@@ -23,8 +23,7 @@ Write a function that:
 
 function formatPercentage(num) {
   if ( num > 100){
-    num = 100;
-    return 100+"%";
+    return 100 +"%";
   }
   let result = parseFloat(num.toFixed(2)) + "%";
   return result;
@@ -38,11 +37,12 @@ Write a function that:
 - makes all strings all lowercase
 */
 function tidyUpStrings(arrayOfStrings) {
+  let tidyString = [];
   
   for (let i = 0; i<arrayOfStrings.length; i++){
-    arrayOfStrings[i] = arrayOfStrings[i].trim().replace(/\//g, "").toLowerCase();
+    tidyString[i] = arrayOfStrings[i].trim().replace(/\//g, "").toLowerCase();
   }
-  return arrayOfStrings;
+  return tidyString;
 }
 
 /* ======= TESTS - DO NOT MODIFY ===== */
