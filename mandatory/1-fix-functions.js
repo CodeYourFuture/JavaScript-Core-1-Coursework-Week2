@@ -11,7 +11,6 @@
 */
 
 function mood(isHappy) {
-  
   if (isHappy) {
     return "I am happy";
   } else {
@@ -20,7 +19,6 @@ function mood(isHappy) {
 }
 
 function greaterThan10(num) {
-
   if (num > 10) {
     return "num is greater than 10";
   } else {
@@ -28,9 +26,8 @@ function greaterThan10(num) {
   }
 }
 
-function get3rdIndex(arr){
-
-return arr[3];
+function get3rdIndex(arr) {
+  return arr[3];
 }
 
 /* ======= TESTS - DO NOT MODIFY ===== */

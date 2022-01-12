@@ -11,7 +11,7 @@ function validate(num) {
     return true;
   } else {
     return false;
-  } 
+  }
 }
 
 /*
@@ -26,9 +26,8 @@ function formatPercentage(num) {
   if (num >= 100) {
     return 100 + "%";
   } else {
-    return Number(num.toFixed(2)) + "%";  
+    return Number(num.toFixed(2)) + "%";
   }
-     
 }
 
 /*
@@ -38,40 +37,10 @@ Write a function that:
 - removes any forward slashes (/) in each string
 - makes all strings all lowercase
 */
-// function tidyUpStrings(arrayOfStrings) {
-//   return.trim().toLowerCase().replace(/\//g, "");
-// }
-
-// const tidyUpStrings =[
-//   "/Daniel",
-//   " /Sanyia",
-//   "AnTHonY",
-//   "irina",
-//   " Gordon",
-//   "ashleigh   ",
-//   "   Alastair  ",
-//   " anne marie  ",
-// ];  
-// function tidyUpStrings(arrayOfStrings) {
-//   return (arrayOfStrings.trim().toLowerCase().replace(/\//g, ""));
-// }
-
-  // const arrayOfStrings = [
-  //   "/Daniel",
-  //   " /Sanyia",
-  //   "AnTHonY",
-  //   "irina",
-  //   " Gordon",
-  //   "ashleigh   ",
-  //   "   Alastair  ",
-  //   " anne marie  ",
-  // ];
-  //const newStrings = arrayOfStrings.map(tidyUpStrings);
 
 function tidyUpStrings(arrayOfStrings) {
- // console.log(arrayOfStrings);
-  return arrayOfStrings.map((x)=> x.trim().toLowerCase().replace(/\//g, ""));
- // return arrayOfStrings.trim().toLowerCase().replace(/\//g, "");
+  return arrayOfStrings.map((x) => x.trim().toLowerCase().replace(/\//g, ""));
+  
 }
 /* ======= TESTS - DO NOT MODIFY ===== */
 
@@ -123,7 +92,7 @@ test("tidyUpString function works", () => {
       "ashleigh   ",
       "   Alastair  ",
       " anne marie  ",
-    ])  
+    ])
   ).toEqual([
     "daniel",
     "sanyia",
@@ -133,5 +102,5 @@ test("tidyUpString function works", () => {
     "ashleigh",
     "alastair",
     "anne marie",
-  ]); 
+  ]);
 });

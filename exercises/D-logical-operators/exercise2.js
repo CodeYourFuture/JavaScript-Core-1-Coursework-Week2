@@ -26,7 +26,6 @@ function isShortName(name) {
   } else {
     return false;
   }
-  
 }
 
 function startsWithD(name) {

@@ -5,17 +5,15 @@
   The variables should have values that match the expected results.
   */
 
-  function checkAge(age){
-  if(age >= 18){
-  console.log("You are qualified");
-   }
-  else if (age < 18 && age > 1) {
+function checkAge(age) {
+  if (age >= 18) {
+    console.log("You are qualified");
+  } else if (age < 18 && age > 1) {
     console.log("You are a child");
+  } else {
+    console.log("No age");
   }
-   else{
-     console.log("No age");
-   }
- }
+}
 console.log(checkAge(21));
 console.log(checkAge(12));
 console.log(checkAge(0));
@@ -25,7 +23,6 @@ function isOdd(num) {
 }
 console.log(isOdd(3));
 console.log(isOdd(2));
-
 
 // Finish the predicate function to test if the passed number is negative (less than zero)
 function isNegative(number) {
