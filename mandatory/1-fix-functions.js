@@ -29,7 +29,7 @@ function greaterThan10(isBigEnough) {
 }
 
 function get3rdIndex(arr) {
-  element = arr[3]
+  let element = arr[3]
 
   return element;
 }

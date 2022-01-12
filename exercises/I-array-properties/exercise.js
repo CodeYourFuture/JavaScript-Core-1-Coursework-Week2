@@ -7,12 +7,11 @@
 
 function isEmpty(arr) {
   if(arr.length) {
-    return "false"
+    return arr;
   }
-  else {
-    return "true"
+  
   }; // complete this statement
-}
+
 
 
 /* 
