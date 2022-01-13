@@ -6,23 +6,23 @@
 */
 
 function isNegative(num) {
-  var number = num < 0;
-  return number;
+
+  return num < 0;
 }
 
 function isBetween5and10(num) {
-  var number = 5 < num < 10;
-  return number;
+
+  return num > 4 && num < 11;
 }
 
 function isShortName(name) {
-  var shortName = name.lenght < 7;
-  return shortName;
+  return name.length < 8;
 }
 
+
+
 function startsWithD(name) {
-  var fisrtLetter = name[0];
-  return fisrtLetter;
+  return D = name.charAt(0);
 }
 
 /* 
