@@ -6,7 +6,7 @@ Here's an expression that evaulates to a boolean.
 1 > 2
 ```
 
-* Can you work out what value this expression evaluates to?
+- Can you work out what value this expression evaluates to?
 
 The `>` symbol in the expression is a **comparison operator**. Comparison operators compare two values. This operator checks to see if the number on the left is bigger than the number on the right.
 
@@ -25,5 +25,5 @@ The `>` symbol in the expression is a **comparison operator**. Comparison operat
 
 ## Exercise
 
-* Open `exercise.js` and follow the instructions.
-* Open a node console, and write some expressions that use comparison operators
+- Open `exercise.js` and follow the instructions.
+- Open a node console, and write some expressions that use comparison operators
