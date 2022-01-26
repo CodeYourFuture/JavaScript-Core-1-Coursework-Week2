@@ -40,8 +40,8 @@ Write a function that:
 - makes all strings all lowercase
 */
 function tidyUpStrings(arrayOfStrings) {
-  return arrayOfStrings.map((array) =>
-    array.toLowerCase().replace("/", "").trim()
+  return arrayOfStrings.map((string) =>
+    string.toLowerCase().replace("/", "").trim()
   );
 }
 
