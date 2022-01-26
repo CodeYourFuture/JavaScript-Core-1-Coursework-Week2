@@ -24,10 +24,8 @@ Write a function that:
 */
 
 function formatPercentage(num) {
-  if (typeof num === "number") {
     if (num > 100) {
-      num = 100;
-    }
+       num = 100;
     return `${Math.round(num * 100) / 100}%`;
   } else {
     return false;
