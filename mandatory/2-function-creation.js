@@ -30,9 +30,16 @@ Write a function that:
 //   }
 // }
 function formatPercentage(num) {
-  if (num > 100) num = 100
-  if (num % 1 != 0) num = parseFloat(num.toFixed(2))
-  return num + '%'
+  //   if (num > 100) num = 100
+  //   if (num % 1 != 0) num = parseFloat(num.toFixed(2))
+  //   return num + '%'
+  // }
+  if (num > 100) {
+    return "100%"
+  } else{
+    return Number(num.toFixed(2))+ "%";// toFixed give me number on string"12.54" for convert it to number I need Number
+  }
+  
 }
 
 /*
