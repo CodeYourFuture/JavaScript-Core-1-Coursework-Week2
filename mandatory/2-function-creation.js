@@ -50,12 +50,14 @@ Write a function that:
 - makes all strings all lowercase
 */
 function tidyUpStrings(arrayOfStrings) {
-  for (let i = 0; i < arrayOfStrings.length; i++) {
-    arrayOfStrings[i] = arrayOfStrings[i].trim()
-    arrayOfStrings[i] = arrayOfStrings[i].toLowerCase()
-    arrayOfStrings[i] = arrayOfStrings[i].replace("/", "")
-  }
-  return arrayOfStrings
+  // for (let i = 0; i < arrayOfStrings.length; i++) {
+  //   arrayOfStrings[i] = arrayOfStrings[i].trim()
+  //   arrayOfStrings[i] = arrayOfStrings[i].toLowerCase()
+  //   arrayOfStrings[i] = arrayOfStrings[i].replace("/", "")
+  // }
+  // return arrayOfStrings
+ let newArray = arrayOfStrings.map((e) => {return e.trim().toLowerCase().replace("/","")}); // this method is shorter and easier to understand.
+return newArray
 }
 
 /* ======= TESTS - DO NOT MODIFY ===== */
