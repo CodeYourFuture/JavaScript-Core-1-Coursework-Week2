@@ -1,12 +1,17 @@
 /*
 Complete the function to check if the variable `num` satisfies the following requirements:
-- is a number
+- is a number (***) Don't specify if it is string or number.
 - is even
 - is less than or equal to 100
 Tip: use logical operators
 */
 
-function validate(num) {}
+function validate(num) {
+  if(num % 2 === 0 && num <= 100 && typeof num === "number") {
+    return true
+  }
+  return false
+}
 
 /*
 Write a function that:
@@ -16,7 +21,12 @@ Write a function that:
 - numbers greater 100 must be replaced with 100
 */
 
-function formatPercentage(num) {}
+function formatPercentage(num) {
+  if(num > 100) {
+    return 100 + "%";
+  }
+  return`${num = Number(num.toFixed(2))}%`;
+}
 
 /*
 Write a function that:
@@ -25,7 +35,15 @@ Write a function that:
 - removes any forward slashes (/) in each string
 - makes all strings all lowercase
 */
-function tidyUpStrings(arrayOfStrings) {}
+function tidyUpStrings(arrayOfStrings) {
+
+  for(let i = 0; i < arrayOfStrings.length; i++) {
+    arrayOfStrings[i] = arrayOfStrings[i].toLowerCase();
+    arrayOfStrings[i] = arrayOfStrings[i].replace("/"," ");
+    arrayOfStrings[i] = arrayOfStrings[i].trim();
+    }
+    return arrayOfStrings;
+  }
 
 /* ======= TESTS - DO NOT MODIFY ===== */
 
