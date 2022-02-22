@@ -9,8 +9,8 @@
 let name = "Daniel";
 let danielsRole = "mentor";
 
-if (danielsRole) {
-  console.log("Hi, I'm " + name + ", I'm a mentor");
+if (danielsRole === "mentor") {
+  console.log("Hi, I'm " + name + ", I'm a " + danielsRole);
 } else {
   console.log("Hi, I'm " + name + ", I'm a student");
 }
