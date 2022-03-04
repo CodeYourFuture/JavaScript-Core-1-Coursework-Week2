@@ -16,7 +16,7 @@
 // `getAllFrequencies` goes here
 function getAllFrequencies() {
   let frequencyA = [];
-  for (let i = 87; i < 109; ++i) {
+  for (let i = 87; i <= 108; i++) {
     frequencyA.push(i);
   }
   return frequencyA;
