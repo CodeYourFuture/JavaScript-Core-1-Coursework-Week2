@@ -44,20 +44,14 @@ Write a function that:
 */
 function tidyUpStrings(arrayOfStrings) {
   
-  let newStrings = arrayOfStrings.map;
-
-
-arrayOfStrings[newStrings].trim();
-arrayOfStrings[newStrings].replace(/\//g, "");
-arrayOfStrings[newStrings].toLowerCase();
-
+for(let i = 0; i < arrayOfStrings.length; i++){
+arrayOfStrings[i]=arrayOfStrings[i].trim().replace(/\//g, "").toLowerCase();
+}  
 return arrayOfStrings;
- 
+
+
 
 }
-
-  
- 
  
 
  
