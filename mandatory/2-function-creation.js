@@ -40,10 +40,11 @@ Write a function that:
 - removes any spaces in the beginning or end of each string
 - removes any forward slashes (/) in each string
 - makes all strings all lowercase
+*/
 
-let text = "                 Jude Ricketts                  ";
-let result = text.replace(/^\s+|\s+$/gm, "");
-console.log(result);
+// let text = "                 Jude Ricketts                  ";
+// let result = text.replace(/^\s+|\s+$/gm, "");
+// console.log(result);
 
 // exercise 2 a
 var myName = `                JUDE RICKETTS                   `;
@@ -54,8 +55,6 @@ console.log(nameLowerCase.trim()); // "jude ricketts"
 let text = "                 Jude Ricketts                  ";
 let result = text.replace(/^\s+|\s+$/gm, "");
 console.log(result);
-
-*/
 
 function tidyUpStrings(arrayOfStrings) {
   // index is the position of the element - the element is the thing
