@@ -12,8 +12,25 @@
  * - Create an array  starting at 87 and ending in 108
  * - Should return this array to use in other functions
  */
+ function getAllFrequencies (){
+  let newArray =[];
+  for (var i=87; i<=108; i++){
+    newArray.push(i);
+  }
+  return newArray;
+}
 
 // `getAllFrequencies` goes here
+function getStations(){
+  let allFrequencies = getAllFrequencies();
+  let arrayFrequencies = [];
+  for (var i=0; i<allFrequencies.length; i++){
+    if (isRadioStation(allFrequencies[i]) === true){
+      arrayFrequencies.push(allFrequencies[i]);
+    }
+  }
+  return arrayFrequencies;
+}
 
 /**
  * Next, let's write a function that gives us only the frequencies that are radio stations.
