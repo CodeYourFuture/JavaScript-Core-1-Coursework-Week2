@@ -7,7 +7,8 @@
 */
 
 let numbers = [1, 2, 3]; // Don't change this array literal declaration
-
+numbers[3] = 4;
+// numbers.push(4); we can use this method
 /* 
   DO NOT EDIT BELOW THIS LINE
   --------------------------- */
