@@ -5,7 +5,14 @@
   Update the code so that you get the expected result.
 */
 
-function isNegative() {}
+//checking if a number is negative
+const isNegative = num => (num < 0);
+//checking if number is in range 5 - 10
+const isBetween5and10 = num => (num >= 5 && num <= 10);
+//checking if a name is a short name
+const isShortName = firstName => (firstName.length <= 6);
+//checking if the first name is starting with "D"
+const startsWithD = firstName => firstName.startsWith("D");
 
 /* 
   DO NOT EDIT BELOW THIS LINE
@@ -24,5 +31,5 @@ console.log("Does Daniel start with 'D'?", startsWithD("Daniel"));
   Is 5 a negative number? false
   Is 10 in the range 5-10? true
   Is Daniel a short name? true
-  Does Daniel start with 'D'?
+  Does Daniel start with 'D'? true
 */
