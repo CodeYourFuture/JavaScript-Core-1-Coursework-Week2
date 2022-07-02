@@ -6,7 +6,7 @@
   - if number is more or equal to zero, return the word "positive"
 */
 
-function negativeOrPositive(number) {}
+const negativeOrPositive = num => (num >= 0) ? "positive" : "negative";
 
 /* 
   DO NOT EDIT BELOW THIS LINE

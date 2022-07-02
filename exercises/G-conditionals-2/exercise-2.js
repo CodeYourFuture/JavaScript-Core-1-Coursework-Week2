@@ -7,7 +7,7 @@
 
 */
 
-function studentPassed(grade) {}
+const studentPassed = grade => (grade >= 50) ? "passed" : "failed";
 
 /* 
 DO NOT EDIT BELOW THIS LINE
