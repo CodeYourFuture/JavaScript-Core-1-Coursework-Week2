@@ -29,7 +29,7 @@ function isShortName(name) {
 }
 function startsWithD(name) {
   if ((name = "Daniel")) {
-    return "true";
+    return "True";
   }
 }
 
