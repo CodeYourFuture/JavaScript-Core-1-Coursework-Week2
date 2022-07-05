@@ -39,10 +39,11 @@ Write a function that:
 */
 
 function tidyUpStrings(arrayOfStrings) {
-  string = arrayOfStrings;
-  return strings.toUpperCase();
+  const arrStrings = Array.prototype.map.call(arrayOfStrings, (newArr) =>
+    newArr.toLowerCase().replace("/", "").trim()
+  );
+  return arrStrings;
 }
-
 /* ======= TESTS - DO NOT MODIFY ===== */
 
 test("validate function accepts valid even number", () => {
