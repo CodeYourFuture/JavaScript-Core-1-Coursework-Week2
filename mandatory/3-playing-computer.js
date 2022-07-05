@@ -7,7 +7,7 @@
   Answer the following questions:
 
   1. This program throws an error. Why? (If you can't find it, try executing it) ="b" is not defined
-  2. Remove the line that throws the error.=Done
+  2. Remove the line that throws the error.=Done (see line 32)
   3. What is printed to the console? = values of x, a d, and e
   4. How many times is "f1" called? = 3
   5. How many times is "f2" called? = 2
