@@ -22,9 +22,13 @@ Write a function that:
 */
 
 function formatPercentage(num) {
-
-  return toString(num) + "%";
+    if(num > 100) {
+      return num = 100;
+    }
+  return num.toString() + "%";
 }
+
+console.log(formatPercentage(102));
 
 /*
 Write a function that:
@@ -35,7 +39,7 @@ Write a function that:
 */
 function tidyUpStrings(arrayOfStrings) {
 
-  arrayOfStrings.toLowerCase().trim();
+  return arrayOfStrings.toLowerCase().trim().replace("/", "");
 }
 
 /* ======= TESTS - DO NOT MODIFY ===== */
