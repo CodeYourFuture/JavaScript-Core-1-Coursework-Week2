@@ -48,7 +48,6 @@ for (let i = 0; i < 5; ++i) {
 - (f1) is called two times;
 - (f2) is called three times;
 - The value of "a" as parameter in the first call of "f1" is 6;
-- The value "a" outer variable is 6
-
+- The value "a" outer variable when "f1" is called for the first time is 6;
 
 */

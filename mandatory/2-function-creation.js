@@ -12,7 +12,7 @@ function validate(num) {
       return "I won";
   }
 }
-
+console.log(validate(10));
 /*
 Write a function that:
 - takes a number as input
@@ -28,7 +28,7 @@ function formatPercentage(num) {
   return num.toString() + "%";
 }
 
-console.log(formatPercentage(102));
+console.log(formatPercentage(10));
 
 /*
 Write a function that:
@@ -39,8 +39,9 @@ Write a function that:
 */
 function tidyUpStrings(arrayOfStrings) {
 
-  return arrayOfStrings.toLowerCase().trim().replace("/", "");
+  return arrayOfStrings.toLowerCase().trim().replace("//", "");
 }
+console.log('she said \Mathias\'');
 
 /* ======= TESTS - DO NOT MODIFY ===== */
 
