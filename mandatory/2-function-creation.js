@@ -23,13 +23,11 @@ Write a function that:
 */
 
 function formatPercentage(num) {
-  for (let i = 0; i < arr.length; i++) {
-    if (arr[i] > 100) {
-      arr[i] = 100;
-    }
-     arr[i] = Math.round(arr[i] * 100) / 100 +"%";
-      }
-     return arr;
+  if(num > 100){
+    return 100+"%"
+  }else{
+   return Number(num.toFixed(2))+ "%"
+  }
 }
 
 /*
@@ -44,13 +42,13 @@ function tidyUpStrings(arrayOfStrings) {
   let removeForwardSlash;
   let returnLowerCase;
 
- for (let i = 0; i < strArr.length; i++) {
-   removeSpace = strArr[i].trim();
+ for (let i = 0; i < arrayOfStrings.length; i++) {
+   removeSpace = arrayOfStrings[i].trim();
    removeForwardSlash = removeSpace.replace("/", "");
    returnLowerCase = removeForwardSlash.toLowerCase();
-   strArr[i] = returnLowerCase;
+   arrayOfStrings[i] = returnLowerCase;
  }
-  return strArr;
+  return arrayOfStrings;
 }
 
 /* ======= TESTS - DO NOT MODIFY ===== */
