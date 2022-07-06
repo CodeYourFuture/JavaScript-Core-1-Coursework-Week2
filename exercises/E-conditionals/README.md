@@ -15,6 +15,7 @@ let isHappy = true;
 if (isHappy) {
   console.log("I am happy");
 }
+
 ```
 
 The code in paratheses - e.g. `(isHappy)` - is the condition. The condition can be _any_ expression. The following are all valid conditions:
