@@ -10,6 +10,7 @@
 
 */
 
+
 function mood() {
   let isHappy = true;
 
@@ -19,24 +20,27 @@ function mood() {
     return "I am not happy";
   }
 }
+console.log(mood());
 
 function greaterThan10(num) {
-  let isBigEnough;
+  let isBigEnough = num > 10;
 
   if (isBigEnough) {
-    return "num is greater than 10";
+    return num + " is greater than 10";
   } else {
-    return "num is not big enough";
+    return num + " is not big enough";
   }
 }
+console.log(greaterThan10(11));
 
 function get3rdIndex(arr) {
   let index = 3;
-  let element;
+  let element = arr[index];
 
   return element;
 }
 
+console.log(get3rdIndex([1, 5, 7, 8]))
 /* ======= TESTS - DO NOT MODIFY ===== */
 
 test("mood function works for true", () => {

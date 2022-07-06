@@ -6,8 +6,13 @@ Complete the function to check if the variable `num` satisfies the following req
 Tip: use logical operators
 */
 
-function validate(num) {}
+function validate(num) {
 
+  if((num == num) && (num % 2 == 0) && (num <= 100)){
+      return "I won";
+  }
+}
+console.log(validate(10));
 /*
 Write a function that:
 - takes a number as input
@@ -16,7 +21,14 @@ Write a function that:
 - numbers greater 100 must be replaced with 100
 */
 
-function formatPercentage(num) {}
+function formatPercentage(num) {
+    if(num > 100) {
+      return num = 100;
+    }
+  return num.toString() + "%";
+}
+
+console.log(formatPercentage(10));
 
 /*
 Write a function that:
@@ -25,7 +37,11 @@ Write a function that:
 - removes any forward slashes (/) in each string
 - makes all strings all lowercase
 */
-function tidyUpStrings(arrayOfStrings) {}
+function tidyUpStrings(arrayOfStrings) {
+
+  return arrayOfStrings.toLowerCase().trim().replace("//", "");
+}
+console.log('she said \Mathias\'');
 
 /* ======= TESTS - DO NOT MODIFY ===== */
 

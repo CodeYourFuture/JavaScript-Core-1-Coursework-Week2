@@ -28,7 +28,7 @@ const f2 = function (a, b) {
 
 console.log(x);
 console.log(a);
-console.log(b);
+//console.log(b);
 
 for (let i = 0; i < 5; ++i) {
   a = a + 1;
@@ -40,3 +40,14 @@ for (let i = 0; i < 5; ++i) {
     console.log(e);
   }
 }
+
+/* 
+- This program will throw the error as the output,
+- console.log(b) is throwing an error; this needs to be removed;
+- This will print (b) is undefined;
+- (f1) is called two times;
+- (f2) is called three times;
+- The value of "a" as parameter in the first call of "f1" is 6;
+- The value "a" outer variable when "f1" is called for the first time is 6;
+
+*/

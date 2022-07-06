@@ -5,11 +5,15 @@
 */
 
 function first(arr) {
-  return; // complete this statement
+
+  let first = arr[0];
+  return first; // complete this statement
 }
 
 function last(arr) {
-  return; // complete this statement
+
+  let last = arr[arr.length-1];
+  return last; // complete this statement
 }
 
 /* 

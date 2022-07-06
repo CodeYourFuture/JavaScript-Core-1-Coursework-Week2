@@ -9,6 +9,18 @@
 let name = "Daniel";
 let danielsRole = "mentor";
 
+function studentMentor(name) {
+if(name !== danielsRole) {
+
+  return "Hi, I'm Daniel, I'm a mentor.";
+
+}else {
+
+  return "Hi, I'm Daniel, I'm a student.";
+}
+}
+
+console.log(studentMentor("Daniel"));
 /* 
 EXPECTED RESULT
 ---------------
