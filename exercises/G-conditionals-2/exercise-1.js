@@ -6,7 +6,19 @@
   - if number is more or equal to zero, return the word "positive"
 */
 
-function negativeOrPositive(number) {}
+function negativeOrPositive(number) {
+
+  if(number >= 0) {
+
+    return `${number} positive`;
+
+  }else{
+
+    return `${number} negative`;
+  }
+}
+
+console.log(negativeOrPositive(-8));
 
 /* 
   DO NOT EDIT BELOW THIS LINE
