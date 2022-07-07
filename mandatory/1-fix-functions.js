@@ -11,27 +11,27 @@
 */
 
 function mood() {
-  let isHappy = true;
+  let isHappy = "true";
 
-  if (isHappy = true) {
+  if (isHappy = "true") {
     return "I am happy";
   } else {
     return "I am not happy";
   }
 }
 
-function greaterThan10(num) {
-  let isBigEnough = 10;
 
-  if (isBigEnough) {
+function greaterThan10(num) {
+
+  if (num>10) {
     return "num is greater than 10";
-  } else {
+  }  {
     return "num is not big enough";
   }
 }
 
 function get3rdIndex(arr) {
-  let index = 3;
+  return arr [3];
   let element;
 
   return element;
