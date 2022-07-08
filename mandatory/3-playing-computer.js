@@ -7,12 +7,18 @@
   Answer the following questions:
 
   1. This program throws an error. Why? (If you can't find it, try executing it).
+    b is not defined when you console log it
   2. Remove the line that throws the error.
   3. What is printed to the console?
+    2 6 4 9 6 13 8 (on individual lines)
   4. How many times is "f1" called?
+    Twice
   5. How many times is "f2" called?
+    Three times
   6. What value does the "a" parameter take in the first "f1" call?
+    8
   7. What is the value of the "a" outer variable when "f1" is called for the first time?
+    8
 */
 
 let x = 2;
@@ -28,15 +34,17 @@ const f2 = function (a, b) {
 
 console.log(x);
 console.log(a);
-console.log(b);
 
 for (let i = 0; i < 5; ++i) {
-  a = a + 1;
+  a = a + 1; // i=0,a=7 / i=1,a=8 / i=2,a=9 / i=3,a=10 / i=4,a=11
   if (i % 2 === 0) {
-    const d = f2(i, x);
+    const d = f2(i, x); // i=0, d=0+2+2=4 / i=2, d=2+2+2=6/ i=4, d=4+2+2=8 
     console.log(d);
   } else {
-    const e = f1(i, a);
+    const e = f1(i, a); // i=1, e=1+8=9 / i=3, e=3+10=13 
     console.log(e);
   }
 }
+
+
+
