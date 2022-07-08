@@ -5,8 +5,14 @@ Complete the function to check if the variable `num` satisfies the following req
 - is less than or equal to 100
 Tip: use logical operators
 */
+function validate(num) {
+  if (typeof num === "number" && num % 2 == 0 && num <= 100) {
+    return true
+  } else {
+    return false
+  }
+}
 
-function validate(num) {}
 
 /*
 Write a function that:
@@ -16,16 +22,29 @@ Write a function that:
 - numbers greater 100 must be replaced with 100
 */
 
-function formatPercentage(num) {}
+function formatPercentage(num) {
+  if (num < 100) {
+    return num.toFixed(2) + "%" 
+  }
+  
+ else if (num > 100) {
+  return 100 + "%"
+ }
 
-/*
+  }
+
+  /*
 Write a function that:
 - takes an array of strings as input
 - removes any spaces in the beginning or end of each string
 - removes any forward slashes (/) in each string
 - makes all strings all lowercase
 */
-function tidyUpStrings(arrayOfStrings) {}
+function tidyUpStrings(arrayOfStrings) {
+ return arrayOfStrings.replace(/\//g, "-"); 
+//  .toLowerCase(); 
+}
+
 
 /* ======= TESTS - DO NOT MODIFY ===== */
 
