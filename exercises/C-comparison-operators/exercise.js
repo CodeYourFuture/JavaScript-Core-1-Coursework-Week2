@@ -7,14 +7,14 @@
 
 let studentCount = 16;
 let mentorCount = 9;
-let moreStudentsThanMentors; // finish this statement
+let moreStudentsThanMentors = 16>9
 
 let roomMaxCapacity = 25;
-let enoughSpaceInRoom; // finish this statement
+let enoughSpaceInRoom = true
 
 let personA = "Daniel";
 let personB = "Irina";
-let sameName; // finish this statement
+let sameName = "Daniel"==="Irina";
 
 /* 
   DO NOT EDIT BELOW THIS LINE
