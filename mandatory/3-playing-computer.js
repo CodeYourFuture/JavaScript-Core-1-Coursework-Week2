@@ -7,11 +7,22 @@
   Answer the following questions:
 
   1. This program throws an error. Why? (If you can't find it, try executing it).
+  Answer: We are trying to console.log(b), but b is not defined (no variable decalred for b).
+
   2. Remove the line that throws the error.
+  Answer: console.log(b) was removed
+
   3. What is printed to the console?
+  Answer: 2, 6, 4, 9, 6, 13, 8
+
   4. How many times is "f1" called?
+  Answer: 2
+  
   5. How many times is "f2" called?
+  Answer: 3
+
   6. What value does the "a" parameter take in the first "f1" call?
+  Answer: 
   7. What is the value of the "a" outer variable when "f1" is called for the first time?
 */
 
@@ -28,7 +39,6 @@ const f2 = function (a, b) {
 
 console.log(x);
 console.log(a);
-console.log(b);
 
 for (let i = 0; i < 5; ++i) {
   a = a + 1;
