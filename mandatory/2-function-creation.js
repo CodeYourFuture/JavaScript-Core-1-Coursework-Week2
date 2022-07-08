@@ -41,7 +41,7 @@ Write a function that:
 - makes all strings all lowercase
 */
 function tidyUpStrings(arrayOfStrings) {
- return arrayOfStrings.replace(/\//g, "-"); 
+ return tidyUpStrings.replace(/\//g,'');; 
 //  .toLowerCase(); 
 }
 
