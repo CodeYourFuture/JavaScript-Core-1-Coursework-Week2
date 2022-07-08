@@ -3,14 +3,11 @@
   -------------------------
   Complete the functions below to get the first and last values from the array
 */
+//get first value of the array
+const first = arr => arr[0];
 
-function first(arr) {
-  return; // complete this statement
-}
-
-function last(arr) {
-  return; // complete this statement
-}
+//get last value of the array
+const last = arr => arr[arr.length - 1];
 
 /* 
   DO NOT EDIT BELOW THIS LINE
