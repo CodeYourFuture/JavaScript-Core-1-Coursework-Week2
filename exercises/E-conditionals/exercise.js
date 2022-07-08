@@ -7,7 +7,18 @@
 */
 
 let name = "Daniel";
-let danielsRole = "mentor";
+let danielsRole = "Mentor";
+
+if (danielsRole === "mentor" || danielsRole == "Mentor") {
+  console.log("Hi, I'm Daniel, I'm a mentor");
+  // Additional
+} else if (danielsRole === "none" || danielsRole == "None") {
+  console.log("Hi, I'm Daniel, I'm not involved in CYF");
+  // ..
+} else {
+  console.log("Hi, I'm Daniel, I'm a student");
+}
+
 
 /* 
 EXPECTED RESULT
