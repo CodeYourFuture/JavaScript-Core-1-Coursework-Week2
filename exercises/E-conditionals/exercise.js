@@ -9,6 +9,22 @@
 let name = "Daniel";
 let danielsRole = "mentor";
 
+function checkRole() {
+  if ((danielsRole = Mentor)) {
+    let result = "Hi, I'm Daniel, I'm a mentor";
+    return result;
+    // Additional
+  } else if ((danielsRole = "none")) {
+    let result = "Hi, I'm Daniel, I'm not involved in CYF";
+    return result;
+  } else {
+    let result = "Hi, I'm Daniel, I'm a student";
+    return result;
+  }
+}
+
+
+
 /* 
 EXPECTED RESULT
 ---------------

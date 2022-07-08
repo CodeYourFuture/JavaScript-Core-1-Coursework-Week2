@@ -5,7 +5,32 @@
   Update the code so that you get the expected result.
 */
 
-function isNegative() {}
+function isNegative(number) {
+  if (number < 0) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
+function isBetween5and10(number2) {
+  if (number2 >= 5 && number2 <= 10) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
+function isShortName(name) {
+  let isNameShort = new RegExp(/^([a-z]?$)/i);
+  return isNameShort.test(name);
+}
+
+function startsWithD(daniel) {
+  let nameStartD = daniel[0];
+  let result = nameStartD == "D";
+  return result;
+}
 
 /* 
   DO NOT EDIT BELOW THIS LINE
