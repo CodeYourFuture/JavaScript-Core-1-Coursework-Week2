@@ -6,12 +6,39 @@
 */
 
 function isNegative() {}
+functionIsNegative (num) {
+  if (num < 0) {
+    return true;
+  }
+  return false;
+}
 
+function isBetween5and10(num) {
+  if (num >= 5 && num <=10) {
+    return true;
+  }
+  return false;
+}
+
+function isShortName (str) {
+  if (str.length < 7) {
+    return true;
+  }
+  return false;
+}
+
+function startWithD (str) {
+  if (str.startWith("D")) {
+    return true;
+  }
+  return false;
+}
 /* 
   DO NOT EDIT BELOW THIS LINE
   --------------------------- */
 
 console.log("Is -10 is a negative number?", isNegative(-10));
+
 console.log("Is 5 a negative number?", isNegative(5));
 console.log("Is 10 in the range 5-10?", isBetween5and10(10));
 console.log("Is Daniel a short name?", isShortName("Daniel"));
