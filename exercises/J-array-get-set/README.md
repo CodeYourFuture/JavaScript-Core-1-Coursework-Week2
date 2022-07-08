@@ -12,6 +12,7 @@ Water
 3
 ```
 
+
 Did you notice how we use `[0]` to get the first value? In programming we count starting at zero.
 
 > The number inside of the brackets is called an **index**. Index just means the position of the item within the array.

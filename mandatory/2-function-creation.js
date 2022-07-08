@@ -6,8 +6,19 @@ Complete the function to check if the variable `num` satisfies the following req
 Tip: use logical operators
 */
 
-function validate(num) {}
-
+function validate(num) {
+  if (num <= 100) {
+    return true;
+  }
+  if (num% 2 == 0) {
+    return true;
+  }
+  if (isNaN(num)) {
+    return false;
+  }else{
+    return true;
+  }
+}
 /*
 Write a function that:
 - takes a number as input

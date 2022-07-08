@@ -9,32 +9,34 @@
   NOTE:Only make edits inside the function
 
 */
+ let isHappy = true;
 
-function mood() {
-  let isHappy = true;
-
-  if (isHappy) {
+function mood(mode) {
+ 
+  if (mode === isHappy) {
     return "I am happy";
-  } else {
+  } else if (mode !== isHappy) {
     return "I am not happy";
   }
 }
 
 function greaterThan10(num) {
-  let isBigEnough;
+  let isBigEnough = 10;
 
-  if (isBigEnough) {
+  if (num >= isBigEnough) {
     return "num is greater than 10";
-  } else {
+  }else{
+   if(num < isBigEnough){
     return "num is not big enough";
   }
 }
+}
 
-function get3rdIndex(arr) {
   let index = 3;
-  let element;
+  let element ;
+function get3rdIndex(arr) {
 
-  return element;
+  return arr[3];
 }
 
 /* ======= TESTS - DO NOT MODIFY ===== */
