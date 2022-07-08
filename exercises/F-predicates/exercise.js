@@ -7,8 +7,8 @@
 
 // Finish the predicate function to test if the passed number is negative (less than zero)
 function isNegative(number) {
-  let checkNagative = number < 0;
-  return checkNagative;
+  let checkNegative = number < 0;
+  return checkNegative;
 }
 
 // Finish the predicate function to test if the passed number is between 0 and 10

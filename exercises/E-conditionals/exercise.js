@@ -7,22 +7,17 @@
 */
 
 let name = "Daniel";
-let danielsRole = "mentor";
+let danielsRole = "Mentor";
 
-function checkRole() {
-  if ((danielsRole = Mentor)) {
-    let result = "Hi, I'm Daniel, I'm a mentor";
-    return result;
-    // Additional
-  } else if ((danielsRole = "none")) {
-    let result = "Hi, I'm Daniel, I'm not involved in CYF";
-    return result;
-  } else {
-    let result = "Hi, I'm Daniel, I'm a student";
-    return result;
-  }
+if (danielsRole === "mentor" || danielsRole == "Mentor") {
+  console.log("Hi, I'm Daniel, I'm a mentor");
+  // Additional
+} else if (danielsRole === "none" || danielsRole == "None") {
+  console.log("Hi, I'm Daniel, I'm not involved in CYF");
+  // ..
+} else {
+  console.log("Hi, I'm Daniel, I'm a student");
 }
-
 
 
 /* 
