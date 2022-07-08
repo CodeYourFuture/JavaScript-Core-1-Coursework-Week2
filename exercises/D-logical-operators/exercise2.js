@@ -6,7 +6,7 @@
 */
 
 function isNegative() {}
-functionIsNegative (num) {
+function IsNegative (num) {
   if (num < 0) {
     return true;
   }
@@ -27,8 +27,8 @@ function isShortName (str) {
   return false;
 }
 
-function startWithD (str) {
-  if (str.startWith("D")) {
+function startsWithD (str) {
+  if (str.startsWith("D")) {
     return true;
   }
   return false;
