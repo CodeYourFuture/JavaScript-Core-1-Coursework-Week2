@@ -7,14 +7,8 @@ Tip: use logical operators
 */
 
 function validate(num) {
-  if (typeof num === "number" && num % 2 == 0 && num <= 100) { 
-    console.log("true");
-  } else {
-    console.log("false");
-  }
+  return typeof num === "number" && num % 2 == 0 && num <= 100;
 }
-
-
 /*
 Write a function that:
 - takes a number as input
@@ -24,9 +18,11 @@ Write a function that:
 */
 
 function formatPercentage(num) {
-  if (typeof num === "number") {
-    return number + "%" && (num = num.toFixed(2))
+  if (num > 100) {
+    return 100 + "%";
   }
+ 
+  return Math.round(num * 100) / 100 + "%";
 }
 
 /*
@@ -37,7 +33,8 @@ Write a function that:
 - makes all strings all lowercase
 */
 function tidyUpStrings(arrayOfStrings) {
-  if (arrayOfStrings === [])
+  let strings = arrayOfStrings.trim().replace("/, "").toLowerCase();
+  return strings;
 }
 
 /* ======= TESTS - DO NOT MODIFY ===== */
