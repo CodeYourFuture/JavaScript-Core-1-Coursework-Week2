@@ -5,11 +5,28 @@
   Update the code so that you get the expected result.
 */
 
-function isNegative() {}
+function isNegative(n) {
+  return n < 0 ? true : false;
+}
+
+function isBetween5and10(n) {
+  return n >= 5 && n <= 10 ? true : false;
+}
+
+function isShortName(name) {
+  return name === "Daniel" ? true : false;
+}
+
+function startsWithD(name) {
+  return name.startsWith("D");
+}
+
+
 
 /* 
   DO NOT EDIT BELOW THIS LINE
   --------------------------- */
+
 
 console.log("Is -10 is a negative number?", isNegative(-10));
 console.log("Is 5 a negative number?", isNegative(5));
