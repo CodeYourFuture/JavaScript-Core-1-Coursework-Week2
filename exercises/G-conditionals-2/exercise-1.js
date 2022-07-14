@@ -6,14 +6,17 @@
   - if number is more or equal to zero, return the word "positive"
 */
 
-function negativeOrPositive(number) {}
+function negativeOrPositive(number) {
+  if (number<0) return "negative";
+  else return " positive";
+}
 
 /* 
   DO NOT EDIT BELOW THIS LINE
   --------------------------- */
-let number1 = 5;
-let number2 = -1;
-let number3 = 0;
+var number1 = 5;
+var number2 = -1;
+var number3 = 0;
 
 console.log(number1 + " is " + negativeOrPositive(number1));
 console.log(number2 + " is " + negativeOrPositive(number2));
