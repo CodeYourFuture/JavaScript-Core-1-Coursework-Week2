@@ -6,7 +6,9 @@ Complete the function to check if the variable `num` satisfies the following req
 Tip: use logical operators
 */
 
-function validate(num) {}
+function validate(num) {
+  return typeof num === "number" && num % 2 === 0 && num <= 100;
+}
 
 /*
 Write a function that:
@@ -16,8 +18,14 @@ Write a function that:
 - numbers greater 100 must be replaced with 100
 */
 
-function formatPercentage(num) {}
-
+function formatPercentage(num) {
+  if (num > 100) {
+    return `100%`;
+  } else {
+    return `${num.toFixed(2)}%`;
+  }
+}
+//Chandres note - not understanding why it rejects certain values with 2 decimal numbers as requested
 /*
 Write a function that:
 - takes an array of strings as input
@@ -25,7 +33,14 @@ Write a function that:
 - removes any forward slashes (/) in each string
 - makes all strings all lowercase
 */
-function tidyUpStrings(arrayOfStrings) {}
+function tidyUpStrings(arrayOfStrings) {
+  arrayOfStrings.forEach((element) => {
+    //uncertain how to get the forward slashes to be replaced 
+    // let item = element.replaceAll("/", "");
+    element.trim().trimEnd().toLowerCase();
+  });
+  return arrayOfStrings;
+}
 
 /* ======= TESTS - DO NOT MODIFY ===== */
 
@@ -77,7 +92,7 @@ test("tidyUpString function works", () => {
       "ashleigh   ",
       "   Alastair  ",
       " anne marie  ",
-    ])  
+    ])
   ).toEqual([
     "daniel",
     "sanyia",
@@ -87,5 +102,5 @@ test("tidyUpString function works", () => {
     "ashleigh",
     "alastair",
     "anne marie",
-  ]); 
+  ]);
 });
