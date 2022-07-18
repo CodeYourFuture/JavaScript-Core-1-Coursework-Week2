@@ -8,6 +8,19 @@
 
 let name = "Daniel";
 let danielsRole = "mentor";
+if (danielsRole.localeCompare("mentor") === 0){
+  console.log("Hi, I'm Daniel, I'm a mentor.")
+
+//   let name = "Daniel";
+//   let danielsRole = "student";
+
+// }if(danielsRole.localeCompare("student") ===0){
+//   console.log("Hi, I'm Daniel, I'm a student.")
+// }                            
+
+
+
+
 
 /* 
 EXPECTED RESULT
