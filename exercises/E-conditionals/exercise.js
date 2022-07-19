@@ -9,6 +9,12 @@
 let name = "Daniel";
 let danielsRole = "mentor";
 
+if ("Daniel" === "mentor") {
+  console.log("Hi, I'm Daniel, I'm mentor.");
+} else {
+  return false;
+}
+
 /* 
 EXPECTED RESULT
 ---------------
