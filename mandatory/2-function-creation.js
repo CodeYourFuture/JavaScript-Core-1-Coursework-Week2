@@ -6,7 +6,13 @@ Complete the function to check if the variable `num` satisfies the following req
 Tip: use logical operators
 */
 
-function validate(num) {}
+function validate(num) {
+  if (typeof num === "number" && num % 2 == 0 && num <= 100) {
+    return true;
+  } else {
+    return false;
+  }
+}
 
 /*
 Write a function that:
@@ -16,7 +22,13 @@ Write a function that:
 - numbers greater 100 must be replaced with 100
 */
 
-function formatPercentage(num) {}
+function formatPercentage(num) {
+  if (num > 100) {
+    return 100 + "%";
+  } else {
+    return `${num.toFixed(2) / 1}%`;
+  }
+}
 
 /*
 Write a function that:
@@ -25,7 +37,18 @@ Write a function that:
 - removes any forward slashes (/) in each string
 - makes all strings all lowercase
 */
-function tidyUpStrings(arrayOfStrings) {}
+function tidyUpStrings(arrayOfStrings) {
+  let removeSpace;
+  let removeForwardSlash;
+  let returnLowerCase;
+  for (let i = 0; i < arrayOfStrings; i++) {
+    arrayOfStrings[i].trim();
+    removeForwardSlash = removeSpace.replace("/", "");
+    returnLowerCase = removeForwardSlash.toLowerCase();
+    arrayOfStrings[i] = returnLowerCase;
+  }
+  return arrayOfStrings;
+}
 
 /* ======= TESTS - DO NOT MODIFY ===== */
 
@@ -62,7 +85,7 @@ test.each([
   [18.103, "18.1%"],
   [187.2, "100%"],
   [0.372, "0.37%"],
-])("formatPercentage function works for %s", (input, expected) => {
+])("formatPercentage function works for %", (input, expected) => {
   expect(formatPercentage(input)).toEqual(expected);
 });
 
@@ -77,7 +100,7 @@ test("tidyUpString function works", () => {
       "ashleigh   ",
       "   Alastair  ",
       " anne marie  ",
-    ])  
+    ])
   ).toEqual([
     "daniel",
     "sanyia",
@@ -87,5 +110,5 @@ test("tidyUpString function works", () => {
     "ashleigh",
     "alastair",
     "anne marie",
-  ]); 
+  ]);
 });
