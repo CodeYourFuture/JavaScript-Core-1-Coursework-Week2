@@ -26,6 +26,7 @@ function formatPercentage(num) {
   }
 }
 //Chandres note - not understanding why it rejects certain values with 2 decimal numbers as requested
+
 /*
 Write a function that:
 - takes an array of strings as input
@@ -34,11 +35,20 @@ Write a function that:
 - makes all strings all lowercase
 */
 function tidyUpStrings(arrayOfStrings) {
-  arrayOfStrings.forEach((element) => {
-    //uncertain how to get the forward slashes to be replaced 
-    // let item = element.replaceAll("/", "");
-    element.trim().trimEnd().toLowerCase();
-  });
+  for (let i = 0; i <= arrayOfStrings.length - 1; i++) {
+    let el = arrayOfStrings[i].toLowerCase().trim();
+
+    if (el.includes("/")) {
+      el.replace(/\//g, "");
+    }
+
+    if (el.includes("/")) {
+      el = el.replace(/\//g, "");
+    }
+
+    arrayOfStrings[i] = el;
+  }
+
   return arrayOfStrings;
 }
 

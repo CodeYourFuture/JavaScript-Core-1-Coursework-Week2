@@ -7,12 +7,12 @@
   Answer the following questions:
 
   1. This program throws an error. Why? (If you can't find it, try executing it).
-  2. Remove the line that throws the error.
-  3. What is printed to the console?
-  4. How many times is "f1" called?
-  5. How many times is "f2" called?
-  6. What value does the "a" parameter take in the first "f1" call?
-  7. What is the value of the "a" outer variable when "f1" is called for the first time?
+  2. Remove the line that throws the error. // console.log(b);
+  3. What is printed to the console?  // see below
+  4. How many times is "f1" called? //2 times
+  5. How many times is "f2" called?//3 times
+  6. What value does the "a" parameter take in the first "f1" call? 7
+  7. What is the value of the "a" outer variable when "f1" is called for the first time? 7
 */
 
 let x = 2;
@@ -26,9 +26,9 @@ const f2 = function (a, b) {
   return a + b + x;
 };
 
-console.log(x);
-console.log(a);
-console.log(b);
+console.log(x); //expected 2
+console.log(a); //expected 6
+// console.log(b);
 
 for (let i = 0; i < 5; ++i) {
   a = a + 1;
@@ -40,3 +40,6 @@ for (let i = 0; i < 5; ++i) {
     console.log(e);
   }
 }
+
+//round1 i0 f2 a7 d4 round2 i1 f1 a8 e9 round3 i2 f2 a9 i2x2 d=6 round4 i3 f1 a10 e13
+// round5 i4 f2 a11 d8 round6 i5 kicks out
