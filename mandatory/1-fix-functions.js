@@ -31,8 +31,8 @@ function greaterThan10(num) {
 }
 
 function get3rdIndex(arr) {
-  let index = 3;
-  let element;
+  let index = [3];
+  let element = index;
 
   return element;
 }
