@@ -10,7 +10,6 @@ function isNegative(number) {
   if (number < 0) {
     return "true";
   } else {
-    number > 0;
     return "false";
   }
 }
