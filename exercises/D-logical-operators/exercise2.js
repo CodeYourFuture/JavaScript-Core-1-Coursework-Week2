@@ -28,7 +28,7 @@ function isShortName(name) {
 }
 
 // function startsWithD(name) {
-//   let name = name.startWith();
+//   let name = name.startWith("D");
 // }
 
 /* 
