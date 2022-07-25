@@ -9,8 +9,7 @@
 function negativeOrPositive(number) {}
 
 /* 
-  DO NOT EDIT BELOW THIS LINE
-  --------------------------- */
+  DO  --------------------------- */
 let number1 = 5;
 let number2 = -1;
 let number3 = 0;
@@ -24,5 +23,6 @@ console.log(number3 + " is " + negativeOrPositive(number3));
   ---------------
   5 is positive
   -1 is negative
+ NOT EDIT BELOW THIS LINE
   0 is positive
 */
