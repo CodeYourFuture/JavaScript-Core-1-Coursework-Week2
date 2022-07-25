@@ -5,7 +5,31 @@
   Update the code so that you get the expected result.
 */
 
-function isNegative() {}
+function isNegative(num) {
+  if (num < 0) {
+    return "true";
+  } else {
+    return "false";
+  }
+}
+
+function isBetween5and10(num) {
+  if (num >= 5 && num <= 10) {
+    return "true";
+  } else {
+    return "false";
+  }
+}
+
+function isShortName(name) {
+  if (name === "Daniel") {
+    return "true";
+  }
+}
+
+// function startsWithD(name) {
+//   let name = name.startWith("D");
+// }
 
 /* 
   DO NOT EDIT BELOW THIS LINE
