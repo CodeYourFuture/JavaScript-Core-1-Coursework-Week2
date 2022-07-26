@@ -4,7 +4,10 @@ A common use of if statements is inside of functions.
 function getGrade(score) {
   if (score >= 80) {
     return "A";
-  }
+  }             
+
+
+  
   if (score >= 60) {
     return "B";
   }
