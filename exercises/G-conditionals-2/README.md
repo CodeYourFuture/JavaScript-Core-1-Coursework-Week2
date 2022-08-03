@@ -1,5 +1,6 @@
 A common use of if statements is inside of functions.
 
+
 ```js
 function getGrade(score) {
   if (score >= 80) {

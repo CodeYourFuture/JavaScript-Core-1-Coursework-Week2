@@ -8,6 +8,7 @@ let mentor3 = "Rares";
 
 ...then it's probably time to use an **array**!
 
+
 Arrays are data structures that hold a list of values.
 
 ```js

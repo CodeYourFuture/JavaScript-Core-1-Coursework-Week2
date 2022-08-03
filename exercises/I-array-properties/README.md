@@ -1,6 +1,6 @@
-Arrays, like strings, have a `length` property.
+<!-- Arrays, like strings, have a `length` property.
 
-You can check this by starting a node console in your terminal.
+You can check this by starting a node console in your terminal. -->
 
 ```sh
 $ node

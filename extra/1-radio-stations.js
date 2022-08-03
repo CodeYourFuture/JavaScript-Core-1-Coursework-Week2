@@ -51,9 +51,41 @@ function getAvailableStations() {
   return getAvailableStations.stations;
 }
 
+
+
 function isRadioStation(frequency) {
   return getAvailableStations().includes(frequency);
 }
+
+//solution:
+// ✅ solution for getAllFrequencies
+// function getAllFrequencies() {
+//   const allFrequencies = [];
+//   const startFreq = 87;
+//   const endFreq = 108;
+
+//   for (let i = startFreq; i <= endFreq; i++) {
+//     allFrequencies.push(i);
+//   }
+
+//   return allFrequencies;
+// }
+// In this function, we've labelled the values 87 and 108 as startFreq and endFreq, respectively. This way it should hopefully be much easier for someone reading this code to make sense of what this function is doing.
+
+// ✅ solution for getAllFrequencies
+// function getStations() {
+//   const allFrequencies = getAllFrequencies();
+//   const radioFrequencies = [];
+
+//   for (let i = 0; i < allFrequencies.length; i++) {
+//     const currentFrequency = allFrequencies[i];
+//     if (isRadioStation(currentFrequency))
+//       radioFrequencies.push(currentFrequency);
+//   }
+
+//   return radioFrequencies;
+// }
+// In this solution, we're using the isRadioStation to find the radio frequencies and collect them all into an array.
 
 test("getAllFrequencies() returns all frequencies between 87 and 108", () => {
   expect(getAllFrequencies()).toEqual([

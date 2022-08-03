@@ -6,7 +6,8 @@
 */
 
 function isEmpty(arr) {
-  return; // complete this statement
+  
+  return arr <= []; // complete this statement
 }
 
 /* 
