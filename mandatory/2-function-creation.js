@@ -27,7 +27,14 @@ Write a function that:
 - numbers greater 100 must be replaced with 100
 */
 
-function formatPercentage(num) {}
+function formatPercentage(num) {
+ 
+  if (num <= 100 && typeof num === "number") {
+    return `${parseFloat(num.toFixed(2))}%`;
+  } else {
+    return `100%`;
+  }
+}
 
 /*
 Write a function that:
@@ -36,7 +43,62 @@ Write a function that:
 - removes any forward slashes (/) in each string
 - makes all strings all lowercase
 */
-function tidyUpStrings(arrayOfStrings) {}
+
+// solutions:
+// ✅
+
+// function tidyUpString(strArr) {
+//   const tidiedStrings = [];
+
+//   for (let i = 0; i < strArr.length; i++) {
+//     const item = strArr[i];
+//     const formattedItem = item.trim().replace('/', '').toLowerCase();
+//     tidiedStrings.push(formattedItem);
+//   }
+//   return tidiedStrings;
+// }
+// This function tidyUpString uses a familiar pattern, we can outline the pseudocode as follows:
+
+// initialise an empty array ( to store some data )
+// we iterate through the array that is passed into the function so we can access each element in the array
+// we can format each item by removing whitespace, forward slash, and lower casing
+// append the formatted item to the new array
+// return the new array
+// Notice that we can chain calls to string methods like this:
+
+// item.trim().replace('/', '').toLowerCase();
+// .trim() will return a trimmed a string and then we can continue chaining calls to other methods to format the string further
+
+// ✅
+
+// function validate(num) {
+//   return num % 2 === 0 && num <= 100;
+// }
+// validate just returns an expression straight away ( it isn't stored in another variable first )
+
+// It's a common error to think we need to put this expression into an if statement but we can just return an expression that will evaluate to some boolean.
+
+// function formatPercentage(arr) {
+//   const percentages = [];
+
+//   for (let i = 0; i < arr.length; i++) {
+//     let num = arr[i];
+//     if (num > 100) num = 100;
+//     const roundedNum = Math.round(num * 100) / 100;
+//     percentages.push(`${roundedNum}%`);
+//   }
+//   return percentages;
+// }
+
+
+
+
+
+
+function tidyUpStrings(arrayOfStrings) {
+   let strings = arrayOfStrings.map((t) => t.trim().toLowerCase().replace("/", ""));
+   return strings;
+}
 
 /* ======= TESTS - DO NOT MODIFY ===== */
 

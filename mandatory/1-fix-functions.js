@@ -15,7 +15,7 @@ function mood(mode) {
  
   if (mode === isHappy) {
     return "I am happy";
-  } else if (mode !== isHappy) {
+  } else {
     return "I am not happy";
   }
 }
@@ -38,6 +38,67 @@ function get3rdIndex(arr) {
 
   return arr[3];
 }
+
+//solution:
+// ✅
+
+// function mood(isHappy) {
+//   if (isHappy) {
+//     return 'I am happy';
+//   } else {
+//     return 'I am not happy';
+//   }
+// }
+// We've altered mood here to that isHappy is now a parameter A parameter is just a variable that we can use to store an argument - so a parameter can be thought of as a label and whenever we call a function like mood then the argument's value will be attached to the parameter name
+
+// mood(true);
+// In the snippet above, isHappy ( parameter ) would get assigned a value of true (argument)
+
+// ✅
+
+// function greaterThan10(num) {
+//   let isBigEnough = num > 10;
+
+//   if (isBigEnough) {
+//     return 'num is greater than 10';
+//   } else {
+//     return 'num is not big enough';
+//   }
+// }
+// greaterThan10 now has the variable isBigEnough that stores a condition based on the value of num ( a value that is passed into the function )
+
+// ✅
+
+// function sortArray(letters) {
+//   let sortedLetters = letters.sort();
+
+//   return sortedLetters;
+// }
+// We can use the in-built function sort here to sort the letters in the array according to ASCII code. We can store the sorted letters array into the variable sortedLetters
+
+// ✅
+
+// function first5(numbers) {
+//   let sliced = numbers.slice(0, 5);
+
+//   return sliced;
+// }
+// ✅
+
+// function get3rdIndex(arr) {
+//   let index = 3;
+//   let element = arr[index];
+
+//   return element;
+// }
+
+
+
+
+
+
+
+
 
 /* ======= TESTS - DO NOT MODIFY ===== */
 
