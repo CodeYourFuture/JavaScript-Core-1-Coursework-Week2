@@ -16,18 +16,19 @@ Please complete the details below this message
 
 # Your Details
 
-- Your Name:
-- Your City:
-- Your Slack Name:
+- Your Name: Azin Yadegari
+- Your City: Birmingham
+- Your Slack Name:AzinYad
 
 # Homework Details
 
-- Module:
-- Week:
+- Module: JavaScript 
+- Week:2
 
 # Notes
 
-- What did you find easy?
+- What did you find easy? 
+I found exercise folder way too easy.
 
 - What did you find hard?
 
