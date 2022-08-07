@@ -9,8 +9,6 @@ Tip: use logical operators
 function validate(num) {
   return typeof num === 'number' && num % 2 === 0 && num <= 100;
 }
-// console.log(validate(10));
-// console.log(validate(17));
 /*
 Write a function that:
 - takes a number as input
