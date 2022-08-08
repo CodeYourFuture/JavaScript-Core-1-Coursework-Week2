@@ -5,16 +5,8 @@
   The variables should have values that match the expected results.
 */
 
-let studentCount = 16;
-let mentorCount = 9;
-let moreStudentsThanMentors; // finish this statement
 
-let roomMaxCapacity = 25;
-let enoughSpaceInRoom; // finish this statement
 
-let personA = "Daniel";
-let personB = "Irina";
-let sameName; // finish this statement
 
 /* 
   DO NOT EDIT BELOW THIS LINE
