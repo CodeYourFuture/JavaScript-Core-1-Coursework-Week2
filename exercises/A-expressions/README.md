@@ -13,7 +13,7 @@ The following are all examples of expressions:
 "hello" + "world"; // returns "helloworld"
 ```
 
-We can take the value produced by an expression and assign it to a variable. That line of code would be called a statement. 
+We can take the value produced by an expression and assign it to a variable. That line of code would be called a statement.
 
 ### Statement
 
