@@ -24,8 +24,7 @@ Write a function that:
 
 function formatPercentage(num) {
   if (num <= 100) {
-    if (parseInt(num) === num) return `${num}%`;
-    else return `${Math.round((num + Number.EPSILON) * 100) / 100}%`;
+    return parseFloat(num.toFixed(2))+"%"
   } else {
     return "100%";
   }
