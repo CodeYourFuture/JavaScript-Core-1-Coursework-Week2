@@ -13,11 +13,11 @@
  * - Create an array  starting at 87 and ending in 108
  * - Should return this array to use in other functions
  */
-function getAllFrequencies (stationCount) {
-  let station = [87, 88, 89, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108]
-return [station];
+function getAllFrequencies (){
+let station = [87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108]
+return station;
 }
-}
+
 // `getAllFrequencies` goes here
 
 /**
@@ -31,8 +31,16 @@ return [station];
  */
 // `getStations` goes here
 
-function getStations () {
+function getStations(){
+   let radio = getAllFrequencies();
+   let storage = [];
+   for (let char of radio) {
+    if (isRadioStation(char)) {
+       storage.push(char);
+    } 
+   }
 
+return storage;
 }
 /*
  * ======= TESTS - DO NOT MODIFY =======
