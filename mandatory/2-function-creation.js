@@ -32,7 +32,7 @@ function formatPercentage(num)
 
     else
     {
-        return toString(Math.round (num * 100) / 100) + "%";
+        return (Math.round( num * 100 + Number.EPSILON ) / 100).toString();
     }
 }
 
