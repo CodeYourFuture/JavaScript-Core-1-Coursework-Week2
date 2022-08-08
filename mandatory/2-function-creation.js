@@ -7,7 +7,7 @@ Tip: use logical operators
 */
 
 function validate(num) {
-  if ((typeof num === "number") && (num % 2 === 0) && (num <= 0)) {
+  if ((typeof num === "number") && (num % 2 === 0) && (num <= 100)) {
     return true;
   } else {
     return false;
@@ -23,12 +23,13 @@ Write a function that:
 */
 
 function formatPercentage(num) {
-   let isGreaterThan100 = (num > 100);
-  if (isGreaterThan100) { 
-    num = 100;
+  if (num < 100) {
+    return num.toFixed(2) + "%" 
   }
-  num = parseFloat(num.toFixed(2));
-  return `${num}%`;
+
+ else if (num > 100) {
+  return 100 + "%"
+ }
 
   }
  
