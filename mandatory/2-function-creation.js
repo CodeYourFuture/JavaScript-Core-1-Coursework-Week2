@@ -32,7 +32,7 @@ function formatPercentage(num)
 
     else
     {
-        return num.toFixed(2) + "%";
+        return Math.round(num * 100) / 100;
     }
 }
 
