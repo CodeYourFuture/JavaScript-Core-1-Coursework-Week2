@@ -4,6 +4,7 @@
  * the radio waves for some good music.
  */
 
+
 /**
  * First, let's create a function that creates a list of all the frequencies.
  * Call this function `getAllFrequencies`.
@@ -12,7 +13,11 @@
  * - Create an array  starting at 87 and ending in 108
  * - Should return this array to use in other functions
  */
-
+function getAllFrequencies (stationCount) {
+  let station = [87, 88, 89, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108]
+return [station];
+}
+}
 // `getAllFrequencies` goes here
 
 /**
@@ -26,6 +31,9 @@
  */
 // `getStations` goes here
 
+function getStations () {
+
+}
 /*
  * ======= TESTS - DO NOT MODIFY =======
  * Note: You are not expected to understand everything below this comment!
