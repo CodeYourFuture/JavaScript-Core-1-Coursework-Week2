@@ -16,21 +16,23 @@ Please complete the details below this message
 
 # Your Details
 
-- Your Name:
-- Your City:
-- Your Slack Name:
+- Your Name: irina mihai
+- Your City: birmingham
+- Your Slack Name: irinamihai150
 
 # Homework Details
 
-- Module:
-- Week:
+- Module: Javascript
+- Week: week 2
 
 # Notes
 
 - What did you find easy?
+exercises
 
 - What did you find hard?
 
 - What do you still not understand?
+some functions
 
 - Any other notes?
