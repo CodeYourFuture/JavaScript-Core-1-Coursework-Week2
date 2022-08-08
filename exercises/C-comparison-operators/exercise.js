@@ -5,7 +5,16 @@
   The variables should have values that match the expected results.
 */
 
+let studentCount = 16;
+let mentorCount = 9;
+let moreStudentsThanMentors= studentCount>mentorCount;
 
+let roomMaxCapacity = 25;
+let enoughSpaceInRoom = roomMaxCapacity<=25;
+
+let personA = "Daniel";
+let personB = "Irina";
+let sameName = personA===personB;
 
 
 /* 
