@@ -8,14 +8,16 @@
 let studentCount = 16;
 let mentorCount = 9;
 let moreStudentsThanMentors; // finish this statement
+moreStudentsThanMentors = studentCount > mentorCount;
 
 let roomMaxCapacity = 25;
 let enoughSpaceInRoom; // finish this statement
+enoughSpaceInRoom = roomMaxCapacity === studentCount + mentorCount;
 
 let personA = "Daniel";
 let personB = "Irina";
 let sameName; // finish this statement
-
+sameName = personA === personB;
 /* 
   DO NOT EDIT BELOW THIS LINE
   --------------------------- */
