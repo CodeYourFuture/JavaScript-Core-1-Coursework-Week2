@@ -9,6 +9,16 @@
 let name = "Daniel";
 let danielsRole = "mentor";
 
+function checkRole(role) {
+if (danielsRole === role) {
+  console.log("Hi, I'm Daniel, I'm a mentor.");
+} else {
+  console.log("Hi, I'm Daniel, I'm a student.");
+}
+}
+
+console.log(checkRole("mentor"));
+
 /* 
 EXPECTED RESULT
 ---------------
