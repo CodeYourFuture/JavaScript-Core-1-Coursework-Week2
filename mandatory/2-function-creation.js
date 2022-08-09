@@ -7,7 +7,7 @@ Tip: use logical operators
 */
 
 function validate(num) {
-  return typeof num === Number && num % 2 === 0 && num <= 100;
+  return typeof num === "number" && num % 2 === 0 && num <= 100;
 }
 
 /*
@@ -19,11 +19,9 @@ Write a function that:
 */
 
 function formatPercentage(num) {
-  if (num <= 100) {
-  return `${num.toFixed(2)}%`
-} else {
-  return "100%";
-}
+  num = parseFloat(num.toFixed(2));
+  let formatNum = (num > 100) ? `100%` : `${num}%`
+  return formatNum;
 }
 
 /*
@@ -34,11 +32,10 @@ Write a function that:
 - makes all strings all lowercase
 */
 function tidyUpStrings(arrayOfStrings) {
-  for (const i of arrayOfStrings) {
-    arrayOfStrings[i].trim();
-    arrayOfStrings[i].replace(/\//, "");
-    arrayOfStrings[i].toLowerCase;
+  for (let i = 0; i < arrayOfStrings.length; i++) {
+    arrayOfStrings[i] = arrayOfStrings[i].replace("/", "").trim().toLowerCase();
   }
+  return arrayOfStrings;
 
 }
 
