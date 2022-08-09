@@ -26,7 +26,7 @@ function formatPercentage(num) {
   return formattedNum
 }
 
-
+   
 
 /*
 Write a function that:
