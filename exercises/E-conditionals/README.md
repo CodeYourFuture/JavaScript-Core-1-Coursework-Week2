@@ -17,7 +17,7 @@ if (isHappy) {
 }
 ```
 
-The code in paratheses - e.g. `(isHappy)` - is the condition. The condition can be _any_ expression. The following are all valid conditions:
+The code in parenthesis - e.g. `(isHappy)` - is the condition. The condition can be _any_ expression. The following are all valid conditions:
 
 ```js
 // boolean value

@@ -5,7 +5,61 @@
   Update the code so that you get the expected result.
 */
 
-function isNegative() {}
+// function isNegative(number) {
+//   if (num <= 0) {
+//     return true;
+//   }
+//   return false;          EVEN IF else return true;, DOES NOT WORK
+// }                        I DON'T UNDERSTAND WHY THIS DOES NOT WORK! IT FOLLOWS THE read me EXAMPLE
+
+let number = -10;
+
+function isNegative(number) {
+  return number < 0;
+}
+
+// let num = 10;
+// function isBetween5and10(num) {
+// if (num >= 5 && num <= 10){
+//   return true;
+// }
+// return false;           EVEN IF else return true;, DOES NOT WORK
+// }                       I DON'T UNDERSTAND WHY THIS DOES NOT WORK! IT FOLLOWS THE read me EXAMPLE
+
+let num = 10;
+
+function isBetween5and10(num) {
+  return num >= 5 && num <= 10;
+}
+
+
+// let name = "Daniel";
+// function isShortName (name) {
+//   if (name.length <= 6) {
+//     return true;
+//   }
+//   return false;          EVEN IF else return true;, DOES NOT WORK
+// }                        I DON'T UNDERSTAND WHY THIS DOES NOT WORK! IT FOLLOWS THE read me EXAMPLE
+
+let name = "Daniel";
+
+function isShortName (name) {
+  return name.length <= 6;
+}
+
+//   let firstName = "Daniel";
+// function startsWithD (firstName) {
+//   if (firstName[0] !== "D") {
+//     return false;
+//   }
+//   return true;            EVEN IF else return true;, DOES NOT WORK
+// }                         I DON'T UNDERSTAND WHY THIS DOES NOT WORK! IT FOLLOWS THE read me EXAMPLE
+
+let firstName = "Daniel";
+
+ function startsWithD (firstName) {
+    return firstName[0] === "D";
+  }
 
 /* 
   DO NOT EDIT BELOW THIS LINE
