@@ -43,7 +43,7 @@ function getStations(stations) {
 
 }
 
-console.log(getStations());
+
 
 /*
  * ======= TESTS - DO NOT MODIFY =======
