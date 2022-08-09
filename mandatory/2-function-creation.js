@@ -7,7 +7,7 @@ Tip: use logical operators
 */
 
 function validate(num) {
-  return (typeof num === Number) && (num % 2 === 0) && (num <= 100);
+  return typeof num === Number && num % 2 === 0 && num <= 100;
 }
 
 /*
@@ -34,9 +34,9 @@ Write a function that:
 - makes all strings all lowercase
 */
 function tidyUpStrings(arrayOfStrings) {
-  for (let i = 0; i < arrayOfStrings.length; i++) {
+  for (const i of arrayOfStrings) {
     arrayOfStrings[i].trim();
-    arrayOfStrings[i].replace(/\//g, "");
+    arrayOfStrings[i].replace(/\//, "");
     arrayOfStrings[i].toLowerCase;
   }
 
