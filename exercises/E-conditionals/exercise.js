@@ -7,8 +7,19 @@
 */
 
 let name = "Daniel";
-let danielsRole = "mentor";
+let danielsRole = "mentor" 
+ //let danielsRole = "student";
 
+function roleCheker (firstName, role) {
+let mentor = "mentor"
+let student ="student"
+if ( role === mentor){
+  return `Hi, I'm ${firstName}, I'm a ${mentor}` ;   
+} else {
+  return `Hi, I'm ${firstName}, I'm a ${student}` ;
+}
+}
+console.log(roleCheker(name ,danielsRole));
 /* 
 EXPECTED RESULT
 ---------------
