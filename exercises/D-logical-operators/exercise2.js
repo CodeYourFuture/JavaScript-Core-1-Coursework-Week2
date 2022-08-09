@@ -5,7 +5,14 @@
   Update the code so that you get the expected result.
 */
 
-function isNegative() {}
+function isNegative(num) {
+  if(num < 0) {
+    return true;
+}
+else {
+  if (num > 0)
+  {return false;}
+}}
 
 /* 
   DO NOT EDIT BELOW THIS LINE
