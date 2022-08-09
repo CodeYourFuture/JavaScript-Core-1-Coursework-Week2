@@ -23,18 +23,13 @@ Write a function that:
 */
 
 function formatPercentage(num) {
-  if (num < 100) {
-    return num.toFixed(2) + "%" 
+  if (num > 100) {
+    return "100%"
+  } else {
+    return `${Math.round(num * 100) / 100}%`
   }
-
- else if (num > 100) {
-  return 100 + "%"
- }
-
-  }
- 
-
-
+}
+console.log(formatPercentage(23))
 /*
 Write a function that:
 - takes an array of strings as input
@@ -43,12 +38,11 @@ Write a function that:
 - makes all strings all lowercase
 */
 function tidyUpStrings(arrayOfStrings) {
-  for (let i = 0; i < arrayOfStrings.length; i++)
-    {
-        arrayOfStrings[i] = arrayOfStrings[i].replace("/", "").trim().toLowerCase();
-    }
-    return arrayOfStrings;
-
+  let newArr = [];
+  for (let i = 0; i < arrayOfStrings.length; i++) {
+    newArr.push(arrayOfStrings[i].replace('/', '').trim().toLowerCase());
+  }
+  return newArr;
 }
 
 /* ======= TESTS - DO NOT MODIFY ===== */
