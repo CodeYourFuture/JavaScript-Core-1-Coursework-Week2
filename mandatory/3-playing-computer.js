@@ -7,12 +7,19 @@
   Answer the following questions:
 
   1. This program throws an error. Why? (If you can't find it, try executing it).
+  Answer: because b is not defined.
   2. Remove the line that throws the error.
+  Answer: i remove console.log(b)
   3. What is printed to the console?
+  Answer: 2,6.... but it should be more values after 6 but i couldn't figure them out
   4. How many times is "f1" called?
+  Answer: 2 times
   5. How many times is "f2" called?
+  Answer: 3 times
   6. What value does the "a" parameter take in the first "f1" call?
+  Answer : 6, because we defined the value of a = 6 
   7. What is the value of the "a" outer variable when "f1" is called for the first time?
+ Answer: 7, because a = a+1 so 6+1 = 7
 */
 
 let x = 2;
@@ -28,7 +35,6 @@ const f2 = function (a, b) {
 
 console.log(x);
 console.log(a);
-console.log(b);
 
 for (let i = 0; i < 5; ++i) {
   a = a + 1;
