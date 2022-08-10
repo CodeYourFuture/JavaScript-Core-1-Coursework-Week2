@@ -19,7 +19,7 @@ function mood(isHappy) {
   }
 }
 
-
+//let num = 12;
 let isBigEnough = num > 10;
 function greaterThan10(num) {
    if (isBigEnough) {
