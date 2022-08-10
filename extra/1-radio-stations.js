@@ -12,10 +12,11 @@
  * - Create an array  starting at 87 and ending in 108
  * - Should return this array to use in other functions
  */
- let freqArray=[];
+ 
 function getAllFrequencies(){
-  for(let i=0; i<22; i++){
-    freqArray[i]= i+87;
+  let freqArray=[];
+  for(let i=87; i<109; i++){
+    freqArray.push(i);
   }
   return freqArray;
 }
@@ -34,7 +35,7 @@ function getAllFrequencies(){
 // `getStations` goes here
 
 function getStations(){
-  getAllFrequencies();
+  let freqArray = getAllFrequencies();
   let radioStationFreq=[];
   let j=0;
   for ( let i=0; i<freqArray.length; i++){
