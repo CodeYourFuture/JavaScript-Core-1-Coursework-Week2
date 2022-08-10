@@ -19,10 +19,12 @@
 
 
 function getAllFrequencies() {
+  
   let frequencies = [];
 
   for (let frequency = 87; frequency <= 108; frequency++) {
     frequencies.push(frequency);
+  
   }
 
   return frequencies;
@@ -36,13 +38,16 @@ function getAllFrequencies() {
  */
 // `getStations` goes here
 function getStations() {
+  
   let frequencies = getAllFrequencies();
   let radioFrequencies = [];
 
   for (const frequency of frequencies) {
     if (isRadioStation(frequency)) {
       radioFrequencies.push(frequency);
+    
     }
+    
   }
 
   return radioFrequencies;
