@@ -14,6 +14,18 @@ else {
   {return false;}
 }}
 
+function isBetween5and10(num){
+  if (num >= 5 && num <= 10){
+    return true;
+  }
+
+  return false;
+}
+
+let isShortName = true;
+
+let startsWithD = true;
+
 /* 
   DO NOT EDIT BELOW THIS LINE
   --------------------------- */
