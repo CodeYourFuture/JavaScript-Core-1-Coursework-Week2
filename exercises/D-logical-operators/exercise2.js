@@ -21,8 +21,15 @@ function isBetween5and10(num){
 
   return false;
 }
+function isShortName(name){
+  if (name.length() <= 10){
+    return true;
+  }
+  else if (name.length() >= 10)
+  {return false;}
+}
 
-let isShortName = true;
+
 
 let startsWithD = true;
 
