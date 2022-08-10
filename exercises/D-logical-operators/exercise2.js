@@ -5,7 +5,22 @@
   Update the code so that you get the expected result.
 */
 
-function isNegative() {}
+function isNegative(num) {
+  return (num < 0)
+    
+}
+function isBetween5and10(num) {
+  let outCome = num >= 5 && num <= 10;
+  return outCome;
+}
+function isShortName(outPut) {
+  return (outPut.length < 10)
+}
+function startsWithD(textOut) {
+  return (textOut[0])
+}
+
+
 
 /* 
   DO NOT EDIT BELOW THIS LINE
