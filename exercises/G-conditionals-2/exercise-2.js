@@ -9,12 +9,13 @@
 */
 
 function studentPassed(grade) {
-  if(grade<50){
+  if(grade>0 && grade<50){
     return "failed";
-  }else{
+  }else if(grade>=50 && grade<=100){
     return "passed";
+  }else{
+    return "Your grade should be between 0 and 100";
   }
-
 }
 
 /* 
