@@ -6,13 +6,17 @@
 
   Answer the following questions:
 
-  1. This program throws an error. Why? (If you can't find it, try executing it).
-  2. Remove the line that throws the error.
-  3. What is printed to the console?
-  4. How many times is "f1" called?
-  5. How many times is "f2" called?
-  6. What value does the "a" parameter take in the first "f1" call?
-  7. What is the value of the "a" outer variable when "f1" is called for the first time?
+  1. This program throws an error. Why? 
+  (If you can't find it, try executing it).
+  Ans: line start with console.log(b); as b is not defined
+  2. Remove the line that throws the error. Ans: Removed
+  3. What is printed to the console? 
+  Ans :value(s) of x, a, f2(0, 2)=4, f1(1,8)=9, f2(2,2)=6, f1(3,10)=13
+  f2(4,2)=8.
+  4. How many times is "f1" called?Ans: 2
+  5. How many times is "f2" called?Ans: 3
+  6. What value does the "a" parameter take in the first "f1" call? 1
+  7. What is the value of the "a" outer variable when "f1" is called for the first time? 8
 */
 
 let x = 2;
@@ -28,7 +32,7 @@ const f2 = function (a, b) {
 
 console.log(x);
 console.log(a);
-console.log(b);
+//console.log(b); //This line cause error as b is not defined
 
 for (let i = 0; i < 5; ++i) {
   a = a + 1;
