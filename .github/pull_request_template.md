@@ -11,23 +11,24 @@ London Class 7 - Chris Owen - HTML/CSS - Week 1
 Please complete the details below this message
 
 -->
-
+WM4 - Azin Yadegari - JavaScript - Week 2
 **Volunteers: Are you marking this coursework?** _You can find a guide on how to mark this coursework in `HOW_TO_MARK.md` in the root of this repository_
 
 # Your Details
 
-- Your Name:
-- Your City:
-- Your Slack Name:
+- Your Name: Azin Yadegari
+- Your City: Birmingham
+- Your Slack Name:AzinYad
 
 # Homework Details
 
-- Module:
-- Week:
+- Module: JavaScript 
+- Week:2
 
 # Notes
 
-- What did you find easy?
+- What did you find easy? 
+I found exercise folder way too easy.
 
 - What did you find hard?
 
