@@ -26,18 +26,18 @@ const f2 = function (a, b) {
   return a + b + x;
 };
 
-console.log(x); //  2
-console.log(a); //  6
+console.log(x);  //  2
+console.log(a);  //  6
 // console.log(b);  b is not defined
 
-for (let i = 0; i < 5; ++i) {
-  // 0, 1, 2, 3, 4
-  a = a + 1; // 7, 8, 9, 10, 11
+for (let i = 0; i < 5; ++i) {    // 0, 1, 2, 3, 4
+  a = a + 1;             // 7, 8, 9, 10, 11
   if (i % 2 === 0) {
     const d = f2(i, x);
-    console.log(d); // 0 + 2 + 2   |  2 + 2 + 2   |  4 + 2 + 2
+    console.log(d);      // 4   |  6   |  8
   } else {
     const e = f1(i, a);
-    console.log(e); // 1 + 8 |  3 + 10
+    console.log(e);      // 9 |  13
   }
 }
+
