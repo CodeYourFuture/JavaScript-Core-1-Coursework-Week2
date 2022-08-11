@@ -37,7 +37,13 @@ Write a function that:
 - removes any forward slashes (/) in each string
 - makes all strings all lowercase
 */
-function tidyUpStrings(arrayOfStrings) {}
+function tidyUpStrings(arrayOfStrings) {
+ let lowerCase = (arrayOfStrings.toLowerCase());
+  let removeSlash =(lowerCase.replaceAll('/',''));
+  let removeSpace =(removeSlash.replaceAll(' ' ,''));
+
+  return removeSpace;
+}
 
 /* ======= TESTS - DO NOT MODIFY ===== */
 
