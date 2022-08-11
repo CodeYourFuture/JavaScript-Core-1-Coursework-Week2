@@ -23,13 +23,10 @@ function formatPercentage(num) {
     return `100%`;
   }
 
-  num = num.toFixed(2);
+  num = parseFloat(num.toFixed(2));
   return `${num}%`;
 }
 
-//test
-
-console.log(formatPercentage(10.244534));
 
 /*
 Write a function that:
@@ -38,7 +35,18 @@ Write a function that:
 - removes any forward slashes (/) in each string
 - makes all strings all lowercase
 */
-function tidyUpStrings(arrayOfStrings) {}
+function tidyUpStrings(arrayOfStrings) {
+  let newArray = [];
+  for (let i = 0; i < arrayOfStrings.length; i++) {
+    let formattedString = arrayOfStrings[i]
+      .replace("/", "")
+      .trim()
+      .toLowerCase();
+    newArray.push(formattedString);
+  }
+  return newArray;
+}
+
 
 /* ======= TESTS - DO NOT MODIFY ===== */
 
