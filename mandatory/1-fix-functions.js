@@ -22,7 +22,8 @@ function mood(isHappy) {
 //let num = 12;
 let isBigEnough = num > 10;
 function greaterThan10(num) {
-   if (isBigEnough) {
+  let isBigEnough = num > 10;
+  if (isBigEnough) {
     return "num is greater than 10";
   } else {
     return "num is not big enough";
