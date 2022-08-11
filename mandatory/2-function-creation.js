@@ -38,12 +38,16 @@ Write a function that:
 - makes all strings all lowercase
 */
 function tidyUpStrings(arrayOfStrings) {
- let lowerCase = (arrayOfStrings.toLowerCase());
-  let removeSlash =(lowerCase.replaceAll('/',''));
-  let removeSpace =(removeSlash.replaceAll(' ' ,''));
+  let i;
+  {
+    for (i = 0; i < arrayOfStrings.length; i++)  
+    arrayOfStrings[i].replaceAll('/','');
+    arrayOfStrings[i].trim();
+    arrayOfStrings[i].toLowerCase();
+    
+  }
+ return arrayOfStrings}
 
-  return removeSpace;
-}
 
 /* ======= TESTS - DO NOT MODIFY ===== */
 
