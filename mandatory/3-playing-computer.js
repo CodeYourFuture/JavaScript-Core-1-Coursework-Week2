@@ -31,11 +31,13 @@ console.log(a);
 // console.log(b);
 
 for (let i = 0; i < 5; ++i) {
-  a = a + 1;
+  a = a + 1;5
   if (i % 2 === 0) {
+    
     const d = f2(i, x);
     console.log(d);
   } else {
+    
     const e = f1(i, a);
     console.log(e);
   }
