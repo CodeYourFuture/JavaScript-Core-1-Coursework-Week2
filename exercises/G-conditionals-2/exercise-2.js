@@ -1,3 +1,4 @@
+
 /*
   Conditionals
   ---------------------------------
@@ -7,7 +8,15 @@
 
 */
 
-function studentPassed(grade) {}
+function studentPassed(grade) {
+  if(grade>0 && grade<50){
+    return "failed";
+  }else if(grade>=50 && grade<=100){
+    return "passed";
+  }else{
+    return "Your grade should be between 0 and 100";
+  }
+}
 
 /* 
 DO NOT EDIT BELOW THIS LINE
