@@ -22,16 +22,20 @@ function isBetween5and10(num){
   return false;
 }
 function isShortName(name){
-  if (name.length() <= 10){
+  if (name.length <= 7){
     return true;
   }
-  else if (name.length() >= 10)
-  {return false;}
+return false;
 }
 
 
 
-let startsWithD = true;
+function startsWithD (name){
+  if ( name.charAt(0) === "D"){
+    return true;
+  }
+  return false;
+}
 
 /* 
   DO NOT EDIT BELOW THIS LINE

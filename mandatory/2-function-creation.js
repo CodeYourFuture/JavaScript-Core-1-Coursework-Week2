@@ -21,7 +21,14 @@ Write a function that:
 - numbers greater 100 must be replaced with 100
 */
 
-function formatPercentage(num) {}
+function formatPercentage(num) {
+  if (num > 100){
+    return "100%";
+  }
+  else num = Math.round(num*100)/100;{
+     return `${num}%`;
+  }
+}
 
 /*
 Write a function that:
