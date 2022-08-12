@@ -19,7 +19,12 @@
 
 
 function getAllFrequencies() {
-  
+    let frequencies = [];
+  for (let frequency = 87; frequency <= 108; frequency++) {
+    frequencies.push(frequency);
+  }
+  return frequencies;
+}
   let frequencies = [];
 
   for (let frequency = 87; frequency <= 108; frequency++) {
