@@ -19,8 +19,11 @@ let numbers = [1, 2, 3];
 let names = ["Irina", "Ashleigh", "Mozafar", "Joe"];
 
 console.log(first(numbers));
-console.log(last(numbers));
+console.log(last(numbers));git
 console.log(last(names));
+
+
+
 
 /* 
   EXPECTED RESULT
