@@ -35,17 +35,30 @@ Write a function that:
 - removes any forward slashes (/) in each string
 - makes all strings all lowercase
 */
+
 function tidyUpStrings(arrayOfStrings) {
-  let newArray = [];
-  for (let i = 0; i < arrayOfStrings.length; i++) {
-    let formattedString = arrayOfStrings[i]
-      .replace("/", "")
-      .trim()
-      .toLowerCase();
-    newArray.push(formattedString);
-  }
-  return newArray;
+  for (let i=0; i < arrayOfStrings.length; i++)
+  {
+    arrayOfStrings[i] = arrayOfStrings[i].replace ("/", "").trim().toLowerCase();}
+  return arrayOfStrings;
 }
+
+
+
+
+
+//
+//function tidyUpStrings(arrayOfStrings) {
+ // let arrayOfTidyStrings = []; //
+  // for (const string of arrayOfStrings) {
+  //   arrayOfTidyStrings.push(string.trim().replaceAll("/", "").toLowerCase());
+  // }
+ // for (let index = 0; index < arrayOfStrings.length; index++) {
+   // const string = arrayOfStrings[index]; //arrayOfStrings[0] arrayOfStrings[1]
+   // arrayOfTidyStrings.push(string.trim().replaceAll("/", "").toLowerCase());
+  //}
+  //return arrayOfTidyStrings;
+//}
 
 
 /* ======= TESTS - DO NOT MODIFY ===== */
