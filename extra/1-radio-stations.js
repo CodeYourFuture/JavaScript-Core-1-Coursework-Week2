@@ -15,14 +15,11 @@
 
 // `getAllFrequencies` goes here
 function getAllFrequencies (){
-  let frequencies=[];
-  function frequencySampleCreator () { 
-   return 87 + Math.floor((Math.random()*20)) + Math.floor(Math.random());}
-  for(i=0;i<10;i++){
-    frequencies.push(frequencySampleCreator());
-  }
-  let sortedFrequencies = frequencies.sort((a, b) => a - b);
-  return sortedFrequencies;
+   let frequencies=[];
+   for (i=87;i<=108;i++){
+     frequencies.push(i);
+   }
+   return frequencies;
 }
 
 /**
@@ -36,12 +33,14 @@ function getAllFrequencies (){
  */
 // `getStations` goes here
 function getStations (){
-   let availableFrequencies=[];
-   for (i=0;i<=sortedFrequencies.length();i++){
-     if (isRadioStation(sortedFrequencies[i])) {
-       availableFrequencies.push(sortedFrequencies[i]);
-     }
-   }
+  let availableFrequencies = getAllFrequencies();
+  let radioStations =[];
+  for (i=0;i<=22;i++){
+    if(isRadioStation(availableFrequencies[i])){
+      radioStations.push(availableFrequencies[i]);
+    }
+  }
+  return radioStations;
 }
 
 /*
