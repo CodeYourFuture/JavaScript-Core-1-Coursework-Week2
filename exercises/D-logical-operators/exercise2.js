@@ -19,8 +19,7 @@ function isBetween5and10(num) {
   return false;
 }
 function isShortName(name) {
-  var name = "Daniel";
-  if (name.length <= 6) {
+   if (name.length <= 6) {
     return true;
   }
   return false;
