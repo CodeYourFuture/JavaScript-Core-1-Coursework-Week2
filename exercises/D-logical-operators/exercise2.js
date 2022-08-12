@@ -5,8 +5,44 @@
   Update the code so that you get the expected result.
 */
 
-function isNegative() {}
-
+function isNegative(number) {
+  let timesResult = number*-1;
+  if(timesResult>=0){
+    return true;
+  }
+  else{
+    return false;
+  }
+}
+function isBetween5and10 (number){
+  if(number>4&&number<11){
+    return true;
+  }
+  else {
+    return false;
+  }
+}
+function isShortName (name){
+  let nameLength = name.length;
+  if(nameLength<7){
+    return true;
+  }
+  else{
+    return false;
+  }
+}
+function startsWithD (name){
+  let firstLetter = name[0];
+  if (firstLetter==="D"){
+    return true;
+  }
+  else if (firstLetter==="d") {
+    return true;
+  }
+  else{
+    return false;
+  }
+}
 /* 
   DO NOT EDIT BELOW THIS LINE
   --------------------------- */
