@@ -14,6 +14,16 @@
  */
 
 // `getAllFrequencies` goes here
+function getAllFrequencies (){
+  let frequencies=[];
+  function frequencySampleCreator () { 
+   return 87 + Math.floor((Math.random()*20)) + Math.floor(Math.random());}
+  for(i=0;i<10;i++){
+    frequencies.push(frequencySampleCreator());
+  }
+  let sortedFrequencies = frequencies.sort((a, b) => a - b);
+  return sortedFrequencies;
+}
 
 /**
  * Next, let's write a function that gives us only the frequencies that are radio stations.
@@ -25,6 +35,14 @@
  * - Return only the frequencies that are radio stations.
  */
 // `getStations` goes here
+function getStations (){
+  let availabeFrequencies = getAllFrequencies;
+  for (i=0;i<= availabeFrequencies.length;i++){
+    if(isRadioStation(availabeFrequencies[i])===true){
+      return availabeFrequencies[i];
+    } 
+  }
+}
 
 /*
  * ======= TESTS - DO NOT MODIFY =======
