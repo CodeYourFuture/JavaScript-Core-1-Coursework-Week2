@@ -8,8 +8,8 @@
   3. What is printed to the console? 2 6 4 9 6 13 8
   4. How many times is "f1" called? 2
   5. How many times is "f2" called? 3
-  6. What value does the "a" parameter take in the first "f1" call? 8
-  7. What is the value of the "a" outer variable when "f1" is called for the first time?
+  6. What value does the "a" parameter take in the first "f1" call? 1
+  7. What is the value of the "a" outer variable when "f1" is called for the first time? 8
 */
 
 let x = 2;
