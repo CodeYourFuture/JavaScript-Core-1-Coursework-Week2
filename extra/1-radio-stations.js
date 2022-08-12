@@ -36,12 +36,12 @@ function getAllFrequencies (){
  */
 // `getStations` goes here
 function getStations (){
-  let availabeFrequencies = getAllFrequencies;
-  for (i=0;i<= availabeFrequencies.length;i++){
-    if(isRadioStation(availabeFrequencies[i])===true){
-      return availabeFrequencies[i];
-    } 
-  }
+   let availableFrequencies=[];
+   for (i=0;i<=sortedFrequencies.length();i++){
+     if (isRadioStation(sortedFrequencies[i])) {
+       availableFrequencies.push(sortedFrequencies[i]);
+     }
+   }
 }
 
 /*
