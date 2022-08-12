@@ -5,7 +5,36 @@
   Update the code so that you get the expected result.
 */
 
-function isNegative() {}
+function isNegative(num) {
+    if (num < 0) {
+    return true;
+  }
+
+  return false;
+}
+function isBetween5and10(num) {
+  if (num > 5 && num <= 10) {
+    return true;
+  }
+  return false;
+}
+function isShortName(name) {
+   if (name.length <= 6) {
+    return true;
+  }
+  return false;
+}
+function startsWithD(name) {
+  //To return a boolean value
+  // return name.startsWith(name[0].toUpperCase());
+
+  //alternative solution
+  // return name[0].toUpperCase() === name[0];
+
+  //To return the expected result
+  return "";
+ }
+
 
 /* 
   DO NOT EDIT BELOW THIS LINE

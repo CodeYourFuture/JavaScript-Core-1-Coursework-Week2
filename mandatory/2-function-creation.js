@@ -5,8 +5,16 @@ Complete the function to check if the variable `num` satisfies the following req
 - is less than or equal to 100
 Tip: use logical operators
 */
-
-function validate(num) {}
+function validate(num) {
+  return typeof num === "number" && num % 2 === 0 && num <= 100;
+}
+// function validate(num) {
+//   if ((typeof num === "number") && (num % 2 === 0) && (num <=100)) {
+//     return true;
+//   } else {
+//     return false;
+//   }
+// }
 
 /*
 Write a function that:
@@ -16,7 +24,20 @@ Write a function that:
 - numbers greater 100 must be replaced with 100
 */
 
-function formatPercentage(num) {}
+function formatPercentage(num) {
+  num = parseFloat(num.toFixed(2));
+  let formattedNum = (num > 100) ? `100%` : `${num}%`;
+  return formattedNum
+}
+// function formatPercentage(num) {
+  
+//   if (num < 100) {
+//     return num.toFixed(2) + "%"
+//   }
+//  else if (num > 100) {
+//   return 100 + "%"
+//  }
+//   }
 
 /*
 Write a function that:
@@ -25,7 +46,17 @@ Write a function that:
 - removes any forward slashes (/) in each string
 - makes all strings all lowercase
 */
-function tidyUpStrings(arrayOfStrings) {}
+//  
+// function tidyUpStrings(arrayOfStrings) {
+//   let correctedArray = arrayOfStrings.map(el => el.replaceAll("/", "").trim().toLowerCase());
+//   return correctedArray;
+// }
+function tidyUpStrings(arrayOfStrings) {
+  for (let i = 0; i < arrayOfStrings.length; i++){
+        arrayOfStrings[i] = arrayOfStrings[i].replace("/", "").trim().toLowerCase();
+    }
+    return arrayOfStrings;
+}
 
 /* ======= TESTS - DO NOT MODIFY ===== */
 
