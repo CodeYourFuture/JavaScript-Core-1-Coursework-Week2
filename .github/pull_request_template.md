@@ -16,8 +16,8 @@ Please complete the details below this message
 
 # Your Details
 
-- Your Name:
-- Your City:
+- Your Name:Mujtaba ur Rehman
+- Your City:Birmingham
 - Your Slack Name:
 
 # Homework Details
