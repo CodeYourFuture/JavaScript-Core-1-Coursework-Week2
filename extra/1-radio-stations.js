@@ -15,11 +15,11 @@
 
 // `getAllFrequencies` goes here
 function getAllFrequencies() {
-  let stations = [];
+  let frequencies = [];
   for (let i = 87; i <=108; i++) {
-      stations.push(i);
+      frequencies.push(i);
   }
-  return stations
+  return frequencies;
 }
 
 /**
@@ -32,8 +32,16 @@ function getAllFrequencies() {
  * - Return only the frequencies that are radio stations.
  */
 // `getStations` goes here
-function getStations() {
+// function isRadioStation(num) {
+//   if (getAllFrequencies().includes(num)) {
+//        return true;  
+//   }
+//   return false;
+// }
 
+function getStations() {
+    return getAllFrequencies().filter(isRadioStation);
+    // I have strugled and tried to create a for loop that iterates through the getAllFrequences(), then compares it with available stations and thats where I failed, just to find that there is a simple JS method to do all the work
 }
 /*
  * ======= TESTS - DO NOT MODIFY =======

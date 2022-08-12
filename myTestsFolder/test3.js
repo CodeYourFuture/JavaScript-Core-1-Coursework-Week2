@@ -20,18 +20,16 @@ function getAllFrequencies() {
   for (let i = 87; i <= 108; i++) {               
           frequencies.push(i);              
   }
-  return frequencies
+  return frequencies;
 }
 
-function getStations(){
-        for (let stations of getAllFrequencies()) {
-             function isRadioStation() {
-                if ()
-             }
-        }
+function isRadioStation(num) {
+  if (getAllFrequencies().includes(num)) {
+       return true;  
+  }
+  return false;
 }
 
 
-
-console.log(getAllFrequencies());
+console.log(isRadioStation(108));
 
