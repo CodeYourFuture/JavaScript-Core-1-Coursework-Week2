@@ -10,31 +10,40 @@
 
 */
 
-function mood() {
-  let isHappy = true;
-
-  if (isHappy) {
-    return "I am happy";
-  } else {
-    return "I am not happy";
-  }
+function mood(isHappy)
+{  
+    if (isHappy)
+    {
+      return "I am happy";
+    }
+    
+    else
+    {
+      return "I am not happy";
+    }
 }
+  
+function greaterThan10(num)
+{
+    let isBigEnough = num > 10;
 
-function greaterThan10(num) {
-  let isBigEnough;
+    if (isBigEnough)
+    {
+        return "num is greater than 10";
+    }
 
-  if (isBigEnough) {
-    return "num is greater than 10";
-  } else {
-    return "num is not big enough";
-  }
+    else
+    {
+        return "num is not big enough";
+    }
 }
+  
+function get3rdIndex(arr)
+{
+    let index = 3;
+    let element = arr[index];
 
-function get3rdIndex(arr) {
-  let index = 3;
-  let element;
-
-  return element;
+    return element;
 }
 
 /* ======= TESTS - DO NOT MODIFY ===== */
