@@ -7,12 +7,25 @@
   Answer the following questions:
 
   1. This program throws an error. Why? (If you can't find it, try executing it).
+   ans. commented console.log(b)
+
   2. Remove the line that throws the error.
+  ans. commented console.log(b)
+
   3. What is printed to the console?
+  ans output of value of a, x and calculation of  f1 / f2 function
+
   4. How many times is "f1" called?
+  ans 2 times
+  
   5. How many times is "f2" called?
+  ans 3 times
+
   6. What value does the "a" parameter take in the first "f1" call?
+  ans it is 8
+
   7. What is the value of the "a" outer variable when "f1" is called for the first time?
+  ans. it is 6
 */
 
 let x = 2;
@@ -28,15 +41,16 @@ const f2 = function (a, b) {
 
 console.log(x);
 console.log(a);
-console.log(b);
+//console.log(b);
 
 for (let i = 0; i < 5; ++i) {
   a = a + 1;
   if (i % 2 === 0) {
     const d = f2(i, x);
-    console.log(d);
+    console.log(`${d} - d i = ${i}, x = ${x} called f2`);
   } else {
     const e = f1(i, a);
-    console.log(e);
+    //console.log(e);
+    console.log(`${e} - e i = ${i}, a = ${a} called f1`);
   }
 }
