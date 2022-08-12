@@ -5,6 +5,7 @@ These functions are very useful because they let you test if a value satisifies 
 ```js
 function isNumber(value) {
   return typeof value === "number";
+  
 }
 
 isNumber(10); // returns true

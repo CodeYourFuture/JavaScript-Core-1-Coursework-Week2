@@ -6,7 +6,8 @@
 */
 
 function isEmpty(arr) {
-  return; // complete this statement
+  if (arr.length <= 0) {return true}
+  else return false; // complete this statement
 }
 
 /* 
@@ -20,7 +21,7 @@ console.log(isEmpty(names));
 
 /* 
   EXPECTED RESULT
-  ---------------
+  ---------------  let sentence = "";
   false
   true
 */

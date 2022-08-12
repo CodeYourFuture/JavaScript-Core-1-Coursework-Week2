@@ -9,8 +9,17 @@
 let name = "Daniel";
 let danielsRole = "mentor";
 
-/* 
-EXPECTED RESULT
----------------
-Hi, I'm Daniel, I'm a mentor.
-*/
+if (danielsRole) {
+  return (`Hi, I'm ${name}, I'm a${danielsRole}`);} 
+  
+  else 
+  
+    {return ("Hi, I'm " + name + ", I'm a student.");}
+  
+console.log(danielRole);
+
+
+// EXPECTED RESULT
+// ---------------
+// Hi, I'm Daniel, I'm a mentor.
+
