@@ -14,9 +14,18 @@
   6. What value does the "a" parameter take in the first "f1" call?
   7. What is the value of the "a" outer variable when "f1" is called for the first time?
 */
+/* 1. b is not defined in this program 
+3. if b = 4 
+2,6,4,4,9,6,13,8
+4. twice
+5. twice
+6. 6
+7. 6
+*/
 
 let x = 2;
 let a = 6;
+let b = 4;
 
 const f1 = function (a, b) {
   return a + b;

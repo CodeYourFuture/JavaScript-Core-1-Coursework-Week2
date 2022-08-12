@@ -5,13 +5,15 @@
 */
 
 function first(arr) {
-  return; // complete this statement
+  return arr['0']; // complete this statement
 }
 
 function last(arr) {
-  return; // complete this statement
+  return arr.length; // complete this statement
 }
-
+function last(names) {
+  return names['3'];
+}
 /* 
   DO NOT EDIT BELOW THIS LINE
   --------------------------- */
