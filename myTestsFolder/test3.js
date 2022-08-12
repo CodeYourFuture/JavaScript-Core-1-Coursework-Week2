@@ -14,3 +14,24 @@
 // };
 
 // console.log(f2(0, 2));
+
+function getAllFrequencies() {  
+    let frequencies = [];
+  for (let i = 87; i <= 108; i++) {               
+          frequencies.push(i);              
+  }
+  return frequencies
+}
+
+function getStations(){
+        for (let stations of getAllFrequencies()) {
+             function isRadioStation() {
+                if ()
+             }
+        }
+}
+
+
+
+console.log(getAllFrequencies());
+

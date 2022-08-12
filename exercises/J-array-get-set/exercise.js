@@ -5,11 +5,11 @@
 */
 
 function first(arr) {
-  return console.log(arr[0]); // complete this statement
+  return arr[0]; // complete this statement
 }
 
 function last(arr) {
-  return console.log(arr[arr.length - 1]); // complete this statement
+  return arr[arr.length - 1]; // complete this statement
 }
 
 /* 
