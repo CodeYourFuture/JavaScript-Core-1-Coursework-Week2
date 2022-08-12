@@ -7,14 +7,7 @@ Tip: use logical operators
 */
 
 function validate(num) {
-  if (typeof num === "number" && num % 2 == 0 && num <= 100) {
-    return "is a number";
-  } else if (num % 2 == 0) {
-    return "is even";
-  } else {
-    return "is less than or equal to 100";
-  }
-  
+  return typeof num === "number" && num % 2 === 0 && num <= 100;
 }
 
 /*
@@ -26,9 +19,11 @@ Write a function that:
 */
 
 function formatPercentage(num) {
-  if (num = 10 => "10%" && num = Math.round (0.123456 * 100) num > 100 === 100) {
-    return num
+  if (num > 100) {
+    num = 100;
   }
+  let decimalTwo = Math.round(num * 100) / 100;
+  return decimalTwo + "%";
 }
 
 /*
@@ -39,7 +34,10 @@ Write a function that:
 - makes all strings all lowercase
 */
 function tidyUpStrings(arrayOfStrings) {
-  Let arrayOfStrings(str.replace(/\s/g, '') +  arrayOfStrings.toLowerCase())
+  for (let i = 0; i < arrayOfStrings.length; i++) {
+    arrayOfStrings[i].trim().replace(/\//g, "").toLowerCase();
+  }
+  return arrayOfStrings;
 }
 
 /* ======= TESTS - DO NOT MODIFY ===== */
@@ -92,7 +90,7 @@ test("tidyUpString function works", () => {
       "ashleigh   ",
       "   Alastair  ",
       " anne marie  ",
-    ])  
+    ])
   ).toEqual([
     "daniel",
     "sanyia",
@@ -102,5 +100,5 @@ test("tidyUpString function works", () => {
     "ashleigh",
     "alastair",
     "anne marie",
-  ]); 
+  ]);
 });
