@@ -73,7 +73,7 @@ function getAvailableStations() {
 }
 
 function isRadioStation(frequency) {
-  return getAvailableStations().includes(frequency);
+  return getAvailableStations().includes(frequency)
 }
 
 test("getAllFrequencies() returns all frequencies between 87 and 108", () => {
