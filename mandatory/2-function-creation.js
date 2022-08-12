@@ -6,7 +6,9 @@ Complete the function to check if the variable `num` satisfies the following req
 Tip: use logical operators
 */
 
-function validate(num) {}
+function validate(num) {
+  return typeof num === "number" && num % 2 === 0 && num <= 100;
+}
 
 /*
 Write a function that:
@@ -16,7 +18,15 @@ Write a function that:
 - numbers greater 100 must be replaced with 100
 */
 
-function formatPercentage(num) {}
+function formatPercentage(num) {
+  if (num > 100) {
+    return `100%`;
+  }
+
+  num = parseFloat(num.toFixed(2));
+  return `${num}%`;
+}
+
 
 /*
 Write a function that:
@@ -25,7 +35,31 @@ Write a function that:
 - removes any forward slashes (/) in each string
 - makes all strings all lowercase
 */
-function tidyUpStrings(arrayOfStrings) {}
+
+function tidyUpStrings(arrayOfStrings) {
+  for (let i=0; i < arrayOfStrings.length; i++)
+  {
+    arrayOfStrings[i] = arrayOfStrings[i].replace ("/", "").trim().toLowerCase();}
+  return arrayOfStrings;
+}
+
+
+
+
+
+//
+//function tidyUpStrings(arrayOfStrings) {
+ // let arrayOfTidyStrings = []; //
+  // for (const string of arrayOfStrings) {
+  //   arrayOfTidyStrings.push(string.trim().replaceAll("/", "").toLowerCase());
+  // }
+ // for (let index = 0; index < arrayOfStrings.length; index++) {
+   // const string = arrayOfStrings[index]; //arrayOfStrings[0] arrayOfStrings[1]
+   // arrayOfTidyStrings.push(string.trim().replaceAll("/", "").toLowerCase());
+  //}
+  //return arrayOfTidyStrings;
+//}
+
 
 /* ======= TESTS - DO NOT MODIFY ===== */
 
@@ -77,7 +111,7 @@ test("tidyUpString function works", () => {
       "ashleigh   ",
       "   Alastair  ",
       " anne marie  ",
-    ])  
+    ])
   ).toEqual([
     "daniel",
     "sanyia",
@@ -87,5 +121,5 @@ test("tidyUpString function works", () => {
     "ashleigh",
     "alastair",
     "anne marie",
-  ]); 
+  ]);
 });
