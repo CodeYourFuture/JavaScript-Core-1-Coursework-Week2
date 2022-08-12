@@ -5,7 +5,19 @@
   Update the code so that you get the expected result.
 */
 
-function isNegative() {}
+function isNegative(num) {
+return num < 0;
+}
+function isBetween5And10(num){
+  return 5 <= num <= 10;
+}
+function isShorterName(name) {
+  return name.length <= 6;
+}
+function startWithD(name) {
+  return [0] === D;
+}
+
 
 /* 
   DO NOT EDIT BELOW THIS LINE
