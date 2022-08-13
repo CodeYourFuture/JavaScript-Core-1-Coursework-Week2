@@ -10,10 +10,10 @@
 
 */
 
-function mood() {
-  let isHappy = true;
+function mood(isHappy) {
+ // isHappy = true;
 
-  if (isHappy) {
+  if (isHappy === true) {
     return "I am happy";
   } else {
     return "I am not happy";
@@ -21,21 +21,22 @@ function mood() {
 }
 
 function greaterThan10(num) {
-  let isBigEnough;
+isBigEnough = num >= 10;
 
   if (isBigEnough) {
     return "num is greater than 10";
   } else {
     return "num is not big enough";
   }
-}
+} 
 
 function get3rdIndex(arr) {
-  let index = 3;
-  let element;
+  //let index = 3;
+  //let element;
 
-  return element;
-}
+//let get3rd =  arr.slice(2, 3);
+return get3rd;
+  }
 
 /* ======= TESTS - DO NOT MODIFY ===== */
 

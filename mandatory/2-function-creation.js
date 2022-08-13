@@ -6,7 +6,18 @@ Complete the function to check if the variable `num` satisfies the following req
 Tip: use logical operators
 */
 
-function validate(num) {}
+function validate(num) {
+if (num.isInteger && num % 2 && num <= 100){
+  return true;}
+  else {
+    return false;
+  }
+//is a number
+//is even
+
+//is less than or equal to 100
+
+}
 
 /*
 Write a function that:
@@ -16,7 +27,11 @@ Write a function that:
 - numbers greater 100 must be replaced with 100
 */
 
-function formatPercentage(num) {}
+function formatPercentage(num) {
+num = num.toString();  
+return `${num}%`
+
+}
 
 /*
 Write a function that:

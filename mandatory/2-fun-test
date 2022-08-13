@@ -1,0 +1,24 @@
+/*function validate(num) {
+if (num.isInteger) {
+return "is a number";
+//is a number
+} else {
+  return "not a number";
+}
+if else (num = num % 2) {
+ return "is a number";
+//is even
+}  
+if else (num <=100) {
+ return "is less than or equal to 100";
+}
+//is less than or equal to 100
+
+} */
+
+function formatPercentage(num) {
+num = num.toString();  
+return `${num}+"%"`;
+}
+
+console.log(formatPercentage(10));
