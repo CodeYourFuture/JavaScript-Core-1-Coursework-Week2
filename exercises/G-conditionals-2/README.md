@@ -3,7 +3,7 @@ A common use of if statements is inside of functions.
 ```js
 function getGrade(score) {
   if (score >= 80) {
-    return "A";
+    return "A"; 
   }
   if (score >= 60) {
     return "B";
