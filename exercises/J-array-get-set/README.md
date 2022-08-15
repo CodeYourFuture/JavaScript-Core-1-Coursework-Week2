@@ -2,6 +2,8 @@ You can **get** a single value out of an array using **bracket notation**.
 
 ```sh
 $ node
+￼Copy to Clipboard
+
 > let ingredients = ["Flour", "Water", "Salt"];
 undefined
 > ingredients[0]
