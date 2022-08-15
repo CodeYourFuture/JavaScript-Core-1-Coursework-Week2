@@ -37,23 +37,20 @@ Write a function that:
 - makes all strings all lowercase
 */
 function tidyUpStrings(arrayOfStrings) {
+  let arrayNames = [];
   for (i = 0; i < arrayOfStrings.length; i++) {
-    arrayOfStrings = arrayOfStrings[i].trim();
-    let newString = String.prototype.toLowerCase
-      .apply(arrayOfStrings)
-      .replace(/\//, "")
-      .split(",");
-    console.log(newString);
-    return newString;
+    let newString = arrayOfStrings[i].trim().replace("/", "").toLowerCase();
+    arrayNames.push(newString);
   }
-  //   typeof (arrayOfStrings) === "string";
-  //   let str = arrayOfStrings.toLowerCase();
-  //   let result = result.trim;
-
-  //   if (str.indexOf("!") == 0) {
-  //     return str.substr(1);
-  //   } else return str;
+  return arrayNames;
 }
+//   typeof (arrayOfStrings) === "string";
+//   let str = arrayOfStrings.toLowerCase();
+//   let result = result.trim;
+
+//   if (str.indexOf("!") == 0) {
+//     return str.substr(1);
+//   } else return str;
 
 /* ======= TESTS - DO NOT MODIFY ===== */
 
