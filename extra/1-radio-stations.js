@@ -32,6 +32,13 @@
  */
 
 function getAvailableStations() {
+  function getAllFrequencies() {
+    let listOfFrequencies = [];
+    for (i = 87; i < 109; i++) {
+      listOfFrequencies.push(i);
+    }
+    return listOfFrequencies;
+  } 
   // Using `stations` as a property as defining it as a global variable wouldn't
   // always make it initialized before the function is called
   if (!getAvailableStations.stations) {
