@@ -14,7 +14,7 @@ let enoughSpaceInRoom =true; // finish this statement
 
 let personA = "Daniel";
 let personB = "Irina";
-let sameName =false; // finish this statement
+let sameName =falseC:\Users\Lenovo\OneDrive\Documents\cyf\JavaScript-Core-1-Coursework-Week2\exercises\C-comparison-operators\exercise.js; // finish this statement
 
 /* 
   DO NOT EDIT BELOW THIS LINE
