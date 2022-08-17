@@ -38,7 +38,7 @@ Write a function that:
 - removes any forward slashes (/) in each string
 - makes all strings all lowercase
 */
-function tidyUpStrings(arrayOfStrings) {
+
   function tidyUpStrings(arrayOfStrings) {
   for (let i=0; i<arrayOfStrings.length; i++){
     arrayOfStrings[i]= arrayOfStrings[i].trimStart();
