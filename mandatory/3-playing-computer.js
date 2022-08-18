@@ -28,7 +28,7 @@ const f2 = function (a, b) {
 
 console.log(x);
 console.log(a);
-console.log(b);
+
 
 for (let i = 0; i < 5; ++i) {
   a = a + 1;
@@ -39,4 +39,5 @@ for (let i = 0; i < 5; ++i) {
     const e = f1(i, a);
     console.log(e);
   }
+  
 }
