@@ -7,11 +7,7 @@ Tip: use logical operators
 */
 
 function validate(num) {
-  if((typeof num ==="number") && (num % 2===0) && (num<=100 )) {
-    return true;
-  }else {
-    return false;
-  }
+  return typeof num == "number" && num % 2 === 0 && num <= 100;
 }
 
 
@@ -24,12 +20,9 @@ Write a function that:
 */
 
 function formatPercentage(num) {
-  if (num > 100){
-    return "100%";
-  }
-  
-  num = Math.round(num*100)/100;
-  return num +"%";
+   if (num > 100) num = 100;
+  const roundedNum = Math.round(num * 100) / 100;
+  return `${roundedNum}%`;
 
 }
 
@@ -41,15 +34,14 @@ Write a function that:
 - makes all strings all lowercase
 */
 function tidyUpStrings(arrayOfStrings) {
+  const tidiedStrings = [];
 
-  let newArray = [];
-
- for (let i = 0; i<arrayOfStrings.length; i++){
-  let formattedString = arrayOfStrings[i].replace("/", "").trim().toLowerCase();
-  newArray.push(formattedString);
- }
-
-return newArray;
+  for (let i = 0; i < arrayOfStrings.length; i++) {
+    const item = arrayOfStrings[i];
+    const formattedItem = item.trim().replace('/', '').toLowerCase();
+    tidiedStrings.push(formattedItem);
+  }
+  return tidiedStrings;
 }
 
 /* ======= TESTS - DO NOT MODIFY ===== */
