@@ -32,8 +32,18 @@
  */
 
 function getAvailableStations() {
-  // Using `stations` as a property as defining it as a global variable wouldn't
-  // always make it initialized before the function is called
+function getStations() {
+  const allFrequencies = getAllFrequencies();
+  const radioFrequencies = [];
+
+  for (let i = 0; i < allFrequencies.length; i++) {
+    const currentFrequency = allFrequencies[i];
+    if (isRadioStation(currentFrequency))
+      radioFrequencies.push(currentFrequency);
+  }
+
+  return radioFrequencies;
+}
   if (!getAvailableStations.stations) {
     const stationCount = 4;
     getAvailableStations.stations = [];

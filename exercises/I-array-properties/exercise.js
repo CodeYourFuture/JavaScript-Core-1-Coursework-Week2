@@ -5,8 +5,14 @@
 
 */
 
-function isEmpty(arr) {
-  return; // complete this statement
+function isEmpty(numbers) {
+  if (numbers.length = 0) {return "true"}
+  else if  (numbers.length > 0) {return "false"}// complete this statement
+}
+
+function isEmpty(names) {
+  if (names.length = 0) {return "true"}
+  else if  (n.length > 0) {return "false"}// complete this statement
 }
 
 /* 
