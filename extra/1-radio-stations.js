@@ -16,7 +16,7 @@
 // `getAllFrequencies` goes here
 function getAllFrequencies() {
   let frequencies = [];
-  for (let i = 87; i <=108; i++) {
+  for (let i = 87; i <=108; i++) { // the solution has created two extra varialbles the start and finish frequences, I have simply used the border frequency integers inside the function, as I gather this is not really advisable as it makes my code less readable and might lead to confusion down the line
       frequencies.push(i);
   }
   return frequencies;
@@ -40,7 +40,7 @@ function getAllFrequencies() {
 // }
 
 function getStations() {
-    return getAllFrequencies().filter(isRadioStation);
+    return getAllFrequencies().filter(isRadioStation); //The solution has used a function with a for loop to select the available frequences, I have found a solution with a .filter() method that works as well 
     // I have strugled and tried to create a for loop that iterates through the getAllFrequences(), then compares it with available stations and thats where I failed, just to find that there is a simple JS method to do all the work
 }
 /*

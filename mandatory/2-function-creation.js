@@ -7,8 +7,8 @@ Tip: use logical operators
 */
 
 function validate(num) {
-  if (Number.isInteger(num) && num % 2 === 0 && num <= 100) {
-    return true
+  if (Number.isInteger(num) && num % 2 === 0 && num <= 100) { //the solution used the typeof operator, I have used the Number.isInteger() method to check that the input value is a number, I have used ecess code to declare booleans, could have simply return the code in the if () and id would return either true or false
+    return true 
   } else return false
 }
 
