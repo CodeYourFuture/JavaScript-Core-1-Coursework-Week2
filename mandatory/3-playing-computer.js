@@ -6,13 +6,13 @@
 
   Answer the following questions:
 
-  1. This program throws an error. Why? (If you can't find it, try executing it).
+  1. This program throws an error. Why? (If you can't find it, try executing it). - "console.log(b) throws the error as b is not defined"
   2. Remove the line that throws the error.
-  3. What is printed to the console?
-  4. How many times is "f1" called?
-  5. How many times is "f2" called?
-  6. What value does the "a" parameter take in the first "f1" call?
-  7. What is the value of the "a" outer variable when "f1" is called for the first time?
+  3. What is printed to the console? - "first two lines in the console are the variables x and a, the rest is the output of the for loop"
+  4. How many times is "f1" called? - "f1 is called 3x"
+  5. How many times is "f2" called? -  "f2 is called 2x" 
+  6. What value does the "a" parameter take in the first "f1" call? - "the variable "a" takes the value of 7 inside the for loop on first call"
+  7. What is the value of the "a" outer variable when "f1" is called for the first time? "the value of variable "a" outside of the for loop is 6"
 */
 
 let x = 2;
@@ -28,7 +28,7 @@ const f2 = function (a, b) {
 
 console.log(x);
 console.log(a);
-console.log(b);
+// console.log(b); -throws error because variable b is not defined
 
 for (let i = 0; i < 5; ++i) {
   a = a + 1;
@@ -40,3 +40,5 @@ for (let i = 0; i < 5; ++i) {
     console.log(e);
   }
 }
+
+//  console.log(a);

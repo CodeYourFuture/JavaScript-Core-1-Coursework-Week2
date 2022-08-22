@@ -10,20 +10,23 @@
 
 */
 
-function mood() {
-  let isHappy = true;
+function mood(isHappy) {
+  // let isHappy = true;
 
-  if (isHappy) {
+  if (isHappy === true) {
     return "I am happy";
   } else {
     return "I am not happy";
   }
 }
 
-function greaterThan10(num) {
-  let isBigEnough;
+// console.log(mood(true));
+// console.log(mood(false));
 
-  if (isBigEnough) {
+function greaterThan10(num) {
+  let isBigEnough = num;
+
+  if (isBigEnough > 10) {            //I have used the comparison operator inside the function, the solution used it to define the variable isBigEnough
     return "num is greater than 10";
   } else {
     return "num is not big enough";
@@ -32,7 +35,7 @@ function greaterThan10(num) {
 
 function get3rdIndex(arr) {
   let index = 3;
-  let element;
+  let element = arr[index];
 
   return element;
 }

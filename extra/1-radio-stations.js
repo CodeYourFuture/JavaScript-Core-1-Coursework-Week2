@@ -14,6 +14,13 @@
  */
 
 // `getAllFrequencies` goes here
+function getAllFrequencies() {
+  let frequencies = [];
+  for (let i = 87; i <=108; i++) { // the solution has created two extra varialbles the start and finish frequences, I have simply used the border frequency integers inside the function, as I gather this is not really advisable as it makes my code less readable and might lead to confusion down the line
+      frequencies.push(i);
+  }
+  return frequencies;
+}
 
 /**
  * Next, let's write a function that gives us only the frequencies that are radio stations.
@@ -25,7 +32,17 @@
  * - Return only the frequencies that are radio stations.
  */
 // `getStations` goes here
+// function isRadioStation(num) {
+//   if (getAllFrequencies().includes(num)) {
+//        return true;  
+//   }
+//   return false;
+// }
 
+function getStations() {
+    return getAllFrequencies().filter(isRadioStation); //The solution has used a function with a for loop to select the available frequences, I have found a solution with a .filter() method that works as well 
+    // I have strugled and tried to create a for loop that iterates through the getAllFrequences(), then compares it with available stations and thats where I failed, just to find that there is a simple JS method to do all the work
+}
 /*
  * ======= TESTS - DO NOT MODIFY =======
  * Note: You are not expected to understand everything below this comment!
