@@ -8,7 +8,27 @@
   Hint: Google how to check if a string contains a word
 */
 
-function containsCode(sentence) {}
+function containsCode(sentence) {
+let result = sentence1.includes("code");  
+} return true { 
+else {return false}  
+}
+
+function containsCode(sentence) {
+let result = sentence2.includes("code");  
+} return true { 
+else {return false}  
+}
+
+function containsCode(sentence) {
+let result = sentence3.includes("code");  
+} return true { 
+else {return false}  
+}
+
+// GR - do not understand error around using 'else' statement//
+
+
 
 /* 
 DO NOT EDIT BELOW THIS LINE

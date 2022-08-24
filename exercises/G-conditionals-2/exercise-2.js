@@ -7,8 +7,19 @@
 
 */
 
-function studentPassed(grade) {}
+function studentPassed(grade) {
+  if (grade >= 50) {
+    return "passed";
+    // more than 50
+  } else if (grade < 50) { //49.9999
+    return "failed";
+    // less than 50
+  }
 
+  // if studentPassed (>50% + "passed"){
+  // else studentFailed (<49% + "failed")
+  // }
+}
 /* 
 DO NOT EDIT BELOW THIS LINE
 --------------------------- */

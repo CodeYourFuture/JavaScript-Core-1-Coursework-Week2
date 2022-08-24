@@ -8,7 +8,14 @@
   - Otherwise the grade is "F"
 */
 
-function calculateGrade(mark) {}
+function calculateGrade(mark) {
+if (mark >=80) {
+return "A";
+} if (mark <= 79 && >= 61)
+  return "B";
+} if (mark <= 60 && >= 50)
+return "C";
+// GR - Don't understand error - what is the 'expected expression?' // 
 
 /* 
 DO NOT EDIT BELOW THIS LINE
