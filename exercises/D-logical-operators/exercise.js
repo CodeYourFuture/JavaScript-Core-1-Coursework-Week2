@@ -5,21 +5,64 @@
   The variables should have values that match the expected results.
 */
 
+const { TestScheduler } = require("jest");
+
 // Do not change these two statement
 let htmlLevel = 8;
+if(htmlLevel === 8) {
+  console.log("true");
+} else {
+  console.log("false");
+}
+
 let cssLevel = 4;
+
+if(cssLevel === 4) {
+  console.log("false");
+}  else {
+  console.log("true");
+}
 
 // Finish the statement to check whether HTML, CSS knowledge are above 5
 // (hint: use the comparison operator from before)
-let htmlLevelAbove5;
-let cssLevelAbove5;
+
+let htmlLevelAbove = 5;
+if(htmlLevelAbove >= 5) {
+    console.log("true");
+} else {
+    console.log("false");
+}
+
+let cssLevelAbove = 5;
+
+if(cssLevelAbove >= 6) {
+    console.log("true");
+} else {
+    console.log("false");
+}
+
 
 // Finish the next two statement
 // Use the previous variables and logical operators
 // Do not "hardcode" the answers
-let cssAndHtmlAbove5;
-let cssOrHtmlAbove5;
 
+   let cssAndHtmlAbove5 = 6;
+
+    if(cssAndHtmlAbove5 >= 7) {
+        console.log("true");
+    } else {
+        console.log("false");
+    }
+
+
+let cssOrHtmlAbove5 = 6;
+
+if(cssOrHtmlAbove5 <= 6) {
+    console.log("true");
+
+} else {
+    console.log("false");
+}
 /* 
   DO NOT EDIT BELOW THIS LINE
   --------------------------- */

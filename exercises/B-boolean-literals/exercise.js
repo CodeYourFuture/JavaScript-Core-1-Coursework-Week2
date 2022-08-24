@@ -5,7 +5,37 @@
   Add the required variables with the correct boolean values assigned.
 */
 
-let codeYourFutureIsGreat = true;
+  let codeYourFutureIsGreat = true;
+  if(codeYourFutureIsGreat === true) {
+  console.log("true");
+  } else {
+  console.log("false");
+  }
+
+  let mozafarIsCool = true;
+
+  if(mozafarIsCool === false) {
+  console.log("true");
+  } else {
+  console.log("false");
+  }
+
+
+let calculationCorrect = 2;
+
+if(1 + 1 === 2) {
+  console.log("true");
+} else {
+  console.log("false");
+}
+
+let moreThan10Students = 11;
+
+if(moreThan10Students <= 10) {
+console.log("true");
+} else {
+    console.log("false");
+}
 
 /* 
   DO NOT EDIT BELOW THIS LINE

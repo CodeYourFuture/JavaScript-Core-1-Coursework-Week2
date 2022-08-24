@@ -6,6 +6,13 @@
 */
 
 let studentCount = 16;
+
+if(studentCount === 16) {
+
+console.log("true");
+}else {
+  console.log("false");
+}
 let mentorCount = 9;
 let moreStudentsThanMentors; // finish this statement
 
