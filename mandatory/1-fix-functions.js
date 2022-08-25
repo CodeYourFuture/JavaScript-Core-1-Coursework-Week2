@@ -3,7 +3,7 @@
   Aim: to understand the change code inside functions 
 
   See the below functions. They are syntactically correct but are not outputting the right results.
-
+-
   Run the tests and see how you can fix them.
 
   NOTE:Only make edits inside the function

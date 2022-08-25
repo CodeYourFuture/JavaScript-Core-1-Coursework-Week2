@@ -5,7 +5,39 @@
   Update the code so that you get the expected result.
 */
 
-function isNegative() {}
+function isNegative() { 
+let num = (-10 && -1)
+} return true; {
+else {return false;
+}
+}
+
+function isBetween5and10 () {
+let range = (5>= && <=10)  
+} return true; {
+else {
+return false;  
+}
+}
+
+function isShortName () {
+if (name.length <=5)
+} return true {
+else {
+return false
+}
+}
+
+function startsWithD() {
+if text.startsWith ("D");}
+return true; {
+else {
+return false;
+}
+} 
+
+
+
 
 /* 
   DO NOT EDIT BELOW THIS LINE
