@@ -6,6 +6,14 @@
 */
 
 let codeYourFutureIsGreat = true;
+console.log("Is Code Your Future great?");
+let mozafarIsCool = false
+console.log("Is Mozafar cool?");
+let calculationCorrect = true;
+console.log("Does 1 + 1 = 2?");
+let moreThan10Students = false;
+console.log("Are there more than 10 students?");
+
 
 /* 
   DO NOT EDIT BELOW THIS LINE

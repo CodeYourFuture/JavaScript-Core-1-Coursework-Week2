@@ -16,7 +16,7 @@ Did you notice how we use `[0]` to get the first value? In programming we count 
 
 > The number inside of the brackets is called an **index**. Index just means the position of the item within the array.
 
-You can also **set** a value using bracket notation and an assignment operator (`=`).
+You can also **set** a value using braletcket notation and an assignment operator (`=`).
 
 ```js
 let scores = [80, 41, 47];

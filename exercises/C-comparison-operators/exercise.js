@@ -7,15 +7,18 @@
 
 let studentCount = 16;
 let mentorCount = 9;
-let moreStudentsThanMentors; // finish this statement
+let moreStudentsThanMentors = true; // finish this statement
+console.log("Are there more students than mentors?");
+
 
 let roomMaxCapacity = 25;
-let enoughSpaceInRoom; // finish this statement
+let enoughSpaceInRoom = true; // finish this statement
+console.log("Is there enough space in the room for all students and mentors?");
 
 let personA = "Daniel";
 let personB = "Irina";
-let sameName; // finish this statement
-
+let sameName = false; // finish this statement
+console.log("Do person A and person B have the the same name?");
 /* 
   DO NOT EDIT BELOW THIS LINE
   --------------------------- */
