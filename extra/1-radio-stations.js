@@ -4,6 +4,7 @@
  * the radio waves for some good music.
  */
 
+
 /**
  * First, let's create a function that creates a list of all the frequencies.
  * Call this function `getAllFrequencies`.
@@ -12,6 +13,17 @@
  * - Create an array  starting at 87 and ending in 108
  * - Should return this array to use in other functions
  */
+function getAllFrequencies() {
+  const allFrequencies = [];
+  const startFreq = 87;
+  const endFreq = 108;
+
+  for (let i = startFreq; i <= endFreq; i++) {
+    allFrequencies.push(i);
+  }
+
+  return allFrequencies;
+}
 
 // `getAllFrequencies` goes here
 
@@ -26,6 +38,18 @@
  */
 // `getStations` goes here
 
+function getStations() {
+  const allFrequencies = getAllFrequencies();
+  const radioFrequencies = [];
+
+  for (let i = 0; i < allFrequencies.length; i++) {
+    const currentFrequency = allFrequencies[i];
+    if (isRadioStation(currentFrequency))
+      radioFrequencies.push(currentFrequency);
+  }
+
+  return radioFrequencies;
+}
 /*
  * ======= TESTS - DO NOT MODIFY =======
  * Note: You are not expected to understand everything below this comment!
