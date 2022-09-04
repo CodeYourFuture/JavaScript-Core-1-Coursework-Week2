@@ -31,16 +31,17 @@ return station;
  */
 // `getStations` goes here
 
-function getStations(){
-   let radio = getAllFrequencies();
-   let storage = [];
-   for (let char of radio) {
-    if (isRadioStation(char)) {
-       storage.push(char);
-    } 
-   }
+function getStations() {
+  const allFrequencies = getAllFrequencies();
+  const radioFrequencies = [];
 
-return storage;
+  for (let i = 0; i < allFrequencies.length; i++) {
+    const currentFrequency = allFrequencies[i];
+    if (isRadioStation(currentFrequency))
+      radioFrequencies.push(currentFrequency);
+  }
+
+  return radioFrequencies;
 }
 /*
  * ======= TESTS - DO NOT MODIFY =======
