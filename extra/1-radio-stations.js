@@ -13,9 +13,16 @@
  * - Create an array  starting at 87 and ending in 108
  * - Should return this array to use in other functions
  */
-function getAllFrequencies (){
-let station = [87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108]
-return station;
+function getAllFrequencies() {
+  const allFrequencies = [];
+  const startFreq = 87;
+  const endFreq = 108;
+
+  for (let i = startFreq; i <= endFreq; i++) {
+    allFrequencies.push(i);
+  }
+
+  return allFrequencies;
 }
 
 // `getAllFrequencies` goes here
