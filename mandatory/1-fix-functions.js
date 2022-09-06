@@ -10,32 +10,63 @@
 
 */
 
-function mood() {
-  let isHappy = true;
+// function mood() {
+//   let isHappy = true;
 
-  if (isHappy) {
-    return "I am happy";
-  } else {
-    return "I am not happy";
-  }
+//   if (isHappy) {
+//     return "I am happy";
+//   } else {
+//     return "I am not happy";
+//   }
+// }
+
+function mood(isHappy) {
+  // if (isHappy) {
+  //   return "I am happy";
+  // } else {
+  //   return "I am not happy";
+  // }
+  return isHappy ? "I am happy" : "I am not happy";
 }
+
+// const mood = (isHappy) => isHappy ? "I am happy" : "I am not happy";
+
+
+// function greaterThan10(num) {
+//   let isBigEnough;
+
+//   if (isBigEnough) {
+//     return "num is greater than 10";
+//   } else {
+//     return "num is not big enough";
+//   }
+// }
 
 function greaterThan10(num) {
-  let isBigEnough;
+  // let isBigEnough = num > 10;
 
-  if (isBigEnough) {
-    return "num is greater than 10";
-  } else {
-    return "num is not big enough";
-  }
+  // if (isBigEnough) {
+  //   return "num is greater than 10";
+  // } else {
+  //   return "num is not big enough";
+  // }
+  return num > 10 ? `num is greater than 10` : `num is not big enough`;
 }
+
+// function get3rdIndex(arr) {
+//   let index = 3;
+//   let element;
+
+//   return element;
+// }
 
 function get3rdIndex(arr) {
-  let index = 3;
-  let element;
-
-  return element;
+  // let index = 3;
+  // let element = arr[index];
+  // return element;
+  return arr[3];
 }
+
 
 /* ======= TESTS - DO NOT MODIFY ===== */
 
