@@ -1,3 +1,5 @@
+
+
 /*
   Logical Operators
   ---------------------------------
@@ -5,7 +7,21 @@
   Update the code so that you get the expected result.
 */
 
-function isNegative() {}
+function isNegative(num) {
+  return num * 2
+}
+
+// isNegative(num);
+// console.log('hello');
+
+
+
+
+// if (num ===  typeof num * -1 ) {
+// return true 
+// }
+
+
 
 /* 
   DO NOT EDIT BELOW THIS LINE
