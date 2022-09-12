@@ -6,6 +6,8 @@
 */
 
 let codeYourFutureIsGreat = true;
+console
+
 
 /* 
   DO NOT EDIT BELOW THIS LINE
