@@ -6,7 +6,16 @@
 */
 
 let codeYourFutureIsGreat = true;
-console
+Boolean(codeYourFutureIsGreat);
+
+let mozafarIsCool = true
+Boolean(mozafarIsCool);
+
+let calculationCorrect = true;
+Boolean(calculationCorrect);
+
+let moreThan10Students = true;
+Boolean(moreThan10Students);
 
 
 /* 
