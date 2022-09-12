@@ -17,7 +17,7 @@
 
 let x = 2;
 let a = 6;
-
+let b = 4;
 const f1 = function (a, b) {
   return a + b;
 };
@@ -34,9 +34,9 @@ for (let i = 0; i < 5; ++i) {
   a = a + 1;
   if (i % 2 === 0) {
     const d = f2(i, x);
-    console.log(d);
+    console.log(d, "f1");
   } else {
     const e = f1(i, a);
-    console.log(e);
+    console.log(e, "f2");
   }
 }
