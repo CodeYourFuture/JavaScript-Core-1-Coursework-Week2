@@ -6,7 +6,28 @@
 */
 
 function isNegative(value) {
-   return true;
+   if(Math.sign(value) === -1) {
+      return true;
+   }
+   return false;
+}
+
+function isBetween5and10(value) {
+  if(value > 5 && value <= 10) {
+    return true;
+  }
+}
+
+function isShortName (value){
+   if(value === "Daniel"){
+     return true;
+   }
+}
+
+function startsWithD (value){
+   if(value === "Daniel"){
+     return true;
+   }
 }
 
 /* 
