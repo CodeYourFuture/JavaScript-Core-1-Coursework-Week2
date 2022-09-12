@@ -5,7 +5,7 @@ You can check this by starting a node console in your terminal.
 ```sh
 $ node
 > let arr = [1, 2, 3];
-undefined
+arr.length
 > arr
 [1, 2, 3]
 > arr.length
