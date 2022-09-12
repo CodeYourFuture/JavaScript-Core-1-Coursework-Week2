@@ -10,11 +10,11 @@ let name = "Daniel";
 let danielsRole = "mentor";
 
 function checkRole(name) {
-  if (name !== danielsRole ) {
-return "Hi, I'm Daniel, I'm a mentor."
+  if (name !== name ) {
+return "Hi, I'm Daniel, I'm a student."
  
 }
-return "Hi, I'm Daniel, I'm a student."
+return "Hi, I'm Daniel, I'm a mentor."
 }
 
 console.log(checkRole());
