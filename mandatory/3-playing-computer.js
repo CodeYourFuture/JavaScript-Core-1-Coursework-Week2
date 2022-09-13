@@ -6,7 +6,7 @@
 
   Answer the following questions:
 
-  1. This program throws an error. Why? (If you can't find it, try executing it).
+  1. This program throws an error. Why? (If you can't find it, try executing it). We need a variable b.
   2. Remove the line that throws the error.
   3. What is printed to the console?
   4. How many times is "f1" called?
@@ -17,6 +17,7 @@
 
 let x = 2;
 let a = 6;
+let b = 4;
 
 const f1 = function (a, b) {
   return a + b;
