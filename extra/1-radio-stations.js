@@ -13,11 +13,11 @@
  * - Should return this array to use in other functions
  */
  
-function getAllFrequencies(start, end) {
-  return Array(end - start + 1).fill().map((_, idx) => start + idx)
-}
-var result = getAllFrequencies(87, 108); // [9, 10, 11, 12, 13, 14, 15, 16, 17, 18]
-console.log(result);
+function getAllFrequencies(start, end) {}
+//   return Array(end - start + 1).fill().map((_, idx) => start + idx)
+// }
+// var result = getAllFrequencies(87, 108); // [9, 10, 11, 12, 13, 14, 15, 16, 17, 18]
+// console.log(result);
 // `getAllFrequencies` goes here
 
 /**
