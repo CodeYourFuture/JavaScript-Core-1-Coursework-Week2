@@ -36,10 +36,8 @@ Write a function that:
 - makes all strings all lowercase
 */
 function tidyUpStrings(arrayOfStrings) {
-    let result = arrayOfStrings.map(function (item) {
-      return item.trim().toLowerCase().replaceAll("/", "");
-    });
-    console.log(result);
+   return arrayOfStrings.map((item) =>
+     item.trim().toLowerCase().replaceAll("/", ""));
   }
 
 
