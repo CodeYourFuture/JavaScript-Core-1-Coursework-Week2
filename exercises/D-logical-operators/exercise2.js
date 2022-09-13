@@ -5,7 +5,10 @@
   Update the code so that you get the expected result.
 */
 
-function isNegative() {}
+function isNegative(a) {
+  a = -10 < 0;
+  a = 5 < 0;
+}
 
 /* 
   DO NOT EDIT BELOW THIS LINE
