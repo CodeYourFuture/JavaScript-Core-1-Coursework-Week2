@@ -23,7 +23,7 @@ Write a function that:
 */
 
 function formatPercentage(num) {
-  num = parseInt(prompt("Enter the number please:"));
+  // num = parseInt(prompt("Enter the number please:"));
   num = num + "%";
   num.toFixed(2);
   if(num > 100) {
