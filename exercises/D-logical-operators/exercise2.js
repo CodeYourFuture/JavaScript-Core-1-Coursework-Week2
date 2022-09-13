@@ -5,7 +5,7 @@
   Update the code so that you get the expected result.
 */
 
-function isNegative() {}
+function isNegative(n) {}
 
 /* 
   DO NOT EDIT BELOW THIS LINE
