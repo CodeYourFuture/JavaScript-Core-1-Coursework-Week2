@@ -21,18 +21,19 @@ function mood() {
 }
 
 function greaterThan10(num) {
-  let isBigEnough;
+  let isBigEnough = num;
 
-  if (isBigEnough) {
+  if (isBigEnough > 10 ) {
     return "num is greater than 10";
-  } else {
-    return "num is not big enough";
   }
+  else {
+    return "num is not big enough";
+  } 
 }
 
 function get3rdIndex(arr) {
   let index = 3;
-  let element;
+  let element = index;
 
   return element;
 }
