@@ -53,8 +53,8 @@ function tidyUpStrings(arrayOfStrings) {
     arrayOfStrings[i] = arrayOfStrings[i].toLowerCase();
   }
   
-  
 
+  return arrayOfStrings;
 
 }
 
