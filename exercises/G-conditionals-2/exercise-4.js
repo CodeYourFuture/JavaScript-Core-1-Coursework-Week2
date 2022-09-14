@@ -8,7 +8,11 @@
   Hint: Google how to check if a string contains a word
 */
 
-function containsCode(sentence) {}
+function containsCode(sentence) {
+// I write the ternary operator
+return (sentence.includes("code")) ? true : false;
+
+}
 
 /* 
 DO NOT EDIT BELOW THIS LINE

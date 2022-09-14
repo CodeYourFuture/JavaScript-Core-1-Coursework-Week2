@@ -7,7 +7,10 @@
 
 */
 
-function studentPassed(grade) {}
+function studentPassed(grade) {
+// I write the ternary operator
+return (grade < 50) ? "passed" : "failed";
+}
 
 /* 
 DO NOT EDIT BELOW THIS LINE

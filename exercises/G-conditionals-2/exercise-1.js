@@ -6,10 +6,14 @@
   - if number is more or equal to zero, return the word "positive"
 */
 
-function negativeOrPositive(number) {}
+function negativeOrPositive(number) {
+  // I write the ternary operator
+ return (number < 0 ) ? "negative" : "positive" ;
+
+}
 
 /* 
-  DO NOT EDIT BELOW THIS LINE
+  DO NOT EDIT BELOW THIS LINE  
   --------------------------- */
 let number1 = 5;
 let number2 = -1;
