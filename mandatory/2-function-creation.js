@@ -6,7 +6,13 @@ Complete the function to check if the variable `num` satisfies the following req
 Tip: use logical operators
 */
 
-function validate(num) {}
+function validate(num) {
+
+  if (typeof (num) == "number" && num % 2 == 0 && num <= 100) {
+    return "Num is an even number <= 100";
+
+  }
+}
 
 /*
 Write a function that:
@@ -16,7 +22,12 @@ Write a function that:
 - numbers greater 100 must be replaced with 100
 */
 
-function formatPercentage(num) {}
+  function formatPercentage(num) {
+    let stringVal = "";
+    if (typeof (num) == "number") {
+      
+     }
+}
 
 /*
 Write a function that:
@@ -66,26 +77,26 @@ test.each([
   expect(formatPercentage(input)).toEqual(expected);
 });
 
-test("tidyUpString function works", () => {
-  expect(
-    tidyUpStrings([
-      "/Daniel",
-      " /Sanyia",
-      "AnTHonY",
+  test("tidyUpString function works", () => {
+    expect(
+      tidyUpStrings([
+        "/Daniel",
+        " /Sanyia",
+        "AnTHonY",
+        "irina",
+        " Gordon",
+        "ashleigh   ",
+        "   Alastair  ",
+        " anne marie  ",
+      ])
+    ).toEqual([
+      "daniel",
+      "sanyia",
+      "anthony",
       "irina",
-      " Gordon",
-      "ashleigh   ",
-      "   Alastair  ",
-      " anne marie  ",
-    ])  
-  ).toEqual([
-    "daniel",
-    "sanyia",
-    "anthony",
-    "irina",
-    "gordon",
-    "ashleigh",
-    "alastair",
-    "anne marie",
-  ]); 
-});
+      "gordon",
+      "ashleigh",
+      "alastair",
+      "anne marie",
+    ]);
+  });
