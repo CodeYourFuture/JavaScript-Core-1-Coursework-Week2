@@ -16,6 +16,24 @@ let personA = "Daniel";
 let personB = "Irina";
 let sameName; // finish this statement
 
+if (studentCount > mentorCount){
+  moreStudentsThanMentors = true;
+} else {
+  moreStudentsThanMentors = false
+}
+
+if (roomMaxCapacity > studentCount){
+  enoughSpaceInRoom = true;
+} else {
+  enoughSpaceInRoom = false
+}
+
+if (personA == personB) {
+  sameName = true;
+} else {
+  sameName = false;
+}
+
 /* 
   DO NOT EDIT BELOW THIS LINE
   --------------------------- */
