@@ -5,9 +5,18 @@
   If Daniel is a mentor, print out "Hi, I'm Daniel, I'm a mentor."
   If Daniel is a student, print out "Hi, I'm Daniel, I'm a student."
 */
+// let isHappy = true;
 
+// if (isHappy) {
+//   console.log("I am happy");
+// }
 let name = "Daniel";
 let danielsRole = "mentor";
+
+if (name === "Daniel" && danielsRole === "mentor") {
+  console.log("Hi, I'm Daniel, I'm a mentor.");
+}
+
 
 /* 
 EXPECTED RESULT
