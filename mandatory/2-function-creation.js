@@ -24,9 +24,18 @@ Write a function that:
 
   function formatPercentage(num) {
     let stringVal = "";
+    let numVal = 0;
     if (typeof (num) == "number") {
+      numVal = num.toFixed(2);
+      stringVal = numVal.toString();
+      return stringVal;
+    }
+    else if (typeof (num) == "string") {
+      return "Not a number. Cant help you, soz";
       
-     }
+    } else { 
+      return "No string or number passed as argument!";
+    }
 }
 
 /*
