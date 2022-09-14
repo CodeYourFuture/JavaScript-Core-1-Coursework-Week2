@@ -17,7 +17,7 @@ function mood(isHappy) {
     return "I am not happy";
   }
 }
-
+console.log(mood());
 function greaterThan10(num) {
   let bigEnough = num;
  if (bigEnough > 10) {
