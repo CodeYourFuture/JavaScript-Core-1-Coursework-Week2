@@ -40,9 +40,9 @@ Write a function that:
 - makes all strings all lowercase
 */
 function tidyUpStrings(arrayOfStrings) {
-  arrayOfStrings = prompt("Enter you staf please? ");
+  // arrayOfStrings = prompt("Enter you staf please? ");
   arrayOfStrings = arrayOfStrings.trim();
-  arrayOfStrings.replace(/\//g,"-");
+  arrayOfStrings.replace(/\//g,'');
   arrayOfStrings.toLowerCase();
 }
 
