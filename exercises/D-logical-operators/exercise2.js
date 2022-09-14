@@ -6,6 +6,31 @@
 */
 
 function isNegative() {}
+function isNegative(number) {
+  if (number <= 0){
+    return true;
+  } else {
+    return false;
+  }
+}
+
+function isBetween5and10(number) {
+  if (number >= 5 && number <= 10) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
+function isShortName(input) {
+  return input.length <= 6
+}
+
+
+
+function startsWithD(firstLetter) {
+  return firstLetter[0] === "D"
+}
 
 /* 
   DO NOT EDIT BELOW THIS LINE
