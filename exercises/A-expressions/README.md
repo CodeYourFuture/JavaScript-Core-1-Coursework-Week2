@@ -8,9 +8,9 @@ The following are all examples of expressions:
 
 ```js
 1 + 1; // returns 2
-("hello"); // returns "hello"
+('hello'); // returns "hello"
 2 * 4; // returns 8
-"hello" + "world"; // returns "helloworld"
+'hello' + 'world'; // returns "helloworld"
 ```
 
 We can take the value produced by an expression and assign it to a variable. That line of code would be called a statement.
@@ -21,7 +21,7 @@ A statement is some code that performs an action. Here are some examples:
 
 ```js
 let sum = 1 + 1; // action: assigns result of `1 + 1` to variable `sum`
-let greeting = "hello"; // action: assigns result of the expression "hello" to variable `greeting`
+let greeting = 'hello'; // action: assigns result of the expression "hello" to variable `greeting`
 console.log(2 * 4); // action: logs the result of `2 * 4` to the console
 sayGreeting(greeting); // action: calls the function `sayGreeting` with the parameter `greeting`
 ```
