@@ -22,10 +22,10 @@ Write a function that:
 
 function formatPercentage(num) {
   typeof num === "number";
-  let number = parseFloat((num).toFixed(2)) + "%";
-  if (num > 100){
+  let number = parseFloat(num.toFixed(2)) + "%";
+  if (num > 100) {
     return "100" + "%";
-  }else {
+  } else {
     return number;
   }
 }
@@ -39,13 +39,13 @@ Write a function that:
 */
 function tidyUpStrings(arrayOfStrings) {
   typeof arrayOfStrings === "array";
-    let myArray = [];
-    for (var i = 0; i < arrayOfStrings.length; i++) {
-        let arr = arrayOfStrings[i].trim().toLowerCase().replace("/", "");
-        myArray.push(arr);
-    }
-    return myArray;
-   } //(This works)
+  let myArray = [];
+  for (var i = 0; i < arrayOfStrings.length; i++) {
+    let arr = arrayOfStrings[i].trim().toLowerCase().replace("/", "");
+    myArray.push(arr);
+  }
+  return myArray;
+}
 
 /* ======= TESTS - DO NOT MODIFY ===== */
 
@@ -97,7 +97,7 @@ test("tidyUpString function works", () => {
       "ashleigh   ",
       "   Alastair  ",
       " anne marie  ",
-    ])  
+    ])
   ).toEqual([
     "daniel",
     "sanyia",
@@ -107,5 +107,5 @@ test("tidyUpString function works", () => {
     "ashleigh",
     "alastair",
     "anne marie",
-  ]); 
+  ]);
 });
