@@ -6,6 +6,22 @@
 */
 
 let codeYourFutureIsGreat = true;
+if (codeYourFutureIsGreat) {
+}
+let mozafarIsCool = false;
+if (mozafarIsCool){
+
+}
+
+let calculationCorrect = true
+if (calculationCorrect) {
+
+}
+let moreThan10Students = false
+if (moreThan10Students) {
+
+}
+
 
 /* 
   DO NOT EDIT BELOW THIS LINE
