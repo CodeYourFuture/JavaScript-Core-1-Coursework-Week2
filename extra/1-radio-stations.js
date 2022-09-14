@@ -13,7 +13,17 @@
  * - Should return this array to use in other functions
  */
 
-// `getAllFrequencies` goes here
+function getAllFrequencies() {
+	const frequencies = [];
+
+	for (i = 87; i <= 108; i++) {
+		frequencies.push(i);
+	}
+
+	return frequencies;
+}
+
+console.log(getAllFrequencies());
 
 /**
  * Next, let's write a function that gives us only the frequencies that are radio stations.
@@ -24,7 +34,16 @@
  * - There is a helper function called isRadioStation that takes an integer as an argument and returns a boolean.
  * - Return only the frequencies that are radio stations.
  */
-// `getStations` goes here
+
+function getStations() {
+	const frequencies = getAllFrequencies();
+
+	return frequencies.filter((frequency) => {
+		if (isRadioStation(frequency)) return frequency;
+	});
+}
+
+console.log(getStations());
 
 /*
  * ======= TESTS - DO NOT MODIFY =======
@@ -32,36 +51,36 @@
  */
 
 function getAvailableStations() {
-  // Using `stations` as a property as defining it as a global variable wouldn't
-  // always make it initialized before the function is called
-  if (!getAvailableStations.stations) {
-    const stationCount = 4;
-    getAvailableStations.stations = [];
-    while (getAvailableStations.stations.length < stationCount) {
-      let randomFrequency = Math.floor(Math.random() * (108 - 87 + 1) + 87);
-      if (!getAvailableStations.stations.includes(randomFrequency)) {
-        getAvailableStations.stations.push(randomFrequency);
-      }
-    }
-    getAvailableStations.stations.sort(function (frequencyA, frequencyB) {
-      return frequencyA - frequencyB;
-    });
-  }
+	// Using `stations` as a property as defining it as a global variable wouldn't
+	// always make it initialized before the function is called
+	if (!getAvailableStations.stations) {
+		const stationCount = 4;
+		getAvailableStations.stations = [];
+		while (getAvailableStations.stations.length < stationCount) {
+			let randomFrequency = Math.floor(Math.random() * (108 - 87 + 1) + 87);
+			if (!getAvailableStations.stations.includes(randomFrequency)) {
+				getAvailableStations.stations.push(randomFrequency);
+			}
+		}
+		getAvailableStations.stations.sort(function (frequencyA, frequencyB) {
+			return frequencyA - frequencyB;
+		});
+	}
 
-  return getAvailableStations.stations;
+	return getAvailableStations.stations;
 }
 
 function isRadioStation(frequency) {
-  return getAvailableStations().includes(frequency);
+	return getAvailableStations().includes(frequency);
 }
 
 test("getAllFrequencies() returns all frequencies between 87 and 108", () => {
-  expect(getAllFrequencies()).toEqual([
-    87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104,
-    105, 106, 107, 108,
-  ]);
+	expect(getAllFrequencies()).toEqual([
+		87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104,
+		105, 106, 107, 108,
+	]);
 });
 
 test("getStations() returns all the available stations", () => {
-  expect(getStations()).toEqual(getAvailableStations());
+	expect(getStations()).toEqual(getAvailableStations());
 });
