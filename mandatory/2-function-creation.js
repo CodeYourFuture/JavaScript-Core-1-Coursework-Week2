@@ -6,7 +6,10 @@ Complete the function to check if the variable `num` satisfies the following req
 Tip: use logical operators
 */
 
-function validate(num) {}
+function validate(num) {
+  return Number.isInteger(num) && num % 2 === 0 && num <= 100;
+}
+console.log(validate(18));
 
 /*
 Write a function that:
@@ -16,7 +19,14 @@ Write a function that:
 - numbers greater 100 must be replaced with 100
 */
 
-function formatPercentage(num) {}
+function formatPercentage(num) {
+  let x = Math.round(num * 100) / 100;
+  if (num > 100) {
+    return "100%";
+  }
+  return x.toString() + "%";
+}
+console.log(formatPercentage(80));
 
 /*
 Write a function that:
@@ -77,7 +87,7 @@ test("tidyUpString function works", () => {
       "ashleigh   ",
       "   Alastair  ",
       " anne marie  ",
-    ])  
+    ])
   ).toEqual([
     "daniel",
     "sanyia",
@@ -87,5 +97,5 @@ test("tidyUpString function works", () => {
     "ashleigh",
     "alastair",
     "anne marie",
-  ]); 
+  ]);
 });
