@@ -6,7 +6,9 @@
   - change the first value in the array to the number 1
 */
 
-let numbers = [1, 2, 3]; // Don't change this array literal declaration
+let numbers = [1, 2, 3]; 
+numbers.push(4);
+numbers[0] = 1;// Don't change this array literal declaration
 
 /* 
   DO NOT EDIT BELOW THIS LINE
