@@ -7,12 +7,19 @@
   Answer the following questions:
 
   1. This program throws an error. Why? (If you can't find it, try executing it).
+  A= Becouse the variable "b" has not been declared.
   2. Remove the line that throws the error.
+  A=
   3. What is printed to the console?
+  A= 2, 6, 4, 9, 6, 13, 8
   4. How many times is "f1" called?
+  A= 2x
   5. How many times is "f2" called?
+  A= 3x
   6. What value does the "a" parameter take in the first "f1" call?
+  A= 2
   7. What is the value of the "a" outer variable when "f1" is called for the first time?
+  A= should be 8 becouse "a"  have been incremented by 1 twice.
 */
 
 let x = 2;
