@@ -5,9 +5,17 @@
   Update the code so that you get the expected result.
 */
 
-function isNegative(a) {
-  a = -10 < 0;
-  a = 5 < 0;
+function isNegative(x) {
+  return (x = x < 0);
+}
+function isBetween5and10(y) {
+  return (x = 5 < y < 10);
+}
+function isShortName(name) {
+  return name.length < 7;
+}
+function startsWithD(name) {
+  return name[0] === "D";
 }
 
 /* 
