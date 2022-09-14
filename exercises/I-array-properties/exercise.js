@@ -7,7 +7,7 @@
 
 function isEmpty(arr) {
   // I write the ternary operator
-  return arr.length === 0 ? true : false; // complete this statement
+  return (arr.length === 0) ? true : false; // complete this statement
 }
 
 /* 
