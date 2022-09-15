@@ -8,6 +8,16 @@
 
 let name = "Daniel";
 let danielsRole = "mentor";
+let otherRole = "student";
+
+function whoIam(name) {
+    if (danielsRole === "mentor") {
+        return `Hi, I'm ${name}, I'm a ${danielsRole}.`;
+    } else {
+        return `Hi, I'm ${name}, I'm a ${otherRole}.`;
+    }
+}
+console.log(whoIam(name));
 
 /* 
 EXPECTED RESULT
