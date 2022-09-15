@@ -6,6 +6,11 @@
 */
 
 let codeYourFutureIsGreat = true;
+const mozafarHasMony = false;
+let mozafarIsCool = mozafarHasMony ? true : false;
+let calculationCorrect = 1 + 1 === 2 ? true : false;
+const students = 9;
+const moreThan10Students = students > 10 ? true : false;
 
 /* 
   DO NOT EDIT BELOW THIS LINE
