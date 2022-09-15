@@ -7,28 +7,42 @@
   Answer the following questions:
 
   1. This program throws an error. Why? (If you can't find it, try executing it).
+  A1: because b was not defined.
   2. Remove the line that throws the error.
+  A2: console.log(b) was deleted
   3. What is printed to the console?
+  A3: 
+2
+6
+4
+9
+6
+13
+8
   4. How many times is "f1" called?
+  A4: 2 times
   5. How many times is "f2" called?
+  A5: 3 times
   6. What value does the "a" parameter take in the first "f1" call?
+  A6:6
   7. What is the value of the "a" outer variable when "f1" is called for the first time?
+  A7:8
+
 */
 
 let x = 2;
 let a = 6;
 
 const f1 = function (a, b) {
-  return a + b;
+  return a + b + "f1";
 };
 
 const f2 = function (a, b) {
-  return a + b + x;
+  return a + b + x + "f2";
 };
 
 console.log(x);
 console.log(a);
-console.log(b);
 
 for (let i = 0; i < 5; ++i) {
   a = a + 1;
