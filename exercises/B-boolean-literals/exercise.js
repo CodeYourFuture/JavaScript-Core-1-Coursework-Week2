@@ -5,17 +5,11 @@
   Add the required variables with the correct boolean values assigned.
 */
 
-let codeYourFutureIsGreat = true;
-Boolean(codeYourFutureIsGreat);
+const codeYourFutureIsGreat = true;
+const mozafarIsCool = false
+const calculationCorrect = true;
+const moreThan10Students = false;
 
-let mozafarIsCool = true
-Boolean(mozafarIsCool);
-
-let calculationCorrect = true;
-Boolean(calculationCorrect);
-
-let moreThan10Students = true;
-Boolean(moreThan10Students);
 
 
 /* 
