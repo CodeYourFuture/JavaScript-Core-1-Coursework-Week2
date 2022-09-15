@@ -13,7 +13,7 @@ https://github.com/CodeYourFuture/JavaScript-Core-1-Coursework-Week2-Solution
 This is a **private** repository. Please request access from your Teachers, Buddy or City Coordinator after the start of your next lesson.
 
 ## Testing your work
-
+npm
 - Each of the *.js files in the `exercises` folder can be run from the terminal using the `node` command with the path to the file. For example, `node exercises/B-boolean-literals/exercise.js` can be run from the root of the project.
 - To run the tests in the `mandatory` folder, run `npm run test` from the root of the project (after having run `npm install` once before).
 - To run the tests in the `extra` folder, run `npm run extra-tests` from the root of the project (after having run `npm install` once before).
