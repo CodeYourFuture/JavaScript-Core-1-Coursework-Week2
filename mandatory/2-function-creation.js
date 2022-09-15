@@ -37,7 +37,7 @@ Write a function that:
       }
       else { 
         numVal = num.toFixed(2);
-        stringVal = numVal.toString() + "%";
+        stringVal = parseFloat(numVal.toString()) + "%";
         return stringVal;
       }
     }
