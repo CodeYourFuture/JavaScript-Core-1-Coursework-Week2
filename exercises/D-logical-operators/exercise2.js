@@ -7,6 +7,7 @@
 
 function isNegative(num) {
     // if(num < 0){
+
     //   return true
     // }
     if (Math.sign(num) === -1) {
