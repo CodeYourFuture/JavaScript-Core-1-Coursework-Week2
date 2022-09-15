@@ -30,6 +30,21 @@
  * ======= TESTS - DO NOT MODIFY =======
  * Note: You are not expected to understand everything below this comment!
  */
+function getAllFrequencies() {
+  let frequencies = [];
+
+  for (let i = 87; i <= 108; i++) {
+    frequencies.push[i];
+  }
+  return frequencies;
+}
+console.log(getAllFrequencies());
+
+function getStations() {
+  const frequencies = getAllFrequencies();
+
+  let radioStation = [];
+}
 
 function getAvailableStations() {
   // Using `stations` as a property as defining it as a global variable wouldn't
