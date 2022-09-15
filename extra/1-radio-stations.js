@@ -42,9 +42,12 @@ console.log(getAllFrequencies());
 
 function getStations() {
   const frequencies = getAllFrequencies();
-
-  let radioStation = [];
+  return frequencies.filter((frequency) => {
+    if (isRadioStation(frequency)) return frequency;
+  });
 }
+
+console.log(getStations());
 
 function getAvailableStations() {
   // Using `stations` as a property as defining it as a global variable wouldn't

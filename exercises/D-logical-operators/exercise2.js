@@ -6,10 +6,10 @@
 */
 
 function isNegative(x) {
-  return (x = x < 0);
+  return x < 0;
 }
 function isBetween5and10(y) {
-  return (x = 5 < y < 10);
+  return y >= 5 && y <= 10;
 }
 function isShortName(name) {
   return name.length < 7;
