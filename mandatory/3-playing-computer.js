@@ -41,3 +41,11 @@ for (let i = 0; i < 5; ++i) {    // 0, 1, 2, 3, 4
     console.log(e);      // 9 |  13
   }
 }
+
+
+  // 1. because b is undefined
+  // 3. num
+  // 4. 2
+  // 5. 2
+  // 6. 7
+  // 7. 6

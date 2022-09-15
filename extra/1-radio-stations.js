@@ -39,6 +39,11 @@ function getStations(listFrequencies) {
   return getAllFrequencies().filter(isRadioStation);
 }
 
+  // function isRadioStation(num) {
+  //   return Number.isInteger(num);
+  // }
+
+
 /*
  * ======= TESTS - DO NOT MODIFY =======
  * Note: You are not expected to understand everything below this comment!

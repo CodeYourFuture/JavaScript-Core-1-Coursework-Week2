@@ -10,8 +10,8 @@
 
 */
 
-function mood(moodCondition) {
-  let isHappy = moodCondition;
+function mood(ishappy) {
+  let isHappy = ishappy;
 
   if (isHappy) {
     return "I am happy";
@@ -38,7 +38,7 @@ function get3rdIndex(arr) {
 
   return element;
 }
-cd
+
 
 /* ======= TESTS - DO NOT MODIFY ===== */
 
