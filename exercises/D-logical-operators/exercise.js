@@ -17,8 +17,8 @@ let cssLevelAbove5 = htmlLevel < cssLevel;
 // Finish the next two statement
 // Use the previous variables and logical operators
 // Do not "hardcode" the answers
-let cssAndHtmlAbove5 = (htmlLevelAbove5 && cssLevelAbove5);
-let cssOrHtmlAbove5 = (htmlLevelAbove5 || cssLevelAbove5);
+let cssAndHtmlAbove5 = htmlLevelAbove5 && cssLevelAbove5;
+let cssOrHtmlAbove5 = htmlLevelAbove5 || cssLevelAbove5;
 
 /* 
   DO NOT EDIT BELOW THIS LINE

@@ -7,8 +7,8 @@
 */
 
 let numbers = [1, 2, 3]; // Don't change this array literal declaration
-numbers[3] = 4; //assign the number 4 value
-numbers[1] = 1; //change the first index
+numbers[3] = 4; //add index 3 value of 4
+numbers[1] = 1; //change index 1 to value 1
 
 /* 
   DO NOT EDIT BELOW THIS LINE

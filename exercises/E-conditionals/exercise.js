@@ -9,12 +9,12 @@
 let name = "Daniel";
 let danielsRole = "mentor";
 
-if("Daniel"){
- console.log("Hi, I'm Daniel, I'm a mentor.");
+if(danielsRole = "mentor"){
+   console.log (`Hi, I'm ${name}, I'm a ${danielRole}.`);
 }
 
 else{
-  console.log("Hi, I'm Daniel, I'm a student.");
+  console.log(`Hi, I'm ${name}, I'm a student.`);
 }
 /* 
 EXPECTED RESULT

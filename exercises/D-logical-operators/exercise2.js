@@ -9,7 +9,7 @@ function isNegative(value) {
    if(Math.sign(value) === -1) {
       return true;
    }
-   return false;
+   //return false;
 }
 
 function isBetween5and10(value) {
