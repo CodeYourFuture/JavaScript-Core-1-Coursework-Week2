@@ -107,4 +107,4 @@ test("tidyUpString function works", () => {
     "alastair",
     "anne marie",
   ]); 
-});
+});}
