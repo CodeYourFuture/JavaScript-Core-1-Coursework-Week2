@@ -9,8 +9,11 @@ Tip: use logical operators
 function validate(num) {
 
   if (typeof (num) == "number" && num % 2 == 0 && num <= 100) {
-    return "Num is an even number <= 100";
+    return true;
 
+  }
+  else { 
+    return false;
   }
 }
 
@@ -26,9 +29,17 @@ Write a function that:
     let stringVal = "";
     let numVal = 0;
     if (typeof (num) == "number") {
-      numVal = num.toFixed(2);
-      stringVal = numVal.toString();
-      return stringVal;
+      if (num >= 100) {
+        num = 100;
+        numVal = num;
+        stringVal = numVal.toString() + "%";
+        return stringVal;
+      }
+      else { 
+        numVal = num.toFixed(2);
+        stringVal = numVal.toString() + "%";
+        return stringVal;
+      }
     }
     else if (typeof (num) == "string") {
       return "Not a number. Cant help you, soz";
