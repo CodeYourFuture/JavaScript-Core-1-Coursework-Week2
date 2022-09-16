@@ -16,7 +16,8 @@
 */
 
 let x = 2;
-let a = 6;
+let a = 6;cd
+let b = 10;
 
 const f1 = function (a, b) {
   return a + b;
@@ -30,7 +31,7 @@ console.log(x);
 console.log(a);
 console.log(b);
 
-for (let i = 0; i < 5; ++i) {
+for (let i = 0; i < 5; i++) {
   a = a + 1;
   if (i % 2 === 0) {
     const d = f2(i, x);

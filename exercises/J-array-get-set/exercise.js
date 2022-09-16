@@ -10,7 +10,8 @@ function first(arr) {
 }
 
 function last(arr) {
-  return arr[arr.length]; // complete this statement
+  let len = arr.length()
+  return arr[len]; // complete this statement
 }
 
 
