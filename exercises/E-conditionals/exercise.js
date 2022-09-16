@@ -9,7 +9,10 @@
 let name = "Daniel";
 let danielsRole = "mentor";
 
-(name)
+
+danielsRole == 'mentor' ? console.log("Hi, I'm Daniel, I'm a mentor.") : console.log("Hi, I'm Daniel, I'm a student.");
+
+
 
 /* 
 EXPECTED RESULT

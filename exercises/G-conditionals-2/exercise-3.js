@@ -7,8 +7,21 @@
   - if the mark is 60 or lower but no lower than 50 then the grade is "C"
   - Otherwise the grade is "F"
 */
+let grade = '';
+function calculateGrade(mark) {
+  
+  let num = parseFloat(mark);
+  console.log(num);
+  console.log(mark);
+  switch(num) {
+    case (mark > 80):
+      grade = 'A';
+      console.log('...', grade)
+      break;
+  } return grade; 
+    
+}
 
-function calculateGrade(mark) {}
 
 /* 
 DO NOT EDIT BELOW THIS LINE
@@ -18,7 +31,7 @@ let grade2 = 90;
 let grade3 = 70;
 let grade4 = 55;
 
-console.log("'" + grade1 + "': " + calculateGrade(grade1));
+// console.log("'" + grade1 + "': " + calculateGrade(grade1));
 console.log("'" + grade2 + "': " + calculateGrade(grade2));
 console.log("'" + grade3 + "': " + calculateGrade(grade3));
 console.log("'" + grade4 + "': " + calculateGrade(grade4));
