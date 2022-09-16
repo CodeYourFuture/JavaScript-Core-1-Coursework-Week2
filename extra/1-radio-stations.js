@@ -12,14 +12,14 @@
  * - Create an array  starting at 87 and ending in 108
  * - Should return this array to use in other functions
  */
-let arr = [];
+
 function getAllFrequencies(frequency){
-  
+  const arr1 = [];
 // arr1.push(frequency);
-for( let i=87; i>109 ; i++){
- arr.push(i)
+for( let i=87; i<109 ; i++){
+ arr1.push(i)
 }
-return arr;
+return arr1;
 }
 
 // `getAllFrequencies` goes here
@@ -34,17 +34,26 @@ return arr;
  * - Return only the frequencies that are radio stations.
  */
 // `getStations` goes here
-function getStations(arr){
- let availablefre= getAllFrequencies();
- let finalresult =[];
-  for (i =0 ;i<availablefre.length-1;i++){
-  if (isRadioStation(availablefre[i])=== true){
-    finalresult.push()
+// function getStations(){
+//   const finalresult =[];
+//  let availablefre= getAllFrequencies();
+//   for ( let i =0 ;i<availablefre.length;i++){
+//   if (isRadioStation(availablefre[i])){
+//     finalresult.push(availablefre[i]);
+//   }
+// }
+// return finalresult;
+// }
+function getStations() {
+  let radioStations = [];
+  const allavailable = getAllFrequencies();
+  for (let i = 0; i < allavailable.length; i++) {
+    if (isRadioStation(allavailable[i])) {
+      radioStations.push(allavailable[i]);
+    }
   }
+  return radioStations;
 }
-return finalresult;
-}
-
 /*
  * ======= TESTS - DO NOT MODIFY =======
  * Note: You are not expected to understand everything below this comment!
