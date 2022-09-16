@@ -3,13 +3,13 @@
   -------------------------
   Complete the functions below to get the first and last values from the array
 */
-
+// This function get the first  values from arry 
 function first(arr) {
-  return; // complete this statement
+  return arr.shift(); // complete this statement
 }
-
+// This function get the last values from the arry 
 function last(arr) {
-  return; // complete this statement
+  return arr[arr.length-1] ; // complete this statement
 }
 
 /* 
