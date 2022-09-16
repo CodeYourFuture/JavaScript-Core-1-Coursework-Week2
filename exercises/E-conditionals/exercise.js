@@ -9,6 +9,13 @@
 let name = "Daniel";
 let danielsRole = "mentor";
 
+if(danielsRole = "mentor"){
+   console.log (`Hi, I'm ${name}, I'm a ${danielRole}.`);
+}
+
+else{
+  console.log(`Hi, I'm ${name}, I'm a student.`);
+}
 /* 
 EXPECTED RESULT
 ---------------
