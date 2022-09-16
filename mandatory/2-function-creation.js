@@ -7,7 +7,7 @@ Tip: use logical operators
 */
 
 function validate(num) {
-  if(num == Number && num < 101 && (num%2==0)){
+  if(num === "number" && num < 101 && num % 2 === 0 ){
     return true
 }else {
   return false
