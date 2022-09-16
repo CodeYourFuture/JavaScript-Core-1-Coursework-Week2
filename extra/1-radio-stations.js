@@ -25,6 +25,21 @@
  * - Return only the frequencies that are radio stations.
  */
 // `getStations` goes here
+function getAllFrequencies() {
+	const frequencies = [];
+
+	for (i = 87; i <= 108; i++) {
+		frequencies.push(i);
+	}
+
+	return frequencies;
+}
+
+console.log(getAllFrequencies());
+
+
+
+
 
 /*
  * ======= TESTS - DO NOT MODIFY =======

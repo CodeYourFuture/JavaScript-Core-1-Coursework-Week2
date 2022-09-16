@@ -9,6 +9,16 @@
 let name = "Daniel";
 let danielsRole = "mentor";
 
+function checkRole(name) {
+  if (name !== name ) {
+return "Hi, I'm Daniel, I'm a student."
+ 
+}
+return "Hi, I'm Daniel, I'm a mentor."
+}
+
+console.log(checkRole());
+
 /* 
 EXPECTED RESULT
 ---------------

@@ -9,9 +9,8 @@
   NOTE:Only make edits inside the function
 
 */
-
-function mood() {
-  let isHappy = true;
+function mood(isHappy) {
+  // let isHappy = true;
 
   if (isHappy) {
     return "I am happy";
@@ -20,8 +19,11 @@ function mood() {
   }
 }
 
+
+
+
 function greaterThan10(num) {
-  let isBigEnough;
+  let isBigEnough = (num < 10);
 
   if (isBigEnough) {
     return "num is greater than 10";
@@ -32,10 +34,20 @@ function greaterThan10(num) {
 
 function get3rdIndex(arr) {
   let index = 3;
-  let element;
+  let element = arr[index]; 
 
   return element;
 }
+
+
+
+
+
+
+
+
+
+
 
 /* ======= TESTS - DO NOT MODIFY ===== */
 
@@ -77,7 +89,9 @@ test("get3rdIndex function works with numbers", () => {
   expect(get3rdIndex(numbers)).toEqual(18);
   // Make sure get3rdIndex didn't change its input array.
   expect(numbers).toEqual(copyOfOriginal);
+
 });
+
 
 test("get3rdIndex returns undefined if not enough elements", () => {
   const numbers = [5, 10];
