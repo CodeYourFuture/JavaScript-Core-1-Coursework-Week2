@@ -6,10 +6,10 @@
 */
 
 function isNegative(value) {
-   if(Math.sign(value) === -1) {
+   if(value < 0) {
       return true;
    }
-   //return false;
+   return false;
 }
 
 function isBetween5and10(value) {
