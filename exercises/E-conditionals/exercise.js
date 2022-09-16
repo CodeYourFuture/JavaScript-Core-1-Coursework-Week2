@@ -8,6 +8,15 @@
 
 let name = "Daniel";
 let danielsRole = "mentor";
+if (danielsRole === "mentor") {
+  console.log(`Hi, I am ${name}, I am a ${danielsRole}.`)
+  
+} else if (danielsRole === "student") {
+  console.log(`Hi, I am ${name}, I am a ${danielsRole["student"]}  `)
+  
+}
+  
+
 
 /* 
 EXPECTED RESULT
