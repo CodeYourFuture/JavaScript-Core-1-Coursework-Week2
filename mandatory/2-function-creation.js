@@ -7,7 +7,7 @@ Tip: use logical operators
 */
 
 function validate(num) {
-if (typeof num == Number && num % 2 == 0 && num <= 100) {
+if (typeof num === 'number' && num % 2 == 0 && num <= 100) {
 return 'The input is vaild';
 }
 return 'The input is not vaild';
@@ -25,7 +25,7 @@ Write a function that:
 
 function formatPercentage(num) {
 
-  let newNum =   num.tostring().Math.round(num * 100) / 100 + '';
+  let newNum = num.tostring().Math.round(num * 100) / 100 + '';
   if (newNum >100) {
 return 100;
   }
