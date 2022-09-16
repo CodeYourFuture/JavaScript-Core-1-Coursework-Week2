@@ -13,6 +13,15 @@
  * - Should return this array to use in other functions
  */
 
+ function getAllFrequencies(frequency){
+  const arr1 = [];
+// arr1.push(frequency);
+for( let i=87; i<109 ; i++){
+ arr1.push(i)
+}
+return arr1;
+}
+
 // `getAllFrequencies` goes here
 
 /**
@@ -25,7 +34,26 @@
  * - Return only the frequencies that are radio stations.
  */
 // `getStations` goes here
-
+// function getStations(){
+//   const finalresult =[];
+//  let availablefre= getAllFrequencies();
+//   for ( let i =0 ;i<availablefre.length;i++){
+//   if (isRadioStation(availablefre[i])){
+//     finalresult.push(availablefre[i]);
+//   }
+// }
+// return finalresult;
+// }
+function getStations() {
+  let radioStations = [];
+  const allavailable = getAllFrequencies();
+  for (let i = 0; i < allavailable.length; i++) {
+    if (isRadioStation(allavailable[i])) {
+      radioStations.push(allavailable[i]);
+    }
+  }
+  return radioStations;
+}
 /*
  * ======= TESTS - DO NOT MODIFY =======
  * Note: You are not expected to understand everything below this comment!
