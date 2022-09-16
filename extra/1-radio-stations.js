@@ -12,7 +12,14 @@
  * - Create an array  starting at 87 and ending in 108
  * - Should return this array to use in other functions
  */
-
+ function getAllFrequencies(frequency){
+  const arr1 = [];
+// arr1.push(frequency);
+for( let i=87; i<109 ; i++){
+ arr1.push(i)
+}
+return arr1;
+}
 // `getAllFrequencies` goes here
 
 /**
@@ -25,7 +32,16 @@
  * - Return only the frequencies that are radio stations.
  */
 // `getStations` goes here
-
+function getStations() {
+  let radioStations = [];
+  const allavailable = getAllFrequencies();
+  for (let i = 0; i < allavailable.length; i++) {
+    if (isRadioStation(allavailable[i])) {
+      radioStations.push(allavailable[i]);
+    }
+  }
+  return radioStations;
+}
 /*
  * ======= TESTS - DO NOT MODIFY =======
  * Note: You are not expected to understand everything below this comment!
@@ -65,3 +81,12 @@ test("getAllFrequencies() returns all frequencies between 87 and 108", () => {
 test("getStations() returns all the available stations", () => {
   expect(getStations()).toEqual(getAvailableStations());
 });
+Footer
+© 2022 GitHub, Inc.
+Footer navigation
+Terms
+Privacy
+Security
+Status
+Docs
+C
