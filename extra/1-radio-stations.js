@@ -36,8 +36,10 @@ function getStations() {
     if (isRadioStation(frequency)) {
       stationsArr.push(frequency);
     }
-  return stationsArr;
   }
+  
+  return stationsArr;
+  
 }
 
 /*
