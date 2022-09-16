@@ -5,11 +5,13 @@
 */
 
 function first(arr) {
-  return; // complete this statement
+  // I use array index
+  return arr[0]; // complete this statement
 }
 
 function last(arr) {
-  return; // complete this statement
+  // I use array end of index (array.length - 1)
+  return arr[arr.length - 1]; // complete this statement
 }
 
 /* 
