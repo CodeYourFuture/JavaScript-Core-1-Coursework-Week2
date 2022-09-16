@@ -10,36 +10,40 @@ function isNegative(num) {
 
     //   return true
     // }
-    if (Math.sign(num) === -1) {
-        return true;
-    } else {
-        return false;
-    }
+    // if (Math.sign(num) === -1) {
+    //     return true;
+    // } else {
+    //     return false;
+    // }
+    return Math.sign(num) === -1;
 }
 
 function isBetween5and10(num) {
-    if (num >= 5 && num <= 10) {
-        return true;
-    } else {
-        return false;
-    }
+    // if (num >= 5 && num <= 10) {
+    //     return true;
+    // } else {
+    //     return false;
+    // }
+    return num >= 5 && num <= 10;
 }
 
 function isShortName(str) {
     const isfullName = str.split(" ").length;
-    if (isfullName > 1) {
-        return false;
-    } else {
-        return true;
-    }
+    // if (isfullName > 1) {
+    //     return false;
+    // } else {
+    //     return true;
+    // }
+    return isfullName > 1;
 }
 
 function startsWithD(str) {
-    if (str.startsWith("D")) {
-        return true;
-    } else {
-        return false;
-    }
+    // if (str.startsWith("D")) {
+    //     return true;
+    // } else {
+    //     return false;
+    // }
+    return str.startsWith("D");
 }
 /* 
   DO NOT EDIT BELOW THIS LINE
