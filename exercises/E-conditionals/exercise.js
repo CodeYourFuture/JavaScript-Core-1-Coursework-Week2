@@ -8,6 +8,14 @@
 
 let name = "Daniel";
 let danielsRole = "mentor";
+function personRole(name) {
+  if (danielsRole === "mentor") {
+    return `Hi, I'm Daniel, I'm a mentor.`;
+  } else {
+    return `Hi, I'm Daniel, I'm a student.`;
+  }
+}
+console.log(personRole(name));
 
 /* 
 EXPECTED RESULT
