@@ -77,7 +77,7 @@ function getAvailableStations() {
     });
   }
 
-  //bbbbbbbbbbbbbbbbbbbbbbbbbb#;
+  
 
   return getAvailableStations.stations;
 }
