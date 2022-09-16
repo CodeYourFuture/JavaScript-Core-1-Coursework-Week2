@@ -9,7 +9,6 @@
   NOTE:Only make edits inside the function
 
 */
-
 function mood(ishappy) {
   let isHappy = ishappy;
 
