@@ -7,8 +7,10 @@ Tip: use logical operators
 */
 
 function validate(num) {
-  if num 10 === 100
-  
+  if(!isNaN(num) && num % 2 ===0 && num <= 100) {
+    return true
+  }
+  return false
 }
 
 /*
