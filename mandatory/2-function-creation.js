@@ -7,7 +7,7 @@ Tip: use logical operators
 */
 
 function validate(num) {
-  if(num === "number" && num < 101 && num % 2 === 0 ){
+  if(typeof num === "number" && num < 101 && num % 2 === 0 ){
     return true
 }else {
   return false
@@ -21,7 +21,16 @@ Write a function that:
 - numbers greater 100 must be replaced with 100
 */
 
-function formatPercentage(num) {}
+function formatPercentage(num) {
+  let number = num;
+  number = parseFloat(number.toFixed(2))
+  let stringFormat = `${number}%`
+  if(number>100){
+    return "100%"
+  }else{
+    return stringFormat
+  }
+}
 
 /*
 Write a function that:
@@ -30,7 +39,17 @@ Write a function that:
 - removes any forward slashes (/) in each string
 - makes all strings all lowercase
 */
-function tidyUpStrings(arrayOfStrings) {}
+function tidyUpStrings(arrayOfStrings) {
+  let output3 = []
+for(let i=0; i<arrayOfStrings.length;i++){
+  let output = arrayOfStrings[i].replace("/","");
+  let output1 = output.trim();
+  let output2 = output1.toLowerCase();
+  output3.push(output2);
+  
+}
+return output3
+}
 
 /* ======= TESTS - DO NOT MODIFY ===== */
 
