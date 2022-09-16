@@ -25,30 +25,28 @@
  * - Return only the frequencies that are radio stations.
  */
 // `getStations` goes here
+function getAllFrequencies() {
+  let frequencies = [];
+  for (let i = 87; i <= 108; i++) {
+    frequencies.push(i);
+  }
+  return frequencies;
+}
+function getStations() {
+  let stationFrequencies = [];
+  let availableFrequency = getAllFrequencies();
 
+  for (let i = 0; i < availableFrequency.length; i++) {
+    if (isRadioStation(availableFrequency[i])) {
+      stationFrequencies.push(availableFrequency[i]);
+    }
+  }
+  return stationFrequencies;
+}
 /*
  * ======= TESTS - DO NOT MODIFY =======
  * Note: You are not expected to understand everything below this comment!
  */
-function getAllFrequencies() {
-  let frequencies = [];
-
-  for (let i = 87; i <= 108; i++) {
-    frequencies.push[i];
-  }
-  return frequencies;
-}
-console.log(getAllFrequencies());
-
-function getStations() {
-  const frequencies = getAllFrequencies();
-  return frequencies.filter((frequency) => {
-    if (isRadioStation(frequency)) return frequency;
-  });
-}
-
-console.log(getStations());
-
 function getAvailableStations() {
   // Using `stations` as a property as defining it as a global variable wouldn't
   // always make it initialized before the function is called
@@ -65,21 +63,17 @@ function getAvailableStations() {
       return frequencyA - frequencyB;
     });
   }
-
   return getAvailableStations.stations;
 }
-
 function isRadioStation(frequency) {
   return getAvailableStations().includes(frequency);
 }
-
 test("getAllFrequencies() returns all frequencies between 87 and 108", () => {
   expect(getAllFrequencies()).toEqual([
     87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104,
     105, 106, 107, 108,
   ]);
 });
-
 test("getStations() returns all the available stations", () => {
   expect(getStations()).toEqual(getAvailableStations());
 });
