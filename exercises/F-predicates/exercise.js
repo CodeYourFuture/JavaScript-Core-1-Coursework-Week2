@@ -8,7 +8,7 @@
 // Finish the predicate function to test if the passed number is negative (less than zero)
 
 function isNegative(number) {
-  if(Math.sign(number) === -1){
+  if(number < 0){
      return  true;
   }
   return false;
