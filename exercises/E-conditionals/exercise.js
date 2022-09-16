@@ -9,6 +9,8 @@
 let name = "Daniel";
 let danielsRole = "mentor";
 
+(name)
+
 /* 
 EXPECTED RESULT
 ---------------
