@@ -6,7 +6,7 @@
 
   Answer the following questions:
 
-  1. This program throws an error. Why? (If you can't find it, try executing it).
+  1. This program throws an error. Why? (If you can't find it, try executing it). // be is not decleared
   2. Remove the line that throws the error.
   3. What is printed to the console?
   4. How many times is "f1" called?
@@ -18,11 +18,12 @@
 let x = 2;
 let a = 6;
 
+
 const f1 = function (a, b) {
   return a + b;
 };
 
-const f2 = function (a, b) {
+const f2 = function (a, b, c) {
   return a + b + x;
 };
 
@@ -34,7 +35,7 @@ for (let i = 0; i < 5; ++i) {
   a = a + 1;
   if (i % 2 === 0) {
     const d = f2(i, x);
-    console.log(d);
+    console.log(d, f1);
   } else {
     const e = f1(i, a);
     console.log(e);
