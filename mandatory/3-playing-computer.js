@@ -15,6 +15,7 @@
   7. What is the value of the "a" outer variable when "f1" is called for the first time?
 */
 
+
 let x = 2;
 let a = 6;
 
@@ -26,17 +27,25 @@ const f2 = function (a, b) {
   return a + b + x;
 };
 
-console.log(x);
-console.log(a);
-console.log(b);
+console.log(x);  //  2
+console.log(a);  //  6
+// console.log(b);  b is not defined
 
-for (let i = 0; i < 5; ++i) {
-  a = a + 1;
+for (let i = 0; i < 5; ++i) {    // 0, 1, 2, 3, 4
+  a = a + 1;             // 7, 8, 9, 10, 11
   if (i % 2 === 0) {
     const d = f2(i, x);
-    console.log(d);
+    console.log(d);      // 4   |  6   |  8
   } else {
     const e = f1(i, a);
-    console.log(e);
+    console.log(e);      // 9 |  13
   }
 }
+
+
+  // 1. because b is undefined
+  // 3. num
+  // 4. 2
+  // 5. 2
+  // 6. 7
+  // 7. 6
