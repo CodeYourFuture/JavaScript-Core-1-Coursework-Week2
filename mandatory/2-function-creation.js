@@ -7,6 +7,13 @@ Tip: use logical operators
 */
 
 function validate(num) {}
+function validate(num) {
+  if (typeof num === "number" && num % 2 === 0 && num <= 100) {
+    return true;
+  } else {
+    return false;
+  }
+}
 
 /*
 Write a function that:
@@ -17,6 +24,14 @@ Write a function that:
 */
 
 function formatPercentage(num) {}
+function formatPercentage(num) {
+if(num > 100){
+  return "100%"
+}else{
+  return Math.round(num*100)/100 + "%";
+}
+
+}
 
 /*
 Write a function that:
@@ -26,6 +41,10 @@ Write a function that:
 - makes all strings all lowercase
 */
 function tidyUpStrings(arrayOfStrings) {}
+function tidyUpStrings(arrayOfStrings) {
+
+
+}
 
 /* ======= TESTS - DO NOT MODIFY ===== */
 
