@@ -12,20 +12,23 @@ function isNegative(number) {
 
     //   return true
     // }
-    if (Math.sign(number) === -1) {
-        return true;
-    } else {
-        return false;
-    }
+    ////////////////////////////////
+    // if (Math.sign(number) === -1) {
+    //     return true;
+    // } else {
+    //     return false;
+    // }
+    return Math.sign(number) === -1;
 }
 
 // Finish the predicate function to test if the passed number is between 0 and 10
 function isBetweenZeroAnd10(number) {
-    if (number >= 0 && number <= 10) {
-        return true;
-    } else {
-        return false;
-    }
+    // if (number >= 0 && number <= 10) {
+    //     return true;
+    // } else {
+    //     return false;
+    // }
+    return number >= 0 && number <= 10;
 }
 
 /* 
