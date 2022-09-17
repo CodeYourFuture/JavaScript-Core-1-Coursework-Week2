@@ -23,7 +23,7 @@ function mood() {
 function greaterThan10(num) {
   let isBigEnough;
 
-  if (isBigEnough) {
+  if (isBigEnough > num) {
     return "num is greater than 10";
   } else {
     return "num is not big enough";
@@ -34,13 +34,15 @@ function get3rdIndex(arr) {
   let index = 3;
   let element;
 
+  element = arr[index];
+
   return element;
 }
-
+//npm test -- --testPathPattern 3-magic-8-ball
 /* ======= TESTS - DO NOT MODIFY ===== */
 
 test("mood function works for true", () => {
-  expect(mood(true)).toEqual("I am happy");
+  expect(mood(true)).toEqual("I am happy"); 
 });
 
 test("mood function works for false", () => {

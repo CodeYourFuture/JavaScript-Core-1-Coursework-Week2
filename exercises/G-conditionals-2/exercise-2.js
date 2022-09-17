@@ -7,7 +7,9 @@
 
 */
 
-function studentPassed(grade) {}
+function studentPassed(grade) {
+  (grade <= 50) ? 'passed' : 'fail'
+}
 
 /* 
 DO NOT EDIT BELOW THIS LINE
