@@ -21,18 +21,23 @@ Write a function that:
 - the number must be rounded to 2 decimal places
 - numbers greater 100 must be replaced with 100
 */
-function formatPercentage(num) {
-    if (num > 100) {
-        return "100%";
-    }
-    if (Number.isInteger(num)) {
-        return `${num}%`;
-    }
-    if (!Number.isInteger(num)) {
-        return `${String(num.toFixed(2).replace(/(\.0+|0+)$/, ""))}%`;
-    }
-}
+// function formatPercentage(num) {
+//     if (num > 100) {
+//         return "100%";
+//     }
+//     if (Number.isInteger(num)) {
+//         return `${num}%`;
+//     }
+//     if (!Number.isInteger(num)) {
+//         return `${String(num.toFixed(2).replace(/(\.0+|0+)$/, ""))}%`;
+//     }
+// }
 
+function formatPercentage(num) {
+    const rounded = Math.round((num + Number.EPSILON) * 100) / 100;
+
+    return rounded > 100 ? `100%` : `${rounded}%`;
+}
 /*
 Write a function that:
 - takes an array of strings as input
