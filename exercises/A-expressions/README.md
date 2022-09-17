@@ -64,3 +64,22 @@ $
 - Check the value of the variables
 
 Further reading on using the node console: https://hackernoon.com/know-node-repl-better-dbd15bca0af6
+
+```bash
+$ node
+> 1 * 2
+3
+> "Hi"
+'hello all'
+> let sum = 4 + 8
+undefined
+> sum
+12
+const greetin = 'morning'
+undefined
+> console.log(greeting)
+morning
+undefined
+> .exit
+$
+```

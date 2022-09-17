@@ -7,6 +7,11 @@
 
 let codeYourFutureIsGreat = true;
 
+let mozafarIsCool = false;
+let calculationCorrect = 1 + 1 === 2;
+const students = 9;
+const moreThan10Students = students > 10;
+
 /* 
   DO NOT EDIT BELOW THIS LINE
   --------------------------- */
