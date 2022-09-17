@@ -10,10 +10,10 @@
  because in line 35 b is not defined
 
   2. Remove the line that throws the error.
-done it
+remove  console.log(b);
 
   3. What is printed to the console?
-
+numbers
   
   4. How many times is "f1" called?
   2 times
@@ -22,7 +22,8 @@ done it
   3 times
 
   6. What value does the "a" parameter take in the first "f1" call?
-the value is 8
+first call f1 function in for loop total: 9 i: 1 a: 8
+second call f1 function in for loop total: 13 i: 3 a: 10
 
   7. What is the value of the "a" outer variable when "f1" is called for the first time?
   the value is 6
@@ -40,7 +41,7 @@ const f2 = function(a, b) {
 };
 
 console.log(x);
-console.log(a);
+console.log("outer a:", a);
 // console.log(b);
 
 for (let i = 0; i < 5; ++i) {
@@ -50,6 +51,14 @@ for (let i = 0; i < 5; ++i) {
         console.log(d);
     } else {
         const e = f1(i, a);
-        console.log(e);
+        console.log(
+            "first call f1 function in for loop",
+            "total:",
+            e,
+            "i:",
+            i,
+            "a:",
+            a
+        );
     }
 }
