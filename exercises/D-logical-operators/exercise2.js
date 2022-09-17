@@ -5,8 +5,25 @@
   Update the code so that you get the expected result.
 */
 
-function isNegative() {}
+function isNegative(number) {
+  let result = number < 1;
+  return result;
+}
 
+function isBetween5and10(number) {
+  let result = number > 4 && number < 11;
+  return result;
+}
+
+function isShortName(name) {
+  let result = name.length < 10;
+  return result;
+}
+
+function startsWithD(name) {
+  let result = name[0] === "D";
+  return result;
+}
 /* 
   DO NOT EDIT BELOW THIS LINE
   --------------------------- */
