@@ -13,6 +13,13 @@
  * - Should return this array to use in other functions
  */
 
+function getAllFrequencies() {
+  let radioFrequencies = [];
+  for (let i = 0, freq = 87; freq <= 108; i++, freq++)
+    radioFrequencies[i] = freq;
+  return radioFrequencies;
+}
+
 // `getAllFrequencies` goes here
 
 /**
@@ -25,7 +32,22 @@
  * - Return only the frequencies that are radio stations.
  */
 // `getStations` goes here
+const radioFrequencies = getAllFrequencies();
 
+function isRadioStation(singleFrequency, frequencies) {
+  return frequencies.includes(singleFrequency);
+}
+
+function getStations(radioFrequencies, frequencies) {
+  let radioStations = [];
+  for (let i = 0, j = 0; i++; i < frequencies.length) {
+    if (radioFrequencies.includes(frequencies[i])) {
+      radioStation[j] = frequencies[i];
+      j++;
+    }
+  }
+  return radioStations;
+}
 /*
  * ======= TESTS - DO NOT MODIFY =======
  * Note: You are not expected to understand everything below this comment!
