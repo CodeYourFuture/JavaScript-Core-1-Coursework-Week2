@@ -5,7 +5,33 @@
   Update the code so that you get the expected result.
 */
 
-function isNegative() {}
+function isNegative(number) {
+  return number < 0 ? true : false;
+
+  // same result
+  /*
+  if (number < 0) {
+    return true;
+   } else {
+    return false;
+  }
+  */
+}
+
+function isBetween5and10(number) {
+  return 5 <= number <= 10 ? true : false;
+}
+
+function isShortName(name) {
+  /* i used here Truthy, because in the instruction,
+  is not mentioned the length to determin "short" or "long" name
+  */
+  return name ? true : false;
+}
+
+function startsWithD(name) {
+  return (name.startsWith = "D" ? true : false);
+}
 
 /* 
   DO NOT EDIT BELOW THIS LINE
