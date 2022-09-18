@@ -41,11 +41,11 @@ Write a function that:
 */
 function tidyUpStrings(arrayOfStrings) {
   for ( let i=0; i < arrayOfStrings.length; i++){
-    arrayOfStrings[i].replace("/"," ");
-    arrayOfStrings[i].trim();
-    arrayOfStrings[i].tolowerCase();
-  }
-
+    arrayOfStrings[i] = arrayOfStrings[i].replace("/"," ");
+    arrayOfStrings[i] = arrayOfStrings[i].trim();
+    arrayOfStrings[i] = arrayOfStrings[i].toLowerCase();
+   }
+  return arrayOfStrings;
 }
 
 /* ======= TESTS - DO NOT MODIFY ===== */
@@ -98,7 +98,7 @@ test("tidyUpString function works", () => {
       "ashleigh   ",
       "   Alastair  ",
       " anne marie  ",
-    ])  
+    ]) 
   ).toEqual([
     "daniel",
     "sanyia",
@@ -108,5 +108,5 @@ test("tidyUpString function works", () => {
     "ashleigh",
     "alastair",
     "anne marie",
-  ]); 
+  ]);
 });
