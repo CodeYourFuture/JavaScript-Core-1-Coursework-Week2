@@ -13,7 +13,7 @@ function validate(num) {
   else {
       return false;
   }
-
+}
 /*
 Write a function that:
 - takes a number as input
@@ -23,12 +23,14 @@ Write a function that:
 */
 
 function formatPercentage(num) {
-if (num > 100) {
+if (num >=100 ) {
   num = 100
-  return num.toFixed(2) + "%"
+  return num + "%";
 }
-else {
-  return num.toFixed(2) + "%"
+else if ( num % 1 == 0){
+  return num + "%";
+} else{
+  return num.toFixed(2) + "%";
 }
 }
 
@@ -80,7 +82,7 @@ test("validate function rejects too large number", () => {
 
 test.each([
   [23, "23%"],
-  [18.103, "18.1%"],
+  [18.103, "18.10%"],
   [187.2, "100%"],
   [0.372, "0.37%"],
 ])("formatPercentage function works for %s", (input, expected) => {
