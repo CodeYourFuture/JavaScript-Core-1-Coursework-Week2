@@ -8,7 +8,20 @@
   Hint: Google how to check if a string contains a word
 */
 
-function containsCode(sentence) {}
+function containsCode(sentence) {
+  // Using if statement
+  if (sentence.includes('code')) {
+    return true
+  } else {
+    return false
+  }
+
+  // another way using ternary operator,
+  /* i did not comment out because the fuction will not be reaching here,
+  because return is all ready executed.*/
+  
+  return sentence.includes('code') ? true : false;
+}
 
 /* 
 DO NOT EDIT BELOW THIS LINE
