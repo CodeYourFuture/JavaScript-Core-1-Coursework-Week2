@@ -16,6 +16,14 @@ let grade1 = 49;
 let grade2 = 50;
 let grade3 = 100;
 
+function studentPassed (grade){
+  if (grade < 50){
+    return "failed";
+  }else {
+    return "passed";
+  }
+}
+
 console.log("'" + grade1 + "': " + studentPassed(grade1));
 console.log("'" + grade2 + "': " + studentPassed(grade2));
 console.log("'" + grade3 + "': " + studentPassed(grade3));

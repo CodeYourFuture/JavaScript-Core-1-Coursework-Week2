@@ -20,9 +20,11 @@ let a = 6;
 
 const f1 = function (a, b) {
   return a + b;
+  return a + b;
 };
 
 const f2 = function (a, b) {
+  return a + b + x;
   return a + b + x;
 };
 
@@ -40,3 +42,13 @@ for (let i = 0; i < 5; ++i) {
     console.log(e);
   }
 }
+//
+a = a + 1;
+if (i % 2 === 0) {
+  const d = f2(i, x);
+  console.log(d);
+} else {
+  const e = f1(i, a);
+  console.log(e);
+}
+
