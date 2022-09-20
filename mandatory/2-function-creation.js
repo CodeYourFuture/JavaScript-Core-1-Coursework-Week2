@@ -12,7 +12,7 @@ function validate(num) {
 } else {
   return false;
 }
-
+}
 /*
 Write a function that:
 - takes a number as input
@@ -22,13 +22,14 @@ Write a function that:
 */
 
 function formatPercentage(num) {
-  let decimalNumber = num.toFixed(2);
-  let str = `${decimalNumber}%`;
-
-  if (num > 100){
-    return 100;
+  if (num > 100) {
+    return 100 + "%";
+  } else if (num % 1 === 0){
+    return num + "%";
+  } else if (num % 1 < 0.11) {
+    return `${num.toFixed(1)}%`;
   } else {
-    return str;
+    return `${num.toFixed(2)}%`;
   }
 }
 
@@ -41,9 +42,13 @@ Write a function that:
 */
 
 function tidyUpStrings(arrayOfStrings) {
-  let trim = arrayOfStrings.trim();
-  let result = trim.replaceAll(`/`, ``).toLowercase();
-  return result;
+  for (let index = 0; index < arrayOfStrings.length; index++) {
+    arrayOfStrings[index] = arrayOfStrings[index].replace(`/`, ``);
+    arrayOfStrings[index] = arrayOfStrings[index].trim();
+    arrayOfStrings[index] = arrayOfStrings[index].toLowerCase();
+  }
+  return arrayOfStrings;
+  
 }
 
 /* ======= TESTS - DO NOT MODIFY ===== */
@@ -107,4 +112,4 @@ test("tidyUpString function works", () => {
     "alastair",
     "anne marie",
   ]); 
-});}
+});
