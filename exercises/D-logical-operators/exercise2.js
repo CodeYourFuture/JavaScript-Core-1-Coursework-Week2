@@ -6,35 +6,20 @@
 */
 
 function isNegative(num) {
-  if (num < 0) {
-    return true;
-  } else {
-    return false;
-  }
+  return num <0 ;
 }
 
 function isBetween5and10(num) {
-  if (num >= 5 && num <= 10) {
-    return true;
-  } else {
-    return false;
-  }
+  return num >= 5 && num <= 10;
 }
 
-function isShortName(num) {
- if (num.length < 7) {
-   return true;
- } else {
-   return false;
- }
+function isShortName(name) {
+ return name.length < 7; 
 }
 
-function startsWithD(num) {
- if (num[0] == "D") {
-   return true;
- } else {
-   return false;
- }
+function startsWithD(name) {
+  return name[0] == "D";
+
 }
 
 /* 

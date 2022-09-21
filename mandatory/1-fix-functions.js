@@ -12,7 +12,7 @@
 
 function mood(mood) {
 
-  if (mood == true) {
+  if (mood) {
     return "I am happy";
   } else {
     return "I am not happy";

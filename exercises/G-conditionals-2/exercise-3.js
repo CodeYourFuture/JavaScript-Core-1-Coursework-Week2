@@ -21,9 +21,9 @@ let grade4 = 55;
 function calculateGrade(grade){
   if (grade >= 80) {
     return "A";
-  } else if (grade > 60 && grade < 80){
+  } else if (grade > 60){
     return "B";
-  } else if (grade >= 50 && grade <= 60){
+  } else if (grade >= 50){
     return "C";
   } else {
     return "F";
