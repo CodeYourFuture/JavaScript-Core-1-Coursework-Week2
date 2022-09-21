@@ -15,6 +15,14 @@
 
 // `getAllFrequencies` goes here
 
+function getAllFrequencies() {
+  let frequencie = [];
+  for (let i=87; i<=108; i++){
+    frequencie.push(i);
+  }
+  return frequencie;
+}
+
 /**
  * Next, let's write a function that gives us only the frequencies that are radio stations.
  * Call this function `getStations`.
@@ -25,6 +33,17 @@
  * - Return only the frequencies that are radio stations.
  */
 // `getStations` goes here
+
+function getStations(){
+  let stations = [];
+  let allfrequencies = getAllFrequencies();
+  for (let i=0; i<allfrequencies.length; i++){
+    if (isRadioStation(allfrequencies[i])){
+      stations.push(allfrequencies[i]);
+    }
+  }
+  return stations;
+}
 
 /*
  * ======= TESTS - DO NOT MODIFY =======
