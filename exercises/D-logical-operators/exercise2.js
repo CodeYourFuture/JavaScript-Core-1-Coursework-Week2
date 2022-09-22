@@ -5,8 +5,41 @@
   Update the code so that you get the expected result.
 */
 
-function isNegative() {}
+function isNegative(number) {
+if ( number < 0){
+  return true;
+} else{
+  return false
+}
+}
 
+function isBetween5and10 (number){
+  if ( 5 <= number <= 10 ){
+    return true
+  } else{
+    return false
+  }
+
+}
+
+function isShortName (name){
+   let shortName =  name.split("").length
+   if ( shortName < 1){
+    return false
+   } else {
+    return true
+   }
+
+}
+
+function startsWithD (daniel){
+  if ( daniel.startsWith("D")){
+    return true
+  } else{
+    return false
+  }
+
+}
 /* 
   DO NOT EDIT BELOW THIS LINE
   --------------------------- */
