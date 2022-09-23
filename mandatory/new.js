@@ -1,38 +1,27 @@
-/* Fix Functions
+let x = 2;
+let a = 6;
 
-  Aim: to understand the change code inside functions 
+const f1 = function (a, b) {
+  return a + b;
+};
 
-  See the below functions. They are syntactically correct but are not outputting the right results.
+const f2 = function (a, b) {
+  return a + b + x;
+};
 
-  Run the tests and see how you can fix them.
+console.log(x);
+console.log(a);
+// console.log(b);
 
-  NOTE:Only make edits inside the function
-
-*/
-
-// function greaterThan10(num) {
-//   if (isBigEnough > 10) {
-//     return "num is greater than 10";
-//   } else {
-//     return "num is not big enough";
-//   }
-// }
-// console.log(greaterThan10(96));
-
-// function greaterThan10(num) {
-//   let isBigEnough = num > 10;
-
-//   if (isBigEnough) {
-//     return "num is greater than 10";
-//   } else {
-//     return "num is not big enough";
-//   }
-// }
-
-function get3rdIndex(arr) {
-  let index = 3;
-  let element = arr[index];
-
-  return element;
+for (let i = 0; i < 5; ++i) {
+  a = a + 1;
+  if (i % 2 === 0) {
+    const d = f2(i, x);
+    console.log(d);
+   } else {
+    const e = f1(i, a);
+    console.log(e);
+  }
 }
-console.log(get3rdIndex([4, 5, 6, 9]));
+
+

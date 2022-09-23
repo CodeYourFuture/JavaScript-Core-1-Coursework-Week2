@@ -6,7 +6,14 @@ Complete the function to check if the variable `num` satisfies the following req
 Tip: use logical operators
 */
 
-function validate(num) {}
+function validate(num) {
+  // isNaN was passing the validation for "ten" , so here I have used typeof & isNan, both of this will cover the validation for empty str or any str followed by alphabet
+  if (typeof num === "number" && !isNaN(num) && num % 2 === 0 && num <= 100) {
+    return true;
+  } else {
+    return false;
+  }
+}
 
 /*
 Write a function that:
@@ -16,7 +23,22 @@ Write a function that:
 - numbers greater 100 must be replaced with 100
 */
 
-function formatPercentage(num) {}
+function formatPercentage(num) {
+  const percentageSign = "%";
+  const roundedToTwo = Math.round((num + Number.EPSILON) * 100) / 100;
+  if (num > 100) {
+    let num = 100;
+    const roundedToTwo = Math.round((num + Number.EPSILON) * 100) / 100;
+    return roundedToTwo.toString() + percentageSign;
+  } else {
+    return roundedToTwo.toString() + percentageSign;
+  }
+}
+// console.log(formatPercentage(0.786));
+// console.log(formatPercentage(123.569));
+// console.log(formatPercentage(12.678));
+
+
 
 /*
 Write a function that:
@@ -25,7 +47,24 @@ Write a function that:
 - removes any forward slashes (/) in each string
 - makes all strings all lowercase
 */
-function tidyUpStrings(arrayOfStrings) {}
+function tidyUpStrings(arrayOfStrings) {
+  let newArray = [];
+  for (let i = 0; i < arrayOfStrings.length; i++) {
+    newArray.push(arrayOfStrings[i].replace("/", " ").trim().toLowerCase());
+  }
+  return newArray;
+}
+// arrayOfStrings = [
+//   "/Daniel",
+//   " /Sanyia",
+//   "AnTHonY",
+//   "irina",
+//   " Gordon",
+//   "ashleigh   ",
+//   "   Alastair  ",
+//   " anne marie  ",
+// ];
+// console.log(tidyUpStrings(arrayOfStrings));
 
 /* ======= TESTS - DO NOT MODIFY ===== */
 
