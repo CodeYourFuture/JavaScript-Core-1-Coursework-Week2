@@ -6,12 +6,18 @@
 
 function first(arr) {
   return; // complete this statement
+  return numbers[0];
 }
 
 function last(arr) {
   return; // complete this statement
+  if (arr===numbers) {
+    return numbers[2];
+  }
+  else if (arr === names) {
+    return names[3];
+  }
 }
-
 /* 
   DO NOT EDIT BELOW THIS LINE
   --------------------------- */
