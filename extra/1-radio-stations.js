@@ -1,3 +1,4 @@
+
 /**
  * Finding a radio station, and a good one, can be hard manually.
  * Let's use some code to help us build a program that helps us scan
@@ -13,6 +14,8 @@
  * - Should return this array to use in other functions
  */
 
+
+//EXTRAS STILL INCOMPLETE!
 // `getAllFrequencies` goes here
 function getAllFrequencies() { 
    
