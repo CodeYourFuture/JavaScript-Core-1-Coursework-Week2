@@ -7,6 +7,7 @@
   Answer the following questions:
 
   1. This program throws an error. Why? (If you can't find it, try executing it).
+  --- b hasn't been defined. Only a and x.
   2. Remove the line that throws the error.
   3. What is printed to the console?
   4. How many times is "f1" called?
