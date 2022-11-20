@@ -21,7 +21,8 @@ Write a function that:
 
 function formatPercentage(num) {
   //let numb = num.toFixed(2);
-  return num > 100 ? "100%" : `${num.toFixed(2)}%`;
+  //return num > 100 ? "100%" : `${num.toFixed(2)}%`;
+  return num > 100 ? "100%" : `${Math.round(num * 100) / 100}%`;
 }
 console.log(formatPercentage(99.372));
 console.log(Math.round(99.372 * 100) / 100);
