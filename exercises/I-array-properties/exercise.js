@@ -6,17 +6,17 @@
 */
 
 function isEmpty(arr) {
-  return; // complete this statement
+  return arr.length == 0
 }
 
 /* 
   DO NOT EDIT BELOW THIS LINE
   --------------------------- */
-let numbers = [1, 2, 3];
-let names = [];
+let numbers = [1, 2, 3]
+let names = []
 
-console.log(isEmpty(numbers));
-console.log(isEmpty(names));
+console.log(isEmpty(numbers))
+console.log(isEmpty(names))
 
 /* 
   EXPECTED RESULT

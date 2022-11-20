@@ -7,18 +7,20 @@
 
 */
 
-function studentPassed(grade) {}
+function studentPassed(grade) {
+  return grade >= 50 ? 'passed' : 'failed'
+}
 
 /* 
 DO NOT EDIT BELOW THIS LINE
 --------------------------- */
-let grade1 = 49;
-let grade2 = 50;
-let grade3 = 100;
+let grade1 = 49
+let grade2 = 50
+let grade3 = 100
 
-console.log("'" + grade1 + "': " + studentPassed(grade1));
-console.log("'" + grade2 + "': " + studentPassed(grade2));
-console.log("'" + grade3 + "': " + studentPassed(grade3));
+console.log("'" + grade1 + "': " + studentPassed(grade1))
+console.log("'" + grade2 + "': " + studentPassed(grade2))
+console.log("'" + grade3 + "': " + studentPassed(grade3))
 
 /* 
 EXPECTED RESULT
