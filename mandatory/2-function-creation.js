@@ -7,12 +7,10 @@ Tip: use logical operators
 */
 
 function validate(num) {
-  return typeof num === "number" && num % 2 === 0 && num <= 100
-    ? " i am a number and i am even and i am < 100"
-    : num;
+  return typeof num === "number" && num % 2 === 0 && num <= 100 ? true : false;
 }
 
-console.log(validate(101));
+console.log(validate(18));
 /*
 Write a function that:
 - takes a number as input
@@ -21,8 +19,13 @@ Write a function that:
 - numbers greater 100 must be replaced with 100
 */
 
-function formatPercentage(num) {}
-
+function formatPercentage(num) {
+  //let numb = num.toFixed(2);
+  return num > 100 ? "100%" : `${num.toFixed(2)}%`;
+}
+console.log(formatPercentage(99.372));
+console.log(Math.round(99.372 * 100) / 100);
+console.log(Math.round(0.372 * 100) / 100);
 /*
 Write a function that:
 - takes an array of strings as input
@@ -30,8 +33,27 @@ Write a function that:
 - removes any forward slashes (/) in each string
 - makes all strings all lowercase
 */
-function tidyUpStrings(arrayOfStrings) {}
+function tidyUpStrings(arrayOfStrings) {
+  console.log(arrayOfStrings);
+  let newArr = arrayOfStrings.map((string) => {
+    //return string.toLowerCase();
+    return string.replace(/^(\s+)?(\/+)?|(\s+)?(\/+)?(\s+)?$/g, "").toLowerCase();
+  });
+  return newArr;
+}
 
+console.log(
+  tidyUpStrings([
+    "/Daniel",
+    " /Sanyia",
+    "AnTHonY",
+    "irina",
+    " Gordon",
+    "ashleigh   ",
+    "   Alastair  ",
+    " anne marie  ",
+  ])
+);
 /* ======= TESTS - DO NOT MODIFY ===== */
 
 test("validate function accepts valid even number", () => {
