@@ -10,8 +10,8 @@
 
 */
 
-function mood() {
-  let isHappy = true;
+function mood(val) {
+  let isHappy = val;
 
   if (isHappy) {
     return "I am happy";
@@ -19,24 +19,28 @@ function mood() {
     return "I am not happy";
   }
 }
+console.log(mood(false));
 
 function greaterThan10(num) {
-  let isBigEnough;
+  let isBigEnough = num;
 
-  if (isBigEnough) {
+  if (isBigEnough > 10) {
     return "num is greater than 10";
   } else {
     return "num is not big enough";
   }
 }
 
+console.log(greaterThan10(10));
+
 function get3rdIndex(arr) {
   let index = 3;
-  let element;
+  let element = arr[index];
 
   return element;
 }
 
+console.log(get3rdIndex([11, 37, 62, 18, 19, 3, 30]));
 /* ======= TESTS - DO NOT MODIFY ===== */
 
 test("mood function works for true", () => {
