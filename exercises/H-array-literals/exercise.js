@@ -3,9 +3,13 @@
   --------------
   Declare some variables assigned to arrays of values
 */
-
+/* we can use the .push method as well but wasnt asked for here*/
 let numbers = []; // add numbers from 1 to 10 into this array
 let mentors; // Create an array with the names of the mentors: Daniel, Irina and Rares
+for(let i=1;i<=10;i++){
+  numbers.push(i);
+}
+mentors=["Daniel","Irina","Rares"]
 
 /* 
   DO NOT EDIT BELOW THIS LINE

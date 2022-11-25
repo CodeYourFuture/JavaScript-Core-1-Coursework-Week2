@@ -5,7 +5,10 @@
   Update the code so that you get the expected result.
 */
 
-function isNegative() {}
+function isNegative(number) {return (number<0? true:false);}
+function isBetween5and10(numbers){return(numbers>4<11? true:false );}
+function isShortName(name){return (name.length<8? true:false);}
+function startsWithD(names){return (names.slice(0,1)=="D"? true:false);}
 
 /* 
   DO NOT EDIT BELOW THIS LINE
