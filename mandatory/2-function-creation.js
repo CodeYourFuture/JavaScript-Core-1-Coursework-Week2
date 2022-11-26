@@ -33,7 +33,7 @@ function formatPercentage(num) {
       return str + '%'
 }
 
-THE ABOVE BECAUSE I DO NOT ACTUALLY 'ROUND' ANY NUMBER - NO round FUNCTION!
+RE: THE ABOVE. I DO NOT ACTUALLY 'ROUND' ANY NUMBER - NO round FUNCTION!
 
 SOLUTION:
 */
