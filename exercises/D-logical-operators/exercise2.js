@@ -5,7 +5,39 @@
   Update the code so that you get the expected result.
 */
 
-function isNegative() {}
+function isNegative(num) {
+  if (num < 0 ) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
+function isBetween5and10(num) {
+  if (num <= 10 && num >= 5) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
+function isShortName(name) {
+  let nameLength = name.length; 
+  if (nameLength < 8) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
+function startsWithD(name2) {
+  let firstLetter = name2[0];
+  if (firstLetter = "D") {
+    return true;
+  } else {
+    return false;
+  }
+}
 
 /* 
   DO NOT EDIT BELOW THIS LINE
