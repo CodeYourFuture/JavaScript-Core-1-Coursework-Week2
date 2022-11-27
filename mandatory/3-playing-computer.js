@@ -31,7 +31,7 @@ console.log(a);
 console.log(b);
 
 for (let i = 0; i < 5; ++i) {
-  a = a + 1;
+  a++;
   if (i % 2 === 0) {
     const d = f2(i, x);
     console.log(d);
