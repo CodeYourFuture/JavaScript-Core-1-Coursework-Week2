@@ -8,6 +8,11 @@
 
 let name = "Daniel";
 let danielsRole = "mentor";
+if (danielsRole === "mentor")
+  return `Hi, I 'm ${name}, I am a mentor`;
+else
+  return `Hi, I 'm ${name}, I am a student`;
+// We could solve this with only one return instead of using if.
 
 /* 
 EXPECTED RESULT
