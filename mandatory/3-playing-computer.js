@@ -19,10 +19,13 @@
   13
   8
   4. How many times is "f1" called?
-  - "f1" 
+  - "f1" is called two times (for i=1 and i=3)
   5. How many times is "f2" called?
+   - "f1" is called three times (for i=0 , i=2 and i=4)
   6. What value does the "a" parameter take in the first "f1" call?
+  - Eight
   7. What is the value of the "a" outer variable when "f1" is called for the first time?
+  - Six
 */
 
 let x = 2;
