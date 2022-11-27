@@ -51,7 +51,7 @@ undefined
 > greeting
 'hello'
 > console.log(greeting)
-hello
+helloc h
 undefined
 > .exit
 $
