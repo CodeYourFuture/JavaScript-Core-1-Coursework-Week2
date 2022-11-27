@@ -9,9 +9,9 @@
 let name = "Daniel";
 let danielsRole = "mentor";
 if (danielsRole === "mentor")
-  return `Hi, I 'm ${name}, I am a mentor`;
+  console.log(`Hi, I'm ${name}, I'm a mentor`);
 else
-  return `Hi, I 'm ${name}, I am a student`;
+  console.log(`Hi, I'm ${name}, I'm a student`);
 // We could solve this with only one return instead of using if.
 
 /* 
