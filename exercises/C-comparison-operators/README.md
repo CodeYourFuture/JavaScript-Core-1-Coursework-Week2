@@ -19,8 +19,8 @@ The `>` symbol in the expression is a **comparison operator**. Comparison operat
 <   less than
 <=  less than or equal
 >=  greater than or equal
-=== same value
-!== not the same value
+=== same type and value
+!== not the same type and value
 ```
 
 ## Exercise

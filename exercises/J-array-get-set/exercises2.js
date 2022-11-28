@@ -6,6 +6,7 @@
   - change the first value in the array to the number 1
 */
 
+
 let numbers = [1, 2, 3]; // Don't change this array literal declaration
 
 /* 

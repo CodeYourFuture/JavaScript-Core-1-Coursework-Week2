@@ -6,7 +6,12 @@ Complete the function to check if the variable `num` satisfies the following req
 Tip: use logical operators
 */
 
-function validate(num) {}
+function validate(num) {
+  if(num<=100){
+  return num.toFix(2)+"%";
+}else{
+  return 100;
+}
 
 /*
 Write a function that:
@@ -16,7 +21,9 @@ Write a function that:
 - numbers greater 100 must be replaced with 100
 */
 
-function formatPercentage(num) {}
+function formatPercentage(num) {
+  
+}
 
 /*
 Write a function that:

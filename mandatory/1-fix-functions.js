@@ -2,7 +2,8 @@
 
   Aim: to understand the change code inside functions 
 
-  See the below functions. They are syntactically correct but are not outputting the right results.
+  See the below functions. They are syntactically correct but are not outputting the 
+  right results.
 
   Run the tests and see how you can fix them.
 
@@ -21,8 +22,8 @@ function mood() {
 }
 
 function greaterThan10(num) {
-  let isBigEnough;
-
+  let isBigEnough = true ;
+  
   if (isBigEnough) {
     return "num is greater than 10";
   } else {
@@ -34,7 +35,7 @@ function get3rdIndex(arr) {
   let index = 3;
   let element;
 
-  return element;
+  return element[index-1];
 }
 
 /* ======= TESTS - DO NOT MODIFY ===== */

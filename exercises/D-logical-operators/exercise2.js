@@ -5,7 +5,22 @@
   Update the code so that you get the expected result.
 */
 
-function isNegative() {}
+function isNegative(a) {
+  return a < 0;
+}
+
+function isBetween5and10(a) {
+  return a >= 5 && a <= 10;
+}
+
+function isShortName(str) {
+  return str.length <= 6;
+}
+
+function startsWithD(str) {
+  return str[0] === 'D';
+}
+
 
 /* 
   DO NOT EDIT BELOW THIS LINE
