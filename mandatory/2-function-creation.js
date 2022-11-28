@@ -6,7 +6,15 @@ Complete the function to check if the variable `num` satisfies the following req
 Tip: use logical operators
 */
 
-function validate(num) {}
+function validate(num) {
+  if (!isNaN(num) && num % 2 === 0 && num <= 100) {
+    return true;
+  }  else {
+    return false;
+  }
+}
+
+console.log(validate("name"));
 
 /*
 Write a function that:
@@ -16,7 +24,17 @@ Write a function that:
 - numbers greater 100 must be replaced with 100
 */
 
-function formatPercentage(num) {}
+function formatPercentage(num) { 
+  let roundedNum = (Math.round(num * 100) / 100).toFixed(2);
+  if (roundedNum > 100) {
+    return `100%`;
+  } else {
+    return `${roundedNum}%`;
+  }
+}
+
+console.log(formatPercentage(17.6566))
+console.log(formatPercentage(105.5757))
 
 /*
 Write a function that:
@@ -25,7 +43,11 @@ Write a function that:
 - removes any forward slashes (/) in each string
 - makes all strings all lowercase
 */
-function tidyUpStrings(arrayOfStrings) {}
+function tidyUpStrings(arrayOfStrings) {   // comment: i don't understand
+
+}  
+
+console.log(tidyUpStrings("one", "two", "three"))
 
 /* ======= TESTS - DO NOT MODIFY ===== */
 
