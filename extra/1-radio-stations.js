@@ -16,7 +16,8 @@
 // `getAllFrequencies` goes here
 
 /**
- * Next, let's write a function that gives us only the frequencies that are radio stations.
+ * Next, let's write a function that gives us only the frequencies that are radio 
+ * stations.
  * Call this function `getStations`.
  *
  * This function should:
