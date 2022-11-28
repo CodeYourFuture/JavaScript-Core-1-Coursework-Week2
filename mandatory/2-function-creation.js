@@ -7,12 +7,11 @@ Tip: use logical operators
 */
 
 function validate(num) {
-if (typeOf num === "number" && num % 2 === 0 
+let (typeOf (num) === "number" && num % 2 === 0 
 && num <= 100) {
 
   return true
 }
- return false
 }
 
 /*
@@ -24,7 +23,7 @@ Write a function that:
 */
 
 function formatPercentage(num) {
-if (typeOf num == 'number' && num <= 100) {
+let(typeOf (num) == 'number' && num <= 100) {
   return Math.round(num * 100) / 100 + '%'
 } else if (typeof num == 'number' && num > 100) {
   return Math.round(num * 100) / 100 + '%'

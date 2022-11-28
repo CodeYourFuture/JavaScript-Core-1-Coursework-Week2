@@ -6,31 +6,22 @@
 */
 
 function isNegative(num) {
-  if (num < 0){
-    return true;
-  }
-  return false;
+  return num < 0;
+  
 }
 
 function isBetween5and10(num) {
-  if (num <= 10 && num >= 5) {
-    return true;
-  }
-  return false
+ return num >= 5 && num <= 10;
+
 }
 
 function isShortName(string) {
-  if (string.length < 7) {
-    return true;
-  }
-  return false;
+  return string.length < 7;
+    
 }
 
 function isShortNameWithD(name) {
-  if (name.chart[0] = "D") {
-    return true;
-  }
-  return false;
+  return name[0] === "D";
 }
 
 /* 
