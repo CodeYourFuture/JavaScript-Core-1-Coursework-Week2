@@ -46,7 +46,7 @@ console.log("Is 10 in the range 5-10?", isBetween5and10(10));
 console.log("Is Daniel a short name?", isShortName("Daniel"));
 //console.log(a);
 console.log("Does Daniel start with 'D'?", startsWithD("Daniel"));
-console.log("Does Daniel start with 'D'?", startsWithD("Manuel"));
+console.log("Does manuel start with 'D'?", startsWithD("Manuel"));
 /* 
   EXPECTED RESULT
   ---------------
