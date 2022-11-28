@@ -7,12 +7,14 @@ Tip: use logical operators
 */
 
 function validate(num) {
-  if(num<=100){
-  return num.toFix(2)+"%";
-}else{
-  return 100;
-}
+  if(typeof num === "number" && num%2 === 0 && num <= 100) {
+    return true;
+  }else{
+    return false
+  }
 
+  
+}
 /*
 Write a function that:
 - takes a number as input
@@ -22,7 +24,11 @@ Write a function that:
 */
 
 function formatPercentage(num) {
-  
+  if  (num <=100) {
+    return (Math.round(num*100)/100)+"%";
+  }else{
+    return "100"+"%";
+  }
 }
 
 /*
@@ -32,7 +38,13 @@ Write a function that:
 - removes any forward slashes (/) in each string
 - makes all strings all lowercase
 */
-function tidyUpStrings(arrayOfStrings) {}
+function tidyUpStrings(arrayOfStrings) {
+ 
+    return  arrayOfStrings.map(element=>element.trim().toLowerCase().replace('/',''));
+      
+  }
+  
+
 
 /* ======= TESTS - DO NOT MODIFY ===== */
 
