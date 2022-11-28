@@ -9,7 +9,7 @@ Tip: use logical operators
 function validate(num) {
   if (typeof num === "string") {return false}
   else if (num===100) {return true}
-  else if (num%2==0 & num <= 100 ) {return true} 
+  else if (num%2==0 && num <= 100 ) {return true} 
   return false
 }
 
