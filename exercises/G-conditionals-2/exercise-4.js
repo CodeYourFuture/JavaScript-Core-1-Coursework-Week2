@@ -9,9 +9,13 @@
 */
 
 function containsCode(sentence) {
- return sentence.includes("Code") !== -1;
-    
+if (sentence.includes("code")) {
+  return true;
 
+ }else{
+  return false;
+ }
+    
   }
 
 
