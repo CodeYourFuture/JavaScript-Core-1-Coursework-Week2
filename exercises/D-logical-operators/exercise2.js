@@ -5,7 +5,23 @@
   Update the code so that you get the expected result.
 */
 
-function isNegative() {}
+function isNegative(num) {
+  return num < 0;
+}
+
+function isBetween5and10(num) {
+  return num >= 5 && num <= 10;
+}
+
+function isShortName(name) {
+  return name.length <= 6;
+}
+
+function startsWithD(name) {
+  return name [0] === 'D';
+}
+
+
 
 /* 
   DO NOT EDIT BELOW THIS LINE
