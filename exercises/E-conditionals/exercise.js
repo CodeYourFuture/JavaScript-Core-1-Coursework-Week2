@@ -9,6 +9,11 @@
 let name = "Daniel";
 let danielsRole = "mentor";
 
+if ((name = "Daniel") && (danielsRole = "mentor")) {
+  console.log("Hi, Im Daniel, Im a mentor")
+} else {
+  console.log("Hi, Im Daniel, Im a student")
+}
 /* 
 EXPECTED RESULT
 ---------------
