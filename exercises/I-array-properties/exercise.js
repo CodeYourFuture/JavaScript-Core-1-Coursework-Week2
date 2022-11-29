@@ -6,8 +6,13 @@
 */
 
 function isEmpty(arr) {
-  return; // complete this statement
+  if(arr.length){
+   return false; // complete this statement
+}else{
+  return true;
 }
+}
+// return arr.length ? false : true ;}  //=>  Short way with use ternary operator
 
 /* 
   DO NOT EDIT BELOW THIS LINE

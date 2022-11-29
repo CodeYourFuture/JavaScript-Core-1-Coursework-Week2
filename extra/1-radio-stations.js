@@ -32,6 +32,9 @@
  */
 
 function getAvailableStations() {
+  let num=[87,88,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108];
+  return num;
+ 
   // Using `stations` as a property as defining it as a global variable wouldn't
   // always make it initialized before the function is called
   if (!getAvailableStations.stations) {
