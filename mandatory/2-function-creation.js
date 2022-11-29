@@ -23,12 +23,13 @@ Write a function that:
 */
 
 function formatPercentage(num) {
-  //if (num.toFixed(2) && "(num * 100 / 100)%" && num <= 100)
-  if (typeof num === "number" && num < 1) {
-    return ((num * 100) / 100).toFixed(2) + "%";
-  } else if (typeof num === "number" && num > 100) {
+  let totalPercentage = Math.round(num * 100) / 100 + "%";
+
+  if (typeof num === "number" && num > 100) {
     return Math.round((100 * 100) / 100) + "%";
-  } else return Math.round((num * 100) / 100) + "%";
+  } else {
+    return totalPercentage;
+  }
 }
 
 /*
