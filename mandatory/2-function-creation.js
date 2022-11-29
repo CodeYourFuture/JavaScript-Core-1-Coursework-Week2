@@ -6,17 +6,25 @@ Complete the function to check if the variable `num` satisfies the following req
 Tip: use logical operators
 */
 
-function validate(num) {}
+function validate(num) {
+  return (typeof(num)=== 'number' && num % 2=== 0 && num <= 100);
+}
 
 /*
 Write a function that:
 - takes a number as input
 - return a string formatted as percentages (e.g. 10 => "10%")
-- the number must be rounded to 2 decimal places
+- the number must be rounded to 2 decimal places  
 - numbers greater 100 must be replaced with 100
 */
 
-function formatPercentage(num) {}
+function formatPercentage(num) {
+  let rounded = Math.round(num * 100) / 100;
+  if (num > 100) {
+  return "100%";
+   } else return rounded.toString() + "%";
+  
+}
 
 /*
 Write a function that:
@@ -25,7 +33,13 @@ Write a function that:
 - removes any forward slashes (/) in each string
 - makes all strings all lowercase
 */
-function tidyUpStrings(arrayOfStrings) {}
+function tidyUpStrings(arrayOfStrings) {
+  let trimmed1 = arrayOfStrings.map((el) => el.trim());
+  let trimmed2 = trimmed1.map(el => el.replace(/\//g,""))
+  let trimmed3 = trimmed2.map(el => el.toLowerCase());
+  return trimmed3
+
+}
 
 /* ======= TESTS - DO NOT MODIFY ===== */
 

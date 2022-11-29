@@ -5,7 +5,21 @@
   Update the code so that you get the expected result.
 */
 
-function isNegative() {}
+  function isNegative(number) {
+    if (number < 0){
+      return true;                              
+   }
+    return false;
+  }
+
+  function isPositive(number) {
+    if (number > 1){ 
+    return false ;
+    }
+    return true ;
+  
+  }
+
 
 /* 
   DO NOT EDIT BELOW THIS LINE

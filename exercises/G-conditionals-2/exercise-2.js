@@ -5,9 +5,14 @@
   - if the grade is less than 50 then return "failed"
   - if 50 or higher then return "passed"
 
-*/
+*/ 
 
-function studentPassed(grade) {}
+function studentPassed(grade) {
+  if (grade < 50) {
+  return "failed";
+  }
+return "passed";
+}
 
 /* 
 DO NOT EDIT BELOW THIS LINE

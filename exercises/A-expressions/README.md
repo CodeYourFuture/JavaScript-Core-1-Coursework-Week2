@@ -10,7 +10,7 @@ The following are all examples of expressions:
 1 + 1; // returns 2
 ("hello"); // returns "hello"
 2 * 4; // returns 8
-"hello" + "world"; // returns "helloworld"
+"hello" + "world"; // returns "hello world"
 ```
 
 We can take the value produced by an expression and assign it to a variable. That line of code would be called a statement.
