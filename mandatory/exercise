@@ -1,0 +1,48 @@
+function mood(feeling) {
+  if (feeling === "happy") {
+    return "I am happy";
+  } else if (feeling === "sad") {
+    return "I am not happy";
+  } else if (typeof feeling === "number") {
+    return "Beep beep boop";
+  } else {
+    return "I'm sorry, I'm still learning"
+  }
+}
+console.log(mood("happy"));
+console.log(mood("sad"));
+console.log(mood(12));
+console.log(mood("***"));
+
+function goingOutTonight() {
+  console.log("Party time!");
+}
+let workingTomorrow = false;
+if (!workingTomorrow) {
+  goOutTonight();
+}
+
+
+let num = 10
+num > 5 && num < 15
+num < 10 || num === 10
+false || true
+!true
+let greaterThan5 = num > 5
+!greaterThan5
+//(num === 10)
+
+function checkUserName(userName, userType) {
+  if (userType === "admin" || "manager") {
+    return "Username valid"
+  }
+  if (userName[0] === userName[0].toUpperCase() && userName.length > 5 && userName < 10) {
+    return "Username valid";
+  } else {
+      return "Username invalid";
+    }
+  }
+
+console.log(checkUserName("user1", "staff"));
+console.log(checkUserName("Cat1234", "user"));
+console.log(checkUserName("cat1", "admin"));

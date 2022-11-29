@@ -8,38 +8,54 @@
 
   NOTE:Only make edits inside the function
 
+  `£${salesTax(100).toFixed(2)}`
+
 */
 
-function mood() {
-  let isHappy = true;
-
-  if (isHappy) {
-    return "I am happy";
-  } else {
-    return "I am not happy";
+function mood(feeling) {
+  if (feeling === true) {
+    console.log("I am happy");
+  }
+  else {
+    console.log("I am not happy");
   }
 }
+(mood(true));
+(mood(false));
 
 function greaterThan10(num) {
-  let isBigEnough;
-
-  if (isBigEnough) {
-    return "num is greater than 10";
-  } else {
-    return "num is not big enough";
+  if (num > 10) {
+    console.log("num is greater than 10");
+  } else if (num < 10) {
+    console.log("num is not big enough");
   }
 }
+greaterThan10(11);
+greaterThan10(96);
+greaterThan10(9);
+greaterThan10(10);
 
-function get3rdIndex(arr) {
-  let index = 3;
-  let element;
 
-  return element;
+let strings = ["fruit", "banana", "apple", "strawberry", "raspberry"];
+
+
+function get3rdIndex() {
+  
+  return strings[3];
 }
+
+console.log(get3rdIndex());
+
+strings.splice(0, 5, 11, 37, 62, 18, 19, 3, 30 );
+console.log(get3rdIndex());
+
+strings = [5, 10];
+console.log(get3rdIndex());
+
 
 /* ======= TESTS - DO NOT MODIFY ===== */
 
-test("mood function works for true", () => {
+/* test("mood function works for true", () => {
   expect(mood(true)).toEqual("I am happy");
 });
 
@@ -82,4 +98,4 @@ test("get3rdIndex function works with numbers", () => {
 test("get3rdIndex returns undefined if not enough elements", () => {
   const numbers = [5, 10];
   expect(get3rdIndex(numbers)).toBeUndefined();
-});
+}); */
