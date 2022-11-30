@@ -14,3 +14,8 @@ EXPECTED RESULT
 ---------------
 Hi, I'm Daniel, I'm a mentor.
 */
+if (danielsRole==="mentor"){
+  console.log(`Hi, I'm ${name}, I'm a ${danielsRole}.`);
+} else{
+  console.log(`Hi, I'm ${name}, I'm a student.`);
+}
