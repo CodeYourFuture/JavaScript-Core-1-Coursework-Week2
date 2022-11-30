@@ -5,11 +5,15 @@
 */
 
 function first(arr) {
-  return; // complete this statement
+  return numbers[0]; // complete this statement
 }
 
 function last(arr) {
-  return; // complete this statement
+  if (arr === numbers) {
+    return numbers[numbers.length - 1]; // complete this statement
+  } else {
+    return names[names.length - 1];
+  }
 }
 
 /* 
