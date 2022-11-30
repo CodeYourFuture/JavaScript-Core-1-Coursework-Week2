@@ -9,7 +9,7 @@
 let name = "Daniel";
 let danielsRole = "mentor";
 
-if (danielsRole) {
+if (danielsRole = "mentor") && (name = "Daniel") {
   console.log("Hi, I'm Daniel, I'm a mentor.");
 } else {
   console.log("Hi, I'm Daniel, I'm a student.");
