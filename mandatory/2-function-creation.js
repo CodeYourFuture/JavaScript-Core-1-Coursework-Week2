@@ -7,12 +7,11 @@ Tip: use logical operators
 */
 
 function validate(num) {
-let (typeOf (num) === "number" && num % 2 === 0 
-&& num <= 100) {
+return typeof num === "number" && num % 2 === 0 
+&& num <= 100; 
 
-  return true
 }
-}
+
 
 /*
 Write a function that:
@@ -23,12 +22,13 @@ Write a function that:
 */
 
 function formatPercentage(num) {
-let(typeOf (num) == 'number' && num <= 100) {
-  return Math.round(num * 100) / 100 + '%'
-} else if (typeof num == 'number' && num > 100) {
-  return Math.round(num * 100) / 100 + '%'
+  let result = Math.round(num * 100) / 100;
+if (result > 100 ) {
+  result = 100;
 }
+  return  result + '%';
 }
+
 
 /*
 Write a function that:
@@ -41,6 +41,7 @@ function tidyUpStrings(arrayOfStrings) {
   return arrayOfStrings.map((element) => 
   element.trim().replace("/", "").toLowerCase());
 }
+
 
 /* ======= TESTS - DO NOT MODIFY ===== */
 

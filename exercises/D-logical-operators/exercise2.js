@@ -15,13 +15,13 @@ function isBetween5and10(num) {
 
 }
 
-function isShortName(string) {
-  return string.length < 7;
+function isShortName(name) {
+  return name.length <=6;
     
 }
 
-function isShortNameWithD(name) {
-  return name[0] === "D";
+function startsWithD(name) {
+  return name[0] === 'D';
 }
 
 /* 
