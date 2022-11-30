@@ -20,7 +20,7 @@ Write a function that:
 
 function formatPercentage(num) {
     
-      (num > 100)?   num.replace("100")   : `% ${num.toFixed(2)} `;
+       return (num > 100)?   num.replace(" % 100")   : `% ${num.toFixed(2)} `;
 }
 
 /*
