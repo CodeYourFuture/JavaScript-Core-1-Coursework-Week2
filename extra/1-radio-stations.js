@@ -13,6 +13,14 @@
  * - Should return this array to use in other functions
  */
 
+function getAllFrequencies() {
+  let arr = [];
+  for (let i = 87; i <= 108; i++) {
+    arr.push(i);
+  }
+  return arr;
+}
+
 // `getAllFrequencies` goes here
 
 /**
@@ -23,8 +31,17 @@
  * - Get the available frequencies from `getAllFrequencies`
  * - There is a helper function called isRadioStation that takes an integer as an argument and returns a boolean.
  * - Return only the frequencies that are radio stations.
+ *
+ *
  */
 // `getStations` goes here
+function getStations() {
+  let stations = getAllFrequencies();
+
+  let newSTT = stations.filter(isRadioStation);
+
+  return newSTT;
+}
 
 /*
  * ======= TESTS - DO NOT MODIFY =======
@@ -32,6 +49,7 @@
  */
 
 function getAvailableStations() {
+  //console.log(getAvailableStations.stations);
   // Using `stations` as a property as defining it as a global variable wouldn't
   // always make it initialized before the function is called
   if (!getAvailableStations.stations) {
@@ -43,6 +61,7 @@ function getAvailableStations() {
         getAvailableStations.stations.push(randomFrequency);
       }
     }
+    //console.log(getAvailableStations.stations);
     getAvailableStations.stations.sort(function (frequencyA, frequencyB) {
       return frequencyA - frequencyB;
     });
@@ -57,8 +76,7 @@ function isRadioStation(frequency) {
 
 test("getAllFrequencies() returns all frequencies between 87 and 108", () => {
   expect(getAllFrequencies()).toEqual([
-    87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104,
-    105, 106, 107, 108,
+    87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108,
   ]);
 });
 

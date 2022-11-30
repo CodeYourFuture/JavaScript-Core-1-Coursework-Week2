@@ -7,8 +7,25 @@
 
   Hint: Google how to check if a string contains a word
 */
+/*
+function containsCode(sentence) {
+  let answer = false;
 
-function containsCode(sentence) {}
+  if (sentence.includes("code")) {
+    answer = true;
+  }
+  return answer;
+}
+*/
+function containsCode(sentence) {
+  let answer = false;
+  //console.log(sentence.match(/code/g));
+
+  if (sentence.match(/code/g)) {
+    answer = true;
+  }
+  return answer;
+}
 
 /* 
 DO NOT EDIT BELOW THIS LINE
