@@ -19,7 +19,7 @@ Write a function that:
 */
 
 function formatPercentage(num) {
-  return num<=100? `${parseFloat(num.toFixed(2))}%` :`100.00%`
+  return num<=100? `${parseFloat(num.toFixed(2))}%` :`100%`
 }
 
 /*
