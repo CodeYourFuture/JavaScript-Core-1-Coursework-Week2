@@ -34,8 +34,9 @@ function getAllFrequencies() {
 // `getStations` goes here
 
 function getStations() {
-  let allFrequencies = getAllFrequencies();
   let radioStations = [];
+  let allFrequencies = getAllFrequencies();
+  
   for (let i = 0; i < allFrequencies.length; i++) {
     if (isRadioStation(allFrequencies[i])) {
       radioStations.push(allFrequencies[i]);
