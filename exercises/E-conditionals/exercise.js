@@ -8,6 +8,11 @@
 
 let name = "Daniel";
 let danielsRole = "mentor";
+let me = "I'm";
+
+if (danielsRole === "mentor") {
+  console.log("Hi" + " " + me + " " + name + " " + me + " " + danielsRole);
+}
 
 /* 
 EXPECTED RESULT
