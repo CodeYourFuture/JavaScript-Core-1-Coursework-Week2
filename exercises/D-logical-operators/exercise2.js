@@ -5,7 +5,30 @@
   Update the code so that you get the expected result.
 */
 
-function isNegative() {}
+function isNegative(tobechecked) {
+  if (tobechecked<0){
+  return true;
+  }
+  else return false;
+}
+function isBetween5and10(tobechecked){
+  if (tobechecked>5 && tobechecked<=10){
+    return true;
+  }
+  else return false;
+}
+function isShortName(tobechecked){
+  if (tobechecked.length<=6){
+  return true;
+}
+  else return false;
+}
+function startsWithD(tobechecked){
+if (tobechecked[0]="D"){
+  return true;
+}
+else return false;
+}
 
 /* 
   DO NOT EDIT BELOW THIS LINE
