@@ -11,7 +11,7 @@ let moreStudentsThanMentors = studentCount > mentorCount; // finish this stateme
 
 let roomMaxCapacity = 25;
 
-let enoughSpaceInRoom = studentCount + mentorCount === roomMaxCapacity; // finish this statement
+let enoughSpaceInRoom = studentCount + mentorCount <= roomMaxCapacity; // finish this statement
 
 let personA = "Daniel";
 let personB = "Irina";
