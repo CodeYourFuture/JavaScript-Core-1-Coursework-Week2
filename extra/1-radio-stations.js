@@ -35,7 +35,7 @@ function getAllFrequencies(arr) {
 // `getStations` goes here
 
 function getStations() {
-  return getAllFrequencies().filter((i) => isRadioStation(i));
+ return getAllFrequencies().filter((i) => isRadioStation(i));
 }
 /*
  * ======= TESTS - DO NOT MODIFY =======
