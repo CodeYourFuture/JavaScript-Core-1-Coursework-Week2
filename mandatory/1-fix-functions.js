@@ -11,10 +11,9 @@
 */
 
 function mood(isHappy) {
-  isHappy = true;
   if (isHappy) {
     return "I am happy";
-  } else if (!isHappy) {
+  } else {
     return "I am not happy";
   }
 }

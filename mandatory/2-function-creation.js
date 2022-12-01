@@ -7,9 +7,11 @@ Tip: use logical operators
 */
 
 function validate(num) {
-  if (typeof num === "number" && num % 2 === 0 && num <= 100) {
+  if (typeof num === "number" && num % 2 === 0 && num <= 100) 
+  {
     return true;
-  } else {
+  } else
+  {
     return false;
   }
 }
@@ -22,13 +24,16 @@ Write a function that:
 */
 
 function formatPercentage(num) {
-  if (num < 100 && num > 0) {
+  if (num < 100 && num > 0) 
+  {
     return new Intl.NumberFormat("default", {
       style: "percent",
       minimumFractionDigits: 0,
       maximumFractionDigits: 2,
     }).format(num / 100);
-  } else if (num > 100) {
+  } 
+  else if (num > 100) 
+  {
     return `100%`;
   }
 }
@@ -40,7 +45,9 @@ Write a function that:
 - makes all strings all lowercase
 */
 function tidyUpStrings(arrayOfStrings) {
-  let noSpacesArray = arrayOfStrings.trim();
+  return arrayOfStrings.map((string) =>
+    string.trim().replace("/", "").toLowerCase()
+  );
 }
 
 /* ======= TESTS - DO NOT MODIFY ===== */
