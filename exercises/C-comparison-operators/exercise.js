@@ -7,14 +7,21 @@
 
 let studentCount = 16;
 let mentorCount = 9;
-let moreStudentsThanMentors; // finish this statement
-
+if (studentCount > mentorCount) {
+return moreStudentsThanMentors = true; // finish this statement
+}
 let roomMaxCapacity = 25;
-let enoughSpaceInRoom; // finish this statement
+if (roomMaxCapacity <= 25){
+return enoughSpaceInRoom = true; // finish this statement
+}
 
 let personA = "Daniel";
 let personB = "Irina";
-let sameName; // finish this statement
+
+if (personA === personB){
+return sameName = false // finish this statement
+}
+
 
 /* 
   DO NOT EDIT BELOW THIS LINE

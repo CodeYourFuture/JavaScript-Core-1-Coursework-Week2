@@ -5,7 +5,34 @@
   Update the code so that you get the expected result.
 */
 
-function isNegative() {}
+function isNegative( number ) {
+  if (number < 0 ){ 
+    return "number is negative";
+  } else {
+    return "number is not negative";
+  }
+
+}
+
+function range(number) {
+  if ( 5 < number<10) {
+    return range ="isBetween5and10";
+  }
+}
+
+function ShortName(name) {
+  if (typeof (name = number && name<5)){
+    
+    return ("is sort name" );
+  }
+}
+
+function start(letter) {
+  if (letter == "D") {
+    return "this name start with D"
+  }
+}
+
 
 /* 
   DO NOT EDIT BELOW THIS LINE

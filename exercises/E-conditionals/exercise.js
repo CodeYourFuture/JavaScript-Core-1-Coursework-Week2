@@ -6,8 +6,16 @@
   If Daniel is a student, print out "Hi, I'm Daniel, I'm a student."
 */
 
-let name = "Daniel";
-let danielsRole = "mentor";
+
+
+  let name = "Daniel";
+  let danielsRole = "mentor";
+if (name == "Daniel" && danielsRole == "mentor") { 
+  return "Hi, I'm Daniel, I'm a mentor."
+} else {
+  return "Hi, I'm Daniel, I'm a student.";
+}
+
 
 /* 
 EXPECTED RESULT
