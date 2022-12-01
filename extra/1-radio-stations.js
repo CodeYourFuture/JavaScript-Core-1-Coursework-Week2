@@ -14,6 +14,13 @@
  */
 
 // `getAllFrequencies` goes here
+function getAllFrequencies(){
+  let frequencies = [];
+  for (i = 87; i <= 108; i++){
+    frequencies.push(i);
+  } 
+  return frequencies;
+}
 
 /**
  * Next, let's write a function that gives us only the frequencies that are radio stations.
@@ -26,10 +33,26 @@
  */
 // `getStations` goes here
 
-/*
- * ======= TESTS - DO NOT MODIFY =======
- * Note: You are not expected to understand everything below this comment!
- */
+function getStations(){
+  let allFrequencies = getAllFrequencies();
+  let radioStations = [];
+  for (let i = 0; i <allFrequencies.length; i++){
+    if (isRadioStation(allFrequencies[i])) {
+      radioStations.push(allFrequencies[i]);
+      
+    }
+  }
+  return radioStations;
+}
+
+
+
+
+
+
+//  * ======= TESTS - DO NOT MODIFY =======
+//  * Note: You are not expected to understand everything below this comment!
+//  */
 
 function getAvailableStations() {
   // Using `stations` as a property as defining it as a global variable wouldn't
