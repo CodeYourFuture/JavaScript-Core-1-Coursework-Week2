@@ -22,12 +22,14 @@ Write a function that:
 */
 
 // function formatPercentage(num) {
-//   let num2 = string(num * 100 / 100).toFixed(2);
-//   if (num <= 100){
-//   return `${num2}%`;
-//   }
-//   return "100%";
+//     let next = (num * 100 / 100).toFixed(2);
+//     let third = num.toString();
+//     if (num <= 100){
+//         return `${third}%`;
+//     }
+//     return `100%`
 // }
+
  
 function formatPercentage(num) {
   return num <= 100 ? `${parseFloat(num.toFixed(2))}%` : `100%`
