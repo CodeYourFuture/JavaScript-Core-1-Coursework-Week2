@@ -9,8 +9,15 @@
 let name = "Daniel";
 let danielsRole = "mentor";
 
-/* 
-EXPECTED RESULT
----------------
-Hi, I'm Daniel, I'm a mentor.
-*/
+if (name === "Daniel" && danielsRole === "mentor") {
+console.log("Hi, I'm Daniel, I'm a mentor.");
+} else if (name === "Daniel" && danielsRole === "student") {
+  console.log("Hi, I'm Daniel, I'm a student.");
+} else {
+  console.log ("Hi, stranger");
+};
+
+// EXPECTED RESULT
+// ---------------
+// Hi, I'm Daniel, I'm a mentor.
+// */
