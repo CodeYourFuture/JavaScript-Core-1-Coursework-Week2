@@ -23,9 +23,9 @@ Write a function that:
 */
 
 function formatPercentage(num) {
-  let toString = parseFloat(num);
-  if (toString < 100) {
-    return toString.toFixed(2) + "%";
+  // let percentage = parseFloat(num);
+  if (num < 100) {
+    return Number(num.toFixed(2)) + "%";
   } else {
     return "100" + "%";
   }
@@ -38,7 +38,11 @@ Write a function that:
 - removes any forward slashes (/) in each string
 - makes all strings all lowercase
 */
-function tidyUpStrings(arrayOfStrings) {}
+function tidyUpStrings(arrayOfStrings) {
+  return arrayOfStrings.map((x) => {
+    return x.trim().replaceAll("/", "").toLowerCase();
+  });
+}
 
 /* ======= TESTS - DO NOT MODIFY ===== */
 
