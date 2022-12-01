@@ -37,12 +37,10 @@ function getAllFrequencies() {
 // `getStations` goes here
 
 function getStations() {
-  let availableFrequencies = getAllFrequencies();
-  for (let i = 0; i < availableFrequencies.length; i++) {
-    if (isRadioStation(availableFrequencies[i]))
-      return getAvailableStations();
-  }
+  let allFrequencies = getAllFrequencies();
+  return allFrequencies.filter(x => isRadioStation(x) === true);
 }
+
 
 /*
  * ======= TESTS - DO NOT MODIFY =======
