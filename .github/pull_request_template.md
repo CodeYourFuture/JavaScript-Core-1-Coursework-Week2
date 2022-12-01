@@ -16,21 +16,21 @@ Please complete the details below this message
 
 # Your Details
 
-- Your Name:
-- Your City:
-- Your Slack Name:
+- Your Name: Ebrahim Beiati- Asl
+- Your City: London
+- Your Slack Name:Ebarhimbeiati-Asl
 
 # Homework Details
 
-- Module:
-- Week:
+- Module:javascript
+- Week:week2
 
 # Notes
 
-- What did you find easy?
+- What did you find easy?hard
 
-- What did you find hard?
+- What did you find hard?exercises
 
-- What do you still not understand?
+- What do you still not understand? functions
 
 - Any other notes?
