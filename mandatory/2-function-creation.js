@@ -7,7 +7,11 @@ Tip: use logical operators
 */
 
 function validate(num) {}
-
+if (typeof num === "number" && num % 2 === 0 && num <= 100) {
+  return true;
+} else {
+  return false;
+}
 /*
 Write a function that:
 - takes a number as input
@@ -16,8 +20,13 @@ Write a function that:
 - numbers greater 100 must be replaced with 100
 */
 
-function formatPercentage(num) {}
-
+function formatPercentage(num) {
+  if (num < 100 && num > 0) {
+    return `{Math.floor(num)}%`;
+  } else if (num > 100) {
+    return `100%`;
+  }
+}
 /*
 Write a function that:
 - takes an array of strings as input
@@ -77,7 +86,7 @@ test("tidyUpString function works", () => {
       "ashleigh   ",
       "   Alastair  ",
       " anne marie  ",
-    ])  
+    ])
   ).toEqual([
     "daniel",
     "sanyia",
@@ -87,5 +96,5 @@ test("tidyUpString function works", () => {
     "ashleigh",
     "alastair",
     "anne marie",
-  ]); 
+  ]);
 });
