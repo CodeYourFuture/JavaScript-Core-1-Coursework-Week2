@@ -34,7 +34,10 @@ Write a function that:
 - removes any forward slashes (/) in each string
 - makes all strings all lowercase
 */
-function tidyUpStrings(arrayOfStrings) {}
+function tidyUpStrings(arrayOfStrings) {
+  let noSpacesArray = arrayOfStrings.trim();
+  
+}
 
 /* ======= TESTS - DO NOT MODIFY ===== */
 
