@@ -10,11 +10,11 @@
 
 */
 
-function mood() {
-  let isHappy = true;
+function mood(isHappy) {
+  isHappy = true;
   if (isHappy) {
     return "I am happy";
-  } else {
+  } else if (!isHappy) {
     return "I am not happy";
   }
 }
@@ -29,7 +29,7 @@ function greaterThan10(num) {
 }
 
 function get3rdIndex(arr) {
-  let index = 2;
+  let index = 3;
   let element = arr[index];
   return element;
 }

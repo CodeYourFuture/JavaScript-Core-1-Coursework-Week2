@@ -15,6 +15,13 @@
   7. What is the value of the "a" outer variable when "f1" is called for the first time?
 */
 
+//1. ASSUMPTION: the error is related to the 'b' variable which is not declared
+//2. removed, as expected 'b' was not declared
+//3. only what is console.logged:x,a,d=4, all are explained below
+//4. f1 is called twice
+//5. f2 is called 3 times
+//6. a=8
+//7. a=8(i might be wrong)
 let x = 2;
 let a = 6;
 
@@ -28,8 +35,11 @@ const f2 = function (a, b) {
 
 console.log(x);
 console.log(a);
-console.log(b);
-
+//Iteration1: i=0, a=7,d=4,f2 called
+//Iteration2: i=1,a=8, e=9, f1 called
+//Iteration3: i=2, a=9, d=6, f2 called the 2nd time
+//Iteration4: i=3, a=10, e=13, f1 called the 2nd time
+//Iteration5: i=4, a=11, d=8, f2 called the 3rd time
 for (let i = 0; i < 5; ++i) {
   a = a + 1;
   if (i % 2 === 0) {

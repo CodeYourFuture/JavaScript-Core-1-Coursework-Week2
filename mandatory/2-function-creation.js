@@ -6,11 +6,12 @@ Complete the function to check if the variable `num` satisfies the following req
 Tip: use logical operators
 */
 
-function validate(num) {}
-if (typeof num === "number" && num % 2 === 0 && num <= 100) {
-  return true;
-} else {
-  return false;
+function validate(num) {
+  if (typeof num === "number" && num % 2 === 0 && num <= 100) {
+    return true;
+  } else {
+    return false;
+  }
 }
 /*
 Write a function that:
@@ -22,7 +23,11 @@ Write a function that:
 
 function formatPercentage(num) {
   if (num < 100 && num > 0) {
-    return `{Math.floor(num)}%`;
+    return new Intl.NumberFormat("default", {
+      style: "percent",
+      minimumFractionDigits: 0,
+      maximumFractionDigits: 2,
+    }).format(num / 100);
   } else if (num > 100) {
     return `100%`;
   }
@@ -36,7 +41,6 @@ Write a function that:
 */
 function tidyUpStrings(arrayOfStrings) {
   let noSpacesArray = arrayOfStrings.trim();
-  
 }
 
 /* ======= TESTS - DO NOT MODIFY ===== */
