@@ -12,6 +12,11 @@
  * - Create an array  starting at 87 and ending in 108
  * - Should return this array to use in other functions
  */
+function getAllFrequencies(frequencies){
+ let frequenciesArray = frequencies.range(87, 108);
+ return frequenciesArray;
+}
+
 
 // `getAllFrequencies` goes here
 
