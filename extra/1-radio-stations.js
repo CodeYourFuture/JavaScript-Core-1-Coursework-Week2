@@ -14,24 +14,13 @@
  */
 
 // `getAllFrequencies` goes here
-
 function getAllFrequencies() {
-  // return [87,88,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108];
-
-  // let array = [];
-  // for (let i = 87; i <= 108; i++) {
-  //   array.push[i];
-  // }
-  // return array;
-
-  return Array.from({ length: 108 - 87 + 1 }, (v, i) => i + 87);
-  // ^learning Array.from to generate a sequence of numbers
+  let frequencies = [];
+  for (i = 87; i <= 108; i++) {
+    frequencies.push(i);
+  }
+  return frequencies;
 }
-
-// const getAllFrequencies = () => Array.from({ length: 108 - 87 + 1 }, (v, i) => i + 87);
-
-// console.log(getAllFrequencies())
-
 /**
  * Next, let's write a function that gives us only the frequencies that are radio stations.
  * Call this function `getStations`.
@@ -41,26 +30,17 @@ function getAllFrequencies() {
  * - There is a helper function called isRadioStation that takes an integer as an argument and returns a boolean.
  * - Return only the frequencies that are radio stations.
  */
-
 // `getStations` goes here
-
 function getStations() {
-  // let allFrequencies = getAllFrequencies();
-  // let radioStations = [];
-  // for (let i = 0; i < allFrequencies.length; i++) {
-  //   if (isRadioStation(allFrequencies[i])) {
-  //     radioStations.push(allFrequencies[i])
-  //   }
-  // }
-  // return radioStations;
-
-  return getAllFrequencies().filter((element) => isRadioStation(element));
+  let allFrequencies = getAllFrequencies();
+  let radioStations = [];
+  for (let i = 0; i < allFrequencies.length; i++) {
+    if (isRadioStation(allFrequencies[i])) {
+      radioStations.push(allFrequencies[i]);
+    }
+  }
+  return radioStations;
 }
-
-// const getStations = () => getAllFrequencies().filter(element => isRadioStation(element));
-
-// console.log(getStations())
-
 /*
  * ======= TESTS - DO NOT MODIFY =======
  * Note: You are not expected to understand everything below this comment!
