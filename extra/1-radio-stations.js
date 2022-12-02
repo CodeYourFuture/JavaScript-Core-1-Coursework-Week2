@@ -33,7 +33,7 @@ function getAllFrequencies() {
  * - Return only the frequencies that are radio stations.
  */
 // `getStations` goes here
-/*
+
 function getStations() {
   let stations = [];
   for (let station of getAllFrequencies()) {
@@ -73,7 +73,7 @@ function isRadioStation(frequency) {
 }
 
 
-*/
+
 
 /*
  * ======= TESTS - DO NOT MODIFY =======
