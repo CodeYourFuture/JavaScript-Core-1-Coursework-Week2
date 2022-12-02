@@ -19,7 +19,7 @@ Did you notice how we use `[0]` to get the first value? In programming we count 
 You can also **set** a value using bracket notation and an assignment operator (`=`).
 
 ```js
-let scores = [80, 41, 47];
+let scores = [80, 41, 29, 51];
 
 scores[2] = 29; // Change the last score
 scores[3] = 51; // Add a new score
