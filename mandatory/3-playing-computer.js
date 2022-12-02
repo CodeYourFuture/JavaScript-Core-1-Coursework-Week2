@@ -17,12 +17,12 @@
 
 let x = 2;
 let a = 6;
-
+let b = 4;
 const f1 = function (a, b) {
   return a + b;
 };
 
-const f2 = function (a, b) {
+const f2 = function (a, b, x) {
   return a + b + x;
 };
 
