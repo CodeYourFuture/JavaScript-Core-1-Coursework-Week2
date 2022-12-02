@@ -23,7 +23,12 @@ Write a function that:
 */
 
 function formatPercentage(num) {
-  
+  let two = Math.round(num * 100) / 100;
+  if (two > 100) {
+  return `${100}%`;
+  } {
+    return `${two}%`;
+  }
 }
 
 /*
@@ -33,8 +38,13 @@ Write a function that:
 - removes any forward slashes (/) in each string
 - makes all strings all lowercase
 */
-function tidyUpStrings(arrayOfStrings) {}
-
+function tidyUpStrings(arrayOfStrings) {
+    /*let noSpaces = trim(arrayOfStrings);*/
+    return arrayOfStrings.map(function (element){
+      return element.trim().toLowerCase().replace(/\//, '')
+    });
+    
+} 
 /* ======= TESTS - DO NOT MODIFY ===== */
 
 test("validate function accepts valid even number", () => {
