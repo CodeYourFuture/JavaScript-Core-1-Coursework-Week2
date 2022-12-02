@@ -14,11 +14,32 @@ let cssLevel = 4;
 let htmlLevelAbove5;
 let cssLevelAbove5;
 
+htmlLevelAbove5 = (htmlLevel >= 5);
+cssLevelAbove5 = (cssLevel >= 5);
+
 // Finish the next two statement
 // Use the previous variables and logical operators
 // Do not "hardcode" the answers
 let cssAndHtmlAbove5;
 let cssOrHtmlAbove5;
+
+cssAndHtmlAbove5 = (htmlLevel >= 5 && cssLevel >=5);
+cssOrHtmlAbove5 = (htmlLevel >= 5 || cssLevel >=5);
+
+// function cssAndHtmlAbove5 (htmlLevel, cssLevel) {
+// if (htmlLevel > 5 && cssLevel > 5) {
+//   return true;
+// }
+//   return false;
+// }
+
+// function cssOrHtmlAbove5 (htmlLevel, cssLevel) {
+// if (htmlLevel > 5 || cssLevel > 5) {
+//   return true;
+// }
+//   return false;
+// }
+
 
 /* 
   DO NOT EDIT BELOW THIS LINE
