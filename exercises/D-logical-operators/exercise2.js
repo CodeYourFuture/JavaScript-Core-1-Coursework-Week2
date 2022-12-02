@@ -5,7 +5,9 @@
   Update the code so that you get the expected result.
 */
 
-function isNegative() {}
+function isNegative(number) {
+  return number < 0 ? true : false;
+}
 
 /* 
   DO NOT EDIT BELOW THIS LINE
