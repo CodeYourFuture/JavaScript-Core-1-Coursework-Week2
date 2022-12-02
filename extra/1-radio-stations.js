@@ -7,11 +7,23 @@
 /**
  * First, let's create a function that creates a list of all the frequencies.
  * Call this function `getAllFrequencies`.
+ 
+ * }
  *
  * This function should:
  * - Create an array  starting at 87 and ending in 108
  * - Should return this array to use in other functions
  */
+function getAllFrequencies(){
+     let radioWaves =[];
+     let value = 87;
+     while ( value <= 108 ){
+          radioWaves.push(value);
+          value ++;
+     }
+     return radioWaves ;
+
+}
 
 // `getAllFrequencies` goes here
 
@@ -25,7 +37,9 @@
  * - Return only the frequencies that are radio stations.
  */
 // `getStations` goes here
-
+function getStations(){
+  
+}
 /*
  * ======= TESTS - DO NOT MODIFY =======
  * Note: You are not expected to understand everything below this comment!
