@@ -25,6 +25,20 @@
  * - Return only the frequencies that are radio stations.
  */
 // `getStations` goes here
+function getStations(getAllFrequencies){
+  function isRadioStation(num){
+    if (num>=87 && num<=108){
+      return true;
+    }
+    else 
+    return false;
+  }
+  if (isRadioStation){
+    return getAllFrequencies;
+  }
+  else
+  return "not good";
+}
 
 /*
  * ======= TESTS - DO NOT MODIFY =======

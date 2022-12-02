@@ -5,7 +5,37 @@
   Update the code so that you get the expected result.
 */
 
-function isNegative() {}
+let htmlLevel = 8;
+let cssLevel = 4;
+function isNegative(a) {
+  if (a<0) {
+    return true;
+  } 
+  else
+  return false;
+}
+function isBetween5and10(num){
+  if (num > 5 && num <= 10) {
+    return true;
+  }
+
+  return false;
+}
+function isShortName(a){
+  if (a.length < 7){
+    return true;
+  }
+  else
+  return false;
+}
+
+function startsWithD(a){
+  if (a[0] === "D"){
+    return true;
+  }
+  else
+  return false;
+}
 
 /* 
   DO NOT EDIT BELOW THIS LINE
