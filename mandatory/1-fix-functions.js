@@ -9,33 +9,41 @@
   NOTE:Only make edits inside the function
 
 */
-
-function mood() {
-  let isHappy = true;
-
-  if (isHappy) {
+//npm test -- --testPathPattern
+function mood(isHappy) {
+  if (isHappy === true) {
     return "I am happy";
   } else {
     return "I am not happy";
   }
 }
+//console.log(mood(true));
 
 function greaterThan10(num) {
-  let isBigEnough;
+  let isBigEnough = num > 10;
 
   if (isBigEnough) {
-    return "num is greater than 10";
+    return `num is greater than 10`;
   } else {
-    return "num is not big enough";
+    return `num is not big enough`;
   }
 }
-
+//console.log(greaterThan10(5)),
 function get3rdIndex(arr) {
-  let index = 3;
-  let element;
+  arr.length >= 4;
+  let thirdIndex;
+  thirdIndex = arr[3];
 
-  return element;
+  if (arr.length) {
+    return thirdIndex;
+  }
 }
+//let myArray = ["ee", "ewrew", "dss", "dsa"];
+//let ourArray = [2, 4, 6, 7];
+//let emptyArray = [];
+//console.log(get3rdIndex(myArray));
+//console.log(get3rdIndex(ourArray));
+//console.log(get3rdIndex(emptyArray));
 
 /* ======= TESTS - DO NOT MODIFY ===== */
 
