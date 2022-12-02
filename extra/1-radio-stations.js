@@ -16,12 +16,21 @@
 // `getAllFrequencies` goes here
 
 function getAllFrequencies() {
-  let array = [];
-  for (let i = 87; i <= 108; i++) {
-    array.push(i);
-  }
-  return array;
+  // return [87,88,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108];
+
+  // let array = [];
+  // for (let i = 87; i <= 108; i++) {
+  //   array.push[i];
+  // }
+  // return array;
+
+  return Array.from({ length: 108 - 87 + 1 }, (v, i) => i + 87);
+  // ^learning Array.from to generate a sequence of numbers
 }
+
+// const getAllFrequencies = () => Array.from({ length: 108 - 87 + 1 }, (v, i) => i + 87);
+
+// console.log(getAllFrequencies())
 
 /**
  * Next, let's write a function that gives us only the frequencies that are radio stations.
@@ -32,48 +41,25 @@ function getAllFrequencies() {
  * - There is a helper function called isRadioStation that takes an integer as an argument and returns a boolean.
  * - Return only the frequencies that are radio stations.
  */
+
 // `getStations` goes here
 
 function getStations() {
-  let stations = [];
-  for (let station of getAllFrequencies()) {
-    if (isRadioStation(station)) {
-      stations.push(station);
-    }
-  }
-  return stations;
+  // let allFrequencies = getAllFrequencies();
+  // let radioStations = [];
+  // for (let i = 0; i < allFrequencies.length; i++) {
+  //   if (isRadioStation(allFrequencies[i])) {
+  //     radioStations.push(allFrequencies[i])
+  //   }
+  // }
+  // return radioStations;
+
+  return getAllFrequencies().filter((element) => isRadioStation(element));
 }
 
-//   - Create an array  starting at 87 and ending in 108
-//  * - Should return this array to use in other functions
+// const getStations = () => getAllFrequencies().filter(element => isRadioStation(element));
 
-function getAvailableStations() {
-  // Using `stations` as a property as defining it as a global variable wouldn't
-  // always make it initialized before the function is called
-  if (!getAvailableStations.stations) {
-    const stationCount = 4;
-    getAvailableStations.stations = [];
-    while (getAvailableStations.stations.length < stationCount) {
-      let randomFrequency = Math.floor(Math.random() * (108 - 87 + 1) + 87);
-      if (!getAvailableStations.stations.includes(randomFrequency)) {
-        getAvailableStations.stations.push(randomFrequency);
-      }
-    }
-    getAvailableStations.stations.sort(function (frequencyA, frequencyB) {
-      return frequencyA - frequencyB;
-    });
-  }
-
-  return getAvailableStations.stations;
-}
-
-function isRadioStation(frequency) {
-  console.log("something" + getAvailableStations().includes(frequency));
-  return getAvailableStations().includes(frequency);
-}
-
-
-
+// console.log(getStations())
 
 /*
  * ======= TESTS - DO NOT MODIFY =======
