@@ -22,7 +22,7 @@ Write a function that:
 */
 
 function formatPercentage(num) {
-    if (typeof num === 'number' && num <= 100) {
+    if (typeof num === "number" && num <= 100) {
         return `${parseFloat(num).toFixed(2)}%`;
     }
 }
@@ -35,8 +35,9 @@ Write a function that:
 - makes all strings all lowercase
 */
 function tidyUpStrings(arrayOfStrings) {
-    return arrayOfStrings.map(element => element.trim().replace("/", "").toLowerCase());
-
+    return arrayOfStrings.map((element) =>
+        element.trim().replace("/", "").toLowerCase()
+    );
 }
 
 /* ======= TESTS - DO NOT MODIFY ===== */
