@@ -7,7 +7,7 @@ Tip: use logical operators
 */
 
 function validate(num) {
-    if (num === "number" & & num % 2 === 0 && num <= 100) {
+    if (num === "number" && num % 2 === 0 && num <= 100) {
         return true;
     }
     return false;
@@ -35,7 +35,7 @@ Write a function that:
 - makes all strings all lowercase
 */
 function tidyUpStrings(arrayOfStrings) {
-    return arrayOfStrings.map(element = > element.trim().replace("/", "").toLowerCase());
+    return arrayOfStrings.map(element => element.trim().replace("/", "").toLowerCase());
 
 }
 
