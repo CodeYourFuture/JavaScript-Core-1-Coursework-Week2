@@ -13,7 +13,9 @@
  * - Should return this array to use in other functions
  */
 
-// `getAllFrequencies` goes here
+function getAllFrequencies(array){
+  for
+}
 
 /**
  * Next, let's write a function that gives us only the frequencies that are radio stations.
