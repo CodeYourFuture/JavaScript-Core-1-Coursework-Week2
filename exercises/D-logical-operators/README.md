@@ -10,9 +10,10 @@ let num = 10;
 function satisfiesRequirements(num) {
   if (num > 3 && num < 10) {
     return true;
-  }
+  } else {
 
   return false;
+  }
 }
 ```
 

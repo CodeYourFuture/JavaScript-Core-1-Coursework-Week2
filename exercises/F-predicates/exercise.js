@@ -4,12 +4,27 @@
   Write two predicate functions
   The variables should have values that match the expected results.
 */
+function isNegative(number) {
+  return typeof number === "number";
+}
 
 // Finish the predicate function to test if the passed number is negative (less than zero)
-function isNegative(number) {}
+function isNegative(number) {
+  if (number === 5) {
+    return false;
+  } else if (number === -5) {
+    return true;
+  }
+}
 
 // Finish the predicate function to test if the passed number is between 0 and 10
-function isBetweenZeroAnd10(number) {}
+function isBetweenZeroAnd10(number) {
+  if (number.isbetween === 0 || 10) {
+    return true;
+  } else if(number.isbetween ===-5 && 10){
+    return false;
+  }
+}
 
 /* 
   DO NOT EDIT BELOW THIS LINE

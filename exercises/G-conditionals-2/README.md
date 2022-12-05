@@ -22,3 +22,4 @@ function getGrade(score) {
   }
 }
 ```
+console.log getGrade(90);
