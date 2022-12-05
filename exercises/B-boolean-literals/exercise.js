@@ -4,8 +4,11 @@
   This program needs some variables to log the expected result.
   Add the required variables with the correct boolean values assigned.
 */
-
+let mozafarIsCool = false;
 let codeYourFutureIsGreat = true;
+let calculationCorrect = true;
+let moreThan10Students = false;
+
 
 /* 
   DO NOT EDIT BELOW THIS LINE
