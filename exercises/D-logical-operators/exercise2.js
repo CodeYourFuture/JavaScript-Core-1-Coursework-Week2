@@ -5,7 +5,38 @@
   Update the code so that you get the expected result.
 */
 
-function isNegative() {}
+function isNegative(num) {
+  if (num < 0) {
+    return true;
+  } 
+    return false;
+  
+}
+
+function isBetween5and10(num) {
+
+  if (num <= 10 && num >= 5) {
+    return true;
+  }  
+    return false;
+  
+}
+
+function isShortName (name) {
+  let namelenght = name.length;
+  if (namelenght < 7) {
+    return true;
+  }
+  return false;
+}
+
+function startsWithD (letter) {
+  if (letter.charAt[0] = "D") {
+    return true;
+  }
+  return false;
+  
+}
 
 /* 
   DO NOT EDIT BELOW THIS LINE
