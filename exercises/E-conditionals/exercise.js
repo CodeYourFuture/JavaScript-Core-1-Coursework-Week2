@@ -10,9 +10,11 @@ let name = "Daniel";
 let danielsRole = "mentor";
 
 if (danielsRole==="mentor") {
-  console.log("Hi, I'm "+name + ', '+"I'm a " + danielsRole)
+ // console.log("Hi, I'm "+name + ', '+"I'm a " + danielsRole)
+    console.log(`Hi, I'm ${name}, I'm a mentor.`)
 }else{
-  console.log("I'm "+name+', '+"I'm a "+danielsRole)
+ //  console.log("I'm "+name+', '+"I'm a "+danielsRole)
+    console.log(`Hi, I'm ${name}, I'm a student`)
 }
 
 /* 

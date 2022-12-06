@@ -39,12 +39,19 @@ Write a function that:
 - makes all strings all lowercase
 */
 function tidyUpStrings(arrayOfStrings) {
- 
-    return  arrayOfStrings.map(element=>element.trim().toLowerCase().replace('/',''));
-      
+ //Using arrow function:
+// return  arrayOfStrings.map(element=>element.trim().toLowerCase().replace('/',''));
+
+//using for loop:
+   const  tidiedStrings = [];
+   for (let i=0; i< arrayOfStrings.length; i++){
+    const item = arrayOfStrings[i];
+    const formattedItem = item.trim().replace('/','').toLowerCase();
+    tidiedStrings.push(formattedItem);
+   }   
+   return tidiedStrings
   }
   
-
 
 /* ======= TESTS - DO NOT MODIFY ===== */
 

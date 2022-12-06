@@ -1,6 +1,6 @@
 We can also write **expressions** that return boolean values.
 
-Here's an expression that evaulates to a boolean.
+Here's an expression that evaluates to a boolean.
 
 ```
 1 > 2
