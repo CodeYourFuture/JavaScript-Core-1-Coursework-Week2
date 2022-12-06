@@ -2,7 +2,8 @@
 
   Aim: to understand the change code inside functions 
 
-  See the below functions. They are syntactically correct but are not outputting the right results.
+  See the below functions. They are syntactically correct but are not 
+  outputting the right results.
 
   Run the tests and see how you can fix them.
 
@@ -10,19 +11,21 @@
 
 */
 
-function mood() {
-  let isHappy = true;
+function mood(isHappy) {
+  //let isHappy = true;
+  
+//  if (isHappy) {
+//    return "I am happy";
+//  } else {
+//    return "I am not happy";
+//  }
 
-  if (isHappy) {
-    return "I am happy";
-  } else {
-    return "I am not happy";
-  }
+  return isHappy ? "I am happy" : "I am not happy";
 }
 
 function greaterThan10(num) {
-  let isBigEnough;
-
+  let isBigEnough = num > 10;
+  
   if (isBigEnough) {
     return "num is greater than 10";
   } else {
@@ -34,7 +37,7 @@ function get3rdIndex(arr) {
   let index = 3;
   let element;
 
-  return element;
+  return arr[index];
 }
 
 /* ======= TESTS - DO NOT MODIFY ===== */
