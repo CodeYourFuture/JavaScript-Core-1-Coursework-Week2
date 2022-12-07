@@ -36,9 +36,8 @@ function tidyUpStrings(arrayOfStrings) {
   let newStrings = [];
 
   for (let i = 0; i < arrayOfStrings.length; i++) {
-    let str = arrayOfStrings[i];
-    let cleanedString=str.trim().toLowerCase().replace("/", "");
-    newStrings.push(cleanedString);
+    let cleanedString = arrayOfStrings[i];
+    newStrings.push(cleanedString.trim().toLowerCase().replace("/", ""));
   }
   return newStrings;
 }
