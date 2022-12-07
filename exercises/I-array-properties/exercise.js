@@ -6,7 +6,7 @@
 */
 
 function isEmpty(arr) {
-  return; // complete this statement
+  return arr.length === 0;
 }
 
 /* 
@@ -14,7 +14,8 @@ function isEmpty(arr) {
   --------------------------- */
 let numbers = [1, 2, 3];
 let names = [];
-
+console.log("Lenght of array 'numbers':", numbers.length)
+console.log("Lenght of array 'names':", names.length);
 console.log(isEmpty(numbers));
 console.log(isEmpty(names));
 
