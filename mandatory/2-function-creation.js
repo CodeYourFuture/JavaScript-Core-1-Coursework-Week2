@@ -35,12 +35,14 @@ Write a function that:
 */
 function tidyUpStrings(arrayOfStrings) {
   let newStrings = []
+  
   for (let i=0;i<arrayOfStrings.length; i++)
   {
     arrayOfStrings[i]=arrayOfStrings[i].trim();
     arrayOfStrings[i]=arrayOfStrings[i].toLowerCase();
     arrayOfStrings[i]=arrayOfStrings[i].replace("/","");
-    newStrings.push(arrayOfStrings[i]);
+    let cleanedString =arrayOfStrings[i];
+    newStrings.push(cleanedString);
   }
   return newStrings;
 }
