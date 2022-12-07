@@ -7,7 +7,7 @@ Tip: use logical operators
 */
 
 function validate(num) {
-  return (typeof num ==="number") && ( num % 2=== 0 ) && (num<=100) ;
+  return typeof num === "number" && num % 2 === 0 && num <= 100;
 }
 
 /*
@@ -19,12 +19,11 @@ Write a function that:
 */
 
 function formatPercentage(num) {
-  if (num >100)
-  {
-    num=100;
+  if (num > 100) {
+    num = 100;
   }
-  return parseFloat(num.toFixed(2))+"%";
-  }
+  return parseFloat(num.toFixed(2)) + "%";
+}
 
 /*
 Write a function that:
@@ -34,14 +33,11 @@ Write a function that:
 - makes all strings all lowercase
 */
 function tidyUpStrings(arrayOfStrings) {
-  let newStrings = []
-  
-  for (let i=0;i<arrayOfStrings.length; i++)
-  {
-    arrayOfStrings[i]=arrayOfStrings[i].trim();
-    arrayOfStrings[i]=arrayOfStrings[i].toLowerCase();
-    arrayOfStrings[i]=arrayOfStrings[i].replace("/","");
-    let cleanedString =arrayOfStrings[i];
+  let newStrings = [];
+
+  for (let i = 0; i < arrayOfStrings.length; i++) {
+    let str = arrayOfStrings[i];
+    let cleanedString=str.trim().toLowerCase().replace("/", "");
     newStrings.push(cleanedString);
   }
   return newStrings;
@@ -97,7 +93,7 @@ test("tidyUpString function works", () => {
       "ashleigh   ",
       "   Alastair  ",
       " anne marie  ",
-    ])  
+    ])
   ).toEqual([
     "daniel",
     "sanyia",
@@ -107,5 +103,5 @@ test("tidyUpString function works", () => {
     "ashleigh",
     "alastair",
     "anne marie",
-  ]); 
+  ]);
 });
