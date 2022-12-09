@@ -7,12 +7,27 @@
   Answer the following questions:
 
   1. This program throws an error. Why? (If you can't find it, try executing it).
+  b is undefine
   2. Remove the line that throws the error.
+  done
   3. What is printed to the console?
+
+
+
+
+
+
   4. How many times is "f1" called?
+  tow times
+
   5. How many times is "f2" called?
-  6. What value does the "a" parameter take in the first "f1" call?
+  tree times
+
+  6. What value does the "a" parameter take in the first "f1" call? 
+  a is equal to 1 because we put i inside our a parameter
+
   7. What is the value of the "a" outer variable when "f1" is called for the first time?
+  8 because we had two loops, a had 6 at the first and we add 2 times 1 to that.
 */
 
 let x = 2;
