@@ -21,10 +21,10 @@
     three times
 
   6. What value does the "a" parameter take in the first "f1" call?
-    8
+    1
 
   7. What is the value of the "a" outer variable when "f1" is called for the first time?
-  8, It doesn't change in the function.
+  6
 */
 
 let x = 2;
