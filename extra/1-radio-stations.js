@@ -38,8 +38,8 @@ function getStations() {
     if (isRadioStation(currentStation)) {
       radioStations.push(currentStation);
     }
-    return radioStations;
   }
+  return radioStations;
 }
 
 /*
