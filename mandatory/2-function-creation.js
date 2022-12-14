@@ -23,10 +23,10 @@ Write a function that:
 */
 function formatPercentage(num) {
 
-  if(typeof num === "number" && num <= 100) {
+  if(typeof num === "number" && num <= 100){
 
     return `${parseFloat(num.toFixed(2))}%`;
-  } else if (num > 100) {
+  } else if(num > 100){
     let num = 100;
     return num + "%";
   }
@@ -41,7 +41,7 @@ Write a function that:
 function tidyUpString(strArr) {
   const tidiedStrings = [];
 
-  for (let i = 0; i < strArr.length; i++) {
+  for (let i = 0; i < strArr.length; i++){
     const item = strArr[i];
     const formattedItem = item.trim().replace("/", "").toLowerCase();
     tidiedStrings.push(formattedItem);
