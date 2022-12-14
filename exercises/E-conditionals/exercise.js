@@ -6,7 +6,7 @@
   If Daniel is a student, print out "Hi, I'm Daniel, I'm a student."
 */
 
-let name = "Daniel";
+let name = "daniel";
 let danielsRole = "mentor";
 function checkNameandRole(name, danielsRole) {
   if (name === "Daniel" && danielsRole === "mentor") {
@@ -17,4 +17,4 @@ function checkNameandRole(name, danielsRole) {
     return "I am superwoman";
   }
 }
-console.log(checkNameandRole("Daniel", "mentor"));
+console.log(checkNameandRole("Daniel", "student"));

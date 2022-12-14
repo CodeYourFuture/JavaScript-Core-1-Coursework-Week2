@@ -5,13 +5,14 @@
 
 */
 
-function isEmpty(names) {
-  if ((isEmpty = [])) {
+function isEmpty() {
+  if ((isEmpty = numbers)) {
     return false;
-  } else if (isEmpty = (names)) {
+  } else if (isEmpty = names) {
     return true;
     // complete this statement
   }
+  console.log(isEmpty);
 }
 
 /* 
