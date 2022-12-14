@@ -1,18 +1,7 @@
-/* Fix Functions
 
-  Aim: to understand the change code inside functions 
 
-  See the below functions. They are syntactically correct but are not outputting the right results.
-
-  Run the tests and see how you can fix them.
-
-  NOTE:Only make edits inside the function
-
-*/
-
-function mood() {
-  let isHappy = true;
-
+function mood(isHappy) {
+ 
   if (isHappy) {
     return "I am happy";
   } else {
@@ -20,8 +9,12 @@ function mood() {
   }
 }
 
+
+
+ 
+
 function greaterThan10(num) {
-  let isBigEnough;
+  let isBigEnough = num > 10;
 
   if (isBigEnough) {
     return "num is greater than 10";
@@ -30,10 +23,11 @@ function greaterThan10(num) {
   }
 }
 
+
+
 function get3rdIndex(arr) {
   let index = 3;
-  let element;
-
+  let element = arr[index];
   return element;
 }
 
