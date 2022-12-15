@@ -11,12 +11,14 @@ let danielsRole = "mentor";
 
 function checkNameandRole(name, danielsRole){
 if (name === "Daniel" && danielsRole === "mentor"){
-  return "Hi, I'm Daniel, I'm a mentor.";
-}else {
+  return "Hi, I'm Daniel, I'm a mentor";
+}else if (name === "Daniel" && danielsRole === "student"){
   return "Hi, I'm Daniel, I'm a student.";
+} else {
+  return "I am neither a student or a mentor";
 }
 }
-console.log(checkNameandRole ("Daniel", "student"))
+console.log(checkNameandRole ("Daniel", "hi"))
 
 /* 
 EXPECTED RESULT
