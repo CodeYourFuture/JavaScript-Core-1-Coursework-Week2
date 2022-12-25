@@ -8,9 +8,13 @@ Tip: use logical operators
 
 
 function validate(num) {
-  return ((typeof num === "number") && ( num % 2 === 0) && (num <= 100));
+  if (typeof num === "number" &&  num % 2 === 0 && num <= 100) {
+    return true;
+  } else {
+    return false;
+  }
 }
-// console.log (validate(77))
+console.log (validate(77))
 
 /*
 Write a function that:
@@ -24,7 +28,7 @@ function formatPercentage(numb) {
   return numb <= 100? `${(numb.toFixed(2))}%` :`100%`
 }
 
-// console.log(formatPercentage(97.5555))
+console.log(formatPercentage(97.5555))
 
 /*
 Write a function that:
