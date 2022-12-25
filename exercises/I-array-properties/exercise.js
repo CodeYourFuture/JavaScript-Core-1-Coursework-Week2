@@ -14,9 +14,9 @@ else {
 }
 }
 
-/* 
-  DO NOT EDIT BELOW THIS LINE
-  --------------------------- */
+// /* 
+//   DO NOT EDIT BELOW THIS LINE
+//   --------------------------- */
 let numbers = [1, 2, 3];
 let names = [];
 

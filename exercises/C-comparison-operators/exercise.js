@@ -10,7 +10,7 @@ let mentorCount = 9;
 let moreStudentsThanMentors = studentCount > mentorCount; // finish this statement
 
 let roomMaxCapacity = 25;
-let enoughSpaceInRoom =  roomMaxCapacity <= 25; // finish this statement
+let enoughSpaceInRoom =  roomMaxCapacity>=25; // finish this statement
 
 let personA = "Daniel";
 let personB = "Irina";
