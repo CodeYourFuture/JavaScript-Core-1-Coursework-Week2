@@ -16,7 +16,9 @@
 // `getAllFrequencies` goes here
 function getAllFrequencies() {
   let frequencies = [];
-  for (let i = 87; i <= 108; i++) {
+  const startFrequencies = 78;
+  const endFrequencies = 108;
+  for (let i = startFrequencies; i <= endFrequencies; i++) {
     frequencies.push(i);
   }
   return frequencies;
