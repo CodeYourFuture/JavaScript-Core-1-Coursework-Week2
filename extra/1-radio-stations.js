@@ -38,7 +38,7 @@ function getStations() {
   let radioStations = [];
   for (let i = 0; i < availableFrequencies.length; i++) {
     if (isRadioStation(availableFrequencies[i])) {
-      radioStations.push(availableFrequencies[i]);
+      radioStations.filter(availableFrequencies[i]);
     }
   }
   return radioStations;
