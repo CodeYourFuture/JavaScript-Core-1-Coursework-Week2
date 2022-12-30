@@ -16,15 +16,14 @@ function isNegative(number) {
     return true;
   }
 }
+// optional shorter answer: return num < 0;
 
 // Finish the predicate function to test if the passed number is between 0 and 10
 function isBetweenZeroAnd10(number) {
-  if (number.isbetween === 0 || 10) {
-    return true;
-  } else if(number.isbetween ===-5 && 10){
-    return false;
-  }
-}
+ return number > 0 && number < 11;
+ 
+  };
+
 
 /* 
   DO NOT EDIT BELOW THIS LINE
