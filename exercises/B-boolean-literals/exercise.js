@@ -8,7 +8,7 @@
 let codeYourFutureIsGreat = true;
 let mozafarIsCool = false;
 let calculationCorrect = true;
-let moreThan10Students = true;
+let moreThan10Students = false;
 /* 
   DO NOT EDIT BELOW THIS LINE
   --------------------------- */

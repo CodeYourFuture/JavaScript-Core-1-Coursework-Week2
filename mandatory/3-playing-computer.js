@@ -12,7 +12,7 @@
   3. What is printed to the console? 2 6 4 9 6 13 8
   4. How many times is "f1" called? three times
   5. How many times is "f2" called? two times
-  6. What value does the "a" parameter take in the first "f1" call?
+  6. What value does the "a" parameter take in the first "f1" call?  //the value of "a" will be i = 1
   7. What is the value of the "a" outer variable when "f1" is called for the first time? //es la variable fuera de la funcion 8
 */
 
@@ -36,16 +36,35 @@ console.log(a);
 
 for (let i = 0; i < 5; ++i) {
   a = a + 1;
-  console.log(`this is a ${a}`);
   if (i % 2 === 0) {
     const d = f2(i, x);
-    console.log(`this f1 loop = ${i}, ${x}`);
     console.log(d);
-  }else {
-    const e = f1(i, a);// i es el a dentro del f1
-    console.log(`this f2 loop = ${i}, ${a}`);
+  } else {
+    const e = f1(i, a);
     console.log(e);
   }
 }
+
+
+
+
+
+// ------------check how is running the code--------
+// for (let i = 0; i < 5; ++i) {
+//   a = a + 1;
+//   console.log(`this is a ${a}`);
+//   if (i % 2 === 0) {
+//     const d = f2(i, x);
+//     console.log(`this f1 loop = ${i}, ${x}`);
+//     console.log(d);
+//   }else {
+//     const e = f1(i, a);// i es el a dentro del f1
+//     console.log(`this f2 loop = ${i}, ${a}`);
+//     console.log(e);
+//   }
+// }
+
+
+// the % will be the remainder of divide. and we can see if the number is 0 or 1 
 
 //cambiar los valores para ver como van cambiando.
