@@ -38,7 +38,8 @@ Write a function that:
 - makes all strings all lowercase
 */
 function tidyUpStrings(arrayOfStrings) {
-   return arrayOfStrings.map(stringItems => stringItems.trim() + stringItems.replaceAll("/","") + stringItems.toLowerCase());
+
+   return arrayOfStrings.map(stringItems => stringItems.trim().replace("/","").toLowerCase());
 }
 
 /* ======= TESTS - DO NOT MODIFY ===== */
