@@ -5,9 +5,15 @@
 
 */
 
-function isEmpty(arr) {
-  return; // complete this statement
-}
+// function isEmpty(arr) {
+//   if(arr == 0){
+//     return true
+//   }
+//   return false // complete this statement
+// }
+
+let isEmpty = (arr) => arr == 0;
+
 
 /* 
   DO NOT EDIT BELOW THIS LINE

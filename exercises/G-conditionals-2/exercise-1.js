@@ -5,8 +5,14 @@
   - if number is less than zero, return the word "negative"
   - if number is more or equal to zero, return the word "positive"
 */
+function negativeOrPositive(number) {
+  if(number >= 0){
+    return " is positive";
+  }else{
+    return " is negative";
+  }
+}
 
-function negativeOrPositive(number) {}
 
 /* 
   DO NOT EDIT BELOW THIS LINE
