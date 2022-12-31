@@ -5,15 +5,21 @@
 
 */
 
-function isEmpty(arr) {
-  return; // complete this statement
+function isEmpty() {
+  if ((isEmpty = numbers)) {
+    return false;
+  } else if (isEmpty = names) {
+    return true;
+    // complete this statement
+  }
+  console.log(isEmpty);
 }
 
 /* 
   DO NOT EDIT BELOW THIS LINE
   --------------------------- */
 let numbers = [1, 2, 3];
-let names = [];
+let names = ["mark", "john", "lara"];
 
 console.log(isEmpty(numbers));
 console.log(isEmpty(names));

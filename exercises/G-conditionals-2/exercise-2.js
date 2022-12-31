@@ -7,7 +7,15 @@
 
 */
 
-function studentPassed(grade) {}
+// function studentPassed(grade) {
+//   if (grade < 50) {
+//     return "failed";
+//   } else if (grade >= 50) {
+//     return "passed";
+//   }
+// }
+//alternative way of writing this... 
+let studentPassed = grade => grade >= 50 ? "passed": "failed";
 
 /* 
 DO NOT EDIT BELOW THIS LINE

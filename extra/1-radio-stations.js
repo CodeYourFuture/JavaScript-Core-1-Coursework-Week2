@@ -13,7 +13,13 @@
  * - Should return this array to use in other functions
  */
 
-// `getAllFrequencies` goes here
+ function getAllFrequencies(){
+   return listOfFrequencies;
+ };
+
+ const listOfFrequencies = [87, 87.5, 90, 92.5, 98.5, 100, 104.5, 108];
+
+ console.log(listOfFrequencies);
 
 /**
  * Next, let's write a function that gives us only the frequencies that are radio stations.
@@ -25,7 +31,10 @@
  * - Return only the frequencies that are radio stations.
  */
 // `getStations` goes here
-
+ function getStations(isRadioStation){
+  return getAllFrequencies;
+  
+ }
 /*
  * ======= TESTS - DO NOT MODIFY =======
  * Note: You are not expected to understand everything below this comment!

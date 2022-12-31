@@ -5,11 +5,11 @@
 */
 
 function first(arr) {
-  return; // complete this statement
+  return numbers(first[0, 2]); // complete this statement
 }
 
 function last(arr) {
-  return; // complete this statement
+  return names(last("Joe")); // complete this statement
 }
 
 /* 
