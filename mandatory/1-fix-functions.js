@@ -12,50 +12,50 @@
 
 */
 
-function mood(feeling) {
-  if (feeling === true) {
-    console.log("I am happy");
-  }
-  else {
-    console.log("I am not happy");
+
+function mood(isHappy) {
+  if (isHappy) {
+    return 'I am happy';
+  } else {
+    return 'I am not happy';
   }
 }
-(mood(true));
-(mood(false));
+
 
 function greaterThan10(num) {
-  if (num > 10) {
-    console.log("num is greater than 10");
-  } else if (num < 10) {
-    console.log("num is not big enough");
+  let isBigEnough = num > 10;
+
+  if (isBigEnough) {
+    return 'num is greater than 10';
+  } else {
+    return 'num is not big enough';
   }
 }
-greaterThan10(11);
-greaterThan10(96);
-greaterThan10(9);
-greaterThan10(10);
 
 
-let strings = ["fruit", "banana", "apple", "strawberry", "raspberry"];
+function sortArray(letters) {
+  let sortedLetters = letters.sort();
 
-
-function get3rdIndex() {
-  
-  return strings[3];
+  return sortedLetters;
 }
 
-console.log(get3rdIndex());
+function first5(numbers) {
+  let sliced = numbers.slice(0, 5);
 
-strings.splice(0, 5, 11, 37, 62, 18, 19, 3, 30 );
-console.log(get3rdIndex());
+  return sliced;
+}
 
-strings = [5, 10];
-console.log(get3rdIndex());
+function get3rdIndex(arr) {
+  let index = 3;
+  let element = arr[index];
+
+  return element;
+}
 
 
 /* ======= TESTS - DO NOT MODIFY ===== */
 
-/* test("mood function works for true", () => {
+test("mood function works for true", () => {
   expect(mood(true)).toEqual("I am happy");
 });
 
@@ -98,4 +98,4 @@ test("get3rdIndex function works with numbers", () => {
 test("get3rdIndex returns undefined if not enough elements", () => {
   const numbers = [5, 10];
   expect(get3rdIndex(numbers)).toBeUndefined();
-}); */
+});

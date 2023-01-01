@@ -7,18 +7,12 @@ Tip: use logical operators
 */
 
 function validate(num) {
-  if (typeof num  === "number" && num % 2 === 0 && num <= 100) {
-  return true;}
-  else {return false;}
+  if (typeof num === "number" && num % 2 === 0 && num <= 100) {
+    return true;
+  } else {
+    return false;
   }
-
-console.log(validate(10));
-console.log(validate(18));
-console.log(validate(100));
-console.log(validate(17));
-console.log(validate("ten"));
-console.log(validate("10"));
-console.log(validate(108));
+}
 
 /*
 Write a function that:
@@ -29,15 +23,10 @@ Write a function that:
 */
 
 function formatPercentage(num) {
-  if (num > 100) {
-    return 100.00 + "%";
-  }
-  else return num.toFixed(2) + "%";
+  if (num > 100) num = 100;
+  const roundedNum = Math.round(num * 100) / 100;
+  return `${roundedNum}%`;
 }
-console.log(formatPercentage(23));
-console.log(formatPercentage(18.103));
-console.log(formatPercentage(187.2));
-console.log(formatPercentage(0.372));
 
 /*
 Write a function that:
@@ -47,20 +36,16 @@ Write a function that:
 - makes all strings all lowercase
 */
 
-
-
 function tidyUpStrings(arrayOfStrings) {
-  return ((arrayOfStrings.replace("/", "")).trim()).toLowerCase();
-}
-console.log(tidyUpStrings("/Daniel"));
-console.log(tidyUpStrings(" /Sanyia"));
-console.log(tidyUpStrings("AnTHonY"));
-console.log(tidyUpStrings("irina"));
-console.log(tidyUpStrings(" Gordon"));
-console.log(tidyUpStrings("ashleigh   "));
-console.log(tidyUpStrings("   Alastair  ",));
-console.log(tidyUpStrings(" anne marie  ",));
+  const tidiedStrings = [];
 
+  for (let i = 0; i < arrayOfStrings.length; i++) {
+    const item = arrayOfStrings[i];
+    const formattedItem = item.trim().replace('/', '').toLowerCase();
+    tidiedStrings.push(formattedItem);
+  }
+  return tidiedStrings;
+}
 
 /* ======= TESTS - DO NOT MODIFY ===== */
 
@@ -112,7 +97,7 @@ test("tidyUpString function works", () => {
       "ashleigh   ",
       "   Alastair  ",
       " anne marie  ",
-    ])  
+    ])
   ).toEqual([
     "daniel",
     "sanyia",
@@ -122,5 +107,5 @@ test("tidyUpString function works", () => {
     "ashleigh",
     "alastair",
     "anne marie",
-  ]); 
+  ]);
 });
