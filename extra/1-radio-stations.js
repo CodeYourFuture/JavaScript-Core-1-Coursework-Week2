@@ -32,13 +32,17 @@ function getAllFrequencies () {
  */
 
 function getStations () {
-  let AllFrequencies = getAllFrequencies();
-  let rStation = [];
-  for (let frequency of AllFrequencies) {
-    if (isRStation(frequency)) {
-      rStation.push(frequency);
+  
+   let allFrequencies = getAllFrequencies();
+   let radioStation = []; 
+
+  for (let frequency of allFrequencies) {
+    
+    if (isRStation(frequency)){
+      radioStation.push(frequency);
     }
   }
+  return radioStation;
 }
 
 
