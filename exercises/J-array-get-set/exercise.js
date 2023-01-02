@@ -5,11 +5,14 @@
 */
 
 function first(arr) {
-  return; // complete this statement
+  return arr[0]; // complete this statement
 }
 
+
+// Vernut' poslednij element massiva:
+
 function last(arr) {
-  return; // complete this statement
+  return arr.pop(); // complete this statement
 }
 
 /* 
