@@ -5,11 +5,11 @@
 */
 
 function first(arr) {
-  return; // complete this statement
+  return arr.length > 0 ? arr[0] : "It is empty"; // complete this statement
 }
 
 function last(arr) {
-  return; // complete this statement
+  return arr.length > 0 ? arr[arr.length - 1] : "It is empty"; // complete this statement
 }
 
 /* 

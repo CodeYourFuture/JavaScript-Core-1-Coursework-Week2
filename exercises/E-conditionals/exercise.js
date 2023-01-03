@@ -8,6 +8,11 @@
 
 let name = "Daniel";
 let danielsRole = "mentor";
+if (danielsRole === "mentor")
+  console.log(`Hi, I'm ${name}, I'm a mentor`);
+else
+  console.log(`Hi, I'm ${name}, I'm a student`);
+// We could solve this with only one return instead of using if.
 
 /* 
 EXPECTED RESULT
