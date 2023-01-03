@@ -18,7 +18,7 @@ function isShortName(str) {
 }
 
 function startsWithD(str) {
-  return str[0] === "D";
+  return str.trim()[0] === "D";
 }
 /* 
   DO NOT EDIT BELOW THIS LINE

@@ -9,14 +9,28 @@
 */
 
 function calculateGrade(mark) {
-  if (mark >= 80)
-    return "A";
-  else if (mark < 80 && mark > 60)
-    return "B";
-  else if (mark <= 60 && mark > 50)
-    return "C";
-  else
-    return "F";
+  // if (mark >= 80)
+  //   return "A";
+  // else if (mark > 60)
+  //   return "B";
+  // else if (mark > 50)
+  //   return "C";
+  // else
+  //   return "F";
+
+  switch (true) {
+    case (mark >= 80):
+      return "A";
+      break;
+    case (mark > 60):
+      return "B";
+      break;
+    case (mark > 50):
+      return "C";
+      break;
+    default:
+      return "F";
+  }
 }
 
 /* 
