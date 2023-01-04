@@ -5,8 +5,17 @@
   Update the code so that you get the expected result.
 */
 
-function isNegative() {}
+function isNegative(num) {
+  return num < 0
+}
 
+function isBetween5and10(num) {
+  return num > 0
+}
+
+function startsWithD(name) {
+  return num < 0 && num > 0;
+}
 /* 
   DO NOT EDIT BELOW THIS LINE
   --------------------------- */
