@@ -5,8 +5,30 @@
   Update the code so that you get the expected result.
 */
 
-function isNegative() {}
-
+function isNegative(parameter) {
+  if (Math.sign(parameter) === -1) {
+    return true;
+  }
+  return false;
+}
+function isBetween5and10(parameter) {
+  if (parameter >= 10 && parameter >= 5) {
+    return true;
+  }
+  return false;
+}
+function isShortName(parameter) {
+  if (parameter.length < 10) {
+    return true;
+  }
+  return false;
+}
+function startsWithD(parameter) {
+  if (parameter[0] === "D") {
+    return true;
+  }
+  return false;
+}
 /* 
   DO NOT EDIT BELOW THIS LINE
   --------------------------- */
