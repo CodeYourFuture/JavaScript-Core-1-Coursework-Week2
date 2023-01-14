@@ -11,7 +11,7 @@ let calculationCorrect = true;
 let moreThan10Students = false;
 
 /* 
-  DO NOT EDIT BELOW THIS LINE
+  DO NOT EDIT BELOW THIS LINEssss
   --------------------------- */
 
 console.log("Is Code Your Future great?", codeYourFutureIsGreat);
