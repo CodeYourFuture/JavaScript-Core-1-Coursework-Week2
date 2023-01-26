@@ -10,8 +10,8 @@
 
 */
 
-function mood() {
-  let isHappy = true;
+function mood(moodType) {
+ let  isHappy = (moodType === true);
 
   if (isHappy) {
     return "I am happy";
@@ -21,21 +21,25 @@ function mood() {
 }
 
 function greaterThan10(num) {
-  let isBigEnough;
+let isNotBigEnough = num < 10 ;  
 
-  if (isBigEnough) {
-    return "num is greater than 10";
-  } else {
-    return "num is not big enough";
+  if (isNotBigEnough) {   
+    return  "num is not big enough";  // 9 //
   }
-}
+  else if  (!(num > 10)) {
+     return  "num is not big enough";  // 10
+  }  
+   else {
+    return "num is greater than 10"; // greater than 10 = 96 11 
+  }
+}   // 11 10 9 96
 
 function get3rdIndex(arr) {
-  let index = 3;
-  let element;
+  let index = arr.slice(3,4);
+  let element = index[index.length -1];
 
-  return element;
-}
+return element;
+  }   //  [11, 37, 62, 18, 19, 3, 30];  ["fruit", "banana", "apple", "strawberry", "raspberry"];
 
 /* ======= TESTS - DO NOT MODIFY ===== */
 

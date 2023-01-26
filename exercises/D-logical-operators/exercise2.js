@@ -5,8 +5,28 @@
   Update the code so that you get the expected result.
 */
 
-function isNegative() {}
+function isNegative(num) {
+ if (num <= 0){
+  return true;
+ } else {
+  return false;
+ }
+}
+function isBetween5and10(num2) {
+if (num2 >= 4 && num2 <= 10) {
+  return true;
+}
+}
 
+function isShortName (nameCheck) {
+let nameLen = nameCheck.length;
+return nameLen <= 7; // max set at 7
+}
+
+function startsWithD (nameStart) {
+let firstLetter = nameStart[0];
+return firstLetter === "D"; // d = false A = false 
+}
 /* 
   DO NOT EDIT BELOW THIS LINE
   --------------------------- */
