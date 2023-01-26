@@ -13,7 +13,7 @@ if (isNaN(num)){  // Nan = none a number
   return false;
 }
 
-if (num%2 ==0 && num <= 100) {
+if (num%2 === 0 && num <= 100) {
   return true; }
   else {
     return false;
