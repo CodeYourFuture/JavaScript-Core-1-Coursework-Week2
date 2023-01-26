@@ -14,6 +14,14 @@
  */
 
 // `getAllFrequencies` goes here
+function getAllFrequencies () {
+   let array = [];
+  for (let i = 87; i < 109; i++) {
+    array.push(i); // array  starting at 87 and ending in 108
+  }
+   return  array;
+};
+//console.log(getAllFrequencies());
 
 /**
  * Next, let's write a function that gives us only the frequencies that are radio stations.
@@ -23,8 +31,12 @@
  * - Get the available frequencies from `getAllFrequencies`
  * - There is a helper function called isRadioStation that takes an integer as an argument and returns a boolean.
  * - Return only the frequencies that are radio stations.
- */
-// `getStations` goes here
+ **/
+// `getStations` goes here //
+function getStations() {
+  return getAllFrequencies();
+}
+console.log(getStations());
 
 /*
  * ======= TESTS - DO NOT MODIFY =======
@@ -44,7 +56,7 @@ function getAvailableStations() {
       }
     }
     getAvailableStations.stations.sort(function (frequencyA, frequencyB) {
-      return frequencyA - frequencyB;
+      return frequencyA - frequencyB
     });
   }
 
@@ -54,6 +66,8 @@ function getAvailableStations() {
 function isRadioStation(frequency) {
   return getAvailableStations().includes(frequency);
 }
+
+console.log(isRadioStation()); //false
 
 test("getAllFrequencies() returns all frequencies between 87 and 108", () => {
   expect(getAllFrequencies()).toEqual([
@@ -65,3 +79,4 @@ test("getAllFrequencies() returns all frequencies between 87 and 108", () => {
 test("getStations() returns all the available stations", () => {
   expect(getStations()).toEqual(getAvailableStations());
 });
+
