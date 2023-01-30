@@ -94,6 +94,6 @@ test("getStations() returns all the available stations", () => {
   expect(getStations()).toEqual(getAvailableStations());
 });
 
-getStations();
-const valid = getStations();
-console.log(valid);
+// getStations();
+// const valid = getStations();
+// console.log(valid);
