@@ -1,3 +1,4 @@
+
 /**
  * Finding a radio station, and a good one, can be hard manually.
  * Let's use some code to help us build a program that helps us scan
@@ -13,7 +14,17 @@
  * - Should return this array to use in other functions
  */
 
+
+//EXTRAS STILL INCOMPLETE!
 // `getAllFrequencies` goes here
+function getAllFrequencies() { 
+   
+  let frequencyArray = [];
+  for (let i = 87; i < 109; i++) {
+    frequencyArray.push(i);
+  }
+  return frequencyArray;
+}
 
 /**
  * Next, let's write a function that gives us only the frequencies that are radio stations.
@@ -25,6 +36,23 @@
  * - Return only the frequencies that are radio stations.
  */
 // `getStations` goes here
+function getStations() { 
+
+  let availableFrequencies = getAllFrequencies();
+  console.log(availableFrequencies);
+
+  let verifiedStation = [];
+  for (let x of availableFrequencies) {
+    if (isRadioStation(x)) {
+      console.log("Valid frequency : " + x);
+      verifiedStation.push(x);
+    } else {
+      console.log("not a valid frequency");
+    }
+
+  }
+  return verifiedStation;
+}
 
 /*
  * ======= TESTS - DO NOT MODIFY =======
@@ -65,3 +93,7 @@ test("getAllFrequencies() returns all frequencies between 87 and 108", () => {
 test("getStations() returns all the available stations", () => {
   expect(getStations()).toEqual(getAvailableStations());
 });
+
+// getStations();
+// const valid = getStations();
+// console.log(valid);

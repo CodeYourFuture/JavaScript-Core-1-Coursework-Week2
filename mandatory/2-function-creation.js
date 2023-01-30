@@ -6,7 +6,16 @@ Complete the function to check if the variable `num` satisfies the following req
 Tip: use logical operators
 */
 
-function validate(num) {}
+function validate(num) {
+
+  if (typeof (num) == "number" && num % 2 == 0 && num <= 100) {
+    return true;
+
+  }
+  else { 
+    return false;
+  }
+}
 
 /*
 Write a function that:
@@ -16,7 +25,29 @@ Write a function that:
 - numbers greater 100 must be replaced with 100
 */
 
-function formatPercentage(num) {}
+  function formatPercentage(num) {
+    let stringVal = "";
+    let numVal = 0;
+    if (typeof (num) == "number") {
+      if (num >= 100) {
+        num = 100;
+        numVal = num;
+        stringVal = numVal.toString() + "%";
+        return stringVal;
+      }
+      else { 
+        numVal = num.toFixed(2);
+        stringVal = parseFloat(numVal.toString()) + "%";
+        return stringVal;
+      }
+    }
+    else if (typeof (num) == "string") {
+      return "Not a number. Cant help you, soz";
+      
+    } else { 
+      return "No string or number passed as argument!";
+    }
+}
 
 /*
 Write a function that:
@@ -25,7 +56,18 @@ Write a function that:
 - removes any forward slashes (/) in each string
 - makes all strings all lowercase
 */
-function tidyUpStrings(arrayOfStrings) {}
+function tidyUpStrings(arrayOfStrings) {
+
+  for (let i = 0; i < arrayOfStrings.length; i++) { 
+    arrayOfStrings[i] = arrayOfStrings[i].trim();
+    arrayOfStrings[i] = arrayOfStrings[i].replace('/','');
+    arrayOfStrings[i] = arrayOfStrings[i].toLowerCase();
+  }
+  
+
+  return arrayOfStrings;
+
+}
 
 /* ======= TESTS - DO NOT MODIFY ===== */
 
@@ -66,26 +108,26 @@ test.each([
   expect(formatPercentage(input)).toEqual(expected);
 });
 
-test("tidyUpString function works", () => {
-  expect(
-    tidyUpStrings([
-      "/Daniel",
-      " /Sanyia",
-      "AnTHonY",
+  test("tidyUpString function works", () => {
+    expect(
+      tidyUpStrings([
+        "/Daniel",
+        " /Sanyia",
+        "AnTHonY",
+        "irina",
+        " Gordon",
+        "ashleigh   ",
+        "   Alastair  ",
+        " anne marie  ",
+      ])
+    ).toEqual([
+      "daniel",
+      "sanyia",
+      "anthony",
       "irina",
-      " Gordon",
-      "ashleigh   ",
-      "   Alastair  ",
-      " anne marie  ",
-    ])  
-  ).toEqual([
-    "daniel",
-    "sanyia",
-    "anthony",
-    "irina",
-    "gordon",
-    "ashleigh",
-    "alastair",
-    "anne marie",
-  ]); 
-});
+      "gordon",
+      "ashleigh",
+      "alastair",
+      "anne marie",
+    ]);
+  });
