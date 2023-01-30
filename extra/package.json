@@ -1,0 +1,15 @@
+{
+  "name": "extra",
+  "version": "1.0.0",
+  "description": "",
+  "main": "1-radio-stations.js",
+  "scripts": {
+    "test": "yo test dont work boy"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^29.4.1"
+  }
+}

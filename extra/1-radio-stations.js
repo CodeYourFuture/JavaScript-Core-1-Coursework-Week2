@@ -38,7 +38,8 @@ function getAllFrequencies() {
 // `getStations` goes here
 function getStations() { 
 
-  isRadioStation(getAllFrequencies());
+  let availableFrequencies = getAllFrequencies();
+  isRadioStation(availableFrequencies);
 }
 
 /*
