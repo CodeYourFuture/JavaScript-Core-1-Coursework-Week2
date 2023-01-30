@@ -39,7 +39,19 @@ function getAllFrequencies() {
 function getStations() { 
 
   let availableFrequencies = getAllFrequencies();
-  isRadioStation(availableFrequencies);
+  console.log(availableFrequencies);
+
+  let verifiedStation = [];
+  for (let x of availableFrequencies) {
+    if (isRadioStation(x)) {
+      console.log("Valid frequency : " + x);
+      verifiedStation.push(x);
+    } else {
+      console.log("not a valid frequency");
+    }
+
+  }
+  return verifiedStation;
 }
 
 /*
@@ -81,3 +93,7 @@ test("getAllFrequencies() returns all frequencies between 87 and 108", () => {
 test("getStations() returns all the available stations", () => {
   expect(getStations()).toEqual(getAvailableStations());
 });
+
+getStations();
+const valid = getStations();
+console.log(valid);
