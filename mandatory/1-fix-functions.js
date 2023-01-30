@@ -10,7 +10,7 @@
 
 */
 
-function mood() {
+function mood(isHappy) {
   let isHappy = true;
 
   if (isHappy) {
@@ -21,7 +21,7 @@ function mood() {
 }
 
 function greaterThan10(num) {
-  let isBigEnough;
+  let isBigEnough = num > 10;
 
   if (isBigEnough) {
     return "num is greater than 10";
@@ -30,9 +30,9 @@ function greaterThan10(num) {
   }
 }
 
-function get3rdIndex(arr) {
+function get3rdIndex(arr) { // comment: I don't understand this question
   let index = 3;
-  let element;
+  let element = arr[index];
 
   return element;
 }
