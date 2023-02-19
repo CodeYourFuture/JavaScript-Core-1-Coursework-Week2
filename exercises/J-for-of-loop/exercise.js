@@ -4,3 +4,8 @@
 
 // TODO Use a for-of loop to capitalise and output each letter in the string seperately.
 let str = "codeyourfuture";
+
+for (const char of str) {
+    console.log(char.toUpperCase());
+    
+}
