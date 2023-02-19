@@ -6,7 +6,21 @@ Complete the function to check if the variable `num` satisfies the following req
 Tip: use logical operators
 */
 
-function validate(num) {}
+function validate(num) {
+  if (typeof(num) == 'string') {
+    return false
+  } else {
+  if (num <= 100) {
+    if (num % 2 === 0) {
+      return true;
+    } else {
+      return false;
+    }
+  }  else {
+      return false;
+  }
+}
+}
 
 /*
 Write a function that:
@@ -16,7 +30,14 @@ Write a function that:
 - numbers greater 100 must be replaced with 100
 */
 
-function formatPercentage(num) {}
+function formatPercentage(num) {
+  if (num > 100) {
+    let num = 100;
+  return `${num}%`;
+  } else { 
+    return `${Math.round(num * 100) / 100}%`;
+  }
+}
 
 /*
 Write a function that:
