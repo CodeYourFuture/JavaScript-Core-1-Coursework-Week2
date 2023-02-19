@@ -6,8 +6,19 @@
 */
 
 function evenNumbers(n) {
-    // TODO
+    let result = [];
+    let currentNumber = 0;
+    while (currentNumber < n) {
+        result.push(currentNumber * 2);
+        currentNumber++;
+    }
+    result = result.toString()
+    console.log(result);
+
+
+    return result;
 }
+
 
 evenNumbers(3); // should output 0,2,4
 evenNumbers(0); // should output nothing
