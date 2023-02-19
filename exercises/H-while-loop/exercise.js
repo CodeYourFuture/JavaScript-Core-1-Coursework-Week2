@@ -5,7 +5,7 @@
     The list of numbers should start with 0. n is being passed in as a parameter.
 */
 
-function evenNumbers(n) {
+function evenNumbers(number) {
     let result = [];
     let currentNumber = 0;
     while (currentNumber < n) {
