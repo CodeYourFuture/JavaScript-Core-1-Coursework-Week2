@@ -8,6 +8,16 @@
 
 function evenNumbersSum(n) {
     // TODO
+    let sum = 0; 
+    let i = 0;
+    
+    do { 
+        sum += i;
+        i += 2;
+
+    } while (i < 2 * n);
+
+    return sum;
 }
 
 console.log(evenNumbersSum(3)); // should output 6
