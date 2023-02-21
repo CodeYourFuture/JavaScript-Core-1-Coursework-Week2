@@ -7,10 +7,7 @@ and for multiples of '5' and '3' print "FizzBuzz".
 //* this exercise is for practicing "Conditionals: if-without-else , for" and "Logical Operators" and also "Comparison : ==="!
 */
 function fizzBuzz (number){
-    if (number % 3 === 0 && number % 5 === 0) return "FizzBuzz";
-    if (number % 3 === 0) return "Fizz";
-    if (number % 5 === 0) return "Buzz";
-    return number;
+
   }
   console.log(fizzBuzz(1));
   console.log(fizzBuzz(3));
@@ -30,8 +27,7 @@ function fizzBuzz (number){
   complete function to check if user is acceptable or not acceptable (+18 years old is acceptable!):
   */ 
   function isAcceptableUser(userAge,isLoggedIn){
-    let isAcceptable = userAge>18 && isLoggedIn;
-    return(isAcceptable);  
+ 
   }
   console.log(isAcceptableUser(21,true));
   
@@ -40,13 +36,7 @@ function fizzBuzz (number){
   */
  
   function applyDiscount(totalPrice){
-      let discountPercent;
-      if (totalPrice>200) {
-          discountPercent = 10;
-      }else{
-          discountPercent = 5;    
-      }
-      return (totalPrice-(totalPrice*discountPercent)/100);
+      
   }
   applyDiscount(120);
   applyDiscount(280);
@@ -55,14 +45,7 @@ function fizzBuzz (number){
   complete function to print odd numbers between 1 to limitNumber with while loop:
   */
   function printOddNumbers(limit){
-    let i = 1;
-    while(i<=limit){
-        
-        if(i%2!==0){
-            console.log(i);
-        }
-        i+=1;
-    }
+    
   }
   printOddNumbers(10);
   
@@ -70,8 +53,7 @@ function fizzBuzz (number){
   complete buyTwoGetTheCheapestFree Function: if user buy two items, cheapest item will be free!
   */
   function buyTwoGetTheCheapestFree(price1,price2){
-    if (price1>price2) return price1;
-    return price2; 
+  
   }
   buyTwoGetTheCheapestFree(700,500);
   /*
@@ -79,8 +61,7 @@ function fizzBuzz (number){
   */
   function productColor(selectedColor){
       
-    let defaulColor = "purple";
-    return selectedColor||defaulColor;
+  
   }
   productColor("pink");
   productColor();
@@ -89,32 +70,20 @@ function fizzBuzz (number){
   complete function to print mood: happy/not happy.
   */
   function mood(isHappy) {
-    if (isHappy) {
-      return 'I am happy';
-    } else {
-      return 'I am not happy';
-    }
+
   }
   /*
   complete function to determine if it is suitable for person to register based on his age!
+  age < 12 --> "Too Young To Register",
+  12 < age < 90  --> "You Can Register",
+  age > 90 --> "You Don't Need To Register"
   */
   function canRegister(age) {
-    if (age<12){
-      return "You Are Too Young To Register";
-    }
-    else if(age>12 && age<90){
-      return "You Can Register";
-    }
-    else{
-      return "You Don't Need To Register";
-    }
+
   }
   
   function countReverse(num){
-    while(num>0){
-        console.log(num);
-        num = num-1;
-    }
+  
   }
   countReverse(20);
   
@@ -137,7 +106,7 @@ function fizzBuzz (number){
   });
 
  test("isAcceptableUser function retern user is allowed or not", () => {
-      expect(isAcceptableUser(21,true)).toEqual(true,false);
+      expect(isAcceptableUser(21,true)).toEqual(true);
   });
 
  test("applyDiscount function retern price after discount", () => {
