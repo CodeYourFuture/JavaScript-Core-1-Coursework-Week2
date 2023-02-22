@@ -39,7 +39,9 @@ Write a function that:
 - makes all strings all lowercase
 */
 function tidyUpStrings(arrayOfStrings) {
-  
+  return arrayOfStrings.map((str) =>
+    str.trim().replace(/\//g, "").toLowerCase()
+  );
 }
 
 /* ======= TESTS - DO NOT MODIFY ===== */
