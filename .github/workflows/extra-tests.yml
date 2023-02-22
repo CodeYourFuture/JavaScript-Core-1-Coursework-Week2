@@ -7,8 +7,8 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
-    - name: Install modules
-      run: npm install
-    - name: Run extra tests
-      run: npm run extra-tests
+      - uses: actions/checkout@v2
+      - name: Install modules
+        run: npm install
+      - name: Run extra tests
+        run: npm test -- --selectProjects extra
