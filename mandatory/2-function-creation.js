@@ -1,40 +1,44 @@
-/*
-  Complete the function to return a boolean describing whether a user is acceptable. 
-  To be acceptable, two conditions must be fulfilled
-    1. the user should be 18 or older
-    2. the user must be logged in
-*/
-function isAcceptableUser(userAge, isLoggedIn) {}
 
-/*
-  Complete the function to apply discount percent based on how much is totalPrice in user cart.
-    - When the total price is greater than 200, a 10% discount should be applied
-    - When the total price is less than 200, a 5% discount should be applied
+function isAcceptableUser(userAge, isLoggedIn) {
+  if(userAge>=18 && isLoggedIn)
+    return isLoggedIn;
+   else
+    return false;
+}
 
-  The function should return the new price to be paid (e.g. if the totalPrice is 150, a 5% discount
-    is applieds and 142.5 should be returned)
-*/
 
-function applyDiscount(totalPrice) {}
+function applyDiscount(totalPrice) {
+  if(totalPrice>200){
+    totalPrice -= (totalPrice*0.1);
+    return totalPrice;
+  }
+  if(totalPrice<200){
+    totalPrice -=(totalPrice*0.05);
+    return totalPrice;
+  }
+}
 
-/*
-  Complete the function to print to the console the odd numbers between 1 and limit (use a while loop):
-  */
-function printOddNumbers(limit) {}
 
-/*
-  Complete the buyTwoGetTheCheapestFree function: if user buys two items, the cheapest item will be free!
-  The function should return the price to be paid once the discount is applied.
-*/
-function buyTwoGetTheCheapestFree(price1, price2) {}
+function printOddNumbers(limit) {
+  let num=1;
+  while(num<=limit){
+  console.log(num)
+  num++;
+ 
+  }
+}
 
-/*
-  Complete the function to determine if it is suitable for a person to register based on their age!
-  - if the person is 12 or younger it should return "You Are Too Young To Register"
-  - if the person is older than 12 and younger than 90 it should return "You Can Register"
-  - if the person is 90 or older it should return "You Don't Need To Register"
-*/
-function canRegister(age) {}
+
+function buyTwoGetTheCheapestFree(price1, price2) {
+ return price1>price2? price1: price2;
+}
+
+function canRegister(age) {
+
+ return age<=12 ? "You Are Too Young To Register"
+        : 12<age && age<90 ? "You Can Register" 
+        :"You Don't Need To Register";
+}
 
 /*
   Complete the function so that it prints out to the console numbers in reverse order starting at
@@ -45,7 +49,13 @@ function canRegister(age) {}
   )
 */
 
-function countReverse(number) {}
+function countReverse(number) {
+  if(number>=1){
+    console.log(number);
+    number-=1;
+     countReverse(number);
+}
+}
 
 /* ======= TESTS - DO NOT MODIFY ===== */
 
@@ -140,17 +150,33 @@ describe("countReverse", () => {
   test("countReverse function logs values from 7 to 1", () => {
     const consoleLogSpy = jest.spyOn(console, "log");
 
-    expect(consoleLogSpy).toBeCalledWith(7);
-    expect(consoleLogSpy).toBeCalledWith(6);
-    expect(consoleLogSpy).toBeCalledWith(5);
-    expect(consoleLogSpy).toBeCalledWith(4);
-    expect(consoleLogSpy).toBeCalledWith(3);
-    expect(consoleLogSpy).toBeCalledWith(2);
-    expect(consoleLogSpy).toBeCalledWith(1);
+    countReverse(7);
+    expect(consoleLogSpy).toHaveBeenNthCalledWith(1,7);
+    expect(consoleLogSpy).toHaveBeenNthCalledWith(2,6);
+    expect(consoleLogSpy).toHaveBeenNthCalledWith(3,5);
+    expect(consoleLogSpy).toHaveBeenNthCalledWith(4,4);
+    expect(consoleLogSpy).toHaveBeenNthCalledWith(5,3);
+    expect(consoleLogSpy).toHaveBeenNthCalledWith(6,2);
+    expect(consoleLogSpy).toHaveBeenNthCalledWith(7,1);
 
     consoleLogSpy.mockRestore();
   });
 });
+// describe("countReverse", () => {
+//   test("countReverse function logs values from 7 to 1", () => {
+//     const consoleLogSpy = jest.spyOn(console, "log");
+
+//     expect(consoleLogSpy).toBeCalledWith(7);
+//     expect(consoleLogSpy).toBeCalledWith(6);
+//     expect(consoleLogSpy).toBeCalledWith(5);
+//     expect(consoleLogSpy).toBeCalledWith(4);
+//     expect(consoleLogSpy).toBeCalledWith(3);
+//     expect(consoleLogSpy).toBeCalledWith(2);
+//     expect(consoleLogSpy).toBeCalledWith(1);
+
+//     consoleLogSpy.mockRestore();
+//   });
+// });
 
 /*
 CHECK OUT solutions.md FOR MORE INFO ON OUR SOLUTION
