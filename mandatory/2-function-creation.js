@@ -22,8 +22,11 @@ function applyDiscount(totalPrice) {
 function printOddNumbers(limit) {
   let num=1;
   while(num<=limit){
-  console.log(num)
+    if(num%2==1){
+      console.log(num)
+    }
   num++;
+  
  
   }
 }
@@ -39,15 +42,6 @@ function canRegister(age) {
         : 12<age && age<90 ? "You Can Register" 
         :"You Don't Need To Register";
 }
-
-/*
-  Complete the function so that it prints out to the console numbers in reverse order starting at
-  number and going down to 1 (e.g. if number was 3, it would print:
-    3
-    2
-    1
-  )
-*/
 
 function countReverse(number) {
   if(number>=1){
@@ -100,11 +94,11 @@ describe("printOddNumbers", () => {
     const consoleLogSpy = jest.spyOn(console, "log");
 
     printOddNumbers(10);
-    expect(consoleLogSpy).toBeCalledWith(1);
-    expect(consoleLogSpy).toBeCalledWith(3);
-    expect(consoleLogSpy).toBeCalledWith(5);
-    expect(consoleLogSpy).toBeCalledWith(7);
-    expect(consoleLogSpy).toBeCalledWith(9);
+      expect(consoleLogSpy).toHaveBeenNthCalledWith(1,1);
+    expect(consoleLogSpy).toHaveBeenNthCalledWith(2,3);
+    expect(consoleLogSpy).toHaveBeenNthCalledWith(3,5);
+    expect(consoleLogSpy).toHaveBeenNthCalledWith(4,7);
+    expect(consoleLogSpy).toHaveBeenNthCalledWith(5,9);
 
     consoleLogSpy.mockRestore();
   });
