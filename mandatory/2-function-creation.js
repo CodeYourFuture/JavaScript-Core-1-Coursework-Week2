@@ -90,11 +90,11 @@ describe("printOddNumbers", () => {
     const consoleLogSpy = jest.spyOn(console, "log");
 
     printOddNumbers(10);
-    expect(consoleLogSpy).toBeCalledWith(1);
-    expect(consoleLogSpy).toBeCalledWith(3);
-    expect(consoleLogSpy).toBeCalledWith(5);
-    expect(consoleLogSpy).toBeCalledWith(7);
-    expect(consoleLogSpy).toBeCalledWith(9);
+    expect(consoleLogSpy).toHaveBeenNthCalledWith(1,1);
+    expect(consoleLogSpy).toHaveBeenNthCalledWith(2,3);
+    expect(consoleLogSpy).toHaveBeenNthCalledWith(3,5);
+    expect(consoleLogSpy).toHaveBeenNthCalledWith(4,7);
+    expect(consoleLogSpy).toHaveBeenNthCalledWith(5,9);
 
     consoleLogSpy.mockRestore();
   });
@@ -140,13 +140,14 @@ describe("countReverse", () => {
   test("countReverse function logs values from 7 to 1", () => {
     const consoleLogSpy = jest.spyOn(console, "log");
 
-    expect(consoleLogSpy).toBeCalledWith(7);
-    expect(consoleLogSpy).toBeCalledWith(6);
-    expect(consoleLogSpy).toBeCalledWith(5);
-    expect(consoleLogSpy).toBeCalledWith(4);
-    expect(consoleLogSpy).toBeCalledWith(3);
-    expect(consoleLogSpy).toBeCalledWith(2);
-    expect(consoleLogSpy).toBeCalledWith(1);
+    countReverse(7);
+    expect(consoleLogSpy).toHaveBeenNthCalledWith(1,7);
+    expect(consoleLogSpy).toHaveBeenNthCalledWith(2,6);
+    expect(consoleLogSpy).toHaveBeenNthCalledWith(3,5);
+    expect(consoleLogSpy).toHaveBeenNthCalledWith(4,4);
+    expect(consoleLogSpy).toHaveBeenNthCalledWith(5,3);
+    expect(consoleLogSpy).toHaveBeenNthCalledWith(6,2);
+    expect(consoleLogSpy).toHaveBeenNthCalledWith(7,1);
 
     consoleLogSpy.mockRestore();
   });
