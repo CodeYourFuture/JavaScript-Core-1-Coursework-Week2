@@ -20,7 +20,7 @@ function getMood() {
   }
 }
 
-function greaterThan10(num) { 
+function greaterThan10(num) {
   let isBigEnough;
 
   if (isBigEnough) {
@@ -32,35 +32,30 @@ function greaterThan10(num) {
 
 /* ======= TESTS - DO NOT MODIFY ===== */
 
-
-describe('getMood',() => {
+describe("getMood", () => {
   test("getMood function works for true", () => {
     expect(getMood(true)).toEqual("I am happy");
   });
-  
+
   test("getMood function works for false", () => {
     expect(getMood(false)).toEqual("I am not happy");
   });
-})
+});
 
-describe('greaterThanTen',() => {
+describe("greaterThanTen", () => {
   test("works for value greater than 10", () => {
     expect(greaterThan10(11)).toEqual("num is greater than 10");
   });
-  
+
   test("works for value much greater than 10", () => {
     expect(greaterThan10(96)).toEqual("num is greater than 10");
   });
-  
+
   test("works for value less than 10", () => {
     expect(greaterThan10(9)).toEqual("num is not big enough");
   });
-  
+
   test("works for value equal to 10", () => {
     expect(greaterThan10(10)).toEqual("num is not big enough");
   });
-})
- 
-
-
-
+});
