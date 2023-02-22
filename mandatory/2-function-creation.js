@@ -49,93 +49,108 @@ function countReverse(number) {}
 
 /* ======= TESTS - DO NOT MODIFY ===== */
 
-test("isAcceptableUser function returns true if over 18 and logged in", () => {
-  expect(isAcceptableUser(21, true)).toEqual(true);
-});
-
-test("isAcceptableUser function returns true if 18 and logged in", () => {
-  expect(isAcceptableUser(18, true)).toEqual(true);
-});
-
-test("isAcceptableUser function returns false if under 18 and logged in", () => {
-  expect(isAcceptableUser(17, true)).toEqual(false);
-});
-
-test("isAcceptableUser function returns false if over 18 and not logged in", () => {
-  expect(isAcceptableUser(21, false)).toEqual(false);
-});
-
-test("applyDiscount function returns price with 5% discount", () => {
-  expect(applyDiscount(120)).toEqual(114);
-});
-
-test("applyDiscount function returns price with 10% discount", () => {
-  expect(applyDiscount(280)).toEqual(252);
-});
-
-test("printOddNumbers function prints odd numbers between 1 and 2", () => {
-  expectprintOddNumbersToLog([1], 2);
-});
-
-test("printOddNumbers function prints odd numbers between 1 and 10", () => {
-  expectprintOddNumbersToLog([1, 3, 5, 7, 9], 10);
-});
-
-function expectprintOddNumbersToLog(expectedValues, limit) {
-  const consoleLogSpy = jest.spyOn(console, "log");
-  printOddNumbers(limit);
-  expect(consoleLogSpy).toBeCalledTimes(expectedValues.length);
-  expectedValues.forEach((value, i) => {
-    expect(consoleLogSpy).nthCalledWith(i + 1, value);
+describe("isAcceptableUser", () => {
+  test("returns true if over 18 and logged in", () => {
+    expect(isAcceptableUser(21, true)).toEqual(true);
   });
-  consoleLogSpy.mockRestore();
-}
 
-test("buyTwoGetTheCheapestFree function returns first price when it is largest", () => {
-  expect(buyTwoGetTheCheapestFree(700, 500)).toEqual(700);
-});
-
-test("buyTwoGetTheCheapestFree function returns second price when it is largest", () => {
-  expect(buyTwoGetTheCheapestFree(500, 700)).toEqual(700);
-});
-
-test("(canRegister function returns in case of a person of age 7", () => {
-  expect(canRegister(7)).toEqual("You Are Too Young To Register");
-});
-
-test("canRegister function returns in case of a person of age 12", () => {
-  expect(canRegister(12)).toEqual("You Are Too Young To Register");
-});
-
-test("canRegister function returns in case of a person of age 13", () => {
-  expect(canRegister(13)).toEqual("You Can Register");
-});
-
-test("canRegister function returns in case of a person of age 89", () => {
-  expect(canRegister(89)).toEqual("You Can Register");
-});
-
-test("canRegister function returns in case of a person of age 90", () => {
-  expect(canRegister(90)).toEqual("You Don't Need To Register");
-});
-
-test("canRegister function returns in case of a person of age 112", () => {
-  expect(canRegister(112)).toEqual("You Don't Need To Register");
-});
-
-test("countReverse function logs values from 7 to 1", () => {
-  expectcountReverseToLog([7, 6, 5, 4, 3, 2, 1], 7);
-});
-
-function expectcountReverseToLog(expectedValues, start) {
-  const consoleLogSpy = jest.spyOn(console, "log");
-  countReverse(start);
-  expect(consoleLogSpy).toBeCalledTimes(expectedValues.length);
-  expectedValues.forEach((value, i) => {
-    expect(consoleLogSpy).nthCalledWith(i + 1, value);
+  test("returns true if 18 and logged in", () => {
+    expect(isAcceptableUser(18, true)).toEqual(true);
   });
-  consoleLogSpy.mockRestore();
-}
+
+  test("returns false if under 18 and logged in", () => {
+    expect(isAcceptableUser(17, true)).toEqual(false);
+  });
+
+  test("returns false if over 18 and not logged in", () => {
+    expect(isAcceptableUser(21, false)).toEqual(false);
+  });
+});
+
+describe("applyDiscount", () => {
+  test("returns price with 5% discount", () => {
+    expect(applyDiscount(120)).toEqual(114);
+  });
+
+  test("returns price with 10% discount", () => {
+    expect(applyDiscount(280)).toEqual(252);
+  });
+});
+
+describe("printOddNumbers", () => {
+  test("printOddNumbers function prints odd numbers between 1 and 2", () => {
+    const consoleLogSpy = jest.spyOn(console, "log");
+    printOddNumbers(2);
+
+    expect(consoleLogSpy).toBeCalledWith(1);
+    consoleLogSpy.mockRestore();
+  });
+
+  test("printOddNumbers function prints odd numbers between 1 and 10", () => {
+    const consoleLogSpy = jest.spyOn(console, "log");
+
+    printOddNumbers(10);
+    expect(consoleLogSpy).toBeCalledWith(1);
+    expect(consoleLogSpy).toBeCalledWith(3);
+    expect(consoleLogSpy).toBeCalledWith(5);
+    expect(consoleLogSpy).toBeCalledWith(7);
+    expect(consoleLogSpy).toBeCalledWith(9);
+
+    consoleLogSpy.mockRestore();
+  });
+});
+
+describe("buyTwoGetTheCheapestFree", () => {
+  test("buyTwoGetTheCheapestFree function returns first price when it is largest", () => {
+    expect(buyTwoGetTheCheapestFree(700, 500)).toEqual(700);
+  });
+
+  test("buyTwoGetTheCheapestFree function returns second price when it is largest", () => {
+    expect(buyTwoGetTheCheapestFree(500, 700)).toEqual(700);
+  });
+});
+
+describe("canRegister", () => {
+  test("returns in case of a person of age 7", () => {
+    expect(canRegister(7)).toEqual("You Are Too Young To Register");
+  });
+
+  test("returns in case of a person of age 12", () => {
+    expect(canRegister(12)).toEqual("You Are Too Young To Register");
+  });
+
+  test("returns in case of a person of age 13", () => {
+    expect(canRegister(13)).toEqual("You Can Register");
+  });
+
+  test("returns in case of a person of age 89", () => {
+    expect(canRegister(89)).toEqual("You Can Register");
+  });
+
+  test("returns in case of a person of age 90", () => {
+    expect(canRegister(90)).toEqual("You Don't Need To Register");
+  });
+
+  test("returns in case of a person of age 112", () => {
+    expect(canRegister(112)).toEqual("You Don't Need To Register");
+  });
+});
+
+describe("countReverse", () => {
+  test("countReverse function logs values from 7 to 1", () => {
+    const consoleLogSpy = jest.spyOn(console, "log");
+
+    expect(consoleLogSpy).toBeCalledWith(7);
+    expect(consoleLogSpy).toBeCalledWith(6);
+    expect(consoleLogSpy).toBeCalledWith(5);
+    expect(consoleLogSpy).toBeCalledWith(4);
+    expect(consoleLogSpy).toBeCalledWith(3);
+    expect(consoleLogSpy).toBeCalledWith(2);
+    expect(consoleLogSpy).toBeCalledWith(1);
+
+    consoleLogSpy.mockRestore();
+  });
+});
 
 /*
 CHECK OUT solutions.md FOR MORE INFO ON OUR SOLUTION

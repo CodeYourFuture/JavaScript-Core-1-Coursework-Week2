@@ -9,19 +9,21 @@
 */
 
 function factorial(input) {
-    // TODO
+  // TODO
 }
 
 /* ======= TESTS - DO NOT MODIFY ===== */
 
-test("3! should be 6", () => {
+describe("factorial", () => {
+  test("3! should be 6", () => {
     expect(factorial(3)).toEqual(6);
-});
+  });
 
-test("5! should be 120", () => {
+  test("5! should be 120", () => {
     expect(factorial(5)).toEqual(120);
-});
+  });
 
-test("10! should be 3628800", () => {
+  test("10! should be 3628800", () => {
     expect(factorial(10)).toEqual(3628800);
+  });
 });
