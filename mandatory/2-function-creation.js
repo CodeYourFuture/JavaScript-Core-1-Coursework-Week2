@@ -33,7 +33,7 @@ let discount;
 if(totalPrice>200){
   discount = 0.1;
 } else{
-  discount = 0.5;
+  discount = 0.05;
 }
 const discountAmount =totalPrice *discount;
 const discountLast = totalPrice - discountAmount;
