@@ -10,8 +10,8 @@
 
 */
 
-function getMood() {
-  let isHappy = true;
+function getMood( isHappy ) {
+  
 
   if (isHappy) {
     return "I am happy";
@@ -21,16 +21,16 @@ function getMood() {
 }
 
 function greaterThan10(num) {
-  let isBigEnough;
+  let isBigEnough=10;
 
-  if (isBigEnough) {
+  if (num>isBigEnough) {
     return "num is greater than 10";
   } else {
     return "num is not big enough";
   }
 }
 
-/* ======= TESTS - DO NOT MODIFY ===== */
+/* ======= TESTS - DO NOT MODIFY ===== npm test -- --testPathPattern mandatory/1-fix-functions.js */
 
 describe("getMood", () => {
   test("getMood function works for true", () => {
