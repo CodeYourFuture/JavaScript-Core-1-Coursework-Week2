@@ -28,7 +28,7 @@ const f2 = function (a, b) {
 
 console.log(x);
 console.log(a);
-console.log(b);
+//console.log(b);
 
 for (let i = 0; i < 5; ++i) {
   a = a + 1;
@@ -40,3 +40,13 @@ for (let i = 0; i < 5; ++i) {
     console.log(e);
   }
 }
+
+/* 
+1. "console.log(b);" gives an error because b variable is not defined.
+2. Commented the line that throws the error.
+3. 2/6/4/9/6/13/8
+4. 2 times
+5. 3 times
+6. It is 1, same as i
+7. It takes 8, second action of loop adds 2 to a
+*/
