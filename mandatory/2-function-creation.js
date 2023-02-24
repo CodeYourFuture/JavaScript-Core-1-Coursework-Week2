@@ -21,18 +21,42 @@ function isAcceptableUser(userAge, isLoggedIn) {
     is applieds and 142.5 should be returned)
 */
 
-function applyDiscount(totalPrice) {}
+function applyDiscount(totalPrice) {
+  if (totalPrice >= 200) {
+    return totalPrice - (totalPrice * 0.1);
+  } else {
+    return totalPrice - (totalPrice * 0.05);
+  }
+}
 
 /*
   Complete the function to print to the console the odd numbers between 1 and limit (use a while loop):
   */
-function printOddNumbers(limit) {}
+function printOddNumbers(limit) {
+  let count = 1;
+
+  while (count < limit) {
+    if (count % 2 === 1) {
+    console.log(count);
+    }
+    count = count + 1;
+  }
+}
 
 /*
   Complete the buyTwoGetTheCheapestFree function: if user buys two items, the cheapest item will be free!
   The function should return the price to be paid once the discount is applied.
 */
-function buyTwoGetTheCheapestFree(price1, price2) {}
+function buyTwoGetTheCheapestFree(price1, price2) {
+    if (price1 && price2) {
+        if (price1 >= price2) {
+            return price1;
+        } else if (price2 >= price1) {
+            return price2;
+        }
+    }
+  }
+
 
 /*
   Complete the function to determine if it is suitable for a person to register based on their age!
