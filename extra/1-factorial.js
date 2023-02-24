@@ -9,8 +9,17 @@
 */
 
 function factorial(input) {
-  // TODO
-}
+  let lastNumber = 1;
+  if (input == 0 || input == 1){
+    return lastNumber
+  } else if(input > 1){
+    for (var i=input; i >= 1; i--){
+      lastNumber = lastNumber * [i];
+  }
+  return  lastNumber
+  }
+  }
+
 
 /* ======= TESTS - DO NOT MODIFY ===== */
 
