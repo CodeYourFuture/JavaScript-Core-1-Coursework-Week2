@@ -4,7 +4,15 @@
     1. the user should be 18 or older
     2. the user must be logged in
 */
-function isAcceptableUser(userAge, isLoggedIn) {}
+
+function isAcceptableUser(userAge, isLoggedIn) {
+  
+if(userAge>=18 && isLoggedIn===true){
+return true;
+}else{
+  return false;
+}
+};
 
 /*
   Complete the function to apply discount percent based on how much is totalPrice in user cart.
@@ -15,12 +23,29 @@ function isAcceptableUser(userAge, isLoggedIn) {}
     is applieds and 142.5 should be returned)
 */
 
-function applyDiscount(totalPrice) {}
+function applyDiscount(totalPrice) {
+  
+  if(totalPrice>200){
+    let newprice=totalPrice-((totalPrice*10)/100);
+    return newprice;
+  }else if(totalPrice<200){
+    let newprice=totalPrice-((totalPrice*5)/100);
+    return newprice;
+
+  }
+  
+}
 
 /*
   Complete the function to print to the console the odd numbers between 1 and limit (use a while loop):
   */
-function printOddNumbers(limit) {}
+function printOddNumbers(limit) {
+  let num=1;
+  while(num<limit){
+    console.log(num);
+    num=num+2;
+  }
+}
 
 /*
   Complete the buyTwoGetTheCheapestFree function: if user buys two items, the cheapest item will be free!
