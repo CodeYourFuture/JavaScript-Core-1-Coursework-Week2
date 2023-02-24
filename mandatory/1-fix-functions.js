@@ -11,14 +11,11 @@
 */
 
 function getMood(isHappy) {
-  if (isHappy ===true){
-
-  
+ if (isHappy === true) {
     return "I am happy";
   } else {
-    
     return "I am not happy";
-  }
+  } 
 }
 
 function greaterThan10(num) {
