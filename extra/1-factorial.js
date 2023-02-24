@@ -11,8 +11,8 @@
 
 function factorial(input) {
   let factorial=1;
-  while (input>1){
-    factorial*=input;
+  for (let i=1; i<=input; i++){
+    factorial*=i;
   }
   return factorial;
 }
