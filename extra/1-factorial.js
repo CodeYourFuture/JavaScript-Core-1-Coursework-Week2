@@ -10,6 +10,15 @@
 
 function factorial(input) {
   // TODO
+  if (input === 0 || input === 1) {
+    return 1;
+  } else {
+    let result = 1;
+    for (let i = 2; i <= input; i++) {
+      result *= i;
+    }
+    return result;
+  }
 }
 
 /* ======= TESTS - DO NOT MODIFY ===== */
