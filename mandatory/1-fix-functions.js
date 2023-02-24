@@ -1,6 +1,6 @@
 /* Fix Functions
 
-  Aim: to understand the change code inside functions 
+  Aim: to understand the change code inside functions
 
   See the below functions. They are syntactically correct but are not outputting the right results.
 
@@ -10,10 +10,10 @@
 
 */
 
-function getMood() {
-  let isHappy = true;
+function getMood(isHappy ) {
 
-  if (isHappy) {
+
+  if (isHappy === true ) {
     return "I am happy";
   } else {
     return "I am not happy";
@@ -21,9 +21,10 @@ function getMood() {
 }
 
 function greaterThan10(num) {
-  let isBigEnough;
 
-  if (isBigEnough) {
+  let isBigEnough = num ;
+
+  if (isBigEnough > 10 ) {
     return "num is greater than 10";
   } else {
     return "num is not big enough";
