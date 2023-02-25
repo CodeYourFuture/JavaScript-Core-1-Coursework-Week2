@@ -9,8 +9,23 @@
 */
 
 function factorial(input) {
-  // TODO
+   if (input === 0 || input === 1)
+    return 1;
+    for (let i = input - 1; i >= 1; i--) {
+     input = input * i; 
+      }
+  return input;
 }
+  // const result = input;
+  // if (input === 0 || input === 1) 
+  //   return 1; 
+  // while (input > 1) { 
+  //   input--;
+  // }
+  // return result;
+
+  // TODO
+
 
 /* ======= TESTS - DO NOT MODIFY ===== */
 
