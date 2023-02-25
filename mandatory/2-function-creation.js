@@ -37,18 +37,15 @@ function applyDiscount(totalPrice) {
   Complete the function to print to the console the odd numbers between 1 and limit (use a while loop):
 */
 
-///////////////// HELPPPP!!!!!!! /////////////////////////////
-let lowNumber = 1;
+
 
 function printOddNumbers(limit) {
+  let lowNumber = 1;
   while (lowNumber < limit) {
-    if (lowNumber % 2 === 0){
-    console.log(lowNumber)
-    }
-  lowNumber = lowNumber + 1;
+    console.log(lowNumber);
+  lowNumber = lowNumber + 2;
   }
 }
-//////////////////////////////////////////////////////////////
 
 
 /*
@@ -93,15 +90,14 @@ function canRegister(age) {
   )
 */
 
-/////////////////////// HELP!! ////////////////////////////////////
 function countReverse(number) {
-  while (number > 0 && number <= 10) {
-    console.log(number);
-    number = number -1;
+  let count = number;
+  while (count > 0 && count <= number) {
+    console.log(count);
+    count = count - 1;
   }
 }
 
-//////////////////////////////////////////////////////////////
 
 /* ======= TESTS - DO NOT MODIFY ===== */
 
