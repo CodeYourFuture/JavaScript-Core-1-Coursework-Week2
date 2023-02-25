@@ -4,7 +4,13 @@
     1. the user should be 18 or older
     2. the user must be logged in
 */
-function isAcceptableUser(userAge, isLoggedIn) {}
+function isAcceptableUser(userAge, isLoggedIn) {
+  if (userAge >= 18 && isLoggedIn === true) {
+    return true;
+  } else {
+    return false;
+  }
+}
 
 /*
   Complete the function to apply discount percent based on how much is totalPrice in user cart.
@@ -15,12 +21,25 @@ function isAcceptableUser(userAge, isLoggedIn) {}
     is applieds and 142.5 should be returned)
 */
 
-function applyDiscount(totalPrice) {}
+function applyDiscount(totalPrice) {
+  if (totalPrice > 200) {
+    return totalPrice - totalPrice * 0.1;
+  } else {
+    return totalPrice - totalPrice * 0.05;
+  }
+}
 
 /*
   Complete the function to print to the console the odd numbers between 1 and limit (use a while loop):
   */
-function printOddNumbers(limit) {}
+function printOddNumbers(limit) {
+  let count = 1;
+
+  while (count < 10) {
+    console.log(count);
+    count = count + 2;
+  }
+}
 
 /*
   Complete the buyTwoGetTheCheapestFree function: if user buys two items, the cheapest item will be free!
@@ -90,11 +109,11 @@ describe("printOddNumbers", () => {
     const consoleLogSpy = jest.spyOn(console, "log");
 
     printOddNumbers(10);
-    expect(consoleLogSpy).toHaveBeenNthCalledWith(1,1);
-    expect(consoleLogSpy).toHaveBeenNthCalledWith(2,3);
-    expect(consoleLogSpy).toHaveBeenNthCalledWith(3,5);
-    expect(consoleLogSpy).toHaveBeenNthCalledWith(4,7);
-    expect(consoleLogSpy).toHaveBeenNthCalledWith(5,9);
+    expect(consoleLogSpy).toHaveBeenNthCalledWith(1, 1);
+    expect(consoleLogSpy).toHaveBeenNthCalledWith(2, 3);
+    expect(consoleLogSpy).toHaveBeenNthCalledWith(3, 5);
+    expect(consoleLogSpy).toHaveBeenNthCalledWith(4, 7);
+    expect(consoleLogSpy).toHaveBeenNthCalledWith(5, 9);
 
     consoleLogSpy.mockRestore();
   });
@@ -141,13 +160,13 @@ describe("countReverse", () => {
     const consoleLogSpy = jest.spyOn(console, "log");
 
     countReverse(7);
-    expect(consoleLogSpy).toHaveBeenNthCalledWith(1,7);
-    expect(consoleLogSpy).toHaveBeenNthCalledWith(2,6);
-    expect(consoleLogSpy).toHaveBeenNthCalledWith(3,5);
-    expect(consoleLogSpy).toHaveBeenNthCalledWith(4,4);
-    expect(consoleLogSpy).toHaveBeenNthCalledWith(5,3);
-    expect(consoleLogSpy).toHaveBeenNthCalledWith(6,2);
-    expect(consoleLogSpy).toHaveBeenNthCalledWith(7,1);
+    expect(consoleLogSpy).toHaveBeenNthCalledWith(1, 7);
+    expect(consoleLogSpy).toHaveBeenNthCalledWith(2, 6);
+    expect(consoleLogSpy).toHaveBeenNthCalledWith(3, 5);
+    expect(consoleLogSpy).toHaveBeenNthCalledWith(4, 4);
+    expect(consoleLogSpy).toHaveBeenNthCalledWith(5, 3);
+    expect(consoleLogSpy).toHaveBeenNthCalledWith(6, 2);
+    expect(consoleLogSpy).toHaveBeenNthCalledWith(7, 1);
 
     consoleLogSpy.mockRestore();
   });
