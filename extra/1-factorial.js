@@ -10,6 +10,12 @@
 
 function factorial(input) {
   // TODO
+  let result=1 // It doesn't start from zero because the factorial of 0 and 1 is 1
+  for (let i=2 ;i<= input; i++ ){
+    result=result*i;
+  }
+return result
+
 }
 
 /* ======= TESTS - DO NOT MODIFY ===== */
