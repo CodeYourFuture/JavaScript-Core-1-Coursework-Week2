@@ -9,7 +9,13 @@
 */
 
 function factorial(input) {
-  // TODO
+  let result = 1;
+  while (input > 1) {
+    // result*=input;
+    result *= input;
+    input--;
+  }
+  return result;
 }
 
 /* ======= TESTS - DO NOT MODIFY ===== */
