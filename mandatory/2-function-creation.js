@@ -45,7 +45,12 @@ function printOddNumbers(limit) {
   Complete the buyTwoGetTheCheapestFree function: if user buys two items, the cheapest item will be free!
   The function should return the price to be paid once the discount is applied.
 */
-function buyTwoGetTheCheapestFree(price1, price2) {}
+function buyTwoGetTheCheapestFree(price1, price2) {
+  if (price1 < price2) {
+    return price2;
+  } else price1 < price2;
+  return price1;
+}
 
 /*
   Complete the function to determine if it is suitable for a person to register based on their age!
@@ -53,7 +58,15 @@ function buyTwoGetTheCheapestFree(price1, price2) {}
   - if the person is older than 12 and younger than 90 it should return "You Can Register"
   - if the person is 90 or older it should return "You Don't Need To Register"
 */
-function canRegister(age) {}
+function canRegister(age) {
+  if (age <= 12) {
+    return "You Are Too Young To Register";
+  } else if (age > 12 && age < 90) {
+    return "You Can Register";
+  } else {
+    return "You Don't Need To Register";
+  }
+}
 
 /*
   Complete the function so that it prints out to the console numbers in reverse order starting at
@@ -64,7 +77,12 @@ function canRegister(age) {}
   )
 */
 
-function countReverse(number) {}
+function countReverse(number) {
+  while (number > 0) {
+    console.log(number);
+    number = number - 1;
+  }
+}
 
 /* ======= TESTS - DO NOT MODIFY ===== */
 
