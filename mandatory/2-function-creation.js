@@ -83,7 +83,12 @@ function canRegister(age) {
   )
 */
 
-function countReverse(number) {}
+function countReverse(number) {
+  while (number >= 1) {
+    console.log(number);
+    number--;
+  }
+}
 
 /* ======= TESTS - DO NOT MODIFY ===== */
 
