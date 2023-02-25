@@ -67,6 +67,8 @@ function buyTwoGetTheCheapestFree(price1, price2) {
 function canRegister(age) {
   if (age <= 12) {
     return `You Are Too Young To Register`;
+  } else if (age > 12 && age < 90) {
+    return `You Can Register`;
   }
 }
 
