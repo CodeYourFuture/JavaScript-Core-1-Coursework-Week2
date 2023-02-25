@@ -13,19 +13,19 @@
 function getMood() {
   let isHappy = true;
 
-  if (isHappy) {
+  if (isHappy === true) {
     return "I am happy";
-  } else {
+  } else if (isHappy === false) {
     return "I am not happy";
   }
 }
 
 function greaterThan10(num) {
-  let isBigEnough;
+  // let isBigEnough; - i think we do not need this function //
 
-  if (isBigEnough) {
+  if (num > 10) {
     return "num is greater than 10";
-  } else {
+  } else if (num <= 10) {
     return "num is not big enough";
   }
 }
