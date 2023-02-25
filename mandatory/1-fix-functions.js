@@ -1,61 +1,61 @@
 /* Fix Functions
 
-  Aim: to understand the change code inside functions 
+  Aim: to understand the change code inside functions
 
   See the below functions. They are syntactically correct but are not outputting the right results.
 
   Run the tests and see how you can fix them.
 
-  NOTE:Only make edits inside the function
+  NOTE:Only make ed"I am not happy"its inside the function
 
 */
 
-function getMood() {
-  let isHappy = true;
+function getMood(bool) {
+  let isHappy = bool;
 
   if (isHappy) {
-    return "I am happy";
+    return 'I am happy';
   } else {
-    return "I am not happy";
+    return 'I am not happy';
   }
 }
 
 function greaterThan10(num) {
-  let isBigEnough;
+  let isBigEnough = 10;
 
-  if (isBigEnough) {
-    return "num is greater than 10";
+  if (num > isBigEnough) {
+    return 'num is greater than 10';
   } else {
-    return "num is not big enough";
+    return 'num is not big enough';
   }
 }
 
 /* ======= TESTS - DO NOT MODIFY ===== */
 
-describe("getMood", () => {
-  test("getMood function works for true", () => {
-    expect(getMood(true)).toEqual("I am happy");
+describe('getMood', () => {
+  test('getMood function works for true', () => {
+    expect(getMood(true)).toEqual('I am happy');
   });
 
-  test("getMood function works for false", () => {
-    expect(getMood(false)).toEqual("I am not happy");
+  test('getMood function works for false', () => {
+    expect(getMood(false)).toEqual('I am not happy');
   });
 });
 
-describe("greaterThanTen", () => {
-  test("works for value greater than 10", () => {
-    expect(greaterThan10(11)).toEqual("num is greater than 10");
+describe('greaterThanTen', () => {
+  test('works for value greater than 10', () => {
+    expect(greaterThan10(11)).toEqual('num is greater than 10');
   });
 
-  test("works for value much greater than 10", () => {
-    expect(greaterThan10(96)).toEqual("num is greater than 10");
+  test('works for value much greater than 10', () => {
+    expect(greaterThan10(96)).toEqual('num is greater than 10');
   });
 
-  test("works for value less than 10", () => {
-    expect(greaterThan10(9)).toEqual("num is not big enough");
+  test('works for value less than 10', () => {
+    expect(greaterThan10(9)).toEqual('num is not big enough');
   });
 
-  test("works for value equal to 10", () => {
-    expect(greaterThan10(10)).toEqual("num is not big enough");
+  test('works for value equal to 10', () => {
+    expect(greaterThan10(10)).toEqual('num is not big enough');
   });
 });
