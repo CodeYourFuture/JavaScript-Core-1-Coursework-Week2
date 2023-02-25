@@ -69,6 +69,8 @@ function canRegister(age) {
     return `You Are Too Young To Register`;
   } else if (age > 12 && age < 90) {
     return `You Can Register`;
+  } else if (age >= 90) {
+    return `You Don't Need To Register`;
   }
 }
 
