@@ -64,7 +64,11 @@ function buyTwoGetTheCheapestFree(price1, price2) {
   - if the person is older than 12 and younger than 90 it should return "You Can Register"
   - if the person is 90 or older it should return "You Don't Need To Register"
 */
-function canRegister(age) {}
+function canRegister(age) {
+  if (age <= 12) {
+    return `You Are Too Young To Register`;
+  }
+}
 
 /*
   Complete the function so that it prints out to the console numbers in reverse order starting at
