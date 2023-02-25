@@ -7,10 +7,10 @@ Tip: use logical operators
 */
 
 function validate(num) {
-  if((isNaN(num) == false) && (num % 2 === 0) && (num <= 100)) {
-    console.log ("true")
+  if((isNaN(num) === false) && (num % 2 === 0) && (num <= 100)) {
+    return true
   } else {
-    console.log("false")
+    return false
   }
 }
 
@@ -26,7 +26,7 @@ function formatPercentage(num) {
   if (num >= 100){
     return "100%"
   } else {
-    num = num.toFixed(2)
+    num = +num.toFixed(2)
     return `${num}%`
   }
 }
@@ -40,7 +40,17 @@ Write a function that:
 - makes all strings all lowercase
 */
 function tidyUpStrings(arrayOfStrings) {
+  let trimedArray = []
   
+  for (let i = 0; i < arrayOfStrings.length; i++) {
+   
+    let trimedValue = arrayOfStrings[i].trim();
+    let removeSlashes = trimedValue.split('/').join('');
+    let lowerCase = removeSlashes.toLowerCase();
+    trimedArray.push(lowerCase);
+
+  }
+  return trimedArray;
 }
 
 /* ======= TESTS - DO NOT MODIFY ===== */
