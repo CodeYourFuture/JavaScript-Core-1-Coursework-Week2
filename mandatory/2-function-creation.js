@@ -1,160 +1,108 @@
 /*
-  Complete the function to return a boolean describing whether a user is acceptable. 
-  To be acceptable, two conditions must be fulfilled
-    1. the user should be 18 or older
-    2. the user must be logged in
-*/
-function isAcceptableUser(userAge, isLoggedIn) {}
-
-/*
-  Complete the function to apply discount percent based on how much is totalPrice in user cart.
-    - When the total price is greater than 200, a 10% discount should be applied
-    - When the total price is less than 200, a 5% discount should be applied
-
-  The function should return the new price to be paid (e.g. if the totalPrice is 150, a 5% discount
-    is applieds and 142.5 should be returned)
+Complete the function to check if the variable `num` satisfies the following requirements:
+- is a number
+- is even
+- is less than or equal to 100
+Tip: use logical operators
 */
 
-function applyDiscount(totalPrice) {}
+function validate(num) {
+  //The typeof operator returns a string indicating the type of the operand's value.
+  if (typeof num == "number" && num % 2 == 0 && num <= 100) {
+    return true;
+  } else {
+    return false;
+  }
+}
 
 /*
-  Complete the function to print to the console the odd numbers between 1 and limit (use a while loop):
-  */
-function printOddNumbers(limit) {}
-
-/*
-  Complete the buyTwoGetTheCheapestFree function: if user buys two items, the cheapest item will be free!
-  The function should return the price to be paid once the discount is applied.
-*/
-function buyTwoGetTheCheapestFree(price1, price2) {}
-
-/*
-  Complete the function to determine if it is suitable for a person to register based on their age!
-  - if the person is 12 or younger it should return "You Are Too Young To Register"
-  - if the person is older than 12 and younger than 90 it should return "You Can Register"
-  - if the person is 90 or older it should return "You Don't Need To Register"
-*/
-function canRegister(age) {}
-
-/*
-  Complete the function so that it prints out to the console numbers in reverse order starting at
-  number and going down to 1 (e.g. if number was 3, it would print:
-    3
-    2
-    1
-  )
+Write a function that:
+- takes a number as input
+- return a string formatted as percentages (e.g. 10 => "10%")
+- the number must be rounded to 2 decimal places
+- numbers greater 100 must be replaced with 100
 */
 
-function countReverse(number) {}
+function formatPercentage(num) {
+  //num = Math.min(num, 100); // replace number with 100 if it's greater than 100
+  if (num >= 100) {
+    num = 100;
+  }
+  return num.toFixed(2).replace(/\.?0+$/, "") + "%";
+}
+
+/*
+Write a function that:
+- takes an array of strings as input
+- removes any spaces in the beginning or end of each string
+- removes any forward slashes (/) in each string
+- makes all strings all lowercase
+*/
+function tidyUpStrings(arrayOfStrings) {
+  return arrayOfStrings.map((str) =>
+    str.trim().replace(/\//g, "").toLowerCase()
+  );
+}
 
 /* ======= TESTS - DO NOT MODIFY ===== */
 
-describe("isAcceptableUser", () => {
-  test("returns true if over 18 and logged in", () => {
-    expect(isAcceptableUser(21, true)).toEqual(true);
-  });
-
-  test("returns true if 18 and logged in", () => {
-    expect(isAcceptableUser(18, true)).toEqual(true);
-  });
-
-  test("returns false if under 18 and logged in", () => {
-    expect(isAcceptableUser(17, true)).toEqual(false);
-  });
-
-  test("returns false if over 18 and not logged in", () => {
-    expect(isAcceptableUser(21, false)).toEqual(false);
-  });
+test("validate function accepts valid even number", () => {
+  expect(validate(10)).toEqual(true);
 });
 
-describe("applyDiscount", () => {
-  test("returns price with 5% discount", () => {
-    expect(applyDiscount(120)).toEqual(114);
-  });
-
-  test("returns price with 10% discount", () => {
-    expect(applyDiscount(280)).toEqual(252);
-  });
+test("validate function accepts other valid even number", () => {
+  expect(validate(18)).toEqual(true);
 });
 
-describe("printOddNumbers", () => {
-  test("printOddNumbers function prints odd numbers between 1 and 2", () => {
-    const consoleLogSpy = jest.spyOn(console, "log");
-    printOddNumbers(2);
-
-    expect(consoleLogSpy).toBeCalledWith(1);
-    consoleLogSpy.mockRestore();
-  });
-
-  test("printOddNumbers function prints odd numbers between 1 and 10", () => {
-    const consoleLogSpy = jest.spyOn(console, "log");
-
-    printOddNumbers(10);
-    expect(consoleLogSpy).toHaveBeenNthCalledWith(1,1);
-    expect(consoleLogSpy).toHaveBeenNthCalledWith(2,3);
-    expect(consoleLogSpy).toHaveBeenNthCalledWith(3,5);
-    expect(consoleLogSpy).toHaveBeenNthCalledWith(4,7);
-    expect(consoleLogSpy).toHaveBeenNthCalledWith(5,9);
-
-    consoleLogSpy.mockRestore();
-  });
+test("validate function accepts exactly 100", () => {
+  expect(validate(100)).toEqual(true);
 });
 
-describe("buyTwoGetTheCheapestFree", () => {
-  test("buyTwoGetTheCheapestFree function returns first price when it is largest", () => {
-    expect(buyTwoGetTheCheapestFree(700, 500)).toEqual(700);
-  });
-
-  test("buyTwoGetTheCheapestFree function returns second price when it is largest", () => {
-    expect(buyTwoGetTheCheapestFree(500, 700)).toEqual(700);
-  });
+test("validate function rejects odd number", () => {
+  expect(validate(17)).toEqual(false);
 });
 
-describe("canRegister", () => {
-  test("returns in case of a person of age 7", () => {
-    expect(canRegister(7)).toEqual("You Are Too Young To Register");
-  });
-
-  test("returns in case of a person of age 12", () => {
-    expect(canRegister(12)).toEqual("You Are Too Young To Register");
-  });
-
-  test("returns in case of a person of age 13", () => {
-    expect(canRegister(13)).toEqual("You Can Register");
-  });
-
-  test("returns in case of a person of age 89", () => {
-    expect(canRegister(89)).toEqual("You Can Register");
-  });
-
-  test("returns in case of a person of age 90", () => {
-    expect(canRegister(90)).toEqual("You Don't Need To Register");
-  });
-
-  test("returns in case of a person of age 112", () => {
-    expect(canRegister(112)).toEqual("You Don't Need To Register");
-  });
+test("validate function rejects string", () => {
+  expect(validate("Ten")).toEqual(false);
 });
 
-describe("countReverse", () => {
-  test("countReverse function logs values from 7 to 1", () => {
-    const consoleLogSpy = jest.spyOn(console, "log");
-
-    countReverse(7);
-    expect(consoleLogSpy).toHaveBeenNthCalledWith(1,7);
-    expect(consoleLogSpy).toHaveBeenNthCalledWith(2,6);
-    expect(consoleLogSpy).toHaveBeenNthCalledWith(3,5);
-    expect(consoleLogSpy).toHaveBeenNthCalledWith(4,4);
-    expect(consoleLogSpy).toHaveBeenNthCalledWith(5,3);
-    expect(consoleLogSpy).toHaveBeenNthCalledWith(6,2);
-    expect(consoleLogSpy).toHaveBeenNthCalledWith(7,1);
-
-    consoleLogSpy.mockRestore();
-  });
+test("validate function rejects stringified number", () => {
+  expect(validate("10")).toEqual(false);
 });
 
-/*
-CHECK OUT solutions.md FOR MORE INFO ON OUR SOLUTION
-*/
+test("validate function rejects too large number", () => {
+  expect(validate(108)).toEqual(false);
+});
 
-/* ======= TESTS - DO NOT MODIFY ===== */
+test.each([
+  [23, "23%"],
+  [18.103, "18.1%"],
+  [187.2, "100%"],
+  [0.372, "0.37%"],
+])("formatPercentage function works for %s", (input, expected) => {
+  expect(formatPercentage(input)).toEqual(expected);
+});
+
+test("tidyUpString function works", () => {
+  expect(
+    tidyUpStrings([
+      "/Daniel",
+      " /Sanyia",
+      "AnTHonY",
+      "irina",
+      " Gordon",
+      "ashleigh   ",
+      "   Alastair  ",
+      " anne marie  ",
+    ])
+  ).toEqual([
+    "daniel",
+    "sanyia",
+    "anthony",
+    "irina",
+    "gordon",
+    "ashleigh",
+    "alastair",
+    "anne marie",
+  ]);
+});
