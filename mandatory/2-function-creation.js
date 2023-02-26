@@ -4,7 +4,19 @@
     1. the user should be 18 or older
     2. the user must be logged in
 */
-function isAcceptableUser(userAge, isLoggedIn) {}
+function isAcceptableUser(userAge, isLoggedIn) {
+  if (userAge >= 18 && isLoggedIn) {
+    return true;
+  }
+  else {
+    return false;
+  }
+}
+
+let userAge = 18;
+let isLoggedIn = true;
+
+isAcceptableUser(userAge, isLoggedIn)
 
 /*
   Complete the function to apply discount percent based on how much is totalPrice in user cart.
@@ -15,26 +27,69 @@ function isAcceptableUser(userAge, isLoggedIn) {}
     is applieds and 142.5 should be returned)
 */
 
-function applyDiscount(totalPrice) {}
+function applyDiscount(totalPrice) {
+  let discountPercentage = 0;
+
+  if (totalPrice > 200) {
+    discountPercentage = 0.1;
+  }
+  else {
+    discountPercentage = 0.05;
+  }
+
+let discountedAmount = totalPrice * discountPercentage;
+let discountPrice = totalPrice - discountedAmount;
+return discountPrice;
+
+}
+
+applyDiscount(120)
 
 /*
   Complete the function to print to the console the odd numbers between 1 and limit (use a while loop):
   */
-function printOddNumbers(limit) {}
+function printOddNumbers(limit) {
+
+  let num = 1;
+  while (num <= limit) {
+    if (num % 2 !== 0) {
+      console.log(num);
+    }
+    num++;
+  }
+}
 
 /*
   Complete the buyTwoGetTheCheapestFree function: if user buys two items, the cheapest item will be free!
   The function should return the price to be paid once the discount is applied.
 */
-function buyTwoGetTheCheapestFree(price1, price2) {}
+function buyTwoGetTheCheapestFree(price1, price2) {
+  let priceOfBoth = (price1 + price2);
 
+  let cheaperItemPrice = Math.min(price1, price2);
+  let priceAfterDiscount = (priceOfBoth - cheaperItemPrice);
+  return priceAfterDiscount;
+}
+buyTwoGetTheCheapestFree(500, 700)
 /*
   Complete the function to determine if it is suitable for a person to register based on their age!
   - if the person is 12 or younger it should return "You Are Too Young To Register"
   - if the person is older than 12 and younger than 90 it should return "You Can Register"
   - if the person is 90 or older it should return "You Don't Need To Register"
 */
-function canRegister(age) {}
+function canRegister(age) {
+  if (age < 13) {
+    return "You Are Too Young To Register";
+  }
+  else if (age < 90) {
+    return "You Can Register";
+  }
+  
+  else {
+    return "You Don't Need To Register";
+  }
+}
+canRegister(12)
 
 /*
   Complete the function so that it prints out to the console numbers in reverse order starting at
@@ -45,7 +100,11 @@ function canRegister(age) {}
   )
 */
 
-function countReverse(number) {}
+function countReverse(number) {
+  for (let i = number; i >= 1; i--)
+  console.log(i);
+}
+countReverse(1, 7)
 
 /* ======= TESTS - DO NOT MODIFY ===== */
 
