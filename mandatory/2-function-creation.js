@@ -86,7 +86,6 @@ function countReverse(number) {
     number = number -1;
   }
 }
-
 /* ======= TESTS - DO NOT MODIFY ===== */
 
 describe("isAcceptableUser", () => {
