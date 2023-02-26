@@ -13,6 +13,9 @@
 function getMood(isHappy) {
   //let isHappy = true;
 
+  function getMood(isHappy) {
+  //let isHappy = true;
+
   if (isHappy) {
     return "I am happy";
   } else {
