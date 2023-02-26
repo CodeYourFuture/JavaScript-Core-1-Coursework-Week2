@@ -16,6 +16,7 @@ function getMood() {
   if (isHappy) {
     return "I am happy";
   } else {
+    //
     return "I am not happy";
   }
 }
