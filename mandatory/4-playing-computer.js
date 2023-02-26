@@ -15,6 +15,15 @@
   7. What is the value of the "a" outer variable when "f1" is called for the first time?
 */
 
+// Answers
+
+// the variable b is a local variable that defined inside the functions f1 and f2, so we can't print it outside these functions without defining the variable as public.
+// the console will print the variables 2 and 6 firstly then it prints the loop of numbers start with 4,9,6,13,8
+// f1 will be called 2 times
+// f2 will be called 3 times
+// the value of a parameter in the first "f1" call was 8
+// the value of the "a" outer variable when "f1" was called for the first time was 6
+
 let x = 2;
 let a = 6;
 
@@ -28,7 +37,6 @@ const f2 = function (a, b) {
 
 console.log(x);
 console.log(a);
-console.log(b);
 
 for (let i = 0; i < 5; ++i) {
   a = a + 1;
