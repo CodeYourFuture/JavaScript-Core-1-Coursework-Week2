@@ -8,16 +8,20 @@
 function evenNumbers(n) {
     // TODO
     let count = 0;
+    let evenNumber = 0;
+    let arrayPrint = [];
     while(count < n) {
         if (n == 0) {
             console.log("")
         } else {
-            console.log(count * 2)
+            evenNumber = count * 2
+            arrayPrint.push(evenNumber)
+            count += 1
         }
-        count += 1
-        
+   
     }
-    return count
+    console.log(arrayPrint.join());
+    return evenNumber;
     
 }
 
