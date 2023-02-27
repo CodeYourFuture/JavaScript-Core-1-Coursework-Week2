@@ -33,12 +33,15 @@ function applyDiscount(totalPrice) {
   Complete the function to print to the console the odd numbers between 1 and limit (use a while loop):
   */
 function printOddNumbers(limit) {
-  for (var i = 0; i <= limit; i++) {
+  var i=0;
+  while(i <= limit){
+    
     if (i % 2 != 0) {
       console.log(i);
     }
+    i++;
   }
-}
+
 
 /*
   Complete the buyTwoGetTheCheapestFree function: if user buys two items, the cheapest item will be free!
