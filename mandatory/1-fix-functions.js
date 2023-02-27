@@ -9,13 +9,15 @@
   NOTE:Only make edits inside the function
 
 */
+let mood;
 
-function getMood() {
-  let isHappy = true;
+function getMood(mood) {
+  let isHappy;
 
-  if (isHappy) {
+  if (mood === true) {
     return "I am happy";
-  } else {
+  } 
+  else {
     return "I am not happy";
   }
 }
@@ -23,7 +25,7 @@ function getMood() {
 function greaterThan10(num) {
   let isBigEnough;
 
-  if (isBigEnough) {
+  if (num > 10 ) {
     return "num is greater than 10";
   } else {
     return "num is not big enough";
