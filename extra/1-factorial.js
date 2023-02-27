@@ -8,8 +8,16 @@
     Using a loop, complete the function below so it returns the factorial of the number being passed in. 
 */
 
-function factorial(input) {
+function factorial(num) {
     // TODO
+    let result = 1
+    for (let i = 1; i <= num; i++){
+        
+        result *= i;
+       
+    }
+    return result
+    
 }
 
 /* ======= TESTS - DO NOT MODIFY ===== */
@@ -25,3 +33,4 @@ test("5! should be 120", () => {
 test("10! should be 3628800", () => {
     expect(factorial(10)).toEqual(3628800);
 });
+
