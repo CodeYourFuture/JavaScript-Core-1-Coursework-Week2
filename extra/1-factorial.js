@@ -9,8 +9,19 @@
 */
 
 function factorial(input) {
-  // TODO
-}
+  let lastNumber = 1;
+    for (i=input; i >= 1; i--){
+      console.log("before", lastNumber)
+      lastNumber = lastNumber * [i];
+        console.log("lastNumber", lastNumber);
+
+  }
+  return  lastNumber
+  }
+  
+
+  console.log(factorial(9))
+
 
 /* ======= TESTS - DO NOT MODIFY ===== */
 
