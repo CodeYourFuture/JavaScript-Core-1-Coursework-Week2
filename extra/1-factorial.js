@@ -6,7 +6,9 @@
         5! is 120 (because 5 * 4 * 3 * 2 * 1 = 120)
     
     Using a loop, complete the function below so it returns the factorial of the number being passed in. 
-
+*/// 
+//   
+// 
 
 
 function factorial(input) {
