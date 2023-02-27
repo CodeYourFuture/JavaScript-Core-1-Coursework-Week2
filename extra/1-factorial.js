@@ -13,12 +13,17 @@ function factorial(input) {
   if (input == 0 || input == 1){
     return lastNumber
   } else if(input > 1){
-    for (var i=input; i >= 1; i--){
+    for (i=input; i >= 1; i--){
+      console.log("lastNumberBefore" , lastNumber)
       lastNumber = lastNumber * [i];
+        console.log("lastNumber", lastNumber);
+
   }
   return  lastNumber
   }
   }
+
+  console.log(factorial(9))
 
 
 /* ======= TESTS - DO NOT MODIFY ===== */
