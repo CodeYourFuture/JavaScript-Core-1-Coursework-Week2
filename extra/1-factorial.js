@@ -10,18 +10,15 @@
 
 function factorial(input) {
   let lastNumber = 1;
-  if (input == 0 || input == 1){
-    return lastNumber
-  } else if(input > 1){
     for (i=input; i >= 1; i--){
-      console.log("lastNumberBefore" , lastNumber)
+      console.log("before", lastNumber)
       lastNumber = lastNumber * [i];
         console.log("lastNumber", lastNumber);
 
   }
   return  lastNumber
   }
-  }
+  
 
   console.log(factorial(9))
 
