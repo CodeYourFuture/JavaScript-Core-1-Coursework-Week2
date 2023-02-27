@@ -4,9 +4,9 @@
   "description": "Exercises for JS1 Week 2",
   "license": "CC-BY-SA-4.0",
   "scripts": {
-    "test": "jest"
+    "test": "jest --watchAll --verbose"
   },
-    "jest": {
+  "jest": {
     "projects": [
       {
         "displayName": "mandatory",
