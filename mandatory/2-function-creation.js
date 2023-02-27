@@ -5,7 +5,7 @@
     2. the user must be logged in
 */
 function isAcceptableUser(userAge, isLoggedIn) {
-  if (userAge >= 18 && isLoggedIn === true) {
+  if (userAge >= 18 && isLoggedIn) {
     return true;
   } else {
     return false;
@@ -36,12 +36,10 @@ function applyDiscount(totalPrice) {
   */
 function printOddNumbers(limit) {
   let number = 1;
-  let step = 1;
 
   while (number < limit) {
     console.log(number);
     number += 2;
-    step += 1;
   }
 }
 
