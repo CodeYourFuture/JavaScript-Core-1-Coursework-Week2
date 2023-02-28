@@ -51,9 +51,9 @@ function buyTwoGetTheCheapestFree(price1, price2) {
 //   let price1 = 700
 // let price2 = 500
 if(price1>price2) {
-  return price1
+  return price1;
 }else{
-  return price2
+  return price2;
 }
 
 
@@ -72,13 +72,13 @@ return "You Are Too Young To Register"
 }
 else if (age> 12 && age<90){
 return "You Can Register"
-}else {
+}else (age > 90);{
   return "You Don't Need To Register"
 }
 }
 
 /*
-  Complete the function so that it prints out to the console numbers in reverse order starting at
+  Complete the 1 (function so that it prints out to the console numbers in reverse order starting at
   number and going down to 1 (e.g. if number was 3, it would print:
     3
     2
@@ -86,9 +86,22 @@ return "You Can Register"
   )
 */
 
+/*function countReverse(number) {
+  number = number + "";
+	console.log()
+}*/
 function countReverse(number) {
-  console.log()
+ for(let i= number; i>0; i--){
+  console.log(i)
+ }
 }
+
+/*console.log(reverseNum(1234567));*/
+
+  
+   
+  
+
 
 /* ======= TESTS - DO NOT MODIFY ===== */
 
