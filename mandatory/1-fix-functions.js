@@ -11,19 +11,19 @@
 */
 
 function getMood() {
-  let isHappy = true;
-
-  if (isHappy) {
+let isHappy;
+  if (isHappy===true) {
     return "I am happy";
   } else {
-    return "I am not happy";
-  }
-}
+    return "I am not happy" ;
+  } 
+} ;
+
 
 function greaterThan10(num) {
-  let isBigEnough;
+  let isBigEnough=10;
 
-  if (isBigEnough) {
+  if (isBigEnough < num) {
     return "num is greater than 10";
   } else {
     return "num is not big enough";
