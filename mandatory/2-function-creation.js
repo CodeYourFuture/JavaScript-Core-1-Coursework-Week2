@@ -40,7 +40,7 @@ function applyDiscount(totalPrice) {
 function printOddNumbers(limit) {
   let i = 1;
   while (i <= limit) {
-    if (i % 2 == 1) {
+    if (i % 2 === 1) {
       console.log(i);
     }
     i++;
@@ -86,9 +86,10 @@ function canRegister(age) {
 
 function countReverse(number) {
   const minNum = 1;
-  while (number >= minNum) {
-    console.log(number);
-    number--;
+  let currentNum = number;
+  while (currentNum >= minNum) {
+    console.log(currentNum);
+    currentNum--;
   }
 }
 
