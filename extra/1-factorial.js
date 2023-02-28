@@ -9,7 +9,18 @@
 */
 
 function factorial(input) {
-  // TODO
+  if (input == 0) {
+    return 0;
+  } else {
+    const maxLoops = input;
+    let currentLoop = 1;
+    let total = 1;
+    while (currentLoop <= maxLoops) {
+      total = total * currentLoop;
+      currentLoop++;
+    }
+    return total;
+  }
 }
 
 /* ======= TESTS - DO NOT MODIFY ===== */
