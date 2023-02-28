@@ -8,8 +8,16 @@
     Using a loop, complete the function below so it returns the factorial of the number being passed in. 
 */
 
-function factorial(input) {
-  // TODO
+function factorial(number) {
+  
+  let sumOfMultiple = 1;
+  let x= 1 ;
+   while(  x < number) {
+    x++ ;
+   sumOfMultiple *= x
+  ;
+  }
+  return sumOfMultiple ;
 }
 
 /* ======= TESTS - DO NOT MODIFY ===== */
