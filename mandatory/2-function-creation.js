@@ -23,9 +23,9 @@ function isAcceptableUser(userAge, isLoggedIn) {
 
 function applyDiscount(totalPrice) {
   if (totalPrice >= 200) {
-    return totalPrice - (totalPrice * 0.1);
+    return totalPrice * 0.9;
   } else {
-    return totalPrice - (totalPrice * 0.05);
+    return totalPrice * 0.95;
   }
 }
 
