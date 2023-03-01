@@ -11,9 +11,7 @@
 */
 
 function getMood(isHappy) {
-  let isHappy = true;
-
-  if (true) {
+  if (isHappy === true) {
     return "I am happy";
   } else {
     return "I am not happy";
