@@ -18,6 +18,8 @@ function getMood(isHappy) {
   }
 }
 
+////////////////////
+
 function greaterThan10(num) {
   if (num > 10) {
     return "num is greater than 10";
