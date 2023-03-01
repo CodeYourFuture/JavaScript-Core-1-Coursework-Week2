@@ -6,10 +6,15 @@
         5! is 120 (because 5 * 4 * 3 * 2 * 1 = 120)
     
     Using a loop, complete the function below so it returns the factorial of the number being passed in. 
+    npm test -- --1-factorial.js extra
 */
 
 function factorial(input) {
-  // TODO
+  let factorial = 1;
+  for (let i = 1; i <= input; i++) {
+    factorial *= i;
+  }
+  return factorial;
 }
 
 /* ======= TESTS - DO NOT MODIFY ===== */
