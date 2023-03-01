@@ -10,9 +10,9 @@
 */
 
 function factorial(input) {
-  let factorial=1;
-  for (let i=1; i<=input; i++){
-    factorial*=i;
+  let factorial = 1;
+  for (let i = 1; i <= input; i++) {
+    factorial *= i;
   }
   return factorial;
 }
