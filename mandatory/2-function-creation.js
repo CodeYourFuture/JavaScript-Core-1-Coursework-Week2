@@ -4,7 +4,18 @@
     1. the user should be 18 or older
     2. the user must be logged in
 */
-function isAcceptableUser(userAge, isLoggedIn) {}
+function isAcceptableUser(userAge, isLoggedIn) {
+  return userAge >= 18 && isLoggedIn;
+}
+
+const loggedIn = true;
+const userAge = 21;
+
+if (isAcceptableUser(userAge, loggedIn)) {
+  console.log("User is acceptable.");
+} else {
+  console.log("User is not acceptable.");
+}
 
 /*
   Complete the function to apply discount percent based on how much is totalPrice in user cart.
@@ -12,21 +23,49 @@ function isAcceptableUser(userAge, isLoggedIn) {}
     - When the total price is less than 200, a 5% discount should be applied
 
   The function should return the new price to be paid (e.g. if the totalPrice is 150, a 5% discount
-    is applieds and 142.5 should be returned)
+    is applied and 142.5 should be returned)
 */
 
-function applyDiscount(totalPrice) {}
+function applyDiscount(totalPrice) {
+  let discountPercent;
+  if(totalPrice > 200) {
+    discountPercent = 0.1;
+  } else {
+    discountPercent = 0.05;
+  }
+  let discountAmount = totalPrice * discountPercent;
+  let newPrice = totalPrice - discountAmount;
+  return newPrice;
+}
 
 /*
   Complete the function to print to the console the odd numbers between 1 and limit (use a while loop):
   */
-function printOddNumbers(limit) {}
+function printOddNumbers(limit) {
+  let i = 1;
+  while (i <= limit) {
+    if(i % 2 !==0) {
+      console.log(i);
+    }
+    i++;
+}
+}
 
 /*
   Complete the buyTwoGetTheCheapestFree function: if user buys two items, the cheapest item will be free!
   The function should return the price to be paid once the discount is applied.
 */
-function buyTwoGetTheCheapestFree(price1, price2) {}
+function buyTwoGetTheCheapestFree(price1, price2) {
+  if (price1 < 0 || price2 < 0) {
+    return "Invalid price for an item";
+  }
+  
+  let totalPrice = price1 + price2;
+  let discount = Math.min(price1, price2);
+  let discountedPrice = totalPrice - discount;
+  
+  return discountedPrice;
+}
 
 /*
   Complete the function to determine if it is suitable for a person to register based on their age!
@@ -34,7 +73,15 @@ function buyTwoGetTheCheapestFree(price1, price2) {}
   - if the person is older than 12 and younger than 90 it should return "You Can Register"
   - if the person is 90 or older it should return "You Don't Need To Register"
 */
-function canRegister(age) {}
+function canRegister(age) {
+  if (age <= 12) {
+    return "You Are Too Young To Register";
+  } else if (age < 90) {
+    return "You Can Register";
+  } else {
+    return "You Don't Need To Register";
+  }
+}
 
 /*
   Complete the function so that it prints out to the console numbers in reverse order starting at
@@ -45,7 +92,16 @@ function canRegister(age) {}
   )
 */
 
-function countReverse(number) {}
+function countReverse(number) {
+  if (number <= 0) {
+    console.log("Please provide a positive number");
+    return;
+  }
+    for (let i = number; i >= 1; i--) {
+      console.log(i);
+  }
+
+}
 
 /* ======= TESTS - DO NOT MODIFY ===== */
 
