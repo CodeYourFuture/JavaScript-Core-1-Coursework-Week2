@@ -91,9 +91,9 @@ return "You Can Register"
 	console.log()
 }*/
 function countReverse(number) {
- for(let i= number; i>0; i--){
+for(let i=number; i>0; i--){
   console.log(i)
- }
+}
 }
 
 /*console.log(reverseNum(1234567));*/
