@@ -10,6 +10,16 @@
 
 function factorial(input) {
   // TODO
+  let j = i + 1;
+  let k = 1;
+  
+  for (i = 0; i <= input; i++) {
+    while (j <= input) {
+      return j;
+    }
+    j = j + 1;
+  }
+  return k = k * j;
 }
 
 /* ======= TESTS - DO NOT MODIFY ===== */
