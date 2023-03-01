@@ -23,7 +23,7 @@ function isAcceptableUser(userAge, isLoggedIn) {
 
 function applyDiscount(totalPrice) {
   if (totalPrice>200){
-    return totalPrice-(totalPrice * 0.10)
+    return totalPrice-(totalPrice * 0.1)
   }else {
     return totalPrice-(totalPrice *0.05)
   }
@@ -35,7 +35,7 @@ function applyDiscount(totalPrice) {
 
   function printOddNumbers(limit) {
     let numberOfLoops= 1
-  while (numberOfLoops <= limit) {
+  while (numberOfLoops <limit) {
     console.log(numberOfLoops);
     numberOfLoops = numberOfLoops + 2;
 }
@@ -52,12 +52,10 @@ function buyTwoGetTheCheapestFree(price1, price2) {
 // let price2 = 500
 if(price1>price2) {
   return price1;
-}else{
+}else if (price1 < price2)
   return price2;
 }
 
-
-}
 
 
 /*
@@ -72,7 +70,7 @@ return "You Are Too Young To Register"
 }
 else if (age> 12 && age<90){
 return "You Can Register"
-}else (age > 90);{
+}else {
   return "You Don't Need To Register"
 }
 }
@@ -90,12 +88,20 @@ return "You Can Register"
   number = number + "";
 	console.log()
 }*/
+
 function countReverse(number) {
 for(let i=number; i>0; i--){
   console.log(i)
 }
 }
 
+// 
+// function repeatStr (n, s) {
+// var str="";
+// for(var i=0; i < n; i++)
+//   str+=s;
+//   return str;
+// }
 /*console.log(reverseNum(1234567));*/
 
   
