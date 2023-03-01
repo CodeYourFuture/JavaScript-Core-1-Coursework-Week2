@@ -4,7 +4,9 @@
     1. the user should be 18 or older
     2. the user must be logged in
 */
-function isAcceptableUser(userAge, isLoggedIn) {}
+function isAcceptableUser(userAge, isLoggedIn) {
+  return userAge >= 18 && isLoggedIn;
+}
 
 /*
   Complete the function to apply discount percent based on how much is totalPrice in user cart.
@@ -15,18 +17,51 @@ function isAcceptableUser(userAge, isLoggedIn) {}
     is applieds and 142.5 should be returned)
 */
 
-function applyDiscount(totalPrice) {}
+function applyDiscount(totalPrice) {
+  let discount = 0;
+  if (totalPrice > 200) {
+    discount = 0.1;
+  } else if (totalPrice < 200) {
+    discount = 0.05;
+  }
+  return totalPrice - totalPrice * discount;
+}
+
+// or
+
+// function applyDiscount(totalPrice) {
+//   if (totalPrice > 200){
+//     return totalPrice * 0.9;
+//   } else {
+//     return totalPrice * 0.95;
+//   }
+// }
 
 /*
   Complete the function to print to the console the odd numbers between 1 and limit (use a while loop):
   */
-function printOddNumbers(limit) {}
+function printOddNumbers(limit) {
+  let baseNumber = 1;
+
+  while (baseNumber <= limit) {
+    if (baseNumber % 2 !== 0) {
+      console.log(baseNumber);
+    }
+    baseNumber++;
+  }
+}
 
 /*
   Complete the buyTwoGetTheCheapestFree function: if user buys two items, the cheapest item will be free!
   The function should return the price to be paid once the discount is applied.
 */
-function buyTwoGetTheCheapestFree(price1, price2) {}
+function buyTwoGetTheCheapestFree(price1, price2) {
+  if (price1 >= price2) {
+    return price1;
+  } else {
+    return price2;
+  }
+}
 
 /*
   Complete the function to determine if it is suitable for a person to register based on their age!
@@ -34,7 +69,15 @@ function buyTwoGetTheCheapestFree(price1, price2) {}
   - if the person is older than 12 and younger than 90 it should return "You Can Register"
   - if the person is 90 or older it should return "You Don't Need To Register"
 */
-function canRegister(age) {}
+function canRegister(age) {
+  if (age <= 12) {
+    return "You Are Too Young To Register";
+  } else if (age > 12 && age < 90) {
+    return "You Can Register";
+  } else {
+    return "You Don't Need To Register";
+  }
+}
 
 /*
   Complete the function so that it prints out to the console numbers in reverse order starting at
@@ -45,7 +88,11 @@ function canRegister(age) {}
   )
 */
 
-function countReverse(number) {}
+function countReverse(number) {
+  for (let i = number; i >= 1; i--) {
+    console.log(i);
+  }
+}
 
 /* ======= TESTS - DO NOT MODIFY ===== */
 
@@ -90,11 +137,11 @@ describe("printOddNumbers", () => {
     const consoleLogSpy = jest.spyOn(console, "log");
 
     printOddNumbers(10);
-    expect(consoleLogSpy).toHaveBeenNthCalledWith(1,1);
-    expect(consoleLogSpy).toHaveBeenNthCalledWith(2,3);
-    expect(consoleLogSpy).toHaveBeenNthCalledWith(3,5);
-    expect(consoleLogSpy).toHaveBeenNthCalledWith(4,7);
-    expect(consoleLogSpy).toHaveBeenNthCalledWith(5,9);
+    expect(consoleLogSpy).toHaveBeenNthCalledWith(1, 1);
+    expect(consoleLogSpy).toHaveBeenNthCalledWith(2, 3);
+    expect(consoleLogSpy).toHaveBeenNthCalledWith(3, 5);
+    expect(consoleLogSpy).toHaveBeenNthCalledWith(4, 7);
+    expect(consoleLogSpy).toHaveBeenNthCalledWith(5, 9);
 
     consoleLogSpy.mockRestore();
   });
@@ -141,13 +188,13 @@ describe("countReverse", () => {
     const consoleLogSpy = jest.spyOn(console, "log");
 
     countReverse(7);
-    expect(consoleLogSpy).toHaveBeenNthCalledWith(1,7);
-    expect(consoleLogSpy).toHaveBeenNthCalledWith(2,6);
-    expect(consoleLogSpy).toHaveBeenNthCalledWith(3,5);
-    expect(consoleLogSpy).toHaveBeenNthCalledWith(4,4);
-    expect(consoleLogSpy).toHaveBeenNthCalledWith(5,3);
-    expect(consoleLogSpy).toHaveBeenNthCalledWith(6,2);
-    expect(consoleLogSpy).toHaveBeenNthCalledWith(7,1);
+    expect(consoleLogSpy).toHaveBeenNthCalledWith(1, 7);
+    expect(consoleLogSpy).toHaveBeenNthCalledWith(2, 6);
+    expect(consoleLogSpy).toHaveBeenNthCalledWith(3, 5);
+    expect(consoleLogSpy).toHaveBeenNthCalledWith(4, 4);
+    expect(consoleLogSpy).toHaveBeenNthCalledWith(5, 3);
+    expect(consoleLogSpy).toHaveBeenNthCalledWith(6, 2);
+    expect(consoleLogSpy).toHaveBeenNthCalledWith(7, 1);
 
     consoleLogSpy.mockRestore();
   });

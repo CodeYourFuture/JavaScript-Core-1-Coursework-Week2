@@ -12,6 +12,14 @@ function factorial(input) {
   // TODO
 }
 
+function factorial(input) {
+  let sum = 1;
+  for (let i = input; i > 0; i--) {
+    sum *= i;
+  }
+  return sum;
+}
+
 /* ======= TESTS - DO NOT MODIFY ===== */
 
 describe("factorial", () => {
