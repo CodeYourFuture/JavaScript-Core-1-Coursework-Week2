@@ -9,6 +9,17 @@
 */
 
 function factorial(input) {
+  let result = input;
+  // 0 and 1 are special cases are 0! and 1! equates to 1 but would equal 0 using the function.
+  if (input === 0 || input === 1) {
+    return 1;
+  }
+  // while loop, if input is greater than 1; input = (input-1), the variable "result" needs to retain the value from previous loop/iteration and multiply by the current input value so the calculation for result will equate to result * input. As "result" is called within itself, the value currently stored for "result" will be used will be from the calculation from previous iteration and new value will be reassigned to "result" as the calculation result * input will be performed again and repeated for each time the function loops until input is no longer greater 1.
+  while (input > 1) {
+    input--;
+    result = result * input;
+  }
+  return result;
   // TODO
 }
 
