@@ -37,7 +37,7 @@ function printOddNumbers(limit) {
 
   while (count < limit) {
     if (count % 2 === 1) {
-    console.log(count);
+      console.log(count);
     }
     count++;
   }
@@ -84,9 +84,11 @@ function canRegister(age) {
 */
 
 function countReverse(number) {
-  while (number >= 1) {
-    console.log(number);
-    number--;
+  let currentNumber = number;
+
+  while (currentNumber >= 1) {
+    console.log(currentNumber);
+    currentNumber--;
   }
 }
 
