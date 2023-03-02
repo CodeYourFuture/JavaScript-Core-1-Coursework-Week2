@@ -9,7 +9,21 @@
 */
 
 function factorial(input) {
-  // TODO
+  // 0! = 1
+  // 1! = 1
+  if (input === 0 || input === 1) {
+    return 1;
+  }
+
+  // the result of the factorial calculation will be stored in here
+  let factorialResult = 1;
+
+  // stops when i is greater than the input
+  for (i = 1; i <= input; i++) {
+    factorialResult = factorialResult * i;
+  }
+
+  return factorialResult;
 }
 
 /* ======= TESTS - DO NOT MODIFY ===== */
