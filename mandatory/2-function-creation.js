@@ -39,7 +39,7 @@ function printOddNumbers(limit) {
     if (count % 2 === 1) {
     console.log(count);
     }
-    count = count + 1;
+    count++;
   }
 }
 
