@@ -8,9 +8,19 @@
     Using a loop, complete the function below so it returns the factorial of the number being passed in. 
 */
 
-function factorial(input) {
+function factorial(n) {
   // TODO
+
+let factorial  = 1;
+for (let i = 1; i<= n; i++) {
+factorial = factorial * i;
 }
+return factorial;
+}
+
+console.log(factorial(3));
+// console.log(factorial(5));
+
 
 /* ======= TESTS - DO NOT MODIFY ===== */
 
