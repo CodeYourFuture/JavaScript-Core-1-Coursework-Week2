@@ -19,10 +19,10 @@ function isAcceptableUser(userAge, isLoggedIn) {
 
 function applyDiscount(totalPrice) {
   if (totalPrice > 200) {
-return totalPrice * 0.9;
-} else {
-return totalPrice * 0.95;
-};
+   return totalPrice * 0.9;
+   } else {
+   return totalPrice * 0.95;
+  };
 }
 
 /*
@@ -48,7 +48,7 @@ return price1;
 } else if (price2 > price1) {
 return price2;
 } else {
-  return price1||price2;
+  return price1;
 };
 }
 
@@ -59,7 +59,7 @@ return price2;
   - if the person is 90 or older it should return "You Don't Need To Register"
 */
 function canRegister(age) {
-  if (age < 13) {
+  if (age <= 12) {
 return "You Are Too Young To Register";
 } else if (age < 90) {
 return "You Can Register";
