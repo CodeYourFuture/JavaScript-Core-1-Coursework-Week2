@@ -19,7 +19,7 @@ return factorial;
 }
 
 console.log(factorial(3));
-// console.log(factorial(5));
+console.log(factorial(5));
 
 
 /* ======= TESTS - DO NOT MODIFY ===== */
