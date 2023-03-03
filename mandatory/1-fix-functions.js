@@ -10,9 +10,7 @@
 
 */
 
-function getMood() {
-  let isHappy = true;
-
+function getMood(isHappy) {
   if (isHappy) {
     return "I am happy";
   } else {
@@ -21,15 +19,14 @@ function getMood() {
 }
 
 function greaterThan10(num) {
-  let isBigEnough;
-
-  if (isBigEnough) {
+  num == 10;
+  if (num > 10) {
     return "num is greater than 10";
   } else {
     return "num is not big enough";
   }
 }
-
+//npm test -- --testPathPattern 1-fix-function
 /* ======= TESTS - DO NOT MODIFY ===== */
 
 describe("getMood", () => {

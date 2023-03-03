@@ -10,7 +10,19 @@
 
 function factorial(input) {
   // TODO
+  if (input < 0) 
+        return -1;
+  else if (input == 0) 
+      return 1;
+  else {
+      return (input * factorial(input - 1));
+  }
+
+
 }
+
+
+//npm test -- --testPathPattern 1-factorial
 
 /* ======= TESTS - DO NOT MODIFY ===== */
 
