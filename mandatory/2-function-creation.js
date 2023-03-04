@@ -4,7 +4,13 @@
     1. the user should be 18 or older
     2. the user must be logged in
 */
-function isAcceptableUser(userAge, isLoggedIn) {}
+function isAcceptableUser(userAge, isLoggedIn) {
+
+  if (userAge >= 18 && isLoggedIn === true) { 
+    return true
+  }
+  else {return false}
+}
 
 /*
   Complete the function to apply discount percent based on how much is totalPrice in user cart.
@@ -15,7 +21,9 @@ function isAcceptableUser(userAge, isLoggedIn) {}
     is applieds and 142.5 should be returned)
 */
 
-function applyDiscount(totalPrice) {}
+function applyDiscount(totalPrice) {
+  
+}
 
 /*
   Complete the function to print to the console the odd numbers between 1 and limit (use a while loop):
