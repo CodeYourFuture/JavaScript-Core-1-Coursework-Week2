@@ -9,7 +9,14 @@
 */
 
 function factorial(input) {
-  // TODO
+  let factorialResult = 1;
+  while (input >1)
+  {
+    factorialResult= factorialResult * input;
+    input--;
+  }
+
+  return factorialResult;
 }
 
 /* ======= TESTS - DO NOT MODIFY ===== */
