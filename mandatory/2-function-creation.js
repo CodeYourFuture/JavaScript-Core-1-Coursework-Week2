@@ -34,7 +34,8 @@ function applyDiscount(totalPrice) {
   */
 function printOddNumbers(limit) {
   let number = 0;
-  while (true) {
+  while (number < limit) {
+    number = number + 1;
     if (number%2 === 0) continue;
     console.log(number);  
   }
