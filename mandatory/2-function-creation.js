@@ -19,6 +19,49 @@ return userAge >= 18 && isLoggedIn;
 }
 
 
+
+// function weirdAbdiFunction (num) {
+//   let num = [1 , 2 , 3 , 4 , 5 , 6 ];
+//   return num
+// }
+
+
+
+/*
+
+
+
+I want my function to 
+
+- Give my function a number 
+- I want to times 1 - 6 By this number
+- Log 1-6 X number
+- Return total of 1-6 * this number 
+
+numberPassedIN = 10 
+
+
+10
+20
+30
+40
+50
+60
+
+return 210
+
+
+
+
+
+
+
+
+
+
+*/
+
+
 /*
   Complete the function to apply discount percent based on how much is totalPrice in user cart.
     - When the total price is greater than 200, a 10% discount should be applied
@@ -40,13 +83,6 @@ const discountLast = totalPrice - discountAmount;
 return discountLast;
 }
 
-
-//   if (isBigEnough > 10) {
-//     return "num is greater than 10";
-//   } else {
-//     return "num is not big enough";
-//   }
-// }
 /*
   Complete the function to print to the console the odd numbers between 1 and limit (use a while loop):
   */
@@ -59,9 +95,7 @@ while(number<=limit){
     console.log(number);
   }
   number = number+1 ;
-
 }
-
 }
 
 /*
@@ -69,8 +103,6 @@ while(number<=limit){
   The function should return the price to be paid once the discount is applied.
 */
 function buyTwoGetTheCheapestFree(price1, price2) {
-  // let totalPrice =0;
-  // price1 > price2;
 if(price1 > price2){
   return price1
 }else{
@@ -88,7 +120,7 @@ if(price1 > price2){
 function canRegister(age) {
   if(age<=12){
   return (`You Are Too Young To Register`);
-} else if(age>12 && age<90){
+} else if(age>12 && age <90){
   return (`You Can Register`);
 } else{
   return (`You Don't Need To Register`);
@@ -105,13 +137,14 @@ function canRegister(age) {
 */
 
 function countReverse(number) {
- let count =0;
-  while(number>0){
+let count =0;
+
+while(number>0){
+
 console.log(number);
 number --;
   }
   count --;
-  
 }
 
 /* ======= TESTS - DO NOT MODIFY ===== */

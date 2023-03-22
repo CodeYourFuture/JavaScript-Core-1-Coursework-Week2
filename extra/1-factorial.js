@@ -16,17 +16,7 @@ function factorial(input) {
       }
   return input;
 }
-  // const result = input;
-  // if (input === 0 || input === 1) 
-  //   return 1; 
-  // while (input > 1) { 
-  //   input--;
-  // }
-  // return result;
-
-  // TODO
-
-
+  
 /* ======= TESTS - DO NOT MODIFY ===== */
 
 describe("factorial", () => {
