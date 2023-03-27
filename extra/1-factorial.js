@@ -8,19 +8,24 @@
     Using a loop, complete the function below so it returns the factorial of the number being passed in. 
 */
 
+/*
+Pseudocode: 
+- We take a number and pass it as an argument into the function
+- Inside the fuction the number is then multiplied to one less than the number until it reaches 1. 
+
+*/
+
 function factorial(input) {
-  // TODO
-  let j = i + 1;
-  let k = 1;
-  
-  for (i = 0; i <= input; i++) {
-    while (j <= input) {
-      return j;
-    }
-    j = j + 1;
+  let multiple = 1;
+  for (let i = input; i > 0; i--) {
+    multiple = multiple * input; 
+    input = input - 1;
   }
-  return k = k * j;
+  return multiple;
 }
+
+
+
 
 /* ======= TESTS - DO NOT MODIFY ===== */
 
