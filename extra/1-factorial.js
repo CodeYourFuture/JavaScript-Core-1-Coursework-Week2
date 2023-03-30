@@ -9,7 +9,13 @@
 */
 
 function factorial(input) {
-  // TODO
+  /*0! =1, 1! =1*/
+  if (input>0 && input<=1) {
+    return  1;
+  }else {
+    return input * factorial(input - 1);
+  }
+
 }
 
 /* ======= TESTS - DO NOT MODIFY ===== */
