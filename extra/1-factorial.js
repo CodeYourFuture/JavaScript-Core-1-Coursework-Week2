@@ -10,8 +10,13 @@
 
 function factorial(input) {
   // TODO
+  let total = 1;
+  while(input > 1){
+   total = input * (input - 1) * total;
+  input = input - 2;
 }
-
+  return total;
+}
 /* ======= TESTS - DO NOT MODIFY ===== */
 
 describe("factorial", () => {
