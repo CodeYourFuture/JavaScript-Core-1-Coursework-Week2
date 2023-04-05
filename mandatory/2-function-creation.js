@@ -43,8 +43,9 @@ else{
 function printOddNumbers(limit) {
   let num = 1;
   while (num < limit){
- console.log(num)
- num = num +2 
+
+ console.log(limit % 2 == 1 )
+ 
   }
 }
 
@@ -53,17 +54,11 @@ function printOddNumbers(limit) {
   The function should return the price to be paid once the discount is applied.
 */
 function buyTwoGetTheCheapestFree(itemPrice1, itemPrice2) {
-
-  let cheaperItem = math.min(itemPrice1, itemPrice2);
-  let totalPrice = itemPrice1 + itemPrice2;
-  
-  if(){
-
+  if(itemPrice1 > itemPrice2){
+    return itemPrice1
+  } else {
+    return itemPrice2
   }
-
-
-
-  return 
 }
 
 /*
@@ -95,10 +90,10 @@ return "You Can Register";
 */
 
 function countReverse(number) {
-  
-  while(count <= number) {
-  console.log(count);
-  count = count - 1;
+  let lastNumber = 1;
+  while(number >= lastNumber) {
+  console.log(number);
+  number = number - 1;
    }
   }
 
