@@ -45,7 +45,7 @@ function printOddNumbers(limit) {
   The function should return the price to be paid once the discount is applied.
 */
 function buyTwoGetTheCheapestFree(price1, price2) {
-  if (price1 || price2 !== 0){
+  if ((price1 && price2) > 0){
     if (price1 < price2){
       return price2;
     }
@@ -80,7 +80,7 @@ function canRegister(age) {
 */
 
 function countReverse(number) {
-  while(number !==0){
+  while(number > 0){
     console.log(number);
     number--;
   }
