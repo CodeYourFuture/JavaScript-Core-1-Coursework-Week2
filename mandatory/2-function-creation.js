@@ -5,8 +5,8 @@
     2. the user must be logged in
 */
 function isAcceptableUser(userAge, isLoggedIn) {
-  standardAge = 18;
-  loggedIn = true;
+  let standardAge = 18;
+  let loggedIn = true;
   if(userAge >= standardAge && isLoggedIn === loggedIn)
   return true;
   else return false;
