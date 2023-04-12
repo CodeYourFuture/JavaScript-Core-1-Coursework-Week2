@@ -5,17 +5,17 @@
     2. the user must be logged in
 */
 function isAcceptableUser(userAge, isLoggedIn) {
-  if (userAge > 18) {
+  if (userAge >= 18 && isLoggedIn === true) {
     return true;
   } else {
     return false;
   }
 
-  if (isLoggedIn) {
-    return true;
-  } else {
-    return false;
-  }
+  // if (isLoggedIn) {
+  //   return true;
+  //  } else {
+  //  return false;
+  //  }
 }
 /*
   Complete the function to apply discount percent based on how much is totalPrice in user cart.
@@ -63,9 +63,9 @@ function buyTwoGetTheCheapestFree(price1, price2) {
   - if the person is 90 or older it should return "You Don't Need To Register"
 */
 function canRegister(age) {
-  if (age < 12) {
+  if (age <= 12) {
     return "You Are Too Young To Register";
-  } else if (age > 12 && age < 90) {
+  } else if (age >= 12 && age < 90) {
     return "You Can Register";
   } else {
     return "You Don't Need To Register";
