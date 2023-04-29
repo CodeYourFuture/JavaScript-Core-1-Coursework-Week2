@@ -10,14 +10,12 @@
 
 */
 
-function getMood() {
-  let isHappy = true;
-
+function getMood(isHappy) {
   if (isHappy) {
     return "I am happy";
   } else {
     return "I am not happy";
-  }
+  }z
 }
 
 function greaterThan10(num) {
