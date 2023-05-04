@@ -4,7 +4,16 @@
     1. the user should be 18 or older
     2. the user must be logged in
 */
-function isAcceptableUser(userAge, isLoggedIn) {}
+function isAcceptableUser(userAge, isLoggedIn) {
+  if (userAge >=18 && isLoggedIn) {
+return true
+  } else {
+return false
+  }
+}
+
+// See above, I start with a function isAcceptableUser with two parameters userAge and isLoggedIn. Inside the brackets, use an if... esle
+// statement and in if I have the two values that can or not be fulfilled. Then I have an array in the array that return true or false
 
 /*
   Complete the function to apply discount percent based on how much is totalPrice in user cart.
@@ -15,18 +24,61 @@ function isAcceptableUser(userAge, isLoggedIn) {}
     is applieds and 142.5 should be returned)
 */
 
-function applyDiscount(totalPrice) {}
+function applyDiscount(totalPrice) {
+  if (totalPrice > 200){
+return totalPrice - (totalPrice *0.1)
+  } else {
+   return totalPrice - (totalPrice *0.05)
+  }
+}
+
+// I start with the function applyDiscount with a parameter totalPrice. Inside the brackets, I use an if... else statement. 
+// in if I put in the value with a condition larger than 200. Then I use an array in the array to return what discout that
+// apply. And if the value is greater than 200 it give 10 discount and prints the new price. Else it gives a 5% discount and
+// print the new price.
 
 /*
   Complete the function to print to the console the odd numbers between 1 and limit (use a while loop):
   */
-function printOddNumbers(limit) {}
+function printOddNumbers(limit) {
+ let num=1;
+  while(num<limit){
+    console.log(num);
+    num=num+2;
+  }
+}
+  
+// function printOddNumbers(limit) {
+//     i=1;
+//     while (i % 2 != 0  && i < limit)
+//     {
+//     console.log(i);
+//     i++
+//     } 
+// }
+
+// See above active code. I start with a function printOddNumbers with a parameter limit. Inside the brackets I have a let 
+// variable num that equals 1. I use a while loop  with the varaible num less that limit. Inside the brackets, I console.log
+// num. After printing the value of num the function adds 2 so every odd number prints. The while loop contines until limit 
+// equals num.
+
 
 /*
   Complete the buyTwoGetTheCheapestFree function: if user buys two items, the cheapest item will be free!
   The function should return the price to be paid once the discount is applied.
 */
-function buyTwoGetTheCheapestFree(price1, price2) {}
+function buyTwoGetTheCheapestFree(price1, price2) {
+  if (price1 < price2) {
+return price2;
+  } else if (price2 < price1){
+return price1;
+  }
+}
+
+// I start with a function buyTwoGetTheCheapestFree with two parameters price1 and price2. Inside the brackets, I use if...
+// else if statement. If price1 > price2 in the array of the array I return price2 else if price2 is less than price1 I use
+// return to print price1.
+
 
 /*
   Complete the function to determine if it is suitable for a person to register based on their age!
@@ -34,7 +86,22 @@ function buyTwoGetTheCheapestFree(price1, price2) {}
   - if the person is older than 12 and younger than 90 it should return "You Can Register"
   - if the person is 90 or older it should return "You Don't Need To Register"
 */
-function canRegister(age) {}
+function canRegister(age) {
+  if (age <= 12 ) {
+return "You Are Too Young To Register"
+  } else if (age > 12 && age < 90) {
+   
+      return "You Can Register"
+    }
+  else {
+return "You Don't Need To Register"
+  }
+}
+
+// I start with the function canRegister with the parameter age. Inside the brackets I use an if... else if... else statement
+// If parameter is less or equal to in the array of the array return will print the string You Are To Young To Register. Else
+// if parameter age gretare ah 12 and less than 99 the return will print You Can Register. Else return will print You Dont Need
+// To Register
 
 /*
   Complete the function so that it prints out to the console numbers in reverse order starting at
@@ -45,7 +112,24 @@ function canRegister(age) {}
   )
 */
 
-function countReverse(number) {}
+
+function countReverse(number) {
+for(let i=number; i>0; i--){
+  console.log(i)
+}
+}
+
+// function codewars
+// repeatStr (n, s) {
+// var str="";
+// for(var i=0; i < n; i++)
+//   str+=s;
+//   return str;
+// }
+
+
+// I start with the function countReverse with the parameter number. Inside the brackets, I use a for loop to iterate the number
+// with the condition i is greater than 0 and count down to 0 see i-- .
 
 /* ======= TESTS - DO NOT MODIFY ===== */
 
