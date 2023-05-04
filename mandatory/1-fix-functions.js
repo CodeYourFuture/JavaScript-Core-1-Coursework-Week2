@@ -20,6 +20,10 @@ function getMood(isHappy) {
   }
 }
 
+// See above, I start with a function getMood with the value isHappy. Inside the brackets, I return true or false. If true
+// it prints I am happy and if false it prints I am not happy.
+
+
 function greaterThan10(isBigEnough) {
   // let isBigEnough = true;
 
@@ -29,6 +33,10 @@ function greaterThan10(isBigEnough) {
     return "num is not big enough";
   }
 }
+
+// I start with a function greaterThan10 with the value isBigValue. Inside the brackets, I return true or false. If true 
+// it prints num is greater than 10 and if false it prints num is not big enough.
+
 
 /* ======= TESTS - DO NOT MODIFY ===== */
 
