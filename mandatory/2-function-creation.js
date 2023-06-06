@@ -26,7 +26,7 @@ return true;
 */
 
 function applyDiscount(totalPrice) {
-if(totalPrice >= 200){
+if(totalPrice > 200){
   return totalPrice - (totalPrice * 0.1)
 }
 else{
@@ -53,13 +53,25 @@ function printOddNumbers(limit) {
   Complete the buyTwoGetTheCheapestFree function: if user buys two items, the cheapest item will be free!
   The function should return the price to be paid once the discount is applied.
 */
+// function buyTwoGetTheCheapestFree(itemPrice1, itemPrice2) {
+//   if(itemPrice1 > itemPrice2){
+//     return itemPrice1
+//   } else {
+//     return itemPrice2
+//   }
+// }
+
 function buyTwoGetTheCheapestFree(itemPrice1, itemPrice2) {
-  if(itemPrice1 > itemPrice2){
-    return itemPrice1
-  } else {
-    return itemPrice2
-  }
+    let totalPrice = itemPrice1 + itemPrice2;
+    let cheapestPrice = Math.min(itemPrice1, itemPrice2);
+
+    if (totalPrice === itemPrice1 + itemPrice2) {
+      return totalPrice - cheapestPrice
+    }
+
+
 }
+
 
 /*
   Complete the function to determine if it is suitable for a person to register based on their age!
