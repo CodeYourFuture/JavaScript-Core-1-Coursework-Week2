@@ -6,11 +6,23 @@
         5! is 120 (because 5 * 4 * 3 * 2 * 1 = 120)
     
     Using a loop, complete the function below so it returns the factorial of the number being passed in. 
-*/
+*/// 
+//   
+// 
+
 
 function factorial(input) {
-  // TODO
+  let value=1;
+  while (input >=1) {
+    value=value*input;
+    input=input-1;
+  }
+  return value;
 }
+ 
+
+
+
 
 /* ======= TESTS - DO NOT MODIFY ===== */
 
